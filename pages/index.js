@@ -9,6 +9,7 @@ import ImpulseFooter from "@/components/ImpulseFooter";
 export default function Home() {
   return (
     <>
+      {/* <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 relative"></div> */}
       <ImpulseAbout />
       {/* <ImpulseFAQ /> */}
       <ImpulseFooter />
