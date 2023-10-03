@@ -3,6 +3,7 @@ import Link from "next/link";
 // import footerLogo from "../assets/impulseImg/FooterLogo.svg";
 import { FooterImpluse } from "./common/Helper";
 import { FooterDiscord, ImpulseTweeter } from "./common/Icons";
+import Image from "next/image";
 const ImpulseFooter = () => {
   const today = new Date();
   const year = today.getFullYear();
@@ -13,6 +14,12 @@ const ImpulseFooter = () => {
           <div className="flex flex-wrap mt-1 pb-7">
             <div className="lg:w-4/12 sm:w-6/12 w-full">
               <div className="flex items-center mb-5">
+                <Image
+                  height={67}
+                  width={67}
+                  src="/assets/images/svg/FooterLogo.svg"
+                  alt="about image"
+                />
                 <div className=" ms-3">
                   <p className="mb-0 text-3xl text-white font-bold lh_normal font-Montserrat tracking-[3.3px]">
                     IMPULSE
