@@ -44,7 +44,7 @@ const ImpulseAbout = () => {
                               {about.impulse}
                             </span>
                           </p>
-                          <p className="sm:mb-6 text-white font-Montserrat font-medium leading-[178%] text-md opacity-70 sm:max-w-[250px]">
+                          <p className="sm:mb-6 text-white font-Montserrat font-medium leading-[178%] text-md opacity-70 sm:max-w-[247px]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor
                           </p>

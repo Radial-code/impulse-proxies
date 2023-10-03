@@ -13,7 +13,6 @@ const ImpulseFooter = () => {
           <div className="flex flex-wrap mt-1 pb-7">
             <div className="lg:w-4/12 sm:w-6/12 w-full">
               <div className="flex items-center mb-5">
-                {/* <img src={footerLogo} alt="footerLogo" height={67} width={67} /> */}
                 <div className=" ms-3">
                   <p className="mb-0 text-3xl text-white font-bold lh_normal font-Montserrat tracking-[3.3px]">
                     IMPULSE
