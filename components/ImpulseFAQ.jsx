@@ -11,7 +11,21 @@ const ImpulseFAQ = () => {
     setOpenAccordions(newOpenAccordions);
   };
   return (
-    <div className="faqBg bg-no-repeat bg-cover bg-center pt-28 pb-44">
+    <div className="faqBg bg-no-repeat bg-cover bg-center pt-28 pb-44 relative overflow-hidden">
+      <Image
+        height={123}
+        width={123}
+        className="absolute bottom-[-10px] start-0"
+        src="/assets/images/svg/FaqBottom.svg"
+        alt="about image"
+      />
+      <Image
+        height={207}
+        width={207}
+        className="absolute lg:top-[-15%] top-[-10%] lg:end-0 end-[-1%] lg:h-[207px] lg:w-[207px] w-[175px] h-[175px]"
+        src="/assets/images/svg/FaqRight.svg"
+        alt="about image"
+      />
       <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3">
         <p className="text-center text-6xl text-white font-Montserrat font-bold leading-[121%] tracking-[-0.74px] mb-12">
           Frequently Asked Questions
@@ -27,7 +41,7 @@ const ImpulseFAQ = () => {
               >
                 <div className="flex w-full justify-between">
                   <button
-                    className="w-full flex justify-between items-center text-white focus:outline-none font-Montserrat text-2xl font-bold leading-[130%] mb-0"
+                    className="w-full flex justify-between items-center text-white focus:outline-none font-Montserrat text-2xl font-bold leading-[130%] mb-0 text-start"
                     onClick={() => toggleAccordion(index)}
                   >
                     {data.heading}
