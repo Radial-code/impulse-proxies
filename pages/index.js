@@ -1,4 +1,3 @@
-import Header from "@/components/common/Header";
 import Current from "@/components/Current";
 import Hero from "@/components/Hero";
 import ImpulseAbout from "@/components/ImpulseAbout";
@@ -18,12 +17,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="overflow-hidden">
-        <Header />
         <Hero />
         <Current />
         <WhyToChooseUs />
         <OurProxies />
-        {/* <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 relative"></div> */}
         <ImpulseAbout />
         <ImpulseFAQ />
         <ImpulseFooter />

@@ -13,7 +13,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        "Montserrat":"'Montserrat', sans-serif",
+        Montserrat: "'Montserrat', sans-serif",
       },
       fontSize: {
         xs: "10px",
@@ -28,6 +28,11 @@ module.exports = {
         "6xl": "37px",
         "7xl": "50px",
         "8xl": "58px",
+      },
+      colors: {
+        "dark-blue": "#040426",
+        "cyan-green": "#50EED7",
+        "dark-gray": "#9898A3",
       },
     },
   },
