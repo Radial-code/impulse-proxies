@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Add from "../assets/impulseImg/AccordianAdd.svg";
-import Minus from "../assets/impulseImg/minus.svg";
+// import Add from "../assets/impulseImg/AccordianAdd.svg";
+// import Minus from "../assets/impulseImg/minus.svg";
 import { Accordian } from "./common/Helper";
 const ImpulseFAQ = () => {
   const [openAccordions, setOpenAccordions] = useState(
@@ -33,11 +33,11 @@ const ImpulseFAQ = () => {
                   >
                     {data.heading}
                     <span>
-                      {isOpen ? (
-                        <img src={Minus} alt="Minus" />
-                      ) : (
-                        <img src={Add} alt="Add" />
-                      )}
+                      {isOpen
+                        ? // <img src={Minus} alt="Minus" />
+                          sdfv
+                        : // <img src={Add} alt="Add" />
+                          fdsbv}
                     </span>
                   </button>
                 </div>

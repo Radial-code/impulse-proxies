@@ -1,5 +1,5 @@
-import aboutImg from "../../assets/impulseImg/about1.svg";
-import aboutImg2 from "../../assets/impulseImg/About2.svg";
+// import aboutImg from "../../assets/impulseImg/about1.svg";
+// import aboutImg2 from "../../assets/impulseImg/About2.svg";
 export const FooterImpluse = [
   {
     id: 1,
@@ -28,8 +28,18 @@ export const FooterImpluse = [
   },
 ];
 export const AboutBox = [
-  { id: 1, aboutImg: aboutImg, impulse: "Impulse", border: "linerBorder" },
-  { id: 2, aboutImg: aboutImg2, impulse: "Nuno", border: "linerBorderSecond" },
+  {
+    id: 1,
+    aboutImg: "/assets/images/svg/about1.svg",
+    impulse: "Impulse",
+    border: "linerBorder",
+  },
+  {
+    id: 2,
+    aboutImg: "/assets/images/svg/about2.svg",
+    impulse: "Nuno",
+    border: "linerBorderSecond",
+  },
 ];
 export const Accordian = [
   {
