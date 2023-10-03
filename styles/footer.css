@@ -1,0 +1,13 @@
+.lh_normal {
+  line-height: normal;
+}
+
+.linerBorder {
+  background: linear-gradient(9deg, #080d2d 0%, #50eed7 190%);
+}
+.linerBorderSecond {
+  background: linear-gradient(144deg, #080d2d 21%, #50eed7 160%);
+}
+.faqBg {
+  background-image: url(../public/assets/images/png/FAQbg.png);
+}
