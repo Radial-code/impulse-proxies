@@ -6,7 +6,7 @@ import Image from "next/image";
 const ImpulseAbout = () => {
   return (
     <div className="bg-[#141436] pt-24 mt-20">
-      <div className="container mx-auto px-4 relative">
+      <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 relative">
         <Image
           src="/assets/images/svg/aboutTop.svg"
           alt="aboutTop"
