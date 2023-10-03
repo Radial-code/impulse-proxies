@@ -12,7 +12,7 @@ const ImpulseFAQ = () => {
   };
   return (
     <div className="faqBg bg-no-repeat bg-cover bg-center pt-28 pb-44">
-      <div className="container mx-auto">
+      <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3">
         <p className="text-center text-6xl text-white font-Montserrat font-bold leading-[121%] tracking-[-0.74px] mb-12">
           Frequently Asked Questions
         </p>
