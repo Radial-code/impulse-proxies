@@ -11,3 +11,6 @@
 .faqBg {
   background-image: url(../public/assets/images/png/FAQbg.png);
 }
+.currentBg {
+  background: linear-gradient(349deg, #141436 -2.09%, #1e1f3e 120.28%);
+}
