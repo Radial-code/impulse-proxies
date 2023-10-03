@@ -7,7 +7,7 @@ import WhyToChooseUs from "@/components/WhyToChooseUs";
 
 export default function Home() {
   return (
-    <>
+    <div div className = "bg-[#141436]" >
       <Header />
       <Hero />
       <WhyToChooseUs/>
@@ -15,6 +15,6 @@ export default function Home() {
       <ImpulseAbout />
       <ImpulseFAQ />
       <ImpulseFooter />
-    </>
+    </div>
   );
 }

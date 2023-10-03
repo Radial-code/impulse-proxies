@@ -63,3 +63,25 @@ export const Accordian = [
     para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur",
   },
 ];
+export const CardData = [
+  {
+    id: 1,
+    heading: "Global Reach",
+    para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    whyToImg: "/assets/images/svg/Globe.svg",
+  },
+  {
+    id: 2,
+    heading: "Affordable Rates",
+    para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      whyToImg: "/assets/images/svg/Affordable Rates.svg",
+  },
+  {
+    id: 3,
+    heading: "Reliability redefined",
+    para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    whyToImg: "/assets/images/svg/clock.svg",
+  },
+
+];
+
