@@ -24,7 +24,7 @@ const Hero = () => {
               <Image
                 height={1097}
                 width={1190}
-                src="/assets/images/png/hero-image.png"
+                src="/assets/images/webp/hero-img.webp"
                 alt="hero-image"
               />
             </div>
