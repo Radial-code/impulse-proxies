@@ -51,7 +51,7 @@ const ImpulseFooter = () => {
                         <li>
                           <Link
                             href="#"
-                            className=" text-[#8888B1] font-Montserrat text-xl font-medium lh_normal pt-2"
+                            className=" text-[#8888B1] font-Montserrat text-xl font-medium lh_normal pt-2 hover:text-white transition-all ease-in-out duration-200"
                           >
                             {footer.option1}
                           </Link>
@@ -59,7 +59,7 @@ const ImpulseFooter = () => {
                         <li>
                           <Link
                             href="#"
-                            className=" inline-block text-[#8888B1] font-Montserrat text-xl font-medium lh_normal pt-2"
+                            className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat text-xl font-medium lh_normal pt-2"
                           >
                             {footer.option2}
                           </Link>
@@ -67,7 +67,7 @@ const ImpulseFooter = () => {
                         <li>
                           <Link
                             href="#"
-                            className=" inline-block text-[#8888B1] font-Montserrat text-xl font-medium lh_normal pt-2"
+                            className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat text-xl font-medium lh_normal pt-2"
                           >
                             {footer.option3}
                           </Link>
@@ -75,7 +75,7 @@ const ImpulseFooter = () => {
                         <li>
                           <Link
                             href="#"
-                            className="inline-block text-[#8888B1] font-Montserrat text-xl font-medium lh_normal pt-2"
+                            className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat text-xl font-medium lh_normal pt-2"
                           >
                             {footer.option4}
                           </Link>
@@ -93,10 +93,18 @@ const ImpulseFooter = () => {
               Reserved
             </p>
             <div className=" flex items-center gap-4">
-              <Link href="https://twitter.com/">
+              <Link
+                href="https://twitter.com/"
+                target="blank"
+                className="hover:translate-y-[-10px] transition-all duration-200 ease-in-out"
+              >
                 <ImpulseTweeter />
               </Link>
-              <Link href="https://discord.com/">
+              <Link
+                href="https://discord.com/"
+                target="blank"
+                className="hover:translate-y-[-10px] transition-all duration-200 ease-in-out"
+              >
                 <FooterDiscord />
               </Link>
             </div>

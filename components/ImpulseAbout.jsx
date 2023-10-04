@@ -14,10 +14,10 @@ const ImpulseAbout = () => {
         className="absolute left-28 lg:top-[-10%] sm:top-[-14%] top-[-9%] text-3xl sm:w-[144px] w-[100px] sm:h-[122px] h-[100px]"
       />
       <div className="container xl:max-w-[1140px] flex flex-col 2xl:max-w-[1320px] mx-auto px-3 relative">
-        <p className=" font-Montserrat text-6xl text-white font-bold leading-[121%]">
+        <p className=" font-Montserratsm:text-6xl text-[30px] text-white font-bold leading-[121%]">
           About <span className="text-[#50EED7]">Us</span>
         </p>
-        <p className="font-TT_Interfaces text-[#9898A3] leading-[157%] font-semibold text-2xl max-w-[380px] sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 pb-3">
+        <p className=" text-[#9898A3] leading-[157%] font-semibold sm:text-2xl text-[18px] max-w-[380px] sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 pb-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
         <div className="flex lg:flex-nowrap justify-center flex-wrap lg:gap-6 sm:pb-24 pb-12 sm:mb-0 mb-3 lg:mt-10">
@@ -35,16 +35,17 @@ const ImpulseAbout = () => {
                         width={81}
                         src={about.aboutImg}
                         alt="about image"
+                        className=" sm:h-[81px] sm:w-[81px] w-[61px] h-[61px]"
                       />
                       <div className="ps-5 flex">
                         <div>
-                          <p className="mb-0 text-white font-Montserrat leading-[204%] tracking-[-0.44px] text-3xl font-bold">
+                          <p className="mb-0 text-white font-Montserrat leading-[204%] tracking-[-0.44px] sm:text-3xl text-[20px] font-bold">
                             About
                             <span className="text-[#50EED7] ms-1">
                               {about.impulse}
                             </span>
                           </p>
-                          <p className="sm:mb-6 text-white font-Montserrat font-medium leading-[178%] text-md opacity-70 sm:max-w-[247px]">
+                          <p className="sm:mb-6 text-white font-Montserrat font-medium leading-[178%] sm:text-md text-[12px] opacity-70 sm:max-w-[247px]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor
                           </p>
@@ -52,8 +53,12 @@ const ImpulseAbout = () => {
                       </div>
                     </div>
                     <div className="sm:flex hidden flex-col items-center  justify-between sm:pt-2">
-                      <span className="">
-                        <Link href="https://twitter.com/" target="blank">
+                      <span>
+                        <Link
+                          href="https://twitter.com/"
+                          target="blank"
+                          className="hover:!translate-y-[-10px] transition-all duration-200 ease-in-out"
+                        >
                           <ImpulseTweeter />
                         </Link>
                       </span>
@@ -70,8 +75,12 @@ const ImpulseAbout = () => {
                     </div>
                   </div>
                   <div className="flex sm:hidden items-center  justify-between sm:pt-2">
-                    <span className="">
-                      <Link href="https://twitter.com/" target="blank">
+                    <span>
+                      <Link
+                        href="https://twitter.com/"
+                        target="blank"
+                        className="hover:!translate-y-[-10px] transition-all duration-200 ease-in-out"
+                      >
                         <ImpulseTweeter />
                       </Link>
                     </span>

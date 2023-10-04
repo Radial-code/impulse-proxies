@@ -32,7 +32,7 @@ const ImpulseFAQ = () => {
         alt="about image"
       />
       <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 sm:pt-0 pt-3 sm:pb-0 pb-3">
-        <p className="text-center text-6xl text-white font-Montserrat font-bold leading-[121%] tracking-[-0.74px] sm:mb-12 mb-7">
+        <p className="text-center lg:text-6xl md:text-[35px] text-[25px] text-white font-Montserrat font-bold leading-[121%] tracking-[-0.74px] sm:mb-12 mb-7">
           Frequently Asked Questions
         </p>
 
@@ -47,7 +47,7 @@ const ImpulseFAQ = () => {
               >
                 <div className="flex w-full justify-between">
                   <button
-                    className="w-full flex justify-between items-center text-white focus:outline-none font-Montserrat text-2xl font-bold leading-[130%] mb-0 text-start"
+                    className="w-full flex justify-between items-center text-white focus:outline-none font-Montserrat md:text-2xl sm:text-[17px] text-[15px] font-bold leading-[130%] mb-0 text-start"
                     onClick={() => toggleAccordion(index)}
                   >
                     {data.heading}
