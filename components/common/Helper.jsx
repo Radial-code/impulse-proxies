@@ -82,8 +82,27 @@ export const CardData = [
   },
 
 ];
+
 export const CurrentData = [
   { id: 1, number: "3,234,199", current: "Current Active IPs" },
   { id: 2, number: "1,500+s", current: "Loyal Impulse Users" },
   { id: 3, number: "20,434 GB", current: "Current Proxy Usage" },
+];
+export const OurProxies = [
+  {
+    id: 1,
+    heading: "ISP Proxies",
+    para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+  },
+  {
+    id: 2,
+    heading: "Datacenter Proxies",
+    para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+  },
+  {
+    id: 3,
+    heading: "Residential Proxies",
+    para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+  },
+
 ];
