@@ -85,7 +85,7 @@ export const CardData = [
 
 export const CurrentData = [
   { id: 1, number: "3,234,199", current: "Current Active IPs" },
-  { id: 2, number: "1,500+s", current: "Loyal Impulse Users" },
+  { id: 2, number: "1,500+", current: "Loyal Impulse Users" },
   { id: 3, number: "20,434 GB", current: "Current Proxy Usage" },
 ];
 export const OurProxies = [
