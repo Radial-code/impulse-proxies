@@ -40,3 +40,6 @@ body {
     rgb(var(--background-start-rgb)); */
   background-color: #040426;
 }
+.hero-section {
+  height: calc(100vh - 115px);
+}
