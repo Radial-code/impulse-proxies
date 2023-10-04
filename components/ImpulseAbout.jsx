@@ -14,7 +14,7 @@ const ImpulseAbout = () => {
         className="absolute left-28 lg:top-[-10%] sm:top-[-14%] top-[-9%] text-3xl sm:w-[144px] w-[100px] sm:h-[122px] h-[100px]"
       />
       <div className="container xl:max-w-[1140px] flex flex-col 2xl:max-w-[1320px] mx-auto px-3 relative">
-        <p className=" font-Montserratsm:text-6xl text-[30px] text-white font-bold leading-[121%]">
+        <p className=" font-Montserrat sm:text-6xl text-[30px] text-white font-bold leading-[121%]">
           About <span className="text-[#50EED7]">Us</span>
         </p>
         <p className=" text-[#9898A3] leading-[157%] font-semibold sm:text-2xl text-[18px] max-w-[380px] sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 pb-3">
