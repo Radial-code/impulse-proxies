@@ -6,7 +6,6 @@ import Head from "next/head";
 import ImpulseFooter from "@/components/ImpulseFooter";
 import OurProxies from "@/components/OurProxies";
 import WhyToChooseUs from "@/components/WhyToChooseUs";
-
 export default function Home() {
   return (
     <>
