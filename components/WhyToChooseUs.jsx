@@ -5,19 +5,12 @@ function WhyToChooseUs() {
   return (
     <div className=" lg:pt-10 lg:pb-28 py-12 bg-[#141436] relative">
       <Image
-        className=" absolute bottom-[-66px] right-[55px] z-10"
+        className=" absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] right-[24px] z-10 sm:w-[145px] w-[75px] sm:h-[126px] h-[66px]"
         height={126}
         width={145}
         src="/assets/images/svg/Abstract-02.svg"
         alt="Abstract"
       />
-      {/* <Image
-      height={126}
-        width={145}
-      className=" w-full"
-        src="/assets/images/png/WhyTobg.png"
-        alt="Abstract"
-      /> */}
       <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 sm:py-0 py-2">
         <h2 className="font-Montserrat text-6xl text-white font-bold leading-[121%] text-center tracking-[-0.64px]">
           Why to choose <span className="text-[#50EED7]">us</span>
