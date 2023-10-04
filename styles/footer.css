@@ -11,9 +11,14 @@
 .faqBg {
   background-image: url(../public/assets/images/png/FAQbg.png);
 }
-.currentBg {
+.currentBg::after {
   background: linear-gradient(349deg, #141436 -2.09%, #1e1f3e 120.28%);
 }
 .bgHeroImg::after {
   background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
+}
+.chooseBox {
+  opacity: 0.2;
+  background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
+  filter: blur(0px);
 }
