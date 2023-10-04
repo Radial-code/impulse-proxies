@@ -12,7 +12,7 @@ function WhyToChooseUs() {
         alt="Abstract"
       />
       <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 sm:py-0 py-2">
-        <h2 className="font-Montserrat text-6xl text-white font-bold leading-[121%] text-center tracking-[-0.64px]">
+        <h2 className="font-Montserrat sm:text-6xl text-[35px] text-white font-bold leading-[121%] text-center tracking-[-0.64px]">
           Why to choose <span className="text-[#50EED7]">us</span>
         </h2>
         <div className="flex justify-center flex-wrap  lg:flex-nowrap lg:gap-9 sm:mt-8 mt-3">

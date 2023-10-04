@@ -12,7 +12,7 @@ const OurProxies = () => {
           src="/assets/images/svg/Group_bg.svg"
           alte="Group_bg"
         />
-        <h2 className=" font-Montserrat text-6xl text-white font-bold leading-[121%] mx-auto text-start mb-4">
+        <h2 className=" font-Montserrat sm:text-6xl text-[30px] text-white font-bold leading-[121%] mx-auto text-start mb-4">
           Our <span className="text-[#50EED7]">Proxies</span>
         </h2>
         <p className=" font-semibold text-2xl  text-[#9898A3] max-w-[380px] lg:mx-0 text-start">
@@ -50,7 +50,7 @@ const OurProxies = () => {
           </div>
         </div>
         <div className=" flex justify-center">
-          <button className=" max-w-[197px] w-full min-h-[55px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-10 hover:bg-transparent transition-all">
+          <button className=" max-w-[197px] w-full min-h-[55px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold sm:text-2xl text-[17px] text-white mt-10 hover:bg-transparent transition-all">
             Try Now
           </button>
         </div>
