@@ -8,17 +8,14 @@ const Current = () => {
     <>
       <div className="currentBg border-[1px] border-[#1F374F] sm:py-7 py-11 ms-[-10px] me-[-10px]">
         <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3">
-          <div className="flex flex-wrap justify-around sm:gap-0 gap-4">
+          <div className="flex flex-wrap justify-around">
             {CurrentData.map((data) => {
               return (
-                <div
-                  key={data.id}
-                  className="lg:w-3/12 md:w-4/12 sm:w-6/12 w-full"
-                >
-                  <p className="text-white text-center  font-bold leading-[136%] tracking-[-1px] text-7xl">
+                <div key={data.id} className="md:w-3/12 sm:w-4/12 w-6/12 ">
+                  <p className="text-white text-center font-bold leading-[136%] tracking-[-1px] lg:text-7xl md:text-[38px] text-[30px] sm:mt-0 mt-5">
                     {data.number}
                   </p>
-                  <p className="text-center text-[#9898A3] text-2xl font-semibold leading-[157%] ">
+                  <p className="text-center text-[#9898A3] lg:text-2xl text-[15px] font-semibold leading-[157%] ">
                     {data.current}
                   </p>
                 </div>
