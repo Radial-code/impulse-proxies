@@ -16,11 +16,11 @@ const ImpulseFAQ = () => {
   };
 
   return (
-    <div className="faqBg bg-no-repeat bg-cover bg-center md:pt-28 sm:pt-20 pt-12 md:pb-44 sm:pb-22 pb-16  relative overflow-hidden">
+    <div id="Faqs" className="faqBg bg-no-repeat bg-cover bg-center md:pt-28 sm:pt-20 pt-12 md:pb-44 sm:pb-22 pb-16  relative overflow-hidden">
       <Image
-        height={123}
-        width={123}
-        className="absolute bottom-[-10px] lg:w-[123px] lg:h-[123px] start-0 sm:w-[93px] md:w-[103px] md:h-[103px] w-[73px]  sm:h-[93px] h-[60px]"
+        height={223}
+        width={223}
+        className="absolute bottom-[-10px] xl:w-[223px]  xl:h-[223px]  lg:w-[123px] lg:h-[123px] start-0 sm:w-[93px] md:w-[103px] md:h-[103px] w-[73px]  sm:h-[93px] h-[60px]"
         src="/assets/images/svg/FaqBottom.svg"
         alt="about image"
       />
