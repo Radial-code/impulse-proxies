@@ -5,8 +5,8 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <>
-      <div className="h-screen header_bg_img flex flex-col justify-center">
-        <Header />
+      <Header />
+      <div className="hero-section header_bg_img flex flex-col justify-center">
         <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 h-full flex-1 flex items-center">
           <div className="flex items-center justify-between h-full">
             <div className="w-5/12">

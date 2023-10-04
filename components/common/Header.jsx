@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <div>
-      <nav className="bg-[#040426] lg:pb-9 lg:pt-16 py-5 border-b-[1px] border-[#222F4A] flex-grow-0">
+      <nav className="bg-[#040426] lg:py-6 py-5 border-b-[1px] border-[#222F4A] flex-grow-0">
         <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3">
           <div className="flex items-center justify-between">
             {/* Use Next.js Link for client-side navigation */}
