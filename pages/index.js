@@ -6,7 +6,6 @@ import ImpulseFAQ from "@/components/ImpulseFAQ";
 import ImpulseFooter from "@/components/ImpulseFooter";
 import OurProxies from "@/components/OurProxies";
 import WhyToChooseUs from "@/components/WhyToChooseUs";
-
 export default function Home() {
   return (
         < >

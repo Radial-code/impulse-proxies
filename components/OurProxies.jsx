@@ -1,8 +1,16 @@
 import React from "react";
+import Image from "next/image";
 const OurProxies = () => {
   return (
-    <div className=" pt-10 pb-28 bg-[#141436] relative">
-      <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 ">
+    <div className=" pt-10 pb-28 bg-[#141436] relative Our_Proxies_b g_img">
+      <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 relative">
+        {/* <Image 
+         width={144}
+          height={122}
+        className=" w-full"
+         src="/assets/images/svg/Group_bg.svg"
+         alte="Group_bg"
+         /> */}
         <h2 className=" font-Montserrat text-6xl text-white font-bold leading-[121%] text-center mx-auto lg:text-start">
           Our <span className="text-[#50EED7]">Proxies</span>
         </h2>
@@ -40,11 +48,10 @@ const OurProxies = () => {
             </div>
           </div>
         </div>
-        <div className=" flex justify-center">
-        <button className=" max-w-[197px] w-full min-h-[55px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-10">
-
-          Try Now
-        </button>
+        <div className=" flex justify-center max-w-[1200px]">
+          <button className=" max-w-[197px] w-full min-h-[55px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-10">
+            Try Now
+          </button>
         </div>
       </div>
     </div>
