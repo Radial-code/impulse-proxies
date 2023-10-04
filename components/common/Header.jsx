@@ -63,8 +63,8 @@ const Header = () => {
             <div className="hidden lg:flex gap-12 items-center">
               <div className="relative group inline-block text-left">
                 {/* Dropdown button */}
-                <button className="text-white font-semibold tracking-[-0.38px] flex items-center leading-[150%] font-Montserrat text-2xl">
-                  Products{" "}
+                <button className="text-white font-semibold tracking-[-0.38px] flex items-center leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200">
+                  Products
                   <Image
                     width={15}
                     height={10}
@@ -80,7 +80,7 @@ const Header = () => {
                     <li>
                       <Link
                         href="#"
-                        className="block px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl"
+                        className="block hover:opacity-70 transition-all ease-in-out duration-200 px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl"
                       >
                         Item 1
                       </Link>
@@ -88,7 +88,7 @@ const Header = () => {
                     <li>
                       <Link
                         href="#"
-                        className="block px-4 text-white font-semibold tracking-[-0.38px] my-4 leading-[150%] font-Montserrat text-2xl"
+                        className="block px-4 text-white font-semibold tracking-[-0.38px] my-4 leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                       >
                         Item 2
                       </Link>
@@ -96,7 +96,7 @@ const Header = () => {
                     <li>
                       <Link
                         href="#"
-                        className="block px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl"
+                        className="block px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                       >
                         Item 3
                       </Link>
@@ -106,24 +106,24 @@ const Header = () => {
               </div>
               <Link
                 href="#"
-                className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl"
+                className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
               >
                 FAQ
               </Link>
               <Link
                 href="#"
-                className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl"
+                className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
               >
                 About Us
               </Link>
               <Link
                 href="#"
-                className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl"
+                className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
               >
                 Pricing
               </Link>
             </div>
-            <button className="text-white font-Montserrat text-2xl font-bold border-[#50EED7] border-[2px] rounded-full bg-[#163A4F] py-4 px-16 lg:block hidden">
+            <button className="text-white font-Montserrat text-2xl font-bold border-[#50EED7] border-[2px] rounded-full bg-[#163A4F] py-4 px-16 lg:block hidden hover:bg-transparent transition-all">
               Dashboard
             </button>
           </div>
@@ -146,7 +146,7 @@ const Header = () => {
                       src="/assets/images/svg/FooterLogo.svg"
                       alt="about image"
                     />
-                    <div className="ms-3">
+                    <div className="ms-3 sm:block hidden">
                       <p className="mb-0 text-3xl text-white font-bold lh_normal font-Montserrat tracking-[3.3px]">
                         IMPULSE
                       </p>
@@ -183,8 +183,8 @@ const Header = () => {
                 </div>
                 <div className="relative group inline-block text-left mt-16">
                   {/* Dropdown button */}
-                  <button className="text-white font-semibold tracking-[-0.38px] flex items-center leading-[150%] font-Montserrat text-2xl">
-                    Products{" "}
+                  <button className="text-white font-semibold tracking-[-0.38px] flex items-center leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200">
+                    Products
                     <Image
                       width={15}
                       height={10}
@@ -200,7 +200,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="#"
-                          className="block px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl"
+                          className="hover:opacity-70 transition-all ease-in-out duration-200 block px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl"
                         >
                           Item 1
                         </Link>
@@ -208,7 +208,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="#"
-                          className="block px-4 text-white font-semibold tracking-[-0.38px] my-4 leading-[150%] font-Montserrat text-2xl"
+                          className="block hover:opacity-70 transition-all ease-in-out duration-200 px-4 text-white font-semibold tracking-[-0.38px] my-4 leading-[150%] font-Montserrat text-2xl"
                         >
                           Item 2
                         </Link>
@@ -216,7 +216,7 @@ const Header = () => {
                       <li>
                         <Link
                           href="#"
-                          className="block px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl"
+                          className="block hover:opacity-70 transition-all ease-in-out duration-200 px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl"
                         >
                           Item 3
                         </Link>
@@ -226,23 +226,23 @@ const Header = () => {
                 </div>
                 <Link
                   href="#"
-                  className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl pt-9"
+                  className="text-white hover:opacity-70 transition-all ease-in-out duration-200 font-semibold tracking-[-0.38px]  font-Montserrat text-2xl pt-9"
                 >
                   FAQ
                 </Link>
                 <Link
                   href="#"
-                  className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl py-9"
+                  className="text-white hover:opacity-70 transition-all ease-in-out duration-200 font-semibold tracking-[-0.38px]  font-Montserrat text-2xl py-9"
                 >
                   About Us
                 </Link>
                 <Link
                   href="#"
-                  className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl"
+                  className="text-white hover:opacity-70 transition-all ease-in-out duration-200 font-semibold tracking-[-0.38px]  font-Montserrat text-2xl"
                 >
                   Pricing
                 </Link>
-                <button className="text-white font-Montserrat text-2xl font-bold border-[#50EED7] border-[2px] rounded-full bg-[#163A4F] py-4 px-16 mt-9">
+                <button className="text-white font-Montserrat text-2xl font-bold border-[#50EED7] border-[2px] rounded-full bg-[#163A4F] py-4 px-16 mt-9 hover:bg-transparent transition-all">
                   Dashboard
                 </button>
               </div>

@@ -51,7 +51,7 @@ const ImpulseFooter = () => {
                         <li>
                           <Link
                             href="#"
-                            className=" text-[#8888B1] font-Montserrat text-xl font-medium lh_normal pt-2"
+                            className=" text-[#8888B1] font-Montserrat text-xl font-medium lh_normal pt-2 hover:text-white transition-all ease-in-out duration-200"
                           >
                             {footer.option1}
                           </Link>
@@ -59,7 +59,7 @@ const ImpulseFooter = () => {
                         <li>
                           <Link
                             href="#"
-                            className=" inline-block text-[#8888B1] font-Montserrat text-xl font-medium lh_normal pt-2"
+                            className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat text-xl font-medium lh_normal pt-2"
                           >
                             {footer.option2}
                           </Link>
@@ -67,7 +67,7 @@ const ImpulseFooter = () => {
                         <li>
                           <Link
                             href="#"
-                            className=" inline-block text-[#8888B1] font-Montserrat text-xl font-medium lh_normal pt-2"
+                            className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat text-xl font-medium lh_normal pt-2"
                           >
                             {footer.option3}
                           </Link>
@@ -75,7 +75,7 @@ const ImpulseFooter = () => {
                         <li>
                           <Link
                             href="#"
-                            className="inline-block text-[#8888B1] font-Montserrat text-xl font-medium lh_normal pt-2"
+                            className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat text-xl font-medium lh_normal pt-2"
                           >
                             {footer.option4}
                           </Link>
