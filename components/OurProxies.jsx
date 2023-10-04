@@ -54,7 +54,6 @@ const OurProxies = () => {
           </button>
         </div>
       </div>
-    </div>
   );
 };
 
