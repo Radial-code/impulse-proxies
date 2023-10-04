@@ -13,7 +13,7 @@ const Hero = () => {
               <h1 className="lg:text-[55px] xl:text-8xl md:text-[45px] text-[35px] tracking-[-2%] text-white leading-[118%]">
                 Elevate your
                 <span className="lg:block lg:whitespace-nowrap">
-                  <span className="text-cyan-green mx-2">success</span>with our
+                  <span className="text-cyan-green me-2">success</span>with our
                 </span>
                 Proxies
               </h1>

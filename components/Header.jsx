@@ -242,7 +242,7 @@ const Header = () => {
                 </Link>
               </div>
               <div className="hidden lg:block">
-                <div className="flex gap-4 xl:gap-5 items-center">
+                <div className="flex lg:gap-9 items-center">
                   <div className="relative group inline-block text-left">
                     {/* Dropdown button */}
                     <button className="text-white font-semibold tracking-[-0.38px] flex items-center leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200">
