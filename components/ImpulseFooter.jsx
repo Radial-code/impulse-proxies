@@ -29,7 +29,7 @@ const ImpulseFooter = () => {
                   </p>
                 </div>
               </div>
-              <p className=" text-white text-md font-medium font-Montserrat opacity-70 lg:max-w-[290px] leading-[192%]">
+              <p className=" text-white text-md font-medium font-Montserrat opacity-70 lg:max-w-[280px] leading-[192%]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor. Lorem ipsum dolor
               </p>
@@ -44,7 +44,7 @@ const ImpulseFooter = () => {
                     >
                       <ul>
                         <li className={`sm:pt-0 ${footer.padding}`}>
-                          <p className=" inline-block text-white font-Montserrat text-xl font-semibold lh_normal">
+                          <p className=" inline-block mb-2 text-white font-Montserrat text-xl font-semibold lh_normal">
                             {footer.heading}
                           </p>
                         </li>

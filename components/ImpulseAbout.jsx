@@ -53,7 +53,7 @@ const ImpulseAbout = () => {
                     </div>
                     <div className="sm:flex hidden flex-col items-center  justify-between sm:pt-2">
                       <span className="">
-                        <Link href="https://twitter.com/">
+                        <Link href="https://twitter.com/" target="blank">
                           <ImpulseTweeter />
                         </Link>
                       </span>
@@ -71,7 +71,7 @@ const ImpulseAbout = () => {
                   </div>
                   <div className="flex sm:hidden items-center  justify-between sm:pt-2">
                     <span className="">
-                      <Link href="https://twitter.com/">
+                      <Link href="https://twitter.com/" target="blank">
                         <ImpulseTweeter />
                       </Link>
                     </span>
