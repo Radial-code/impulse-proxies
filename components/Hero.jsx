@@ -15,7 +15,7 @@ const Hero = () => {
                 <span className="text-cyan-green mx-2">success</span>with our
                 Proxies
               </h1>
-              <p className="mt-4 text-2xl font-normal font-Montserrat text-dark-gray leading-[150%]">
+              <p className="mt-4 text-2xl font-normal text-dark-gray leading-[150%]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt
               </p>
@@ -23,7 +23,7 @@ const Hero = () => {
                 <button className=" hover:bg-transparent transition-all max-w-[197px] w-full min-h-[55px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-10">
                   Purchase
                 </button>
-                <button className=" hover:bg-transparent transition-all max-w-[197px] w-full min-h-[55px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-10">
+                <button className="ms-4 hover:bg-transparent transition-all max-w-[197px] w-full min-h-[55px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-10">
                   Explore Products
                 </button>
               </div>

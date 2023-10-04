@@ -15,10 +15,10 @@ const Current = () => {
                   key={data.id}
                   className="lg:w-3/12 md:w-4/12 sm:w-6/12 w-full"
                 >
-                  <p className="text-white text-center font-TT_interfaces font-bold leading-[136%] tracking-[-1px] text-7xl">
+                  <p className="text-white text-center  font-bold leading-[136%] tracking-[-1px] text-7xl">
                     {data.number}
                   </p>
-                  <p className="text-center text-[#9898A3] text-2xl font-semibold leading-[157%] font-TT_interfaces">
+                  <p className="text-center text-[#9898A3] text-2xl font-semibold leading-[157%] ">
                     {data.current}
                   </p>
                 </div>

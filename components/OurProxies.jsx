@@ -15,7 +15,7 @@ const OurProxies = () => {
         <h2 className=" font-Montserrat text-6xl text-white font-bold leading-[121%] mx-auto text-start mb-4">
           Our <span className="text-[#50EED7]">Proxies</span>
         </h2>
-        <p className=" font-semibold text-2xl font-TT_Interfaces text-[#9898A3] max-w-[380px] lg:mx-0 text-start">
+        <p className=" font-semibold text-2xl  text-[#9898A3] max-w-[380px] lg:mx-0 text-start">
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
         <div className="flex justify-center flex-wrap  lg:flex-nowrap lg:gap-9 sm:mt-8 mt-6 max-w-[1200px]">

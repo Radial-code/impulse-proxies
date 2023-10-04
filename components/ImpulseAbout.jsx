@@ -17,7 +17,7 @@ const ImpulseAbout = () => {
         <p className=" font-Montserrat text-6xl text-white font-bold leading-[121%]">
           About <span className="text-[#50EED7]">Us</span>
         </p>
-        <p className="font-TT_Interfaces text-[#9898A3] leading-[157%] font-semibold text-2xl max-w-[380px] sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 pb-3">
+        <p className=" text-[#9898A3] leading-[157%] font-semibold text-2xl max-w-[380px] sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 pb-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
         <div className="flex lg:flex-nowrap justify-center flex-wrap lg:gap-6 sm:pb-24 pb-12 sm:mb-0 mb-3 lg:mt-10">
