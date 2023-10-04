@@ -6,10 +6,14 @@ import Head from "next/head";
 import ImpulseFooter from "@/components/ImpulseFooter";
 import OurProxies from "@/components/OurProxies";
 import WhyToChooseUs from "@/components/WhyToChooseUs";
+import BackToTopButton from "@/components/common/BackToTopButton ";
+import Preloader from "@/components/common/Preloader";
 export default function Home() {
   return (
     <>
       <div className="overflow-hidden">
+        <BackToTopButton />
+        <Preloader />
         {/* <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 relative"></div> */}
         <Head>
           <title>Impulse Proxies</title>
