@@ -5,7 +5,7 @@ function WhyToChooseUs() {
   return (
     <div className=" pt-10 pb-28 bg-[#141436] relative">
       <Image
-      className=" absolute bottom-[-66px] right-[55px]"
+      className=" absolute bottom-[-66px] right-[55px] z-10"
         height={126}
         width={145}
         src="/assets/images/svg/Abstract-02.svg"
@@ -27,11 +27,7 @@ function WhyToChooseUs() {
             return (
               <div
                 key={CardData.id}
-<<<<<<< HEAD
-                className={` w-full mt-6 lg:mt-0 md:w-6/12 lg:w-4/12 px-3 lg:px-0 ${CardData.border}`}
-=======
                 className={` w-full mt-6 lg:mt-0 md:w-6/12 lg:w-4/12 ${CardData.border}`}
->>>>>>> 3b53d56f42638ea3eea1577d10656aed33c439a8
               >
                 <div className=" lg:max-w-[363px] max-w-[348px] mx-auto h-full p-[30px] rounded-[30px] border-[2px] border-[#50EED7] bg-[#204056]">
                   <div className=" flex gap-3 items-center">
