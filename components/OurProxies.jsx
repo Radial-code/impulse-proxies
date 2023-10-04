@@ -20,7 +20,7 @@ const OurProxies = () => {
         </p>
         <div className="flex justify-center flex-wrap  lg:flex-nowrap lg:gap-9 sm:mt-8 mt-6 max-w-[1200px]">
           <div className="flex  flex-wrap  lg:flex-nowrap lg:gap-9 mt-8">
-            <div className=" border-[2px] border-[#505062] rounded-[20px] px-8 py-7 max-w-[348px] mx-auto">
+            <div className="hover:translate-y-[-10px] transition-all duration-200 ease-in-out border-[2px] border-[#505062] rounded-[20px] px-8 py-7 max-w-[348px] mx-auto">
               <h5 className="font-bold  font-Montserrat text-2xl text-white">
                 <span className="text-[#50EED7]"> ISP </span>Proxies
               </h5>
@@ -29,7 +29,7 @@ const OurProxies = () => {
                 eiusmod tempor
               </p>
             </div>
-            <div className=" border-[2px] border-[#505062] rounded-[20px] px-8 py-7 max-w-[348px] mx-auto mt-6 md:mt-0">
+            <div className="hover:translate-y-[-10px] transition-all duration-200 ease-in-out border-[2px] border-[#505062] rounded-[20px] px-8 py-7 max-w-[348px] mx-auto mt-6 md:mt-0">
               <h5 className="font-bold  font-Montserrat text-2xl text-white">
                 <span className="text-[#50EED7]"> Datacenter </span> Proxies
               </h5>
@@ -38,7 +38,7 @@ const OurProxies = () => {
                 eiusmod tempor
               </p>
             </div>
-            <div className=" border-[2px] border-[#505062] rounded-[20px] px-8 py-7 max-w-[348px] mx-auto mt-6 lg:mt-0">
+            <div className="hover:translate-y-[-10px] transition-all duration-200 ease-in-out border-[2px] border-[#505062] rounded-[20px] px-8 py-7 max-w-[348px] mx-auto mt-6 lg:mt-0">
               <h5 className="font-bold  font-Montserrat text-2xl text-white">
                 <span className="text-[#50EED7]"> Residential </span> Proxies
               </h5>
