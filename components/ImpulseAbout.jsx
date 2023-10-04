@@ -5,7 +5,7 @@ import { AboutBox } from "./common/Helper";
 import Image from "next/image";
 const ImpulseAbout = () => {
   return (
-    <div className="bg-[#141436] pt-24 relative z-10 relative">
+    <div className="bg-[#141436] pt-24 z-10 relative">
       <Image
         src="/assets/images/svg/aboutTop.svg"
         alt="aboutTop"
