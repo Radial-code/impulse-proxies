@@ -6,7 +6,7 @@ import { Discord, Ques, Slack, Spotify } from "./common/Icons";
 const Current = () => {
   return (
     <>
-      <div className="currentBg border-[1px] border-[#1F374F] py-7 ms-[-10px] me-[-10px]">
+      <div className="currentBg border-[1px] border-[#1F374F] sm:py-7 py-11 ms-[-10px] me-[-10px]">
         <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3">
           <div className="flex flex-wrap justify-around sm:gap-0 gap-4">
             {CurrentData.map((data) => {
