@@ -5,13 +5,13 @@ import { AboutBox } from "./common/Helper";
 import Image from "next/image";
 const ImpulseAbout = () => {
   return (
-    <div className="bg-[#141436] sm:pt-24 pt-11 z-10 relative">
+    <div id="AboutUs" className="bg-[#141436] sm:pt-24 pt-11 z-10 relative">
       <Image
         src="/assets/images/svg/aboutTop.svg"
         alt="aboutTop"
         width={144}
         height={122}
-        className="absolute left-28 lg:top-[-10%] sm:top-[-14%] top-[-9%] text-3xl sm:w-[144px] w-[100px] sm:h-[122px] h-[100px]"
+        className="absolute left-0 lg:left-28 lg:top-[-10%] sm:top-[-8%] top-[-9%] text-3xl sm:w-[144px] w-[100px] sm:h-[122px] h-[100px]"
       />
       <div className="container xl:max-w-[1140px] flex flex-col 2xl:max-w-[1320px] mx-auto px-3 relative">
         <p className=" font-Montserrat sm:text-6xl text-[30px] text-white font-bold leading-[121%]">
