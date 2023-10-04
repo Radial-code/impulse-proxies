@@ -11,14 +11,17 @@ const Current = () => {
           <div className="flex flex-wrap justify-around sm:gap-0 gap-4">
             {CurrentData.map((data) => {
               return (
-                <div key={data.id} className="lg:w-3/12 md:w-4/12 sm:w-6/12 w-full">
+                <div
+                  key={data.id}
+                  className="lg:w-3/12 md:w-4/12 sm:w-6/12 w-full"
+                >
                   <p className="text-white text-center font-TT_interfaces font-bold leading-[136%] tracking-[-1px] text-7xl">
                     {data.number}
                   </p>
                   <p className="text-center text-[#9898A3] text-2xl font-semibold leading-[157%] font-TT_interfaces">
                     {data.current}
                   </p>
-                </div> 
+                </div>
               );
             })}
           </div>
@@ -27,16 +30,20 @@ const Current = () => {
             TRUSTED BY OUR PARTNERS
           </p>
           <div className="flex items-center justify-center mt-4">
-            <Link href="https://slack.com/">
+            <Link href="https://slack.com/" target="blank">
               <Slack />
             </Link>
-            <Link href="https://slack.com/" className="ms-7">
+            <Link href="https://www.quora.com/" className="ms-7" target="blank">
               <Ques />
             </Link>
-            <Link href="https://discord.com/" className="ms-7">
+            <Link href="https://discord.com/" className="ms-7" target="blank">
               <Discord />
             </Link>
-            <Link href="https://open.spotify.com/" className="ms-7">
+            <Link
+              href="https://open.spotify.com/"
+              className="ms-7"
+              target="blank"
+            >
               <Spotify />
             </Link>
           </div>
