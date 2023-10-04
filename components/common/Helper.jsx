@@ -61,7 +61,6 @@ export const Accordian = [
     para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur",
   },
 ];
-<<<<<<< HEAD
 export const CardData = [
   {
     id: 1,
@@ -83,11 +82,8 @@ export const CardData = [
   },
 
 ];
-
-=======
 export const CurrentData = [
   { id: 1, number: "3,234,199", current: "Current Active IPs" },
   { id: 2, number: "1,500+s", current: "Loyal Impulse Users" },
   { id: 3, number: "20,434 GB", current: "Current Proxy Usage" },
 ];
->>>>>>> 93363d31e06d8b3585e863e075a875dbd90a49bd
