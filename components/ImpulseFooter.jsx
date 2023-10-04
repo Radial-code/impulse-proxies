@@ -93,10 +93,18 @@ const ImpulseFooter = () => {
               Reserved
             </p>
             <div className=" flex items-center gap-4">
-              <Link href="https://twitter.com/">
+              <Link
+                href="https://twitter.com/"
+                target="blank"
+                className="hover:translate-y-[-10px] transition-all duration-200 ease-in-out"
+              >
                 <ImpulseTweeter />
               </Link>
-              <Link href="https://discord.com/">
+              <Link
+                href="https://discord.com/"
+                target="blank"
+                className="hover:translate-y-[-10px] transition-all duration-200 ease-in-out"
+              >
                 <FooterDiscord />
               </Link>
             </div>

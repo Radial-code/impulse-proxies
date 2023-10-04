@@ -8,8 +8,8 @@ const Hero = () => {
       <div className="h-screen header_bg_img flex flex-col justify-center">
         <Header />
         <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 h-full flex-1 flex items-center">
-          <div className="flex items-center justify-between h-full">
-            <div className="w-5/12">
+          <div className="flex items-center justify-between h-full flex-wrap lg:flex-nowrap">
+            <div className="lg:w-5/12 w-full">
               <h1 className="text-8xl tracking-[-2%] text-white leading-[118%]">
                 Elevate your
                 <span className="text-cyan-green mx-2">success</span>with our
@@ -28,10 +28,10 @@ const Hero = () => {
                 </button>
               </div>
             </div>
-            <div className="w-9/12">
+            <div className="lg:w-9/12 w-full">
               <Image
-                height={1097}
                 width={1190}
+                height={1190}
                 src="/assets/images/webp/hero-img.webp"
                 alt="hero-image"
               />
