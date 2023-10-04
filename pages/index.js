@@ -18,7 +18,6 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
           {/* meta tags */}
           {/* <!-- Primary Meta Tags --> */}
-          <title>Elevate your success with our Proxies</title>
           <meta name="title" content="Elevate your success with our Proxies" />
           <meta
             name="description"
