@@ -4,7 +4,16 @@
     background-size: cover;
     border: 30px solid; 
 }
+.header_bg_img{
+   background: url(/assets/images/png/Hero_bg_img.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
 .our_proxies_box {
   background: radial-gradient(41.85% 211.48% at 47.38% 79.56%, #50EED7 0%, rgba(80, 238, 215, 0) 100%)
   ;
+}
+.box_showdow{
+  background: linear-gradient(180deg, #50EED7 0%, #7BECF3 100%);
+
 }
