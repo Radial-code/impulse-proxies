@@ -5,9 +5,9 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <>
-      <div className="h-screen header_bg_img">
-        <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 h-full">
-          <Header />
+      <div className="h-screen header_bg_img flex flex-col justify-center">
+        <Header />
+        <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 h-full flex-1 flex items-center">
           <div className="flex items-center justify-between h-full">
             <div className="w-5/12">
               <h1 className="text-8xl tracking-[-2%] text-white leading-[118%]">
@@ -21,11 +21,11 @@ const Hero = () => {
               </p>
               <div className="">
                 <button className=" hover:bg-transparent transition-all max-w-[197px] w-full min-h-[55px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-10">
-            Purchase
-          </button>
-             <button className=" hover:bg-transparent transition-all max-w-[197px] w-full min-h-[55px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-10">
-            Explore Products
-          </button>
+                  Purchase
+                </button>
+                <button className=" hover:bg-transparent transition-all max-w-[197px] w-full min-h-[55px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-10">
+                  Explore Products
+                </button>
               </div>
             </div>
             <div className="w-9/12">
