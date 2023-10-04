@@ -3,7 +3,7 @@ import Image from "next/image";
 const OurProxies = () => {
   return (
     <div className="pt-[52px] lg:pt-[105px] pb-20 md:pb-[106px] lg:pb-[153px]  bg-[#040426] relative">
-      <div className="our_proxies_box h-10 opacity-10 w-full max-w-[800px] mx-auto absolute top-[21px] left-[27%]"></div>
+      <div className="our_proxies_box h-10 opacity-10 w-full max-w-[800px] mx-auto absolute top-3 lg:top-[21px] lg:left-[27%]"></div>
       <div className="box_showdow absolute w-full max-w-[1190px] h-[200px] bottom-0"></div>
       <Image
         width={144}
