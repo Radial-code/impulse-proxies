@@ -34,7 +34,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   return (
     <>
       <div
-        className={`fixed ps-4 items-start lg:hidden bg-black top-0 h-full flex flex-col pb-4 pt-24 transition-all duration-200 ease-in z-[100] w-full sm:max-w-[50%] ${
+        className={`fixed ps-4 items-start lg:hidden bg-[#204056] top-0 h-full flex flex-col pb-4 pt-24 transition-all duration-200 ease-in z-[100] w-full sm:max-w-[50%] ${
           activeNavOverlay ? "left-0" : "-left-full"
         }`}
       >
