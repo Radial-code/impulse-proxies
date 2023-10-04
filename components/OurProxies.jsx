@@ -48,7 +48,7 @@ const OurProxies = () => {
                 eiusmod tempor
               </p>
             </div>
-      
+  
         </div>
         <div className=" flex justify-center md:justify-start lg:justify-center relative">
           <button className=" max-w-[197px] w-full min-h-[55px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-10">
