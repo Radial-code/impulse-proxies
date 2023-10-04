@@ -8,7 +8,7 @@ const OurProxies = () => {
         <Image 
          width={144}
           height={122}
-        className=" w-full absolute bottom-[-65%]"
+        className=" w-full absolute bottom-[-29%]"
          src="/assets/images/svg/Group_bg.svg"
          alte="Group_bg"
          />
