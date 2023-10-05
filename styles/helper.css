@@ -1,32 +1,39 @@
 .proxies_box {
-  background: radial-gradient(41.85% 211.48% at 47.38% 79.56%, #50EED7 0%, rgba(80, 238, 215, 0) 100%)
-  ;
+  background: radial-gradient(
+    41.85% 211.48% at 47.38% 79.56%,
+    #50eed7 0%,
+    rgba(80, 238, 215, 0) 100%
+  );
 }
-.box_showdow{
-  background: linear-gradient(180deg, #50EED7 0%, #7BECF3 100%);
+.box_showdow {
+  background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
 }
-.bg_current{
-  background: linear-gradient(348.83deg, #141436 -2.09%, #1E1F3E 120.28%),
-radial-gradient(86.74% 170.14% at 52.35% 13.26%, rgba(79, 220, 199, 0.5) 0%, rgba(79, 220, 199, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+.bg_current {
+  background: linear-gradient(348.83deg, #141436 -2.09%, #1e1f3e 120.28%),
+    radial-gradient(
+        86.74% 170.14% at 52.35% 13.26%,
+        rgba(79, 220, 199, 0.5) 0%,
+        rgba(79, 220, 199, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+.back_to_top {
+  animation: top-btn infinite linear 2s;
+}
 
-}
- .back_to_top {
-   animation: top-btn infinite linear 2s;
- }
-
- @keyframes top-btn {
-   50% {
-     transform: translateY(-10px);
-   }
-    100% {
-      transform: translateY(0px);
-    }
+@keyframes top-btn {
+  50% {
+    transform: translateY(-10px);
   }
-@media (min-width:1620px) {
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media (min-width: 1620px) {
   .rocket_img {
-bottom: -56% !important;
+    bottom: -56% !important;
   }
-  .aboutTop{
+  .aboutTop {
     left: 220px !important;
   }
 }
