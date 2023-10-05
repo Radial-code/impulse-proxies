@@ -11,13 +11,6 @@
 .faqBg {
   background-image: url(../public/assets/images/png/FAQbg.png);
 }
-.currentBg::after {
-  background: linear-gradient(
-    349deg,
-    rgba(20, 20, 54, 0.24) -2.09%,
-    rgba(30, 31, 62, 0.24) 120.28%
-  );
-}
 .bgHeroImg::after {
   background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
 }
