@@ -17,14 +17,14 @@ function WhyToChooseUs() {
           <h2 className="font-Montserrat sm:text-6xl text-[35px] text-white font-bold leading-[121%] text-center tracking-[-0.64px]">
             Why to choose <span className="text-[#50EED7]">us</span>
           </h2>
-          <div className="flex justify-center flex-wrap  lg:flex-nowrap lg:gap-9 sm:mt-8 mt-3">
+          <div className="flex justify-center flex-wrap 2xl:gap-0 lg:gap-5  lg:flex-nowrap sm:mt-8 mt-3">
             {CardData.map((CardData) => {
               return (
                 <div
                   key={CardData.id}
-                  className={` w-full mt-6 lg:mt-0 md:w-6/12 lg:w-4/12 ${CardData.border}`}
+                  className={` w-full mt-6 lg:mt-0 md:w-6/12  lg:w-4/12 ${CardData.border}`}
                 >
-                  <div className=" lg:max-w-[363px] hover:translate-y-[-10px] transition-all duration-200 ease-in-out max-w-[348px] mx-auto h-full md:p-[30px] p-[20px] rounded-[30px] border-[2px] border-[#50EED7] bg-[#204056]">
+                  <div className=" 2xl:max-w-[393px] lg:max-w-[380px] hover:translate-y-[-10px] transition-all duration-200 ease-in-out max-w-[348px] mx-auto h-full md:p-[30px] p-[20px] rounded-[30px] border-[2px] border-[#50EED7] bg-[#204056]">
                     <div className=" flex gap-3 items-center">
                       <h5 className="font-bold leading-[140%] font-Montserrat text-2xl text-white">
                         {CardData.heading}
