@@ -10,9 +10,9 @@ const OurProxies = () => {
         height={122}
         className="absolute bottom-[-58px] md:bottom-[-13%]  lg:bottom-[-20%] xl:bottom-[-42%] 2xl:bottom-[-45%] w-full"
         src="/assets/images/svg/rocket-bg-img.svg"
-        alte="Group_bg" 
+        alte="Group_bg"
       />
-      <div className="container xl:max-w-[1140px] flex flex-col 2xl:max-w-[1320px] mx-auto px-3">
+      <div className="container xl:max-w-[1220px] flex flex-col 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
         <h2 className=" font-Montserrat text-6xl text-white font-bold leading-[121%]text-start mb-4 mx-auto md:mx-0">
           Our <span className="text-[#50EED7]">Proxies</span>
         </h2>

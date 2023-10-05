@@ -7,7 +7,7 @@ const Current = () => {
   return (
     <>
       <div className="currentB bg-[#142541] relative after:contents-[''] after:absolute after:w-full border-[1px] border-[#1F374F] sm:pb-7 sm:pt-14 py-11 ms-[-10px] me-[-10px]">
-        <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3">
+        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <div className="flex flex-wrap justify-around">
             {CurrentData.map((data) => {
               return (

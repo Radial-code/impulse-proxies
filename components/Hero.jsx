@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       <Header />
       <div className="hero-section header_bg_img flex flex-col justify-center">
-        <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 h-full flex-1 flex items-center">
+        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 h-full flex-1 flex items-center">
           <div className="flex items-center justify-between h-full flex-wrap lg:flex-nowrap">
             <div className="xl:w-5/12 md:w-6/12 w-full">
               <h1 className="lg:text-[55px] xl:text-8xl md:text-[45px] text-[35px] tracking-[-2%] text-white leading-[118%]">
