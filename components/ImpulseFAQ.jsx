@@ -1,20 +1,15 @@
 import React, { useState } from "react";
 import { Accordian } from "./common/Helper";
 import Image from "next/image";
-
 const ImpulseFAQ = () => {
   const [openAccordionIndex, setOpenAccordionIndex] = useState(null);
-
   const toggleAccordion = (index) => {
     if (index === openAccordionIndex) {
-      // Clicked on an open accordion, so close it
       setOpenAccordionIndex(null);
     } else {
-      // Clicked on a closed accordion, so open it
       setOpenAccordionIndex(index);
     }
   };
-
   return (
     <div
       id="Faqs"
@@ -38,8 +33,6 @@ const ImpulseFAQ = () => {
         <p className="text-center lg:text-6xl md:text-[35px] text-[25px] text-white font-Montserrat font-bold leading-[121%] tracking-[-0.74px] sm:mb-12 mb-7">
           Frequently Asked Questions
         </p>
-
-        {/* ... (your other code remains the same) */}
         <div className="w-full max-w-[694px] mx-auto">
           {Accordian.map((data, index) => {
             const isOpen = index === openAccordionIndex;

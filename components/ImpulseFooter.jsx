@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-// import footerLogo from "../assets/impulseImg/FooterLogo.svg";
 import { FooterImpluse } from "./common/Helper";
 import { FooterDiscord, ImpulseTweeter } from "./common/Icons";
 import Image from "next/image";

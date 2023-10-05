@@ -2,7 +2,6 @@ import React from "react";
 import { CurrentData } from "./common/Helper";
 import Link from "next/link";
 import { Discord, Ques, Slack, Spotify } from "./common/Icons";
-
 const Current = () => {
   return (
     <>

@@ -3,11 +3,9 @@ import MobileNav from "./MobileNav";
 import Link from "next/link";
 import { HeaderCrossIcons, ToggleIcon } from "./common/Icons";
 import Image from "next/image";
-
 const Header = () => {
   const [activeNavOverlay, setActiveNavOverlay] = useState(false);
   const [isToggleIconVisible, setIsToggleIconVisible] = useState(true);
-
   useEffect(() => {
     if (activeNavOverlay) {
       document.body.classList.add("overflow-y-hidden");
@@ -63,7 +61,6 @@ const Header = () => {
                         src="/assets/images/svg/productArrow.svg"
                       />
                     </button>
-
                     {/* Dropdown menu */}
                     <div className="top-[20px] py-3 overflow-hidden absolute right-0 mt-2 w-28 bg-[#040426] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out border-[1px] border-white">
                       <ul>
@@ -116,7 +113,6 @@ const Header = () => {
                   </Link>
                 </div>
               </div>
-
               <div className="hidden lg:flex items-center">
                 <button className="text-white font-Montserrat w-[197px] text-2xl font-bold border-cyan-green border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]">
                   Dashboard
