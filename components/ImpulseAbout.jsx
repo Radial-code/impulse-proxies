@@ -7,7 +7,7 @@ const ImpulseAbout = () => {
   return (
     <div id="AboutUs" className="bg-[#141436] sm:pt-24 pt-11 z-10 relative">
       <Image
-        src="/assets/images/svg/aboutTop.svg"
+        src="/assets/images/svg/Abstract-01.svg"
         alt="aboutTop"
         width={144}
         height={122}

@@ -24,7 +24,7 @@ const OurProxies = () => {
             <h5 className="font-bold  font-Montserrat text-2xl text-white">
               <span className="text-cyan-green"> ISP </span>Proxies
             </h5>
-            <p className=" font-medium text-md font-Montserrat text-white opacity-70 max-w-[316px] mt-2">
+            <p className=" font-medium text-md font-Montserrat text-white opacity-70 max-w-[316px] 2xl:max-w-[315px] mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor
             </p>
@@ -33,7 +33,7 @@ const OurProxies = () => {
             <h5 className="font-bold  font-Montserrat text-2xl text-white">
               <span className="text-cyan-green"> Datacenter </span> Proxies
             </h5>
-            <p className=" font-medium text-md font-Montserrat text-white opacity-70 max-w-[316px] mt-2">
+            <p className=" font-medium text-md font-Montserrat text-white opacity-70 max-w-[316px] 2xl:max-w-[315px] mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor
             </p>
@@ -42,7 +42,7 @@ const OurProxies = () => {
             <h5 className="font-bold  font-Montserrat text-2xl text-white">
               <span className="text-cyan-green"> Residential </span> Proxies
             </h5>
-            <p className=" font-medium text-md font-Montserrat text-white opacity-70 max-w-[316px] mt-2">
+            <p className=" font-medium text-md font-Montserrat text-white opacity-70 max-w-[316px] 2xl:max-w-[315px] mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor
             </p>
