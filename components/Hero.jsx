@@ -39,7 +39,7 @@ const Hero = () => {
                 height={900}
                 src="/assets/images/png/heroImg.png"
                 alt="hero-image"
-                className="relative z-10"
+                className="relative z-10 w-full 2xl:h-[500px] xl:h-[500px] xl:max-w-[650px]"
               />
               <div className="md:hidden flex sm:mb-0 mb-5 items-center justify-center">
                 <button className=" hover:bg-transparent transition-all max-w-[197px] w-full min-h-[55px] border-[2px] border-cyan-green bg-[#163D51] rounded-[100px] font-Montserrat font-semibold sm:text-2xl text-[15px] text-white mt-10">
