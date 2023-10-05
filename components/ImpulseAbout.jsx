@@ -14,10 +14,10 @@ const ImpulseAbout = () => {
         className="absolute left-0 lg:left-28 lg:top-[-10%] sm:top-[-8%] top-[-9%] text-3xl sm:w-[144px] w-[100px] sm:h-[122px] h-[100px] aboutTop"
       />
       <div className="container xl:max-w-[1220px] flex flex-col 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 relative">
-        <p className=" font-Montserrat sm:text-6xl text-[30px] text-white font-bold leading-[121%]">
+        <p className=" font-Montserrat sm:text-6xl text-[30px] text-white font-bold leading-[121%] text-center lg:text-start">
           About <span className="text-cyan-green">Us</span>
         </p>
-        <p className=" text-dark-gray leading-[157%] font-semibold sm:text-2xl text-[18px] max-w-[380px] sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 pb-3">
+        <p className=" text-dark-gray leading-[157%] font-semibold sm:text-2xl text-[18px] max-w-[380px] sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 pb-3 text-center lg:text-start mx-auto lg:mx-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
         <div className="flex lg:flex-nowrap justify-center flex-wrap lg:gap-6 sm:pb-24 pb-12 sm:mb-0 mb-3 lg:mt-10">

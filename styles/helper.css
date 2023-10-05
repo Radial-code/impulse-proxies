@@ -1,26 +1,23 @@
-.Our_Proxies_bg_img{
-    background: url(/assets/images/png/Our_Proxies_img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 30px solid; 
-}
-.header_bg_img{
-   background: url(/assets/images/png/Hero_bg_img.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-}
-.our_proxies_box {
+.proxies_box {
   background: radial-gradient(41.85% 211.48% at 47.38% 79.56%, #50EED7 0%, rgba(80, 238, 215, 0) 100%)
   ;
 }
 .box_showdow{
-  border-radius: 40px;
-  opacity: 0.2;
   background: linear-gradient(180deg, #50EED7 0%, #7BECF3 100%);
-  filter: blur(150px);
-
 }
 
+ .back_to_top {
+   animation: top-btn infinite linear 2s;
+ }
+
+ @keyframes top-btn {
+   50% {
+     transform: translateY(-10px);
+   }
+    100% {
+      transform: translateY(0px);
+    }
+  }
 @media (min-width:1620px) {
   .rocket_img {
 bottom: -56% !important;

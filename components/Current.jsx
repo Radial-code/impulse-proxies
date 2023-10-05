@@ -3,6 +3,7 @@ import { CurrentData } from "./common/Helper";
 import Link from "next/link";
 import { Discord, Ques, Slack, Spotify } from "./common/Icons";
 const Current = () => {
+ 
   return (
     <>
       <div className="currentB bg-[#142541] relative after:contents-[''] after:absolute after:w-full border-[1px] border-[#1F374F] sm:pb-7 sm:pt-14 py-11 ms-[-10px] me-[-10px]">
@@ -11,7 +12,7 @@ const Current = () => {
             {CurrentData.map((data) => {
               return (
                 <div key={data.id} className="md:w-3/12 sm:w-4/12 w-6/12 ">
-                  <p className="text-white text-center font-bold leading-[136%] tracking-[-1px] lg:text-7xl md:text-[38px] text-[30px] sm:mt-0 mt-5">
+                  <p className="text-white text-center font-bold leading-[136%] tracking-[-1px] lg:text-7xl md:text-[38px] text-[30px] sm:mt-0 mt-5 ">
                     {data.number}
                   </p>
                   <p className="text-center text-dark-gray lg:text-2xl text-[15px] font-semibold leading-[157%] ">
