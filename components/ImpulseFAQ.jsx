@@ -18,7 +18,7 @@ const ImpulseFAQ = () => {
   return (
     <div
       id="Faqs"
-      className="faqBg bg-no-repeat bg-cover bg-center md:pt-28 sm:pt-20 pt-12 md:pb-44 sm:pb-22 pb-16  relative overflow-hidden"
+      className=" bg-[url('/assets/images/png/FAQbg.png')] bg-no-repeat bg-cover bg-center  md:pt-28 sm:pt-20 pt-12 md:pb-44 sm:pb-22 pb-16  relative overflow-hidden"
     >
       <Image
         height={223}

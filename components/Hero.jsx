@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <>
       <Header />
-      <div className="hero-section header_bg_img flex flex-col justify-center">
+      <div className="hero-section bg-[url('/assets/images/png/Hero_bg_img.png')] bg-no-repeat bg-cover bg-center flex flex-col justify-center">
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 h-full flex-1 flex items-center">
           <div className="flex items-center justify-between h-full flex-wrap lg:flex-nowrap">
             <div className="xl:w-5/12 md:w-6/12 w-full">
