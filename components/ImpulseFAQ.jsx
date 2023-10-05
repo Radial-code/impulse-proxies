@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Accordian } from "./common/Helper";
 import Image from "next/image";
+import Torus from "./common/Torus";
 const ImpulseFAQ = () => {
   const [openAccordionIndex, setOpenAccordionIndex] = useState(null);
   const toggleAccordion = (index) => {
@@ -13,19 +14,25 @@ const ImpulseFAQ = () => {
   return (
     <div
       id="Faqs"
-      className="faqBg bg-no-repeat bg-cover bg-center md:pt-28 sm:pt-20 pt-12 md:pb-44 sm:pb-22 pb-16  relative overflow-hidden"
+      className=" bg-[url('/assets/images/png/FAQbg.png')] bg-no-repeat bg-cover bg-center  md:pt-28 sm:pt-20 pt-12 md:pb-44 sm:pb-22 pb-16  relative overflow-hidden"
     >
+      <div className="torus-footer absolute pointer-events-none bottom-[-10px] xl:w-[223px]  xl:h-[223px]  lg:w-[123px] lg:h-[123px] start-0 sm:w-[93px] md:w-[173px] md:h-[173px] w-[73px]  sm:h-[93px] h-[100px]">
+        <Torus />
+      </div>
+      <div className="torus-footer pointer-events-none  absolute lg:top-[-3%] sm:top-[-2%] top-[-3%] end-[-7px] lg:end-0 sm:end-[2%] lg:h-[207px] lg:w-[207px] sm:w-[120px] w-[100px]  sm:h-[175px] h-[100px]">
+        <Torus />
+      </div>
       <Image
         height={223}
         width={223}
-        className="absolute bottom-[-10px] xl:w-[223px]  xl:h-[223px]  lg:w-[123px] lg:h-[123px] start-0 sm:w-[93px] md:w-[103px] md:h-[103px] w-[73px]  sm:h-[93px] h-[60px]"
+        className="pointer-events-none absolute bottom-[-10px] xl:w-[203px]  xl:h-[223px]  lg:w-[123px] lg:h-[123px] start-0 sm:w-[93px] md:w-[103px] md:h-[103px] w-[73px]  sm:h-[93px] h-[60px]"
         src="/assets/images/svg/FaqBottom.svg"
         alt="about image"
       />
       <Image
         height={207}
         width={207}
-        className="absolute lg:top-[-15%] sm:top-[-10%] top-[-2%] end-[-10px] lg:end-0 sm:end-[-1%] lg:h-[207px] lg:w-[207px] sm:w-[120px] w-[73px]  sm:h-[175px] h-[60px]"
+        className="pointer-events-none  absolute lg:top-[-15%] sm:top-[-10%] top-[-2%] end-[-10px] lg:end-0 sm:end-[-1%] lg:h-[207px] lg:w-[207px] sm:w-[120px] w-[73px]  sm:h-[175px] h-[60px]"
         src="/assets/images/svg/FaqRight.svg"
         alt="about image"
       />

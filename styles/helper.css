@@ -1,31 +1,83 @@
-.Our_Proxies_bg_img{
-    background: url(/assets/images/png/Our_Proxies_img.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 30px solid; 
+.proxies_box {
+  background: radial-gradient(
+    41.85% 211.48% at 47.38% 79.56%,
+    #50eed7 0%,
+    rgba(80, 238, 215, 0) 100%
+  );
 }
-.header_bg_img{
-   background: url(/assets/images/png/Hero_bg_img.png);
-   background-repeat: no-repeat;
-   background-size: cover;
+.box_showdow {
+  background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
 }
-.our_proxies_box {
-  background: radial-gradient(41.85% 211.48% at 47.38% 79.56%, #50EED7 0%, rgba(80, 238, 215, 0) 100%)
-  ;
+.bg_current {
+  background: linear-gradient(348.83deg, #141436 -2.09%, #1e1f3e 120.28%),
+    radial-gradient(
+        86.74% 170.14% at 52.35% 13.26%,
+        rgba(79, 220, 199, 0.5) 0%,
+        rgba(79, 220, 199, 0) 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
-.box_showdow{
-  border-radius: 40px;
-  opacity: 0.2;
-  background: linear-gradient(180deg, #50EED7 0%, #7BECF3 100%);
-  filter: blur(150px);
+.back_to_top {
+  animation: top-btn infinite linear 2s;
+}
 
-}
-
-@media (min-width:1620px) {
-  .rocket_img {
-bottom: -56% !important;
+@keyframes top-btn {
+  50% {
+    transform: translateY(-10px);
   }
-  .aboutTop{
+  100% {
+    transform: translateY(0px);
+  }
+}
+@media (min-width: 1620px) {
+  .rocket_img {
+    bottom: -56% !important;
+  }
+  .aboutTop {
     left: 220px !important;
+  }
+}
+
+
+/* animation image css */
+.hero_wave_height {
+ height: 100vh;
+}
+
+.hero_wave {
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-clip: border-box;
+  -webkit-mask-image: url("../public/assets/images/svg/Wave.svg");
+  mask-size: 100% 100%;
+  mask-clip: border-box;
+  z-index: 1;
+  max-width: 100%;
+  width: 100%;
+  margin-top: 1.46em;
+  position: relative;
+  left: 0;
+  overflow: hidden;
+}
+
+.grad_bg {
+  background-image: conic-gradient(#ff7fd8,
+      #aa2aff 20%,
+      #557cff 50%,
+      #32d7ff 75%,
+      #97fcff 100%);
+  z-index: -1;
+  filter: blur(20px);
+  position: absolute;
+  top: -364%;
+  bottom: -364%;
+  left: -200%;
+  right: -200%;
+
+  animation: gradient-bg 4s linear infinite;
+}
+
+@keyframes gradient-bg {
+  100% {
+    transform: translate3d(0px, 0px, 0px) rotate(360deg);
   }
 }

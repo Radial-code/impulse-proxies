@@ -91,18 +91,14 @@ const ImpulseFooter = () => {
               © Landsgesell & Graca Costa Solutions GbR {year}, All Rights
               Reserved
             </p>
-            <div className=" flex items-center gap-4">
-              <Link
-                href="https://twitter.com/"
-                target="blank"
-                className="hover:translate-y-[-10px] transition-all duration-300 ease-in-out"
-              >
+            <div className=" flex items-center gap-4 me-20 xl:me-0">
+              <Link href="https://twitter.com/" target="blank">
                 <ImpulseTweeter />
               </Link>
               <Link
                 href="https://discord.com/"
                 target="blank"
-                className="hover:translate-y-[-10px] transition-all duration-300 ease-in-out"
+                className="hover:translate-y-[-5px] transition-all duration-300 ease-in-out"
               >
                 <FooterDiscord />
               </Link>
@@ -110,6 +106,7 @@ const ImpulseFooter = () => {
           </div>
         </div>
       </div>
+      
     </>
   );
 };
