@@ -1,7 +1,23 @@
+* {
+  scroll-behavior: smooth;
+}
 .lh_normal {
   line-height: normal;
 }
-
+.arrowAnimation {
+  animation: arrowAnimat 2s infinite ease-in-out;
+}
+@keyframes arrowAnimat {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(10px, -5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 .linerBorder {
   background: linear-gradient(9deg, #080d2d 0%, #50eed7 190%);
 }

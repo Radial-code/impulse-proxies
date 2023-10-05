@@ -95,14 +95,13 @@ const ImpulseFooter = () => {
               <Link
                 href="https://twitter.com/"
                 target="blank"
-                className="hover:translate-y-[-10px] transition-all duration-300 ease-in-out"
               >
                 <ImpulseTweeter />
               </Link>
               <Link
                 href="https://discord.com/"
                 target="blank"
-                className="hover:translate-y-[-10px] transition-all duration-300 ease-in-out"
+                className="hover:translate-y-[-5px] transition-all duration-300 ease-in-out"
               >
                 <FooterDiscord />
               </Link>
