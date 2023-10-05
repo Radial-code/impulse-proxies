@@ -7,7 +7,7 @@ function WhyToChooseUs() {
       <div className=" w-full h-[50px] chooseBox opacity-10 mx-auto lg:block hidden"></div>
       <div className=" lg:pt-10 lg:pb-28 py-12 bg-[#141436] relative">
         <Image
-          className=" absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] right-[24px] z-10 sm:w-[145px] w-[75px] sm:h-[126px] h-[66px]"
+          className=" absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] right-[24px] z-10 sm:w-[145px] w-[100px] sm:h-[126px] h-[100px]"
           height={126}
           width={145}
           src="/assets/images/svg/Abstract-02.svg"

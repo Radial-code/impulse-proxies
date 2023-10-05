@@ -24,7 +24,7 @@ const Header = () => {
         add
         setActiveNavOverlay={setActiveNavOverlay}
       />
-      <nav className="bg-[#040426] lg:py-6 py-5 border-b-[1px] border-[#222F4A] flex-grow-0">
+      <nav className="bg-[#040426] lg:py-6 sm:py-5 py-4 border-b-[1px] border-[#222F4A] flex-grow-0">
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <div className="flex-1 flex items-center justify-between  lg:items-center xl:mr-3">
             <div className="flex-1 flex items-center justify-between">
@@ -38,12 +38,13 @@ const Header = () => {
                     width={67}
                     src="/assets/images/svg/FooterLogo.svg"
                     alt="about image"
+                    className="sm:w-[67px] sm:h-[67px] w-[40px] h-[40px]"
                   />
                   <div className="ms-3">
-                    <p className="mb-0 text-3xl text-white font-bold lh_normal font-Montserrat tracking-[3.3px]">
+                    <p className="mb-0 sm:text-3xl text-[17px] text-white font-bold lh_normal font-Montserrat tracking-[3.3px]">
                       IMPULSE
                     </p>
-                    <p className="text-xl text-[#22EDCF] font-Montserrat font-medium lh_normal mb-0 tracking-[2.55px]">
+                    <p className="sm:text-xl text-[15px] text-cyan-green font-Montserrat font-medium lh_normal mb-0 tracking-[2.55px]">
                       PROXIES
                     </p>
                   </div>
