@@ -2,12 +2,11 @@ import React from "react";
 import { CurrentData } from "./common/Helper";
 import Link from "next/link";
 import { Discord, Ques, Slack, Spotify } from "./common/Icons";
-
 const Current = () => {
   return (
     <>
       <div className="currentB bg-[#142541] relative after:contents-[''] after:absolute after:w-full border-[1px] border-[#1F374F] sm:pb-7 sm:pt-14 py-11 ms-[-10px] me-[-10px]">
-        <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3">
+        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <div className="flex flex-wrap justify-around">
             {CurrentData.map((data) => {
               return (
@@ -15,7 +14,7 @@ const Current = () => {
                   <p className="text-white text-center font-bold leading-[136%] tracking-[-1px] lg:text-7xl md:text-[38px] text-[30px] sm:mt-0 mt-5">
                     {data.number}
                   </p>
-                  <p className="text-center text-[#9898A3] lg:text-2xl text-[15px] font-semibold leading-[157%] ">
+                  <p className="text-center text-dark-gray lg:text-2xl text-[15px] font-semibold leading-[157%] ">
                     {data.current}
                   </p>
                 </div>

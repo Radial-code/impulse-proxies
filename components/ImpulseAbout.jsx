@@ -7,17 +7,17 @@ const ImpulseAbout = () => {
   return (
     <div id="AboutUs" className="bg-[#141436] sm:pt-24 pt-11 z-10 relative">
       <Image
-        src="/assets/images/svg/aboutTop.svg"
+        src="/assets/images/svg/Abstract-01.svg"
         alt="aboutTop"
         width={144}
         height={122}
-        className="absolute left-0 lg:left-28 lg:top-[-10%] sm:top-[-8%] top-[-9%] text-3xl sm:w-[144px] w-[100px] sm:h-[122px] h-[100px]"
+        className="absolute left-0 lg:left-28 lg:top-[-10%] sm:top-[-8%] top-[-9%] text-3xl sm:w-[144px] w-[100px] sm:h-[122px] h-[100px] aboutTop"
       />
-      <div className="container xl:max-w-[1140px] flex flex-col 2xl:max-w-[1320px] mx-auto px-3 relative">
+      <div className="container xl:max-w-[1220px] flex flex-col 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 relative">
         <p className=" font-Montserrat sm:text-6xl text-[30px] text-white font-bold leading-[121%]">
-          About <span className="text-[#50EED7]">Us</span>
+          About <span className="text-cyan-green">Us</span>
         </p>
-        <p className=" text-[#9898A3] leading-[157%] font-semibold sm:text-2xl text-[18px] max-w-[380px] sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 pb-3">
+        <p className=" text-dark-gray leading-[157%] font-semibold sm:text-2xl text-[18px] max-w-[380px] sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 pb-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
         <div className="flex lg:flex-nowrap justify-center flex-wrap lg:gap-6 sm:pb-24 pb-12 sm:mb-0 mb-3 lg:mt-10">
@@ -41,7 +41,7 @@ const ImpulseAbout = () => {
                         <div>
                           <p className="mb-0 text-white font-Montserrat leading-[204%] tracking-[-0.44px] sm:text-3xl text-[20px] font-bold">
                             About
-                            <span className="text-[#50EED7] ms-1">
+                            <span className="text-cyan-green ms-1">
                               {about.impulse}
                             </span>
                           </p>
@@ -57,7 +57,7 @@ const ImpulseAbout = () => {
                         <Link
                           href="https://twitter.com/"
                           target="blank"
-                          className="hover:!translate-y-[-10px] transition-all duration-200 ease-in-out"
+                          className="hover:translate-y-[-10px] transition-all duration-300 ease-in-out"
                         >
                           <ImpulseTweeter />
                         </Link>
@@ -79,7 +79,7 @@ const ImpulseAbout = () => {
                       <Link
                         href="https://twitter.com/"
                         target="blank"
-                        className="hover:!translate-y-[-10px] transition-all duration-200 ease-in-out"
+                        className="hover:translate-y-[-10px] transition-all duration-300 ease-in-out"
                       >
                         <ImpulseTweeter />
                       </Link>

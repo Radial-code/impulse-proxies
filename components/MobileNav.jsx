@@ -1,7 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-
 const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 1023.98px)");
@@ -24,13 +23,10 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
       mediaQuery.removeListener(handleScreenSizeChange);
     };
   }, [activeNavOverlay]);
-
   const [open, setOpen] = useState();
-
   const handleOpen = (value) => {
     setOpen(open === value ? 0 : value);
   };
-
   return (
     <>
       <div
@@ -50,7 +46,6 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
                 src="/assets/images/svg/productArrow.svg"
               />
             </button>
-
             {/* Dropdown menu */}
             <div className="top-[17px] py-3 overflow-hidden absolute right-0 mt-2 w-28 bg-[#040426] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
               <ul>
@@ -107,7 +102,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
           >
             Pricing
           </Link>
-          <button className="text-white font-Montserrat w-[197px] text-2xl font-bold border-[#50EED7] border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]">
+          <button className="text-white font-Montserrat w-[197px] text-2xl font-bold border-cyan-green border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]">
             Dashboard
           </button>
         </div>

@@ -1,22 +1,20 @@
 import React, { useState } from "react";
 import { Accordian } from "./common/Helper";
 import Image from "next/image";
-
 const ImpulseFAQ = () => {
   const [openAccordionIndex, setOpenAccordionIndex] = useState(null);
-
   const toggleAccordion = (index) => {
     if (index === openAccordionIndex) {
-      // Clicked on an open accordion, so close it
       setOpenAccordionIndex(null);
     } else {
-      // Clicked on a closed accordion, so open it
       setOpenAccordionIndex(index);
     }
   };
-
   return (
-    <div id="Faqs" className="faqBg bg-no-repeat bg-cover bg-center md:pt-28 sm:pt-20 pt-12 md:pb-44 sm:pb-22 pb-16  relative overflow-hidden">
+    <div
+      id="Faqs"
+      className="faqBg bg-no-repeat bg-cover bg-center md:pt-28 sm:pt-20 pt-12 md:pb-44 sm:pb-22 pb-16  relative overflow-hidden"
+    >
       <Image
         height={223}
         width={223}
@@ -31,19 +29,17 @@ const ImpulseFAQ = () => {
         src="/assets/images/svg/FaqRight.svg"
         alt="about image"
       />
-      <div className="container xl:max-w-[1140px] 2xl:max-w-[1320px] mx-auto px-3 sm:pt-0 pt-3 sm:pb-0 pb-3">
+      <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 sm:pt-0 pt-3 sm:pb-0 pb-3">
         <p className="text-center lg:text-6xl md:text-[35px] text-[25px] text-white font-Montserrat font-bold leading-[121%] tracking-[-0.74px] sm:mb-12 mb-7">
           Frequently Asked Questions
         </p>
-
-        {/* ... (your other code remains the same) */}
         <div className="w-full max-w-[694px] mx-auto">
           {Accordian.map((data, index) => {
             const isOpen = index === openAccordionIndex;
             return (
               <div
                 key={data.id}
-                className="mt-5 border-[2px] transition-opacity ease-in duration-300 border-[#50EED7] bg-[#50EED733] rounded-2xl px-4 py-4"
+                className="mt-5 border-[2px] transition-opacity ease-in duration-300 border-cyan-green bg-[#50EED733] rounded-2xl px-4 py-4"
               >
                 <div className="flex w-full justify-between">
                   <button
