@@ -8,18 +8,18 @@ const OurProxies = () => {
       <Image
         width={144}
         height={122}
-        className="absolute bottom-[-58px] md:bottom-[-13%]  lg:bottom-[-20%] xl:bottom-[-42%] 2xl:bottom-[-45%] w-full"
+        className="absolute bottom-[-58px] md:bottom-[-13%]  lg:bottom-[-20%] xl:bottom-[-42%] 2xl:bottom-[-45%] w-full rocket_img"
         src="/assets/images/svg/rocket-bg-img.svg"
         alte="Group_bg"
       />
       <div className="container xl:max-w-[1220px] flex flex-col 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
-        <h2 className=" font-Montserrat text-6xl text-white font-bold leading-[121%]text-start mb-4 mx-auto md:mx-0">
+        <h2 className=" font-Montserrat text-6xl text-white font-bold leading-[121%] lg:text-start mb-4 mx-auto lg:mx-0">
           Our <span className="text-cyan-green">Proxies</span>
         </h2>
-        <p className=" font-semibold text-2xl font-TT_Interfaces text-dark-gray max-w-[380px] lg:mx-0 text-center md:text-start mx-auto md:mx-0">
+        <p className=" font-semibold text-2xl font-TT_Interfaces text-dark-gray max-w-[380px] lg:mx-0 text-center lg:text-start mx-auto ">
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
-        <div className="flex justify-center md:justify-start lg:justify-between flex-wrap  lg:flex-nowrap lg:gap-9 2xl:gap-2  mt-[53px] md:mt-8 lg:mt-10  ">
+        <div className="flex justify-center lg:justify-between flex-wrap  lg:flex-nowrap lg:gap-9 2xl:gap-2  mt-[53px] md:mt-8 lg:mt-10  ">
           <div className=" border-[2px] border-[#505062] rounded-[20px] px-8 py-7 2xl:max-w-[438px] max-w-[348px]">
             <h5 className="font-bold  font-Montserrat text-2xl text-white">
               <span className="text-cyan-green"> ISP </span>Proxies
@@ -48,8 +48,8 @@ const OurProxies = () => {
             </p>
           </div>
         </div>
-        <div className=" flex justify-center md:justify-start lg:justify-center relative">
-          <button className=" max-w-[197px] w-full min-h-[55px] border-[2px] border-cyan-green bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-10">
+        <div className=" flex justify-center  lg:justify-center relative">
+          <button className=" max-w-[197px] w-full min-h-[55px] border-[2px] border-cyan-green bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-10 hover:bg-transparent transition-all duration-300">
             Try Now
           </button>
         </div>
