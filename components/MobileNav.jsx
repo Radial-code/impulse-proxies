@@ -41,7 +41,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
         <div className="flex flex-col gap-4 xl:gap-5 items-start">
           <div className="relative group inline-block text-left">
             {/* Dropdown button */}
-            <button className="text-white font-semibold tracking-[-0.38px] flex items-center leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200">
+            <button className="text-white font-semibold tracking-[-0.38px] flex items-center leading-[150%] font-Montserrat md:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200">
               Products
               <Image
                 width={15}
@@ -59,7 +59,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
                   <Link
                     onClick={() => setActiveNavOverlay(false)}
                     href="#"
-                    className="block hover:opacity-70 transition-all ease-in-out duration-200 px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl"
+                    className="block hover:opacity-70 transition-all ease-in-out duration-200 px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat md:text-[3vw] text-[4vw]"
                   >
                     Item 1
                   </Link>
@@ -68,7 +68,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
                   <Link
                     onClick={() => setActiveNavOverlay(false)}
                     href="#"
-                    className="block px-4 text-white font-semibold tracking-[-0.38px] my-4 leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
+                    className="block px-4 text-white font-semibold tracking-[-0.38px] my-4 leading-[150%] font-Montserrat md:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200"
                   >
                     Item 2
                   </Link>
@@ -77,7 +77,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
                   <Link
                     onClick={() => setActiveNavOverlay(false)}
                     href="#"
-                    className="block px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
+                    className="block px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat md:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200"
                   >
                     Item 3
                   </Link>
@@ -89,25 +89,25 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
           <Link
             onClick={() => setActiveNavOverlay(false)}
             href="#"
-            className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
+            className="text-white font-semibold tracking-[-0.38px]  font-Montserrat md:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200"
           >
             FAQ
           </Link>
           <Link
             href="#"
             onClick={() => setActiveNavOverlay(false)}
-            className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
+            className="text-white font-semibold tracking-[-0.38px]  font-Montserrat md:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200"
           >
             About Us
           </Link>
           <Link
             href="#"
             onClick={() => setActiveNavOverlay(false)}
-            className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
+            className="text-white font-semibold tracking-[-0.38px]  font-Montserrat md:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200"
           >
             Pricing
           </Link>
-          <button className="text-white font-Montserrat w-[197px] text-2xl font-bold border-cyan-green border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]">
+          <button className="text-white font-Montserrat w-[197px] md:text-[3vw] text-[4vw] font-bold border-cyan-green border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]">
             Dashboard
           </button>
         </div>

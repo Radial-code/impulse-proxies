@@ -3,8 +3,8 @@ import Image from "next/image";
 const OurProxies = () => {
   return (
     <div className="pt-[52px] lg:pt-[105px] pb-20 md:pb-[106px] lg:pb-[153px]  bg-[#040426] relative">
-      <div className="our_proxies_box h-10 opacity-10 w-full max-w-[800px] mx-auto absolute top-3 lg:top-[21px] lg:left-[27%]"></div>
-      <div className="box_showdow absolute w-full max-w-[1190px] h-[200px] bottom-0"></div>
+      <div className=" h-10 opacity-10 w-full max-w-[800px] mx-auto absolute top-3 lg:top-[21px] lg:left-[27%]"></div>
+      <div className="box_showdow rounded-[40px] opacity-20 blur-[150px] absolute w-full max-w-[1190px] h-[200px] bottom-0"></div>
       <Image
         width={144}
         height={122}
@@ -19,8 +19,8 @@ const OurProxies = () => {
         <p className=" font-semibold text-2xl font-TT_Interfaces text-dark-gray max-w-[380px] lg:mx-0 text-center lg:text-start mx-auto ">
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
-        <div className="flex justify-center lg:justify-between flex-wrap  lg:flex-nowrap lg:gap-9 2xl:gap-2  mt-[53px] md:mt-8 lg:mt-10  ">
-          <div className=" border-[2px] border-[#505062] rounded-[20px] px-8 py-7 2xl:max-w-[438px] max-w-[375px]">
+        <div className="flex justify-center lg:justify-start flex-wrap  lg:flex-nowrap lg:gap-9 2xl:gap-9  mt-[53px] md:mt-8 lg:mt-10  ">
+          <div className=" md:w-6/12 lg:w-4/12 border-[2px] border-[#505062] rounded-[20px] px-8 py-7 2xl:max-w-[400px] max-w-[348px]">
             <h5 className="font-bold  font-Montserrat text-2xl text-white">
               <span className="text-cyan-green"> ISP </span>Proxies
             </h5>
@@ -29,7 +29,7 @@ const OurProxies = () => {
               eiusmod tempor
             </p>
           </div>
-          <div className=" border-[2px] border-[#505062] rounded-[20px] px-8 py-7 2xl:max-w-[438px] max-w-[375px]  lg:mx-0 md:mx-auto mt-6 md:mt-6 lg:mt-0">
+          <div className="md:w-6/12 lg:w-4/12 border-[2px] border-[#505062] rounded-[20px] px-8 py-7 2xl:max-w-[400px] max-w-[348px] mt-6 md:mt-0 md:ms-7 lg:ms-0">
             <h5 className="font-bold  font-Montserrat text-2xl text-white">
               <span className="text-cyan-green"> Datacenter </span> Proxies
             </h5>
@@ -38,7 +38,7 @@ const OurProxies = () => {
               eiusmod tempor
             </p>
           </div>
-          <div className=" border-[2px] border-[#505062] rounded-[20px] px-8 py-7 2xl:max-w-[438px] max-w-[375px] mt-6 lg:mt-0">
+          <div className="md:w-6/12 lg:w-4/12 border-[2px] border-[#505062] rounded-[20px] px-8 py-7 2xl:max-w-[400px] max-w-[348px] mt-6 lg:mt-0">
             <h5 className="font-bold  font-Montserrat text-2xl text-white">
               <span className="text-cyan-green"> Residential </span> Proxies
             </h5>

@@ -129,7 +129,7 @@ const Header = () => {
                 <button
                   onClick={() => setActiveNavOverlay(true)}
                   type="button"
-                  className="w-[30px] inline-flex items-center justify-center rounded-md"
+                  className="w-[46px] inline-flex items-center justify-center rounded-md"
                   aria-controls="mobile-menu"
                   aria-expanded="false"
                 >
