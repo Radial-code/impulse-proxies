@@ -102,13 +102,13 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
           >
             Pricing
           </Link>
-          <button className="text-white font-Montserrat max-w-[330px] w-full sm:w-[197px] sm:text-[3vw] text-[4vw] font-bold border-cyan-green border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]">
+          <button className="text-white font-Montserrat max-w-[330px] w-full sm:w-[210px]  sm:text-[3vw] text-[4vw] font-bold border-cyan-green border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]">
             Dashboard
           </button>
         </div>
       </div>
       <div
-        className={`absolute top-0 left-0 w-full h-full bg-[#00000047] lg:bg-transparent backdrop-sepia-[12px z-10 ${
+        className={`absolute top-0 left-0 w-full h-full bg-[#000000a6] lg:bg-transparent backdrop-sepia-[12px z-50 ${
           activeNavOverlay
             ? "pointer-events-auto opacity-1"
             : "pointer-events-none opacity-0"

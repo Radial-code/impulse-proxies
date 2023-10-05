@@ -91,7 +91,7 @@ const ImpulseFooter = () => {
               © Landsgesell & Graca Costa Solutions GbR {year}, All Rights
               Reserved
             </p>
-            <div className=" flex items-center gap-4">
+            <div className=" flex items-center gap-4 me-20 xl:me-0">
               <Link
                 href="https://twitter.com/"
                 target="blank"
