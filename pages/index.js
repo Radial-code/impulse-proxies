@@ -8,8 +8,8 @@ import WhyToChooseUs from "@/components/WhyToChooseUs";
 import BackToTopButton from "@/components/common/BackToTopButton ";
 import Preloader from "@/components/common/Preloader";
 import PageMataTag from "@/components/PageMataTag";
+
 export default function Home() {
-             
   return (
     <>
       <div className="overflow-hidden">

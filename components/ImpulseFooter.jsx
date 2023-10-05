@@ -92,10 +92,7 @@ const ImpulseFooter = () => {
               Reserved
             </p>
             <div className=" flex items-center gap-4 me-20 xl:me-0">
-              <Link
-                href="https://twitter.com/"
-                target="blank"
-              >
+              <Link href="https://twitter.com/" target="blank">
                 <ImpulseTweeter />
               </Link>
               <Link
@@ -109,6 +106,7 @@ const ImpulseFooter = () => {
           </div>
         </div>
       </div>
+      
     </>
   );
 };
