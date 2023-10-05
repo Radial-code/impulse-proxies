@@ -20,7 +20,7 @@ const OurProxies = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
         <div className="flex justify-center lg:justify-between flex-wrap  lg:flex-nowrap lg:gap-9 2xl:gap-2  mt-[53px] md:mt-8 lg:mt-10  ">
-          <div className=" border-[2px] border-[#505062] rounded-[20px] px-8 py-7 2xl:max-w-[438px] max-w-[348px]">
+          <div className=" border-[2px] border-[#505062] rounded-[20px] px-8 py-7 2xl:max-w-[438px] max-w-[375px]">
             <h5 className="font-bold  font-Montserrat text-2xl text-white">
               <span className="text-cyan-green"> ISP </span>Proxies
             </h5>
@@ -29,7 +29,7 @@ const OurProxies = () => {
               eiusmod tempor
             </p>
           </div>
-          <div className=" border-[2px] border-[#505062] rounded-[20px] px-8 py-7 2xl:max-w-[438px] max-w-[348px]  lg:mx-0 md:mx-auto mt-6 md:mt-0">
+          <div className=" border-[2px] border-[#505062] rounded-[20px] px-8 py-7 2xl:max-w-[438px] max-w-[375px]  lg:mx-0 md:mx-auto mt-6 md:mt-6 lg:mt-0">
             <h5 className="font-bold  font-Montserrat text-2xl text-white">
               <span className="text-cyan-green"> Datacenter </span> Proxies
             </h5>
@@ -38,7 +38,7 @@ const OurProxies = () => {
               eiusmod tempor
             </p>
           </div>
-          <div className=" border-[2px] border-[#505062] rounded-[20px] px-8 py-7 2xl:max-w-[438px] max-w-[348px] mt-6 lg:mt-0">
+          <div className=" border-[2px] border-[#505062] rounded-[20px] px-8 py-7 2xl:max-w-[438px] max-w-[375px] mt-6 lg:mt-0">
             <h5 className="font-bold  font-Montserrat text-2xl text-white">
               <span className="text-cyan-green"> Residential </span> Proxies
             </h5>
