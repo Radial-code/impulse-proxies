@@ -11,7 +11,7 @@ const ImpulseAbout = () => {
         alt="aboutTop"
         width={144}
         height={122}
-        className="absolute left-0 lg:left-28 lg:top-[-10%] sm:top-[-8%] top-[-9%] text-3xl sm:w-[144px] w-[100px] sm:h-[122px] h-[100px] aboutTop"
+        className="pointer-events-none  absolute left-0 lg:left-28 lg:top-[-10%] sm:top-[-8%] top-[-9%] text-3xl sm:w-[144px] w-[100px] sm:h-[122px] h-[100px] aboutTop"
       />
       <div className="container xl:max-w-[1220px] flex flex-col 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 relative">
         <p className=" font-Montserrat sm:text-6xl text-[30px] text-white font-bold leading-[121%] text-center lg:text-start">

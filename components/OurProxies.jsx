@@ -7,11 +7,11 @@ const OurProxies = () => {
       className="pt-[52px] lg:pt-[105px] pb-20 md:pb-[106px] lg:pb-[153px]  bg-[#040426] relative"
     >
       <div className=" h-10 opacity-10 w-full max-w-[800px] mx-auto absolute top-3 lg:top-[21px] lg:left-[27%]"></div>
-      <div className="box_showdow rounded-[40px] opacity-20 blur-[150px] absolute w-full max-w-[1190px] h-[200px] bottom-0"></div>
+      <div className="box_showdow rounded-[40px] opacity-20 blur-[150px] absolute w-full max-w-[1190px] h-[200px] bottom-0 pointer-events-none"></div>
       <Image
         width={144}
         height={122}
-        className="absolute bottom-[-58px] md:bottom-[-13%]  lg:bottom-[-20%] xl:bottom-[-42%] 2xl:bottom-[-45%] w-full rocket_img"
+        className="absolute bottom-[-58px] md:bottom-[-13%]  lg:bottom-[-20%] xl:bottom-[-42%] 2xl:bottom-[-45%] w-full rocket_img pointer-events-none"
         src="/assets/images/svg/rocket-bg-img.svg"
         alte="Group_bg"
       />

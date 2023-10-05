@@ -6,7 +6,7 @@ const Current = () => {
  
   return (
     <>
-      <div className="currentB bg-[#142541] relative after:contents-[''] after:absolute after:w-full border-[1px] border-[#1F374F] sm:pb-7 sm:pt-14 py-11 ms-[-10px] me-[-10px]">
+      <div className=" bg_current bg-opacity-50 relative after:contents-[''] after:absolute after:w-full border-[1px] border-[#1F374F] sm:pb-7 sm:pt-14 py-11 ms-[-10px] me-[-10px]">
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <div className="flex flex-wrap justify-around">
             {CurrentData.map((data) => {
@@ -22,8 +22,8 @@ const Current = () => {
               );
             })}
           </div>
-          <hr className="bg-[#2D3752] w-full h-[1px] border-0 mt-6 mb-7" />
-          <p className="opacity-40 tracking-[1.5px] font-bold lh_normal text-xs font-Montserrat text-center">
+          <hr className="bg-[#2D3752] w-full h-[1px] border-0 mt-6 mb-7 " />
+          <p className="opacity-40 tracking-[1.5px] font-bold lh_normal text-xs font-Montserrat text-center text-white">
             TRUSTED BY OUR PARTNERS
           </p>
           <div className="flex items-center justify-center mt-4">

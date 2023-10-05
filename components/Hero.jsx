@@ -9,8 +9,8 @@ const Hero = () => {
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 h-full flex-1 flex items-center">
           <div className="flex items-center justify-between h-full flex-wrap lg:flex-nowrap">
             <div className="xl:w-6/12 lg:w-6/12 w-full">
-              <h1 className="lg:text-[55px] xl:text-8xl 2xl:text-[70px] md:text-[45px] text-[35px] tracking-[-2%] text-white leading-[118%] max-w-[300px] md:max-w-[400px] sm:w-full">
-                Elevate your <span className="text-cyan-green me-2 lg:ms-0 sm:ms-2">
+              <h1 className="lg:text-[55px] xl:text-8xl 2xl:text-[70px] md:text-[45px] text-[35px] tracking-[-2%] text-white leading-[118%] max-w-[300px] md:max-w-[400px] lg:max-w-[100%] sm:w-full">
+                Elevate your <span className="text-cyan-green me-2">
                     success </span>
                   with our Proxies
                   
@@ -34,7 +34,7 @@ const Hero = () => {
                 height={900}
                 src="/assets/images/png/heroImg.png"
                 alt="hero-image"
-                className="relative z-10 2xl:h-[500px] sm:max-w-[400px] md:max-w-[400px] mx-auto xl:h-[500px] xl:max-w-[650px]"
+                className="pointer-events-none relative z-10 2xl:h-[500px] sm:max-w-[400px] md:max-w-[400px] mx-auto xl:h-[500px] xl:max-w-[600px] xl:w-full"
               />
               <div className="lg:hidden sm:flex sm:mb-0 mb-5 items-center justify-center text-center">
                 <button className=" hover:bg-transparent transition-all max-w-[300px] w-full sm:max-w-[197px]  min-h-[55px] border-[2px] border-cyan-green bg-[#163D51] rounded-[100px] font-Montserrat font-semibold sm:text-2xl text-[15px] text-white mt-10">
