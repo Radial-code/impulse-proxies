@@ -15,7 +15,7 @@ const Current = () => {
                   <p className="text-white text-center font-bold leading-[136%] tracking-[-1px] lg:text-7xl md:text-[38px] text-[30px] sm:mt-0 mt-5">
                     {data.number}
                   </p>
-                  <p className="text-center text-[#9898A3] lg:text-2xl text-[15px] font-semibold leading-[157%] ">
+                  <p className="text-center text-dark-gray lg:text-2xl text-[15px] font-semibold leading-[157%] ">
                     {data.current}
                   </p>
                 </div>

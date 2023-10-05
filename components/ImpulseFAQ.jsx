@@ -46,7 +46,7 @@ const ImpulseFAQ = () => {
             return (
               <div
                 key={data.id}
-                className="mt-5 border-[2px] transition-opacity ease-in duration-300 border-[#50EED7] bg-[#50EED733] rounded-2xl px-4 py-4"
+                className="mt-5 border-[2px] transition-opacity ease-in duration-300 border-cyan-green bg-[#50EED733] rounded-2xl px-4 py-4"
               >
                 <div className="flex w-full justify-between">
                   <button

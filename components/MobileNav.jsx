@@ -107,7 +107,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
           >
             Pricing
           </Link>
-          <button className="text-white font-Montserrat w-[197px] text-2xl font-bold border-[#50EED7] border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]">
+          <button className="text-white font-Montserrat w-[197px] text-2xl font-bold border-cyan-green border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]">
             Dashboard
           </button>
         </div>
