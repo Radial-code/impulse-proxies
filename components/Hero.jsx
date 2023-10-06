@@ -50,9 +50,9 @@ const Hero = () => {
           </div>
         </div>
         <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[100px] z-[-2] animation">
-          <div class="hero_wave">
-            <div class="hero_wave_height">
-              <div class="grad_bg"></div>
+          <div className="hero_wave">
+            <div className="hero_wave_height">
+              <div className="grad_bg"></div>
             </div>
           </div>
         </div>
