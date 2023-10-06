@@ -6,8 +6,8 @@ const Box = () => {
   const [hovered, setHover] = useState(false);
   const [active, setActive] = useState(false);
   // delata is speed of ring
+  useFrame((state, delta) => (meshRef.current.rotation.y += delta));
   useFrame((state, delta) => (meshRef.current.rotation.x += delta));
-  useFrame((state, delta) => (meshRef.current.rotation.y += 0.002));
   return (
     <mesh
       ref={meshRef}
@@ -22,7 +22,7 @@ const Box = () => {
   );
 };
 
-const Torus = () => {
+const Ring = () => {
   return (
     <>
       <Canvas shadows>
@@ -34,4 +34,4 @@ const Torus = () => {
   );
 };
 
-export default Torus;
+export default Ring;
