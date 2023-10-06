@@ -11,12 +11,13 @@ import PageMataTag from "@/components/PageMataTag";
 import DashboardNav from "@/components/dashborad/DashboardNav";
 import { DashbarFooter } from "@/components/dashborad/DashbarFooter";
 import Dashboard1 from "@/components/dashborad/Dashboard1";
+import Dashboard3 from "@/components/dashborad/Dashboard3";
 
 export default function Home() {
   return (
     <>
       <div className="overflow-hidden">
-        <BackToTopButton />
+        {/* <BackToTopButton />
         <Preloader />
         <PageMataTag />
         <Hero />
@@ -24,11 +25,12 @@ export default function Home() {
         <WhyToChooseUs />
         <OurProxies />
         <ImpulseAbout />
-        <ImpulseFAQ />
-        <ImpulseFooter />
+        <ImpulseFAQ /> */}
+        {/* <ImpulseFooter /> */}
         {/* <DashboardNav />
         <DashbarFooter /> */}
-        <Dashboard1 />
+        {/* <Dashboard1 /> */}
+        <Dashboard3/>
       </div>
     </>
   );
