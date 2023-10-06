@@ -30,11 +30,11 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   return (
     <>
       <div
-        className={`fixed ps-4 items-start lg:hidden bg-[#040426] lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-24 transition-all duration-200 ease-in z-[100] w-full sm:max-w-[50%] ${
+        className={`fixed ps-4 items-start lg:hidden bg-[#040426] lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-24 transition-all duration-200 ease-in z-[100] w-full sm:max-w-[100%] ${
           activeNavOverlay ? "left-0" : "-left-full"
         }`}
       >
-        <div className="flex flex-col gap-4 xl:gap-5 items-start w-full">
+        <div className="flex flex-col gap-9 xl:gap-5 items-start w-full">
           <div className="relative group inline-block text-left w-full">
             {/* Dropdown button */}
             <button className="text-white font-semibold tracking-[-0.38px] flex items-center leading-[150%] font-Montserrat sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200">
