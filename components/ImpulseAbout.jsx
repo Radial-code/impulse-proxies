@@ -66,6 +66,7 @@ const ImpulseAbout = () => {
                         <Image
                           height={27}
                           width={27}
+                          alt="image"
                           src="/assets/images/svg/AboutLogo.svg"
                         />
                         <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[10px]">
@@ -88,6 +89,7 @@ const ImpulseAbout = () => {
                       <Image
                         height={27}
                         width={27}
+                        alt="image"
                         src="/assets/images/svg/AboutLogo.svg"
                       />
                       <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[10px]">
