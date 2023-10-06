@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Accordian } from "./common/Helper";
 import Image from "next/image";
 import Torus from "./common/Torus";
+import Ring from "./Ring";
 const ImpulseFAQ = () => {
   const [openAccordionIndex, setOpenAccordionIndex] = useState(null);
   const toggleAccordion = (index) => {
@@ -20,7 +21,7 @@ const ImpulseFAQ = () => {
         <Torus />
       </div>
       <div className="torus-footer pointer-events-none  absolute lg:top-[-3%] sm:top-[-2%] top-[-3%] end-[-7px] lg:end-0 sm:end-[2%] lg:h-[207px] lg:w-[207px] sm:w-[120px] w-[100px]  sm:h-[175px] h-[100px]">
-        <Torus />
+        <Ring />
       </div>
       <Image
         height={223}
