@@ -8,11 +8,14 @@ import WhyToChooseUs from "@/components/WhyToChooseUs";
 import BackToTopButton from "@/components/common/BackToTopButton ";
 import Preloader from "@/components/common/Preloader";
 import PageMataTag from "@/components/PageMataTag";
+import DashboardNav from "@/components/dashborad/DashboardNav";
+import DashboardThree from "@/components/dashborad/DashboardThree";
 
 export default function Home() {
   return (
     <>
       <div className="overflow-hidden">
+       <DashboardThree/>
         <BackToTopButton />
         <Preloader />
         <PageMataTag />
@@ -23,6 +26,7 @@ export default function Home() {
         <ImpulseAbout />
         <ImpulseFAQ />
         <ImpulseFooter />
+
       </div>
     </>
   );
