@@ -58,6 +58,7 @@ const Header = () => {
                         width={15}
                         height={10}
                         className="ms-2"
+                        alt="image"
                         src="/assets/images/svg/productArrow.svg"
                       />
                     </button>

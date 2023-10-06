@@ -42,6 +42,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
               <Image
                 width={15}
                 height={10}
+                alt="image"
                 className="ms-2"
                 src="/assets/images/svg/productArrow.svg"
               />
