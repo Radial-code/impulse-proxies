@@ -62,7 +62,7 @@ const Header = () => {
                       />
                     </button>
                     {/* Dropdown menu */}
-                    <div className="top-[20px] py-3 overflow-hidden absolute right-0 mt-2 w-28 bg-[#040426] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out border-[1px] border-white">
+                    <div className="top-[20px] py-3 overflow-hidden absolute right-0 mt-2 w-28 bg-[#040426] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out border-[1px] border-white z-10">
                       <ul>
                         {/* Dropdown menu items */}
                         <li>
@@ -76,7 +76,7 @@ const Header = () => {
                         <li>
                           <Link
                             href="#"
-                            className="block px-4 text-white font-semibold tracking-[-0.38px] my-4 leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
+                            className="block px-4 text-white font-semibold tracking-[-0.38px] my-3 leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                           >
                             Item 2
                           </Link>

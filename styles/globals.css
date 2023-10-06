@@ -43,3 +43,14 @@ body {
 .hero-section {
   min-height: calc(100vh - 115px);
 }
+@media (min-width:820px) and (max-width:991.98px) {
+  .hero-section {
+    min-height: calc(60vh - 115px) !important;
+  }
+  .animation{
+    top: -130px !important;
+  }
+}
+@media screen {
+  
+}

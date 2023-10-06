@@ -30,11 +30,11 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   return (
     <>
       <div
-        className={`fixed ps-4 items-start lg:hidden bg-[#040426] top-0 h-full flex flex-col pb-4 pt-24 transition-all duration-200 ease-in z-[100] w-full sm:max-w-[50%] ${
+        className={`fixed ps-4 items-start lg:hidden bg-[#040426] lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-24 transition-all duration-200 ease-in z-[100] w-full sm:max-w-[100%] ${
           activeNavOverlay ? "left-0" : "-left-full"
         }`}
       >
-        <div className="flex flex-col gap-4 xl:gap-5 items-start w-full">
+        <div className="flex flex-col gap-9 xl:gap-5 items-start w-full">
           <div className="relative group inline-block text-left w-full">
             {/* Dropdown button */}
             <button className="text-white font-semibold tracking-[-0.38px] flex items-center leading-[150%] font-Montserrat sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200">
@@ -47,7 +47,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
               />
             </button>
             {/* Dropdown menu */}
-            <div className="top-[27px] border border-white py-3 overflow-hidden absolute right-0 mt-2 w-28 bg-[#040426] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+            <div className="top-[27px] border border-white py-3 overflow-hidden lg:hidden absolute right-0 mt-2 w-28 bg-[#040426] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
               <ul>
                 {/* Dropdown menu items */}
                 <li>
@@ -108,7 +108,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
         </div>
       </div>
       <div
-        className={`absolute top-0 left-0 w-full h-full bg-[#000000a6] lg:bg-transparent backdrop-sepia-[12px z-50 ${
+        className={`absolute lg:hidden top-0 left-0 w-full h-full bg-[#000000a6] lg:bg-transparent backdrop-sepia-[12px z-50 ${
           activeNavOverlay
             ? "pointer-events-auto opacity-1"
             : "pointer-events-none opacity-0"
