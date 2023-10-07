@@ -37,41 +37,27 @@
 .bgData {
   background: linear-gradient(113deg, #151536 35.26%, #393969 182.89%);
 }
-/* range */
-/* input[type="range"] {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  cursor: pointer;
-  outline: none;
-  overflow: hidden;
-  border-radius: 16px;
+/* background  */
+.bg_no_current_orders {
+  background: linear-gradient(113deg, #151536 35.26%, #393969 182.89%);
 }
-input[type="range"]::-webkit-slider-runnable-track {
-  height: 9px;
-  background: #206e63;
-  border-radius: 11px;
+.bg_your_order {
+  background-image: url("/assets/images/png/your_order_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-input[type="range"]::-moz-range-track {
-  height: 7;
-  background: #ccc;
-  border-radius: 16px;
+.custom_scrollbar::-webkit-scrollbar {
+  background-color: #fff !important;
+  height: 4px;
+  border-radius: 10px;
 }
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  border-radius: 11px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  background: #fff;
-  width: 18px;
-  height: 18px;
-  box-shadow: -407px 0 0 400px #4fdcc7;
+.custom_scrollbar::-webkit-scrollbar-thumb {
+  background-color: #50eed7 !important;
+  border-radius: 10px;
 }
-input[type="range"]::-moz-range-thumb {
-  border-radius: 11px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  background: #fff;
-  width: 18px;
-  height: 18px;
-  box-shadow: -407px 0 0 400px #4fdcc7;
-} */
+@media (max-width:490px) {
+  .pb_64{
+    padding-bottom: 52px !important;
+  }
+}
