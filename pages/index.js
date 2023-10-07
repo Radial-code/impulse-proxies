@@ -24,7 +24,7 @@ export default function Home() {
         {/* <ImpulseAbout /> */}
         {/* <ImpulseFAQ /> */}
         {/* <ImpulseFooter /> */}
-        <DashboardThree/>
+        {/* <DashboardThree/> */}
         <Dashboard5/>
       </div>
     </>

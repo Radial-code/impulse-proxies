@@ -1,15 +1,9 @@
-import { useState } from "react";
 import Image from "next/image";
 import RangeBar from "./RangeBar";
 import DashboardNav from "./DashboardNav";
 import { DashbarFooter } from "./DashbarFooter";
 
 const Dashboard5 = () => {
-  const [value, setValue] = useState(50);
-
-  const handleChange = (e) => {
-    setValue(e.target.value);
-  };
   return (
     <>
       <DashboardNav />
