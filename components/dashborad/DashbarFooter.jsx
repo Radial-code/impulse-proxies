@@ -31,7 +31,7 @@ export const DashbarFooter = () => {
             Privacy
           </Link>
         </div>
-        <p className="text-[#8888B1] text-center font-Montserrat text-sm font-semibold mt-6 mb-0">
+        <p className="text-[#8888B1] text-center font-Montserrat text-sm font-semibold sm:mt-6 mt-3 mb-0">
           © Landsgesell & Graca Costa Solutions GbR 2023, All Rights Reserved
         </p>
       </div>

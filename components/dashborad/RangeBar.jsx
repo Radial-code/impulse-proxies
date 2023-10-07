@@ -17,7 +17,7 @@ const RangeBar = () => {
             width={100}
             className=" lg:max-w-[1100px] w-full"
             src="/assets/images/svg/Group 176.svg"
-            alt="about image"
+            alt="aboutimage"
           />
           <div className=" flex justify-between max-w-[1100px]">
             <p className=" text-sm font-Montserrat font-bold text-white lg:mt-[-14px]">
@@ -32,7 +32,7 @@ const RangeBar = () => {
                 width={22}
                 className=" text-center ms-1"
                 src="/assets/images/svg/redeem.svg"
-                alt="about image"
+                alt="aboutimage"
               />
             </div>
             <div className=" text-center">
@@ -44,7 +44,7 @@ const RangeBar = () => {
                 width={22}
                 className="text-center inline-block"
                 src="/assets/images/svg/redeem.svg"
-                alt="about image"
+                alt="aboutimage"
               />
             </div>
           </div>

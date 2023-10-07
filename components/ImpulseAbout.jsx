@@ -11,6 +11,7 @@ const ImpulseAbout = () => {
         alt="aboutTop"
         width={144}
         height={122}
+
         className="pointer-events-none  absolute left-0 lg:left-28 lg:top-[-10%] sm:top-[-8%] top-[-9%] text-3xl sm:w-[144px] w-[100px] sm:h-[122px] h-[100px] aboutTop"
       />
       <div className="container xl:max-w-[1220px] flex flex-col 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 relative">
@@ -34,7 +35,8 @@ const ImpulseAbout = () => {
                         height={81}
                         width={81}
                         src={about.aboutImg}
-                        alt="about img"
+                        alt="aboutimg"
+                        priority="1"
                         className=" sm:h-[81px] sm:w-[81px] w-[61px] h-[61px]"
                       />
                       <div className="ps-5 flex">
@@ -68,6 +70,7 @@ const ImpulseAbout = () => {
                           width={27}
                           alt="img"
                           src="/assets/images/svg/AboutLogo.svg"
+                          priority="1"
                         />
                         <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[10px]">
                           IMPULSE
@@ -91,6 +94,7 @@ const ImpulseAbout = () => {
                         width={27}
                         alt="images"
                         src="/assets/images/svg/AboutLogo.svg"
+                        priority="1"
                       />
                       <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[10px]">
                         IMPULSE
