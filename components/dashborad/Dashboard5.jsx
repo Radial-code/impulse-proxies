@@ -1,30 +1,17 @@
-import { useState } from "react";
 import Image from "next/image";
 import RangeBar from "./RangeBar";
 import DashboardNav from "./DashboardNav";
 import { DashbarFooter } from "./DashbarFooter";
 
-const DashboardThree = () => {
-  const [value, setValue] = useState(50);
-  const handleChange = (e) => {
-    setValue(e.target.value);
-  };
-
+const Dashboard5 = () => {
   return (
-    <div className=" relative">
-      <Image
-        height={200}
-        width={200}
-        className=" absolute start-0 top-0  z-[-1]"
-        src="/assets/images/png/Mockup_top_blur.png"
-        alt="Mockup_bg_blur"
-      />
+    <>
       <DashboardNav />
 
-      <div className=" py-8">
+      <div className="lg:pt-14 lg:pb-36 py-12">
         <div className="container xl:max-w-[1220px] flex flex-col 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <RangeBar />
-          <div className=" flex flex-wrap mt-9 lg:mt-7">
+          <div className=" flex flex-wrap mt-9 lg:mt-12">
             <div className="w-full lg:w-6/12 px-3">
               <div className="bg-[#212148] flex items-center justify-between h-14 rounded-t-[16px] px-4 lg:px-9 relative">
                 <p className=" text-sm font-Montserrat font-bold text-white">
@@ -34,16 +21,49 @@ const DashboardThree = () => {
                   Redeem All
                 </button>
               </div>
-              <div className=" bg-[url('/assets/images/png/Earned_Rewards.png')] bg-no-repeat bg-cover h-[233px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]">
-                <h3 className="font-Montserrat font-bold text-xl text-white">
-                  NO REWARDS WON
-                </h3>
-                <p className="font-Montserrat text-lg text-[#9D9DBB] pt-4 pb-6">
-                  To make an order, click the button below
-                </p>
-                <button className=" text-[#040426] w-[180px] h-[45px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold text-[14px] rounded-[10px]">
-                  Order Proxies
-                </button>
+              <div className="flex w-full bg_redeem_all rounded-b-[16px]">
+                <div className="flex flex-col justify-center mt-[-13px]">
+                  <div className="mb-7 mt-[45px] h-[167px] w-[5px] mx-8 bg-[#50EED7] rounded-[10px] bg-opacity-30 relative">
+                    <div className="bg-white stroke-2 h-[15px] w-[15px] rounded-full absolute left-[-5px] top-[26px]"></div>
+                    <div className="bg-white stroke-2 h-[15px] w-[15px] rounded-full absolute left-[-5px] top-[76px]"></div>
+                    <div className="bg-white stroke-2 h-[15px] w-[15px] rounded-full absolute left-[-5px] top-[123px]"></div>
+                  </div>
+                </div>
+                <div className="pt-[54px] ms-[-10px]">
+                  <div className="flex items-center">
+                    <Image
+                      height={22}
+                      width={22}
+                      src="/assets/images/svg/redeem_free_gb.svg"
+                      alt="redeem free"
+                    />
+                    <p className="ps-2 font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
+                      You won 1 GB free!
+                    </p>
+                  </div>
+                  <div className="pt-6 flex items-center">
+                    <Image
+                      height={22}
+                      width={22}
+                      src="/assets/images/svg/redeem_free_gb.svg"
+                      alt="redeem free"
+                    />
+                    <p className="ps-2 font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
+                      You won 5 GB free!
+                    </p>
+                  </div>
+                  <div className="pt-6 flex items-center">
+                    <Image
+                      height={22}
+                      width={22}
+                      src="/assets/images/svg/redeem_free_gb.svg"
+                      alt="redeem free"
+                    />
+                    <p className="ps-2 font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
+                      You won 10 GB free!
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="w-full lg:w-6/12 px-3 min-h-[244px] mt-9 lg:mt-0">
@@ -64,7 +84,7 @@ const DashboardThree = () => {
                     height={21}
                     width={21}
                     src="/assets/images/svg/content_copy.svg"
-                    alt="aboutimage"
+                    alt="about image"
                   />
                 </div>
                 <p className=" font-Montserrat text-[13px] md:text-lg font-medium text-[#9D9DBB] md:max-w-[540px] max-w-[460px] mt-4 lg:mt-5">
@@ -93,9 +113,9 @@ const DashboardThree = () => {
           </div>
         </div>
       </div>
-      <DashbarFooter/>
+      <DashbarFooter />
     </>
   );
 };
 
-export default DashboardThree;
+export default Dashboard5;
