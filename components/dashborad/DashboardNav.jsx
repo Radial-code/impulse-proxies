@@ -29,7 +29,7 @@ const DashboardNav = () => {
         setActiveNavOverlay={setActiveNavOverlay}
       />
       <nav className="dark-blue lg:py-6 sm:py-5 py-4 flex-grow-0">
-        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
+        <div className="container xl:max-w-[1358px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <div className="flex-1 flex items-center justify-between  lg:items-center xl:mr-3">
             <div className="flex-1 flex items-center justify-between">
               <div className="flex-shrink-0 flex items-center justify-between">
@@ -96,7 +96,7 @@ const DashboardNav = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center lg:hidden  sm:me-0 me-4">
+            <div className="flex items-center lg:hidden ">
               <div className="relative z-[200]">
                 {isToggleIconVisible && (
                   <button

@@ -38,7 +38,26 @@
   background: linear-gradient(113deg, #151536 35.26%, #393969 182.89%);
 }
 /* background  */
-.bg_no_current_orders{
+.bg_no_current_orders {
   background: linear-gradient(113deg, #151536 35.26%, #393969 182.89%);
-
+}
+.bg_your_order {
+  background-image: url("/assets/images/png/your_order_bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.custom_scrollbar::-webkit-scrollbar {
+  background-color: #fff !important;
+  height: 4px;
+  border-radius: 10px;
+}
+.custom_scrollbar::-webkit-scrollbar-thumb {
+  background-color: #50eed7 !important;
+  border-radius: 10px;
+}
+@media (max-width:490px) {
+  .pb_64{
+    padding-bottom: 52px !important;
+  }
 }
