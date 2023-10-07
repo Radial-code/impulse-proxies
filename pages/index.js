@@ -17,11 +17,11 @@ export default function Home() {
   return (
     <>
       <div className="overflow-hidden">
-
-       <DashboardThree/>
+        {/* <DashboardThree/>*/}
+        {/* /* <DashboardNav /> */}
+        {/* <DashbarFooter /> */}
+        {/* <Dashboard1 />  */}
         <BackToTopButton />
-
-        {/* <BackToTopButton />
         <Preloader />
         <PageMataTag />
         <Hero />
@@ -30,10 +30,7 @@ export default function Home() {
         <OurProxies />
         <ImpulseAbout />
         <ImpulseFAQ />
-        <ImpulseFooter /> */}
-        {/* <DashboardNav />
-        <DashbarFooter /> */}
-        <Dashboard1 />
+        <ImpulseFooter />
       </div>
     </>
   );

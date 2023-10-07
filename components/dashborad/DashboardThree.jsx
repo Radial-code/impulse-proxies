@@ -12,9 +12,8 @@ const DashboardThree = () => {
   };
 
   return (
-    <>
+    <div className=" r">
       <DashboardNav />
-
       <div className=" py-8">
         <div className="container xl:max-w-[1220px] flex flex-col 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <RangeBar />
@@ -87,8 +86,15 @@ const DashboardThree = () => {
           </div>
         </div>
       </div>
-      <DashbarFooter/>
-    </>
+      <DashbarFooter />
+      <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[70px] z-[-2] animation">
+        <div className="hero_wave">
+          <div className="hero_wave_height">
+            <div className="grad_bg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
