@@ -116,9 +116,12 @@ const Header = () => {
                 </div>
               </div>
               <div className="hidden lg:flex items-center">
-                <button className="text-white font-Montserrat w-[197px] text-2xl font-bold border-cyan-green border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]">
+                <Link
+                  href="/dashboard"
+                  className="text-white font-Montserrat w-[197px] text-2xl font-bold border-cyan-green border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]"
+                >
                   Dashboard
-                </button>
+                </Link>
               </div>
             </div>
             <div className="flex items-center lg:hidden relative z-[200] sm:me-0 me-4">

@@ -100,7 +100,7 @@ const DashboardNav = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center lg:hidden  sm:me-0 me-4">
+            <div className="flex items-center lg:hidden ">
               <div className="relative z-[200]">
                 {isToggleIconVisible && (
                   <button
