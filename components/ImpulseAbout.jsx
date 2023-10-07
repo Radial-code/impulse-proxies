@@ -34,7 +34,7 @@ const ImpulseAbout = () => {
                         height={81}
                         width={81}
                         src={about.aboutImg}
-                        alt="about image"
+                        alt="about img"
                         className=" sm:h-[81px] sm:w-[81px] w-[61px] h-[61px]"
                       />
                       <div className="ps-5 flex">
@@ -66,7 +66,7 @@ const ImpulseAbout = () => {
                         <Image
                           height={27}
                           width={27}
-                          alt="image"
+                          alt="img"
                           src="/assets/images/svg/AboutLogo.svg"
                         />
                         <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[10px]">
@@ -89,7 +89,7 @@ const ImpulseAbout = () => {
                       <Image
                         height={27}
                         width={27}
-                        alt="image"
+                        alt="images"
                         src="/assets/images/svg/AboutLogo.svg"
                       />
                       <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[10px]">

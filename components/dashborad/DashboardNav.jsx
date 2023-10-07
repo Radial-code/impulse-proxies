@@ -29,7 +29,7 @@ const DashboardNav = () => {
         setActiveNavOverlay={setActiveNavOverlay}
       />
       <nav className="dark-blue lg:py-6 sm:py-5 py-4 flex-grow-0">
-        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
+        <div className="container lg:max-w-[1320px] mx-auto lg:px-3 px-8">
           <div className="flex-1 flex items-center justify-between  lg:items-center xl:mr-3">
             <div className="flex-1 flex items-center justify-between">
               <div className="flex-shrink-0 flex items-center justify-between">
@@ -81,10 +81,14 @@ const DashboardNav = () => {
                 </div>
               </div>
               <div className="hidden lg:flex items-center">
-                <Link href="https://discord.com/">
+                <Link href="https://discord.com/" target="blank">
                   <WhiteDiscord />
                 </Link>
-                <Link href="https://twitter.com/" className="ms-5">
+                <Link
+                  href="https://twitter.com/"
+                  target="blank"
+                  className="ms-5 hover:translate-y-[-5px] transition-all ease-in-out duration-200"
+                >
                   <DashboardTweeter />
                 </Link>
                 <div className="bg-[#1D1D42] py-4 pe-5 ps-9 rounded-[10px] flex items-center justify-between ms-6">
