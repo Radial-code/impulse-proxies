@@ -29,7 +29,7 @@ const Dashboard2 = () => {
           ISP & DC ORDERS
         </p>
         <div className="flex flex-wrap justify-between">
-          <div className="xl:w-9/12 lg:w-6/12 w-full overflow-scroll xl:pe-10 max-w-[700px] xl:max-w-full rounded-lg">
+          <div className="xl:w-9/12 lg:w-6/12 w-full max-h-[290px] overflow-scroll xl:pe-10 max-w-[700px] xl:max-w-full rounded-lg">
             <table className="rounded-xl overflow-hidden">
               <thead className="bg-[#212148]">
                 <tr>
@@ -120,7 +120,7 @@ const Dashboard2 = () => {
                 83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
               </p>
             </div>
-            <div className="lg:w-4/12 md:w-6/12 w-full lg:text-center md:text-end text-center sm:mt-0 mt-5">
+            <div className="lg:w-4/12 md:w-6/12 w-full lg:text-center md:text-end text-center md:mt-0 mt-5">
               <p className="text-[#9D9DBB] font-medium font-Montserrat xl:text-lg text-[12px] mb-2">
                 83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
               </p>
