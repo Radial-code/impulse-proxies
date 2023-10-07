@@ -16,16 +16,16 @@ export default function Home() {
   return (
     <>
       <div className="overflow-hidden">
-        {/* <BackToTopButton /> */}
-        {/* <Preloader /> */}
-        {/* <PageMataTag /> */}
-        {/* <Hero /> */}
-        {/* <Current /> */}
-        {/* <WhyToChooseUs /> */}
-        {/* <OurProxies /> */}
-        {/* <ImpulseAbout /> */}
-        {/* <ImpulseFAQ /> */}
-        {/* <ImpulseFooter /> */}
+        <BackToTopButton />
+        <Preloader />
+        <PageMataTag />
+        <Hero />
+        <Current />
+        <WhyToChooseUs />
+        <OurProxies />
+        <ImpulseAbout />
+        <ImpulseFAQ />
+        <ImpulseFooter />
         <Dashboard1 />
         <Dashboard3/>
         <DashboardThree/>
