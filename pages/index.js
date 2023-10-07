@@ -19,7 +19,6 @@ export default function Home() {
       <div className="overflow-hidden">
         <BackToTopButton />
         <DashboardThree />
-        <BackToTopButton />
         <Preloader />
         <PageMataTag />
         <Hero />
