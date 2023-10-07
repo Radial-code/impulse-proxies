@@ -3,7 +3,6 @@ import Dashboard2 from "@/components/dashborad/Dashboard2";
 import Dashboard3 from "@/components/dashborad/Dashboard3";
 import Dashboard5 from "@/components/dashborad/Dashboard5";
 import DashboardThree from "@/components/dashborad/DashboardThree";
-
 const dashboard = () => {
   return (
     <div>

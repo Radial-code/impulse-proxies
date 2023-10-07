@@ -247,10 +247,10 @@ const Dashboard1 = () => {
                         </p>
                       </div>
                       <div className="flex flex-col ms-5">
-                        <button className="border mb-4 border-cyan-green rounded-md text-cyan-green font-Montserrat text-md font-semibold lh_normal py-3 px-8 whitespace-nowrap">
+                        <button className="border mb-4 border-cyan-green rounded-md text-cyan-green font-Montserrat text-md font-semibold lh_normal py-3 px-8 whitespace-nowrap hover:text-[#040426] hover:bg-white duration-300 ease-in-out hover:border-transparent">
                           Max Qty.
                         </button>
-                        <button className=" font-Montserrat text-[#040426] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg  lh_normal py-3 px-8 whitespace-nowrap">
+                        <button className=" font-Montserrat text-[#040426] hover:text-white hover:bg-[#040426] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg  lh_normal py-3 px-8 whitespace-nowrap duration-300 ease-in-out">
                           Generate
                         </button>
                       </div>
@@ -271,10 +271,10 @@ const Dashboard1 = () => {
                     </p>
                   </div>
                   <div className="flex sm:flex-row flex-col">
-                    <button className="text-[#7777AD] bg-[#292956] rounded-md font-Montserrat text-md font-semibold tracking-[-0.28px] px-3.5 py-3">
+                    <button className="text-[#7777AD] bg-[#292956] rounded-md font-Montserrat text-md font-semibold tracking-[-0.28px] px-3.5 py-3 hover:text-[#040426] hover:bg-white duration-300 ease-in-out">
                       Download.txt
                     </button>
-                    <button className="text-[#040426] sm:mt-0 mt-3 bg-white rounded-md font-Montserrat text-md font-bold tracking-[-0.28px] px-3.5 py-3 sm:ms-4">
+                    <button className="text-[#040426] sm:mt-0 mt-3 bg-white rounded-md font-Montserrat text-md font-bold tracking-[-0.28px] px-3.5 py-3 sm:ms-4 hover:text-white hover:bg-[#040426] duration-300 ease-in-out">
                       Copy to Clipboard
                     </button>
                   </div>
@@ -431,10 +431,10 @@ const Dashboard1 = () => {
                         </p>
                       </div>
                       <div className="flex flex-col ms-5">
-                        <button className="border mb-4 border-cyan-green rounded-md text-cyan-green font-Montserrat text-md font-semibold lh_normal py-3 px-8 whitespace-nowrap">
+                        <button className="border mb-4 border-cyan-green rounded-md text-cyan-green font-Montserrat text-md font-semibold lh_normal py-3 px-8 whitespace-nowrap !hover:text-[#040426]  !hover:bg-white duration-150 ease-in-out">
                           Max Qty.
                         </button>
-                        <button className=" font-Montserrat text-[#040426] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg  lh_normal py-3 px-8 whitespace-nowrap">
+                        <button className=" font-Montserrat text-[#040426] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg  lh_normal py-3 px-8 whitespace-nowrap hover:text-white  duration-300 ease-in-out">
                           Generate
                         </button>
                       </div>
