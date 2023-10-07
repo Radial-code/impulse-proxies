@@ -22,6 +22,10 @@ export default function Home() {
         <ImpulseAbout />
         <ImpulseFAQ />
         <ImpulseFooter />
+        <Dashboard1 />
+        <Dashboard3/>
+        <DashboardThree/>
+        <Dashboard5/>
       </div>
     </>
   );
