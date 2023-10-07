@@ -70,7 +70,7 @@ const Dashboard5 = () => {
               <p className="bg-[#212148] rounded-t-[16px] h-14 px-9 text-sm font-Montserrat font-bold text-white flex items-center">
                 REFER A FRIEND
               </p>
-              <div className="rang_bar px-4 lg:px-9 pt-[22px] pb-8 rounded-b-[16px]">
+              <div className="rang_bar px-4 lg:px-9 pt-[22px] pb-10 rounded-b-[16px]">
                 <div className="bg-[#292956] h-[46px] rounded-[10px] flex justify-between items-center px-[18px]">
                   <div className=" flex">
                     <p className=" text-[#7777AD] font-Montserrat text-md font-semibold">
