@@ -137,14 +137,32 @@ const Dashboard1 = () => {
                   Region
                 </p>
                 {/* dropdown */}
-                <select
-                  name="countery"
-                  id="countery"
-                  className="w-full bg-[#212148] px-4 py-3.5"
-                >
-                  <option value="United States">United States</option>
-                  <option value="india">India</option>
-                </select>
+                <div className="bg-[#212148] px-4 py-3.5 rounded-lg">
+                  <select
+                    name="countery"
+                    id="countery"
+                    className="w-full border-0 outline-none focus-visible:outline-none cursor-pointer bg-[#212148]"
+                  >
+                    <option value="United States">United States</option>
+                    <option value="india">India</option>
+                  </select>
+                </div>
+              </div>
+              <div className="bg-[#17173A] pt-5 pb-6  ps-8 pe-12">
+                <p className="text-white text-lg mb-4 font-semibold font-Montserrat">
+                  Proxy Type
+                </p>
+                {/* dropdown */}
+                <div className="bg-[#212148] px-4 py-3.5 rounded-lg">
+                  <select
+                    name="countery"
+                    id="countery"
+                    className="w-full border-0 outline-none focus-visible:outline-none cursor-pointer bg-[#212148]"
+                  >
+                    <option value="United States">Residential</option>
+                    <option value="india">option</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
