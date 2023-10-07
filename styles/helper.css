@@ -9,16 +9,16 @@
   background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
 }
 .bg_current {
-  background: linear-gradient(348.83deg, #141436 -2.09%, #1e1f3e 120.28%),
-    radial-gradient(
-        86.74% 170.14% at 52.35% 13.26%,
-        rgba(79, 220, 199, 0.5) 0%,
-        rgba(79, 220, 199, 0) 100%
-      )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+ border: 1px solid #4FDCC7;
+ background: linear-gradient(349deg, rgba(20, 20, 54, 0.60) -2.09%, rgba(30, 31, 62, 0.60) 120.28%);
+ backdrop-filter: blur(33px);
 }
 .back_to_top {
   animation: top-btn infinite linear 2s;
+}
+.rang_bar{
+  background: linear-gradient(112.69deg, #151536 35.26%, #393969 182.89%);
+
 }
 
 @keyframes top-btn {

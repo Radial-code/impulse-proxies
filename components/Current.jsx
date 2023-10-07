@@ -6,6 +6,7 @@ const Current = () => {
  
   return (
     <>
+      <div className="  bg-opacity-50 relative after:contents-[''] after:absolute after:w-full border-[1px] border-[#1F374F] sm:pb-7 sm:pt-14 py-11 ms-[-10px] me-[-10px]">
       <div className=" bg_current bg-opacity-50 relative after:contents-[''] after:absolute after:w-full border-[1px] border-[#1F374F] sm:pb-7 sm:pt-14 py-11 ms-[-10px] me-[-10px] border-b-0">
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <div className="flex flex-wrap justify-around">
@@ -45,6 +46,7 @@ const Current = () => {
             </Link>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

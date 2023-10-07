@@ -90,7 +90,6 @@ export const CardData = [
     whyToImg: "/assets/images/svg/clock.svg",
   },
 ];
-
 export const CurrentData = [
   { id: 1, number: "3,234,199", current: "Current Active IPs" },
   { id: 2, number: "1,500+", current: "Loyal Impulse Users" },
