@@ -22,7 +22,14 @@ const Dashboard2 = () => {
     ["1232312123", "Datacenter", "Proxy1", "500", "05/06/2024", "12", "54"],
   ];
   return (
-    <div>
+    <div className="relative">
+      <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
+        <div className="hero_wave">
+          <div className="hero_wave_height">
+            <div className="grad_bg"></div>
+          </div>
+        </div>
+      </div>
       <DashboardNav />
       <div className="container lg:max-w-[1320px] w-full mx-auto lg:px-3 px-8 mb-10">
         <p className="text-white font-Montserrat font-bold tracking-[1.2px] mb-4 mt-10">
@@ -187,7 +194,7 @@ const Dashboard2 = () => {
           </div>
         </div>
       </div>
-      <DashbarFooter/>
+      <DashbarFooter />
     </div>
   );
 };
