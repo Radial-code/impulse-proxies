@@ -35,7 +35,8 @@ const Header = () => {
                     height={67}
                     width={67}
                     src="/assets/images/svg/FooterLogo.svg"
-                    alt="hero logo"
+                    alt="herologo"
+                    
                     className="sm:w-[67px] sm:h-[67px] w-[40px] h-[40px]"
                   />
                   <div className="ms-3">
@@ -58,7 +59,7 @@ const Header = () => {
                         width={15}
                         height={10}
                         className="ms-2"
-                        alt="product img"
+                        alt="productimg"
                         src="/assets/images/svg/productArrow.svg"
                       />
                     </button>

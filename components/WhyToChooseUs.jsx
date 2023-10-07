@@ -33,7 +33,7 @@ function WhyToChooseUs() {
                         height={32}
                         width={32}
                         src={CardData.whyToImg}
-                        alt="about image"
+                        alt="aboutimage"
                       />
                     </div>
                     <p className=" text-white text-md font-medium font-Montserrat opacity-70 lg:max-w-[235px] leading-[178%] mt-2">

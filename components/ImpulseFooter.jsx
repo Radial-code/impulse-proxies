@@ -17,7 +17,7 @@ const ImpulseFooter = () => {
                   height={67}
                   width={67}
                   src="/assets/images/svg/FooterLogo.svg"
-                  alt="about image"
+                  alt="aboutimage"
                 />
                 <div className=" ms-3">
                   <p className="mb-0 text-3xl text-white font-bold lh_normal font-Montserrat tracking-[3.3px]">

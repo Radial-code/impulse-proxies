@@ -6,7 +6,6 @@ import { DashbarFooter } from "./DashbarFooter";
 
 const DashboardThree = () => {
   const [value, setValue] = useState(50);
-
   const handleChange = (e) => {
     setValue(e.target.value);
   };
@@ -57,7 +56,7 @@ const DashboardThree = () => {
                     height={21}
                     width={21}
                     src="/assets/images/svg/content_copy.svg"
-                    alt="about image"
+                    alt="aboutimage"
                   />
                 </div>
                 <p className=" font-Montserrat text-[13px] md:text-lg font-medium text-[#9D9DBB] md:max-w-[540px] max-w-[460px] mt-4 lg:mt-5">
