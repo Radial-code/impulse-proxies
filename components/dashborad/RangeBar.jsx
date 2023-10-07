@@ -1,7 +1,34 @@
-import Image from 'next/image';
-import React from 'react'
+import Image from "next/image";
+import React, { useState } from "react";
 
 const RangeBar = () => {
+  const [minRange, setMinRange] = useState(25);
+  const [maxRange, setMaxRange] = useState(100);
+  const gap = 10;
+  const handleInputChange = (e) => {
+    const targetClassName = e.target.className;
+
+    if (maxRange - minRange < gap) {
+      if (targetClassName === "range-min") {
+        setMinRange(maxRange - gap);
+      } else {
+        setMaxRange(minRange + gap);
+      }
+    }
+  };
+  const handleMinRangeChange = (e) => {
+    setMinRange(parseInt(e.target.value));
+  };
+
+  const handleMaxRangeChange = (e) => {
+    setMaxRange(parseInt(e.target.value));
+  };
+
+  const progressStyle = {
+    left: `${(minRange / 100) * 100}%`,
+    right: `${100 - (maxRange / 100) * 100}%`,
+  };
+
   return (
     <>
       <div className=" px-3">
@@ -12,14 +39,35 @@ const RangeBar = () => {
           <p className=" text-sm font-Montserrat font-bold text-white md:max-w-[330px] text-center md:text-end">
             3 GB TO GO!
           </p>
-          <Image
-            height={100}
-            width={100}
-            className=" lg:max-w-[1100px] w-full"
-            src="/assets/images/svg/Group 176.svg"
-            alt="about image"
-          />
-          <div className=" flex justify-between max-w-[1100px]">
+
+          <div className="flex relative justify-center items-center h-20 mx-auto rounded">
+            <div className="range-slider">
+              <div className="progress" style={progressStyle}></div>
+              <span className="range-min-wrapper">
+                <input
+                  className="range-min"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value={minRange}
+                  onChange={handleMinRangeChange}
+                  onInput={handleInputChange}
+                />
+              </span>
+              <span className="range-max-wrapper">
+                <input
+                  className="range-max"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value={maxRange}
+                  onChange={handleMaxRangeChange}
+                  onInput={handleInputChange}
+                />
+              </span>
+            </div>
+          </div>
+          <div className=" flex justify-between">
             <p className=" text-sm font-Montserrat font-bold text-white lg:mt-[-14px]">
               0 GB
             </p>
@@ -62,7 +110,6 @@ const RangeBar = () => {
       </div>
     </>
   );
-}
+};
 
-export default RangeBar
-
+export default RangeBar;

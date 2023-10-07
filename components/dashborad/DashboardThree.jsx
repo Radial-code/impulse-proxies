@@ -10,7 +10,6 @@ const DashboardThree = () => {
   const handleChange = (e) => {
     setValue(e.target.value);
   };
-
   return (
     <>
       <DashboardNav />
@@ -87,6 +86,7 @@ const DashboardThree = () => {
           </div>
         </div>
       </div>
+      
       <DashbarFooter />
     </>
   );

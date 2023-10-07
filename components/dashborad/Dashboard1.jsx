@@ -1,10 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import DashboardNav from "./DashboardNav";
 import Image from "next/image";
 import Link from "next/link";
 import { DashbarFooter } from "./DashbarFooter";
 
 const Dashboard1 = () => {
+   const [minRange, setMinRange] = useState(25);
+   const [maxRange, setMaxRange] = useState(100);
+   const gap = 10;
+   const handleInputChange = (e) => {
+     const targetClassName = e.target.className;
+
+     if (maxRange - minRange < gap) {
+       if (targetClassName === "range-min") {
+         setMinRange(maxRange - gap);
+       } else {
+         setMaxRange(minRange + gap);
+       }
+     }
+   };
+   const handleMinRangeChange = (e) => {
+     setMinRange(parseInt(e.target.value));
+   };
+
+   const handleMaxRangeChange = (e) => {
+     setMaxRange(parseInt(e.target.value));
+   };
+
+   const progressStyle = {
+     left: `${(minRange / 100) * 100}%`,
+     right: `${100 - (maxRange / 100) * 100}%`,
+   };
+
   return (
     <>
       <DashboardNav />
@@ -170,16 +197,39 @@ const Dashboard1 = () => {
                     Amount
                   </p>
                   <div class="flex items-start mt-3 justify-between">
-                    <div className="flex items-start">
-                      <div className="mb-0 pt-3">
-                        <input
-                          type="range"
-                          min="1"
-                          max="374"
-                          className="w-full xl:w-[274px]"
-                          value="50"
-                        />
-                        <p className=" text-white font-Montserrat text-sm font-medium">
+                    <div className="flex justify-between items-start w-full">
+                      <div className="mb-0 pt-3 w-full">
+                        <div className="flex relative justify-center items-center h-[20px] w-full mx-auto rounded">
+                          <div className="range-slider">
+                            <div
+                              className="progress"
+                              style={progressStyle}
+                            ></div>
+                            <span className="range-min-wrapper">
+                              <input
+                                className="range-min"
+                                type="range"
+                                min="0"
+                                max="100"
+                                value={minRange}
+                                onChange={handleMinRangeChange}
+                                onInput={handleInputChange}
+                              />
+                            </span>
+                            <span className="range-max-wrapper">
+                              <input
+                                className="range-max"
+                                type="range"
+                                min="0"
+                                max="100"
+                                value={maxRange}
+                                onChange={handleMaxRangeChange}
+                                onInput={handleInputChange}
+                              />
+                            </span>
+                          </div>
+                        </div>
+                        <p className=" text-white font-Montserrat text-sm pt-5 font-medium">
                           500 Proxies
                         </p>
                       </div>
@@ -332,15 +382,38 @@ const Dashboard1 = () => {
                   </p>
                   <div class="flex items-start mt-3 justify-between">
                     <div className="flex items-start">
-                      <div className="mb-0 pt-3">
-                        <input
-                          type="range"
-                          min="1"
-                          max="374"
-                          className="w-full xl:w-[274px]"
-                          value="50"
-                        />
-                        <p className=" text-white font-Montserrat text-sm font-medium">
+                      <div className="mb-0 pt-3 w-full">
+                        <div className="flex relative justify-center items-center h-[20px] w-full mx-auto rounded">
+                          <div className="range-slider">
+                            <div
+                              className="progress"
+                              style={progressStyle}
+                            ></div>
+                            <span className="range-min-wrapper">
+                              <input
+                                className="range-min"
+                                type="range"
+                                min="0"
+                                max="100"
+                                value={minRange}
+                                onChange={handleMinRangeChange}
+                                onInput={handleInputChange}
+                              />
+                            </span>
+                            <span className="range-max-wrapper">
+                              <input
+                                className="range-max"
+                                type="range"
+                                min="0"
+                                max="100"
+                                value={maxRange}
+                                onChange={handleMaxRangeChange}
+                                onInput={handleInputChange}
+                              />
+                            </span>
+                          </div>
+                        </div>
+                        <p className=" text-white font-Montserrat text-sm pt-5 font-medium">
                           500 Proxies
                         </p>
                       </div>
