@@ -34,7 +34,7 @@ const DashboardThree = () => {
                   Redeem All
                 </button>
               </div>
-              <div className=" bg-[url('/assets/images/png/Earned_Rewards.png')] bg-no-repeat bg-cover h-[233px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]">
+              <div className=" bg-[url('/assets/images/png/Earned_Rewards.png')] bg-no-repeat bg-cover h-[242px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]">
                 <h3 className="font-Montserrat font-bold text-xl text-white">
                   NO REWARDS WON
                 </h3>
@@ -50,7 +50,7 @@ const DashboardThree = () => {
               <p className="bg-[#212148] rounded-t-[16px] h-14 px-9 text-sm font-Montserrat font-bold text-white flex items-center">
                 REFER A FRIEND
               </p>
-              <div className="rang_bar px-4 lg:px-9 pt-[22px] pb-8 rounded-b-[16px]">
+              <div className="rang_bar px-4 lg:px-9 pt-[22px] pb-10 rounded-b-[16px]">
                 <div className="bg-[#292956] h-[46px] rounded-[10px] flex justify-between items-center px-[18px]">
                   <div className=" flex">
                     <p className=" text-[#7777AD] font-Montserrat text-md font-semibold">
