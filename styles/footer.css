@@ -56,8 +56,17 @@
   background-color: #50eed7 !important;
   border-radius: 10px;
 }
-@media (max-width:490px) {
-  .pb_64{
-    padding-bottom: 52px !important;
+@media (max-width: 490px) {
+  .pb_64 {
+    padding-bottom: 52px !important
   }
+}
+table,
+thead,
+tbody,
+tr {
+  border: 0 !important;
+}
+tr:nth-child(even){
+  background: #212148;
 }
