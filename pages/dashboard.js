@@ -7,8 +7,8 @@ import DashboardThree from "@/components/dashborad/DashboardThree";
 const dashboard = () => {
   return (
     <div>
-      <Dashboard2 />
       <Dashboard1 />
+      <Dashboard2 />
       <Dashboard3 />
       <DashboardThree />
       <Dashboard5/>

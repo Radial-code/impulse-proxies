@@ -65,6 +65,16 @@
   }
 }
 /* range bar css */
+table,
+thead,
+tbody,
+tr {
+  border: 0 !important;
+}
+tr:nth-child(even) {
+  background: #212148;
+}
+/* range bar css  */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
