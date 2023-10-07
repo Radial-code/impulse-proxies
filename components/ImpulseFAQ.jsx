@@ -20,7 +20,10 @@ const ImpulseFAQ = () => {
     }
   };
   return (
-    <div id="Faqs" className="bg-[url('/assets/images/png/FAQbg.png')] bg-no-repeat bg-cover bg-center md:pt-28 sm:pt-20 pt-12 md:pb-44 sm:pb-22 pb-16 overflow-hidden relative">
+    <div
+      id="Faqs"
+      className="bg-[url('/assets/images/png/FAQbg.png')] bg-no-repeat bg-cover bg-center md:pt-28 sm:pt-20 pt-12 md:pb-44 sm:pb-22 pb-16 overflow-hidden relative"
+    >
       <div className="torus-footer absolute pointer-events-none bottom-[-10px] xl:w-[223px]  xl:h-[223px]  lg:w-[123px] lg:h-[123px] start-0 sm:w-[93px] md:w-[173px] md:h-[173px] w-[73px]  sm:h-[93px] h-[100px]">
         <Torus />
       </div>

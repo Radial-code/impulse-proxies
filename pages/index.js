@@ -8,17 +8,11 @@ import WhyToChooseUs from "@/components/WhyToChooseUs";
 import BackToTopButton from "@/components/common/BackToTopButton ";
 import Preloader from "@/components/common/Preloader";
 import PageMataTag from "@/components/PageMataTag";
-import DashboardNav from "@/components/dashborad/DashboardNav";
-import DashboardThree from "@/components/dashborad/DashboardThree";
-import { DashbarFooter } from "@/components/dashborad/DashbarFooter";
-import Dashboard1 from "@/components/dashborad/Dashboard1";
-
 export default function Home() {
   return (
     <>
       <div className="overflow-hidden">
         <BackToTopButton />
-        <DashboardThree />
         <Preloader />
         <PageMataTag />
         <Hero />
@@ -28,9 +22,6 @@ export default function Home() {
         <ImpulseAbout />
         <ImpulseFAQ />
         <ImpulseFooter />
-        {/* <DashboardNav />
-        <DashbarFooter />
-        {/* <Dashboard1 /> */}
       </div>
     </>
   );
