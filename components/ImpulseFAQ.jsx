@@ -35,14 +35,15 @@ const ImpulseFAQ = () => {
         width={223}
         className="pointer-events-none absolute bottom-[-10px] xl:w-[203px]  xl:h-[223px]  lg:w-[123px] lg:h-[123px] start-0 sm:w-[93px] md:w-[103px] md:h-[103px] w-[73px]  sm:h-[93px] h-[60px]"
         src="/assets/images/svg/FaqBottom.svg"
-        alt="about image"
+        alt="FaqBottomimage"
+        priority="1"
       />
       <Image
         height={207}
         width={207}
         className="pointer-events-none  absolute lg:top-[-15%] sm:top-[-10%] top-[-2%] end-[-10px] lg:end-0 sm:end-[-1%] lg:h-[207px] lg:w-[207px] sm:w-[120px] w-[73px]  sm:h-[175px] h-[60px]"
         src="/assets/images/svg/FaqRight.svg"
-        alt="faq image"
+        alt="faqimage"
       />
       <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 sm:pt-0 pt-3 sm:pb-0 pb-3">
         <p className="text-center lg:text-6xl md:text-[35px] text-[25px] text-white font-Montserrat font-bold leading-[121%] tracking-[-0.74px] sm:mb-12 mb-7">
