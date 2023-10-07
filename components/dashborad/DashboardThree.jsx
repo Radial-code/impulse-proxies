@@ -15,10 +15,10 @@ const DashboardThree = () => {
     <>
       <DashboardNav />
 
-      <div className=" py-8">
+      <div className="lg:pt-14 lg:pb-36 py-12">
         <div className="container xl:max-w-[1220px] flex flex-col 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <RangeBar />
-          <div className=" flex flex-wrap mt-9 lg:mt-7">
+          <div className=" flex flex-wrap mt-9 lg:mt-12">
             <div className="w-full lg:w-6/12 px-3">
               <div className="bg-[#212148] flex items-center justify-between h-14 rounded-t-[16px] px-4 lg:px-9 relative">
                 <p className=" text-sm font-Montserrat font-bold text-white">
@@ -28,7 +28,7 @@ const DashboardThree = () => {
                   Redeem All
                 </button>
               </div>
-              <div className=" bg-[url('/assets/images/png/Earned_Rewards.png')] bg-no-repeat bg-cover h-60  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]">
+              <div className=" bg-[url('/assets/images/png/Earned_Rewards.png')] bg-no-repeat bg-cover h-[233px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]">
                 <h3 className="font-Montserrat font-bold text-xl text-white">
                   NO REWARDS WON
                 </h3>
@@ -44,7 +44,7 @@ const DashboardThree = () => {
               <p className="bg-[#212148] rounded-t-[16px] h-14 px-9 text-sm font-Montserrat font-bold text-white flex items-center">
                 REFER A FRIEND
               </p>
-              <div className="rang_bar px-4 lg:px-9 pt-7 pb-8 rounded-b-[16px]">
+              <div className="rang_bar px-4 lg:px-9 pt-[22px] pb-8 rounded-b-[16px]">
                 <div className="bg-[#292956] h-[46px] rounded-[10px] flex justify-between items-center px-[18px]">
                   <div className=" flex">
                     <p className=" text-[#7777AD] font-Montserrat text-md font-semibold">
@@ -87,7 +87,7 @@ const DashboardThree = () => {
           </div>
         </div>
       </div>
-      <DashbarFooter/>
+      <DashbarFooter />
     </>
   );
 };
