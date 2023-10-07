@@ -13,16 +13,16 @@ const DashboardThree = () => {
     <>
       <div className=" relative">
          <Image
-          height={100}
-          width={100}
-          className=" absolute end-0 bottom-[40]  z-[-1]"
+          height={150}
+          width={150}
+          className=" absolute end-0 bottom-[80px] z-[1]"
           src="/assets/images/png/Mockup_bg_blur.png"
           alt="Mockup_bg_blur"
         />
         <Image
           height={200}
           width={200}
-          className=" absolute start-0 top-0  z-[-1]"
+          className=" absolute start-0 top-0  z-[1]"
           src="/assets/images/png/Mockup_top_blur.png"
           alt="Mockup_bg_blur"
         />
@@ -98,7 +98,7 @@ const DashboardThree = () => {
               </div>
             </div>
           </div>
-          <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
+          <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] 2xl:top-[-180px] z-[-2] animation">
             <div className="hero_wave">
               <div className="hero_wave_height">
                 <div className="grad_bg"></div>
