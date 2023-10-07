@@ -17,10 +17,8 @@ export default function Home() {
   return (
     <>
       <div className="overflow-hidden">
-        {/* <DashboardThree/>*/}
-        {/* /* <DashboardNav /> */}
-        {/* <DashbarFooter /> */}
-        {/* <Dashboard1 />  */}
+        <BackToTopButton />
+        <DashboardThree />
         <BackToTopButton />
         <Preloader />
         <PageMataTag />
@@ -31,6 +29,9 @@ export default function Home() {
         <ImpulseAbout />
         <ImpulseFAQ />
         <ImpulseFooter />
+        {/* <DashboardNav />
+        <DashbarFooter />
+        {/* <Dashboard1 /> */}
       </div>
     </>
   );

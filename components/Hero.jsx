@@ -35,6 +35,7 @@ const Hero = () => {
                   height={900}
                   src="/assets/images/png/heroImg.png"
                   alt="hero-image"
+                  loading="eager"
                   className="pointer-events-none relative z-50 2xl:h-[500px] sm:max-w-[400px] md:max-w-[370px] lg:max-w-[500px] mx-auto xl:h-[500px] xl:max-w-[600px] xl:w-full"
                 />
                 <div className="md:hidden sm:flex sm:mb-0 mb-5 items-center justify-center text-center">

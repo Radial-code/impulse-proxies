@@ -36,7 +36,7 @@ const BackToTopButton = () => {
       <Image
         width={25}
         height={25}
-        alt="image"
+        alt="back to top"
         className=" rotate-[-90deg]"
         src="/assets/images/svg/TopBtn.svg"
       />

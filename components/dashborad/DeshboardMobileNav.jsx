@@ -76,7 +76,10 @@ const DeshboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
               <Link href="https://discord.com/">
                 <WhiteDiscord />
               </Link>
-              <Link href="https://twitter.com/" className="ms-5">
+              <Link
+                href="https://twitter.com/"
+                className="ms-5 hover:translate-y-[-5px] transition-all ease-in-out duration-200"
+              >
                 <DashboardTweeter />
               </Link>
             </div>
