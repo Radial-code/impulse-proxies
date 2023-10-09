@@ -52,8 +52,8 @@ const OurProxies = () => {
           </div>
         </div>
         <div className=" flex justify-center  lg:justify-center relative">
-          <button className=" max-w-[197px] w-full min-h-[55px] border-[2px] border-cyan-green bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-10 hover:bg-transparent transition-all duration-300">
-            Try Now
+          <button className=" max-w-[271px] w-full min-h-[54px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-10 hover:bg-transparent transition-all duration-300">
+            Explore Products
           </button>
         </div>
       </div>

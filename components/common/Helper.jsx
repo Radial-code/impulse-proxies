@@ -43,7 +43,7 @@ export const AboutBox = [
   },
   {
     id: 2,
-    aboutImg: "/assets/images/svg/about2.svg",
+    aboutImg: "/assets/images/svg/ZfnwLnb 1.svg",
     impulse: "Nuno",
     border: "linerBorder",
   },

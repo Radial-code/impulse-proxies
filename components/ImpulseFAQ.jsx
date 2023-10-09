@@ -1,13 +1,8 @@
-import React, { useState } from "react";
-import { AccordianData } from "./common/Helper";
-import {
-  Accordion,
-  AccordionHeader,
-  AccordionBody,
-} from "@material-tailwind/react";
 import Image from "next/image";
-import Torus from "./common/Torus";
+import { useState } from "react";
 import Ring from "./Ring";
+import { AccordianData } from "./common/Helper";
+import Torus from "./common/Torus";
 
 const ImpulseFAQ = () => {
   const [openAccordion, setOpenAccordion] = useState(null);
@@ -50,12 +45,13 @@ const ImpulseFAQ = () => {
           Frequently Asked Questions
         </p>
         {AccordianData.map((data, index) => (
-          <Accordion
+          <div
             key={data.id}
             className="mt-5 border-[2px] transition-opacity ease-in duration-300 border-cyan-green bg-[#50EED733] rounded-2xl px-4 py-3 overflow-hidden w-full max-w-[694px] mx-auto"
             open={openAccordion === index}
           >
-            <AccordionHeader
+            
+            <div
               onClick={() => toggleAccordion(index)}
               className="py-1"
             >
@@ -79,8 +75,8 @@ const ImpulseFAQ = () => {
                   />
                 )}
               </span>
-            </AccordionHeader>
-            <AccordionBody
+            </div>
+            <div
               className={`transition-all duration-[1s] ease-linear pt-0 pb-0 ${
                 openAccordion === index ? "h-full" : "h-0"
               }`}
@@ -88,8 +84,8 @@ const ImpulseFAQ = () => {
               <p className="text-[#768A95] font-medium font-Montserrat leading-[178%] text-md max-w-[550px] pb-0">
                 {data.para}
               </p>
-            </AccordionBody>
-          </Accordion>
+            </div>
+          </div>
         ))}
       </div>
     </div>
