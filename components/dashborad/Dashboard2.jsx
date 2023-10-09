@@ -22,7 +22,14 @@ const Dashboard2 = () => {
     ["1232312123", "Datacenter", "Proxy1", "500", "05/06/2024", "12", "54"],
   ];
   return (
-    <div>
+    <div className="relative">
+      <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
+        <div className="hero_wave">
+          <div className="hero_wave_height">
+            <div className="grad_bg"></div>
+          </div>
+        </div>
+      </div>
       <DashboardNav />
       <div className="container lg:max-w-[1320px] w-full mx-auto lg:px-3 px-8 mb-10">
         <p className="text-white font-Montserrat font-bold tracking-[1.2px] mb-4 mt-10">
@@ -79,10 +86,10 @@ const Dashboard2 = () => {
               <p className="text-[#505082] font-Montserrat text-md font-bold tracking-[1.4px] ms-4 md:block hidden">
                 500 PROXIES
               </p>
-              <button className="p-[11px_14px] bg-[#292956] rounded-md text-[#7777AD] font-Montserrat font-semibold text-md tracking-[-0.28px] mx-6 md:mt-0 mt-4">
+              <button className="p-[11px_14px] bg-[#292956] rounded-md text-[#7777AD] font-Montserrat font-semibold text-md tracking-[-0.28px] mx-6 md:mt-0 mt-4 hover:bg-white hover:text-[#040426] ease-out duration-150 transition-all">
                 Download .txt
               </button>
-              <button className="p-[10px_13px] bg-white font-bold tracking-[-0.28px] text-[#040426] rounded-md">
+              <button className="p-[10px_13px] bg-white font-bold tracking-[-0.28px] hover:bg-[#292956] hover:text-white text-[#040426] rounded-md ease-out duration-150 transition-all">
                 Copy to Clipboard
               </button>
             </div>
@@ -187,7 +194,7 @@ const Dashboard2 = () => {
           </div>
         </div>
       </div>
-      <DashbarFooter/>
+      <DashbarFooter />
     </div>
   );
 };

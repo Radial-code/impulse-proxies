@@ -45,7 +45,7 @@ export const AboutBox = [
     id: 2,
     aboutImg: "/assets/images/svg/about2.svg",
     impulse: "Nuno",
-    border: "linerBorderSecond",
+    border: "linerBorder",
   },
 ];
 export const AccordianData = [

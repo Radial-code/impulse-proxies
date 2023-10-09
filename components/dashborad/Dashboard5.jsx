@@ -7,22 +7,15 @@ const Dashboard5 = () => {
   return (
     <>
       <div className="relative">
-        <Image
-          height={150}
-          width={150}
-          className=" absolute end-0 bottom-[80px] z-[1]"
-          src="/assets/images/png/Mockup_bg_blur.png"
-          alt="Mockup_bg_blur"
-        />
-        <Image
-          height={200}
-          width={200}
-          className=" absolute start-0 top-0  z-[1]"
-          src="/assets/images/png/Mockup_top_blur.png"
-          alt="Mockup_bg_blur"
-        />
+        <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
+          <div className="hero_wave">
+            <div className="hero_wave_height">
+              <div className="grad_bg"></div>
+            </div>
+          </div>
+        </div>
         <DashboardNav />
-        <div className="lg:pt-14 lg:pb-36 py-12 relative">
+        <div className="lg:pt-14 lg:pb-36 py-12">
           <div className="container xl:max-w-[1220px] flex flex-col 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
             <RangeBar />
             <div className=" flex flex-wrap mt-9 lg:mt-12">
@@ -126,15 +119,7 @@ const Dashboard5 = () => {
               </div>
             </div>
           </div>
-          <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] 2xl:top-[-180px] z-[-2] animation">
-            <div className="hero_wave">
-              <div className="hero_wave_height">
-                <div className="grad_bg"></div>
-              </div>
-            </div>
-          </div>
         </div>
-
         <DashbarFooter />
       </div>
     </>

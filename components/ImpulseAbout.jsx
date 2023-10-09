@@ -5,7 +5,7 @@ import { AboutBox } from "./common/Helper";
 import Image from "next/image";
 const ImpulseAbout = () => {
   return (
-    <div id="AboutUs" className="bg-[#141436] sm:pt-24 pt-11 z-10 relative">
+    <div id="AboutUs" className="bg-[#141436] select_none sm:pt-24 pt-11 z-10 relative">
       <Image
         src="/assets/images/svg/Abstract-01.svg"
         alt="aboutTop"
@@ -26,7 +26,7 @@ const ImpulseAbout = () => {
             return (
               <div
                 key={about.id}
-                className={`lg:w-6/12 hover:translate-y-[-10%] duration-200 ease-in-out sm:w-10/12 w-full  rounded-[20px] p-[2px] inline-block lg:mt-0 mt-4 ${about.border}`}
+                className={`lg:w-6/12 hover:translate-y-[-10%] duration-200 ease-in-out sm:w-10/12 w-full  rounded-[20px] p-[2px] inline-block lg:mt-0 mt-4 relative ${about.border}`}
               >
                 <div className="block rounded-[20px] w-full bg-[#080D2D] sm:ps-8 ps-4 pb-6 sm:pt-9 pt-4 sm:pe-6 pe-4">
                   <div className="flex justify-between">
