@@ -63,7 +63,7 @@ const Header = () => {
                       />
                     </button>
                     {/* Dropdown menu */}
-                    <div className="top-[20px] py-3 overflow-hidden absolute right-0 mt-2 w-32 bg-[#040426] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out border-[1px] border-white z-10">
+                    <div className="top-[20px] py-3 overflow-hidden absolute left-0 mt-2 w-32 bg-[#040426] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out border-[1px] border-white z-10 lg:w-[204px]">
                       <ul>
                         {/* Dropdown menu items */}
                         <li>
@@ -98,19 +98,19 @@ const Header = () => {
                     href="#Faqs"
                     className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
-                    FAQ
+                    About Us
                   </Link>
                   <Link
                     href="#AboutUs"
                     className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
-                    About Us
+                    FAQ
                   </Link>
                   <Link
                     href="#proxies"
                     className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
-                    Pricing
+                    Purchase
                   </Link>
                 </div>
               </div>
