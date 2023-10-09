@@ -33,7 +33,7 @@ const Hero = () => {
                 <Image
                   width={500}
                   height={900}
-                  src="/assets/images/png/heroImg.png"
+                  src="/assets/images/svg/heroImg.svg"
                   alt="hero-image"
                   className="pointer-events-none relative z-50 2xl:h-[500px] sm:max-w-[400px] md:max-w-[370px] lg:max-w-[500px] mx-auto xl:h-[500px] xl:max-w-[600px] xl:w-full"
                 />
