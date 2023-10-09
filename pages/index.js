@@ -11,10 +11,10 @@ import PageMataTag from "@/components/PageMataTag";
 export default function Home() {
   return (
     <>
+        <PageMataTag />
       <div className="overflow-hidden">
         <BackToTopButton />
         <Preloader />
-        <PageMataTag />
         <Hero />
         <Current />
         <WhyToChooseUs />

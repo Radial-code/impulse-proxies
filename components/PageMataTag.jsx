@@ -26,7 +26,7 @@ const PageMataTag = () => {
           />
           <meta
             property="og:image"
-            content="https://impulse-proxies-01.vercel.app/images/png/MetaTag.png"
+            content="https://impulse-proxies-01.vercel.app/MetaTag.png"
           />
           {/* <!-- Twitter --> */}
           <meta
@@ -44,7 +44,7 @@ const PageMataTag = () => {
           />
           <meta
             property="twitter:image"
-            content="https://impulse-proxies-01.vercel.app/images/png/MetaTag.png"
+            content="https://impulse-proxies-01.vercel.app/MetaTag.png"
           />
         </Head>
     </>

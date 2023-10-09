@@ -26,17 +26,16 @@ const Header = () => {
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <div className="flex-1 flex items-center justify-between  lg:items-center xl:mr-3">
             <div className="flex-1 flex items-center justify-between">
-              <div className="flex-shrink-0 flex items-center justify-between">
+              <div className="flex-shrink-0 flex items-center justify-between relative z-[200]">
                 <Link
                   href="/"
-                  className="text-white text-xl font-semibold flex items-center"
+                  className="text-white text-xl font-semibold flex items-center "
                 >
                   <Image
                     height={67}
                     width={67}
                     src="/assets/images/svg/FooterLogo.svg"
                     alt="herologo"
-                    
                     className="sm:w-[67px] sm:h-[67px] w-[40px] h-[40px]"
                   />
                   <div className="ms-3">
@@ -64,7 +63,7 @@ const Header = () => {
                       />
                     </button>
                     {/* Dropdown menu */}
-                    <div className="top-[20px] py-3 overflow-hidden absolute right-0 mt-2 w-28 bg-[#040426] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out border-[1px] border-white z-10">
+                    <div className="top-[20px] py-3 overflow-hidden absolute right-0 mt-2 w-32 bg-[#040426] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out border-[1px] border-white z-10">
                       <ul>
                         {/* Dropdown menu items */}
                         <li>
@@ -72,7 +71,7 @@ const Header = () => {
                             href="#"
                             className="block hover:opacity-70 transition-all ease-in-out duration-200 px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl"
                           >
-                            Item 1
+                            ISP Proxies
                           </Link>
                         </li>
                         <li>
@@ -80,7 +79,7 @@ const Header = () => {
                             href="#"
                             className="block px-4 text-white font-semibold tracking-[-0.38px] my-3 leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                           >
-                            Item 2
+                            Datacenter Proxies
                           </Link>
                         </li>
                         <li>
@@ -88,7 +87,7 @@ const Header = () => {
                             href="#"
                             className="block px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                           >
-                            Item 3
+                            Residential Proxies
                           </Link>
                         </li>
                       </ul>

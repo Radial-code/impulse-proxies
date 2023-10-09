@@ -30,56 +30,58 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   return (
     <>
       <div
-        className={`fixed ps-4 items-start lg:hidden bg-[#040426] lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-24 transition-all duration-200 ease-in z-[100] w-full sm:max-w-[100%] ${
+        className={`fixed ps-4 items-center justify-center lg:hidden bg-[#040426] lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-24 transition-all duration-200 ease-in z-[100] w-full sm:max-w-[100%] ${
           activeNavOverlay ? "left-0" : "-left-full"
         }`}
       >
-        <div className="flex flex-col gap-9 xl:gap-5 items-start w-full">
+        <div className="flex flex-col gap-9 xl:gap-5 justify-center items-center w-full">
           <div className="relative group inline-block text-left w-full">
             {/* Dropdown button */}
-            <button className="text-white font-semibold tracking-[-0.38px] flex items-center leading-[150%] font-Montserrat sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200">
-              Products
-              <Image
-                width={15}
-                height={10}
-                alt="down"
-                className="ms-2"
-                src="/assets/images/svg/productArrow.svg"
-              />
-            </button>
-            {/* Dropdown menu */}
-            <div className="top-[27px] border border-white py-3 overflow-hidden lg:hidden absolute right-0 mt-2 w-28 bg-[#040426] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
-              <ul>
-                {/* Dropdown menu items */}
-                <li>
-                  <Link
-                    onClick={() => setActiveNavOverlay(false)}
-                    href="#"
-                    className="block hover:opacity-70 transition-all ease-in-out duration-200 px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat sm:text-[3vw] text-[4vw]"
-                  >
-                    Item 1
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    onClick={() => setActiveNavOverlay(false)}
-                    href="#"
-                    className="block px-4 text-white font-semibold tracking-[-0.38px] my-4 leading-[150%] font-Montserrat sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200"
-                  >
-                    Item 2
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    onClick={() => setActiveNavOverlay(false)}
-                    href="#"
-                    className="block px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200"
-                  >
-                    Item 3
-                  </Link>
-                </li>
-              </ul>
-            </div>
+           
+              <button className="text-white font-semibold tracking-[-0.38px] flex justify-center items-center leading-[150%] font-Montserrat sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200 w-full">
+                Products
+                <Image
+                  width={15}
+                  height={10}
+                  alt="down"
+                  className="ms-2"
+                  src="/assets/images/svg/productArrow.svg"
+                />
+              </button>
+              {/* Dropdown menu */}
+              <div className="top-[27px] border border-white py-3 overflow-hidden lg:hidden absolute right-0 mt-2 w-50 bg-[#040426] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
+                <ul>
+                  {/* Dropdown menu items */}
+                  <li>
+                    <Link
+                      onClick={() => setActiveNavOverlay(false)}
+                      href="#"
+                      className="block hover:opacity-70 transition-all ease-in-out duration-200 px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat sm:text-[3vw] text-[4vw]"
+                    >
+                      ISP Proxies
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      onClick={() => setActiveNavOverlay(false)}
+                      href="#"
+                      className="block px-4 text-white font-semibold tracking-[-0.38px] my-4 leading-[150%] font-Montserrat sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200"
+                    >
+                      Datacenter Proxies
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      onClick={() => setActiveNavOverlay(false)}
+                      href="#"
+                      className="block px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200"
+                    >
+                      Residential Proxies
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+           
           </div>
           {/* </Link> */}
           <Link

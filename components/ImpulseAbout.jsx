@@ -29,7 +29,7 @@ const ImpulseAbout = () => {
                 className={`lg:w-6/12 hover:translate-y-[-10%] duration-200 ease-in-out sm:w-10/12 w-full  rounded-[20px] p-[2px] inline-block lg:mt-0 mt-4 relative ${about.border}`}
               >
                 <div className="block rounded-[20px] w-full bg-[#080D2D] sm:ps-8 ps-4 pb-6 sm:pt-9 pt-4 sm:pe-6 pe-4">
-                  <div className="flex justify-between">
+                  <div className="flex justify-between ">
                     <div className="flex items-center">
                       <Image
                         height={81}
@@ -78,7 +78,7 @@ const ImpulseAbout = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="flex sm:hidden items-center  justify-between sm:pt-2">
+                  <div className="flex sm:hidden items-center  justify-between sm:pt-2 ">
                     <span>
                       <Link
                         href="https://twitter.com/"
