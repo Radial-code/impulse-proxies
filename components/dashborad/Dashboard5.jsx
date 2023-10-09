@@ -24,8 +24,14 @@ const Dashboard5 = () => {
                   <p className=" text-sm font-Montserrat font-bold text-white">
                     EARNED REWARDS
                   </p>
-                  <button className="text-[#040426] w-[119px] h-[31px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold text-[14px] rounded-[10px]">
-                    Redeem All
+                  <p className=" font-Montserrat font-bold text-white text-md tracking-tighter-[10%] mt-3 sm:mt-0">
+                    MONEY MADE
+                    <span className="font-Montserrat font-medium text-lg text-[#9D9DBB] ms-3">
+                      $10.94
+                    </span>
+                  </p>
+                  <button className="text-[#040426] w-[109px] h-[27px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold text-[13px] rounded-[10px] mt-6 sm:mt-0">
+                    Cash Out
                   </button>
                 </div>
                 <div className="flex w-full bg_redeem_all rounded-b-[16px]">

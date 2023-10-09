@@ -15,6 +15,7 @@ export const ImpulseTweeter = () => {
     </svg>
   );
 };
+
 export const FooterDiscord = () => {
   return (
     <svg

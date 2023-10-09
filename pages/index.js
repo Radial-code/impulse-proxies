@@ -8,10 +8,11 @@ import WhyToChooseUs from "@/components/WhyToChooseUs";
 import BackToTopButton from "@/components/common/BackToTopButton ";
 import Preloader from "@/components/common/Preloader";
 import PageMataTag from "@/components/PageMataTag";
+import Faqs from "@/components/Faqs";
 export default function Home() {
   return (
     <>
-        <PageMataTag />
+      <PageMataTag />
       <div className="overflow-hidden">
         <BackToTopButton />
         <Preloader />
@@ -20,7 +21,8 @@ export default function Home() {
         <WhyToChooseUs />
         <OurProxies />
         <ImpulseAbout />
-        <ImpulseFAQ />
+        {/* <ImpulseFAQ /> */}
+        <Faqs />
         <ImpulseFooter />
       </div>
     </>
