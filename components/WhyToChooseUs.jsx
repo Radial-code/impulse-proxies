@@ -15,7 +15,7 @@ function WhyToChooseUs() {
         />
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 sm:py-0 py-2">
           <h2 className="font-Montserrat sm:text-6xl text-[35px] text-white font-bold leading-[121%] text-center tracking-[-0.64px]">
-            Why to choose <span className="text-cyan-green">us</span>
+            Why To Choose <span className="text-cyan-green">Us</span>
           </h2>
           <div className="flex justify-center flex-wrap 2xl:gap-0 lg:gap-5  lg:flex-nowrap sm:mt-8 mt-3">
             {CardData.map((CardData) => {

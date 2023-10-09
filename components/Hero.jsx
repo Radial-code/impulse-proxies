@@ -15,7 +15,7 @@ const Hero = () => {
                   <span className="text-cyan-green me-2">success </span>
                   with our Proxies
                 </h1>
-                <p className="mt-4  text-[15px] font-normal md:mb-0 mb-5 text-dark-gray leading-[150%]">
+                <p className="mt-4 max-w-[400px] text-[15px] font-normal md:mb-0 mb-5 text-dark-gray leading-[150%]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt
                 </p>
@@ -42,7 +42,7 @@ const Hero = () => {
                   <button className=" hover:bg-transparent transition-all max-w-[300px] w-full sm:max-w-[197px]  min-h-[55px] border-[2px] border-cyan-green bg-[#163D51] rounded-[100px] font-Montserrat font-semibold sm:text-2xl text-[15px] text-white mt-10">
                     Purchase
                   </button>
-                  <button className="sm:ms-4 hover:bg-[#163D51] transition-all max-w-[300px] w-full sm:max-w-[197px]  min-h-[55px] border-[2px] border-white bg-transparent hover:border-cyan-green rounded-[100px] font-Montserrat font-semibold sm:text-2xl text-[15px] text-white mt-4 sm:mt-10">
+                  <button className="sm:ms-4 hover:bg-[#163D51] transition-all max-w-[300px] w-full sm:max-w-[197px] min-h-[55px] border-[2px] border-white bg-[#050829] hover:border-cyan-green rounded-[100px] font-Montserrat font-semibold sm:text-2xl text-[15px] text-white mt-4 sm:mt-10">
                     Explore Products
                   </button>
                 </div>

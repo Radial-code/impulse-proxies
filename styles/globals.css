@@ -30,14 +30,8 @@
   font-weight: Bold; /* Bold weight */
 }
 body {
-  font-family: tt-interfaces;
+  font-family: tt-interfaces !important;
   color: rgb(var(--foreground-rgb));
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
   background-color: #040426;
 }
 .hero-section {
