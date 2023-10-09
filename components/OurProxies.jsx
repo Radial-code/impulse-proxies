@@ -12,7 +12,7 @@ const OurProxies = () => {
         width={144}
         height={122}
         className="absolute bottom-[-58px] md:bottom-[-13%]  lg:bottom-[-20%] xl:bottom-[-42%] 2xl:bottom-[-45%] w-full rocket_img pointer-events-none"
-        src="/assets/images/svg/rocket-bg-img.svg"
+        src="/assets/images/png/Desktop.png"
         alt="Group_bg"
       />
       <div className="container xl:max-w-[1220px] flex flex-col 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">

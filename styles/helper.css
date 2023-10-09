@@ -9,9 +9,10 @@
   background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
 }
 .bg_current {
- border: 1px solid #4FDCC7;
- background: linear-gradient(349deg, rgba(20, 20, 54, 0.60) -2.09%, rgba(30, 31, 62, 0.60) 120.28%);
- backdrop-filter: blur(33px);
+border: 1px solid #4FDCC7;
+background: linear-gradient(349deg, #141436 -2.09%, #1E1F3E 120.28%);
+
+
 }
 .back_to_top {
   animation: top-btn infinite linear 2s;
