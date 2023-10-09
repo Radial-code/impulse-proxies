@@ -10,7 +10,7 @@ const ImpulseFooter = () => {
     <>
       <div className=" bg-[#141436] pb-11">
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 pt-14">
-          <div className="flex flex-wrap pb-7">
+          <div className="flex justify-between flex-wrap pb-7">
             <div className="lg:w-4/12 sm:w-6/12 w-full">
               <div className="flex items-center mb-5">
                 <Image
@@ -38,7 +38,7 @@ const ImpulseFooter = () => {
                 {FooterImpluse.map((footer) => {
                   return (
                     <div
-                      className="lg:w-3/12 sm:w-4/12 w-full flex lg:justify-center"
+                      className=" w-6/12  lg:w-3/12 sm:w-4/12 flex justify-between lg:justify-center"
                       key={footer.id}
                     >
                       <ul>
