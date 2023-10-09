@@ -30,8 +30,8 @@ const ImpulseAbout = () => {
                 className={`lg:w-6/12 lg:hover:translate-y-[-4%] duration-200 ease-in-out sm:w-10/12 w-full  rounded-[20px] p-[2px] inline-block lg:mt-0 mt-4 relative ${about.border}`}
               >
                 <div className="block rounded-[20px] w-full bg-[#080D2D] sm:ps-8 ps-4 pb-6 sm:pt-9 pt-4 sm:pe-6 pe-4">
-                  <div className="flex justify-between ">
-                    <div className="flex items-start">
+                  <div className="flex justify-between w-full">
+                    <div className="flex items-start ">
                       <Image
                         height={81}
                         width={81}
@@ -54,14 +54,14 @@ const ImpulseAbout = () => {
                           </p>
                         </div>
                       </div>
-                      <div className=" hidden xl:flex justify-end items-center mt-2">
+                      <div className=" hidden xl:flex items-center mt-2">
                         <Image
                           height={27}
                           width={27}
                           alt="img"
                           src="/assets/images/svg/AboutLogo.svg"
                         />
-                        <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[10px]">
+                        <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[10px] ">
                           IMPULSE
                         </p>
                       </div>
