@@ -48,7 +48,7 @@
   border-radius: 40px;
   opacity: 1;
   background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
-  filter: blur(230px);
+  filter: blur(150px);
 }
 /* dashboard */
 .bgData {

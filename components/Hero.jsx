@@ -49,7 +49,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[100px] z-[-2] animation">
+        <div className=" w-full absolute bottom-0 top-[300px] hidden md:block md:top-[100px] lg:top-[100px] z-[-2] animation">
           <div className="hero_wave">
             <div className="hero_wave_height">
               <div className="grad_bg"></div>
