@@ -4,7 +4,7 @@ import Image from "next/image";
 function WhyToChooseUs() {
   return (
     <>
-      <div className="w-full lg:h-[136px] h-[33px] chooseBox"></div>
+      <div className="w-full lg:h-[52px] h-[33px] chooseBox"></div>
       <div className=" lg:pt-16 lg:pb-20 py-12 bg-[#141436] relative">
         <Image
           className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] right-[24px] z-10 sm:w-[145px] w-[100px] sm:h-[126px] h-[100px] pointer-events-none arrowAnimation"
