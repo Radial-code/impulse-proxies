@@ -21,7 +21,6 @@ export default function Home() {
         <WhyToChooseUs />
         <OurProxies />
         <ImpulseAbout />
-        {/* <ImpulseFAQ /> */}
         <Faqs />
         <ImpulseFooter />
       </div>
