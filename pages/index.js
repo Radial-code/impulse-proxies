@@ -22,7 +22,6 @@ export default function Home() {
         <ImpulseAbout />
         <ImpulseFAQ />
         <ImpulseFooter />
-       
       </div>
     </>
   );
