@@ -80,6 +80,17 @@
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
+.spin_about_img{
+  animation: spinimg 8s linear infinite;
+}
+@keyframes spinimg {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
 @media (max-width: 490px) {
   .pb_64 {
     padding-bottom: 52px !important;

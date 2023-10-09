@@ -123,13 +123,13 @@ const Header = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex items-center lg:hidden relative z-[200] sm:me-0 me-4">
+            <div className="flex items-center lg:hidden relative z-[200] sm:me-0 ">
               <div className="border_gradient h-[27px] mx-6 lg:mx-3"></div>
               {isToggleIconVisible && (
                 <button
                   onClick={() => setActiveNavOverlay(true)}
                   type="button"
-                  className="w-[46px] inline-flex items-center justify-center rounded-md"
+                  className="w-[46px] inline-flex items-center justify-center rounded-md "
                   aria-controls="mobile-menu"
                   aria-expanded="false"
                 >
@@ -138,7 +138,7 @@ const Header = () => {
               )}
               {!isToggleIconVisible && (
                 <button
-                  className="w-[30px]"
+                  className="w-[30px] me-4"
                   onClick={() => setActiveNavOverlay(false)}
                 >
                   <ToggleIcon />
