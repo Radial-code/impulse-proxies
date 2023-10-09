@@ -51,7 +51,7 @@ const ImpulseFAQ = () => {
             open={openAccordion === index}
           >
             <div onClick={() => toggleAccordion(index)} className="py-1 flex">
-              <h2 className="w-full flex justify-between items-center text-white focus:outline-none font-Montserrat md:text-2xl sm:text-[17px] text-[15px] font-bold leading-[130%] mb-0 text-start">
+              <h2 className="w-full flex justify-between cursor-pointer items-center text-white focus:outline-none font-Montserrat md:text-2xl sm:text-[17px] text-[15px] font-bold leading-[130%] mb-0 text-start">
                 {data.heading}
               </h2>
               <span>
@@ -61,6 +61,7 @@ const ImpulseFAQ = () => {
                     alt="minus"
                     width={30}
                     height={26}
+                    className=" cursor-pointer"
                   />
                 ) : (
                   <Image
@@ -68,6 +69,7 @@ const ImpulseFAQ = () => {
                     alt="add"
                     width={30}
                     height={26}
+                    className=" cursor-pointer"
                   />
                 )}
               </span>

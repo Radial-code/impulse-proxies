@@ -22,7 +22,7 @@ const Header = () => {
         add
         setActiveNavOverlay={setActiveNavOverlay}
       />
-      <nav className="bg-[#040426] lg:py-6 sm:py-5 py-4 border-b-[1px] border-[#222F4A] flex-grow-0">
+      <nav className="bg-[#040426] xl:py-10 lg:py-4 border-b-[1px] border-[#222F4A] flex-grow-0">
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <div className="flex-1 flex items-center justify-between  lg:items-center xl:mr-3">
             <div className="flex-1 flex items-center justify-between">
