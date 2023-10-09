@@ -29,9 +29,9 @@ const ImpulseAbout = () => {
                 key={about.id}
                 className={`lg:w-6/12 lg:hover:translate-y-[-4%] duration-200 ease-in-out sm:w-10/12 w-full  rounded-[20px] p-[2px] inline-block lg:mt-0 mt-4 relative ${about.border}`}
               >
-                <div className="block rounded-[20px] w-full bg-[#080D2D] sm:ps-8 ps-4 pb-6 sm:pt-9 pt-4 sm:pe-6 pe-4">
-                  <div className="flex  w-full">
-                    <div className="flex items-start justify-between w-full">
+                <div className="block rounded-[20px] w-full bg-[#080D2D] sm:ps-8 ps-4 pb-7 sm:pt-6 pt-4 sm:pe-6 pe-4">
+                  <div className="md:flex justify-between ">
+                    <div className="md:flex items-start">
                       <Image
                         height={81}
                         width={81}
@@ -48,7 +48,7 @@ const ImpulseAbout = () => {
                               {about.impulse}
                             </span>
                           </p>
-                          <p className="sm:mb-6 text-[#9898A3] font-Montserrat font-medium leading-[178%] text-md max-w-[300px]">
+                          <p className="sm:mb-7 text-[#9898A3] font-Montserrat font-medium leading-[178%] text-md max-w-[300px]">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit, sed do eiusmod tempor
                           </p>
@@ -67,23 +67,18 @@ const ImpulseAbout = () => {
                       </div>
                     </div>
                   </div>
-                  <div className=" flex gap-4 justify-between  xl:justify-end items-center mt-3">
-                    <div className=" xl:hidden flex items-center ">
-                      <Image
-                        height={27}
-                        width={27}
-                        alt="img"
-                        src="/assets/images/svg/AboutLogo.svg"
-                      />
-                      <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-sm sm:text-lg  ps-[10px]">
-                        IMPULSE
-                      </p>
-                    </div>
-                    <div className="flex justify-end gap-4 ">
-                      <Link
-                        href="https://discord.com/"
-                        target="_blank"
-                        className=" flex items-center justify-end gap-2 animate-pulse"
+                  <div className=" flex gap-4 justify-end mt-2">
+                    <Link
+                      href="https://discord.com/"
+                      target="_blank"
+                      className=" flex items-center justify-end gap-2 animate-pulse"
+                    >
+                      <svg
+                        width="25"
+                        height="25"
+                        viewBox="0 0 25 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
                         <svg
                           width="25"
