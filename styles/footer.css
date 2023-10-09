@@ -1,6 +1,11 @@
 * {
   scroll-behavior: smooth;
 }
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 .lh_normal {
   line-height: normal;
 }
@@ -18,20 +23,32 @@
     transform: translate(0, 0);
   }
 }
-.linerBorder {
-  background: linear-gradient(9deg, #080d2d 0%, #50eed7 190%);
+.linerBorder::before,
+.linerBorder::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  background: linear-gradient(var(--angle), #080d2d 0%, #50eed7 190%);
+  animation: rotate 5s linear infinite;
+  border-radius: 25px;
 }
-.linerBorderSecond {
-  background: linear-gradient(144deg, #080d2d 21%, #50eed7 160%);
+@keyframes rotate {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
 }
-
 .bgHeroImg::after {
   background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
 }
 .chooseBox {
-  opacity: 0.2;
+  border-radius: 40px;
+  opacity: 1;
   background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
-  filter: blur(0px);
+  filter: blur(150px);
 }
 /* dashboard */
 .bgData {
@@ -47,9 +64,8 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.bg_redeem_all{
+.bg_redeem_all {
   background: linear-gradient(113deg, #151536 35.26%, #393969 182.89%);
-
 }
 .custom_scrollbar::-webkit-scrollbar {
   background-color: #fff !important;
@@ -60,10 +76,36 @@
   background-color: #50eed7 !important;
   border-radius: 10px;
 }
-@media (max-width:490px) {
-  .pb_64{
+.select_none {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.spin_about_img {
+  animation: spinimg 8s linear infinite;
+}
+@keyframes spinimg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 490px) {
+  .pb_64 {
     padding-bottom: 52px !important;
   }
+}
+/* range bar css */
+table,
+thead,
+tbody,
+tr {
+  border: 0 !important;
+}
+tr:nth-child(even) {
+  background: #212148;
 }
 /* range bar css  */
 input[type="number"]::-webkit-inner-spin-button,
@@ -75,7 +117,7 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 100%;
   height: 14px;
   border-radius: 15px;
-  background-color: #50EED7;
+  background-color: #50eed7;
 }
 .range-slider .progress {
   position: absolute;
@@ -83,7 +125,7 @@ input[type="number"]::-webkit-outer-spin-button {
   right: 0%;
   height: 14px;
   border-radius: 15px;
-  background: #2D5C70;
+  background: #2d5c70;
 }
 .range-slider input[type="range"] {
   position: absolute;
@@ -105,4 +147,5 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .range-slider .range-max::-webkit-slider-thumb {
   opacity: 0;
+  pointer-events: none;
 }

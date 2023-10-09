@@ -30,7 +30,7 @@ const DashboardNav = () => {
       />
       <nav className="dark-blue lg:py-6 sm:py-5 py-4 flex-grow-0">
         <div className="container lg:max-w-[1320px] mx-auto lg:px-3 px-8">
-          <div className="flex-1 flex items-center justify-between  lg:items-center xl:mr-3">
+          <div className="flex-1 flex items-center justify-between  lg:items-center">
             <div className="flex-1 flex items-center justify-between">
               <div className="flex-shrink-0 flex items-center justify-between">
                 <Link
@@ -41,7 +41,7 @@ const DashboardNav = () => {
                     height={62}
                     width={65}
                     src="/assets/images/svg/FooterLogo.svg"
-                    alt="about image"
+                    alt="aboutimage"
                     className="sm:w-[67px] sm:h-[67px] w-[40px] h-[40px]"
                   />
                   <div className="ms-3">

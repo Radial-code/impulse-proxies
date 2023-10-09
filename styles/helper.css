@@ -9,16 +9,15 @@
   background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
 }
 .bg_current {
- border: 1px solid #4FDCC7;
- background: linear-gradient(349deg, rgba(20, 20, 54, 0.60) -2.09%, rgba(30, 31, 62, 0.60) 120.28%);
- backdrop-filter: blur(33px);
+  border: 1px solid #4fdcc7;
+  background: linear-gradient(349deg, #141436 -2.09%, #1e1f3e 120.28% )!important;
+  opacity: 1;
 }
 .back_to_top {
   animation: top-btn infinite linear 2s;
 }
-.rang_bar{
+.rang_bar {
   background: linear-gradient(112.69deg, #151536 35.26%, #393969 182.89%);
-
 }
 
 @keyframes top-btn {
@@ -30,18 +29,14 @@
   }
 }
 @media (min-width: 1620px) {
-  .rocket_img {
-    bottom: -56% !important;
-  }
   .aboutTop {
     left: 220px !important;
   }
 }
 
-
 /* animation image css */
 .hero_wave_height {
- height: 100vh;
+  height: 100vh;
 }
 
 .hero_wave {
@@ -60,11 +55,13 @@
 }
 
 .grad_bg {
-  background-image: conic-gradient(#ff7fd8,
-      #aa2aff 20%,
-      #557cff 50%,
-      #32d7ff 75%,
-      #97fcff 100%);
+  background-image: conic-gradient(
+    #1e1e42,
+    #1e1e42 20%,
+    #557cff 50%,
+    #32d7ff 75%,
+    #97fcff 100%
+  );
   z-index: -1;
   filter: blur(20px);
   position: absolute;

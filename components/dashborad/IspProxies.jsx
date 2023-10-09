@@ -147,14 +147,14 @@ const IspProxies = () => {
   };
   return (
     <>
-      <div className="bg-[#50EED7] bg-opacity-30 rounded-[10px] flex items-center justify-between xl:overflow-x-auto custom_scrollbar">
+      <div className="bg-[#50EED7] bg-opacity-30 rounded-[10px] flex items-center justify-between xl:overflow-x-auto custom_scrollbar overflow-hidden">
         <button
           onClick={() => handleTabClick("ISP")}
           className={`${
             activeTab === "ISP"
               ? "bg-[#50EED7] rounded-[10px] !text-[#050628]"
               : "border-transparent"
-          }  py-[14px] pl-8 pr-11 text-white font-Montserrat font-bold text-[11px]
+          }  py-[14px] pl-8 pr-8 text-white font-Montserrat font-bold text-[11px]
           leading-normal whitespace-nowrap md:tracking-[1.1px]`}
         >
           ISP PROXIES

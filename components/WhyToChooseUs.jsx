@@ -4,8 +4,8 @@ import Image from "next/image";
 function WhyToChooseUs() {
   return (
     <>
-      <div className=" w-full h-[50px] chooseBox opacity-10 mx-auto lg:block hidden"></div>
-      <div className=" lg:pt-10 lg:pb-28 py-12 bg-[#141436] relative">
+      <div className="w-full lg:h-[52px] h-[33px] chooseBox"></div>
+      <div className=" lg:pt-16 lg:pb-20 py-12 bg-[#141436] relative">
         <Image
           className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] right-[24px] z-10 sm:w-[145px] w-[100px] sm:h-[126px] h-[100px] pointer-events-none arrowAnimation"
           height={126}
@@ -17,7 +17,7 @@ function WhyToChooseUs() {
           <h2 className="font-Montserrat sm:text-6xl text-[35px] text-white font-bold leading-[121%] text-center tracking-[-0.64px]">
             Why To Choose <span className="text-cyan-green">Us</span>
           </h2>
-          <div className="flex justify-center flex-wrap 2xl:gap-0 lg:gap-5  lg:flex-nowrap sm:mt-8 mt-3">
+          <div className="flex justify-center flex-wrap 2xl:gap-0 lg:gap-5  lg:flex-nowrap sm:mt-12 mt-3">
             {CardData.map((CardData) => {
               return (
                 <div
@@ -33,7 +33,7 @@ function WhyToChooseUs() {
                         height={32}
                         width={32}
                         src={CardData.whyToImg}
-                        alt="about image"
+                        alt="aboutimage"
                       />
                     </div>
                     <p className=" text-white text-md font-medium font-Montserrat opacity-70 lg:max-w-[235px] leading-[178%] mt-2">

@@ -22,20 +22,20 @@ const Header = () => {
         add
         setActiveNavOverlay={setActiveNavOverlay}
       />
-      <nav className="bg-[#040426] lg:py-6 sm:py-5 py-4 border-b-[1px] border-[#222F4A] flex-grow-0">
+      <nav className="bg-[#040426] xl:py-[38px] lg:py-4 border-b-[1px] border-[#222F4A] flex-grow-0">
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
-          <div className="flex-1 flex items-center justify-between  lg:items-center xl:mr-3">
+          <div className="flex-1 flex items-center justify-between lg:items-center xl:mr-3">
             <div className="flex-1 flex items-center justify-between">
-              <div className="flex-shrink-0 flex items-center justify-between">
+              <div className="flex-shrink-0 flex items-center justify-between relative z-[200]">
                 <Link
                   href="/"
-                  className="text-white text-xl font-semibold flex items-center"
+                  className="text-white text-xl font-semibold flex items-center "
                 >
                   <Image
                     height={67}
                     width={67}
                     src="/assets/images/svg/FooterLogo.svg"
-                    alt="hero logo"
+                    alt="herologo"
                     className="sm:w-[67px] sm:h-[67px] w-[40px] h-[40px]"
                   />
                   <div className="ms-3">
@@ -58,12 +58,12 @@ const Header = () => {
                         width={15}
                         height={10}
                         className="ms-2"
-                        alt="product img"
+                        alt="productimg"
                         src="/assets/images/svg/productArrow.svg"
                       />
                     </button>
                     {/* Dropdown menu */}
-                    <div className="top-[20px] py-3 overflow-hidden absolute right-0 mt-2 w-28 bg-[#040426] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out border-[1px] border-white z-10">
+                    <div className="top-[20px] py-3 overflow-hidden absolute left-0 mt-2 w-32 bg-[#040426] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out border-[1px] border-white z-10 lg:w-[204px]">
                       <ul>
                         {/* Dropdown menu items */}
                         <li>
@@ -71,7 +71,7 @@ const Header = () => {
                             href="#"
                             className="block hover:opacity-70 transition-all ease-in-out duration-200 px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl"
                           >
-                            Item 1
+                            ISP Proxies
                           </Link>
                         </li>
                         <li>
@@ -79,7 +79,7 @@ const Header = () => {
                             href="#"
                             className="block px-4 text-white font-semibold tracking-[-0.38px] my-3 leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                           >
-                            Item 2
+                            Datacenter Proxies
                           </Link>
                         </li>
                         <li>
@@ -87,7 +87,7 @@ const Header = () => {
                             href="#"
                             className="block px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                           >
-                            Item 3
+                            Residential Proxies
                           </Link>
                         </li>
                       </ul>
@@ -98,19 +98,19 @@ const Header = () => {
                     href="#Faqs"
                     className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
-                    FAQ
+                    About Us
                   </Link>
                   <Link
                     href="#AboutUs"
                     className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
-                    About Us
+                    FAQ
                   </Link>
                   <Link
                     href="#proxies"
                     className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
-                    Pricing
+                    Purchase
                   </Link>
                 </div>
               </div>
@@ -123,13 +123,13 @@ const Header = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex items-center lg:hidden relative z-[200] sm:me-0 me-4">
+            <div className="flex items-center lg:hidden relative z-[200] sm:me-0 ">
               <div className="border_gradient h-[27px] mx-6 lg:mx-3"></div>
               {isToggleIconVisible && (
                 <button
                   onClick={() => setActiveNavOverlay(true)}
                   type="button"
-                  className="w-[46px] inline-flex items-center justify-center rounded-md"
+                  className="w-[46px] inline-flex items-center justify-center rounded-md "
                   aria-controls="mobile-menu"
                   aria-expanded="false"
                 >
@@ -138,7 +138,7 @@ const Header = () => {
               )}
               {!isToggleIconVisible && (
                 <button
-                  className="w-[30px]"
+                  className="w-[30px] me-4"
                   onClick={() => setActiveNavOverlay(false)}
                 >
                   <ToggleIcon />

@@ -33,9 +33,8 @@ const Hero = () => {
                 <Image
                   width={500}
                   height={900}
-                  src="/assets/images/png/heroImg.png"
+                  src="/assets/images/svg/heroImg.svg"
                   alt="hero-image"
-                  loading="eager"
                   className="pointer-events-none relative z-50 2xl:h-[500px] sm:max-w-[400px] md:max-w-[370px] lg:max-w-[500px] mx-auto xl:h-[500px] xl:max-w-[600px] xl:w-full"
                 />
                 <div className="md:hidden sm:flex sm:mb-0 mb-5 items-center justify-center text-center">
@@ -50,7 +49,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[100px] z-[-2] animation">
+        <div className=" w-full absolute bottom-0 top-[300px] hidden md:block md:top-[100px] lg:top-[100px] z-[-2] animation">
           <div className="hero_wave">
             <div className="hero_wave_height">
               <div className="grad_bg"></div>
