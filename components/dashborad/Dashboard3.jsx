@@ -77,7 +77,7 @@ const Dashboard3 = () => {
                 <button className="bg-[#292956] py-3 px-[14px] rounded-[10px] text-[#7777AD] font-Montserrat font-semibold sm:text-[14px] text-sm leading-normal md:tracking-[-0.28px] whitespace-nowrap hover:bg-white hover:text-[#040426] transition-all">
                   Download .txt
                 </button>
-                <button className="bg-[#292956] py-3 px-[14px] whitespace-nowrap rounded-[10px] text-[#7777AD] font-Montserrat font-semibold sm:text-[14px] text-sm leading-normal md:tracking-[-0.28px] hover:bg-white hover:text-[#040426] transition-all">
+                <button className="hover:bg-[#292956] py-3 px-[14px] whitespace-nowrap rounded-[10px] hover:text-[#7777AD] font-Montserrat font-semibold sm:text-[14px] text-sm leading-normal md:tracking-[-0.28px] bg-white text-[#040426] transition-all">
                   Copy to Clipboard
                 </button>
               </div>

@@ -60,8 +60,8 @@
 }
 
 .grad_bg {
-  background-image: conic-gradient(#ff7fd8,
-      #aa2aff 20%,
+  background-image: conic-gradient(#1E1E42,
+      #1E1E42 20%,
       #557cff 50%,
       #32d7ff 75%,
       #97fcff 100%);

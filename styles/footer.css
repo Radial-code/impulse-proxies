@@ -1,6 +1,11 @@
 * {
   scroll-behavior: smooth;
 }
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
 .lh_normal {
   line-height: normal;
 }
@@ -18,13 +23,24 @@
     transform: translate(0, 0);
   }
 }
-.linerBorder {
-  background: linear-gradient(9deg, #080d2d 0%, #50eed7 190%);
+.linerBorder::before,
+.linerBorder::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: -1;
+  background: linear-gradient(var(--angle), #080d2d 0%, #50eed7 190%);
+  animation: rotate 5s linear infinite;
+  border-radius: 25px;
 }
-.linerBorderSecond {
-  background: linear-gradient(144deg, #080d2d 21%, #50eed7 160%);
+@keyframes rotate {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
 }
-
 .bgHeroImg::after {
   background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
 }
@@ -58,6 +74,22 @@
 .custom_scrollbar::-webkit-scrollbar-thumb {
   background-color: #50eed7 !important;
   border-radius: 10px;
+}
+.select_none {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.spin_about_img{
+  animation: spinimg 8s linear infinite;
+}
+@keyframes spinimg {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
 @media (max-width: 490px) {
   .pb_64 {
