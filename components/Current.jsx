@@ -13,13 +13,13 @@ const Current = () => {
   }
   return (
     <>
-      <div className=" bg_current z-10  relative after:contents-[''] after:absolute after:w-full border-[1px] border-[#1F374F] sm:pb-6 sm:pt-14 py-11 ms-[-10px] me-[-10px] border-b-0">
+      <div className=" bg_current z-10  relative after:contents-[''] after:absolute after:w-full border-[1px] border-[#1F374F] sm:pb-6 sm:pt-14 pt-2 pb-10 ms-[-10px] me-[-10px] border-b-0">
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <div className="flex flex-wrap justify-around">
             {CurrentData.map((data,i) => {
               return (
-                <div key={data.id} className="md:w-3/12 sm:w-4/12 w-6/12 ">
-                  <p className="text-white text-center font-bold leading-[136%] tracking-[-1px] lg:text-7xl md:text-[38px] text-[30px] sm:mt-0 mt-5 ">
+                <div key={data.id} className="md:w-3/12 sm:w-4/12 w-full ">
+                  <p className="text-white text-center font-bold leading-[110%] lg:text-7xl md:text-[38px] text-[30px] sm:mt-0 mt-8 ">
                     <VisibilitySensor
                       onChange={onVisibilityChange}
                       offset={{
@@ -49,18 +49,18 @@ const Current = () => {
                     </VisibilitySensor>
                     {data.number}
                   </p>
-                  <p className="text-center text-dark-gray lg:text-2xl text-[15px] font-semibold leading-[157%] ">
+                  <p className="text-center text-[#9898A3] lg:text-2xl text-[15px] font-semibold leading-[150%] text-opacity-80 ">
                     {data.current}
                   </p>
                 </div>
               );
             })}
           </div>
-          <hr className="bg-[#2D3752] w-full h-[1px] border-0 mt-6 mb-7 " />
+          <hr className="bg-[#2D3752] w-full h-[1px] border-0 mt-10 mb-2 " />
           <p className="opacity-40 tracking-[1.5px] font-bold lh_normal text-xs font-Montserrat text-center text-white">
             TRUSTED BY OUR PARTNERS
           </p>
-          <div className="flex items-center justify-center mt-6 gap-8">
+          <div className="flex items-center justify-center mt-3 gap-8">
             <Link href="" target="_blank">
               <Image
                 height={66}
