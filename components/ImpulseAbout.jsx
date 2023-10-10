@@ -6,20 +6,29 @@ const ImpulseAbout = () => {
   return (
     <div
       id="AboutUs"
-      className="bg-[#141436] select_none sm:pt-24 pt-11 z-10 relative"
+      className="bg-[#141436] select_none sm:pt-14 pt-11 z-10 relative"
     >
-      <Image
-        src="/assets/images/svg/Abstract-01.svg"
-        alt="aboutTop"
-        width={144}
-        height={122}
-        className="pointer-events-none spin_about_img absolute left-0 lg:left-28 lg:top-[-10%] sm:top-[-8%] top-[-9%] text-3xl sm:w-[144px] w-[100px] sm:h-[122px] h-[100px] aboutTop"
-      />
+      <div className=" w-16 p-0">
+        <Image
+          src="/assets/images/png/glass.png"
+          alt="aboutTop"
+          width={144}
+          height={72}
+          className="pointer-events-none spin_about_img absolute left-0 lg:left-28 lg:top-[-10%] sm:top-[-8%] top-[-9%] text-3xl sm:w-[144px] w-[100px] sm:h-[122px] h-[100px] aboutTop"
+        />
+        <Image
+          src="/assets/images/png/Abstract01.png"
+          alt="aboutTop"
+          width={99}
+          height={50}
+          className="pointer-events-none spin_about_img_2 absolute left-0 lg:left-28 lg:top-[-10%] sm:top-[-8%] top-[-9%] text-3xl sm:w-[144px] w-[100px] sm:h-[122px] h-[100px] aboutTop"
+        />
+      </div>
       <div className="container xl:max-w-[1220px] flex flex-col 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 relative">
-        <p className=" font-Montserrat sm:text-6xl text-[30px] text-white font-bold leading-[121%] text-center lg:text-start">
+        <h2 className=" font-Montserrat lg:text-6xl text-[28px] text-white font-bold leading-[121%] text-center lg:text-start">
           About <span className="text-cyan-green">Us</span>
-        </p>
-        <p className=" text-dark-gray leading-[157%] font-semibold sm:text-2xl text-[18px] max-w-[380px] sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 pb-3 text-center lg:text-start mx-auto lg:mx-0">
+        </h2>
+        <p className=" text-dark-gray leading-[157%] font-normal md:font-semibold lg:text-2xl text-[15px] text-center lg:max-w-[260px] sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 pb-3 md:text-center lg:text-start lg:mx-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
         <div className="flex lg:flex-nowrap justify-center flex-wrap lg:gap-6 sm:pb-24 pb-12 sm:mb-0 mb-3 lg:mt-10">
@@ -27,11 +36,11 @@ const ImpulseAbout = () => {
             return (
               <div
                 key={about.id}
-                className={`lg:w-6/12 lg:hover:translate-y-[-4%] duration-200 ease-in-out sm:w-10/12 w-full  rounded-[20px] p-[2px] inline-block lg:mt-0 mt-4 relative ${about.border}`}
+                className={`lg:w-6/12 hover:translate-y-[-4%] duration-200 ease-in-out sm:w-10/12 w-full  rounded-[20px] p-[2px] inline-block lg:mt-0 mt-4 relative ${about.border}`}
               >
                 <div className="block rounded-[20px] w-full bg-[#080D2D] sm:ps-8 ps-4 pb-7 sm:pt-6 pt-4 sm:pe-6 pe-4">
-                  <div className="md:flex justify-between ">
-                    <div className="md:flex items-start">
+                  <div className="sm:flex items-start justify-between">
+                    <div className=" flex gap-6">
                       <Image
                         height={81}
                         width={81}
@@ -40,45 +49,48 @@ const ImpulseAbout = () => {
                         priority="1"
                         className=" sm:h-[81px] sm:w-[81px] w-[61px] h-[61px]"
                       />
-                      <div className="ps-5 ">
-                        <div>
-                          <p className="mb-0 text-white font-Montserrat leading-[204%] tracking-[-0.44px] sm:text-3xl text-[20px] font-bold">
-                            About
-                            <span className="text-cyan-green ms-1">
-                              {about.impulse}
-                            </span>
-                          </p>
-                          <p className="sm:mb-7 text-[#9898A3] font-Montserrat font-medium leading-[178%] text-md max-w-[300px]">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor
-                          </p>
-                        </div>
-                      </div>
-                      <div className=" hidden xl:flex items-center mt-2">
-                        <Image
-                          height={27}
-                          width={27}
-                          alt="img"
-                          src="/assets/images/svg/AboutLogo.svg"
-                        />
-                        <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[10px] ">
-                          IMPULSE
+                      <div>
+                        <h4 className="mb-0 text-white font-Montserrat leading-[204%] tracking-[-0.44px] md:text-3xl text-[17px] font-bold">
+                          About
+                          <span className="text-cyan-green ms-1">
+                            {about.impulse}
+                          </span>
+                        </h4>
+                        <p className="sm:mb-7 text-[#9898A3] font-Montserrat font-medium leading-[178%] text-md max-w-[300px]">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit, sed do eiusmod tempor
                         </p>
                       </div>
                     </div>
+                    <div className=" hidden sm:flex items-center justify-end md:mt-2">
+                      <Image
+                        height={27}
+                        width={27}
+                        alt="img"
+                        src="/assets/images/svg/AboutLogo.svg"
+                      />
+                      <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[10px]">
+                        IMPULSE
+                      </p>
+                    </div>
                   </div>
-                  <div className=" flex gap-4 justify-end mt-2">
-                    <Link
-                      href="https://discord.com/"
-                      target="_blank"
-                      className=" flex items-center justify-end gap-2 animate-pulse"
-                    >
-                      <svg
-                        width="25"
-                        height="25"
-                        viewBox="0 0 25 25"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
+                  <div className=" flex gap-4 items-center justify-between sm:justify-end mt-2">
+                    <div className=" flex sm:hidden items-center justify-end">
+                      <Image
+                        height={27}
+                        width={27}
+                        alt="img"
+                        src="/assets/images/svg/AboutLogo.svg"
+                      />
+                      <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-[14px] ps-[10px]">
+                        IMPULSE
+                      </p>
+                    </div>
+                    <div className=" flex gap-4">
+                      <Link
+                        href="https://discord.com/"
+                        target="_blank"
+                        className=" flex items-center justify-end gap-2"
                       >
                         <svg
                           width="25"
@@ -99,14 +111,14 @@ const ImpulseAbout = () => {
                             </clipPath>
                           </defs>
                         </svg>
-                        <span className=" font-Montserrat text-sm sm:text-lg font-bold text-white">
+                        <span className=" font-Montserrat text-[14px] sm:text-lg font-bold text-white">
                           Discord
                         </span>
                       </Link>
                       <Link
                         target="_blank"
                         href="https://twitter.com/i/flow/login?redirect_after_login=%2FOpulentM71934"
-                        className=" flex items-center justify-end gap-2 animate-pulse"
+                        className=" flex items-center justify-end gap-2 "
                       >
                         <svg
                           className=""
@@ -121,8 +133,7 @@ const ImpulseAbout = () => {
                             fill="#16FDEC"
                           />
                         </svg>
-
-                        <span className=" font-Montserrat text-sm sm:text-lg font-bold text-white">
+                        <span className=" font-Montserrat text-[14px] sm:text-lg font-bold text-white">
                           Twitter
                         </span>
                       </Link>
@@ -137,5 +148,4 @@ const ImpulseAbout = () => {
     </div>
   );
 };
-
 export default ImpulseAbout;

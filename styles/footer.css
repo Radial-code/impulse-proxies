@@ -29,7 +29,7 @@
   position: absolute;
   inset: -1px;
   z-index: -1;
-  background: linear-gradient(var(--angle), #080d2d 0%, #50eed7 190%);
+  background: linear-gradient(var(--angle), #080d2d 0%, #50EED7 190%);
   animation: rotate 5s linear infinite;
   border-radius: 25px;
 }
@@ -90,6 +90,17 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+.spin_about_img_2 {
+  animation: spinimg_2 8s linear infinite;
+}
+@keyframes spinimg_2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 @media (max-width: 490px) {
