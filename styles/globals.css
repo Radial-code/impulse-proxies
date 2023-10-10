@@ -40,9 +40,7 @@ body {
     rgb(var(--background-start-rgb)); */
   background-color: #040426;
 }
-.hero-section {
-  min-height: calc(100vh - 115px);
-}
+
 .accordion {
   transition: all 0.3s ease-in-out;
 }

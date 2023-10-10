@@ -8,8 +8,8 @@ const ImpulseFooter = () => {
   const year = today.getFullYear();
   return (
     <>
-      <div className=" bg-[#141436] pb-11">
-        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 pt-14">
+      <div className=" bg-[#141436] pb-[51px]">
+        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 pt-[51px]">
           <div className="flex justify-between flex-wrap pb-7">
             <div className="md:w-4/12 sm:w-6/12 w-full">
               <div className="flex items-center mb-5">
