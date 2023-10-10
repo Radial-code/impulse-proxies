@@ -29,7 +29,7 @@
   position: absolute;
   inset: -1px;
   z-index: -1;
-  background: linear-gradient(var(--angle), #080d2d 0%, #50EED7 190%);
+  background: linear-gradient(var(--angle),#50eed7 0%, #080d2d 30%, #080d2d 60%, #50eed7 100%);
   animation: rotate 5s linear infinite;
   border-radius: 25px;
 }

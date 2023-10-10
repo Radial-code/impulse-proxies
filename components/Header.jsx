@@ -104,7 +104,7 @@ const Header = () => {
                     href="#Faqs"
                     className="text-white font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
-                    FAQ
+                    FAQ’s
                   </Link>
                   <Link
                     href="#proxies"
