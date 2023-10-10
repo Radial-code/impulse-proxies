@@ -1,6 +1,10 @@
 import React from "react";
 import Header from "./Header";
 import Image from "next/image";
+import Lottie from "lottie-react";
+import dynamic from "next/dynamic";
+
+import animationData from "../public/assets/images/lottie/data (2).json";
 const Hero = () => {
   return (
     <>
@@ -29,12 +33,18 @@ const Hero = () => {
               </div>
               <div className=" md:w-6/12 xl:w-7/12 lg:w-6/12 w-full flex lg:flex-row flex-col justify-center md:justify-end relative after:contents-[''] after:h-[500px] after:w-[450px] after:absolute bgHeroImg after:opacity-30 after:rounded-full after:blur-[137px] after:pointer-events-none after:top-[-50%]">
                 <div className="box_showdow absolute max-w-[456px] w-full h-[542px] blur-[140px] rounded-[36px] opacity-30 top-10 right-7 z-[-1] hidden lg:inline-block"></div>
-                <Image
+                {/* <Image
                   width={500}
                   height={900}
                   src="/assets/images/lottie/data (2).json"
                   alt="hero-image"
                   className="pointer-events-none relative z-50 2xl:h-[500px] sm:max-w-[400px] md:max-w-[370px] lg:max-w-[500px] mx-auto xl:h-[500px] xl:max-w-[600px] xl:w-full"
+                /> */}
+               
+                <Lottie
+                  animationData={animationData}
+                  className="flex justify-center items-center"
+                  loop={true}
                 />
                 <div className="md:hidden sm:flex sm:mb-0 mb-5 items-center justify-center text-center">
                   <button className=" hover:bg-transparent transition-all max-w-[300px] w-full sm:max-w-[197px]  min-h-[55px] border-[2px] border-cyan-green bg-[#163D51] rounded-[100px] font-Montserrat font-semibold sm:text-2xl text-[15px] text-white mt-10">
