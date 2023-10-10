@@ -12,7 +12,7 @@ const Hero = () => {
               <div className="md:w-6/12 xl:w-6/12 lg:w-6/12 w-full">
                 <h1 className="lg:text-[55px] xl:text-8xl 2xl:text-[70px] md:text-[38px] text-[35px] tracking-[-2%] text-white leading-[118%] max-w-[300px] md:max-w-[400px] lg:max-w-[100%] sm:w-full">
                   Elevate your{" "}
-                  <span className="text-cyan-green me-2">success </span>
+                  <span className="text-cyan-green">success </span>
                   with our Proxies
                 </h1>
                 <p className="mt-4  text-[15px] font-normal md:mb-0 mb-5 text-dark-gray leading-[150%]">
@@ -23,7 +23,7 @@ const Hero = () => {
                   <button className=" hover:bg-transparent transition-all max-w-[197px] w-full min-h-[55px] border-[2px] border-cyan-green bg-[#163D51] rounded-[100px] font-Montserrat font-semibold md:text-lg lg:text-2xl text-white">
                     Purchase
                   </button>
-                  <button className="ms-4 hover:bg-[#163D51] transition-all max-w-[197px] w-full min-h-[55px] border-[2px] border-white bg-transparent hover:border-cyan-green rounded-[100px] font-Montserrat font-semibold md:text-lg lg:text-2xl text-white">
+                  <button className="ms-4 hover:bg-[#163D51] transition-all max-w-[197px] w-full min-h-[55px] border-[2px] border-white bg-[#050829] hover:border-cyan-green rounded-[100px] font-Montserrat font-semibold md:text-lg lg:text-2xl text-white">
                     Explore Products
                   </button>
                 </div>
