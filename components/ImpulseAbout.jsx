@@ -6,7 +6,7 @@ const ImpulseAbout = () => {
   return (
     <div
       id="AboutUs"
-      className="bg-[#141436] select_none sm:pt-[120px] pt-11 z-10 relative"
+      className="bg-[#141436] select_none lg:pt-[120px] md:pt-[52px] pt-[35px] z-10 relative"
     >
       <div className=" w-16 p-0">
         <Image
@@ -31,7 +31,7 @@ const ImpulseAbout = () => {
         <p className=" text-dark-gray leading-[157%] font-normal md:font-semibold lg:text-2xl text-[15px] text-center lg:max-w-[260px] sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 pb-3 md:text-center lg:text-start lg:mx-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
-        <div className="flex lg:flex-nowrap justify-center flex-wrap lg:gap-6 sm:pb-[138px] pb-12 sm:mb-0 mb-3 lg:mt-10">
+        <div className="flex lg:flex-nowrap justify-center flex-wrap lg:gap-6 xl:pb-[138px] md:pb-[83px] pb-12 lg:mt-10">
           {AboutBox.map((about) => {
             return (
               <div
