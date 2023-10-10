@@ -13,14 +13,14 @@ const OurProxies = () => {
         src="/assets/images/svg/Desktop.svg"
         alt="Group_bg"
       />
-      <div className="proxies_box h-10 opacity-10 w-full max-w-[1000px] mx-auto absolute top-3 lg:top-[21px] lg:left-[22%]"></div>
+      <div className="proxies_box h-10 opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>
       <div className="box_showdow rounded-[40px] opacity-20 blur-[150px] absolute w-full max-w-[1190px] h-[200px] bottom-0 pointer-events-none"></div>
 
       <div className="container xl:max-w-[1220px] flex flex-col 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 mt-5 lg:mt-0">
         <h2 className=" font-Montserrat  text-[20px]  md:text-[28px] lg:text-6xl text-white font-bold leading-[30px]  mb-4 text-center lg:text-start">
           Our <span className="text-cyan-green ">Proxies</span>
         </h2>
-        <p className=" font-semibold text-[13px] md:text-xl leading-6 text-[#9898A3] max-w-[200px] sm:mx-auto lg:mx-0 sm:max-w-[380px] ms-2 text-center lg:text-start">
+        <p className=" font-semibold text-[13px] md:text-xl leading-6 text-[#9898A3] max-w-[200px] mx-auto lg:mx-0 sm:max-w-[380px]  text-center lg:text-start">
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
         <div className="flex justify-center lg:justify-start flex-wrap relative z-20 lg:flex-nowrap lg:gap-9 2xl:gap-9  mt-[53px] md:mt-8 lg:mt-12  ">
