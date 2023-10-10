@@ -8,7 +8,7 @@ const Hero = () => {
       <div className=" relative">
         <div className=" hero-section grad_b g flex flex-col justify-center lg:py-8 xl:py-0 pt-8 sm:pb-20 pb-14">
           <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 h-full flex items-center">
-            <div className="flex items-center justify-between h-full flex-wrap w-full lg:flex-nowrap lg:pt-[70px] lg:pb-[112px]">
+            <div className="flex items-center justify-between h-full flex-wrap w-full lg:flex-nowrap lg:pt-[70px] lg:pb-[90px]">
               <div className="md:w-6/12 xl:w-6/12 lg:w-6/12 w-full">
                 <h1 className="lg:text-8xl sm:text-[42px] text-[32px] lg:tracking-[-1.16px] sm:tracking-[-0.84px] tracking-[-0.64px] text-white lg:leading-[68px] sm:leading-[54px] leading-[42px] font-bold sm:max-w-[340px] max-w-[290px] lg:max-w-[468px]  sm:w-full">
                   Elevate your <span className="text-cyan-green">success </span>
