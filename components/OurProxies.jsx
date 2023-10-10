@@ -15,7 +15,6 @@ const OurProxies = () => {
       />
       <div className="proxies_box h-10 opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>
       <div className="box_showdow rounded-[40px] opacity-20 blur-[150px] absolute w-full max-w-[1190px] h-[200px] bottom-0 pointer-events-none"></div>
-
       <div className="container xl:max-w-[1220px] flex flex-col 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 mt-5 lg:mt-0">
         <h2 className=" font-Montserrat  text-[20px]  md:text-[28px] lg:text-6xl text-white font-bold leading-[30px]  mb-4 text-center lg:text-start">
           Our <span className="text-cyan-green ">Proxies</span>

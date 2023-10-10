@@ -1,7 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url(./footer.css);
 @import url(./helper.css);
 :root {
@@ -30,7 +30,6 @@
   font-weight: Bold; /* Bold weight */
 }
 body {
-  font-family: tt-interfaces;
   color: rgb(var(--foreground-rgb));
   /* background: linear-gradient(
       to bottom,
@@ -39,8 +38,14 @@ body {
     )
     rgb(var(--background-start-rgb)); */
   background-color: #040426;
+  font-family: "Montserrat", sans-serif !important;
 }
-
+.font-Montserrat {
+  font-family: "Montserrat", sans-serif !important;
+}
+/* .ff_montserrat {
+  font-family: "Montserrat", sans-serif !important;
+} */
 .accordion {
   transition: all 0.3s ease-in-out;
 }
