@@ -54,6 +54,21 @@
     transform: translateY(0px);
   }
 }
+@media (max-width:640px) {
+  .bg_current::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px !important;
+  padding: 1px !important;
+  opacity: 0.5;
+  background: linear-gradient(230deg, transparent, #50EED7 ,transparent,  #50EED7  ,transparent,transparent) !important;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0) !important;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 0;
+}
+}
 @media (min-width: 1620px) {
   .aboutTop {
     left: 220px !important;
