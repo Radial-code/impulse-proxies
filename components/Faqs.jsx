@@ -79,7 +79,7 @@ const ImpulseFAQ = () => {
                 openAccordion === index ? "sm:h-[80px] h-[110px]" : "h-[0px]"
               }`}
             >
-              <p className="text-[#768A95] font-medium font-Montserrat leading-[178%] text-md max-w-[550px] pb-0 pt-2">
+              <p className=" text-white opacity-70 font-medium font-Montserrat leading-[178%] text-md max-w-[550px] pb-0 pt-2">
                 {data.para}
               </p>
             </div>

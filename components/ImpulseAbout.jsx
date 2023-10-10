@@ -27,7 +27,7 @@ const ImpulseAbout = () => {
             return (
               <div
                 key={about.id}
-                className={`lg:w-6/12 hover:translate-y-[-4%] duration-200 ease-in-out sm:w-10/12 w-full  rounded-[20px] p-[2px] inline-block lg:mt-0 mt-4 relative ${about.border}`}
+                className={`lg:w-6/12 lg:hover:translate-y-[-4%] duration-200 ease-in-out sm:w-10/12 w-full  rounded-[20px] p-[2px] inline-block lg:mt-0 mt-4 relative ${about.border}`}
               >
                 <div className="block rounded-[20px] w-full bg-[#080D2D] sm:ps-8 ps-4 pb-7 sm:pt-6 pt-4 sm:pe-6 pe-4">
                   <div className="md:flex justify-between ">
@@ -54,14 +54,14 @@ const ImpulseAbout = () => {
                           </p>
                         </div>
                       </div>
-                      <div className=" flex ;md:items-center mt-2">
+                      <div className=" hidden xl:flex items-center mt-2">
                         <Image
                           height={27}
                           width={27}
                           alt="img"
                           src="/assets/images/svg/AboutLogo.svg"
                         />
-                        <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[10px]">
+                        <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[10px] ">
                           IMPULSE
                         </p>
                       </div>
@@ -92,7 +92,7 @@ const ImpulseAbout = () => {
                           </clipPath>
                         </defs>
                       </svg>
-                      <span className=" font-Montserrat text-lg font-bold text-white">
+                      <span className=" font-Montserrat text-sm sm:text-lg font-bold text-white">
                         Discord
                       </span>
                     </Link>
@@ -115,7 +115,7 @@ const ImpulseAbout = () => {
                         />
                       </svg>
 
-                      <span className=" font-Montserrat text-lg font-bold text-white">
+                      <span className=" font-Montserrat text-sm sm:text-lg font-bold text-white">
                         Twitter
                       </span>
                     </Link>
