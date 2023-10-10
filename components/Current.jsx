@@ -16,10 +16,10 @@ const Current = () => {
       <div className=" bg_current z-10  relative after:contents-[''] after:absolute after:w-full border-[1px] border-[#1F374F] sm:pb-6 sm:pt-14 pt-2 pb-10 ms-[-10px] me-[-10px] border-b-0">
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <div className="flex flex-wrap justify-around">
-            {CurrentData.map((data,i) => {
+            {CurrentData.map((data, i) => {
               return (
                 <div key={data.id} className="md:w-3/12 sm:w-4/12 w-full ">
-                  <p className="text-white text-center font-bold leading-[110%] lg:text-7xl md:text-[38px] text-[30px] sm:mt-0 mt-8 ">
+                  <p className="text-white text-center font-bold leading-[110%] lg:text-7xl md:text-[40px] text-[32px] sm:mt-0 mt-8 ">
                     <VisibilitySensor
                       onChange={onVisibilityChange}
                       offset={{
@@ -49,7 +49,7 @@ const Current = () => {
                     </VisibilitySensor>
                     {data.number}
                   </p>
-                  <p className="text-center text-[#9898A3] lg:text-2xl text-[15px] font-semibold leading-[150%] text-opacity-80 ">
+                  <p className="text-center text-[#9898A3] pt-[6px] sm:text-2xl text-[17px] font-semibold leading-[150%] text-opacity-80 ">
                     {data.current}
                   </p>
                 </div>
@@ -67,6 +67,7 @@ const Current = () => {
                 width={66}
                 src="/assets/images/svg/N_icon_current.svg"
                 alt="N icon"
+                className="lg:w-[73px] lg:h-[54px] md:w-[65px] md:h-[46px] w-[44px] h-[31px]"
               />
             </Link>
             <Link href="" target="_blank">
@@ -74,7 +75,8 @@ const Current = () => {
                 height={66}
                 width={66}
                 src="/assets/images/svg/mango_icon_current.svg"
-                alt="N icon"
+                alt="mango icon"
+                className="lg:w-[60px] lg:h-[62px] md:w-[53px] md:h-[52px] w-[36px] h-[37px]"
               />
             </Link>
           </div>

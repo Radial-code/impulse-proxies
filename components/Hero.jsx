@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <Header />
       <div className=" relative">
-        <div className=" hero-section grad_b g flex flex-col justify-center lg:py-8 pt-8 pb-20">
+        <div className=" hero-section grad_b g flex flex-col justify-center lg:py-8 pt-8 sm:pb-20 pb-14">
           <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 h-full flex items-center">
             <div className="flex items-center justify-between h-full flex-wrap w-full lg:flex-nowrap">
               <div className="md:w-6/12 xl:w-6/12 lg:w-6/12 w-full">
@@ -14,15 +14,15 @@ const Hero = () => {
                   Elevate your <span className="text-cyan-green">success </span>
                   with our Proxies
                 </h1>
-                <p className="lg:mt-6 sm:mt-4 mt-5 lg:text-[19px] sm:text-[17px] text-[13px] text-opacity-80 lg:max-w-[491px] sm:max-w-[393px] max-w-[327px] font-semibold mb-1 text-[#9898A3] leading-[150%]">
+                <p className="lg:mt-6 sm:mt-4 mt-5 lg:text-[19px] sm:text-[17px] text-[15px] text-opacity-80 lg:max-w-[491px] sm:max-w-[393px] max-w-[327px] font-semibold mb-1 text-[#9898A3] leading-[150%]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt
                 </p>
                 <div className="md:flex hidden sm:mb-0 mb-5 items-center mt-12 ">
-                  <button className=" hover:bg-transparent transition-all lg:max-w-[201px] max-w-[216px] w-full lg:min-h-[55px] min-h-[50px] leading-[120%] border-[2px] border-cyan-green bg-[#163D51] rounded-[100px] font-Montserrat font-semibold md:text-lg lg:text-2xl text-white">
+                  <button className="hover:bg-transparent transition-all lg:max-w-[201px] min-w-[216px] w-full lg:min-h-[55px] min-h-[50px] leading-[120%] border-[2px] border-cyan-green bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white">
                     Purchase
                   </button>
-                  <button className="lg:ms-5 ms-4 leading-[120%] hover:bg-[#163D51] transition-all lg:max-w-[226px] max-w-[216px] w-full lg:min-h-[55px] min-h-[50px] border-[2px] border-white bg-[#050829] hover:border-cyan-green rounded-[100px] font-Montserrat font-semibold md:text-lg lg:text-2xl text-white">
+                  <button className="lg:ms-5 ms-4 leading-[120%] hover:bg-[#163D51] transition-all lg:max-w-[226px] min-w-[216px] w-full lg:min-h-[55px] min-h-[50px] border-[2px] border-white bg-[#050829] hover:border-cyan-green rounded-[100px] font-Montserrat font-semibold text-2xl text-white">
                     Explore Products
                   </button>
                 </div>
@@ -36,11 +36,11 @@ const Hero = () => {
                   alt="hero-image"
                   className="pointer-events-none relative z-50 2xl:h-[500px] sm:max-w-[400px] md:max-w-[370px] lg:max-w-[500px] mx-auto xl:h-[500px] xl:max-w-[600px] sm:mt-0 mt-14 xl:w-full"
                 />
-                <div className="md:hidden sm:flex sm:mb-0 mb-5 items-center justify-center text-center">
-                  <button className=" hover:bg-transparent transition-all max-w-[300px] w-full sm:max-w-[197px]  min-h-[55px] border-[2px] border-cyan-green bg-[#163D51] rounded-[100px] font-Montserrat font-semibold sm:text-2xl text-white mt-10">
+                <div className="md:hidden sm:flex sm:mb-0 items-center justify-center text-center">
+                  <button className=" hover:bg-transparent transition-all max-w-[300px] w-full sm:max-w-[197px] min-h-[55px] border-[2px] border-cyan-green bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl leading-[120%] text-white mt-10">
                     Purchase
                   </button>
-                  <button className="sm:ms-4 hover:bg-[#163D51] transition-all max-w-[300px] w-full sm:max-w-[197px]  min-h-[55px] border-[2px] border-white bg-transparent hover:border-cyan-green rounded-[100px] font-Montserrat font-semibold sm:text-2xl text-white mt-4 sm:mt-10">
+                  <button className="sm:ms-4 hover:bg-[#163D51] transition-all max-w-[300px] w-full sm:max-w-[197px]  min-h-[55px] border-[2px] border-white bg-transparent hover:border-cyan-green rounded-[100px] font-Montserrat leading-[120%] font-semibold text-2xl text-white mt-4 sm:mt-10">
                     Explore Products
                   </button>
                 </div>

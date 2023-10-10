@@ -26,7 +26,7 @@ const Header = () => {
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <div className="flex-1 flex items-center justify-between  lg:items-center xl:mr-3">
             <div className="flex-1 flex items-center lg:justify-between justify-center">
-              <div className="flex-shrink-0 flex items-center justify-between relative z-[200]">
+              <div className="flex-shrink-0 flex items-center justify-between relative z-[200] md:py-0 py-[14px]">
                 <Link
                   href="/"
                   className="text-white text-xl font-semibold flex items-center "
@@ -36,13 +36,13 @@ const Header = () => {
                     width={53}
                     src="/assets/images/svg/FooterLogo.svg"
                     alt="herologo"
-                    className="xl:w-[53px] xl:h-[66px] w-[45px] h-[55px]"
+                    className="xl:w-[53px] xl:h-[66px] md:w-[45px] md:h-[55px] w-[30px] h-[37px]"
                   />
                   <div className="ms-3">
-                    <p className="mb-0 lg:text-[18px] text-[15px] text-white font-bold lh_normal font-Montserrat lg:tracking-[3.3px] tracking-[2.178px]">
+                    <p className="mb-0 lg:text-[18px] sm:text-[15px] text-[10px] text-white font-bold lh_normal font-Montserrat lg:tracking-[3.3px] tracking-[2.178px]">
                       IMPULSE
                     </p>
-                    <p className="lg:text-[14px] text-[12px] text-cyan-green font-Montserrat font-medium lh_normal mb-0 tracking-[1.683px] lg:tracking-[2.55px]">
+                    <p className="lg:text-[14px] sm:text-[12px] text-[8px] text-cyan-green font-Montserrat font-medium lh_normal mb-0 tracking-[1.683px] lg:tracking-[2.55px]">
                       PROXIES
                     </p>
                   </div>
