@@ -4,7 +4,7 @@ import Image from "next/image";
 function WhyToChooseUs() {
   return (
     <>
-      <div className=" lg:pt-16 lg:pb-20 md:pt-8 md:pb-[53px] py-12 bg-[#141436] relative mt-14">
+      <div className="lg:pt-16 lg:pb-20 md:pt-8 md:pb-[53px] py-12 bg-[#141436] relative mt-14">
         <Image
           className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] right-[24px] z-20 sm:w-[145px] w-[100px] sm:h-[126px] h-[100px] pointer-events-none arrowAnimation"
           height={126}
@@ -15,7 +15,7 @@ function WhyToChooseUs() {
         <Image
           height={140}
           width={140}
-          className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] right-[24px] z-[4] sm:w-[140px] h-[100px] sm:h-[140px] w-[100px]"
+          className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] right-[24px] z-[4] lg:w-[146px] md:h-[80px] lg:h-[147px] md:w-[92px] w-[66px] h-[57px]"
           alt="AbstractCircle"
           src="/assets/images/png/AbstractCircle-02.png"
         />
