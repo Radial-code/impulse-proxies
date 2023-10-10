@@ -95,13 +95,13 @@ const Header = () => {
                   </div>
                   {/* </Link> */}
                   <Link
-                    href="#Faqs"
+                    href="#AboutUs"
                     className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
                     About Us
                   </Link>
                   <Link
-                    href="#AboutUs"
+                    href="#Faqs"
                     className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
                     FAQ
