@@ -49,14 +49,14 @@ const Current = () => {
                     </VisibilitySensor>
                     {data.number}
                   </p>
-                  <p className="text-center text-[#9898A3] pt-[6px] sm:text-2xl text-[17px] font-semibold leading-[150%] text-opacity-80 ">
+                  <p className="text-center text-[#9898A3] pt-[6px] lg:text-2xl text-[17px] font-semibold leading-[150%] text-opacity-80 ">
                     {data.current}
                   </p>
                 </div>
               );
             })}
           </div>
-          <hr className="bg-[#2D3752] w-full h-[1px] border-0 mt-10 xl:mb-6 mb-2" />
+          <hr className="bg-[#2D3752] w-full h-[1px] border-0 mt-10 xl:mb-6 sm:mb-6 mb-2" />
           <p className="opacity-40 tracking-[1.5px] font-bold lh_normal text-xs font-Montserrat text-center text-white">
             TRUSTED BY OUR PARTNERS
           </p>
