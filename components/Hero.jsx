@@ -35,7 +35,6 @@ const Hero = () => {
                 <div className="box_showdow absolute max-w-[456px] w-full h-[542px] blur-[140px] rounded-[36px] opacity-30 top-10 right-7 z-[-1] hidden lg:inline-block"></div>  
                 <Lottie
                   animationData={animationData}
-                  // className="flex justify-center items-center"
                   loop={true}
                   className="pointer-events-none relative z-50 2xl:h-[500px] sm:max-w-[400px] md:max-w-[370px] lg:max-w-[500px] mx-auto xl:h-[500px] xl:max-w-[600px] sm:mt-0 mt-14 xl:w-full"/>
                 <div className="md:hidden sm:flex sm:mb-0 items-center justify-center text-center">
