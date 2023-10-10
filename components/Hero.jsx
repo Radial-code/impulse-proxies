@@ -11,8 +11,7 @@ const Hero = () => {
             <div className="flex items-center justify-between h-full flex-wrap lg:flex-nowrap">
               <div className="md:w-6/12 xl:w-6/12 lg:w-6/12 w-full">
                 <h1 className="lg:text-[55px] xl:text-8xl 2xl:text-[70px] md:text-[38px] text-[35px] tracking-[-2%] text-white leading-[118%] max-w-[300px] md:max-w-[400px] lg:max-w-[100%] sm:w-full">
-                  Elevate your{" "}
-                  <span className="text-cyan-green">success </span>
+                  Elevate your <span className="text-cyan-green">success </span>
                   with our Proxies
                 </h1>
                 <p className="mt-4  text-[15px] font-normal md:mb-0 mb-5 text-dark-gray leading-[150%]">
@@ -33,7 +32,7 @@ const Hero = () => {
                 <Image
                   width={500}
                   height={900}
-                  src="/assets/images/svg/heroImg.svg"
+                  src="/assets/images/lottie/data (2).json"
                   alt="hero-image"
                   className="pointer-events-none relative z-50 2xl:h-[500px] sm:max-w-[400px] md:max-w-[370px] lg:max-w-[500px] mx-auto xl:h-[500px] xl:max-w-[600px] xl:w-full"
                 />
