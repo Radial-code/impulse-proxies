@@ -4,14 +4,20 @@ import Image from "next/image";
 function WhyToChooseUs() {
   return (
     <>
-      <div className="w-full lg:h-[52px] h-[33px] chooseBox"></div>
-      <div className=" lg:pt-16 lg:pb-20 py-12 bg-[#141436] relative">
+      <div className=" lg:pt-16 lg:pb-20 py-12 bg-[#141436] relative mt-14">
         <Image
-          className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] right-[24px] z-10 sm:w-[145px] w-[100px] sm:h-[126px] h-[100px] pointer-events-none arrowAnimation"
+          className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] right-[24px] z-20 sm:w-[145px] w-[100px] sm:h-[126px] h-[100px] pointer-events-none arrowAnimation"
           height={126}
           width={145}
-          src="/assets/images/svg/Abstract-02.svg"
+          src="/assets/images/png/AbstractTrangle-02.png"
           alt="Abstract"
+        />
+        <Image
+          height={140}
+          width={140}
+          className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] right-[24px] z-[4] sm:w-[140px] h-[100px] animate-spin sm:h-[140px] w-[100px]"
+          alt="AbstractCircle"
+          src="/assets/images/png/AbstractCircle-02.png"
         />
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 sm:py-0 py-2">
           <h2 className="font-Montserrat sm:text-6xl text-[35px] text-white font-bold leading-[121%] text-center tracking-[-0.64px]">
