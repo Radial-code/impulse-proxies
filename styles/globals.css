@@ -40,9 +40,7 @@ body {
     rgb(var(--background-start-rgb)); */
   background-color: #040426;
 }
-.hero-section {
-  min-height: calc(100vh - 115px);
-}
+
 .accordion {
   transition: all 0.3s ease-in-out;
 }
@@ -54,6 +52,11 @@ body {
 .accordion-item.active .accordion-content {
   height: auto;
   transition: height 0.3s ease-in-out;
+}
+@media (min-width:1024px) {
+  .hero-section {
+  min-height: calc(100vh - 115px);
+}
 }
 @media (min-width: 820px) and (max-width: 991.98px) {
   .hero-section {

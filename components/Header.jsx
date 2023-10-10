@@ -22,27 +22,27 @@ const Header = () => {
         add
         setActiveNavOverlay={setActiveNavOverlay}
       />
-      <nav className="bg-[#040426] xl:py-10 lg:py-4 border-b-[1px] border-[#222F4A] flex-grow-0">
+      <nav className="bg-[#040426] xl:py-9 md:py-[14px]  border-b-[1px] border-[#222F4A] flex-grow-0">
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <div className="flex-1 flex items-center justify-between  lg:items-center xl:mr-3">
-            <div className="flex-1 flex items-center justify-between">
+            <div className="flex-1 flex items-center lg:justify-between justify-center">
               <div className="flex-shrink-0 flex items-center justify-between relative z-[200]">
                 <Link
                   href="/"
                   className="text-white text-xl font-semibold flex items-center "
                 >
                   <Image
-                    height={67}
-                    width={67}
+                    height={66}
+                    width={53}
                     src="/assets/images/svg/FooterLogo.svg"
                     alt="herologo"
-                    className="sm:w-[67px] sm:h-[67px] w-[40px] h-[40px]"
+                    className="xl:w-[53px] xl:h-[66px] w-[45px] h-[55px]"
                   />
                   <div className="ms-3">
-                    <p className="mb-0 sm:text-3xl text-[17px] text-white font-bold lh_normal font-Montserrat tracking-[3.3px]">
+                    <p className="mb-0 lg:text-[18px] text-[15px] text-white font-bold lh_normal font-Montserrat lg:tracking-[3.3px] tracking-[2.178px]">
                       IMPULSE
                     </p>
-                    <p className="sm:text-xl text-[15px] text-cyan-green font-Montserrat font-medium lh_normal mb-0 tracking-[2.55px]">
+                    <p className="lg:text-[14px] text-[12px] text-cyan-green font-Montserrat font-medium lh_normal mb-0 tracking-[1.683px] lg:tracking-[2.55px]">
                       PROXIES
                     </p>
                   </div>
@@ -52,7 +52,7 @@ const Header = () => {
                 <div className="flex lg:gap-9 items-center">
                   <div className="relative group inline-block text-left">
                     {/* Dropdown button */}
-                    <button className="text-white font-semibold tracking-[-0.38px] flex items-center leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200">
+                    <button className="text-white font-semibold flex items-center leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200">
                       Products
                       <Image
                         width={15}
@@ -96,19 +96,19 @@ const Header = () => {
                   {/* </Link> */}
                   <Link
                     href="#AboutUs"
-                    className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
+                    className="text-white font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
                     About Us
                   </Link>
                   <Link
                     href="#Faqs"
-                    className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
+                    className="text-white font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
                     FAQ
                   </Link>
                   <Link
                     href="#proxies"
-                    className="text-white font-semibold tracking-[-0.38px]  font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
+                    className="text-white font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
                     Purchase
                   </Link>
@@ -117,7 +117,7 @@ const Header = () => {
               <div className="hidden lg:flex items-center">
                 <Link
                   href="/dashboard"
-                  className="text-white font-Montserrat w-[197px] text-2xl font-bold border-cyan-green border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]"
+                  className="text-white font-Montserrat w-[197px] text-2xl font-semibold border-cyan-green border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]"
                 >
                   Dashboard
                 </Link>
