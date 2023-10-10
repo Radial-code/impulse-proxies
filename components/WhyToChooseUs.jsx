@@ -20,7 +20,7 @@ function WhyToChooseUs() {
           src="/assets/images/png/AbstractCircle-02.png"
         />
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 sm:py-0 py-2">
-          <h2 className="font-Montserrat md:text-[28px] text-[20px] text-white font-bold leading-[110%] text-center">
+          <h2 className="font-Montserrat lg:text-[32px] md:text-[28px] text-[20px] text-white font-bold leading-[110%] text-center">
             Why To Choose <span className="text-cyan-green">Us</span>
           </h2>
           <div className="flex justify-center flex-wrap 2xl:gap-0 lg:gap-5 lg:flex-nowrap lg:mt-12 md:mt-6 mt-2">

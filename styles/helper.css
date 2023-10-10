@@ -11,6 +11,7 @@
 .bg_current {
   border: 1px solid #4fdcc7;
   background: linear-gradient(349deg, #141436 -2.09%, #1e1f3e 120.28%);
+  opacity: 1;
 }
 .back_to_top {
   animation: top-btn infinite linear 2s;
