@@ -29,7 +29,7 @@ const Ring = () => {
         <ambientLight color="#50EED7" intensity="2.4" />
         <Box position={[1.2, 0, 0]} />
       </Canvas>
-      ,
+      
     </>
   );
 };
