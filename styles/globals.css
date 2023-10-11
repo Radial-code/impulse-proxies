@@ -21,31 +21,22 @@
   font-family: tt-interfaces;
   src: url("./fonts/TTInterfaces-DemiBold.ttf");
   font-style: normal;
-  font-weight: 600; /* DemiBold weight */
+  font-weight: 600; 
 }
 @font-face {
   font-family: tt-interfaces;
   src: url("./fonts/TTInterfaces-Bold.ttf");
   font-style: normal;
-  font-weight: Bold; /* Bold weight */
+  font-weight: 700; 
 }
 body {
   color: rgb(var(--foreground-rgb));
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
   background-color: #040426;
   font-family: "Montserrat", sans-serif !important;
 }
 .font-Montserrat {
   font-family: "Montserrat", sans-serif !important;
 }
-/* .ff_montserrat {
-  font-family: "Montserrat", sans-serif !important;
-} */
 .accordion {
   transition: all 0.3s ease-in-out;
 }

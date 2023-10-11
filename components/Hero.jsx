@@ -1,9 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import Image from "next/image";
 import Lottie from "lottie-react";
-import dynamic from "next/dynamic";
-
 import animationData from "../public/assets/images/lottie/data (2).json";
 const Hero = () => {
   return (

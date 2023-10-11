@@ -5,7 +5,6 @@ const Box = () => {
 
   const [hovered, setHover] = useState(false);
   const [active, setActive] = useState(false);
-  // delata is speed of ring
   useFrame((state, delta) => (meshRef.current.rotation.y += delta));
   useFrame((state, delta) => (meshRef.current.rotation.x += delta));
   return (
