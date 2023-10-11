@@ -12,6 +12,9 @@
 .arrowAnimation {
   animation: arrowAnimat 2s infinite ease-in-out;
 }
+.spin{
+  animation: spin 3s infinite linear;
+}
 @keyframes arrowAnimat {
   0% {
     transform: translate(0, 0);

@@ -15,7 +15,7 @@ function WhyToChooseUs() {
         <Image
           height={140}
           width={140}
-          className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] animate-spin right-[24px] z-[4] lg:w-[146px] md:h-[80px] lg:h-[147px] md:w-[92px] w-[66px] h-[57px]"
+          className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] spin right-[24px] z-[4] lg:w-[146px] md:h-[80px] lg:h-[147px] md:w-[92px] w-[66px] h-[57px]"
           alt="AbstractCircle"
           src="/assets/images/png/AbstractCircle-02.png"
         />
