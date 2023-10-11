@@ -21,18 +21,18 @@
   font-family: tt-interfaces;
   src: url("./fonts/TTInterfaces-DemiBold.ttf");
   font-style: normal;
-  font-weight: 600; 
+  font-weight: 600;
 }
 @font-face {
   font-family: tt-interfaces;
   src: url("./fonts/TTInterfaces-Bold.ttf");
   font-style: normal;
-  font-weight: 700; 
+  font-weight: 700;
 }
 body {
   color: rgb(var(--foreground-rgb));
   background-color: #040426;
-  font-family: tt-interfaces !important;
+  font-family: tt-interfaces , sans-serif !important;
 }
 .accordion {
   transition: all 0.3s ease-in-out;
