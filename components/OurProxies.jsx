@@ -23,7 +23,7 @@ const OurProxies = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
         <div className="flex justify-center lg:justify-start flex-wrap relative z-20 lg:flex-nowrap lg:gap-9 2xl:gap-9  mt-[53px] md:mt-8 lg:mt-12  ">
-          <div className=" md:w-6/12 hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out lg:w-4/12 border-[2px] border-[#505062] rounded-[20px] px-6 pt-6 pb-7 2xl:max-w-[400px] max-w-[348px]">
+          <div className=" md:w-6/12 hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out lg:w-4/12 border-[2px] border-[#505062] rounded-[20px] px-6 pt-6 pb-7">
             <h5 className="font-bold  font-Montserrat text-2xl left-5 text-white">
               <span className="text-cyan-green"> ISP </span>Proxies
             </h5>
@@ -32,16 +32,16 @@ const OurProxies = () => {
               eiusmod tempor
             </p>
           </div>
-          <div className="md:w-6/12 hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out lg:w-4/12 border-[2px] border-[#505062] rounded-[20px] px-8 py-7 2xl:max-w-[400px] max-w-[348px] mt-6 md:mt-0 md:ms-7 lg:ms-0">
+          <div className="md:w-6/12 hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out lg:w-4/12 border-[2px] border-[#505062] rounded-[20px] px-8 py-7  mt-6 md:mt-0 md:ms-7 lg:ms-0">
             <h5 className="font-bold  font-Montserrat text-2xl  text-white">
               <span className="text-cyan-green"> Datacenter </span> Proxies
             </h5>
-            <p className=" font-medium text-md font-Montserrat text-white opacity-70 max-w-[316px] 2xl:max-w-[315px] mt-2">
+            <p className=" font-medium text-md font-Montserrat text-white opacity-70 max-w-[316px]  mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor
             </p>
           </div>
-          <div className="md:w-6/12 hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out lg:w-4/12 border-[2px] border-[#505062] rounded-[20px] px-8 py-7 2xl:max-w-[400px] max-w-[348px] mt-6 lg:mt-0">
+          <div className="md:w-6/12 hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out lg:w-4/12 border-[2px] border-[#505062] rounded-[20px] px-8 py-7  mt-6 lg:mt-0">
             <h5 className="font-bold  font-Montserrat text-2xl text-white">
               <span className="text-cyan-green"> Residential </span> Proxies
             </h5>
