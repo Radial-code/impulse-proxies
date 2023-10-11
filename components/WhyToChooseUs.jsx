@@ -30,7 +30,7 @@ function WhyToChooseUs() {
                   key={CardData.id}
                   className={` w-full mt-6 lg:mt-0 md:w-6/12  lg:w-4/12 ${CardData.border}`}
                 >
-                  <div className=" 2xl:max-w-[393px] lg:max-w-[380px] hover:translate-y-[-10px] transition-all duration-200 ease-in-out max-w-[348px] mx-auto h-full md:px-[24px] md:pt-[18px] md:pb-[38px] px-6 pt-6 pb-[30px] rounded-[30px] border-[2px] border-cyan-green bg-[#204056]">
+                  <div className=" 2xl:max-w-[393px] lg:max-w-[380px] hover:translate-y-[-10px] transition-all duration-200 ease-in-out max-w-[348px] mx-auto h-full md:px-[24px] md:pt-[18px] md:pb-[25px] px-6 pt-6 pb-[30px] rounded-[30px] border-[2px] border-cyan-green bg-[#204056]">
                     <div className=" flex gap-3 items-center">
                       <h5 className="font-bold sm:leading-[75px] leading-[140%] font-Montserrat md:text-2xl text-[17px] text-white">
                         {CardData.heading}
@@ -42,7 +42,7 @@ function WhyToChooseUs() {
                         alt="aboutimage"
                       />
                     </div>
-                    <p className=" text-white md:text-md text-[12px] font-medium font-Montserrat opacity-70 lg:max-w-[235px] leading-[25px] ">
+                    <p className=" text-white md:text-md text-[12px] font-medium font-Montserrat opacity-70 max-w-[244px] leading-[25px] ">
                       {CardData.para}
                     </p>
                   </div>

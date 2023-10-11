@@ -14,11 +14,11 @@ const Hero = () => {
           <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 h-full flex items-center">
             <div className="flex items-center justify-between h-full flex-wrap w-full lg:flex-nowrap lg:pt-[70px] lg:pb-[90px]">
               <div className="md:w-6/12 xl:w-7/12 lg:w-6/12 w-full">
-                <h1 className="lg:text-8xl sm:text-[42px] text-[32px] lg:tracking-[-1.16px] sm:tracking-[-0.84px] tracking-[-0.64px] text-white lg:leading-[60px] xl:leading-[68px] sm:leading-[54px] leading-[42px] font-bold sm:max-w-[340px] max-w-[290px] lg:max-w-[500px]  sm:w-full">
+                <h1 className="lg:text-8xl sm:text-[42px] text-[32px] lg:tracking-[-1.16px] sm:tracking-[-0.84px] tracking-[-0.64px] text-white lg:leading-[60px] xl:leading-[68px] sm:leading-[54px] leading-[42px] font-bold sm:max-w-[360px] max-w-[290px] lg:max-w-[500px]  sm:w-full">
                   Elevate your <span className="text-cyan-green">success </span>
                   with our Proxies
                 </h1>
-                <p className="lg:mt-6 sm:mt-4 mt-5 lg:text-[19px] sm:text-[17px] text-[15px] text-opacity-80 lg:max-w-[550px] sm:max-w-[393px] max-w-[327px] font-semibold mb-1 text-[#9898A3] leading-[150%]">
+                <p className="lg:mt-6 sm:mt-4 mt-5 lg:text-[19px] sm:text-[16px] text-[15px] text-opacity-80 max-w-[327px] md:max-w-[550px] ss  font-semibold mb-1 text-[#9898A3] leading-[150%]">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt
                 </p>

@@ -28,17 +28,17 @@ const ImpulseAbout = () => {
         <h2 className=" font-Montserrat lg:text-6xl text-[28px] text-white font-bold leading-[121%] text-center lg:text-start">
           About <span className="text-cyan-green">Us</span>
         </h2>
-        <p className=" text-dark-gray leading-[157%] font-normal md:font-semibold lg:text-2xl text-[15px] text-center lg:max-w-[260px] sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 pb-3 md:text-center lg:text-start lg:mx-0">
+        <p className=" text-dark-gray leading-[157%] font-normal md:font-semibold lg:text-2xl text-[15px] text-center lg:max-w-[383px] sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 pb-3 md:text-center lg:text-start lg:mx-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
-        <div className="flex lg:flex-nowrap justify-center flex-wrap lg:gap-6 sm:pb-[138px] pb-12 sm:mb-0 mb-3 lg:mt-10">
+        <div className="flex lg:flex-nowrap justify-center flex-wrap lg:gap-6 sm:pb-[138px]  pb-12 sm:mb-0 mt-5 lg:mt-10 lg:justify-between">
           {AboutBox.map((about) => {
             return (
               <div
                 key={about.id}
-                className={`lg:w-6/12 hover:translate-y-[-4%] duration-200 ease-in-out sm:w-10/12 w-full  rounded-[20px] p-[2px] inline-block lg:mt-0 mt-4 relative ${about.border}`}
+                className={`lg:w-6/12 hover:translate-y-[-4%] duration-200 ease-in-out sm:w-10/12 w-full  rounded-[20px] p-[2px] inline-block lg:mt-0 mt-4 relative max-w-[558px]  ${about.border}`}
               >
-                <div className="block rounded-[20px] w-full bg-[#080D2D] sm:ps-8 ps-4 pb-7 sm:pt-6 pt-4 sm:pe-6 pe-4">
+                <div className="block rounded-[20px] w-full bg-[#080D2D] sm:ps-8 ps-4 pb-4  pt-4 sm:pe-6 pe-4">
                   <div className="sm:flex items-start justify-between">
                     <div className=" flex gap-6">
                       <Image
