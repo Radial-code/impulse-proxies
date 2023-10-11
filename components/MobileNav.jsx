@@ -31,26 +31,26 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   return (
     <>
       <div
-        className={`fixed px-4 items-center justify-start lg:hidden bg-[#040426] lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-24 transition-all duration-200 ease-in z-[100] w-full sm:max-w-[100%] ${
+        className={`fixed px-4 items-center justify-center lg:hidden bg-[#040426] lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-24 transition-all duration-200 ease-in z-[100] w-full sm:max-w-[100%] ${
           activeNavOverlay ? "left-0" : "-left-full"
         }`}
       >
-        <div className="flex flex-col lg:pt-0 sm:pt-16 pt-8 gap-9 xl:gap-5 justify-center items-center w-full">
+        <div className="flex flex-col gap-9 xl:gap-5 justify-center items-center w-full">
           <div className="relative group inline-block text-left w-full">
             {/* Dropdown button */}
 
-           <DropDown/>
+            <DropDown />
           </div>
           {/* </Link> */}
           <Link
             onClick={() => setActiveNavOverlay(false)}
-            href="#"
+            href="#AboutUs"
             className="text-white font-semibold tracking-[-0.38px]  font-Montserrat sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200"
           >
             About Us
           </Link>
           <Link
-            href="#AboutUs"
+            href="#Faqs"
             onClick={() => setActiveNavOverlay(false)}
             className="text-white font-semibold tracking-[-0.38px]  font-Montserrat sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200"
           >

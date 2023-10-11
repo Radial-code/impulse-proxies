@@ -5,7 +5,6 @@ const Box = () => {
 
   const [hovered, setHover] = useState(false);
   const [active, setActive] = useState(false);
-  // delata is speed of ring
   useFrame((state, delta) => (meshRef.current.rotation.y += delta));
   useFrame((state, delta) => (meshRef.current.rotation.x += delta));
   return (
@@ -29,7 +28,7 @@ const Ring = () => {
         <ambientLight color="#50EED7" intensity="2.4" />
         <Box position={[1.2, 0, 0]} />
       </Canvas>
-      ,
+      
     </>
   );
 };

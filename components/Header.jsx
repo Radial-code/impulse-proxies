@@ -30,7 +30,7 @@ const Header  = ()  =>  {
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <div className="flex-1 flex items-center justify-between  lg:items-center xl:mr-3">
             <div className="flex-1 flex items-center lg:justify-between justify-center">
-              <div className="flex-shrink-0 flex items-center justify-between relative z-[200] md:py-0 py-[14px]">
+              <div className="flex-shrink-0 flex items-center justify-between lg:ms-0 ms-20 relative z-[200] md:py-0 py-[14px]">
                 <Link
                   href="/"
                   className="text-white text-xl font-semibold flex items-center "

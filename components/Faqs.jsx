@@ -17,9 +17,11 @@ const ImpulseFAQ = () => {
   return (
     <div
       id="Faqs"
-      className="bg-[url('/assets/images/png/FAQbg.png')] bg-no-repeat bg-cover bg-center md:pt-28 sm:pt-20 pt-12 md:pb-44 sm:pb-22 pb-16 overflow-hidden relative"
+      className="bg-[url('/assets/images/svg/FAQsbg.svg')] bg-no-repeat lg:bg-[100% 100%] bg-cover bg-center md:pt-28 sm:pt-20 pt-12 md:pb-44 sm:pb-22 pb-16 overflow-hidden relative"
     >
-      <div className="torus-footer absolute pointer-events-none bottom-[-10px] xl:w-[223px]  xl:h-[223px]  lg:w-[123px] lg:h-[123px] start-0 sm:w-[93px] md:w-[173px] md:h-[173px] w-[73px]  sm:h-[93px] h-[100px]">
+      <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>
+      <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute bottom-0 lg:bottom-[0px] lg:left-[22%]"></div>
+      <div className="torus-footer absolute pointer-events-none bottom-[-10px] xl:w-[223px] xl:h-[223px]  lg:w-[123px] lg:h-[123px] start-0 sm:w-[93px] md:w-[173px] md:h-[173px] w-[73px]  sm:h-[93px] h-[100px]">
         <Torus />
       </div>
       <div className="torus-footer pointer-events-none  absolute lg:top-[-3%] sm:top-[-2%] top-[-3%] end-[-7px] lg:end-0 sm:end-[2%] lg:h-[207px] lg:w-[207px] sm:w-[120px] w-[100px]  sm:h-[175px] h-[100px]">
@@ -41,7 +43,7 @@ const ImpulseFAQ = () => {
         alt="faqimage"
       />
       <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 sm:pt-0 pt-3 sm:pb-0 pb-3">
-        <p className="text-center lg:text-6xl text-[28px] text-white font-Montserrat font-bold leading-[121%] tracking-[-0.74px] sm:mb-12 mb-7">
+        <p className="text-center lg:text-6xl text-[28px] mx-auto text-white sm:max-w-full max-w-[250px] font-Montserrat font-bold leading-[121%] tracking-[-0.74px] sm:mb-12 mb-7">
           Frequently Asked Questions
         </p>
         {AccordianData.map((data, index) => (
