@@ -32,11 +32,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background-color: #040426;
-  font-family: "Montserrat", sans-serif !important;
-}
-
-.font-Montserrat {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: tt-interfaces !important;
 }
 .accordion {
   transition: all 0.3s ease-in-out;
