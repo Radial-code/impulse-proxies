@@ -33,7 +33,6 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: #040426;
   font-family: "Montserrat", sans-serif !important;
-  font-family: tt-interfaces !important;
 }
 
 .font-Montserrat {
