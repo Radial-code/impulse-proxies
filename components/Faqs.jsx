@@ -17,11 +17,11 @@ const ImpulseFAQ = () => {
   return (
     <div
       id="Faqs"
-      className="bg-[url('/assets/images/svg/FAQsbg.svg')] bg-no-repeat lg:bg-[100% 100%] bg-cover bg-center md:pt-28 sm:pt-20 pt-12 md:pb-44 sm:pb-22 pb-16 overflow-hidden relative"
+      className="bg-[url('/assets/images/svg/FAQsbg.svg')] bg-no-repeat lg:bg-[100% 100%] bg-cover bg-center md:pt-24 lg:pt-28 sm:pt-20 pt-12 md:pb-[92px] lg:pb-48 sm:pb-22 pb-16 overflow-hidden relative"
     >
       <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>
       <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute bottom-0 lg:bottom-[0px] lg:left-[22%]"></div>
-      <div className="torus-footer absolute pointer-events-none bottom-[-10px] xl:w-[223px] xl:h-[223px]  lg:w-[123px] lg:h-[123px] start-0 sm:w-[93px] md:w-[173px] md:h-[173px] w-[73px]  sm:h-[93px] h-[100px]">
+      <div className="torus-footer absolute pointer-events-none bottom-[-80px] start-[-70px] lg:bottom-[-10px] xl:w-[223px] xl:h-[223px]  lg:w-[123px] lg:h-[123px] lg:start-0 sm:w-[93px] md:w-[173px] md:h-[173px] w-[73px]  sm:h-[93px] h-[100px]">
         <Torus />
       </div>
       <div className="torus-footer pointer-events-none  absolute lg:top-[-3%] sm:top-[-2%] top-[-3%] end-[-7px] lg:end-0 sm:end-[2%] lg:h-[207px] lg:w-[207px] sm:w-[120px] w-[100px]  sm:h-[175px] h-[100px]">
@@ -49,7 +49,7 @@ const ImpulseFAQ = () => {
         {AccordianData.map((data, index) => (
           <div
             key={data.id}
-            className="mt-5 border-[2px] transition-opacity ease-in duration-300 border-cyan-green bg-[#50EED733] rounded-2xl px-4 py-3 overflow-hidden w-full max-w-[655px] lg:max-w-[894px] mx-auto"
+            className="mt-5 border-[2px] transition-opacity ease-in duration-300 border-cyan-green bg-[#50EED733] rounded-2xl px-4 py-3 overflow-hidden w-full max-w-[655px] lg:max-w-[849px] mx-auto"
             open={openAccordion === index}
           >
             <div onClick={() => toggleAccordion(index)} className="py-1 flex">

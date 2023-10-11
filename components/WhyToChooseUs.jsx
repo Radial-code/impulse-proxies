@@ -28,7 +28,7 @@ function WhyToChooseUs() {
               return (
                 <div
                   key={CardData.id}
-                  className={` w-full mt-6 lg:mt-0 md:w-6/12  lg:w-4/12 ${CardData.border}`}
+                  className={` w-full mt-6 lg:mt-0 md:w-6/12  :w-4/12 ${CardData.border}`}
                 >
                   <div className=" 2xl:max-w-[393px] lg:max-w-[380px] sm:min-h-[197px] min-h-[152px] sm:max-w-[330px] max-w-[328px] hover:translate-y-[-10px] transition-all duration-200 ease-in-out mx-auto h-full lg:ps-[46px] lg:pe-[36px] lg:pt-[18px] lg:pb-[38px] px-6 pt-6 pb-[30px] rounded-[30px] border-[2px] border-cyan-green bg-[#204056]">
                     <div className=" flex gap-3 items-center">
