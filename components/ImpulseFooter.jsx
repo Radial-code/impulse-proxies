@@ -10,7 +10,7 @@ const ImpulseFooter = () => {
     <>
       <div className=" bg-[#141436] lg::pb-[51px] sm:pb-5 pb-[31px] lg:pb-[52px]">
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 lg:pt-[51px] sm:pt-[26px] pt-6">
-          <div className="flex justify-between flex-wrap sm:pb-7 lg:pb-11 pb-2">
+          <div className="flex justify-between flex-wrap sm:pb-7 md:pb-6 lg:pb-11 pb-2">
             <div className="md:w-4/12 sm:w-6/12 w-full">
               <div className="flex items-center lg:mb-4 mb-3">
                 <Image
