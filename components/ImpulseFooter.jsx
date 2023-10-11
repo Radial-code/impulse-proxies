@@ -8,11 +8,11 @@ const ImpulseFooter = () => {
   const year = today.getFullYear();
   return (
     <>
-      <div className=" bg-[#141436] sm:pb-[51px] pb-10">
-        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 sm:pt-[51px] pt-10">
+      <div className=" bg-[#141436] lg::pb-[51px] sm:pb-5 pb-[31px]">
+        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 lg:pt-[51px] sm:pt-[26px] pt-6">
           <div className="flex justify-between flex-wrap sm:pb-7 pb-2">
             <div className="md:w-4/12 sm:w-6/12 w-full">
-              <div className="flex items-center mb-5">
+              <div className="flex items-center lg:mb-4 mb-3">
                 <Image
                   height={67}
                   width={67}

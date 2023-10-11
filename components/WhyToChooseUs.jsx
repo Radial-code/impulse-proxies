@@ -4,7 +4,7 @@ import Image from "next/image";
 function WhyToChooseUs() {
   return (
     <>
-      <div className="lg:pt-[69px] lg:pb-[77px] md:pt-8 md:pb-[53px] py-12 bg-[#141436] relative mt-[52px]">
+      <div className="lg:pt-[69px] lg:pb-[77px] md:pt-8 md:pb-[53px] py-12 bg-[#141436] relative mt-[32px]">
         <Image
           className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] right-[24px] z-20 lg:w-[145px] md:h-[80px] lg:h-[126px] md:w-[92px] w-[66px] h-[57px] pointer-events-none arrowAnimation"
           height={126}
@@ -32,7 +32,7 @@ function WhyToChooseUs() {
                 >
                   <div className=" 2xl:max-w-[393px] lg:max-w-[380px] hover:translate-y-[-10px] transition-all duration-200 ease-in-out max-w-[348px] mx-auto h-full md:ps-[46px] md:pe-[36px] md:pt-[18px] md:pb-[38px] px-6 pt-6 pb-[30px] rounded-[30px] border-[2px] border-cyan-green bg-[#204056]">
                     <div className=" flex gap-3 items-center">
-                      <h5 className="font-bold sm:leading-[75px] leading-[140%] font-Montserrat md:text-2xl text-[17px] text-white">
+                      <h5 className="font-bold lg:leading-[75px] sm:leading-[52px] leading-[140%] font-Montserrat md:text-2xl text-[17px] text-white">
                         {CardData.heading}
                       </h5>
                       <Image

@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       <Header />
       <div className=" relative">
-        <div className=" hero-section grad_b g flex flex-col justify-center lg:py-8 xl:py-0 pt-8 sm:pb-20 pb-14">
+        <div className=" hero-section grad_b flex flex-col justify-center lg:py-8 xl:py-0 pt-8 sm:pb-[66px] pb-14">
           <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 h-full flex items-center">
             <div className="flex items-center justify-between h-full flex-wrap w-full lg:flex-nowrap lg:pt-[70px] lg:pb-[90px]">
               <div className="md:w-6/12 xl:w-7/12 lg:w-6/12 w-full">
