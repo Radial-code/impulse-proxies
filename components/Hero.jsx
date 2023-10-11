@@ -28,7 +28,7 @@ const Hero = () => {
                   </button>
                 </div>
               </div>
-              <div className=" md:w-6/12 xl:w-7/12 lg:w-6/12 w-full flex lg:flex-row flex-col justify-center md:justify-end relative after:contents-[''] after:h-[500px] after:w-[450px] after:absolute bgHeroImg after:opacity-30 after:rounded-full after:blur-[137px] after:pointer-events-none after:top-[-50%]">
+              <div className=" md:w-6/12 xl:w-7/12 lg:w-6/12 w-full flex lg:flex-row flex-col justify-center md:justify-end relative after:contents-[''] md:after:h-[500px] after:h-[350px] md:after:w-[450px] after:w-[450px] after:absolute bgHeroImg after:opacity-30 after:rounded-full after:blur-[137px] after:pointer-events-none md:after:top-[-50%] after:top-0">
                 <div className="box_showdow absolute max-w-[456px] w-full h-[542px] blur-[140px] rounded-[36px] opacity-30 top-10 right-7 z-[-1] hidden lg:inline-block"></div>
                 <Lottie
                   animationData={animationData}
