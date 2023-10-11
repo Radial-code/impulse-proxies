@@ -47,7 +47,7 @@ const ImpulseAbout = () => {
                         src={about.aboutImg}
                         alt="aboutimg"
                         priority="1"
-                        className=" sm:h-[81px] sm:w-[81px] w-[61px] h-[61px]"
+                        className=" sm:h-[81px] sm:w-[81px] w-[42px] h-[42px]"
                       />
                       <div>
                         <h4 className="mb-0 text-white font-Montserrat leading-[204%] tracking-[-0.44px] md:text-3xl text-[17px] font-bold">
