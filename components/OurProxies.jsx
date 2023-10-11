@@ -4,12 +4,12 @@ const OurProxies = () => {
   return (
     <div
       id="proxies"
-      className="pt-[83px] lg:pt-[87px] 2xl:pt-28 pb-20 md:pb-[120px] lg:pb-[155px] 2xl:pb-48 bg-[#040426] relative"
+      className="pt-[52px] lg:pt-[87px] 2xl:pt-28 pb-28 md:pb-[120px] lg:pb-[155px] 2xl:pb-48 bg-[#040426] relative"
     >
       <Image
         width={144}
         height={150}
-        className="absolute bottom-[0] w-full rocket_img pointer-events-none"
+        className="absolute bottom-[0] w-full rocket_img rockat_img_2 pointer-events-none"
         src="/assets/images/svg/Desktop.svg"
         alt="Group_bg"
       />
@@ -23,8 +23,8 @@ const OurProxies = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
 
-        <div className="flex justify-center flex-wrap  gap-6 lg:flex-nowrap lg:mt-12 md:mt-6 mt-2 relative z-20">
-          <div className=" md:w-6/12  lg:w-4/12 min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out border-[2px] border-[#505062] rounded-[20px] px-6 py-7">
+        <div className="flex justify-center flex-wrap  gap-6 lg:flex-nowrap lg:mt-12 md:mt-6 mt-9 relative z-20">
+          <div className=" md:w-6/12  lg:w-4/12 min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out border-[2px] border-[#505062] rounded-[20px] py-5 px-6 md:py-7">
             <h5 className="font-bold  font-Montserrat text-2xl left-5 text-white">
               <span className="text-cyan-green"> ISP </span>Proxies
             </h5>
@@ -33,7 +33,7 @@ const OurProxies = () => {
               eiusmod tempor
             </p>
           </div>
-          <div className="md:w-6/12  lg:w-4/12 min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out  border-[2px] border-[#505062] rounded-[20px] px-6 py-7  ">
+          <div className="md:w-6/12  lg:w-4/12 min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out  border-[2px] border-[#505062] rounded-[20px] py-5 px-6 md:py-7  ">
             <h5 className="font-bold  font-Montserrat text-2xl  text-white">
               <span className="text-cyan-green"> Datacenter </span> Proxies
             </h5>
@@ -42,7 +42,7 @@ const OurProxies = () => {
               eiusmod tempor
             </p>
           </div>
-          <div className="md:w-6/12  lg:w-4/12 min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out  border-[2px] border-[#505062] rounded-[20px] px-6 py-7 ">
+          <div className="md:w-6/12  lg:w-4/12 min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out  border-[2px] border-[#505062] rounded-[20px] py-5 px-6 md:py-7 ">
             <h5 className="font-bold  font-Montserrat text-2xl text-white">
               <span className="text-cyan-green"> Residential </span> Proxies
             </h5>
