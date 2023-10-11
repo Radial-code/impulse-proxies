@@ -28,6 +28,7 @@
   background: linear-gradient(349deg, #141436 -2.09%, #1e1f3e 120.28%);
   z-index: -1;
   opacity: 0.6;
+  pointer-events: none;
 }
 .bg_current::after {
   content: "";
@@ -49,6 +50,7 @@
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   z-index: 0;
+  pointer-events: none;
 }
 
 .back_to_top {

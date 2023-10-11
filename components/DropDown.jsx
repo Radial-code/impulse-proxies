@@ -13,7 +13,7 @@ const DropDown = () => {
 
 
   return (
-    <div className=" flex  justify-center lg:inline-block lg:justify-start">
+    <div className="flex justify-center lg:inline-block lg:justify-start">
       <button
         onClick={toggleDropdown}
         className="text-white font-semibold flex items-center leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200 "
@@ -42,7 +42,7 @@ const DropDown = () => {
             <li
               key={option}
               //   onClick={() => selectOption(option)}
-              className="block hover:opacity-70 transition-all ease-in-out duration-200 px-4 my-3 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl"
+              className="block hover:opacity-70 cursor-pointer transition-all ease-in-out duration-200 px-4 my-3 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl"
             >
               {option}
             </li>
