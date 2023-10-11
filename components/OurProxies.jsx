@@ -4,7 +4,7 @@ const OurProxies = () => {
   return (
     <div
       id="proxies"
-      className="pt-[52px] lg:pt-[87px] pb-20 md:pb-[106px] lg:pb-[155px]  bg-[#040426] relative"
+      className="pt-[83px] lg:pt-[87px] 2xl:pt-28 pb-20 md:pb-[120px] lg:pb-[155px] 2xl:pb-48 bg-[#040426] relative"
     >
       <Image
         width={144}
@@ -22,9 +22,9 @@ const OurProxies = () => {
         <p className=" font-semibold text-[13px] md:text-xl leading-6 text-[#9898A3] max-w-[230px] mx-auto lg:mx-0 sm:max-w-[380px]  text-center lg:text-start">
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
-       
-        <div className="flex justify-center flex-wrap  lg:gap-6 lg:flex-nowrap lg:mt-12 md:mt-6 mt-2 relative z-20">
-          <div className=" md:w-6/12  lg:w-4/12 hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out border-[2px] border-[#505062] rounded-[20px] px-6 pt-6 pb-7">
+
+        <div className="flex justify-center flex-wrap  gap-6 lg:flex-nowrap lg:mt-12 md:mt-6 mt-2 relative z-20">
+          <div className=" md:w-6/12  lg:w-4/12 min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out border-[2px] border-[#505062] rounded-[20px] px-6 py-7">
             <h5 className="font-bold  font-Montserrat text-2xl left-5 text-white">
               <span className="text-cyan-green"> ISP </span>Proxies
             </h5>
@@ -33,16 +33,16 @@ const OurProxies = () => {
               eiusmod tempor
             </p>
           </div>
-          <div className="md:w-6/12  lg:w-4/12 hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out  border-[2px] border-[#505062] rounded-[20px] px-8 py-7  mt-6 md:mt-0 lg:ms-0">
-              <h5 className="font-bold  font-Montserrat text-2xl  text-white">
-                <span className="text-cyan-green"> Datacenter </span> Proxies
-              </h5>
-              <p className=" font-medium text-md font-Montserrat text-white opacity-70 max-w-[316px]  mt-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor
-              </p>
+          <div className="md:w-6/12  lg:w-4/12 min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out  border-[2px] border-[#505062] rounded-[20px] px-6 py-7  ">
+            <h5 className="font-bold  font-Montserrat text-2xl  text-white">
+              <span className="text-cyan-green"> Datacenter </span> Proxies
+            </h5>
+            <p className=" font-medium text-md font-Montserrat text-white opacity-70 max-w-[316px]  mt-2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor
+            </p>
           </div>
-          <div className="md:w-6/12  lg:w-4/12 hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out  border-[2px] border-[#505062] rounded-[20px] px-8 py-7  mt-6 lg:mt-0">
+          <div className="md:w-6/12  lg:w-4/12 min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out  border-[2px] border-[#505062] rounded-[20px] px-6 py-7 ">
             <h5 className="font-bold  font-Montserrat text-2xl text-white">
               <span className="text-cyan-green"> Residential </span> Proxies
             </h5>
@@ -53,7 +53,7 @@ const OurProxies = () => {
           </div>
         </div>
         <div className=" flex justify-center  lg:justify-center relative">
-          <button className="w-full max-w-[193px] min-h-[54px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-12 hover:bg-transparent transition-all duration-300 leading-[120%]">
+          <button className="w-full max-w-[193px] min-h-[55px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-12 hover:bg-transparent transition-all duration-300 leading-[120%]">
             Try Now
           </button>
         </div>
