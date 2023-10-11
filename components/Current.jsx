@@ -56,8 +56,8 @@ const Current = () => {
               );
             })}
           </div>
-          <hr className="bg-[#2D3752] w-full h-[1px] border-0 mt-10 xl:mb-6 sm:mb-6 mb-2" />
-          <p className="opacity-40 tracking-[1.5px] font-bold lh_normal text-xs font-Montserrat text-center text-white">
+          <hr className="bg-[#2D3752] w-full h-[1px] border-0 mt-10 xl:mb-6 mb-2" />
+          <p className="opacity-40 tracking-[1.5px] font-bold lh_normal text-xs text-center text-white">
             TRUSTED BY OUR PARTNERS
           </p>
           <div className="flex items-center justify-center mt-3 gap-8">

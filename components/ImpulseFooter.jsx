@@ -30,7 +30,7 @@ const ImpulseFooter = () => {
                 </div>
               </div>
               <p
-                className=" text-[#9898A3] text-md font-bold font-Montserrat opacity-70 lg:max-w-[243px] leading-[192%]"
+                className=" text-[#9898A3] text-md font-bold font-Montserrat opacity-70 lg:max-w-[338px] leading-[192%]"
               >
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor. Lorem ipsum dolor
