@@ -13,7 +13,7 @@ const Current = () => {
   }
   return (
     <>
-      <div className="bg_current z-10  relative after:contents-[''] after:absolute after:w-full border-[1px] border-[#1F374F] sm:pb-6 sm:pt-14 pt-2 pb-10 ms-[-10px] me-[-10px] border-b-0">
+      <div className="bg_current z-10  relative after:contents-[''] after:absolute after:w-full border-[1px] border-[#1F374F] lg:pb-6 lg:pt-14 sm:pt-8 pt-2 pb-[34px] ms-[-10px] me-[-10px] border-b-0">
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <div className="flex flex-wrap justify-around">
             {CurrentData.map((data, i) => {
@@ -56,11 +56,11 @@ const Current = () => {
               );
             })}
           </div>
-          <hr className="bg-[#2D3752] w-full h-[1px] border-0 mt-10 xl:mb-6 mb-2" />
+          <hr className="bg-[#2D3752] w-full h-[1px] border-0 sm:mt-6 mt-8 sm:mb-6 mb-[9px] " />
           <p className="opacity-40 tracking-[1.5px] font-bold lh_normal text-xs text-center text-white">
             TRUSTED BY OUR PARTNERS
           </p>
-          <div className="flex items-center justify-center mt-3 gap-8">
+          <div className="flex items-center justify-center sm:mt-6 mt-[10px] gap-8">
             <Link href="#" target="_blank">
               <Image
                 height={66}
