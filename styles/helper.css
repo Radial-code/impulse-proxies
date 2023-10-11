@@ -140,3 +140,10 @@
     transform: translate3d(0px, 0px, 0px) rotate(360deg);
   }
 }
+@media (max-width:447.98px) {
+  .rockat_img_2{
+    max-width: 720px !important;
+    width: 720px !important;
+    left: -300px;
+  }
+}
