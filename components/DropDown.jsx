@@ -1,4 +1,3 @@
-// components/Dropdown.js
 
 import { useState } from "react";
 
@@ -12,10 +11,6 @@ const DropDown = () => {
     setIsOpen(!isOpen);
   };
 
-  //   const selectOption = (option) => {
-  //     setSelectedOption(option);
-  //     setIsOpen(false);
-  //   };
 
   return (
     <div className=" flex  justify-center lg:inline-block lg:justify-start">
