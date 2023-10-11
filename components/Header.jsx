@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import MobileNav from "./MobileNav";
 import Link from "next/link";
 import { HeaderCrossIcons, ToggleIcon } from "./common/Icons";
+// import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Image from "next/image";
-const Header = () => {
+import DropDown from "./DropDown";
+const Header  = ()  =>  {
   const [activeNavOverlay, setActiveNavOverlay] = useState(false);
   const [isToggleIconVisible, setIsToggleIconVisible] = useState(true);
   useEffect(() => {
@@ -15,6 +17,8 @@ const Header = () => {
       setIsToggleIconVisible(true);
     }
   }, [activeNavOverlay]);
+
+
   return (
     <>
       <MobileNav
@@ -50,48 +54,9 @@ const Header = () => {
               </div>
               <div className="hidden lg:block">
                 <div className="flex lg:gap-9 items-center">
-                  <div className="relative group inline-block text-left">
+                  <div className="relative   inline-block text-left">
                     {/* Dropdown button */}
-                    <button className="text-white font-semibold flex items-center leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200">
-                      Products
-                      <Image
-                        width={15}
-                        height={10}
-                        className="ms-2"
-                        alt="productimg"
-                        src="/assets/images/svg/productArrow.svg"
-                      />
-                    </button>
-                    {/* Dropdown menu */}
-                    <div className="top-[20px] py-3 overflow-hidden absolute left-0 mt-2 w-32 bg-[#040426] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out border-[1px] border-white z-10 lg:w-[204px]">
-                      <ul>
-                        {/* Dropdown menu items */}
-                        <li>
-                          <Link
-                            href="#"
-                            className="block hover:opacity-70 transition-all ease-in-out duration-200 px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl"
-                          >
-                            ISP Proxies
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="#"
-                            className="block px-4 text-white font-semibold tracking-[-0.38px] my-3 leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
-                          >
-                            Datacenter Proxies
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            href="#"
-                            className="block px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
-                          >
-                            Residential Proxies
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
+                    <DropDown/>
                   </div>
                   {/* </Link> */}
                   <Link

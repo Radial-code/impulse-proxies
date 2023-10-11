@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import DropDown from "./DropDown";
 const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 1023.98px)");
@@ -38,49 +39,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
           <div className="relative group inline-block text-left w-full">
             {/* Dropdown button */}
 
-            <button className="text-white font-semibold tracking-[-0.38px] flex justify-center items-center leading-[150%] font-Montserrat sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200 w-full">
-              Products
-              <Image
-                width={15}
-                height={10}
-                alt="down"
-                className="ms-2"
-                src="/assets/images/svg/productArrow.svg"
-              />
-            </button>
-            {/* Dropdown menu */}
-            <div className="top-[27px] border border-white py-3 overflow-hidden lg:hidden absolute md:right-[36%] right-[30%] mt-2 w-50 bg-[#040426] rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 ease-in-out">
-              <ul>
-                {/* Dropdown menu items */}
-                <li>
-                  <Link
-                    onClick={() => setActiveNavOverlay(false)}
-                    href="#"
-                    className="block hover:opacity-70 transition-all ease-in-out duration-200 px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat sm:text-[3vw] text-[4vw]"
-                  >
-                    ISP Proxies
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    onClick={() => setActiveNavOverlay(false)}
-                    href="#"
-                    className="block px-4 text-white font-semibold tracking-[-0.38px] my-4 leading-[150%] font-Montserrat sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200"
-                  >
-                    Datacenter Proxies
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    onClick={() => setActiveNavOverlay(false)}
-                    href="#"
-                    className="block px-4 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200"
-                  >
-                    Residential Proxies
-                  </Link>
-                </li>
-              </ul>
-            </div>
+           <DropDown/>
           </div>
           {/* </Link> */}
           <Link
