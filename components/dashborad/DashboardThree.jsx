@@ -12,7 +12,7 @@ const DashboardThree = () => {
   return (
     <>
       <div className=" relative">
-         <Image
+        <Image
           height={100}
           width={100}
           className=" absolute end-0 bottom-[40]  z-[-1]"
@@ -27,10 +27,10 @@ const DashboardThree = () => {
           alt="Mockup_bg_blur"
         />
         <DashboardNav />
-        <div className=" py-8 pb-44 relative">
-          <div className="container xl:max-w-[1220px] flex flex-col 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
+        <div className=" lg:pt-[61px] pt-9 pb-[52px] lg:pb-36 relative">
+          <div className="container xl:max-w-[1358px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
             <RangeBar />
-            <div className=" flex flex-wrap mt-9 lg:mt-7">
+            <div className=" flex flex-wrap mt-9 lg:mt-[50px]">
               <div className="w-full lg:w-6/12 px-3">
                 <div className="bg-[#212148] flex items-center justify-between h-14 rounded-t-[16px] px-4 lg:px-9 relative">
                   <p className=" text-sm font-Montserrat font-bold text-white">
@@ -78,18 +78,20 @@ const DashboardThree = () => {
                     proxies, you will get paid!
                   </p>
                   <div className=" mt-6 lg:mt-7 sm:flex justify-between items-center">
-                    <p className=" font-Montserrat font-bold text-white text-md tracking-tighter-[10%]">
-                      USED IN ORDER
-                      <span className="font-Montserrat font-medium text-lg text-[#9D9DBB] ms-3">
-                        4
-                      </span>
-                    </p>
-                    <p className=" font-Montserrat font-bold text-white text-md tracking-tighter-[10%] mt-3 sm:mt-0">
-                      MONEY MADE
-                      <span className="font-Montserrat font-medium text-lg text-[#9D9DBB] ms-3">
-                        $10.94
-                      </span>
-                    </p>
+                    <div className="flex">
+                      <p className=" font-Montserrat font-bold text-white text-md tracking-tighter-[10%]">
+                        USED IN ORDER
+                        <span className="font-Montserrat font-medium text-lg text-[#9D9DBB] ms-3">
+                          4
+                        </span>
+                      </p>
+                      <p className="ps-9 font-Montserrat font-bold text-white text-md tracking-tighter-[10%] mt-3 sm:mt-0">
+                        MONEY MADE
+                        <span className="font-Montserrat font-medium text-lg text-[#9D9DBB] ms-3">
+                          $10.94
+                        </span>
+                      </p>
+                    </div>
                     <button className="text-[#040426] w-[109px] h-[27px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold text-[13px] rounded-[10px] mt-6 sm:mt-0">
                       Cash Out
                     </button>
@@ -108,7 +110,6 @@ const DashboardThree = () => {
         </div>
         <DashbarFooter />
       </div>
-     
     </>
   );
 };

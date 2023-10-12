@@ -15,8 +15,8 @@ const Dashboard5 = () => {
           </div>
         </div>
         <DashboardNav />
-        <div className="lg:pt-14 lg:pb-36 py-12">
-          <div className="container xl:max-w-[1220px] flex flex-col 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
+        <div className="lg:pt-14 lg:pb-36 pb-12 pt-9">
+          <div className="container xl:max-w-[1358px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
             <RangeBar />
             <div className=" flex flex-wrap mt-9 lg:mt-12">
               <div className="w-full lg:w-6/12 px-3">
@@ -24,14 +24,8 @@ const Dashboard5 = () => {
                   <p className=" text-sm font-Montserrat font-bold text-white">
                     EARNED REWARDS
                   </p>
-                  <p className=" font-Montserrat font-bold text-white text-md tracking-tighter-[10%] mt-3 sm:mt-0">
-                    MONEY MADE
-                    <span className="font-Montserrat font-medium text-lg text-[#9D9DBB] ms-3">
-                      $10.94
-                    </span>
-                  </p>
-                  <button className="text-[#040426] w-[109px] h-[27px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold text-[13px] rounded-[10px] mt-6 sm:mt-0">
-                    Cash Out
+                  <button className="text-[#040426] w-[119px] h-[31px] hover:text-white leading-normal tracking[-0.28px] hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold text-[14px] rounded-[10px] mt-6 sm:mt-0">
+                    Redeem All
                   </button>
                 </div>
                 <div className="flex w-full bg_redeem_all rounded-b-[16px]">
@@ -83,7 +77,7 @@ const Dashboard5 = () => {
                 <p className="bg-[#212148] rounded-t-[16px] h-14 px-9 text-sm font-Montserrat font-bold text-white flex items-center">
                   REFER A FRIEND
                 </p>
-                <div className="rang_bar px-4 lg:px-9 pt-[22px] pb-10 rounded-b-[16px]">
+                <div className="rang_bar px-4  pt-[22px] pb-10 rounded-b-[16px]">
                   <div className="bg-[#292956] h-[46px] rounded-[10px] flex justify-between items-center px-[18px]">
                     <div className=" flex">
                       <p className=" text-[#7777AD] font-Montserrat text-md font-semibold">
@@ -100,23 +94,25 @@ const Dashboard5 = () => {
                       alt="about image"
                     />
                   </div>
-                  <p className=" font-Montserrat text-[13px] md:text-lg font-medium text-[#9D9DBB] md:max-w-[540px] max-w-[460px] mt-4 lg:mt-5">
+                  <p className=" font-Montserrat text-[13px] md:text-lg font-medium text-[#9D9DBB] md:max-w-[618px] max-w-[460px] mt-4 lg:mt-5">
                     Share this code, and when someone signs up and purchases
                     proxies, you will get paid!
                   </p>
                   <div className=" mt-6 lg:mt-7 sm:flex justify-between items-center">
-                    <p className=" font-Montserrat font-bold text-white text-md tracking-tighter-[10%]">
-                      USED IN ORDER
-                      <span className="font-Montserrat font-medium text-lg text-[#9D9DBB] ms-3">
-                        4
-                      </span>
-                    </p>
-                    <p className=" font-Montserrat font-bold text-white text-md tracking-tighter-[10%] mt-3 sm:mt-0">
-                      MONEY MADE
-                      <span className="font-Montserrat font-medium text-lg text-[#9D9DBB] ms-3">
-                        $10.94
-                      </span>
-                    </p>
+                    <div className="flex">
+                      <p className=" font-Montserrat font-bold text-white text-md tracking-tighter-[10%]">
+                        USED IN ORDER
+                        <span className="font-Montserrat font-medium text-lg text-[#9D9DBB] ms-3">
+                          4
+                        </span>
+                      </p>
+                      <p className="ps-9 font-Montserrat font-bold text-white text-md tracking-tighter-[10%] mt-3 sm:mt-0">
+                        MONEY MADE
+                        <span className="font-Montserrat font-medium text-lg text-[#9D9DBB] ms-3">
+                          $10.94
+                        </span>
+                      </p>
+                    </div>
                     <button className="text-[#040426] w-[109px] h-[27px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold text-[13px] rounded-[10px] mt-6 sm:mt-0">
                       Cash Out
                     </button>

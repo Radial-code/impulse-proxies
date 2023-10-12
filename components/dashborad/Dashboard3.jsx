@@ -19,8 +19,8 @@ const Dashboard3 = () => {
           <p className="md:pt-[52px] pt-8 font-Montserrat text-[12px] font-bold text-white leading-normal md:tracking-[1.2px]">
             ISP & DC ORDERS
           </p>
-          <div className="flex md:gap-12 gap-8 lg:flex-row flex-col-reverse justify-between items-center pt-6 ">
-            <div className="xl:w-9/12 lg:w-7/12 w-full bg_no_current_orders rounded-2xl">
+          <div className="flex md:gap-12 gap-8 md:flex-row flex-col-reverse justify-between items-center pt-6 ">
+            <div className="xl:w-9/12 lg:w-7/12 md:w-6/12 w-full bg_no_current_orders rounded-2xl">
               <div className="bg-[#212148] rounded-t-[16px]">
                 <div className="md:pt-[22px] md:pb-3 p-4 md:pl-6 md:pr-[28px]">
                   <ul className="flex md:gap-8 justify-between gap-8 items-center overflow-x-auto custom_scrollbar">
@@ -64,11 +64,11 @@ const Dashboard3 = () => {
                 </div>
               </div>
             </div>
-            <div className="xl:w-3/12 lg:w-5/12 w-full">
+            <div className="xl:w-3/12 lg:w-5/12 md:6/12 w-full">
               <IspProxies />
             </div>
           </div>
-          <div className="md:my-12 mt-8 mb-12 bg_your_order rounded-2xl">
+          <div className="md:mt-12 md:mb-[64px] mt-8 mb-12 bg_your_order rounded-2xl">
             <div className="flex justify-between items-center md:gap-0 gap-8 lg:pt-8 md:pt-6 md:pb-6 p-4 md:px-8 overflow-x-auto custom_scrollbar">
               <p className="text-white font-Montserrat whitespace-nowrap font-bold leading-normal sm:text-[14px] text-sm tracking-[1.4px]">
                 YOUR ORDER
