@@ -1,3 +1,4 @@
+
 * {
   scroll-behavior: smooth;
 }
@@ -10,20 +11,39 @@
   line-height: normal;
 }
 .arrowAnimation {
-  animation: arrowAnimat 2s infinite ease-in-out;
+  -webkit-animation: arrowAnimat 2s infinite ease-in-out;
+          animation: arrowAnimat 2s infinite ease-in-out;
 }
 .spin{
-  animation: spin 3s infinite linear;
+  -webkit-animation: spin 3s infinite linear;
+          animation: spin 3s infinite linear;
+}
+@-webkit-keyframes arrowAnimat {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(10px, -5px);
+            transform: translate(10px, -5px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 @keyframes arrowAnimat {
   0% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   50% {
-    transform: translate(10px, -5px);
+    -webkit-transform: translate(10px, -5px);
+            transform: translate(10px, -5px);
   }
   100% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 .linerBorder::before,
@@ -32,9 +52,20 @@
   position: absolute;
   inset: -1px;
   z-index: -1;
+  background: -webkit-gradient(linear,left top, left bottom,from(var(--angle)),color-stop(0%, #50eed7), color-stop(30%, #080d2d), color-stop(60%, #080d2d), to(#50eed7));
+  background: -o-linear-gradient(var(--angle),#50eed7 0%, #080d2d 30%, #080d2d 60%, #50eed7 100%);
   background: linear-gradient(var(--angle),#50eed7 0%, #080d2d 30%, #080d2d 60%, #50eed7 100%);
-  animation: rotate 15s linear infinite;
+  -webkit-animation: rotate 15s linear infinite;
+          animation: rotate 15s linear infinite;
   border-radius: 25px;
+}
+@-webkit-keyframes rotate {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
 }
 @keyframes rotate {
   0% {
@@ -45,17 +76,23 @@
   }
 }
 .bgHeroImg::after {
+  background: -webkit-gradient(linear, left top, left bottom, from(#50eed7), to(#7becf3));
+  background: -o-linear-gradient(top, #50eed7 0%, #7becf3 100%);
   background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
 }
 .chooseBox {
+  background: -webkit-gradient(linear, left top, left bottom, from(#50eed7), to(#7becf3));
+  background: -o-linear-gradient(top, #50eed7 0%, #7becf3 100%);
   background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
 }
 /* dashboard */
 .bgData {
+  background: -o-linear-gradient(337deg, #151536 35.26%, #393969 182.89%);
   background: linear-gradient(113deg, #151536 35.26%, #393969 182.89%);
 }
 /* background  */
 .bg_no_current_orders {
+  background: -o-linear-gradient(337deg, #151536 35.26%, #393969 182.89%);
   background: linear-gradient(113deg, #151536 35.26%, #393969 182.89%);
 }
 .bg_your_order {
@@ -65,6 +102,7 @@
   background-position: center;
 }
 .bg_redeem_all {
+  background: -o-linear-gradient(337deg, #151536 35.26%, #393969 182.89%);
   background: linear-gradient(113deg, #151536 35.26%, #393969 182.89%);
 }
 .custom_scrollbar::-webkit-scrollbar {
@@ -79,28 +117,55 @@
 .select_none {
   -webkit-user-select: none;
   -ms-user-select: none;
-  user-select: none; 
+  -moz-user-select: none;
+       user-select: none; 
 }
 .spin_about_img {
-  animation: spinimg 8s linear infinite;
+  -webkit-animation: spinimg 8s linear infinite;
+          animation: spinimg 8s linear infinite;
+}
+@-webkit-keyframes spinimg {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 @keyframes spinimg {
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 .spin_about_img_2 {
-  animation: spinimg_2 8s linear infinite;
+  -webkit-animation: spinimg_2 8s linear infinite;
+          animation: spinimg_2 8s linear infinite;
+}
+@-webkit-keyframes spinimg_2 {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 @keyframes spinimg_2 {
   0% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
   100% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 @media (max-width: 490px) {
