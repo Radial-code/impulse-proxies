@@ -22,12 +22,14 @@
   src: url("/assets/fonts/TTInterfaces-Bold.ttf");
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
 }
 @font-face {
   font-family: interfacesFont;
   src: url("/assets/fonts/TTInterfaces-DemiBold.ttf");
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
 }
 body {
   color: rgb(var(--foreground-rgb));
@@ -52,5 +54,10 @@ body {
   }
   .animation {
     top: -130px !important;
+  }
+}
+@media (min-width:1920px) {
+  .rockat_img_2{
+    bottom: -317px !important;
   }
 }

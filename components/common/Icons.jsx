@@ -300,9 +300,9 @@ export const HeaderCrossIcons = () => {
       <path
         d="M2.39062 1.76562H30.6094M2.39062 10.5H30.6094M2.39062 19.2344H30.6094"
         stroke="white"
-        stroke-width="3.30769"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
+        strokeWidth="3.30769"
+        strokeMiterlimit="10"
+        strokeLinecap="round"
       />
     </svg>
   );

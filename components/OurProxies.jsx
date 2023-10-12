@@ -8,9 +8,9 @@ const OurProxies = () => {
     >
       <Image
         width={144}
-        height={150}
-        className="absolute bottom-[0] w-full rocket_img rockat_img_2 pointer-events-none"
-        src="/assets/images/svg/Desktop.svg"
+        height={220}
+        className="absolute bottom-[-50px] md:bottom-[-120px] lg:bottom-[-170px] xl:bottom-[-250px] 2xl:bottom-[-270px] w-full rocket_img rockat_img_2 pointer-events-none"
+        src="/assets/images/svg/Racket image.svg"
         alt="Group_bg"
       />
       <div className="proxies_box h-10 opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>

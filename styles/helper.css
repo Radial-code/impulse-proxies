@@ -142,10 +142,19 @@
     transform: translate3d(0px, 0px, 0px) rotate(360deg);
   }
 }
-@media (max-width:447.98px) {
+@media (max-width:519.98px) {
+  .rockat_img_2{
+    max-width: 900px !important;
+    width: 900px !important;
+    left: -430px;
+    bottom: -150px !important;
+  }
+}
+@media (max-width:419.98px) {
   .rockat_img_2{
     max-width: 720px !important;
     width: 720px !important;
     left: -300px;
+    bottom: -100px !important;
   }
 }
