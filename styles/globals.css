@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
@@ -22,12 +23,14 @@
   src: url("/assets/fonts/TTInterfaces-Bold.ttf");
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
 }
 @font-face {
   font-family: interfacesFont;
   src: url("/assets/fonts/TTInterfaces-DemiBold.ttf");
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
 }
 body {
   color: rgb(var(--foreground-rgb));
@@ -35,15 +38,21 @@ body {
   font-family: interfacesFont;
 }
 .accordion {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .accordion-content {
   height: 0;
   overflow: hidden;
+  -webkit-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
 }
 .accordion-item.active .accordion-content {
   height: auto;
+  -webkit-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
 }
 @media (min-width: 820px) and (max-width: 991.98px) {
@@ -52,5 +61,10 @@ body {
   }
   .animation {
     top: -130px !important;
+  }
+}
+@media (min-width:1920px) {
+  .rockat_img_2{
+    bottom: -317px !important;
   }
 }
