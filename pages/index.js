@@ -10,16 +10,16 @@ import Choose from "@/components/Choose";
 export default function Home() {
   return (
     <>
-      <PageMataTag />
+      {/* <PageMataTag /> */}
       <div className="overflow-hidden">
-        <BackToTopButton />
-        <Preloader />
-        <Hero />
+        {/* <BackToTopButton /> */}
+        {/* <Preloader /> */}
+        {/* <Hero /> */}
         <Choose />
-        <OurProxies />
-        <ImpulseAbout />
-        <Faqs />
-        <ImpulseFooter />
+        {/* <OurProxies /> */}
+        {/* <ImpulseAbout /> */}
+        {/* <Faqs /> */}
+        {/* <ImpulseFooter /> */}
       </div>
     </>
   );
