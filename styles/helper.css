@@ -97,7 +97,7 @@
 .line::before {
   content: "";
   position: absolute;
-  top: -40px;
+  top: -32px;
   left: 10px;
   width: 7px;
   height: 30px;

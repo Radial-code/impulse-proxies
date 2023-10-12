@@ -28,10 +28,10 @@ const DashboardNav = () => {
         add
         setActiveNavOverlay={setActiveNavOverlay}
       />
-      <nav className="dark-blue lg:py-6 sm:py-5 py-4 flex-grow-0">
+      <nav className="dark-blue xl:py-6 lg:py-5 py-3 flex-grow-0">
         <div className="container lg:max-w-[1320px] mx-auto lg:px-3 px-8">
           <div className="flex-1 flex items-center justify-between  lg:items-center">
-            <div className="flex-1 flex items-center justify-between">
+            <div className="flex-1 flex items-center lg:justify-between lg:ms-0 ms-12 justify-center">
               <div className="flex-shrink-0 flex items-center justify-between">
                 <Link
                   href="/"
@@ -42,13 +42,13 @@ const DashboardNav = () => {
                     width={65}
                     src="/assets/images/svg/FooterLogo.svg"
                     alt="aboutimage"
-                    className="sm:w-[67px] sm:h-[67px] w-[40px] h-[40px]"
+                    className="lg:w-[67px] lg:h-[67px] md:w-[45px] md:h-[55px] w-[30px] h-[37px]"
                   />
                   <div className="ms-3">
-                    <p className="mb-0 text-[17px] text-white font-bold lh_normal font-Montserrat tracking-[3.3px]">
+                    <p className="mb-0 lg:text-[17px] sm:text-[15px] text-[10px] text-white font-bold lh_normal font-Montserrat tracking-[3.3px]">
                       IMPULSE
                     </p>
-                    <p className="text-[14px] text-cyan-green font-Montserrat font-medium lh_normal mb-0 tracking-[2.55px]">
+                    <p className="lg:text-[14px] sm:text-[12px] text-[8px] text-cyan-green font-Montserrat font-medium lh_normal mb-0 tracking-[2.55px]">
                       PROXIES
                     </p>
                   </div>
@@ -59,19 +59,19 @@ const DashboardNav = () => {
                   {/* </Link> */}
                   <Link
                     href="#"
-                    className="text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full relative after:bg-white overflow-hidden after:start-[50%] active:after:start-0 after:bottom-0"
+                    className="text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0"
                   >
                     Residential
                   </Link>
                   <Link
                     href="#"
-                    className="text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full relative after:bg-white overflow-hidden after:start-[50%] active:after:start-0 after:bottom-0"
+                    className="text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0"
                   >
                     ISP & Datacenter
                   </Link>
                   <Link
                     href="#"
-                    className="text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full relative after:bg-white overflow-hidden after:start-[50%] active:after:start-0 after:bottom-0 flex items-center gap-2"
+                    className="text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0 flex items-center gap-2"
                   >
                     <span className="mb-1">
                       <RewardGift />

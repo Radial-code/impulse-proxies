@@ -35,7 +35,7 @@ const DeshboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
         }`}
       >
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
-          <div className="flex flex-col gap-9 xl:gap-5 items-start w-full">
+          <div className="flex flex-col gap-9 xl:gap-5 lg:items-start items-center w-full">
             {/* box */}
             <div
               className="bg-[#1D1D42] max-w-[327px] w-full py-4 sm:mt-16 mt-8 px-4 rounded-[10px] flex items-center justify-between"

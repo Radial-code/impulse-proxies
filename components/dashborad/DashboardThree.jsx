@@ -33,21 +33,21 @@ const DashboardThree = () => {
             <div className=" flex flex-wrap mt-9 lg:mt-[50px]">
               <div className="w-full lg:w-6/12 px-3">
                 <div className="bg-[#212148] flex items-center justify-between h-14 rounded-t-[16px] px-4 lg:px-9 relative">
-                  <p className=" text-sm font-Montserrat font-bold text-white">
+                  <p className=" text-sm font-Montserrat trackiing-[1.2px] leading-normal font-bold text-white">
                     EARNED REWARDS
                   </p>
-                  <button className="text-[#040426] w-[119px] h-[31px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold text-[14px] rounded-[10px]">
+                  <button className="text-[#040426] w-[119px] h-[31px] leading-normal tracking-[-0.28px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold text-[14px] rounded-[10px]">
                     Redeem All
                   </button>
                 </div>
                 <div className=" bg-[url('/assets/images/png/Earned_Rewards.png')] bg-no-repeat bg-cover h-[233px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]">
-                  <h3 className="font-Montserrat font-bold text-xl text-white">
+                  <h3 className="font-Montserrat font-bold text-xl leading-normal tracking-[1.7px] text-white">
                     NO REWARDS WON
                   </h3>
-                  <p className="font-Montserrat text-lg text-[#9D9DBB] pt-4 pb-6">
+                  <p className="font-Montserrat text-lg leading-normal text-[#9D9DBB] pt-4 pb-6">
                     To make an order, click the button below
                   </p>
-                  <button className=" text-[#040426] w-[180px] h-[45px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold text-[14px] rounded-[10px]">
+                  <button className=" text-[#040426] w-[180px] h-[45px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold leading-normal tracking-[-0.32px] text-[14px] rounded-[10px]">
                     Order Proxies
                   </button>
                 </div>
