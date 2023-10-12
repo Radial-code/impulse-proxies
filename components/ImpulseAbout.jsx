@@ -107,7 +107,7 @@ const ImpulseAbout = () => {
                             />
                           </g>
                           <defs>
-                            <clipPath id="clip0_1133_1128">
+                            <clipPath id="clip0_133_1128">
                               <rect width="24.2" height="24.2" fill="white" />
                             </clipPath>
                           </defs>

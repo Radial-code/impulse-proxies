@@ -43,7 +43,7 @@ export const AboutBox = [
   },
   {
     id: 2,
-    aboutImg: "/assets/images/svg/ZfnwLnb 1.svg",
+    aboutImg: "/assets/images/svg/ZfnwLnb1.svg",
     impulse: "Nuno",
     border: "linerBorder",
   },
@@ -81,7 +81,7 @@ export const CardData = [
     id: 2,
     heading: "Affordable Rates",
     para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-    whyToImg: "/assets/images/svg/Affordable Rates.svg",
+    whyToImg: "/assets/images/svg/AffordableRates.svg",
   },
   {
     id: 3,

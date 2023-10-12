@@ -72,8 +72,8 @@ const Current = () => {
           <div className="flex items-center justify-center sm:mt-6 mt-[10px] gap-8">
             <Link href="#" target="_blank">
               <Image
-                height={66}
-                width={66}
+                height={73}
+                width={54}
                 src="/assets/images/svg/N_icon_current.svg"
                 alt="N icon"
                 className="lg:w-[73px] lg:h-[54px] md:w-[65px] md:h-[46px] w-[44px] h-[31px] !cursor-pointer"
