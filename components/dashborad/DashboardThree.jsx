@@ -27,7 +27,7 @@ const DashboardThree = () => {
           alt="Mockup_bg_blur"
         />
         <DashboardNav />
-        <div className=" lg:pt-[61px] pt-9 pb-[52px] lg:pb-36 relative">
+        <div className=" lg:pt-[61px] pt-9 sm:pb-[52px] pb-[64px] lg:pb-36 relative">
           <div className="container xl:max-w-[1358px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
             <RangeBar />
             <div className=" flex flex-wrap mt-9 lg:mt-[50px]">
@@ -40,11 +40,11 @@ const DashboardThree = () => {
                     Redeem All
                   </button>
                 </div>
-                <div className=" bg-[url('/assets/images/png/Earned_Rewards.png')] bg-no-repeat bg-cover h-[233px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]">
+                <div className=" bg-[url('/assets/images/png/Earned_Rewards.png')] bg-no-repeat bg-cover bg-center h-[233px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]">
                   <h3 className="font-Montserrat font-bold text-xl leading-normal tracking-[1.7px] text-white">
                     NO REWARDS WON
                   </h3>
-                  <p className="font-Montserrat text-lg leading-normal text-[#9D9DBB] pt-4 pb-6">
+                  <p className="font-Montserrat text-lg leading-normal sm:max-w-full max-w-[179px] text-center text-[#9D9DBB] sm:pt-4 py-3 sm:pb-6">
                     To make an order, click the button below
                   </p>
                   <button className=" text-[#040426] w-[180px] h-[45px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold leading-normal tracking-[-0.32px] text-[14px] rounded-[10px]">
@@ -53,16 +53,16 @@ const DashboardThree = () => {
                 </div>
               </div>
               <div className="w-full lg:w-6/12 px-3 min-h-[244px] mt-9 lg:mt-0">
-                <p className="bg-[#212148] rounded-t-[16px] h-14 px-9 text-sm font-Montserrat font-bold text-white flex items-center">
+                <p className="bg-[#212148] rounded-t-[16px] h-14 leading-normal tracking-[1.2px] px-9 text-sm font-Montserrat font-bold text-white flex items-center">
                   REFER A FRIEND
                 </p>
-                <div className="rang_bar px-4 lg:px-9 pt-[22px] pb-8 rounded-b-[16px]">
+                <div className="rang_bar px-4 lg:px-9 lg:pt-[10px] pt-6 sm:pb-[47px] pb-4 rounded-b-[16px]">
                   <div className="bg-[#292956] h-[46px] rounded-[10px] flex justify-between items-center px-[18px]">
                     <div className=" flex">
-                      <p className=" text-[#7777AD] font-Montserrat text-md font-semibold">
+                      <p className=" text-[#7777AD] font-Montserrat tracking-[-0.28px] leading-normal text-md font-semibold">
                         Discount Code
                       </p>
-                      <p className=" text-white font-Montserrat text-md font-semibold ms-4">
+                      <p className=" text-white font-Montserrat text-md tracking-[-0.28px] leading-normal font-semibold ms-4">
                         2729PAYJ1
                       </p>
                     </div>
@@ -73,28 +73,30 @@ const DashboardThree = () => {
                       alt="aboutimage"
                     />
                   </div>
-                  <p className=" font-Montserrat text-[13px] md:text-lg font-medium text-[#9D9DBB] md:max-w-[540px] max-w-[460px] mt-4 lg:mt-5">
+                  <p className=" font-Montserrat sm:text-[13px] text-[12px] md:text-lg font-medium text-[#9D9DBB] leading-normal md:max-w-[540px] max-w-[460px] mt-4 lg:mt-5">
                     Share this code, and when someone signs up and purchases
                     proxies, you will get paid!
                   </p>
                   <div className=" mt-6 lg:mt-7 sm:flex justify-between items-center">
-                    <div className="flex">
-                      <p className=" font-Montserrat font-bold text-white text-md tracking-tighter-[10%]">
+                    <div className="flex sm:flex-row flex-col">
+                      <p className=" font-Montserrat font-bold text-white text-md tracking-[1.4px] leading-normal">
                         USED IN ORDER
                         <span className="font-Montserrat font-medium text-lg text-[#9D9DBB] ms-3">
                           4
                         </span>
                       </p>
-                      <p className="ps-9 font-Montserrat font-bold text-white text-md tracking-tighter-[10%] mt-3 sm:mt-0">
+                      <p className="sm:ps-9 font-Montserrat font-bold text-white text-md tracking-[1.4px] leading-normal mt-[15px]  sm:mt-0">
                         MONEY MADE
                         <span className="font-Montserrat font-medium text-lg text-[#9D9DBB] ms-3">
                           $10.94
                         </span>
                       </p>
                     </div>
-                    <button className="text-[#040426] w-[109px] h-[27px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold text-[13px] rounded-[10px] mt-6 sm:mt-0">
-                      Cash Out
-                    </button>
+                    <div className="flex justify-end sm:justify-normal">
+                      <button className="text-[#040426] w-[109px] h-[27px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold tracking-[-0.26px] leading-normal text-[13px] rounded-[10px] mt-6 sm:mt-0">
+                        Cash Out
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
