@@ -8,7 +8,7 @@ const Choose = () => {
       <div className="relative">
         <div className="absolute blur-[150px] opacity-20 chooseBox h-[500px] w-full top-0 pointer-events-none"></div>
         <Current />
-        {/* <WhyToChooseUs />  */}
+        <WhyToChooseUs /> 
       </div>
     </>
   );
