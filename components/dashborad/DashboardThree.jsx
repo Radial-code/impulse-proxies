@@ -16,14 +16,14 @@ const DashboardThree = () => {
           height={100}
           width={100}
           className=" absolute end-0 bottom-[40]  z-[-1]"
-          src="/assets/images/png/Mockup_bg_blur.png"
+          src="/assets/images/webp/Mockup_bg_blur.webp"
           alt="Mockup_bg_blur"
         />
         <Image
           height={200}
           width={200}
           className=" absolute start-0 top-0  z-[-1]"
-          src="/assets/images/png/Mockup_top_blur.png"
+          src="/assets/images/webp/Mockup_top_blur.webp"
           alt="Mockup_bg_blur"
         />
         <DashboardNav />
@@ -40,7 +40,7 @@ const DashboardThree = () => {
                     Redeem All
                   </button>
                 </div>
-                <div className=" bg-[url('/assets/images/png/Earned_Rewards.png')] bg-no-repeat bg-cover h-[233px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]">
+                <div className=" bg-[url('/assets/images/webp/Earned_Rewards.webp')] bg-no-repeat bg-cover h-[233px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]">
                   <h3 className="font-Montserrat font-bold text-xl text-white">
                     NO REWARDS WON
                   </h3>

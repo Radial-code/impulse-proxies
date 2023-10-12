@@ -9,7 +9,7 @@ function WhyToChooseUs() {
           className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] right-[24px] z-20 lg:w-[145px] md:h-[80px] lg:h-[126px] md:w-[92px] w-[66px] h-[57px] pointer-events-none arrowAnimation"
           height={126}
           width={145}
-          src="/assets/images/png/AbstractTrangle-02.png"
+          src="/assets/images/webp/AbstractTrangle-02.webp"
           alt="Abstract"
         />
         <Image
@@ -17,7 +17,7 @@ function WhyToChooseUs() {
           width={140}
           className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] spin right-[24px] z-[4] lg:w-[146px] md:h-[80px] lg:h-[147px] md:w-[92px] w-[66px] h-[57px]"
           alt="AbstractCircle"
-          src="/assets/images/png/AbstractCircle-02.png"
+          src="/assets/images/webp/AbstractCircle-02.webp"
         />
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <h2 className="font-Montserrat lg:text-[32px] text-[28px] text-white font-bold leading-[110%] text-center">

@@ -11,14 +11,14 @@ const ImpulseAbout = () => {
       <div className="bg_top_bottom sm:hidden block h-[30px] opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>
       <div className=" w-16 p-0">
         <Image
-          src="/assets/images/png/glass.png"
+          src="/assets/images/webp/glass.webp"
           alt="aboutTop"
           width={144}
           height={72}
           className="pointer-events-none spin_about_img absolute left-0 lg:left-28 lg:top-[-10%] md:top-[-8%] top-[-5%]  text-3xl lg:w-[144px] md:w-[109px] lg:h-[122px] md:h-[92px] w-[65px] h-[55px] aboutTop"
         />
         <Image
-          src="/assets/images/png/Abstract01.png"
+          src="/assets/images/webp/Abstract01.webp"
           alt="aboutTop"
           width={99}
           height={50}
@@ -91,9 +91,10 @@ const ImpulseAbout = () => {
                       <Link
                         href="https://discord.com/"
                         target="_blank"
-                        className=" flex items-center justify-end gap-2"
+                        className=" flex items-center justify-end gap-2 "
                       >
                         <svg
+                          className="max-w-[25px] min-h-[25px]"
                           width="25"
                           height="25"
                           viewBox="0 0 25 25"
@@ -122,6 +123,7 @@ const ImpulseAbout = () => {
                         className=" flex items-center justify-end gap-2 "
                       >
                         <svg
+                          className="max-w-[25px] min-h-[25px]"
                           width="21"
                           height="18"
                           viewBox="0 0 21 18"
