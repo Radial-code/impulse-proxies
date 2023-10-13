@@ -101,6 +101,18 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+.bg_lg_your_order{
+  background-image: url("/assets/images/png/your_order_bg_lg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bg_sm_your_order{
+   background-image: url("/assets/images/png/bg_your_order_sm.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .bg_redeem_all {
   background: -o-linear-gradient(337deg, #151536 35.26%, #393969 182.89%);
   background: linear-gradient(113deg, #151536 35.26%, #393969 182.89%);
@@ -111,6 +123,16 @@
   border-radius: 10px;
 }
 .custom_scrollbar::-webkit-scrollbar-thumb {
+  background-color: #50eed7 !important;
+  border-radius: 10px;
+}
+.custom_scrollbar_y::-webkit-scrollbar {
+  background-color: #fff !important;
+  height: 4px;
+  width: 4px;
+  border-radius: 10px;
+}
+.custom_scrollbar_y::-webkit-scrollbar-thumb {
   background-color: #50eed7 !important;
   border-radius: 10px;
 }
@@ -224,4 +246,13 @@ input[type="number"]::-webkit-outer-spin-button {
 .range-slider .range-max::-webkit-slider-thumb {
   opacity: 0;
   pointer-events: none;
+}
+/* footer text color  */
+@supports ((text-stroke: 2px black) or (-webkit-text-stroke: 2px black)) {
+  .text-outline {
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    text-stroke: 1px black;
+    text-shadow: none;
+  }
 }
