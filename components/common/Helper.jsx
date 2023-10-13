@@ -6,9 +6,10 @@ export const FooterImpluse = [
     option2: "Residential Proxies",
     option3: "Datacenter Proxies",
     option4: "",
-    link1: "home",
-    link2: "#",
-    link3: "#",
+    link1: "ISP-Proxies",
+    link2: "#Residential-Proxies",
+    link3: "#Datacenter-Proxies",
+    link4: "#",
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ export const FooterImpluse = [
     link1: "#",
     link2: "#Faqs",
     link3: "#AboutUs",
+    link4: "#Pricing",
   },
   {
     id: 3,
@@ -30,8 +32,9 @@ export const FooterImpluse = [
     option4: "",
     padding: "pt-6",
     link1: "legal",
-    link2: "#",
-    link3: "#",
+    link2: "#Privacy-Policy",
+    link3: "#Refund-Policy",
+    link4: "#",
   },
 ];
 export const AboutBox = [

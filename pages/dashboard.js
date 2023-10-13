@@ -7,9 +7,9 @@ import DashboardThree from "@/components/dashborad/DashboardThree";
 const dashboard = () => {
   return (
     <div>
-      <Dashboard1 />
-      <Dashboard2 />
-      {/* <Dashboard3 /> */}
+      {/* <Dashboard1 /> */}
+      {/* <Dashboard2 /> */}
+      <Dashboard3 />
       {/* <DashboardThree /> */}
       {/* <Dashboard5/> */}
     </div>

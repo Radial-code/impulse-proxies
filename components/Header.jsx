@@ -34,7 +34,7 @@ const Header  = ()  =>  {
                 <Link
                   href="/"
                   className="text-white text-xl font-semibold flex items-center "
-                  aria-label="FooterLogo"
+                  aria-label="scroll to home page"
                 >
                   <Image
                     height={66}
@@ -100,6 +100,7 @@ const Header  = ()  =>  {
                   onClick={() => setActiveNavOverlay(true)}
                   type="button"
                   className="w-[46px] inline-flex items-center justify-center rounded-md "
+                  aria-label="toggle buttn"
                 >
                   <HeaderCrossIcons />
                 </button>
@@ -108,6 +109,7 @@ const Header  = ()  =>  {
                 <button
                   className="w-[30px] me-4"
                   onClick={() => setActiveNavOverlay(false)}
+                  aria-label="toggle buttn colose"
                 >
                   <ToggleIcon />
                 </button>

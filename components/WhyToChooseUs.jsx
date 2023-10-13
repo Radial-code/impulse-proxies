@@ -6,7 +6,7 @@ function WhyToChooseUs() {
     <>
       <div className="lg:pt-[69px] lg:pb-[77px] md:pt-8 md:pb-[53px] py-12 bg-[#141436] relative mt-[32px]">
         <Image
-          className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] right-[24px] z-20 lg:w-[145px] md:h-[80px] lg:h-[126px] md:w-[92px] w-[66px] h-[57px] pointer-events-none arrowAnimation"
+          className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] right-[24px] z-20 lg:w-[183px] md:h-[80px] lg:h-[172px] md:w-[92px] w-[66px] h-[57px] pointer-events-none arrowAnimation"
           height={126}
           width={145}
           src="/assets/images/webp/AbstractTrangle-02.webp"
@@ -15,7 +15,7 @@ function WhyToChooseUs() {
         <Image
           height={140}
           width={140}
-          className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] spin right-[24px] z-[4] lg:w-[146px] md:h-[80px] lg:h-[147px] md:w-[92px] w-[66px] h-[57px]"
+          className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] spin right-[24px] z-[4] lg:w-[1px] md:h-[80px] lg:h-[172px] md:w-[92px] w-[66px] h-[57px]"
           alt="AbstractCircle"
           src="/assets/images/webp/AbstractCircle-02.webp"
         />
