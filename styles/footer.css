@@ -136,6 +136,7 @@
   background-color: #fff !important;
   border-radius: 10px;
 }
+
 .select_none {
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -189,6 +190,18 @@
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
+}
+@media (min-width:1280px) {
+  .custom_scrollbar_y_2::-webkit-scrollbar {
+  background-color: #424458 !important;
+  height: 4px;
+  width: 4px;
+  border-radius: 10px;
+}
+.custom_scrollbar_y_2::-webkit-scrollbar-thumb {
+  background-color: #fff !important;
+  border-radius: 10px;
+}
 }
 @media (max-width: 490px) {
   .pb_64 {

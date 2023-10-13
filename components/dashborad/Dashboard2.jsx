@@ -97,7 +97,7 @@ const Dashboard2 = () => {
               </button>
             </div>
           </div>
-          <div className="flex flex-wrap pt-5 items-center lg:h-[305px] custom_scrollbar_y overflow-scroll">
+          <div className="flex flex-wrap pt-5 items-center lg:h-[305px] custom_scrollbar_y_2 lg:overflow-scroll">
             <div className="lg:w-4/12 md:w-6/12 w-full md:text-start text-center">
               <p className="text-[#9D9DBB] font-medium font-Montserrat xl:text-lg text-[12px] mb-2">
                 83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import {
   DashboardTweeter,
   HeaderCrossIcons,
@@ -21,6 +22,9 @@ const DashboardNav = () => {
       setIsToggleIconVisible(true);
     }
   }, [activeNavOverlay]);
+  // router
+  const router = useRouter();
+  const shouldDisplayContent = router.pathname === "/dashboardDataUsage";
   return (
     <>
       <DeshboardMobileNav
@@ -81,16 +85,24 @@ const DashboardNav = () => {
                 </div>
               </div>
               <div className="hidden lg:flex items-center">
-                <Link href="https://discord.com/" target="blank">
-                  <WhiteDiscord />
-                </Link>
-                <Link
-                  href="https://twitter.com/"
-                  target="blank"
-                  className="ms-5 hover:translate-y-[-5px] transition-all ease-in-out duration-200"
-                >
-                  <DashboardTweeter />
-                </Link>
+                {shouldDisplayContent ? (
+                  <div style={{ display: "block" }}>
+                    <div className="hidden lg:flex items-center">
+                      <Link href="https://discord.com/" target="blank">
+                        <WhiteDiscord />
+                      </Link>
+                      <Link
+                        href="https://twitter.com/"
+                        target="blank"
+                        className="ms-5 hover:translate-y-[-5px] transition-all ease-in-out duration-200"
+                      >
+                        <DashboardTweeter />
+                      </Link>
+                    </div>
+                  </div>
+                ) : (
+                  ""
+                )}
                 <div className="bg-[#1D1D42] py-4 pe-5 ps-9 rounded-[10px] flex items-center justify-between ms-6">
                   <p className="text-md text-[#626296] font-Montserrat font-semibold lh_normal tracking-[-0.28px] mb-0">
                     Welcome Back
@@ -107,7 +119,6 @@ const DashboardNav = () => {
                     onClick={() => setActiveNavOverlay(true)}
                     type="button"
                     className="w-[46px] inline-flex items-center justify-center rounded-md "
-                   
                   >
                     <HeaderCrossIcons />
                   </button>
