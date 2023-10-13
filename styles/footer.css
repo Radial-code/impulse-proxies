@@ -256,3 +256,10 @@ input[type="number"]::-webkit-outer-spin-button {
     text-shadow: none;
   }
 }
+.svg_fill:hover .hover_color_change path {
+fill: #fff !important;
+transition: all 200ms ease-in-out !important;
+}
+.svg_fill .hover_color_change path {
+transition: all 200ms ease-in-out !important;
+}

@@ -71,9 +71,9 @@ const DashboardNav = () => {
                   </Link>
                   <Link
                     href="#"
-                    className="text-[#5E5E80] hover:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0 flex items-center gap-2"
+                    className="text-[#5E5E80] hover:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0 flex items-center gap-2 svg_fill"
                   >
-                    <span className="mb-1">
+                    <span className="mb-1 ">
                       <RewardGift />
                     </span>
                     Rewards
@@ -107,7 +107,6 @@ const DashboardNav = () => {
                     onClick={() => setActiveNavOverlay(true)}
                     type="button"
                     className="w-[46px] inline-flex items-center justify-center rounded-md "
-                   
                   >
                     <HeaderCrossIcons />
                   </button>
