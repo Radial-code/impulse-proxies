@@ -26,7 +26,7 @@ const Current = () => {
           <div className="flex flex-wrap justify-around">
             {CurrentData.map((data, i) => {
               return (
-                <div key={data.id} className="md:w-3/12 sm:w-4/12 w-full">
+                <div key={data.id} className="md:w-3/12 sm:w-4/12 w-full min-h-[296] sm:min-h-[89px]">
                   <p className="text-white text-center font-bold leading-[110%] lg:text-7xl md:text-[40px] text-[32px] sm:mt-0 mt-8 ">
                       <VisibilitySensor
                         ref={visibilitySensorRefs[i]}

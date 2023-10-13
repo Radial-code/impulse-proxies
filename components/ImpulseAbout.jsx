@@ -32,7 +32,7 @@ const ImpulseAbout = () => {
         <p className=" text-dark-gray leading-[157%] font-normal md:font-semibold lg:text-2xl text-[15px] text-center lg:max-w-[383px] sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 md:text-center lg:text-start lg:mx-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
-        <div className="flex lg:flex-nowrap justify-center flex-wrap gap-6 md:pb-20 lg:pb-[138px] 2xl:pb-[206px]  pb-12 sm:mb-0 mt-5 md:mt-8 lg:mt-9 lg:justify-between">
+        <div className="flex lg:flex-nowrap justify-center flex-wrap gap-6 md:pb-20 lg:pb-[138px] 2xl:pb-[206px]  pb-12 sm:mb-0 mt-5 md:mt-8 lg:mt-9 lg:justify-between  min-h-[432px] lg:min-h-[355px]">
           {AboutBox.map((about) => {
             return (
               <div

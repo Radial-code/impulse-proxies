@@ -23,7 +23,7 @@ function WhyToChooseUs() {
           <h2 className="font-Montserrat lg:text-[32px] text-[28px] text-white font-bold leading-[110%] text-center">
             Why To Choose <span className="text-cyan-green">Us</span>
           </h2>
-          <div className="flex justify-center flex-wrap 2xl:gap-0 lg:gap-5 lg:flex-nowrap lg:mt-[52px] md:mt-[13px] mt-2">
+          <div className="flex justify-center flex-wrap 2xl:gap-0 lg:gap-5 lg:flex-nowrap lg:mt-[52px] md:mt-[13px] mt-2 min-h-[663px] md:min-h-[210px]">
             {CardData.map((CardData) => {
               return (
                 <div
