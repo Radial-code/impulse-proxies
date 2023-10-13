@@ -38,6 +38,7 @@ const ResidentialBoxOne = () => {
           <div className="w-full flex justify-end mt-6">
             <Link
               href="#"
+              aria-label="CONTINUE"
               className="text-[#050628] text-end group text-sm font-bold tracking-[1.1px] font-Montserrat flex items-center mn-0"
             >
               CONTINUE

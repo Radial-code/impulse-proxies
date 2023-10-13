@@ -37,6 +37,7 @@ const IspProxies = () => {
         <div className="w-full flex justify-end md:mt-6 mt-4">
           <Link
             href="#"
+            aria-label="CONTINUE"
             className="text-[#050628] text-end group text-sm font-bold tracking-[1.1px] font-Montserrat flex items-center mn-0"
           >
             CONTINUE
@@ -105,6 +106,7 @@ const IspProxies = () => {
         <div className="w-full flex justify-end md:mt-6 mt-4">
           <Link
             href="#"
+            aria-label="CONTINUE"
             className="text-[#050628] text-end group text-sm font-bold tracking-[1.1px] leading-normal font-Montserrat flex items-center mn-0"
           >
             CONTINUE

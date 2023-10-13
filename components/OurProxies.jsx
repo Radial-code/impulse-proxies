@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { OurData } from "./common/Helper";
 const OurProxies = () => {
   return (
     <div
@@ -23,35 +24,26 @@ const OurProxies = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
 
-        <div className="flex justify-center flex-wrap  gap-6 lg:flex-nowrap lg:mt-12 md:mt-6 mt-9 relative z-20">
-          <div className=" md:w-6/12  lg:w-4/12 min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out border-[2px] border-[#505062] rounded-[20px] py-5 px-6 md:py-7">
-            <h5 className="font-bold  font-Montserrat text-2xl left-5 text-white">
-              <span className="text-cyan-green"> ISP </span>Proxies
-            </h5>
-            <p className=" font-medium text-md font-Montserrat text-white opacity-70 max-w-[316px] 2xl:max-w-[315px] mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor
-            </p>
-          </div>
-          <div className="md:w-6/12  lg:w-4/12 min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out  border-[2px] border-[#505062] rounded-[20px] py-5 px-6 md:py-7  ">
-            <h5 className="font-bold  font-Montserrat text-2xl  text-white">
-              <span className="text-cyan-green"> Datacenter </span> Proxies
-            </h5>
-            <p className=" font-medium text-md font-Montserrat text-white opacity-70 max-w-[316px]  mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor
-            </p>
-          </div>
-          <div className="md:w-6/12  lg:w-4/12 min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out  border-[2px] border-[#505062] rounded-[20px] py-5 px-6 md:py-7 ">
-            <h5 className="font-bold  font-Montserrat text-2xl text-white">
-              <span className="text-cyan-green"> Residential </span> Proxies
-            </h5>
-            <p className=" font-medium text-md font-Montserrat text-white opacity-70 max-w-[316px] 2xl:max-w-[315px] mt-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor
-            </p>
-          </div>
-        </div>
+          <div className="flex justify-center flex-wrap  gap-6 lg:flex-nowrap lg:mt-12 md:mt-6 mt-9 relative z-20 min-h-[415px] md:min-h-[308px] lg:min-h-[160px] xl:min-h-[142px]">
+            {OurData.map((about) => {
+              return (
+                <div
+                  key={about.id}
+                  className={`md:w-6/12  lg:w-4/12 min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out border-[2px] border-[#505062] rounded-[20px] py-5 px-6 md:py-7 ${about.border}`}
+                >
+                  <div className="  ">
+                    <h5 className="font-bold  font-Montserrat text-2xl  text-white">
+                      <span className="text-cyan-green">{about.heading_2}</span>
+                      {about.heading}
+                    </h5>
+                    <p className=" font-medium text-md font-Montserrat text-white opacity-70 max-w-[316px]  mt-2">
+                      {about.para}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>        
         <div className=" flex justify-center  lg:justify-center relative">
           <button className="w-full max-w-[193px] min-h-[55px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white mt-12 hover:bg-transparent transition-all duration-300 leading-[120%]">
             Try Now

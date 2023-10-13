@@ -95,20 +95,23 @@ export const CurrentData = [
   { id: 2, number: "+", current: "Loyal Impulse Users" },
   { id: 3, number: "GB", current: "Current Proxy Usage" },
 ];
-export const OurProxies = [
+export const OurData = [
   {
     id: 1,
-    heading: "ISP Proxies",
+    heading: " Proxies",
+    heading_2: "ISP",
     para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
   },
   {
     id: 2,
-    heading: "Datacenter Proxies",
+    heading: " Proxies",
+    heading_2: "Datacenter",
     para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
   },
   {
     id: 3,
-    heading: "Residential Proxies",
+    heading: " Proxies",
+    heading_2: "Residential",
     para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
   },
 ];
