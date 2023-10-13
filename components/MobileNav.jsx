@@ -43,6 +43,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
           </div>
           {/* </Link> */}
           <Link
+            aria-label="AboutUs"
             onClick={() => setActiveNavOverlay(false)}
             href="#AboutUs"
             className="text-white font-semibold tracking-[-0.38px]  font-Montserrat sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200"
@@ -50,6 +51,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
             About Us
           </Link>
           <Link
+            aria-label="Faqs"
             href="#Faqs"
             onClick={() => setActiveNavOverlay(false)}
             className="text-white font-semibold tracking-[-0.38px]  font-Montserrat sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200"
@@ -57,6 +59,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
             FAQ’s
           </Link>
           <Link
+            aria-label="proxies"
             href="#proxies"
             onClick={() => setActiveNavOverlay(false)}
             className="text-white font-semibold tracking-[-0.38px]  font-Montserrat sm:text-[3vw] text-[4vw] hover:opacity-70 transition-all ease-in-out duration-200"
@@ -64,6 +67,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
             Purchase
           </Link>
           <Link
+            aria-label="dashboard"
             href="/dashboard"
             className="text-white font-Montserrat max-w-[330px] w-full sm:w-[210px]  sm:text-[3vw] text-[4vw] font-bold border-cyan-green border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]"
           >

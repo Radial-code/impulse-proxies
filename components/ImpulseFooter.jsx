@@ -29,9 +29,7 @@ const ImpulseFooter = () => {
                   </p>
                 </div>
               </div>
-              <p
-                className=" text-[#9898A3] text-md font-bold font-Montserrat opacity-70 lg:max-w-[338px] lg:leading-[192%]"
-              >
+              <p className=" text-[#9898A3] text-md font-bold font-Montserrat opacity-70 lg:max-w-[338px] lg:leading-[192%]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor. Lorem ipsum dolor
               </p>
@@ -52,6 +50,7 @@ const ImpulseFooter = () => {
                         </li>
                         <li>
                           <Link
+                            aria-label="link1"
                             href={footer.link1}
                             className=" text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px] hover:text-white transition-all ease-in-out duration-200"
                           >
@@ -60,6 +59,7 @@ const ImpulseFooter = () => {
                         </li>
                         <li>
                           <Link
+                            aria-label="link2"
                             href={footer.link2}
                             className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px]"
                           >
@@ -68,6 +68,7 @@ const ImpulseFooter = () => {
                         </li>
                         <li>
                           <Link
+                            aria-label="link3"
                             href={footer.link3}
                             className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px]"
                           >
@@ -76,6 +77,7 @@ const ImpulseFooter = () => {
                         </li>
                         <li>
                           <Link
+                            aria-label="link3"
                             href="#"
                             className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px]"
                           >
@@ -95,11 +97,16 @@ const ImpulseFooter = () => {
               Reserved
             </p>
             <div className=" flex items-center sm:justify-normal justify-center gap-4 sm:me-20 sm:mt-0 mt-4 xl:me-0">
-              <Link href="https://twitter.com/" target="blank">
+              <Link
+                href="https://twitter.com/"
+                target="blank"
+                aria-label="twitter"
+              >
                 <ImpulseTweeter />
               </Link>
               <Link
                 href="https://discord.com/"
+                aria-label="discord"
                 target="blank"
                 className="hover:translate-y-[-5px] transition-all duration-300 ease-in-out"
               >

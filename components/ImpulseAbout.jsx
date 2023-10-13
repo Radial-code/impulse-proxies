@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import { AboutBox, DiscordIcon, TwitterIcon } from "./common/Helper";
+import { AboutBox } from "./common/Helper";
 import Image from "next/image";
+import { DiscordIcon, TwitterIcon } from "./Icon";
 const ImpulseAbout = () => {
   return (
     <div
@@ -32,7 +33,7 @@ const ImpulseAbout = () => {
         <p className=" text-dark-gray leading-[157%] font-normal md:font-semibold lg:text-2xl text-[15px] text-center lg:max-w-[383px] sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 md:text-center lg:text-start lg:mx-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
         </p>
-        <div className="flex lg:flex-nowrap justify-center flex-wrap gap-6 md:pb-20 lg:pb-[138px] 2xl:pb-[206px]  pb-12 sm:mb-0 mt-5 md:mt-8 lg:mt-9 lg:justify-between  min-h-[432px] lg:min-h-[355px]">
+        <div className="flex lg:flex-nowrap justify-center flex-wrap gap-6 md:pb-20 lg:pb-[138px] 2xl:pb-[206px]  pb-12 sm:mb-0 mt-5 md:mt-8 lg:mt-9 lg:justify-between  min-h-[432px] lg:min-h-[214px]">
           {AboutBox.map((about) => {
             return (
               <div
@@ -51,12 +52,12 @@ const ImpulseAbout = () => {
                         className=" sm:h-[81px] sm:w-[81px] w-[42px] h-[42px]"
                       />
                       <div>
-                        <h4 className="mb-0 text-white font-Montserrat leading-[204%] tracking-[-0.44px] md:text-3xl text-[17px] font-bold">
+                        <h5 className="mb-0 text-white font-Montserrat leading-[204%] tracking-[-0.44px] md:text-3xl text-[17px] font-bold">
                           About
                           <span className="text-cyan-green ms-1">
                             {about.impulse}
                           </span>
-                        </h4>
+                        </h5>
                         <p className="sm:mb-7 text-[#9898A3] font-Montserrat font-medium leading-[178%] text-md max-w-[278px]">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor
@@ -89,21 +90,24 @@ const ImpulseAbout = () => {
                     </div>
                     <div className=" flex sm:gap-4 gap-2">
                       <Link
+                        aria-label="discord"
                         href="https://discord.com/"
                         target="_blank"
                         className=" flex items-center justify-end gap-2 "
                       >
-                        <DiscordIcon/>
+                        <DiscordIcon />
                         <span className=" font-Montserrat text-[14px] sm:text-lg font-bold text-white">
                           Discord
                         </span>
                       </Link>
                       <Link
+                        aria-label="twitter"
                         target="_blank"
                         href="https://twitter.com/i/flow/login?redirect_after_login=%2FOpulentM71934"
                         className=" flex items-center justify-end gap-2 "
                       >
-                     <TwitterIcon/>
+                        <TwitterIcon />
+
                         <span className=" font-Montserrat text-[14px] sm:text-lg font-bold text-white">
                           Twitter
                         </span>

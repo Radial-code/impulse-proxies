@@ -26,36 +26,39 @@ const Current = () => {
           <div className="flex flex-wrap justify-around">
             {CurrentData.map((data, i) => {
               return (
-                <div key={data.id} className="md:w-3/12 sm:w-4/12 w-full min-h-[296] sm:min-h-[89px]">
+                <div
+                  key={data.id}
+                  className="md:w-3/12 sm:w-4/12 w-full min-h-[296] sm:min-h-[89px]"
+                >
                   <p className="text-white text-center font-bold leading-[110%] lg:text-7xl md:text-[40px] text-[32px] sm:mt-0 mt-8 ">
-                      <VisibilitySensor
-                        ref={visibilitySensorRefs[i]}
-                        onChange={(isVisible) => onVisibilityChange(i, isVisible)}
-                        offset={{
-                          top: 10,
-                        }}
-                        delayedCallon
-                      >
-                        <CountUp
-                          start={0}
-                          end={
-                            i === 0
-                              ? viewCount
-                                ? 3234199
-                                : 0
-                              : i === 1
-                              ? viewCount
-                                ? 1500
-                                : 0
-                              : i === 2
-                              ? viewCount
-                                ? 20434
-                                : 0
-                              : ""
-                          }
-                          duration={2}
-                        />
-                      </VisibilitySensor>
+                    <VisibilitySensor
+                      ref={visibilitySensorRefs[i]}
+                      onChange={(isVisible) => onVisibilityChange(i, isVisible)}
+                      offset={{
+                        top: 10,
+                      }}
+                      delayedCallon
+                    >
+                      <CountUp
+                        start={0}
+                        end={
+                          i === 0
+                            ? viewCount
+                              ? 3234199
+                              : 0
+                            : i === 1
+                            ? viewCount
+                              ? 1500
+                              : 0
+                            : i === 2
+                            ? viewCount
+                              ? 20434
+                              : 0
+                            : ""
+                        }
+                        duration={2}
+                      />
+                    </VisibilitySensor>
                     {data.number}
                   </p>
                   <p className="text-center text-[#9898A3] pt-[6px] lg:text-2xl text-[17px] font-semibold leading-[150%] text-opacity-80 ">
@@ -70,7 +73,7 @@ const Current = () => {
             TRUSTED BY OUR PARTNERS
           </p>
           <div className="flex items-center justify-center sm:mt-6 mt-[10px] gap-8">
-            <Link href="#" target="_blank">
+            <Link aria-label="NIcon" href="#" target="_blank">
               <Image
                 height={73}
                 width={54}
@@ -79,7 +82,7 @@ const Current = () => {
                 className="lg:w-[73px] lg:h-[54px] md:w-[65px] md:h-[46px] w-[44px] h-[31px] !cursor-pointer"
               />
             </Link>
-            <Link href="#" target="_blank">
+            <Link aria-label="MangoIcon" href="#" target="_blank">
               <Image
                 height={66}
                 width={66}

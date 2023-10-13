@@ -34,6 +34,7 @@ const Header  = ()  =>  {
                 <Link
                   href="/"
                   className="text-white text-xl font-semibold flex items-center "
+                  aria-label="FooterLogo"
                 >
                   <Image
                     height={66}
@@ -56,22 +57,25 @@ const Header  = ()  =>  {
                 <div className="flex lg:gap-9 items-center">
                   <div className="relative   inline-block text-left">
                     {/* Dropdown button */}
-                    <DropDown/>
+                    <DropDown />
                   </div>
                   {/* </Link> */}
                   <Link
+                    aria-label="AboutUs"
                     href="#AboutUs"
                     className="text-white font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
                     About Us
                   </Link>
                   <Link
+                    aria-label="Faqs"
                     href="#Faqs"
                     className="text-white font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
                     FAQ’s
                   </Link>
                   <Link
+                    aria-label="proxies"
                     href="#proxies"
                     className="text-white font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
@@ -81,6 +85,7 @@ const Header  = ()  =>  {
               </div>
               <div className="hidden lg:flex items-center">
                 <Link
+                  aria-label="dashboard"
                   href="/dashboard"
                   className="text-white font-Montserrat w-[197px] text-2xl font-semibold border-cyan-green border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]"
                 >
@@ -95,7 +100,6 @@ const Header  = ()  =>  {
                   onClick={() => setActiveNavOverlay(true)}
                   type="button"
                   className="w-[46px] inline-flex items-center justify-center rounded-md "
-                
                 >
                   <HeaderCrossIcons />
                 </button>
