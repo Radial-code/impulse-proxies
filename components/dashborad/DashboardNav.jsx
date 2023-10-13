@@ -121,7 +121,7 @@ const DashboardNav = () => {
                   </button>
                 )}
               </div>
-              <div className="bg-[#202046] hidden h-[65px] w-[65px] rounded-[10px] sm:flex items-center justify-center ms-4">
+              <div className="bg-[#202046] h-[65px] w-[65px] rounded-[10px] flex items-center justify-center ms-4">
                 <div className="rounded-full bg-white h-[37px] w-[37px]"></div>
               </div>
             </div>
