@@ -7,7 +7,7 @@ const Dashboard5 = () => {
   return (
     <>
       <div className="relative">
-        <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
+        <div className="w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
           <div className="hero_wave">
             <div className="hero_wave_height">
               <div className="grad_bg"></div>
@@ -15,7 +15,7 @@ const Dashboard5 = () => {
           </div>
         </div>
         <DashboardNav />
-        <div className="lg:pt-14 lg:pb-36 sm:pb-12 pb-[76px] sm:pt-9 pt-6">
+        <div className="lg:pt-14 lg:pb-36 sm:pb-12 pb-[66px] sm:pt-9 pt-6">
           <div className="container xl:max-w-[1358px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
             <RangeBar />
             <div className=" flex flex-wrap mt-9 lg:mt-12">

@@ -179,6 +179,7 @@
             transform: translateY(0px);
   }
 }
+
 @media (max-width:1023.95px) {
   .line::before {
   content: "";
