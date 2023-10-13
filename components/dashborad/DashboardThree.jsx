@@ -40,7 +40,7 @@ const DashboardThree = () => {
                     Redeem All
                   </button>
                 </div>
-                <div className=" bg-[url('/assets/images/png/Earned_Rewards.png')] bg-no-repeat bg-cover bg-[0px] h-[233px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]">
+                <div className=" bg-[url('/assets/images/webp/Earned_Rewards.webp')] bg-no-repeat bg-cover bg-[0px] h-[233px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]">
                   <h3 className="font-Montserrat font-bold text-xl leading-normal tracking-[1.7px] text-white">
                     NO REWARDS WON
                   </h3>
