@@ -32,10 +32,10 @@ const OurProxies = () => {
                   className={`md:w-6/12  lg:w-4/12 min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out border-[2px] border-[#505062] rounded-[20px] py-5 px-6 md:py-7 ${about.border}`}
                 >
                   <div className="  ">
-                    <h5 className="font-bold  font-Montserrat text-2xl  text-white">
+                    <h3 className="font-bold  font-Montserrat text-2xl  text-white">
                       <span className="text-cyan-green">{about.heading_2}</span>
                       {about.heading}
-                    </h5>
+                    </h3>
                     <p className=" font-medium text-md font-Montserrat text-white opacity-70 max-w-[316px]  mt-2">
                       {about.para}
                     </p>

@@ -59,19 +59,19 @@ const DashboardNav = () => {
                   {/* </Link> */}
                   <Link
                     href="#"
-                    className="text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0"
+                    className="text-[#5E5E80] hover:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0"
                   >
                     Residential
                   </Link>
                   <Link
                     href="#"
-                    className="text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0"
+                    className="text-[#5E5E80] hover:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0"
                   >
                     ISP & Datacenter
                   </Link>
                   <Link
                     href="#"
-                    className="text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0 flex items-center gap-2"
+                    className="text-[#5E5E80] hover:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0 flex items-center gap-2"
                   >
                     <span className="mb-1">
                       <RewardGift />

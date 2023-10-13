@@ -26,7 +26,7 @@ const IspProxies = () => {
             $9.99
           </p>
         </div>
-        <div className="w-full rounded-lg ps-6 py-2 flex items-center bg-white group transition-all min-h-[44px] ease-in-out duration-150">
+        <div className="bg-[#7BF3E1] w-full my-3 rounded-lg ps-6 py-2 flex items-center hover:bg-white group transition-all ease-in-out duration-150">
           <p className=" font-Montserrat transition-all ease-in-out duration-150 sm:text-2xl text-[15px] font-bold text-[#268375] mb-0 group-hover:text-black">
             1 GB
           </p>

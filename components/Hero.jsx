@@ -36,7 +36,6 @@ const Hero = () => {
                   loop={true}
                   className="pointer-events-none relative z-50 2xl:h-[500px] lg:mt-0 md:mt-[-20px] sm:max-w-[400px] md:max-w-[370px] lg:max-w-[500px] mx-auto xl:h-[500px] xl:max-w-[600px] sm:mt-0 mt-12 xl:w-full"
                 />
-                
                 <div className="md:hidden sm:flex sm:mb-0 items-center justify-center text-center">
                   <button className=" hover:bg-transparent transition-all max-w-[300px] w-full sm:max-w-[197px] min-h-[55px] border-[2px] border-cyan-green bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl leading-[120%] text-white mt-10">
                     Purchase
