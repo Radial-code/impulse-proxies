@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
@@ -55,23 +54,23 @@ body {
   -o-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
 }
-@media (min-width:1200px) {
-  .px_50{
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .px_50 {
     padding-left: 50px !important;
     padding-right: 50px !important;
   }
 }
-@media (max-width:1120px) {
-  .px_3{
+@media (max-width: 1120px) {
+  .px_3 {
     padding-left: 12px;
     padding-right: 12px;
   }
 }
-@media (min-width:1024px) and (max-width:1170px) {
-  .text_14{
+@media (min-width: 1024px) and (max-width: 1170px) {
+  .text_14 {
     font-size: 14px !important;
   }
-  .text_12{
+  .text_12 {
     font-size: 12px !important;
   }
 }
@@ -83,8 +82,8 @@ body {
     top: -130px !important;
   }
 }
-@media (min-width:1920px) {
-  .rockat_img_2{
+@media (min-width: 1920px) {
+  .rockat_img_2 {
     bottom: -317px !important;
   }
 }

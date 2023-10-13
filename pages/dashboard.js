@@ -9,8 +9,8 @@ const dashboard = () => {
     <div>
       {/* <Dashboard1 /> */}
       {/* <Dashboard2 /> */}
-      <Dashboard3 />
-      {/* <DashboardThree /> */}
+      {/* <Dashboard3 /> */}
+      <DashboardThree />
       {/* <Dashboard5/>/   */}
     </div>
   );

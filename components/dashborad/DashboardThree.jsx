@@ -28,7 +28,7 @@ const DashboardThree = () => {
         />
         <DashboardNav />
         <div className=" lg:pt-[61px] pt-9 sm:pb-[52px] pb-[64px] lg:pb-36 relative">
-          <div className="container xl:max-w-[1358px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
+          <div className="container lg:max-w-[1320px] mx-auto px_3 px_50 px-8 mb-16">
             <RangeBar />
             <div className=" flex flex-wrap mt-9 lg:mt-[50px]">
               <div className="w-full lg:w-6/12 px-3">

@@ -16,7 +16,7 @@ const Dashboard5 = () => {
         </div>
         <DashboardNav />
         <div className="lg:pt-14 lg:pb-36 sm:pb-12 pb-[66px] sm:pt-9 pt-6">
-          <div className="container xl:max-w-[1358px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
+          <div className="container lg:max-w-[1320px] mx-auto px_3 px_50 px-8 mb-16">
             <RangeBar />
             <div className=" flex flex-wrap mt-9 lg:mt-12">
               <div className="w-full lg:w-6/12 px-3">

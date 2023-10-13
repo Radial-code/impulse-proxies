@@ -127,13 +127,13 @@
   border-radius: 10px;
 }
 .custom_scrollbar_y::-webkit-scrollbar {
-  background-color: #fff !important;
+  background-color: #424458 !important;
   height: 4px;
   width: 4px;
   border-radius: 10px;
 }
 .custom_scrollbar_y::-webkit-scrollbar-thumb {
-  background-color: #50eed7 !important;
+  background-color: #fff !important;
   border-radius: 10px;
 }
 .select_none {
