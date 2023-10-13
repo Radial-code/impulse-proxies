@@ -31,7 +31,7 @@ const Dashboard2 = () => {
         </div>
       </div>
       <DashboardNav />
-      <div className="container xl:max-w-[1358px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
+      <div className="container lg:max-w-[1320px] mx-auto px_3 px_50 px-8 mb-16">
         <p className="text-white font-Montserrat lg:block hidden font-bold tracking-[1.2px] mb-4 mt-10">
           ISP & DC ORDERS
         </p>

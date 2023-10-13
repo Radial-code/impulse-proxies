@@ -72,7 +72,7 @@ const Dashboard1 = () => {
           alt="Mockup_bg_blur"
         />
         <DashboardNav />
-        <div className="container lg:max-w-[1320px] mx-auto lg:px-3 px-8 mb-16">
+        <div className="container lg:max-w-[1320px] mx-auto px_3 px_50 px-8 mb-16">
           <div className="flex flex-wrap lg:pt-[52px] pt-[32px]">
             <div className="lg:w-7/12 w-full">
               <div className="flex flex-wrap justify-between pb-2">
@@ -85,7 +85,7 @@ const Dashboard1 = () => {
                     GENERATE PROXIES
                   </p>
                 </div>
-                <div className="bg-[#17173A] pt-5  ps-8 pe-12">
+                <div className="bg-[#17173A] pt-5 ps-8 pe-12">
                   <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
                     Region
                   </p>
