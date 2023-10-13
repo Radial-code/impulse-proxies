@@ -73,7 +73,7 @@ const Dashboard1 = () => {
         />
         <DashboardNav />
         <div className="container lg:max-w-[1320px] mx-auto lg:px-3 px-8 mb-16">
-          <div className="flex flex-wrap pt-[52px]">
+          <div className="flex flex-wrap lg:pt-[52px] pt-[32px]">
             <div className="lg:w-7/12 w-full">
               <div className="flex flex-wrap justify-between pb-2">
                 <DataUsagesOne />
@@ -226,17 +226,17 @@ const Dashboard1 = () => {
             </div>
             <div className="lg:w-5/12 w-full xl:ps-10 lg:ps-5 lg:pt-0 sm:pt-10 pt-5">
               <YourOrderOne />
-              <div className="rounded-lg overflow-hidden sm:mt-12 mt-7 lg:hidden sm:block hidden">
+              <div className="rounded-lg overflow-hidden lg:mt-12 mt-8 lg:hidden sm:block hidden">
                 <div className="bg-[#212148] ps-8 py-4">
                   <p className="mb-0 text-white text-md font-Montserrat font-bold tracking-[1.4px]">
                     GENERATE PROXIES
                   </p>
                 </div>
                 <div className="bg-[#17173A] pt-5  ps-8 pe-12">
-                  <p className="text-white text-lg mb-4 font-semibold font-Montserrat">
+                  <p className="text-white text-lg lg:mb-4 mb-[14px] font-semibold font-Montserrat">
                     Region
                   </p>
-                  <div className="bg-[#212148] px-4 py-3.5 rounded-lg">
+                  <div className="bg-[#212148] px-4 lg:py-3.5 py-3 rounded-lg">
                     <select
                       name="countery"
                       id="countery"
@@ -247,11 +247,11 @@ const Dashboard1 = () => {
                     </select>
                   </div>
                 </div>
-                <div className="bg-[#17173A] pt-5 pb-6  ps-8 pe-12">
+                <div className="bg-[#17173A] lg:pt-5 pt-4 pb-6 ps-8 pe-12">
                   <p className="text-white text-lg mb-4 font-semibold font-Montserrat">
                     Proxy Type
                   </p>
-                  <div className="bg-[#212148] px-4 py-3.5 rounded-lg">
+                  <div className="bg-[#212148] px-4 lg:py-3.5 py-3 rounded-lg">
                     <select
                       name="countery"
                       id="countery"
@@ -299,7 +299,7 @@ const Dashboard1 = () => {
                               </span>
                             </div>
                           </div>
-                          <p className=" text-white font-Montserrat text-sm pt-5 font-medium">
+                          <p className=" text-white font-Montserrat  text-sm pt-5 font-medium">
                             500 Proxies
                           </p>
                         </div>
@@ -308,10 +308,10 @@ const Dashboard1 = () => {
                         </p>
                       </div>
                       <div className="flex flex-col ms-5">
-                        <button className="border mb-4 border-cyan-green rounded-md text-cyan-green font-Montserrat text-md font-semibold lh_normal py-3 px-8 whitespace-nowrap">
+                        <button className="border mb-4 border-cyan-green rounded-md text-cyan-green font-Montserrat lg:text-md text-[13px] font-semibold lh_normal lg:py-3 px-8 py-2 whitespace-nowrap">
                           Max Qty.
                         </button>
-                        <button className=" font-Montserrat text-[#040426] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg  lh_normal py-3 px-8 whitespace-nowrap">
+                        <button className=" font-Montserrat text-[#040426] lg:text-lg text-[13px] font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal lg:py-3 py-2 px-8 whitespace-nowrap">
                           Generate
                         </button>
                       </div>

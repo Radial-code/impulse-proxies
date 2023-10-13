@@ -3,14 +3,17 @@ import React from 'react'
 const YourOrderOne = () => {
   return (
     <>
-      <div className="bg-[#1E1E43] yourbox_border relative p-4 rounded-lg lg:h-full">
+      <div className="bg-[#1E1E43] yourbox_border relative lg:p-4 sm:px-6 px-4 pt-6 pb-5 rounded-lg lg:h-full">
         <div className="flex sm:items-center items-start justify-between">
           <div className="flex flex-col">
             <p className="text-white font-Montserrat text-[11px] leading-normal font-bold tracking-[1.1px] mb-0">
               YOUR ORDER
             </p>
-            <p className=" font-Montserrat text-[#505082] leading-normal text-sm text-bold tracking-[1.2px]">
+            <p className=" font-Montserrat text-[#505082] sm:pt-0 pt-4 leading-normal text-sm text-bold tracking-[1.2px]">
               #48848191
+            </p>
+            <p className=" font-Montserrat text-[#505082] sm:pt-0 pt-4 leading-normal text-sm text-bold tracking-[1.2px]">
+              500 PROXIES
             </p>
           </div>
           <div className="flex sm:flex-row flex-col">
@@ -22,72 +25,76 @@ const YourOrderOne = () => {
             </button>
           </div>
         </div>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-6">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
-          83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-        </p>
-        <p className="text-[#505082] font-Montserrat text-sm text-end leading-normal tracking-[1.2px] font-bold pe-24 pt-6">
-          500 PROXIES
-        </p>
+        <div>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-6">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] leading-normal font-medium mt-[6px]">
+            83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+          </p>
+          <div className="sm:flex justify-end  hidden">
+            <p className="text-[#505082] font-Montserrat text-sm text-end leading-normal tracking-[1.2px] font-bold pe-24 pt-6">
+              500 PROXIES
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
