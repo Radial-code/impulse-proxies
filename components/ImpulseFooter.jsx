@@ -50,7 +50,7 @@ const ImpulseFooter = () => {
                         </li>
                         <li>
                           <Link
-                            aria-label="link1"
+                            aria-label="ISPproxies"
                             href={footer.link1}
                             className=" text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px] hover:text-white transition-all ease-in-out duration-200"
                           >
@@ -59,7 +59,7 @@ const ImpulseFooter = () => {
                         </li>
                         <li>
                           <Link
-                            aria-label="link2"
+                            aria-label="ResidentialProxies"
                             href={footer.link2}
                             className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px]"
                           >
@@ -68,7 +68,7 @@ const ImpulseFooter = () => {
                         </li>
                         <li>
                           <Link
-                            aria-label="link3"
+                            aria-label="DatacenterProxies"
                             href={footer.link3}
                             className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px]"
                           >
@@ -77,7 +77,7 @@ const ImpulseFooter = () => {
                         </li>
                         <li>
                           <Link
-                            aria-label="link3"
+                            aria-label="Home"
                             href="#"
                             className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px]"
                           >

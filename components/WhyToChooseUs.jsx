@@ -32,9 +32,9 @@ function WhyToChooseUs() {
                 >
                   <div className=" 2xl:max-w-[393px] lg:max-w-[380px] sm:min-h-[197px] min-h-[152px] sm:max-w-[330px] max-w-[328px] hover:translate-y-[-10px] transition-all duration-200 ease-in-out mx-auto h-full lg:ps-[46px] lg:pe-[36px] lg:pt-[18px] lg:pb-[38px] px-6 pt-6 pb-[30px] rounded-[30px] border-[2px] border-cyan-green bg-[#204056]">
                     <div className=" flex gap-3 items-center">
-                      <h5 className="font-bold lg:leading-[75px] sm:leading-[52px] leading-[140%] font-Montserrat md:text-2xl lg:text-[17px] xl:text-2xl text-[17px] text-white">
+                      <h3 className="font-bold lg:leading-[75px] sm:leading-[52px] leading-[140%] font-Montserrat md:text-2xl lg:text-[17px] xl:text-2xl text-[17px] text-white">
                         {CardData.heading}
-                      </h5>
+                      </h3>
                       <Image
                         height={32}
                         width={32}

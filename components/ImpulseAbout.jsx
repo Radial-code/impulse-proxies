@@ -52,12 +52,12 @@ const ImpulseAbout = () => {
                         className=" sm:h-[81px] sm:w-[81px] w-[42px] h-[42px]"
                       />
                       <div>
-                        <h5 className="mb-0 text-white font-Montserrat leading-[204%] tracking-[-0.44px] md:text-3xl text-[17px] font-bold">
+                        <h3 className="mb-0 text-white font-Montserrat leading-[204%] tracking-[-0.44px] md:text-3xl text-[17px] font-bold">
                           About
                           <span className="text-cyan-green ms-1">
                             {about.impulse}
                           </span>
-                        </h5>
+                        </h3>
                         <p className="sm:mb-7 text-[#9898A3] font-Montserrat font-medium leading-[178%] text-md max-w-[278px]">
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit, sed do eiusmod tempor
