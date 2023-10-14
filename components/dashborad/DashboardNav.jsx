@@ -33,7 +33,7 @@ const DashboardNav = () => {
         setActiveNavOverlay={setActiveNavOverlay}
       />
       <nav className="dark-blue xl:py-6 lg:py-5 py-3 flex-grow-0">
-        <div className="container lg:max-w-[1320px] mx-auto lg:px-3 px-8">
+        <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
           <div className="flex-1 flex items-center justify-between  lg:items-center">
             <div className="flex-1 flex items-center lg:justify-between lg:ms-0 ms-12 justify-center">
               <div className="flex-shrink-0 flex items-center justify-between">
@@ -63,13 +63,21 @@ const DashboardNav = () => {
                   {/* </Link> */}
                   <Link
                     href="#"
-                    className="text-[#5E5E80] hover:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0"
+                    className={`text-[#5E5E80] hover:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0 ${
+                      router.pathname === "/dashboardDataUsage"
+                        ? "text-white"
+                        : ""
+                    }`}
+                    // className="text-[#5E5E80] hover:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0"
                   >
                     Residential
                   </Link>
                   <Link
                     href="#"
-                    className="text-[#5E5E80] hover:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0"
+                    className={`text-[#5E5E80] hover:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0 ${
+                      router.pathname === "/dashboard" ? "text-white" : ""
+                    }`}
+                    // className="text-[#5E5E80] hover:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0"
                   >
                     ISP & Datacenter
                   </Link>

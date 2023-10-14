@@ -34,7 +34,7 @@ const DeshboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
           activeNavOverlay ? "left-0" : "-left-full"
         }`}
       >
-        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
+        <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
           <div className="flex flex-col gap-9 xl:gap-5 lg:items-start items-center w-full">
             {/* box */}
             <div

@@ -54,6 +54,14 @@ body {
   -o-transition: height 0.3s ease-in-out;
   transition: height 0.3s ease-in-out;
 }
+/* dash board  */
+.dashboard_height{
+  height: calc(100vh - 200px);
+}
+/* columns  */
+.your_order{
+   columns: 300px 3;
+}
 @media (min-width: 1200px) and (max-width: 1400px) {
   .px_50 {
     padding-left: 50px !important;

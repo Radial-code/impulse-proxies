@@ -2,8 +2,33 @@ import Image from "next/image";
 import RangeBar from "./RangeBar";
 import DashboardNav from "./DashboardNav";
 import { DashbarFooter } from "./DashbarFooter";
+import { useRef } from "react";
 
 const Dashboard5 = () => {
+  const copyText = () => {
+    const textToCopy = document.getElementById("textToCopy").innerText;
+
+    // Try to use the modern clipboard API
+    if (navigator.clipboard) {
+      navigator.clipboard
+        .writeText(textToCopy)
+        .then(() => {
+          alert("Text copied to clipboard!");
+        })
+        .catch((error) => {
+          console.error("Failed to copy text: ", error);
+        });
+    } else {
+      // For older browsers, fallback to the execCommand method
+      const textArea = document.createElement("textarea");
+      textArea.value = textToCopy;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+      alert("Text copied to clipboard!");
+    }
+  };
   return (
     <>
       <div className="relative">
@@ -14,9 +39,8 @@ const Dashboard5 = () => {
             </div>
           </div>
         </div>
-        <DashboardNav />
         <div className="lg:pt-14 lg:pb-36 sm:pb-12 pb-[66px] sm:pt-9 pt-6">
-          <div className="container lg:max-w-[1320px] mx-auto px_3 px_50 px-8 ">
+          <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
             <RangeBar />
             <div className=" flex flex-wrap mt-9 lg:mt-12">
               <div className="w-full lg:w-6/12 px-3">
@@ -85,15 +109,20 @@ const Dashboard5 = () => {
                       <p className=" text-[#7777AD] font-Montserrat leading-normal tracking-[-0.28px] text-md font-semibold">
                         Discount Code
                       </p>
-                      <p className=" text-white font-Montserrat text-md font-semibold ms-4 leading-normal tracking-[-0.28px]">
+                      <p
+                        id="textToCopy"
+                        className=" text-white font-Montserrat text-md font-semibold ms-4 leading-normal tracking-[-0.28px]"
+                      >
                         2729PAYJ1
                       </p>
                     </div>
                     <Image
+                      onClick={copyText}
                       height={21}
                       width={21}
                       src="/assets/images/svg/content_copy.svg"
                       alt="about image"
+                      className="cursor-pointer"
                     />
                   </div>
                   <p className=" font-Montserrat sm:text-[13px] text-[12px] md:text-lg font-medium leading-normal text-[#9D9DBB] md:max-w-[608px] max-w-[460px] sm:mt-5 mt-4">
@@ -126,7 +155,6 @@ const Dashboard5 = () => {
             </div>
           </div>
         </div>
-        <DashbarFooter />
       </div>
     </>
   );
