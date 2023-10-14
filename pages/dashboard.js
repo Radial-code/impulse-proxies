@@ -12,7 +12,7 @@ const dashboard = () => {
       <Dashboard2 />
       <Dashboard3 />
       <DashboardThree />
-      <Dashboard5/>/  
+      <Dashboard5/>  
     </div>
   );
 };

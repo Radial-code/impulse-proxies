@@ -266,7 +266,7 @@ const Dashboard1 = () => {
                     <p className="text-white text-lg mb-4 font-semibold font-Montserrat">
                       Amount
                     </p>
-                    <div className="flex items-start mt-3 justify-between">
+                    <div classNa="flex items-start mt-3 justify-between">
                       <div className="flex items-start">
                         <div className="mb-0 pt-3 w-full">
                           <div className="flex relative justify-center items-center h-[20px] w-full mx-auto rounded">
