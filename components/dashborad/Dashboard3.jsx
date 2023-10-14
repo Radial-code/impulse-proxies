@@ -74,10 +74,10 @@ const Dashboard3 = () => {
                 YOUR ORDER
               </p>
               <div className="flex items-center md:gap-6 gap-4">
-                <button className="bg-[#292956] py-[9px] px-[15px] rounded-[10px] text-[#7777AD] font-Montserrat font-semibold text-[14px] leading-normal md:tracking-[-0.28px] whitespace-nowrap hover:bg-white hover:text-[#040426] transition-all">
+                <button className="bg-[#292956] py-[9px] px-[15px] rounded-[10px] text-[#7777AD] font-Montserrat font-semibold text-[14px] leading-normal md:tracking-[-0.28px] whitespace-nowrap hover:bg-[#4Fdcc7] hover:text-[#040426] transition-all">
                   Download .txt
                 </button>
-                <button className="hover:bg-[#292956] py-[9px] px-[15px] whitespace-nowrap rounded-[10px] hover:text-[#7777AD] font-Montserrat font-semibold text-[14px] leading-normal md:tracking-[-0.28px] bg-white text-[#040426] transition-all">
+                <button className="hover:bg-[#4FDCC7] py-[9px] px-[15px] whitespace-nowrap rounded-[10px] hover:text-[#040426] font-Montserrat font-semibold text-[14px] leading-normal md:tracking-[-0.28px] bg-white text-[#040426] transition-all">
                   Copy to Clipboard
                 </button>
               </div>
@@ -112,10 +112,10 @@ const Dashboard3 = () => {
                 </p>
               </div>
               <div className="flex items-center md:gap-6 gap-4">
-                <button className="bg-[#292956] py-[9px] px-[15px] rounded-[10px] text-[#7777AD] font-Montserrat font-semibold text-[14px]  leading-normal md:tracking-[-0.28px] whitespace-nowrap hover:bg-white hover:text-[#040426] transition-all">
+                <button className="bg-[#292956] py-[9px] px-[15px] rounded-[10px] text-[#7777AD] font-Montserrat font-semibold text-[14px]  leading-normal md:tracking-[-0.28px] whitespace-nowrap hover:bg-[#4FDCC7] hover:text-[#040426] transition-all">
                   Download .txt
                 </button>
-                <button className="hover:bg-[#292956] py-[9px] px-[15px] whitespace-nowrap rounded-[10px] hover:text-[#7777AD] font-Montserrat font-semibold text-[14px]  leading-normal md:tracking-[-0.28px] bg-white text-[#040426] transition-all">
+                <button className="hover:bg-[#4FDCC7] py-[9px] px-[15px] whitespace-nowrap rounded-[10px] hover:text-[#040426] font-Montserrat font-semibold text-[14px]  leading-normal md:tracking-[-0.28px] bg-white text-[#040426] transition-all">
                   Copy to Clipboard
                 </button>
               </div>
@@ -150,10 +150,10 @@ const Dashboard3 = () => {
                 </p>
               </div>
               <div className="flex flex-col-reverse">
-                <button className="bg-[#292956] py-[9px] mt-4  px-[15px] rounded-[10px] text-[#7777AD] font-Montserrat font-semibold text-[14px]  leading-normal md:tracking-[-0.28px] whitespace-nowrap hover:bg-white hover:text-[#040426] transition-all">
+                <button className="bg-[#292956] py-[9px] mt-4  px-[15px] rounded-[10px] text-[#7777AD] font-Montserrat font-semibold text-[14px]  leading-normal md:tracking-[-0.28px] whitespace-nowrap hover:bg-[#4FDCC7] hover:text-[#040426] transition-all">
                   Download .txt
                 </button>
-                <button className="hover:bg-[#292956] py-[9px] px-[15px] whitespace-nowrap rounded-[10px] hover:text-[#7777AD] font-Montserrat font-semibold text-[14px] leading-normal md:tracking-[-0.28px] bg-white text-[#040426] transition-all">
+                <button className="hover:bg-[#4FDCC7] py-[9px] px-[15px] whitespace-nowrap rounded-[10px] hover:text-[#040426] font-Montserrat font-semibold text-[14px] leading-normal md:tracking-[-0.28px] bg-white text-[#040426] transition-all">
                   Copy to Clipboard
                 </button>
               </div>
