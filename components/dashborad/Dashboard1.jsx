@@ -204,7 +204,7 @@ const Dashboard1 = () => {
                             />
                           </div>
                           <p className=" text-white font-Montserrat leading-normal text-sm pt-5 font-medium">
-                            500 Proxies
+                            {value} Proxies
                           </p>
                         </div>
                         <p className="w-[164px] ms-8 rounded-md font-Montserrat font-medium text-[13px] leading-normal border-[1px_solid_rgba(255, 255, 255, 0.05)] bg-[#252550] py-[9px] ps-6">
