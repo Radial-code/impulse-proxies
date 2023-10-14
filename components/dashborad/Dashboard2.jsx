@@ -2,7 +2,7 @@ import React from "react";
 import DashboardNav from "./DashboardNav";
 import IspProxies from "./IspProxies";
 import { DashbarFooter } from "./DashbarFooter";
-
+import Image from "next/image";
 const Dashboard2 = () => {
   const headings = [
     "DOWNLOAD LIST",
@@ -22,7 +22,7 @@ const Dashboard2 = () => {
     ["1232312123", "Datacenter", "Proxy1", "500", "05/06/2024", "12", "54"],
   ];
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
         <div className="hero_wave">
           <div className="hero_wave_height">
@@ -198,6 +198,13 @@ const Dashboard2 = () => {
         </div>
       </div>
       <DashbarFooter />
+      <Image
+        height={300}
+        width={300}
+        className=" absolute right-0 bottom-0 z-[-2] hidden md:inline"
+        alt="DashboardLine"
+        src="/assets/images/svg/DashboardLine.svg"
+      />
     </div>
   );
 };
