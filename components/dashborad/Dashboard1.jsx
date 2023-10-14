@@ -212,10 +212,10 @@ const Dashboard1 = () => {
                         </p>
                       </div>
                       <div className="flex flex-col ms-5">
-                        <button className="border mb-4 border-cyan-green rounded-md cursor-pointer text-cyan-green font-Montserrat text-md font-semibold lh_normal py-2 px-6 whitespace-nowrap">
+                        <button className="border mb-4 border-cyan-green hover:bg-[#50EED7] hover:border-transparent hover:text-[#040426] rounded-md cursor-pointer text-cyan-green font-Montserrat text-md font-semibold lh_normal py-2 px-6 whitespace-nowrap">
                           Max Qty.
                         </button>
-                        <button className=" font-Montserrat text-[#040426] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal py-[10px] px-8 whitespace-nowrap">
+                        <button className=" font-Montserrat text-[#040426] hover:bg-[#50EED7] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal py-[10px] px-8 whitespace-nowrap">
                           Generate
                         </button>
                       </div>
@@ -299,10 +299,10 @@ const Dashboard1 = () => {
                         </p>
                       </div>
                       <div className="flex flex-col ms-5">
-                        <button className="border mb-4 border-cyan-green rounded-md cursor-pointer text-cyan-green font-Montserrat text-md font-semibold lh_normal py-2 px-6 whitespace-nowrap">
+                        <button className="border mb-4 hover:border-transparent hover:bg-[#50EED7] border-cyan-green rounded-md cursor-pointer text-cyan-green hover:text-[#040426] font-Montserrat text-md font-semibold lh_normal py-2 px-6 whitespace-nowrap">
                           Max Qty.
                         </button>
-                        <button className=" font-Montserrat text-[#040426] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal py-[10px] px-8 whitespace-nowrap">
+                        <button className=" font-Montserrat text-[#040426] hover:bg-[#50EED7] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal py-[10px] px-8 whitespace-nowrap">
                           Generate
                         </button>
                       </div>
