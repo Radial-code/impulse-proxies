@@ -13,10 +13,8 @@ const dashboard = () => {
     <div>
       <DashboardIspOrders />
       <DashboardYourOrder />
-      <DashboardYourRewards/>
+      <DashboardYourRewards />
       <DashboardReedemAll />
-
-    
     </div>
   );
 };
