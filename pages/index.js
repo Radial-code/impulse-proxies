@@ -10,10 +10,10 @@ import Choose from "@/components/Choose";
 export default function Home() {
   return (
     <>
+      <Preloader />
       <PageMataTag />
       <div className="overflow-hidden">
         <BackToTopButton />
-        <Preloader />
         <Hero />
         <Choose />
         <OurProxies />
