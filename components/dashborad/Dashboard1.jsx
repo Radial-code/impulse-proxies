@@ -114,13 +114,13 @@ const Dashboard1 = () => {
                       {isPeriodDropdownOpen && (
                         <div className="absolute start-0 z-10 bg-[#252550] border-white border-2 mt-4 w-full rounded-[10px] ">
                           <p
-                            className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-0 w-full border border-transparent hover:border-white rounded-[10px] text-center py-1 px-4 cursor-pointer"
+                            className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-0 w-full border border-transparent  rounded-[10px] text-start py-1 px-4 cursor-pointer"
                             onClick={() => handlePeriodSelect("USA")}
                           >
                             USA
                           </p>
                           <p
-                            className="text-[16px] font-Montserrat font-semibold text-white mb-0 w-full border border-transparent hover:border-white rounded-[10px] text-center mx-auto py-1 px-4 cursor-pointer"
+                            className="text-[16px] font-Montserrat font-semibold text-white mb-0 w-full border border-transparent rounded-[10px] text-start mx-auto py-1 px-4 cursor-pointer"
                             onClick={() => handlePeriodSelect("Russia")}
                           >
                             Russia
@@ -159,13 +159,13 @@ const Dashboard1 = () => {
                       {isProviderDropdownOpen && (
                         <div className="absolute start-0 z-10 bg-[#252550] border-white border-2 mt-4 w-full rounded-[10px]">
                           <p
-                            className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-0 w-full border border-transparent hover:border-white rounded-[10px] text-center py-1 px-4 cursor-pointer"
+                            className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-0 w-full border border-transparent  rounded-[10px] text-start py-1 px-4 cursor-pointer"
                             onClick={() => handleProviderSelect("Residential")}
                           >
                             Residential
                           </p>
                           <p
-                            className="text-[16px] font-Montserrat font-semibold text-white mb-0 w-full border border-transparent hover:border-white rounded-[10px] text-center mx-auto py-1 px-4 cursor-pointer"
+                            className="text-[16px] font-Montserrat font-semibold text-white mb-0 w-full border border-transparent  rounded-[10px] text-start mx-auto py-1 px-4 cursor-pointer"
                             onClick={() => handleProviderSelect("Datacenter")}
                           >
                             Datacenter
@@ -200,7 +200,7 @@ const Dashboard1 = () => {
                               max="1000"
                               value={value}
                               onChange={handleChange}
-                              className="custom-range"
+                              className="custom-range w-full"
                             />
                           </div>
                           <p className=" text-white font-Montserrat leading-normal text-sm pt-5 font-medium">
@@ -212,10 +212,10 @@ const Dashboard1 = () => {
                         </p>
                       </div>
                       <div className="flex flex-col ms-5">
-                        <button className="border mb-4 border-cyan-green hover:bg-[#50EED7] hover:border-transparent hover:text-[#040426] rounded-md cursor-pointer text-cyan-green font-Montserrat text-md font-semibold lh_normal py-2 px-6 whitespace-nowrap">
+                        <button className="border mb-4 border-cyan-green hover:bg-[#50EED7]  hover:border-transparent hover:text-[#040426] rounded-md cursor-pointer text-cyan-green transition-all duration-150 font-Montserrat text-md font-semibold lh_normal py-2 px-6 whitespace-nowrap">
                           Max Qty.
                         </button>
-                        <button className=" font-Montserrat text-[#040426] hover:bg-[#50EED7] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal py-[10px] px-8 whitespace-nowrap">
+                        <button className=" font-Montserrat text-[#040426] hover:bg-[#50EED7] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal py-[10px] transition-all duration-150 px-8 whitespace-nowrap">
                           Generate
                         </button>
                       </div>
@@ -232,34 +232,94 @@ const Dashboard1 = () => {
                     GENERATE PROXIES
                   </p>
                 </div>
-                <div className="bg-[#17173A] pt-5  ps-8 pe-12">
-                  <p className="text-white text-lg lg:mb-4 mb-[14px] font-semibold font-Montserrat">
+                <div className="bg-[#17173A] pt-5 ps-8 pe-12">
+                  <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
                     Region
                   </p>
-                  <div className="bg-[#212148] px-4 lg:py-3.5 py-3 rounded-lg">
-                    <select
-                      name="countery"
-                      id="countery"
-                      className="w-full border-0 outline-none focus-visible:outline-none cursor-pointer bg-[#212148]"
+                  <div className="max-w-[782px] relative">
+                    <div
+                      className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px]  px-5 py-3 ${
+                        isPeriodDropdownOpen ? "bg-[#212148]" : ""
+                      }`}
+                      onClick={togglePeriodDropdown}
                     >
-                      <option value="United States">United States</option>
-                      <option value="india">India</option>
-                    </select>
+                      <div className="flex justify-between items-center">
+                        <p
+                          className={` mb-0 ${
+                            isPeriodDropdownOpen ? "text-[#fff]" : ""
+                          }`}
+                        >
+                          {selectedPeriod}
+                        </p>
+                        <Image
+                          src="/assets/images/svg/Polygon.svg"
+                          alt="down arrow icon"
+                          height={13}
+                          width={13}
+                        />
+                      </div>
+                      {isPeriodDropdownOpen && (
+                        <div className="absolute start-0 z-10 bg-[#252550] border-white border-2 mt-4 w-full rounded-[10px] ">
+                          <p
+                            className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-0 w-full border border-transparent  rounded-[10px] text-start py-1 px-4 cursor-pointer"
+                            onClick={() => handlePeriodSelect("USA")}
+                          >
+                            USA
+                          </p>
+                          <p
+                            className="text-[16px] font-Montserrat font-semibold text-white mb-0 w-full border border-transparent rounded-[10px] text-start mx-auto py-1 px-4 cursor-pointer"
+                            onClick={() => handlePeriodSelect("Russia")}
+                          >
+                            Russia
+                          </p>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
                 <div className="bg-[#17173A] lg:pt-5 pt-4 pb-6 ps-8 pe-12">
-                  <p className="text-white text-lg mb-4 font-semibold font-Montserrat">
+                  <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
                     Proxy Type
                   </p>
-                  <div className="bg-[#212148] px-4 lg:py-3.5 py-3 rounded-lg">
-                    <select
-                      name="countery"
-                      id="countery"
-                      className="w-full border-0 outline-none focus-visible:outline-none cursor-pointer bg-[#212148]"
+                  <div className="max-w-[782px] relative">
+                    <div
+                      className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3 ${
+                        isProviderDropdownOpen ? "bg-[#212148]" : ""
+                      }`}
+                      onClick={toggleProviderDropdown}
                     >
-                      <option value="United States">Residential</option>
-                      <option value="india">option</option>
-                    </select>
+                      <div className="flex justify-between items-center">
+                        <p
+                          className={` mb-0 ${
+                            isProviderDropdownOpen ? "text-[#fff]" : ""
+                          }`}
+                        >
+                          {selectedProvider}
+                        </p>
+                        <Image
+                          src="/assets/images/svg/Polygon.svg"
+                          alt="down arrow icon"
+                          height={13}
+                          width={13}
+                        />
+                      </div>
+                      {isProviderDropdownOpen && (
+                        <div className="absolute start-0 z-10 bg-[#252550] border-white border-2 mt-4 w-full rounded-[10px]">
+                          <p
+                            className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-0 w-full border border-transparent  rounded-[10px] text-start py-1 px-4 cursor-pointer"
+                            onClick={() => handleProviderSelect("Residential")}
+                          >
+                            Residential
+                          </p>
+                          <p
+                            className="text-[16px] font-Montserrat font-semibold text-white mb-0 w-full border border-transparent  rounded-[10px] text-start mx-auto py-1 px-4 cursor-pointer"
+                            onClick={() => handleProviderSelect("Datacenter")}
+                          >
+                            Datacenter
+                          </p>
+                        </div>
+                      )}
+                    </div>
                   </div>
 
                   <div className="mt-5">
@@ -287,7 +347,7 @@ const Dashboard1 = () => {
                               max="1000"
                               value={value}
                               onChange={handleChange}
-                              className="custom-range"
+                              className="custom-range w-full"
                             />
                           </div>
                           <p className=" text-white font-Montserrat leading-normal text-sm pt-5 font-medium">
@@ -299,10 +359,10 @@ const Dashboard1 = () => {
                         </p>
                       </div>
                       <div className="flex flex-col ms-5">
-                        <button className="border mb-4 hover:border-transparent hover:bg-[#50EED7] border-cyan-green rounded-md cursor-pointer text-cyan-green hover:text-[#040426] font-Montserrat text-md font-semibold lh_normal py-2 px-6 whitespace-nowrap">
+                        <button className="border mb-4 hover:border-transparent hover:bg-[#50EED7] transition-all duration-150 border-cyan-green rounded-md cursor-pointer text-cyan-green hover:text-[#040426] font-Montserrat text-md font-semibold lh_normal py-2 px-6 whitespace-nowrap">
                           Max Qty.
                         </button>
-                        <button className=" font-Montserrat text-[#040426] hover:bg-[#50EED7] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal py-[10px] px-8 whitespace-nowrap">
+                        <button className=" font-Montserrat text-[#040426] hover:bg-[#50EED7] transition-all duration-150 text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal py-[10px] px-8 whitespace-nowrap">
                           Generate
                         </button>
                       </div>

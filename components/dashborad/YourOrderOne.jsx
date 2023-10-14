@@ -21,10 +21,10 @@ const YourOrderOne = () => {
             </div>
           </div>
           <div className="flex sm:flex-row flex-col">
-            <button className="text-[#7777AD] bg-[#292956] hover:bg-[#50EED7] hover:text-[#040426] rounded-md text_12 font-Montserrat text-md font-semibold tracking-[-0.28px] px-4 py-2">
+            <button className="text-[#7777AD] bg-[#292956] transition-all duration-150 hover:bg-[#50EED7] hover:text-[#040426] rounded-md text_12 font-Montserrat text-md font-semibold tracking-[-0.28px] px-4 py-2">
               Download.txt
             </button>
-            <button className="text-[#040426] sm:mt-0 mt-3 bg-white hover:bg-[#50EED7] text_12 rounded-md font-Montserrat text-md font-bold tracking-[-0.28px] px-3.5 py-2 sm:ms-4">
+            <button className="text-[#040426] sm:mt-0 mt-3 bg-white transition-all duration-150 hover:bg-[#50EED7] text_12 rounded-md font-Montserrat text-md font-bold tracking-[-0.28px] px-3.5 py-2 sm:ms-4">
               Copy to Clipboard
             </button>
           </div>
