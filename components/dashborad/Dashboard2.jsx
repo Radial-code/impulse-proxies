@@ -36,7 +36,7 @@ const Dashboard2 = () => {
           ISP & DC ORDERS
         </p>
         <div className="flex justify-between items-center md:flex-row flex-col lg:pt-0 pt-8">
-          <div className="xl:w-9/12 lg:w-7/12 md:w-7/12 lg:max-h-[290px] max-h-[280px] w-full overflow-x-scroll custom_scrollbar_y xl:max-w-[955px]  md:max-w-[427px] lg:max-w-[720px] rounded-lg">
+          <div className="xl:w-[73%] lg:w-[60%] md:w-[58%] lg:max-h-[290px] max-h-[280px] w-full overflow-x-scroll custom_scrollbar_y xl:max-w-[955px]  md:max-w-[427px] lg:max-w-[720px] rounded-lg">
             <table className="rounded-xl overflow-hidden">
               <thead className="bg-[#212148]">
                 <tr>
@@ -67,14 +67,14 @@ const Dashboard2 = () => {
               </tbody>
             </table>
           </div>
-          <div className="xl:w-3/12 lg:w-4/12 md:w-5/12 w-full md:mt-0 mt-9">
+          <div className="xl:w-[25%] lg:w-[36%] md:w-[40%] w-full md:mt-0 mt-9">
             <IspProxies />
           </div>
         </div>
         {/* box */}
         <div className="bg-[#191941] overflow-hidden your_order relative rounded-lg lg:p-8 p-6 lg:mt-12 mt-8 mb-[84px]">
-          <div className="flex md:items-center sm:items-start items-center justify-between">
-            <div className="flex md:items-center md:flex-row flex-col">
+          <div className="flex md:items-center justify-between">
+            <div className="flex md:flex-row flex-col">
               <p className="text-white font-Montserrat sm:text-md text-[12px] font-bold tracking-[1.4px]">
                 YOUR ORDER
               </p>
@@ -85,14 +85,14 @@ const Dashboard2 = () => {
                 500 PROXIES
               </p>
             </div>
-            <div className="flex items-center md:flex-row flex-col-reverse pb-4">
+            <div className="flex sm:items-center md:flex-row flex-col-reverse pb-4">
               <p className="text-[#505082] font-Montserrat text-md font-bold tracking-[1.4px] ms-4 md:block hidden">
                 500 PROXIES
               </p>
-              <button className="md:px-[15px] px-[22px] py-[11px] bg-[#292956] rounded-md text-[#7777AD] font-Montserrat font-semibold sm:text-md text-[12px] tracking-[-0.28px] mx-6 md:mt-0 mt-4 hover:bg-white hover:text-[#040426] ease-out duration-150 transition-all">
+              <button className="md:px-[15px] px-[22px] py-[11px] bg-[#292956] rounded-md text-[#7777AD] font-Montserrat font-semibold sm:text-md text-[12px] tracking-[-0.28px] sm:mx-6 md:mt-0 mt-4 hover:bg-[#4FDCC7] hover:text-[#040426] ease-out duration-150 transition-all">
                 Download .txt
               </button>
-              <button className="px-[14px] py-[11px] bg-white font-bold tracking-[-0.28px] hover:bg-[#292956] hover:text-white text-[#040426] rounded-md ease-out md:text-sm text-[12px]  duration-150 transition-all">
+              <button className="px-[14px] py-[11px] font-Montserrat bg-white font-bold tracking-[-0.28px] hover:bg-[#4FDCC7] text-[#040426] rounded-md ease-out md:text-[14px] text-[12px]  duration-150 transition-all">
                 Copy to Clipboard
               </button>
             </div>
