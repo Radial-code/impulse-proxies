@@ -27,8 +27,8 @@ const DashboardThree = () => {
           alt="Mockup_bg_blur"
         />
         <DashboardNav />
-        <div className=" lg:pt-[61px] pt-9 sm:pb-[52px] pb-[64px] lg:pb-36 relative">
-          <div className="container lg:max-w-[1320px] mx-auto px_3 px_50 px-8 mb-16">
+        <div className=" lg:pt-[61px] pt-9 sm:pb-[52px] pb-[64px] lg:pb-36 2xl:pb-32 relative">
+          <div className="container lg:max-w-[1320px] mx-auto px_3 px_50 px-8 ">
             <RangeBar />
             <div className=" flex flex-wrap mt-9 lg:mt-[50px]">
               <div className="w-full lg:w-6/12 px-3">
@@ -47,7 +47,7 @@ const DashboardThree = () => {
                   <p className="font-Montserrat text-lg leading-normal sm:max-w-full max-w-[179px] text-center text-[#9D9DBB] sm:pt-4 py-3 sm:pb-6">
                     To make an order, click the button below
                   </p>
-                  <button className=" text-[#040426] w-[180px] h-[45px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold leading-normal tracking-[-0.32px] text-[14px] rounded-[10px]">
+                  <button className=" text-[#040426] w-[180px] h-[45px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold leading-normal tracking-[-0.32px] text-[16px] rounded-[10px]">
                     Order Proxies
                   </button>
                 </div>
@@ -73,7 +73,7 @@ const DashboardThree = () => {
                       alt="aboutimage"
                     />
                   </div>
-                  <p className=" font-Montserrat sm:text-[13px] text-[12px] md:text-lg font-medium text-[#9D9DBB] leading-normal md:max-w-[540px] max-w-[460px] mt-4 lg:mt-5">
+                  <p className=" font-Montserrat text-[13px] md:text-lg font-medium text-[#9D9DBB] leading-normal md:max-w-[588px] max-w-[460px] mt-4 lg:mt-5">
                     Share this code, and when someone signs up and purchases
                     proxies, you will get paid!
                   </p>

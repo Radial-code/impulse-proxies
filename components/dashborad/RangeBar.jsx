@@ -102,7 +102,7 @@ const RangeBar = () => {
             <p className="text-sm font-Montserrat font-bold leading-normal tracking-[1.2px] text-white">
               HOW IT WORKS
             </p>
-            <p className=" font-Montserrat sm:text-[13px] text-[12px] md:text-lg font-medium text-[#9D9DBB] lg:max-w-[500px] max-w-[613px] xl:max-w-[1125px] leading-[22px] mt-2">
+            <p className=" font-Montserrat text-[13px] md:text-lg font-medium text-[#9D9DBB] lg:max-w-[500px] max-w-[613px] xl:max-w-[1125px] leading-[22px] mt-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation
