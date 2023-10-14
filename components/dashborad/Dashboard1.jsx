@@ -74,7 +74,7 @@ const Dashboard1 = () => {
         <DashboardNav />
         <div className="container lg:max-w-[1320px] mx-auto px_3 px_50 px-8 mb-16">
           <div className="flex flex-wrap lg:pt-[52px] pt-[32px]">
-            <div className="lg:w-7/12 w-full">
+            <div className="lg:w-[58%] w-full">
               <div className="flex flex-wrap justify-between pb-2">
                 <DataUsagesOne />
                 <ResidentialBoxOne />
@@ -184,7 +184,7 @@ const Dashboard1 = () => {
                         <div className="mb-0 w-full">
                           <div>
                             <div
-                              className="flex relative justify-center items-center h-[20px] w-full mx-auto rounded"
+                              className="fle x relative justify-center items-center hidden h-[20px] w-full mx-auto rounded"
                               style={{
                                 width: ` ${
                                   value > 500
@@ -212,7 +212,7 @@ const Dashboard1 = () => {
                         </p>
                       </div>
                       <div className="flex flex-col ms-5">
-                        <button className="border mb-4 border-cyan-green rounded-md text-cyan-green font-Montserrat text-md font-semibold lh_normal py-2 px-6 whitespace-nowrap">
+                        <button className="border mb-4 border-cyan-green rounded-md cursor-pointer text-cyan-green font-Montserrat text-md font-semibold lh_normal py-2 px-6 whitespace-nowrap">
                           Max Qty.
                         </button>
                         <button className=" font-Montserrat text-[#040426] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal py-[10px] px-8 whitespace-nowrap">
@@ -224,7 +224,7 @@ const Dashboard1 = () => {
                 </div>
               </div>
             </div>
-            <div className="lg:w-5/12 w-full xl:ps-10 lg:ps-5 lg:pt-0 sm:pt-10 pt-5">
+            <div className="lg:w-[42%] w-full xl:ps-10 lg:ps-5 lg:pt-0 sm:pt-10 pt-5">
               <YourOrderOne />
               <div className="rounded-lg overflow-hidden lg:mt-12 mt-8 lg:hidden sm:block hidden">
                 <div className="bg-[#212148] ps-8 py-4">
@@ -263,55 +263,46 @@ const Dashboard1 = () => {
                   </div>
 
                   <div className="mt-5">
-                    <p className="text-white text-lg mb-4 font-semibold font-Montserrat">
+                    <p className="text-white text-lg mb-4 font-semibold leading-normal font-Montserrat">
                       Amount
                     </p>
                     <div class="flex items-start mt-3 justify-between">
-                      <div className="flex items-start">
-                        <div className="mb-0 pt-3 w-full">
-                          <div className="flex relative justify-center items-center h-[20px] w-full mx-auto rounded">
-                            <div className="range-slider">
-                              <div
-                                className="progress"
-                                style={progressStyle}
-                              ></div>
-                              <span className="range-min-wrapper">
-                                <input
-                                  className="range-min"
-                                  type="range"
-                                  min="0"
-                                  max="100"
-                                  value={minRange}
-                                  onChange={handleMinRangeChange}
-                                  onInput={handleInputChange}
-                                />
-                              </span>
-                              <span className="range-max-wrapper">
-                                <input
-                                  className="range-max"
-                                  type="range"
-                                  min="0"
-                                  max="100"
-                                  value={maxRange}
-                                  onChange={handleMaxRangeChange}
-                                  onInput={handleInputChange}
-                                />
-                              </span>
-                            </div>
+                      <div className="flex justify-between items-start w-full">
+                        <div className="mb-0 w-full">
+                          <div>
+                            <div
+                              className="fle x relative justify-center items-center hidden h-[20px] w-full mx-auto rounded"
+                              style={{
+                                width: ` ${
+                                  value > 500
+                                    ? `calc(${value}% - 4px)`
+                                    : `calc(${value}% + 3px)`
+                                }`,
+                                display: ` ${value < 2 ? `none` : ``}`,
+                              }}
+                            ></div>
+                            <input
+                              type="range"
+                              min="0"
+                              max="1000"
+                              value={value}
+                              onChange={handleChange}
+                              className="custom-range"
+                            />
                           </div>
-                          <p className=" text-white font-Montserrat  text-sm pt-5 font-medium">
+                          <p className=" text-white font-Montserrat leading-normal text-sm pt-5 font-medium">
                             500 Proxies
                           </p>
                         </div>
-                        <p className="w-[164px] ms-8 rounded-md border-[1px_solid_rgba(255, 255, 255, 0.05)] bg-[#252550] py-[10px] ps-6">
-                          500
+                        <p className="w-[164px] ms-8 rounded-md font-Montserrat font-medium text-[13px] leading-normal border-[1px_solid_rgba(255, 255, 255, 0.05)] bg-[#252550] py-[9px] ps-6">
+                          {value}
                         </p>
                       </div>
                       <div className="flex flex-col ms-5">
-                        <button className="border mb-4 border-cyan-green rounded-md text-cyan-green font-Montserrat lg:text-md text-[13px] font-semibold lh_normal lg:py-3 px-8 py-2 whitespace-nowrap">
+                        <button className="border mb-4 border-cyan-green rounded-md cursor-pointer text-cyan-green font-Montserrat text-md font-semibold lh_normal py-2 px-6 whitespace-nowrap">
                           Max Qty.
                         </button>
-                        <button className=" font-Montserrat text-[#040426] lg:text-lg text-[13px] font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal lg:py-3 py-2 px-8 whitespace-nowrap">
+                        <button className=" font-Montserrat text-[#040426] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal py-[10px] px-8 whitespace-nowrap">
                           Generate
                         </button>
                       </div>
