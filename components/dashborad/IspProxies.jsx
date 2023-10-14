@@ -11,7 +11,7 @@ const IspProxies = () => {
     ISP: (
       <div className="w-full bg-[#4FDCC7] rounded-lg p-4 mt-3">
         <div className="bg-[#7BF3E1] w-full rounded-lg ps-6 py-2 flex items-center hover:bg-white group transition-all min-h-[44px] ease-in-out duration-150">
-          <p className=" font-Montserrat transition-all ease-in-out duration-150 sm:text-2xl text-[15px] font-bold text-[#268375] mb-0 group-hover:text-black">
+          <p className=" font-Montserrat transition-all ease-in-out duration-150 text-[20px] font-bold text-[#268375] mb-0 group-hover:text-black">
             1 GB
           </p>
           <p className="text-[#35A091] transition-all ease-in-out duration-150 font-Montserrat text-sm font-semibold ms-3 mb-0 group-hover:text-[#7F7F86]">
@@ -19,7 +19,7 @@ const IspProxies = () => {
           </p>
         </div>
         <div className="bg-[#7BF3E1] w-full my-3 rounded-lg ps-6 py-2 flex items-center hover:bg-white group transition-all ease-in-out duration-150">
-          <p className=" font-Montserrat transition-all ease-in-out duration-150 sm:text-2xl text-[15px] font-bold text-[#268375] mb-0 group-hover:text-black">
+          <p className=" font-Montserrat transition-all ease-in-out duration-150 text-[20px] font-bold text-[#268375] mb-0 group-hover:text-black">
             1 GB
           </p>
           <p className="text-[#35A091] transition-all ease-in-out duration-150 font-Montserrat text-sm font-semibold ms-3 mb-0 group-hover:text-[#7F7F86]">
@@ -27,7 +27,7 @@ const IspProxies = () => {
           </p>
         </div>
         <div className="bg-[#7BF3E1] w-full my-3 rounded-lg ps-6 py-2 flex items-center hover:bg-white group transition-all ease-in-out duration-150">
-          <p className=" font-Montserrat transition-all ease-in-out duration-150 sm:text-2xl text-[15px] font-bold text-[#268375] mb-0 group-hover:text-black">
+          <p className=" font-Montserrat transition-all ease-in-out duration-150 text-[20px] font-bold text-[#268375] mb-0 group-hover:text-black">
             1 GB
           </p>
           <p className="text-[#35A091] transition-all ease-in-out duration-150 font-Montserrat text-sm font-semibold ms-3 mb-0 group-hover:text-[#7F7F86]">
@@ -38,7 +38,7 @@ const IspProxies = () => {
           <Link
             href="#"
             aria-label="CONTINUE"
-            className="text-[#050628] text-end group text-sm font-bold tracking-[1.1px] font-Montserrat flex items-center mn-0"
+            className="text-[#050628] text-end group sm:text-sm text-[11px] font-bold tracking-[1.1px] font-Montserrat flex items-center mn-0"
           >
             CONTINUE
             <svg
@@ -80,7 +80,7 @@ const IspProxies = () => {
     DC: (
       <div className="w-full bg-[#4FDCC7] rounded-lg p-4 mt-3">
         <div className="bg-[#7BF3E1] w-full rounded-lg ps-6 py-2 flex items-center hover:bg-white group transition-all ease-in-out duration-150">
-          <p className=" font-Montserrat transition-all ease-in-out duration-150 sm:text-2xl text-[15px] font-bold text-[#268375] mb-0 group-hover:text-black">
+          <p className=" font-Montserrat transition-all ease-in-out duration-150 text-[20px] font-bold text-[#268375] mb-0 group-hover:text-black">
             1 GB
           </p>
           <p className="text-[#35A091] transition-all ease-in-out duration-150 font-Montserrat text-sm font-semibold ms-3 mb-0 group-hover:text-[#7F7F86]">
@@ -88,7 +88,7 @@ const IspProxies = () => {
           </p>
         </div>
         <div className="bg-[#7BF3E1] w-full my-3 rounded-lg ps-6 py-2 flex items-center hover:bg-white group transition-all ease-in-out duration-150">
-          <p className=" font-Montserrat transition-all ease-in-out duration-150 sm:text-2xl text-[15px] font-bold text-[#268375] mb-0 group-hover:text-black">
+          <p className=" font-Montserrat transition-all ease-in-out duration-150 text-[20px] font-bold text-[#268375] mb-0 group-hover:text-black">
             1 GB
           </p>
           <p className="text-[#35A091] transition-all ease-in-out duration-150 font-Montserrat text-sm font-semibold ms-3 mb-0 group-hover:text-[#7F7F86]">
@@ -96,7 +96,7 @@ const IspProxies = () => {
           </p>
         </div>
         <div className="bg-[#7BF3E1] w-full rounded-lg ps-6 py-2 flex items-center hover:bg-white group transition-all ease-in-out duration-150">
-          <p className=" font-Montserrat transition-all ease-in-out duration-150 sm:text-2xl text-[15px] font-bold text-[#268375] mb-0 group-hover:text-black">
+          <p className=" font-Montserrat transition-all ease-in-out duration-150 text-[20px] font-bold text-[#268375] mb-0 group-hover:text-black">
             1 GB
           </p>
           <p className="text-[#35A091] transition-all ease-in-out duration-150 font-Montserrat text-sm font-semibold ms-3 mb-0 group-hover:text-[#7F7F86]">
@@ -107,7 +107,7 @@ const IspProxies = () => {
           <Link
             href="#"
             aria-label="CONTINUE"
-            className="text-[#050628] text-end group text-sm font-bold tracking-[1.1px] leading-normal font-Montserrat flex items-center mn-0"
+            className="text-[#050628] text-end group sm:text-sm text-[11px] font-bold tracking-[1.1px] leading-normal font-Montserrat flex items-center mn-0"
           >
             CONTINUE
             <svg
@@ -156,7 +156,7 @@ const IspProxies = () => {
             activeTab === "ISP"
               ? "bg-[#50EED7] rounded-[10px] !text-[#050628]"
               : "border-transparent"
-          }  py-[12px] pl-10 pr-10 text-white font-Montserrat font-bold text-[11px]
+          }  py-[12px] pl-10 pr-10 w-6/12 text-white font-Montserrat font-bold text-[11px]
           leading-normal whitespace-nowrap md:tracking-[1.1px]`}
         >
           ISP PROXIES
@@ -165,7 +165,7 @@ const IspProxies = () => {
           onClick={() => handleTabClick("DC")}
           className={`${
             activeTab === "DC"
-              ? "bg-[#50EED7] rounded-[10px] !text-[#050628]"
+              ? "bg-[#50EED7] w-6/12 rounded-[10px] !text-[#050628]"
               : "border-transparent"
           }   py-[12px] pl-9 pr-9 text-white font-Montserrat font-bold text-[11px]
           leading-normal whitespace-nowrap md:tracking-[1.1px]`}

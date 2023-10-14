@@ -31,8 +31,8 @@ const Dashboard2 = () => {
         </div>
       </div>
       <DashboardNav />
-      <div className="container xl:max-w-[1358px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
-        <p className="text-white font-Montserrat lg:block hidden font-bold tracking-[1.2px] mb-4 mt-10">
+      <div className="container lg:max-w-[1320px] mx-auto px_3 px_50 px-2 mb-16">
+        <p className="text-white font-Montserrat lg:block hidden font-bold tracking-[1.2px] mb-6 mt-10">
           ISP & DC ORDERS
         </p>
         <div className="flex justify-between items-center md:flex-row flex-col lg:pt-0 pt-8">
@@ -72,7 +72,7 @@ const Dashboard2 = () => {
           </div>
         </div>
         {/* box */}
-        <div className="bg-[#191941] overflow-hidden rounded-lg lg:p-8 p-6 lg:mt-12 mt-8 mb-[84px]">
+        <div className="bg-[#191941] overflow-hidden your_order relative rounded-lg lg:p-8 p-6 lg:mt-12 mt-8 mb-[84px]">
           <div className="flex md:items-center sm:items-start items-center justify-between">
             <div className="flex md:items-center md:flex-row flex-col">
               <p className="text-white font-Montserrat sm:text-md text-[12px] font-bold tracking-[1.4px]">
@@ -85,7 +85,7 @@ const Dashboard2 = () => {
                 500 PROXIES
               </p>
             </div>
-            <div className="flex items-center md:flex-row flex-col-reverse">
+            <div className="flex items-center md:flex-row flex-col-reverse pb-4">
               <p className="text-[#505082] font-Montserrat text-md font-bold tracking-[1.4px] ms-4 md:block hidden">
                 500 PROXIES
               </p>
@@ -97,7 +97,7 @@ const Dashboard2 = () => {
               </button>
             </div>
           </div>
-          <div className="flex flex-wrap pt-9 items-center lg:h-[305px] custom_scrollbar_y overflow-scroll">
+          <div className="flex flex-wrap pt-5 items-center lg:h-[305px] custom_scrollbar_y_2 lg:overflow-scroll">
             <div className="lg:w-4/12 md:w-6/12 w-full md:text-start text-center">
               <p className="text-[#9D9DBB] font-medium font-Montserrat xl:text-lg text-[12px] mb-2">
                 83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
