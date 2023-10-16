@@ -73,11 +73,12 @@ const DashboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
               Rewards
             </Link>
             <div className="flex items-center">
-              <Link href="https://discord.com/">
+              <Link href="https://discord.com/" aria-label="Discord">
                 <WhiteDiscord />
               </Link>
               <Link
                 href="https://twitter.com/"
+                aria-label="Twitter"
                 className="ms-5 hover:translate-y-[-5px] transition-all ease-in-out duration-200"
               >
                 <DashboardTweeter />
