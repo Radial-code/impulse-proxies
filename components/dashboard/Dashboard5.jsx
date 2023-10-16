@@ -3,6 +3,7 @@ import RangeBar from "./RangeBar";
 import DashboardNav from "./DashboardNav";
 import { DashboardFooter } from "./DashboardFooter";
 import { useRef } from "react";
+import { RewardData } from "../common/Helper";
 
 const Dashboard5 = () => {
   const copyText = () => {
@@ -61,39 +62,42 @@ const Dashboard5 = () => {
                     </div>
                   </div>
                   <div className="pt-[54px] ms-[-10px]">
-                    <div className="flex items-center">
-                      <Image
-                        height={22}
-                        width={22}
-                        src="/assets/images/svg/redeem_free_gb.svg"
-                        alt="redeem free"
-                      />
-                      <p className="ps-2 font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
-                        You won 1 GB free!
-                      </p>
-                    </div>
-                    <div className="pt-6 flex items-center">
-                      <Image
-                        height={22}
-                        width={22}
-                        src="/assets/images/svg/redeem_free_gb.svg"
-                        alt="redeem free"
-                      />
-                      <p className="ps-2 font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
-                        You won 5 GB free!
-                      </p>
-                    </div>
-                    <div className="pt-6 flex items-center">
-                      <Image
-                        height={22}
-                        width={22}
-                        src="/assets/images/svg/redeem_free_gb.svg"
-                        alt="redeem free"
-                      />
-                      <p className="ps-2 font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
-                        You won 10 GB free!
-                      </p>
-                    </div>
+                    {RewardData.length > 0 ? (
+                      <>
+                        {RewardData.map((item, i) => {
+                          return (
+                            <div
+                              className={`flex items-center ${
+                                i === 0 ? "" : "pt-6"
+                              }`}
+                              key={i}
+                            >
+                              <Image
+                                height={22}
+                                width={22}
+                                src="/assets/images/svg/redeem_free_gb.svg"
+                                alt="redeem free"
+                              />
+                              <p className="ps-2 font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
+                                {item.text}
+                              </p>
+                            </div>
+                          );
+                        })}
+                      </>
+                    ) : (
+                      <div className=" bg-[url('/assets/images/webp/Earned_Rewards.webp')] bg-no-repeat bg-cover bg-[0px] h-[233px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]">
+                        <h3 className="font-Montserrat font-bold text-xl leading-normal tracking-[1.7px] text-white">
+                          NO REWARDS WON
+                        </h3>
+                        <p className="font-Montserrat text-lg leading-normal sm:max-w-full max-w-[179px] text-center text-[#9D9DBB] sm:pt-4 py-3 sm:pb-6">
+                          To make an order, click the button below
+                        </p>
+                        <button className=" text-[#040426] w-[180px] h-[45px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold leading-normal tracking-[-0.32px] text-[16px] rounded-[10px]">
+                          Order Proxies
+                        </button>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>

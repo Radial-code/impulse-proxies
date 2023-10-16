@@ -22,9 +22,10 @@ const DashboardNav = () => {
       setIsToggleIconVisible(true);
     }
   }, [activeNavOverlay]);
-  // router
+  // ROUTER CODE HERE
   const router = useRouter();
-  const shouldDisplayContent = router.pathname === "/dashboardDataUsage";
+  console.log("router.query.typerouter.query.type", router.query.type);
+  const shouldDisplayContent = router.pathname === "/dashboard-data-usage";
   return (
     <>
       <DashboardMobileNav
@@ -60,30 +61,29 @@ const DashboardNav = () => {
               </div>
               <div className="hidden lg:block">
                 <div className="flex lg:gap-9 items-center">
-                  {/* </Link> */}
                   <Link
-                    href="#"
+                    href="/dashboard-data-usage?type=residential"
                     className={`text-[#5E5E80] hover:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0 ${
-                      router.pathname === "/dashboardDataUsage"
-                        ? "text-white"
-                        : ""
+                      router.query.type === "residential" ? "text-white" : ""
                     }`}
                   >
                     Residential
                   </Link>
                   <Link
-                    href="#"
+                    href="/dashboard-data-usage?type=isp-datacenter"
                     className={`text-[#5E5E80] hover:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0 ${
-                      router.pathname === "/dashboard" ? "text-white" : ""
+                      router.query.type === "isp-datacenter" ? "text-white" : ""
                     }`}
                   >
                     ISP & Datacenter
                   </Link>
                   <Link
-                    href="#"
-                    className="text-[#5E5E80] hover:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0 flex items-center gap-2 svg_fill"
+                    href="/dashboard-data-usage?type=rewards"
+                    className={`text-[#5E5E80] hover:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full hover:after:w-full relative after:bg-white overflow-hidden after:start-[50%] hover:after:start-[0%] active:after:start-0 after:bottom-0 flex items-center gap-2 svg_fill ${
+                      router.query.type === "rewards" ? "text-white" : ""
+                    }`}
                   >
-                    <span className="mb-1 ">
+                    <span className="mb-1">
                       <RewardGift />
                     </span>
                     Rewards

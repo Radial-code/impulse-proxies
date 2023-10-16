@@ -49,20 +49,40 @@ const Dashboard2 = () => {
                   ))}
                 </tr>
               </thead>
-
+              {console.log("data===>", data.length)}
               <tbody className="bg-[#151536]">
-                {data.map((rowData, rowIndex) => (
-                  <tr
-                    key={rowIndex}
-                    className="text-white font-Montserrat text-bold text-sm tracking-[-0.24px]"
-                  >
-                    {rowData.map((cellData, cellIndex) => (
-                      <td className="xl:p-5 p-4" key={cellIndex}>
-                        {cellData}
-                      </td>
+                {data.length > 0 ? (
+                  <>
+                    {data.map((rowData, rowIndex) => (
+                      <tr
+                        key={rowIndex}
+                        className="text-white font-Montserrat text-bold text-sm tracking-[-0.24px]"
+                      >
+                        {rowData.map((cellData, cellIndex) => (
+                          <td className="xl:p-5 p-4" key={cellIndex}>
+                            {cellData}
+                          </td>
+                        ))}
+                      </tr>
                     ))}
-                  </tr>
-                ))}
+                  </>
+                ) : (
+                  <div className="flex justify-center items-center py-12 md:min-h-[280px] min-h-[243px] lg:min-h-full">
+                    <div className="w-[413px]">
+                      <p className="text-center sm:text-[17px] text-[15px] font-Montserrat text-white font-bold leading-normal md:tracking-[1.7px] mb-0">
+                        NO CURRENT ORDERS
+                      </p>
+                      <p className="lg:pt-[10px] pt-1 text-[15px] text-center text-[#9D9DBB] font-Montserrat font-medium leading-normal mb-0">
+                        To make an order, click the button below
+                      </p>
+                      <div className="flex justify-center">
+                        <button className="lg:mt-6 mt-4 bg-white rounded-[10px] text-[#040426] py-3 px-9 font-Montserrat font-bold sm:text-base text-[14px] leading-normal md:tracking-[-0.32px] hover:bg-[#4FDCC7] hover:text-white transition-all">
+                          Order Proxies
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </tbody>
             </table>
           </div>
