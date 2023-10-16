@@ -1,4 +1,3 @@
-
 * {
   scroll-behavior: smooth;
 }
@@ -12,38 +11,38 @@
 }
 .arrowAnimation {
   -webkit-animation: arrowAnimat 2s infinite ease-in-out;
-          animation: arrowAnimat 2s infinite ease-in-out;
+  animation: arrowAnimat 2s infinite ease-in-out;
 }
-.spin{
+.spin {
   -webkit-animation: spin 3s infinite linear;
-          animation: spin 3s infinite linear;
+  animation: spin 3s infinite linear;
 }
 @-webkit-keyframes arrowAnimat {
   0% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   50% {
     -webkit-transform: translate(10px, -5px);
-            transform: translate(10px, -5px);
+    transform: translate(10px, -5px);
   }
   100% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 }
 @keyframes arrowAnimat {
   0% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
   50% {
     -webkit-transform: translate(10px, -5px);
-            transform: translate(10px, -5px);
+    transform: translate(10px, -5px);
   }
   100% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 }
 .linerBorder::before,
@@ -52,11 +51,32 @@
   position: absolute;
   inset: -1px;
   z-index: -1;
-  background: -webkit-gradient(linear,left top, left bottom,from(var(--angle)),color-stop(0%, #50eed7), color-stop(30%, #080d2d), color-stop(60%, #080d2d), to(#50eed7));
-  background: -o-linear-gradient(var(--angle),#50eed7 0%, #080d2d 30%, #080d2d 60%, #50eed7 100%);
-  background: linear-gradient(var(--angle),#50eed7 0%, #080d2d 30%, #080d2d 60%, #50eed7 100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--angle)),
+    color-stop(0%, #50eed7),
+    color-stop(30%, #080d2d),
+    color-stop(60%, #080d2d),
+    to(#50eed7)
+  );
+  background: -o-linear-gradient(
+    var(--angle),
+    #50eed7 0%,
+    #080d2d 30%,
+    #080d2d 60%,
+    #50eed7 100%
+  );
+  background: linear-gradient(
+    var(--angle),
+    #50eed7 0%,
+    #080d2d 30%,
+    #080d2d 60%,
+    #50eed7 100%
+  );
   -webkit-animation: rotate 15s linear infinite;
-          animation: rotate 15s linear infinite;
+  animation: rotate 15s linear infinite;
   border-radius: 25px;
 }
 @-webkit-keyframes rotate {
@@ -76,12 +96,24 @@
   }
 }
 .bgHeroImg::after {
-  background: -webkit-gradient(linear, left top, left bottom, from(#50eed7), to(#7becf3));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#50eed7),
+    to(#7becf3)
+  );
   background: -o-linear-gradient(top, #50eed7 0%, #7becf3 100%);
   background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
 }
 .chooseBox {
-  background: -webkit-gradient(linear, left top, left bottom, from(#50eed7), to(#7becf3));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#50eed7),
+    to(#7becf3)
+  );
   background: -o-linear-gradient(top, #50eed7 0%, #7becf3 100%);
   background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
 }
@@ -101,14 +133,14 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.bg_lg_your_order{
+.bg_lg_your_order {
   background-image: url("/assets/images/png/your_order_bg_lg.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
-.bg_sm_your_order{
-   background-image: url("/assets/images/png/bg_your_order_sm.png");
+.bg_sm_your_order {
+  background-image: url("/assets/images/png/bg_your_order_sm.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -141,67 +173,67 @@
   -webkit-user-select: none;
   -ms-user-select: none;
   -moz-user-select: none;
-       user-select: none; 
+  user-select: none;
 }
 .spin_about_img {
   -webkit-animation: spinimg 8s linear infinite;
-          animation: spinimg 8s linear infinite;
+  animation: spinimg 8s linear infinite;
 }
 @-webkit-keyframes spinimg {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes spinimg {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 .spin_about_img_2 {
   -webkit-animation: spinimg_2 8s linear infinite;
-          animation: spinimg_2 8s linear infinite;
+  animation: spinimg_2 8s linear infinite;
 }
 @-webkit-keyframes spinimg_2 {
   0% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 @keyframes spinimg_2 {
   0% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
   100% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
-@media (min-width:1280px) {
+@media (min-width: 1280px) {
   .custom_scrollbar_y_2::-webkit-scrollbar {
-  background-color: #424458 !important;
-  height: 4px;
-  width: 4px;
-  border-radius: 10px;
-}
-.custom_scrollbar_y_2::-webkit-scrollbar-thumb {
-  background-color: #fff !important;
-  border-radius: 10px;
-}
+    background-color: #424458 !important;
+    height: 4px;
+    width: 4px;
+    border-radius: 10px;
+  }
+  .custom_scrollbar_y_2::-webkit-scrollbar-thumb {
+    background-color: #fff !important;
+    border-radius: 10px;
+  }
 }
 @media (max-width: 490px) {
   .pb_64 {
@@ -269,10 +301,14 @@ input[type="number"]::-webkit-outer-spin-button {
     text-shadow: none;
   }
 }
+
 .svg_fill:hover .hover_color_change path {
-fill: #fff !important;
-transition: all 200ms ease-in-out !important;
+  fill: #fff !important;
+  transition: all 200ms ease-in-out !important;
 }
-.svg_fill .hover_color_change path {
-transition: all 200ms ease-in-out !important;
+.rewards-active path .svg_fill .hover_color_change path {
+  transition: all 200ms ease-in-out !important;
+}
+.rewards-active path {
+  fill: white !important;
 }
