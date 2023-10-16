@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Link from "next/link";
-import { DashboardTweeter, RewardGift, WhiteDiscord } from "../common/Icons";
+import { DashboardTweeter, WhiteDiscord } from "../common/Icons";
 import { useRouter } from "next/router";
 const DashboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   useEffect(() => {
@@ -41,7 +41,6 @@ const DashboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
       >
         <div className="2xl:w-full w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
           <div className="flex flex-col gap-9 xl:gap-5 lg:items-start items-center w-full">
-            {/* box */}
             <div
               className="bg-[#1D1D42] max-w-[327px] w-full py-4 sm:mt-16 mt-8 px-4 rounded-[10px] flex items-center justify-between"
               onClick={() => setActiveNavOverlay(false)}
@@ -52,25 +51,30 @@ const DashboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
               </p>
               <div className="rounded-full bg-white h-[37px] w-[37px] ms-7"></div>
             </div>
-            {/* </Link> */}
             <Link
-              href="#"
-              className="text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full relative after:bg-white overflow-hidden after:start-[50%] active:after:start-0 after:bottom-0"
               onClick={() => setActiveNavOverlay(false)}
+              href="/dashboard-data-usage?type=residential"
+              className={`text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full relative after:bg-white overflow-hidden after:start-[50%] active:after:start-0 after:bottom-0 ${
+                router.query.type === "residential" ? "text-white" : ""
+              }`}
             >
               Residential
             </Link>
             <Link
-              href="#"
-              className="text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full relative after:bg-white overflow-hidden after:start-[50%] active:after:start-0 after:bottom-0"
               onClick={() => setActiveNavOverlay(false)}
+              href="/dashboard-data-usage?type=isp-datacenter"
+              className={`text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full relative after:bg-white overflow-hidden after:start-[50%] active:after:start-0 after:bottom-0 ${
+                router.query.type === "isp-datacenter" ? "text-white" : ""
+              }`}
             >
               ISP & Datacenter
             </Link>
             <Link
-              href="#"
-              className="text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full relative after:bg-white overflow-hidden after:start-[50%] active:after:start-0 after:bottom-0 flex items-center gap-2"
               onClick={() => setActiveNavOverlay(false)}
+              href="/dashboard-data-usage?type=rewards"
+              className={`text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full relative after:bg-white overflow-hidden after:start-[50%] active:after:start-0 after:bottom-0 flex items-center gap-2 ${
+                router.query.type === "rewards" ? "text-white" : ""
+              }`}
             >
               <span className="mb-1">
                 {/* <RewardGift /> */}
