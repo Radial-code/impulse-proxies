@@ -5,9 +5,9 @@ import DashboardYourRewards from "@/components/dashboard/DashboardYourRewards";
 const dashboard = () => {
   return (
     <div>
-      <DashboardIspOrders />
-      <DashboardYourOrder />
-      <DashboardYourRewards />
+      {/* <DashboardIspOrders /> */}
+      {/* <DashboardYourOrder /> */}
+      {/* <DashboardYourRewards /> */}
       <DashboardReedemAll />
     </div>
   );
