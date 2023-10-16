@@ -65,6 +65,7 @@ const DropDown = () => {
           {options.map((option) => (
             <li
               key={option}
+              id={option.id}
               onClick={() => handleOptionClick()}
               className="block hover:opacity-70 cursor-pointer transition-all ease-in-out duration-200 px-4 my-3 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl"
               // Disable the option when selected

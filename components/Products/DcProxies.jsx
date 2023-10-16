@@ -47,7 +47,7 @@ const DcProxies = () => {
                 PROVIDER
               </p>
               <div className="w-full border-2 cursor-pointer border-white rounded-[10000px] sm:mt-[10px] mt-2 px-5 py-2">
-                <p className="text-sm font-Montserrat font-semibold text-white">
+                <p className="text-[14px] font-Montserrat font-semibold text-white">
                   Telecom
                 </p>
               </div>
