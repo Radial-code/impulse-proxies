@@ -1,7 +1,7 @@
 import Image from "next/image";
 import RangeBar from "./RangeBar";
 import DashboardNav from "./DashboardNav";
-import { DashbarFooter } from "./DashbarFooter";
+import { DashboardFooter } from "./DashboardFooter";
 import { useRef } from "react";
 
 const Dashboard5 = () => {

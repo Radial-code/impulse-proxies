@@ -1,7 +1,7 @@
-import React from 'react'
-import Dashboard5 from './Dashboard5';
-import { DashbarFooter } from './DashbarFooter';
-import DashboardNav from './DashboardNav';
+import React from "react";
+import Dashboard5 from "./Dashboard5";
+import { DashboardFooter } from "./DashboardFooter";
+import DashboardNav from "./DashboardNav";
 
 const DashboardReedemAll = () => {
   return (
@@ -11,10 +11,10 @@ const DashboardReedemAll = () => {
         <div className="dashboard_height overflow-y-auto custom_scrollbar_y">
           <Dashboard5 />
         </div>
-        <DashbarFooter />
+        <DashboardFooter />
       </div>
     </>
   );
-}
+};
 
 export default DashboardReedemAll;
