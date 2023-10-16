@@ -30,7 +30,7 @@ const YourOrderOne = () => {
           </div>
         </div>
         <div>
-          <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] text_14 leading-normal font-medium mt-6">
+          {/* <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] text_14 leading-normal font-medium mt-6">
             83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
           </p>
           <p className="text-[#9D9DBB] font-Montserrat sm:text-xl text-[12px] text_14 leading-normal font-medium mt-[6px]">
@@ -92,8 +92,42 @@ const YourOrderOne = () => {
           </p>
           <p className="text-[#9D9DBB] font-Montserrat sm:text-xl md:hidden text-[12px] text_14 leading-normal font-medium mt-[6px]">
             83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-          </p>
-          <div className="sm:flex lg:justify-end md:justify-center justify-end ">
+          </p> */}
+          <div className="flex justify-start">
+            <div className="your_order font-Montserrat xl:text-[15px] max-w-[250px] text-[12px] font-medium leading-normal mt-6 text-[#9D9DBB]">
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+            </div>
+          </div>
+          <div className="sm:flex  justify-end ">
             <p className="text-[#505082] font-Montserrat text-sm text-end leading-normal tracking-[1.2px] font-bold pt-6">
               500 PROXIES
             </p>

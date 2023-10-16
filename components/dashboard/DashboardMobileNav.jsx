@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Link from "next/link";
 import { DashboardTweeter, RewardGift, WhiteDiscord } from "../common/Icons";
-const DeshboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
+const DashboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 1023.98px)");
     function handleScreenSizeChange(event) {
@@ -30,11 +30,11 @@ const DeshboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   return (
     <>
       <div
-        className={`fixed ps-4 items-start lg:hidden bg-[#040426] lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-24 transition-all duration-200 ease-in z-[100] w-full sm:max-w-[100%] ${
+        className={`fixed items-start lg:hidden bg-[#040426] lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-24 transition-all duration-200 ease-in z-[100] w-[300px] ${
           activeNavOverlay ? "left-0" : "-left-full"
         }`}
       >
-        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
+        <div className="2xl:w-full w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
           <div className="flex flex-col gap-9 xl:gap-5 lg:items-start items-center w-full">
             {/* box */}
             <div
@@ -98,4 +98,4 @@ const DeshboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   );
 };
 
-export default DeshboardMobileNav;
+export default DashboardMobileNav;

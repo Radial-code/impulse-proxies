@@ -5,7 +5,7 @@ import { HeaderCrossIcons, ToggleIcon } from "./common/Icons";
 // import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Image from "next/image";
 import DropDown from "./DropDown";
-const Header  = ()  =>  {
+const Header = () => {
   const [activeNavOverlay, setActiveNavOverlay] = useState(false);
   const [isToggleIconVisible, setIsToggleIconVisible] = useState(true);
   useEffect(() => {
@@ -17,7 +17,6 @@ const Header  = ()  =>  {
       setIsToggleIconVisible(true);
     }
   }, [activeNavOverlay]);
-
 
   return (
     <>
@@ -56,10 +55,8 @@ const Header  = ()  =>  {
               <div className="hidden lg:block">
                 <div className="flex lg:gap-9 items-center">
                   <div className="relative   inline-block text-left">
-                    {/* Dropdown button */}
                     <DropDown />
                   </div>
-                  {/* </Link> */}
                   <Link
                     aria-label="AboutUs"
                     href="#AboutUs"
@@ -86,7 +83,7 @@ const Header  = ()  =>  {
               <div className="hidden lg:flex items-center">
                 <Link
                   aria-label="dashboard"
-                  href="/dashboard"
+                  href="/dashboard-data-usage?type=residential"
                   className="text-white font-Montserrat w-[197px] text-2xl font-semibold border-cyan-green border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]"
                 >
                   Dashboard
@@ -100,7 +97,7 @@ const Header  = ()  =>  {
                   onClick={() => setActiveNavOverlay(true)}
                   type="button"
                   className="w-[46px] inline-flex items-center justify-center rounded-md "
-                  aria-label="toggle buttn"
+                  aria-label="toggle-button"
                 >
                   <HeaderCrossIcons />
                 </button>
@@ -109,7 +106,7 @@ const Header  = ()  =>  {
                 <button
                   className="w-[30px] me-4"
                   onClick={() => setActiveNavOverlay(false)}
-                  aria-label="toggle buttn colose"
+                  aria-label="toggle-button"
                 >
                   <ToggleIcon />
                 </button>

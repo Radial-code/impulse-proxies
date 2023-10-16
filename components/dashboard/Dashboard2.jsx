@@ -1,7 +1,7 @@
 import React from "react";
 import DashboardNav from "./DashboardNav";
 import IspProxies from "./IspProxies";
-import { DashbarFooter } from "./DashbarFooter";
+import { DashboardFooter } from "./DashboardFooter";
 import Image from "next/image";
 const Dashboard2 = () => {
   const headings = [
@@ -30,13 +30,12 @@ const Dashboard2 = () => {
           </div>
         </div>
       </div>
-      <DashboardNav />
-      <div className="container lg:max-w-[1320px] mx-auto px_3 px_50 px-2 mb-16">
+      <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto mb-16">
         <p className="text-white font-Montserrat lg:block hidden font-bold tracking-[1.2px] mb-6 mt-10">
           ISP & DC ORDERS
         </p>
         <div className="flex justify-between items-center md:flex-row flex-col lg:pt-0 pt-8">
-          <div className="xl:w-[73%] lg:w-[60%] md:w-[58%] lg:max-h-[290px] max-h-[280px] w-full overflow-x-scroll custom_scrollbar_y xl:max-w-[955px]  md:max-w-[427px] lg:max-w-[720px] rounded-lg">
+          <div className="xl:w-[73%] 2xl:w-[60%] lg:w-[60%] md:w-[58%] lg:max-h-[290px] max-h-[280px] w-full overflow-x-scroll custom_scrollbar_y xl:max-w-[955px]  md:max-w-[427px] lg:max-w-[720px] rounded-lg">
             <table className="rounded-xl overflow-hidden">
               <thead className="bg-[#212148]">
                 <tr>
@@ -50,29 +49,48 @@ const Dashboard2 = () => {
                   ))}
                 </tr>
               </thead>
-
+              {console.log("data===>", data.length)}
               <tbody className="bg-[#151536]">
-                {data.map((rowData, rowIndex) => (
-                  <tr
-                    key={rowIndex}
-                    className="text-white font-Montserrat text-bold text-sm tracking-[-0.24px]"
-                  >
-                    {rowData.map((cellData, cellIndex) => (
-                      <td className="xl:p-5 p-4" key={cellIndex}>
-                        {cellData}
-                      </td>
+                {data.length > 0 ? (
+                  <>
+                    {data.map((rowData, rowIndex) => (
+                      <tr
+                        key={rowIndex}
+                        className="text-white font-Montserrat text-bold text-sm tracking-[-0.24px]"
+                      >
+                        {rowData.map((cellData, cellIndex) => (
+                          <td className="xl:p-5 p-4" key={cellIndex}>
+                            {cellData}
+                          </td>
+                        ))}
+                      </tr>
                     ))}
-                  </tr>
-                ))}
+                  </>
+                ) : (
+                  <div className="flex justify-center items-center py-12 md:min-h-[280px] min-h-[243px] lg:min-h-full">
+                    <div className="w-[413px]">
+                      <p className="text-center sm:text-[17px] text-[15px] font-Montserrat text-white font-bold leading-normal md:tracking-[1.7px] mb-0">
+                        NO CURRENT ORDERS
+                      </p>
+                      <p className="lg:pt-[10px] pt-1 text-[15px] text-center text-[#9D9DBB] font-Montserrat font-medium leading-normal mb-0">
+                        To make an order, click the button below
+                      </p>
+                      <div className="flex justify-center">
+                        <button className="lg:mt-6 mt-4 bg-white rounded-[10px] text-[#040426] py-3 px-9 font-Montserrat font-bold sm:text-base text-[14px] leading-normal md:tracking-[-0.32px] hover:bg-[#4FDCC7] hover:text-white transition-all">
+                          Order Proxies
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </tbody>
             </table>
           </div>
-          <div className="xl:w-[25%] lg:w-[36%] md:w-[40%] w-full md:mt-0 mt-9">
+          <div className="xl:w-[25%] 2xl:w-[38%] lg:w-[36%] md:w-[40%] w-full md:mt-0 mt-9">
             <IspProxies />
           </div>
         </div>
-        {/* box */}
-        <div className="bg-[#191941] overflow-hidden your_order relative rounded-lg lg:p-8 p-6 lg:mt-12 mt-8 mb-[84px]">
+        <div className="bg-[#191941] overflow-hidden flex flex-col your_order relative rounded-lg lg:p-8 p-6 lg:mt-12 mt-8 mb-[84px]">
           <div className="flex md:items-center justify-between">
             <div className="flex md:flex-row flex-col">
               <p className="text-white font-Montserrat sm:text-md text-[12px] font-bold tracking-[1.4px]">
@@ -97,8 +115,8 @@ const Dashboard2 = () => {
               </button>
             </div>
           </div>
-          <div className="flex flex-wrap pt-5 items-center lg:h-[305px] custom_scrollbar_y_2 lg:overflow-scroll">
-            <div className="lg:w-4/12 md:w-6/12 w-full md:text-start text-center">
+          <div className="flex flex-wrap pt-5 flex-col items-center lg:h-[305px] custom_scrollbar_y_2 lg:overflow-scroll">
+            {/* <div className="lg:w-4/12 md:w-6/12 w-full md:text-start text-center">
               <p className="text-[#9D9DBB] font-medium font-Montserrat xl:text-lg text-[12px] mb-2">
                 83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
               </p>
@@ -193,11 +211,44 @@ const Dashboard2 = () => {
               <p className="text-[#9D9DBB] font-medium font-Montserrat xl:text-lg text-[12px] mb-2">
                 83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
               </p>
+            </div> */}
+            <div className="flex justify-center">
+              <div className="your_order font-Montserrat xl:text-[15px] text-[12px] font-medium leading-normal  text-[#9D9DBB]">
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <DashbarFooter />
       <Image
         height={300}
         width={300}

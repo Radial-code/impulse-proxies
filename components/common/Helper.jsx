@@ -118,3 +118,16 @@ export const OurData = [
     para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
   },
 ];
+
+//REWARD DATA
+export const RewardData = [
+  {
+    text: "You won 1 GB free!",
+  },
+  {
+    text: "You won 5 GB free!",
+  },
+  {
+    text: "You won 10 GB free!",
+  },
+];

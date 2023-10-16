@@ -1,7 +1,7 @@
 import React from "react";
 import DashboardNav from "./DashboardNav";
 import IspProxies from "./IspProxies";
-import { DashbarFooter } from "./DashbarFooter";
+import { DashboardFooter } from "./DashboardFooter";
 
 const Dashboard3 = () => {
   return (
@@ -14,8 +14,7 @@ const Dashboard3 = () => {
             </div>
           </div>
         </div>
-        <DashboardNav />
-        <div className="container lg:max-w-[1320px] mx-auto px_3 px_50 px-8 mb-16">
+        <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
           <p className="lg:pt-[52px] pt-7 font-Montserrat text-[12px] font-bold text-white leading-normal md:tracking-[1.2px]">
             ISP & DC ORDERS
           </p>
@@ -160,7 +159,6 @@ const Dashboard3 = () => {
             </div>
           </div>
         </div>
-        <DashbarFooter />
       </div>
     </>
   );

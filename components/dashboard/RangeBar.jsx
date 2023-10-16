@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 const RangeBar = () => {
-  const [minRange, setMinRange] = useState(25);
+  const [minRange, setMinRange] = useState(22);
   const [maxRange, setMaxRange] = useState(100);
   const gap = 10;
   const handleInputChange = (e) => {
@@ -56,17 +56,7 @@ const RangeBar = () => {
                   onInput={handleInputChange}
                 />
               </span>
-              <span className="range-max-wrapper">
-                <input
-                  className="range-max"
-                  type="range"
-                  min="0"
-                  max="100"
-                  value={maxRange}
-                  onChange={handleMaxRangeChange}
-                  onInput={handleInputChange}
-                />
-              </span>
+            
             </div>
           </div>
           <div className="flex justify-between">

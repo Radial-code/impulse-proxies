@@ -1,9 +1,35 @@
 import Image from "next/image";
 import RangeBar from "./RangeBar";
 import DashboardNav from "./DashboardNav";
-import { DashbarFooter } from "./DashbarFooter";
+import { DashboardFooter } from "./DashboardFooter";
+import { useRef } from "react";
+import { RewardData } from "../common/Helper";
 
 const Dashboard5 = () => {
+  const copyText = () => {
+    const textToCopy = document.getElementById("textToCopy").innerText;
+
+    // Try to use the modern clipboard API
+    if (navigator.clipboard) {
+      navigator.clipboard
+        .writeText(textToCopy)
+        .then(() => {
+          alert("Text copied to clipboard!");
+        })
+        .catch((error) => {
+          console.error("Failed to copy text: ", error);
+        });
+    } else {
+      // For older browsers, fallback to the execCommand method
+      const textArea = document.createElement("textarea");
+      textArea.value = textToCopy;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textArea);
+      alert("Text copied to clipboard!");
+    }
+  };
   return (
     <>
       <div className="relative">
@@ -14,9 +40,8 @@ const Dashboard5 = () => {
             </div>
           </div>
         </div>
-        <DashboardNav />
         <div className="lg:pt-14 lg:pb-36 sm:pb-12 pb-[66px] sm:pt-9 pt-6">
-          <div className="container lg:max-w-[1320px] mx-auto px_3 px_50 px-8 ">
+          <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
             <RangeBar />
             <div className=" flex flex-wrap mt-9 lg:mt-12">
               <div className="w-full lg:w-6/12 px-3">
@@ -37,39 +62,42 @@ const Dashboard5 = () => {
                     </div>
                   </div>
                   <div className="pt-[54px] ms-[-10px]">
-                    <div className="flex items-center">
-                      <Image
-                        height={22}
-                        width={22}
-                        src="/assets/images/svg/redeem_free_gb.svg"
-                        alt="redeem free"
-                      />
-                      <p className="ps-2 font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
-                        You won 1 GB free!
-                      </p>
-                    </div>
-                    <div className="pt-6 flex items-center">
-                      <Image
-                        height={22}
-                        width={22}
-                        src="/assets/images/svg/redeem_free_gb.svg"
-                        alt="redeem free"
-                      />
-                      <p className="ps-2 font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
-                        You won 5 GB free!
-                      </p>
-                    </div>
-                    <div className="pt-6 flex items-center">
-                      <Image
-                        height={22}
-                        width={22}
-                        src="/assets/images/svg/redeem_free_gb.svg"
-                        alt="redeem free"
-                      />
-                      <p className="ps-2 font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
-                        You won 10 GB free!
-                      </p>
-                    </div>
+                    {RewardData.length > 0 ? (
+                      <>
+                        {RewardData.map((item, i) => {
+                          return (
+                            <div
+                              className={`flex items-center ${
+                                i === 0 ? "" : "pt-6"
+                              }`}
+                              key={i}
+                            >
+                              <Image
+                                height={22}
+                                width={22}
+                                src="/assets/images/svg/redeem_free_gb.svg"
+                                alt="redeem free"
+                              />
+                              <p className="ps-2 font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
+                                {item.text}
+                              </p>
+                            </div>
+                          );
+                        })}
+                      </>
+                    ) : (
+                      <div className=" bg-[url('/assets/images/webp/Earned_Rewards.webp')] bg-no-repeat bg-cover bg-[0px] h-[233px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]">
+                        <h3 className="font-Montserrat font-bold text-xl leading-normal tracking-[1.7px] text-white">
+                          NO REWARDS WON
+                        </h3>
+                        <p className="font-Montserrat text-lg leading-normal sm:max-w-full max-w-[179px] text-center text-[#9D9DBB] sm:pt-4 py-3 sm:pb-6">
+                          To make an order, click the button below
+                        </p>
+                        <button className=" text-[#040426] w-[180px] h-[45px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold leading-normal tracking-[-0.32px] text-[16px] rounded-[10px]">
+                          Order Proxies
+                        </button>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -85,15 +113,20 @@ const Dashboard5 = () => {
                       <p className=" text-[#7777AD] font-Montserrat leading-normal tracking-[-0.28px] text-md font-semibold">
                         Discount Code
                       </p>
-                      <p className=" text-white font-Montserrat text-md font-semibold ms-4 leading-normal tracking-[-0.28px]">
+                      <p
+                        id="textToCopy"
+                        className=" text-white font-Montserrat text-md font-semibold ms-4 leading-normal tracking-[-0.28px]"
+                      >
                         2729PAYJ1
                       </p>
                     </div>
                     <Image
+                      onClick={copyText}
                       height={21}
                       width={21}
                       src="/assets/images/svg/content_copy.svg"
                       alt="about image"
+                      className="cursor-pointer"
                     />
                   </div>
                   <p className=" font-Montserrat sm:text-[13px] text-[12px] md:text-lg font-medium leading-normal text-[#9D9DBB] md:max-w-[608px] max-w-[460px] sm:mt-5 mt-4">
@@ -126,7 +159,6 @@ const Dashboard5 = () => {
             </div>
           </div>
         </div>
-        <DashbarFooter />
       </div>
     </>
   );

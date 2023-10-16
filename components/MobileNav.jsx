@@ -68,7 +68,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
           </Link>
           <Link
             aria-label="dashboard"
-            href="/dashboard"
+            href="/dashboard-data-usage?type=residential"
             className="text-white font-Montserrat max-w-[330px] w-full sm:w-[210px]  sm:text-[3vw] text-[4vw] font-bold border-cyan-green border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]"
           >
             Dashboard

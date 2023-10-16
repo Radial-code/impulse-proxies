@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import DashboardNav from "./DashboardNav";
 import Image from "next/image";
-import { DashbarFooter } from "./DashbarFooter";
 import DataUsagesOne from "./DataUsagesOne";
 import ResidentialBoxOne from "./ResidentialBoxOne";
 import YourOrderOne from "./YourOrderOne";
@@ -30,29 +28,43 @@ const Dashboard1 = () => {
     left: `${(minRange / 100) * 100}%`,
     right: `${100 - (maxRange / 100) * 100}%`,
   };
-  // dropdown 
-    const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
-    const [selectedPeriod, setSelectedPeriod] = useState("United States");
-    const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
-    const [selectedProvider, setSelectedProvider] = useState("Residential");
-    const togglePeriodDropdown = () => {
-      setIsPeriodDropdownOpen(!isPeriodDropdownOpen);
-    };
-    const handlePeriodSelect = (period) => {
-      setSelectedPeriod(period);
-      setIsPeriodDropdownOpen(false);
-    };
-    const toggleProviderDropdown = () => {
-      setIsProviderDropdownOpen(!isProviderDropdownOpen);
-    };
-    const handleProviderSelect = (provider) => {
-      setSelectedProvider(provider);
-      setIsProviderDropdownOpen(false);
+  // dropdown
+  const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
+  const [selectedPeriod, setSelectedPeriod] = useState("United States");
+  const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
+  const [selectedProvider, setSelectedProvider] = useState("Residential");
+  const togglePeriodDropdown = () => {
+    setIsPeriodDropdownOpen(!isPeriodDropdownOpen);
   };
-  // range bar 
+  const handlePeriodSelect = (period) => {
+    setSelectedPeriod(period);
+    setIsPeriodDropdownOpen(false);
+  };
+  const toggleProviderDropdown = () => {
+    setIsProviderDropdownOpen(!isProviderDropdownOpen);
+  };
+  const handleProviderSelect = (provider) => {
+    setSelectedProvider(provider);
+    setIsProviderDropdownOpen(false);
+  };
+  // range bar
+  // const [value, setValue] = useState(500);
+  // const handleChange = (e) => {
+  //   setValue(e.target.value);
+  // };
+
   const [value, setValue] = useState(500);
+
   const handleChange = (e) => {
-    setValue(e.target.value);
+    const newValue = e.target.value;
+    setValue(newValue);
+    // Calculate the percentage value
+    const percentage = (newValue / 1000) * 100;
+    // Apply the dynamic background color to the range input
+    const rangeInput = document.querySelector(".range-input");
+    if (rangeInput) {
+      rangeInput.style.background = `linear-gradient(to right, #4FDCC7 0%, #4FDCC7 ${percentage}%, #3c3c6b ${percentage}%, #3c3c6b 100%)`;
+    }
   };
   return (
     <>
@@ -71,8 +83,7 @@ const Dashboard1 = () => {
           src="/assets/images/webp/Mockup_top_blur.webp"
           alt="Mockup_bg_blur"
         />
-        <DashboardNav />
-        <div className="container lg:max-w-[1320px] mx-auto px_3 px_50 px-8 mb-16">
+        <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
           <div className="flex flex-wrap lg:pt-[52px] pt-[32px]">
             <div className="lg:w-[58%] w-full">
               <div className="flex flex-wrap justify-between pb-2">
@@ -200,7 +211,7 @@ const Dashboard1 = () => {
                               max="1000"
                               value={value}
                               onChange={handleChange}
-                              className="custom-range w-full"
+                              className="custom-range w-full range-input"
                             />
                           </div>
                           <p className=" text-white font-Montserrat leading-normal text-sm pt-5 font-medium">
@@ -373,9 +384,7 @@ const Dashboard1 = () => {
             </div>
           </div>
         </div>
-        <div className="mb-8">
-          <DashbarFooter />
-        </div>
+        <div className="mb-8"></div>
       </div>
     </>
   );
