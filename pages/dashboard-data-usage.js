@@ -1,7 +1,7 @@
 import { DashboardFooter } from "@/components/dashboard/DashboardFooter";
-import Dashboard1 from "@/components/dashboard/Dashboard1";
 import DashboardNav from "@/components/dashboard/DashboardNav";
 import React from "react";
+// import Dashboard1 from "@/components/dashboard/Dashboard1"import Dashboard1 from "@/components/dashboard/Dashboard1";
 import Dashboard2 from "@/components/dashboard/Dashboard2";
 import Dashboard5 from "@/components/dashboard/Dashboard5";
 import { useRouter } from "next/router";

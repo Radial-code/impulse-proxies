@@ -40,9 +40,9 @@ const ImpulseAbout = () => {
                 key={about.id}
                 className={`lg:w-6/12 hover:translate-y-[-4%] duration-200 ease-in-out sm:w-10/12 w-full  rounded-[20px] p-[2px] inline-block lg:mt-0 relative max-w-[560px] 2xl:max-w-[648px] ${about.border}`}
               >
-                <div className="block rounded-[20px] w-full bg-[#080D2D] sm:ps-8 ps-4 pb-4  pt-4 sm:pe-6 pe-4">
-                  <div className="sm:flex items-start justify-between">
-                    <div className=" flex gap-6">
+                <div className="block rounded-[20px] w-full bg-[#080D2D] sm:ps-8 ps-4 pb-7 sm:pt-6 pt-4 sm:pe-6 pe-4">
+                  <div className="flex  w-full">
+                    <div className="flex items-start justify-between w-full">
                       <Image
                         height={81}
                         width={81}

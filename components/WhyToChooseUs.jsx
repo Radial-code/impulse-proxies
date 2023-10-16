@@ -12,15 +12,8 @@ function WhyToChooseUs() {
           src="/assets/images/webp/AbstractTrangle-02.webp"
           alt="Abstract"
         />
-        <Image
-          height={140}
-          width={140}
-          className="absolute sm:bottom-[-66px] bottom-[-45px] sm:right-[55px] spin right-[24px] z-[4] lg:w-[150px] md:h-[80px] lg:h-[172px] md:w-[92px] w-[66px] h-[57px]"
-          alt="AbstractCircle"
-          src="/assets/images/webp/AbstractCircle.webp"
-        />
-        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
-          <h2 className="font-Montserrat lg:text-[32px] text-[28px] text-white font-bold leading-[110%] text-center">
+        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 sm:py-0 py-2">
+          <h2 className="font-Montserrat sm:text-6xl text-[35px] text-white font-bold leading-[121%] text-center tracking-[-0.64px]">
             Why To Choose <span className="text-cyan-green">Us</span>
           </h2>
           <div className="flex justify-center flex-wrap 2xl:gap-0 lg:gap-5 lg:flex-nowrap lg:mt-[52px] md:mt-[13px] mt-2 min-h-[504px] md:min-h-[210px]">

@@ -34,7 +34,6 @@ const ImpulseFAQ = () => {
         src="/assets/images/svg/FaqBottom.svg"
         alt="FaqBottomimage"
         priority="1"
-        
       />
       <Image
         height={207}
@@ -42,7 +41,6 @@ const ImpulseFAQ = () => {
         className="pointer-events-none  absolute lg:top-[-15%] sm:top-[-10%] top-[-2%] end-[-10px] lg:end-0 sm:end-[-1%] lg:h-[207px] lg:w-[207px] sm:w-[120px] w-[73px]  sm:h-[175px] h-[60px]"
         src="/assets/images/svg/FaqRight.svg"
         alt="faqimage"
-        
       />
       <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 sm:pt-0 pt-3 sm:pb-0 pb-3  min-h-[490px] lg:min-h-[412px]">
         <p className="text-center lg:text-6xl text-[28px] mx-auto text-white sm:max-w-full max-w-[245px] font-Montserrat font-bold leading-[121%] tracking-[-0.74px] sm:mb-12 mb-7">
@@ -55,7 +53,7 @@ const ImpulseFAQ = () => {
             open={openAccordion === index}
           >
             <div onClick={() => toggleAccordion(index)} className="py-1 flex">
-              <h2 className="w-full flex justify-between cursor-pointer items-center text-white focus:outline-none font-Montserrat  md:text-[18px] text-[16px] font-bold leading-[130%] mb-0 text-start">
+              <h2 className="w-full flex justify-between items-center cursor-pointer text-white focus:outline-none font-Montserrat md:text-2xl sm:text-[17px] text-[15px] font-bold leading-[130%] mb-0 text-start">
                 {data.heading}
               </h2>
               <span>
@@ -65,8 +63,7 @@ const ImpulseFAQ = () => {
                     alt="minus"
                     width={30}
                     height={26}
-                    className=" cursor-pointer"
-                    
+                    className="cursor-pointer"
                   />
                 ) : (
                   <Image
@@ -74,8 +71,7 @@ const ImpulseFAQ = () => {
                     alt="add"
                     width={30}
                     height={26}
-                    className=" cursor-pointer"
-                    
+                    className="cursor-pointer"
                   />
                 )}
               </span>

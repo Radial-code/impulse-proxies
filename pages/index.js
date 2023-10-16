@@ -7,7 +7,6 @@ import Preloader from "@/components/common/Preloader";
 import PageMataTag from "@/components/PageMataTag";
 import Faqs from "@/components/Faqs";
 import Choose from "@/components/Choose";
-import Proxies from "@/components/Products/Proxies";
 export default function Home() {
   return (
     <>
@@ -15,6 +14,7 @@ export default function Home() {
       <PageMataTag />
       <div className="overflow-hidden">
         <BackToTopButton />
+        <Preloader />
         <Hero />
         <Choose />
         <OurProxies />
