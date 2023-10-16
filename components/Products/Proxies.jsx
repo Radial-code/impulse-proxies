@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import Image from "next/image";
-
-import IspProxies from "../dashborad/IspProxies";
 import DcProxies from "./DcProxies";
 import ResidentialProxies from "./ResidentialProxies";
 import ImpulseFooter from "../ImpulseFooter";
