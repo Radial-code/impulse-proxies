@@ -28,7 +28,7 @@ const ResidentialProxies = () => {
   return (
     <>
       <div className="relative">
-        <h2 className="font-interfacesBold sm:text-[45px] text-2xl text-center sm:py-10 py-7 text-white">
+        <h2 className="font-interfacesBold sm:text-[45px] text-2xl text-center sm:pb-10 sm:pt-7 py-7 text-white">
           Buy your<span className="text-[#50EED7] mx-1">Residential</span>
           proxies
         </h2>
@@ -47,7 +47,7 @@ const ResidentialProxies = () => {
                 PROVIDER
               </p>
               <div className="w-full border-2 cursor-pointer border-white rounded-[10000px] sm:mt-[10px] mt-2 px-5 py-2">
-                <p className="text-sm font-Montserrat font-semibold text-white">
+                <p className="text-[14px] font-Montserrat font-semibold text-white">
                   Telecom
                 </p>
               </div>
@@ -64,7 +64,7 @@ const ResidentialProxies = () => {
               >
                 <div className="flex justify-between items-center">
                   <p
-                    className={`text-sm font-Montserrat font-semibold text-white mb-0 ${
+                    className={`text-[14px] font-Montserrat font-semibold text-white mb-0 ${
                       isPeriodDropdownOpen ? "text-[#50EED7]" : ""
                     }`}
                   >
@@ -80,13 +80,13 @@ const ResidentialProxies = () => {
                 {isPeriodDropdownOpen && (
                   <div className="absolute start-0 z-10 bg-[#252550] border-white border-2 mt-2 w-full rounded-[10px] ">
                     <p
-                      className="text-sm font-Montserrat border-transparent border w-full rounded-[10px] hover:border-white hover:border font-semibold text-white mx-auto mb-0 text-center py-1 px-4 cursor-pointer"
+                      className="text-[14px] font-Montserrat border-transparent border w-full rounded-[10px] hover:border-white hover:border font-semibold text-white mx-auto mb-0 text-center py-1 px-4 cursor-pointer"
                       onClick={() => handlePeriodSelect("USA")}
                     >
                       USA
                     </p>
                     <p
-                      className="text-sm font-Montserrat font-semibold text-white mb-0 w-full border rounded-[10px]  border-transparent hover:border-white text-center mx-auto py-1 px-4 cursor-pointer"
+                      className="text-[14px] font-Montserrat font-semibold text-white mb-0 w-full border rounded-[10px]  border-transparent hover:border-white text-center mx-auto py-1 px-4 cursor-pointer"
                       onClick={() => handlePeriodSelect("Russia")}
                     >
                       Russia
@@ -108,7 +108,7 @@ const ResidentialProxies = () => {
             >
               <div className="flex justify-between items-center">
                 <p
-                  className={`text-sm font-Montserrat font-semibold text-white mb-0 ${
+                  className={`text-[14px] font-Montserrat font-semibold text-white mb-0 ${
                     isProviderDropdownOpen ? "text-[#50EED7]" : ""
                   }`}
                 >
@@ -124,13 +124,13 @@ const ResidentialProxies = () => {
               {isProviderDropdownOpen && (
                 <div className="absolute bg-[#252550] border-white start-0 border-2 w-full mt-2 z-10 rounded-[10px]">
                   <p
-                    className="text-sm font-Montserrat font-semibold text-white mb-0 mx-auto py-1 w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer"
+                    className="text-[14px] font-Montserrat font-semibold text-white mb-0 mx-auto py-1 w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer"
                     onClick={() => handleProviderSelect("Monthly")}
                   >
                     Monthly
                   </p>
                   <p
-                    className="text-sm font-Montserrat font-semibold text-white mb-0 py-1 mx-auto w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer"
+                    className="text-[14px] font-Montserrat font-semibold text-white mb-0 py-1 mx-auto w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer"
                     onClick={() => handleProviderSelect("Annually")}
                   >
                     Annually
@@ -152,7 +152,7 @@ const ResidentialProxies = () => {
             <p className="text-sm font-Montserrat font-medium text-white mb-0">
               500 Proxies
             </p>
-            <button className="bg-[#252550] rounded-xl sm:w-[164px] w-[120px] text-start px-[18px] font-Montserrat font-medium text-[13px] py-[10px]">
+            <button className="bg-[#252550] text-white rounded-xl sm:w-[164px] w-[120px] text-start px-[18px] font-Montserrat font-medium text-[13px] py-[10px]">
               500
             </button>
           </div>

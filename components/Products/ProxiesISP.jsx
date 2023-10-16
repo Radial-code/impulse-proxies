@@ -28,7 +28,7 @@ const ProxiesISP = () => {
   return (
     <>
       <div className="relative">
-        <h2 className=" sm:text-[45px] text-2xl text-center sm:py-10 py-7 text-white leading-[68px   ]">
+        <h2 className=" sm:text-[45px] text-2xl text-center sm:pb-10 sm:pt-7 py-7 text-white leading-[68px   ]">
           Buy your
           <span className="text-[#50EED7] mx-1">favorite</span>
           proxies
@@ -153,7 +153,7 @@ const ProxiesISP = () => {
             <p className="text-sm font-Montserrat font-medium text-white mb-0">
               500 Proxies
             </p>
-            <button className="bg-[#252550] rounded-xl sm:w-[164px] w-[120px] text-start px-[18px] font-Montserrat font-medium text-[13px] py-[10px]">
+            <button className="bg-[#252550] text-white rounded-xl sm:w-[164px] w-[120px] text-start px-[18px] font-Montserrat font-medium text-[13px] py-[10px]">
               500
             </button>
           </div>
