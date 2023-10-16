@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from "react";
 import Link from "next/link";
-import { DashboardTweeter, RewardGift, WhiteDiscord } from "../common/Icons";
+import { DashboardTweeter, WhiteDiscord } from "../common/Icons";
 import { useRouter } from "next/router";
 const DashboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   useEffect(() => {
