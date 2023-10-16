@@ -87,3 +87,61 @@ body {
     bottom: -317px !important;
   }
 }
+
+input[type="range"],
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font: inherit;
+}
+/* input  */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 16px;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 9px;
+  background: #206e63;
+  border-radius: 11px;
+}
+input[type="range"]::-moz-range-track {
+  height: 15px;
+  background: #ccc;
+  border-radius: 16px;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 11px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: #fff;
+  width: 18px;
+  height: 18px;
+  box-shadow: -407px 0 0 400px #4fdcc7;
+}
+input[type="range"]::-moz-range-thumb {
+  border-radius: 11px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: #fff;
+  width: 18px;
+  height: 18px;
+  box-shadow: -407px 0 0 400px #4fdcc7;
+}
+
+.mainLoginInput::-webkit-input-placeholder {
+  font-family: "Montserrat, sans-serif";
+  font-weight: 500;
+}
+ .custom_container {
+  max-width: 700px !important;
+}
+.bg_color_rgb{
+ background-color: rgba(80, 238, 215, 0.20);
+}
