@@ -131,3 +131,21 @@ export const RewardData = [
     text: "You won 10 GB free!",
   },
 ];
+
+export const Headings = [
+  "DOWNLOAD LIST",
+  "ORDER ID",
+  "PROXY TYPE",
+  "PROXY USERNAME",
+  "QUANTITY",
+  "EXPIRY DATE",
+  "RENEW LIST",
+];
+export const IspOrdersData = [
+  ["1232312123", "Datacenter", "Proxy1", "500", "05/06/2024", "12", "54"],
+  ["1232312123", "Datacenter", "Proxy1", "500", "05/06/2024", "12", "54"],
+  ["1232312123", "Datacenter", "Proxy1", "500", "05/06/2024", "12", "54"],
+  ["1232312123", "Datacenter", "Proxy1", "500", "05/06/2024", "12", "54"],
+  ["1232312123", "Datacenter", "Proxy1", "500", "05/06/2024", "12", "54"],
+  ["1232312123", "Datacenter", "Proxy1", "500", "05/06/2024", "12", "54"],
+];
