@@ -55,12 +55,12 @@ body {
   transition: height 0.3s ease-in-out;
 }
 /* dash board  */
-.dashboard_height{
+.dashboard_height {
   height: calc(100vh - 200px);
 }
 /* columns  */
-.your_order{
-   columns: 300px 3;
+.your_order {
+  columns: 300px 3;
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   .px_50 {
@@ -96,60 +96,28 @@ body {
   }
 }
 
-input[type="range"],
-input[type="range"]::-webkit-slider-runnable-track,
-input[type="range"]::-webkit-slider-thumb {
+/* styles.css */
+.range-input {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  font: inherit;
-}
-/* input  */
-input[type="range"] {
-  -webkit-appearance: none;
-  appearance: none;
   width: 100%;
-  cursor: pointer;
-  outline: none;
-  overflow: hidden;
-  border-radius: 16px;
-}
-input[type="range"]::-webkit-slider-runnable-track {
   height: 9px;
-  background: #206e63;
+  background: linear-gradient(
+    to right,
+    #4fdcc7 0%,
+    #4fdcc7 50%,
+    #3c3c6b 50%,
+    #3c3c6b 100%
+  );
+  outline: none;
   border-radius: 11px;
-}
-input[type="range"]::-moz-range-track {
-  height: 15px;
-  background: #ccc;
-  border-radius: 16px;
-}
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  border-radius: 11px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  background: #fff;
-  width: 18px;
-  height: 18px;
-  box-shadow: -407px 0 0 400px #4fdcc7;
-}
-input[type="range"]::-moz-range-thumb {
-  border-radius: 11px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  background: #fff;
-  width: 18px;
-  height: 18px;
-  box-shadow: -407px 0 0 400px #4fdcc7;
 }
 
-.mainLoginInput::-webkit-input-placeholder {
-  font-family: "Montserrat, sans-serif";
-  font-weight: 500;
-}
- .custom_container {
-  max-width: 700px !important;
-}
-.bg_color_rgb{
- background-color: rgba(80, 238, 215, 0.20);
+.range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #3c3c6b;
+  border: 1px solid #3c3c6b;
+  border-radius: 50%;
+  cursor: pointer;
 }
