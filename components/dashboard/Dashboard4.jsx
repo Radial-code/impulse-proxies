@@ -2,14 +2,14 @@ import { useState } from "react";
 import Image from "next/image";
 import RangeBar from "./RangeBar";
 import DashboardNav from "./DashboardNav";
-import { DashbarFooter } from "./DashbarFooter";
+import { DashboardFooter } from "./DashboardFooter";
 
-const DashboardThree = () => {
+const Dashboard4 = () => {
   const [value, setValue] = useState(50);
   const handleChange = (e) => {
     setValue(e.target.value);
   };
-  // copy text 
+  // copy text
   const copyText = () => {
     const textToCopy = document.getElementById("textToCopy").innerText;
 
@@ -144,4 +144,4 @@ const DashboardThree = () => {
   );
 };
 
-export default DashboardThree;
+export default Dashboard4;

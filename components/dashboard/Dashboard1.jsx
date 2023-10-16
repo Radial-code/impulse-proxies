@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import DashboardNav from "./DashboardNav";
 import Image from "next/image";
-import { DashbarFooter } from "./DashbarFooter";
 import DataUsagesOne from "./DataUsagesOne";
 import ResidentialBoxOne from "./ResidentialBoxOne";
 import YourOrderOne from "./YourOrderOne";

@@ -9,7 +9,7 @@ import {
   WhiteDiscord,
 } from "../common/Icons";
 import Image from "next/image";
-import DeshboardMobileNav from "./DeshboardMobileNav";
+import DashboardMobileNav from "./DashboardMobileNav";
 const DashboardNav = () => {
   const [activeNavOverlay, setActiveNavOverlay] = useState(false);
   const [isToggleIconVisible, setIsToggleIconVisible] = useState(true);
@@ -27,7 +27,7 @@ const DashboardNav = () => {
   const shouldDisplayContent = router.pathname === "/dashboardDataUsage";
   return (
     <>
-      <DeshboardMobileNav
+      <DashboardMobileNav
         activeNavOverlay={activeNavOverlay}
         add
         setActiveNavOverlay={setActiveNavOverlay}

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export const DashbarFooter = () => {
+export const DashboardFooter = () => {
   return (
     <>
       <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
@@ -40,3 +40,4 @@ export const DashbarFooter = () => {
     </>
   );
 };
+export default DashboardFooter;

@@ -1,7 +1,7 @@
-import React from 'react'
-import Dashboard2 from './Dashboard2'
-import DashboardNav from './DashboardNav';
-import { DashbarFooter } from './DashbarFooter';
+import React from "react";
+import Dashboard2 from "./Dashboard2";
+import DashboardNav from "./DashboardNav";
+import { DashboardFooter } from "./DashboardFooter";
 
 const DashboardIspOrders = () => {
   return (
@@ -11,10 +11,10 @@ const DashboardIspOrders = () => {
         <div className="dashboard_height overflow-y-auto custom_scrollbar_y">
           <Dashboard2 />
         </div>
-        <DashbarFooter />
+        <DashboardFooter />
       </div>
     </>
   );
-}
+};
 
-export default DashboardIspOrders
+export default DashboardIspOrders;

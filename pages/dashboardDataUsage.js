@@ -1,6 +1,6 @@
-import { DashbarFooter } from "@/components/dashborad/DashbarFooter";
-import Dashboard1 from "@/components/dashborad/Dashboard1";
-import DashboardNav from "@/components/dashborad/DashboardNav";
+import { DashboardFooter } from "@/components/dashboard/DashboardFooter";
+import Dashboard1 from "@/components/dashboard/Dashboard1";
+import DashboardNav from "@/components/dashboard/DashboardNav";
 import React from "react";
 const dashboardDataUsage = () => {
   return (
@@ -10,7 +10,7 @@ const dashboardDataUsage = () => {
         <div className="dashboard_height overflow-y-auto custom_scrollbar_y">
           <Dashboard1 />
         </div>
-        <DashbarFooter />
+        <DashboardFooter />
       </div>
     </>
   );
