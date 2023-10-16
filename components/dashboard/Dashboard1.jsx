@@ -48,9 +48,23 @@ const Dashboard1 = () => {
     setIsProviderDropdownOpen(false);
   };
   // range bar
+  // const [value, setValue] = useState(500);
+  // const handleChange = (e) => {
+  //   setValue(e.target.value);
+  // };
+
   const [value, setValue] = useState(500);
+
   const handleChange = (e) => {
-    setValue(e.target.value);
+    const newValue = e.target.value;
+    setValue(newValue);
+    // Calculate the percentage value
+    const percentage = (newValue / 1000) * 100;
+    // Apply the dynamic background color to the range input
+    const rangeInput = document.querySelector(".range-input");
+    if (rangeInput) {
+      rangeInput.style.background = `linear-gradient(to right, #4FDCC7 0%, #4FDCC7 ${percentage}%, #3c3c6b ${percentage}%, #3c3c6b 100%)`;
+    }
   };
   return (
     <>
@@ -197,7 +211,7 @@ const Dashboard1 = () => {
                               max="1000"
                               value={value}
                               onChange={handleChange}
-                              className="custom-range w-full"
+                              className="custom-range w-full range-input"
                             />
                           </div>
                           <p className=" text-white font-Montserrat leading-normal text-sm pt-5 font-medium">
