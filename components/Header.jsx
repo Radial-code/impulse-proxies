@@ -55,10 +55,8 @@ const Header = () => {
               <div className="hidden lg:block">
                 <div className="flex lg:gap-9 items-center">
                   <div className="relative   inline-block text-left">
-                    {/* Dropdown button */}
                     <DropDown />
                   </div>
-                  {/* </Link> */}
                   <Link
                     aria-label="AboutUs"
                     href="#AboutUs"

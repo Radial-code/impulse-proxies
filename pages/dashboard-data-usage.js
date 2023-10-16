@@ -21,11 +21,9 @@ const DashboardDataUsage = () => {
             <Dashboard1 />
           ) : router.query.type === "isp-datacenter" ? (
             <Dashboard2 />
-          ) : // <Dashboard3 />
-          router.query.type === "rewards" ? (
+          ) : router.query.type === "rewards" ? (
             <Dashboard5 />
           ) : (
-            // <Dashboard5 />
             ""
           )}
         </div>
