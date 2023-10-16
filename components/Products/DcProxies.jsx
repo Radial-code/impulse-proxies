@@ -149,7 +149,7 @@ const DcProxies = () => {
             <input type="range" className="outline-none" />
           </div>
           <div className="sm:pt-3 pt-2 flex justify-between items-center">
-            <p className="text-xs font-Montserrat font-medium text-white mb-0">
+            <p className=" text-sm font-Montserrat font-medium text-white mb-0">
               500 Proxies
             </p>
             <button className="bg-[#252550] rounded-xl sm:w-[164px] w-[120px] text-start px-[18px] font-Montserrat font-medium text-[13px] py-[10px]">

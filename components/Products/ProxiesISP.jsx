@@ -48,7 +48,7 @@ const ProxiesISP = () => {
                 PROVIDER
               </p>
               <div className="w-full border-2 cursor-pointer border-white rounded-[10000px] sm:mt-[10px] mt-2 px-5 py-2">
-                <p className="text-sm font-Montserrat font-semibold text-white">
+                <p className="text-[14px] font-Montserrat font-semibold text-white">
                   Telecom
                 </p>
               </div>
@@ -65,7 +65,7 @@ const ProxiesISP = () => {
               >
                 <div className="flex justify-between items-center">
                   <p
-                    className={`text-sm font-Montserrat font-semibold text-white mb-0 ${
+                    className={`text-[14px] font-Montserrat font-semibold text-white mb-0 ${
                       isPeriodDropdownOpen ? "text-[#50EED7]" : ""
                     }`}
                   >
@@ -87,7 +87,7 @@ const ProxiesISP = () => {
                       USA
                     </p>
                     <p
-                      className="text-sm font-Montserrat font-semibold text-white mb-0 w-full border border-transparent hover:border-white rounded-[10px] text-center mx-auto py-1 px-4 cursor-pointer"
+                      className="text-[14] font-Montserrat font-semibold text-white mb-0 w-full border border-transparent hover:border-white rounded-[10px] text-center mx-auto py-1 px-4 cursor-pointer"
                       onClick={() => handlePeriodSelect("Russia")}
                     >
                       Russia
@@ -109,7 +109,7 @@ const ProxiesISP = () => {
             >
               <div className="flex justify-between items-center">
                 <p
-                  className={`text-sm font-Montserrat font-semibold text-white mb-0 ${
+                  className={`text-[14px] font-Montserrat font-semibold text-white mb-0 ${
                     isProviderDropdownOpen ? "text-[#50EED7]" : ""
                   }`}
                 >
@@ -125,13 +125,13 @@ const ProxiesISP = () => {
               {isProviderDropdownOpen && (
                 <div className="absolute bg-[#252550] border-white start-0 border-2 w-full mt-2 z-10 rounded-[10px]">
                   <p
-                    className="text-sm font-Montserrat font-semibold text-white mb-0 mx-auto py-1 w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer"
+                    className="text-[14xp] font-Montserrat font-semibold text-white mb-0 mx-auto py-1 w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer"
                     onClick={() => handleProviderSelect("Monthly")}
                   >
                     Monthly
                   </p>
                   <p
-                    className="text-sm font-Montserrat font-semibold text-white mb-0 py-1 mx-auto w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer"
+                    className="text-[14px] font-Montserrat font-semibold text-white mb-0 py-1 mx-auto w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer"
                     onClick={() => handleProviderSelect("Annually")}
                   >
                     Annually
@@ -150,7 +150,7 @@ const ProxiesISP = () => {
             <input type="range" className="outline-none" />
           </div>
           <div className="sm:pt-3 pt-2 flex justify-between items-center">
-            <p className="text-xs font-Montserrat font-medium text-white mb-0">
+            <p className="text-sm font-Montserrat font-medium text-white mb-0">
               500 Proxies
             </p>
             <button className="bg-[#252550] rounded-xl sm:w-[164px] w-[120px] text-start px-[18px] font-Montserrat font-medium text-[13px] py-[10px]">
