@@ -131,7 +131,7 @@ const DashboardNav = () => {
                 )}
                 {!isToggleIconVisible && (
                   <button
-                    className="w-[30px] sm:me-14 sm:translate-x-[157%]"
+                    className="w-[22px] h-[33px] sm:me-14 sm:translate-x-[157%]"
                     onClick={() => setActiveNavOverlay(false)}
                   >
                     <ToggleIcon />
