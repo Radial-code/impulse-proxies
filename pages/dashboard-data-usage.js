@@ -3,8 +3,6 @@ import Dashboard1 from "@/components/dashboard/Dashboard1";
 import DashboardNav from "@/components/dashboard/DashboardNav";
 import React from "react";
 import Dashboard2 from "@/components/dashboard/Dashboard2";
-import Dashboard3 from "@/components/dashboard/Dashboard3";
-import Dashboard4 from "@/components/dashboard/Dashboard4";
 import Dashboard5 from "@/components/dashboard/Dashboard5";
 import { useRouter } from "next/router";
 
