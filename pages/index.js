@@ -11,10 +11,10 @@ import Proxies from "@/components/Products/Proxies";
 export default function Home() {
   return (
     <>
+      <Preloader />
       <PageMataTag />
       <div className="overflow-hidden">
         <BackToTopButton />
-        <Preloader />
         <Hero />
         <Choose />
         <OurProxies />
