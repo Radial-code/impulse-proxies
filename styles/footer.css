@@ -96,19 +96,19 @@
   background: linear-gradient(113deg, #151536 35.26%, #393969 182.89%);
 }
 .bg_your_order {
-  background-image: url("/assets/images/png/your_order_bg.png");
+  background-image: url("/assets/images/webp/your_order_bg.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 .bg_lg_your_order{
-  background-image: url("/assets/images/png/your_order_bg_lg.png");
+  background-image: url("/assets/images/webp/your_order_bg_lg.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 .bg_sm_your_order{
-   background-image: url("/assets/images/png/bg_your_order_sm.png");
+   background-image: url("/assets/images/webp/bg_your_order_sm.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
