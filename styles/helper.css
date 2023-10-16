@@ -334,3 +334,6 @@
     bottom: -100px !important;
   }
 }
+.bg_color_rgb{
+  background-color: rgba(80, 238, 215, 0.20) !important;
+}

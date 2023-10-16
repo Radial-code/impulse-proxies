@@ -133,24 +133,14 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-<<<<<<< HEAD
 .bg_lg_your_order{
   background-image: url("/assets/images/webp/your_order_bg_lg.webp");
-=======
-.bg_lg_your_order {
-  background-image: url("/assets/images/png/your_order_bg_lg.png");
->>>>>>> a9ca64f859b018ce37b2f9d271ce800f293fc3e0
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
-<<<<<<< HEAD
 .bg_sm_your_order{
    background-image: url("/assets/images/webp/bg_your_order_sm.webp");
-=======
-.bg_sm_your_order {
-  background-image: url("/assets/images/png/bg_your_order_sm.png");
->>>>>>> a9ca64f859b018ce37b2f9d271ce800f293fc3e0
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
