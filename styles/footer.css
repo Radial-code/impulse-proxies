@@ -133,14 +133,14 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-.bg_lg_your_order{
+.bg_lg_your_order {
   background-image: url("/assets/images/webp/your_order_bg_lg.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
-.bg_sm_your_order{
-   background-image: url("/assets/images/webp/bg_your_order_sm.webp");
+.bg_sm_your_order {
+  background-image: url("/assets/images/webp/bg_your_order_sm.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-// import IspProxies from "../dashborad/IspProxies";
+import IspProxies from "../dashborad/IspProxies";
 import DcProxies from "./DcProxies";
 import ResidentialProxies from "./ResidentialProxies";
 import ImpulseFooter from "../ImpulseFooter";
@@ -13,9 +13,9 @@ const Proxies = () => {
     setActiveTab(tab);
   };
   const tabContent = {
-    ISP:<ProxiesISP/>,
-    DC: <DcProxies/>,
-    Residential: <ResidentialProxies/> ,
+    ISP: <ProxiesISP />,
+    DC: <DcProxies />,
+    Residential: <ResidentialProxies />,
   };
   return (
     <>
@@ -68,7 +68,7 @@ const Proxies = () => {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       
         <ImpulseFooter />
       </div>

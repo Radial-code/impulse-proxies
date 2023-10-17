@@ -33,7 +33,7 @@ const Dashboard2 = () => {
               </thead>
               {console.log("data===>", IspOrdersData.length)}
               <tbody className="bg-[#151536]">
-                {!IspOrdersData.length > 0 ? (
+                {IspOrdersData.length > 0 ? (
                   <>
                     {IspOrdersData.map((rowData, rowIndex) => (
                       <tr
@@ -49,7 +49,7 @@ const Dashboard2 = () => {
                     ))}
                   </>
                 ) : (
-                  <div className="flex justify-center items-center py-12 md:min-h-[280px] min-h-[243px] !lg:min-h-full">
+                  <div className="flex justify-center items-center py-12 md:min-h-[280px] min-h-[243px] lg:min-h-full">
                     <div className="w-[413px]">
                       <p className="text-center sm:text-[17px] text-[15px] font-Montserrat text-white font-bold leading-normal md:tracking-[1.7px] mb-0">
                         NO CURRENT ORDERS

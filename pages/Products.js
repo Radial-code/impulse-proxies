@@ -1,12 +1,12 @@
-import Proxies from '@/components/Products/Proxies'
-import React from 'react'
+import Proxies from "@/components/Products/Proxies";
+import React from "react";
 
-const Products = () => {
+const products = () => {
   return (
     <>
-     <Proxies/> 
+      <Proxies />
     </>
-  )
-}
+  );
+};
 
-export default Products
+export default products;
