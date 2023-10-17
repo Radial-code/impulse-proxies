@@ -1,7 +1,5 @@
 import { createContext, useContext, useRef, useState } from "react";
-
 export const GlobalInfo = createContext();
-
 export function useGlobalInfoProvider() {
   return useContext(GlobalInfo);
 }
