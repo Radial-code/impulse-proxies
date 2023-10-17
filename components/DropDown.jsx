@@ -1,10 +1,16 @@
-
 import React, { useState, useRef, useEffect } from "react";
+import { useGlobalInfoProvider } from "./common/Provider";
+import Link from "next/link";
 const DropDown = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
-  const options = ["ISP Proxies", "Datacenter Proxies", "Residential Proxies"];
+  const options = [
+    { heading: "ISP Proxies", state: "ISP" },
+    { heading: "Datacenter Proxies", state: "DC" },
+    { heading: "Residential Proxies", state: "Residential" },
+  ];
   const dropdownRef = useRef(null);
+  const { activeTab, setActiveTab } = useGlobalInfoProvider();
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -12,8 +18,9 @@ const DropDown = () => {
   const closeDropdown = () => {
     setIsOpen(false);
   };
-  const handleOptionClick = () => {
+  const handleOptionClick = (value) => {
     // If the dropdown is open, select the option and close it
+    setActiveTab(value);
     if (isOpen) {
       setSelectedOption();
       closeDropdown();
@@ -63,17 +70,18 @@ const DropDown = () => {
           ref={dropdownRef}
           className="absolute z-20 w-60 mt-2 py-2 bg-[#040426] rounded-lg shadow-lg border-white border"
         >
-          {options.map((option,i) => (
-            <li
-              key={option}
-              id={option.id}
-              onClick={() => handleOptionClick()}
-              className="block hover:opacity-70 cursor-pointer transition-all ease-in-out duration-200 px-4 my-3 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl"
-              // Disable the option when selected
-              // disabled={option === selectedOption}
-            >
-              {option}
-            </li>
+          {options.map((option, i) => (
+            <Link href="/products" key={i}>
+              <li
+                id={i++}
+                onClick={() => handleOptionClick(option.state)}
+                className="block hover:opacity-70 cursor-pointer transition-all ease-in-out duration-200 px-4 my-3 text-white font-semibold tracking-[-0.38px] leading-[150%] font-Montserrat text-2xl"
+                // Disable the option when selected
+                // disabled={option === selectedOption}
+              >
+                {option.heading}
+              </li>
+            </Link>
           ))}
         </ul>
       )}
