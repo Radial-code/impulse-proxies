@@ -92,25 +92,18 @@ const Header = () => {
             </div>
             <div className="flex items-center lg:hidden relative z-[200] sm:me-0 ">
               <div className="border_gradient h-[27px] mx-6 lg:mx-3"></div>
-              {isToggleIconVisible && (
-                <button
-                  onClick={() => setActiveNavOverlay(true)}
-                  type="button"
-                  className="w-[46px] inline-flex items-center justify-center rounded-md "
-                  aria-label="toggle-button"
-                >
-                  <HeaderCrossIcons />
-                </button>
-              )}
-              {!isToggleIconVisible && (
-                <button
-                  className="w-[30px] me-4"
-                  onClick={() => setActiveNavOverlay(false)}
-                  aria-label="toggle-button"
-                >
-                  <ToggleIcon />
-                </button>
-              )}
+              <button
+                onClick={() => setActiveNavOverlay(!activeNavOverlay)}
+                type="button"
+                className={` inline-flex items-center justify-center rounded-md ${
+                  !isToggleIconVisible ? "w-[30px]" : "w-[46px]"
+                } `}
+                aria-label="toggle-button"
+              >
+                {" "}
+                {isToggleIconVisible ? <HeaderCrossIcons /> : <ToggleIcon />}
+              </button>
+           
             </div>
           </div>
         </div>

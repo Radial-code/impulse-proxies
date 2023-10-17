@@ -1,5 +1,27 @@
 import React from 'react'
-
+const copyText = () => {
+  const textToCopy = document.getElementById("textToCopy").innerText;
+  // Try to use the modern clipboard API
+  if (navigator.clipboard) {
+    navigator.clipboard
+      .writeText(textToCopy)
+      .then(() => {
+        alert("Text copied to clipboard!");
+      })
+      .catch((error) => {
+        console.error("Failed to copy text: ", error);
+      });
+  } else {
+    // For older browsers, fallback to the execCommand method
+    const textArea = document.createElement("textarea");
+    textArea.value = textToCopy;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textArea);
+    alert("Text copied to clipboard!");
+  }
+};
 const YourOrderOne = () => {
   return (
     <>
@@ -24,14 +46,20 @@ const YourOrderOne = () => {
             <button className="text-[#7777AD] bg-[#292956] transition-all duration-150 hover:bg-[#50EED7] hover:text-[#040426] rounded-md text_12 font-Montserrat text-md font-semibold tracking-[-0.28px] px-4 py-2">
               Download.txt
             </button>
-            <button className="text-[#040426] sm:mt-0 mt-3 bg-white transition-all duration-150 hover:bg-[#50EED7] rounded-md font-Montserrat !text-xs md:text-md font-bold tracking-[-0.28px] px-3.5 py-2 sm:ms-4">
+            <button
+              onClick={copyText}
+              className="text-[#040426] sm:mt-0 mt-3 bg-white transition-all duration-150 hover:bg-[#50EED7] rounded-md font-Montserrat text-xs xl:text-md font-bold tracking-[-0.28px] px-3.5 py-2 sm:ms-4"
+            >
               Copy to Clipboard
             </button>
           </div>
         </div>
         <div>
           <div className="flex justify-start">
-            <div className="your_order font-Montserrat xl:text-[15px] max-w-[250px] text-[12px] font-medium leading-normal mt-6 text-[#9D9DBB]">
+            <div
+              id="textToCopy"
+              className="your_order font-Montserrat xl:text-[15px] max-w-[250px] text-[12px] font-medium leading-normal mt-6 text-[#9D9DBB]"
+            >
               83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
               83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
               83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
