@@ -5,6 +5,7 @@ const DropDown = () => {
   const [selectedOption, setSelectedOption] = useState(null);
   const options = ["ISP Proxies", "Datacenter Proxies", "Residential Proxies"];
   const dropdownRef = useRef(null);
+
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
@@ -62,7 +63,7 @@ const DropDown = () => {
           ref={dropdownRef}
           className="absolute z-20 w-60 mt-2 py-2 bg-[#040426] rounded-lg shadow-lg border-white border"
         >
-          {options.map((option) => (
+          {options.map((option,i) => (
             <li
               key={option}
               id={option.id}
