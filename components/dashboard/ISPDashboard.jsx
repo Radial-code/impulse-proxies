@@ -2,10 +2,32 @@ import React from "react";
 import IspProxies from "./IspProxies";
 import Image from "next/image";
 import { Headings, IspOrdersData } from "../common/Helper";
-
+const copyText = () => {
+  const textToCopy = document.getElementById("textToCopy").innerText;
+  // Try to use the modern clipboard API
+  if (navigator.clipboard) {
+    navigator.clipboard
+      .writeText(textToCopy)
+      .then(() => {
+        alert("Text copied to clipboard!");
+      })
+      .catch((error) => {
+        console.error("Failed to copy text: ", error);
+      });
+  } else {
+    // For older browsers, fallback to the execCommand method
+    const textArea = document.createElement("textareA");
+    textArea.value = textToCopy;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textArea);
+    alert("Text copied to clipboard!");
+  }
+};
 const ISPDashboard = () => {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden ">
       <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
         <div className="hero_wave">
           <div className="hero_wave_height">
@@ -18,7 +40,7 @@ const ISPDashboard = () => {
           ISP & DC ORDERS
         </p>
         <div className="flex justify-between items-center md:flex-row flex-col lg:pt-0 pt-8">
-          <div className="xl:w-[73%] 2xl:w-[60%] lg:w-[60%] md:w-[58%] lg:max-h-[290px] max-h-[280px] w-full overflow-x-scroll custom_scrollbar_y xl:max-w-[955px]  md:max-w-[427px] lg:max-w-[720px] rounded-lg">
+          <div className="xl:w-[73%] 2xl:w-[60%] lg:w-[60%] md:w-[58%] lg:max-h-[290px] max-h-[280px] w-full overflow-x-scroll custom_scrollbar_y xl:max-w-[965px]  md:max-w-[427px] lg:max-w-[720px]  rounded-lg">
             <table className="rounded-xl overflow-hidden">
               <thead className="bg-[#212148]">
                 <tr>
@@ -93,7 +115,10 @@ const ISPDashboard = () => {
               <button className="md:px-[15px] px-[22px] py-[11px] bg-[#292956] rounded-md text-[#7777AD] font-Montserrat font-semibold sm:text-md text-[12px] tracking-[-0.28px] sm:mx-6 md:mt-0 mt-4 hover:bg-[#4FDCC7] hover:text-[#040426] ease-out duration-150 transition-all">
                 Download .txt
               </button>
-              <button className="px-[14px] py-[11px] font-Montserrat bg-white font-bold tracking-[-0.28px] hover:bg-[#4FDCC7] text-[#040426] rounded-md ease-out md:text-[14px] text-[12px]  duration-150 transition-all">
+              <button
+                id="textToCopy"
+                className="px-[14px] py-[11px] font-Montserrat bg-white font-bold tracking-[-0.28px] hover:bg-[#4FDCC7] text-[#040426] rounded-md ease-out md:text-[14px] text-[12px]  duration-150 transition-all"
+              >
                 Copy to Clipboard
               </button>
             </div>

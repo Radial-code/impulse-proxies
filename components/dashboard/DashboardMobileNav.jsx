@@ -40,7 +40,7 @@ const DashboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
         }`}
       >
         <div className="2xl:w-full w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
-          <div className="flex flex-col gap-9 xl:gap-5 lg:items-start items-center w-full">
+          <div className="flex flex-col gap-6 xl:gap-5 lg:items-start items-center w-full">
             <div
               className="bg-[#1D1D42] max-w-[327px] w-full py-4 sm:mt-16 mt-8 px-4 rounded-[10px] flex items-center justify-between"
               onClick={() => setActiveNavOverlay(false)}

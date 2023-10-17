@@ -86,21 +86,21 @@ const Dashboard1 = () => {
         <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
           <div className="flex flex-wrap lg:pt-[52px] pt-[32px]">
             <div className="lg:w-[58%] w-full">
-              <div className="flex flex-wrap justify-between pb-2">
+              <div className="flex flex-wrap justify-center md:justify-between pb-2">
                 <DataUsagesOne />
                 <ResidentialBoxOne />
               </div>
-              <div className="rounded-lg overflow-hidden mt-12 lg:block hidden">
-                <div className="bg-[#212148] ps-8 py-4">
+              <div className="rounded-lg overflow-hidden mt-12 lg:block hidden GENERATE_PROXIES_box pb-[52px]">
+                <div className="bg-[#212148] ps-8 py-5">
                   <p className="mb-0 text-white text-md font-Montserrat leading-normal font-bold tracking-[1.4px]">
                     GENERATE PROXIES
                   </p>
                 </div>
-                <div className="bg-[#17173A] pt-5 ps-8 pe-12">
+                <div className="pt-5 ps-8 pe-12">
                   <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
                     Region
                   </p>
-                  <div className="max-w-[782px] relative">
+                  <div className="w-full relative">
                     <div
                       className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px]  px-5 py-3 ${
                         isPeriodDropdownOpen ? "bg-[#212148]" : ""
@@ -109,7 +109,7 @@ const Dashboard1 = () => {
                     >
                       <div className="flex justify-between items-center">
                         <p
-                          className={` mb-0 ${
+                          className={` text-white font-Montserrat font-normal text-[14] mb-0 ${
                             isPeriodDropdownOpen ? "text-[#fff]" : ""
                           }`}
                         >
@@ -141,11 +141,11 @@ const Dashboard1 = () => {
                     </div>
                   </div>
                 </div>
-                <div className="bg-[#17173A] pt-4 pb-6  ps-8 pe-12">
+                <div className=" pt-5 pb-6  ps-8 pe-12">
                   <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
                     Proxy Type
                   </p>
-                  <div className="max-w-[782px] relative">
+                  <div className="w-full relative">
                     <div
                       className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3 ${
                         isProviderDropdownOpen ? "bg-[#212148]" : ""
@@ -154,7 +154,7 @@ const Dashboard1 = () => {
                     >
                       <div className="flex justify-between items-center">
                         <p
-                          className={` mb-0 ${
+                          className={` text-white font-Montserrat font-normal text-[14]  mb-0 ${
                             isProviderDropdownOpen ? "text-[#fff]" : ""
                           }`}
                         >
@@ -186,7 +186,7 @@ const Dashboard1 = () => {
                     </div>
                   </div>
 
-                  <div className="mt-5">
+                  <div className=" mt-7">
                     <p className="text-white text-lg mb-4 font-semibold leading-normal font-Montserrat">
                       Amount
                     </p>
@@ -218,15 +218,15 @@ const Dashboard1 = () => {
                             {value} Proxies
                           </p>
                         </div>
-                        <p className="w-[164px] ms-8 rounded-md font-Montserrat font-medium text-[13px] leading-normal border-[1px_solid_rgba(255, 255, 255, 0.05)] bg-[#252550] py-[9px] ps-6">
+                        <p className="text-white w-[164px] ms-8 rounded-md font-Montserrat font-medium text-[13px] leading-normal border-[1px_solid_rgba(255, 255, 255, 0.05)] bg-[#252550] py-[9px] ps-6">
                           {value}
                         </p>
                       </div>
                       <div className="flex flex-col ms-5">
-                        <button className="border mb-4 border-cyan-green hover:bg-[#50EED7]  hover:border-transparent hover:text-[#040426] rounded-md cursor-pointer text-cyan-green transition-all duration-150 font-Montserrat text-md font-semibold lh_normal py-2 px-6 whitespace-nowrap">
+                        <button className="border mb-4 border-cyan-green hover:bg-[#50EED7]  hover:border-transparent hover:text-[#040426] rounded-md cursor-pointer text-cyan-green transition-all duration-300 font-Montserrat text-md font-semibold lh_normal py-2 px-6 whitespace-nowrap">
                           Max Qty.
                         </button>
-                        <button className=" font-Montserrat text-[#040426] hover:bg-[#50EED7] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal py-[10px] transition-all duration-150 px-8 whitespace-nowrap">
+                        <button className=" font-Montserrat text-[#040426] hover:bg-[#50EED7] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal py-[10px] transition-all duration-300 px-8 whitespace-nowrap">
                           Generate
                         </button>
                       </div>
@@ -256,7 +256,7 @@ const Dashboard1 = () => {
                     >
                       <div className="flex justify-between items-center">
                         <p
-                          className={` mb-0 ${
+                          className={`font-Montserrat text-white text-[14px] font-medium mb-0 ${
                             isPeriodDropdownOpen ? "text-[#fff]" : ""
                           }`}
                         >
@@ -301,7 +301,7 @@ const Dashboard1 = () => {
                     >
                       <div className="flex justify-between items-center">
                         <p
-                          className={` mb-0 ${
+                          className={` font-Montserrat text-white text-[14px] font-medium mb-0 ${
                             isProviderDropdownOpen ? "text-[#fff]" : ""
                           }`}
                         >
@@ -333,7 +333,7 @@ const Dashboard1 = () => {
                     </div>
                   </div>
 
-                  <div className="mt-5">
+                  <div className=" mt-5">
                     <p className="text-white text-lg mb-4 font-semibold leading-normal font-Montserrat">
                       Amount
                     </p>
@@ -342,7 +342,7 @@ const Dashboard1 = () => {
                         <div className="mb-0 w-full">
                           <div>
                             <div
-                              className=" relative justify-center items-center hidden h-[20px] w-full mx-auto rounded"
+                              className="fle x relative justify-center items-center hidden h-[20px] w-full mx-auto rounded"
                               style={{
                                 width: ` ${
                                   value > 500
@@ -358,22 +358,22 @@ const Dashboard1 = () => {
                               max="1000"
                               value={value}
                               onChange={handleChange}
-                              className="custom-range w-full"
+                              className="custom-range w-full range-input"
                             />
                           </div>
                           <p className=" text-white font-Montserrat leading-normal text-sm pt-5 font-medium">
-                            500 Proxies
+                            {value} Proxies
                           </p>
                         </div>
-                        <p className="w-[164px] ms-8 rounded-md font-Montserrat font-medium text-[13px] leading-normal border-[1px_solid_rgba(255, 255, 255, 0.05)] bg-[#252550] py-[9px] ps-6">
+                        <p className=" text-white w-[164px] ms-8 rounded-md font-Montserrat font-medium text-[13px] leading-normal border-[1px_solid_rgba(255, 255, 255, 0.05)] bg-[#252550] py-[9px] ps-6">
                           {value}
                         </p>
                       </div>
                       <div className="flex flex-col ms-5">
-                        <button className="border mb-4 hover:border-transparent hover:bg-[#50EED7] transition-all duration-150 border-cyan-green rounded-md cursor-pointer text-cyan-green hover:text-[#040426] font-Montserrat text-md font-semibold lh_normal py-2 px-6 whitespace-nowrap">
+                        <button className="border mb-4 border-cyan-green hover:bg-[#50EED7]  hover:border-transparent hover:text-[#040426] rounded-md cursor-pointer text-cyan-green transition-all duration-300 font-Montserrat text-md font-semibold lh_normal py-2 px-6 whitespace-nowrap">
                           Max Qty.
                         </button>
-                        <button className=" font-Montserrat text-[#040426] hover:bg-[#50EED7] transition-all duration-150 text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal py-[10px] px-8 whitespace-nowrap">
+                        <button className=" font-Montserrat text-[#040426] hover:bg-[#50EED7] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal py-[10px] transition-all duration-300 px-8 whitespace-nowrap">
                           Generate
                         </button>
                       </div>
