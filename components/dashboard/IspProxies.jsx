@@ -1,7 +1,6 @@
-import Link from "next/link";
+// import Link from "next/link";
 import React, { useState } from "react";
 import ProxiesTabs from "./ProxiesTabs";
-
 const IspProxies = () => {
   const [activeTab, setActiveTab] = useState("ISP");
   const handleTabClick = (tab) => {
