@@ -2,7 +2,8 @@ import React from "react";
 import IspProxies from "./IspProxies";
 import Image from "next/image";
 import { Headings, IspOrdersData } from "../common/Helper";
-const Dashboard2 = () => {
+
+const ISPDashboard = () => {
   return (
     <div className="relative overflow-hidden">
       <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
@@ -306,4 +307,4 @@ const Dashboard2 = () => {
   );
 };
 
-export default Dashboard2;
+export default ISPDashboard;

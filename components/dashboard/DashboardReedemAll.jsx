@@ -1,5 +1,5 @@
 import React from "react";
-import Dashboard5 from "./Dashboard5";
+import Dashboard5 from "./RewardsDashboard";
 import { DashboardFooter } from "./DashboardFooter";
 import DashboardNav from "./DashboardNav";
 

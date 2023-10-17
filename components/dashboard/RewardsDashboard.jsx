@@ -2,17 +2,16 @@ import Image from "next/image";
 import RangeBar from "./RangeBar";
 import { RewardData } from "../common/Helper";
 
-const Dashboard5 = () => {
+const RewardsDashboard = () => {
   const copyText = () => {
     const textToCopy = document.getElementById("textToCopy").innerText;
-
     // Try to use the modern clipboard API
     if (navigator.clipboard) {
       navigator.clipboard
         .writeText(textToCopy)
-        .then(() => {
-          alert("Text copied to clipboard!");
-        })
+        // .then(() => {
+        //   alert("Text copied to clipboard!");
+        // })
         .catch((error) => {
           console.error("Failed to copy text: ", error);
         });
@@ -24,7 +23,7 @@ const Dashboard5 = () => {
       textArea.select();
       document.execCommand("copy");
       document.body.removeChild(textArea);
-      alert("Text copied to clipboard!");
+      // alert("Text copied to clipboard!");
     }
   };
   return (
@@ -226,4 +225,4 @@ const Dashboard5 = () => {
   );
 };
 
-export default Dashboard5;
+export default RewardsDashboard;
