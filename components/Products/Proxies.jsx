@@ -4,8 +4,9 @@ import ResidentialProxies from "./ResidentialProxies";
 import ImpulseFooter from "../ImpulseFooter";
 import Header from "../Header";
 import ProxiesISP from "./ProxiesISP";
+import { useGlobalInfoProvider } from "../common/Provider";
 const Proxies = () => {
-  const [activeTab, setActiveTab] = useState("ISP");
+  const { activeTab, setActiveTab } = useGlobalInfoProvider();
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
@@ -14,6 +15,7 @@ const Proxies = () => {
     DC: <DcProxies />,
     Residential: <ResidentialProxies />,
   };
+  console.log(activeTab);
   return (
     <>
       <div className=" relative">
@@ -66,7 +68,7 @@ const Proxies = () => {
             </div>
           </div>
         </div>
-      
+
         <ImpulseFooter />
       </div>
     </>
