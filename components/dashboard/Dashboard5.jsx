@@ -2,7 +2,7 @@ import Image from "next/image";
 import RangeBar from "./RangeBar";
 import { RewardData } from "../common/Helper";
 
-const Dashboard5 = () => {
+const RewardsDashboard = () => {
   const copyText = () => {
     const textToCopy = document.getElementById("textToCopy").innerText;
 
@@ -166,4 +166,5 @@ const Dashboard5 = () => {
   );
 };
 
-export default Dashboard5;
+export default RewardsDashboard;
+
