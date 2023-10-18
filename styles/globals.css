@@ -32,7 +32,6 @@
   font-display: swap;
 }
 body {
-  font-family: tt-interfaces !important;
   color: rgb(var(--foreground-rgb));
   background-color: #040426;
   font-family: interfacesFont;
