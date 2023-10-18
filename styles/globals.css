@@ -62,6 +62,11 @@ body {
 .your_order {
   columns: 300px 3;
 }
+@media (min-width: 1600px) {
+  .your_order {
+    columns: 356px 4;
+  }
+}
 @media (min-width: 1200px) and (max-width: 1400px) {
   .px_50 {
     padding-left: 50px !important;
@@ -128,10 +133,10 @@ body {
   height: 9px;
   background: linear-gradient(
     to right,
-    #4FDCC7 0%,
-    #4FDCC7 50%,
-    #206F63 50%,
-    #206F63 100%
+    #4fdcc7 0%,
+    #4fdcc7 50%,
+    #206f63 50%,
+    #206f63 100%
   );
   outline: none;
   border-radius: 11px;
@@ -141,9 +146,8 @@ body {
   -webkit-appearance: none;
   width: 18px;
   height: 18px;
-  background:#fff;
+  background: #fff;
   border: 1px solid #fff;
   border-radius: 50%;
   cursor: pointer;
 }
-

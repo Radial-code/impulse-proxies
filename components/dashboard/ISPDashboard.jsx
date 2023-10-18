@@ -124,11 +124,11 @@ const ISPDashboard = () => {
               </button>
             </div>
           </div>
-          <div className="flex flex-wrap pt-5 flex-col items-center lg:h-[305px] custom_scrollbar_y_2 lg:overflow-scroll">
+          <div className="flex flex-wrap pt-5 flex-col items-center lg:h-[305px] custom_scrollbar_y_2 lg:overflow-scroll xl:overflow-hidden">
             <div className="flex justify-center">
               <div
                 id="textToCopy"
-                className="your_order font-Montserrat xl:text-[15px] text-[12px] font-medium leading-normal  text-[#9D9DBB]"
+                className="your_order font-Montserrat xl:text-[15px] text-[12px] font-medium leading-normal text-[#9D9DBB] xl:leading-[160%] 2xl:leading-[170%]"
               >
                 83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
                 83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
