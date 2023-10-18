@@ -71,7 +71,7 @@ const DropDown = () => {
           className="absolute z-20 w-60 mt-2 py-2 bg-[#040426] rounded-lg shadow-lg border-white border"
         >
           {options.map((option, i) => (
-            <Link href="/products" key={i}>
+            <Link href="/product" key={i}>
               <li
                 id={i++}
                 onClick={() => handleOptionClick(option.state)}
