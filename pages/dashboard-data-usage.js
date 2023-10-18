@@ -10,7 +10,7 @@ const DashboardDataUsage = () => {
   const router = useRouter();
   return (
     <>
-      <div className="h-screen overflow-hidden">
+      <div className="h-screen overflow-hidden relative">
         <DashboardNav />
         <div className="dashboard_height overflow-y-auto custom_scrollbar_y md:pb-20">
           {router.query.type === "residential" ? (
