@@ -5,8 +5,8 @@ const ProxiesTabs = () => {
   const [activeTab, setActiveTab] = useState(1);
   const handleTabClick = (tabNumber) => {
     setActiveTab(tabNumber);
-    };
-    
+  };
+
   return (
     <>
       <div className="w-full bg-[#4FDCC7] rounded-lg p-[14px]">

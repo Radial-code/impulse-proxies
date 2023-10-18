@@ -1,7 +1,7 @@
 import Proxies from "@/components/Products/Proxies";
 import React from "react";
 
-const products = () => {
+const product = () => {
   return (
     <>
       <Proxies />
@@ -9,4 +9,4 @@ const products = () => {
   );
 };
 
-export default products;
+export default product;

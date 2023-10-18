@@ -6,13 +6,7 @@ import Dashboard1 from "@/components/dashboard/Dashboard1";
 import ISPDashboard from "@/components/dashboard/ISPDashboard";
 import RewardsDashboard from "@/components/dashboard/RewardsDashboard";
 
-// import Dashboard2 from "@/components/dashboard/ISPDashboard";
-import Dashboard3 from "@/components/dashboard/Dashboard3";
-import Dashboard4 from "@/components/dashboard/Dashboard4";
-// import Dashboard5 from "@/components/dashboard/RewardsDashboard";
-
 const DashboardDataUsage = () => {
-  // ROUTER CODE HERE
   const router = useRouter();
   return (
     <>
@@ -22,10 +16,8 @@ const DashboardDataUsage = () => {
           {router.query.type === "residential" ? (
             <Dashboard1 />
           ) : router.query.type === "isp-datacenter" ? (
-            // <Dashboard2 />
             <ISPDashboard />
           ) : router.query.type === "rewards" ? (
-            // <Dashboard5 />
             <RewardsDashboard />
           ) : (
             ""
