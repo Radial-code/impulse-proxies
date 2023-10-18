@@ -153,14 +153,14 @@ const DashboardNav = () => {
                   <button
                     onClick={() => setActiveNavOverlay(true)}
                     type="button"
-                    className="w-[46px] inline-flex items-center justify-center rounded-md "
+                    className=" w-5 md:w-[46px] inline-flex items-center justify-center rounded-md "
                   >
                     <HeaderCrossIcons />
                   </button>
                 )}
                 {!isToggleIconVisible && (
                   <button
-                    className="w-[22px] h-[33px] sm:me-14 sm:translate-x-[157%]"
+                    className=" w-4 h-3 md:w-[22px] md:h-[33px] sm:me-14 sm:translate-x-[157%]"
                     onClick={() => setActiveNavOverlay(false)}
                   >
                     <ToggleIcon />

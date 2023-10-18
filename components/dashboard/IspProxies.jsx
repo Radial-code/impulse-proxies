@@ -1,7 +1,6 @@
-import Link from "next/link";
+// import Link from "next/link";
 import React, { useState } from "react";
 import ProxiesTabs from "./ProxiesTabs";
-
 const IspProxies = () => {
   const [activeTab, setActiveTab] = useState("ISP");
   const handleTabClick = (tab) => {
@@ -38,7 +37,7 @@ const IspProxies = () => {
           onClick={() => handleTabClick("DC")}
           className={`${
             activeTab === "DC"
-              ? "bg-[#50EED7] w-6/12 rounded-[10px] !text-[#050628]"
+              ? "bg-[#50EED7] w-6/12 rounded-[10px] !text-[#050628] text-center mx-auto"
               : "border-transparent"
           }   py-[12px] pl-9 pr-9 text-white font-Montserrat font-bold text-[11px]
           leading-normal whitespace-nowrap md:tracking-[1.1px]`}

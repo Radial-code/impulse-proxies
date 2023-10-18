@@ -2,7 +2,7 @@ import Image from "next/image";
 import RangeBar from "./RangeBar";
 import { RewardData } from "../common/Helper";
 
-const Dashboard5 = () => {
+const RewardsDashboard = () => {
   const copyText = () => {
     const textToCopy = document.getElementById("textToCopy").innerText;
 
@@ -61,7 +61,7 @@ const Dashboard5 = () => {
                   <div className="pt-[54px] ms-[-10px]">
                     {!RewardData.length > 0 ? (
                       <>
-                        <div className=" bg-[url('/assets/images/webp/Earned_Rewards.webp')] bg-no-repeat bg-cover bg-[0px] h-[233px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]">
+                        <div className="  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px] w-full ">
                           <h3 className="font-Montserrat font-bold text-xl leading-normal tracking-[1.7px] text-white">
                             NO REWARDS WON
                           </h3>
@@ -78,7 +78,7 @@ const Dashboard5 = () => {
                         {RewardData.map((item, i) => {
                           return (
                             <div
-                              className={`flex items-center ${
+                              className={`flex items-center  ${
                                 i === 0 ? "" : "pt-6"
                               }`}
                               key={i}
@@ -92,6 +92,9 @@ const Dashboard5 = () => {
                               <p className="ps-2 font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
                                 {item.text}
                               </p>
+                              <button className=" ms-5 text-[#040426] w-[90px] h-[23px] hover:text-white leading-normal tracking[-0.28px] hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold text-[11px] rounded-[10px] ">
+                                Redeem
+                              </button>
                             </div>
                           );
                         })}
@@ -163,4 +166,5 @@ const Dashboard5 = () => {
   );
 };
 
-export default Dashboard5;
+export default RewardsDashboard;
+

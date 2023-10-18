@@ -4,8 +4,8 @@ import React from 'react'
 const DataUsagesOne = () => {
   return (
     <>
-      <div className="sm:w-[50%] w-full xl:pe-6 pe-2 h-full">
-        <div className="w-full h-full flex flex-col bgData databox_border relative py-8 xl:px-11 px-8 rounded-xl">
+      <div className="sm:w-[50%]  w-full xl:pe-6 pe-2 h-full">
+        <div className="w-full h-full flex flex-col bgData databox_border relative py-8 xl:px-11 px-[20px] rounded-xl lg:max-w-[407px]">
           <div className="flex items-center justify-between">
             <p className="font-Montserrat mb-0 text-white font-bold text-md tracking-[1.4px] flex items-center">
               <Image

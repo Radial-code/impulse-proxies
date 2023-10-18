@@ -5,18 +5,15 @@ import DashboardNav from "./DashboardNav";
 import { DashboardFooter } from "./DashboardFooter";
 
 const Dashboard4 = () => {
-  const [value, setValue] = useState(50);
-  const handleChange = (e) => {
-    setValue(e.target.value);
-  };
+ 
   // copy text
   const copyText = () => {
-    const textToCopy = document.getElementById("textToCopy").innerText;
+    const textTocopy = document.getElementById("textTocopy").innerText;
 
     // Try to use the modern clipboard API
     if (navigator.clipboard) {
       navigator.clipboard
-        .writeText(textToCopy)
+        .writeText(textTocopy)
         .then(() => {
           alert("Text copied to clipboard!");
         })
@@ -26,7 +23,7 @@ const Dashboard4 = () => {
     } else {
       // For older browsers, fallback to the execCommand method
       const textArea = document.createElement("textarea");
-      textArea.value = textToCopy;
+      textArea.value = textTocopy;
       document.body.appendChild(textArea);
       textArea.select();
       document.execCommand("copy");
@@ -87,7 +84,7 @@ const Dashboard4 = () => {
                         Discount Code
                       </p>
                       <p
-                        id="textToCopy"
+                        id="textTocopy"
                         className=" text-white font-Montserrat text-md tracking-[-0.28px] leading-normal font-semibold ms-4"
                       >
                         2729PAYJ1

@@ -27,9 +27,9 @@ const ResidentialProxies = () => {
 
   return (
     <>
-      <div className="relative" >
+      <div className="relative max-w-[700px] mx-auto">
         <h2 className="font-interfacesBold sm:text-[45px] text-2xl text-center sm:pb-10 sm:pt-7 py-7 text-white">
-          Buy your<span className="text-[#50EED7] mx-1">Residential</span>
+          Buy your<span className="text-[#50EED7] mx-1 mt-0">Residential</span>
           proxies
         </h2>
         <div className="bg_color_rgb border-2 border-[#50EED7] rounded-[20px] sm:pt-7 py-7 sm:pb-[50px] sm:pr-11 sm:pl-16 pl-5 pr-5">

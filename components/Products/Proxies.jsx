@@ -1,13 +1,17 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 // import Image from "next/image";
 // import IspProxies from "../dashborad/IspProxies";
+=======
+>>>>>>> 9fda70acdd93eb068b7e40c99a050cce345aa8d1
 import DcProxies from "./DcProxies";
 import ResidentialProxies from "./ResidentialProxies";
 import ImpulseFooter from "../ImpulseFooter";
 import Header from "../Header";
 import ProxiesISP from "./ProxiesISP";
+import { useGlobalInfoProvider } from "../common/Provider";
 const Proxies = () => {
-  const [activeTab, setActiveTab] = useState("ISP");
+  const { activeTab, setActiveTab } = useGlobalInfoProvider();
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
@@ -16,11 +20,12 @@ const Proxies = () => {
     DC: <DcProxies />,
     Residential: <ResidentialProxies />,
   };
+  console.log(activeTab);
   return (
     <>
       <div className=" relative">
         <Header />
-        <section className="bg-[#040426]  relative pb-36">
+        <div className="bg-[#040426] relative pb-36">
           <div className="custom_container mx-auto px-4 relative z-10">
             <div className="sm:pt-16 pt-10">
               <div className="max-w-[600px] overflow-x-auto mx-auto bg-[#0C1C37] rounded-2xl border-2 border-[#2E8587] border-solid flex justify-between items-center ">
@@ -67,8 +72,12 @@ const Proxies = () => {
               </div>
             </div>
           </div>
+<<<<<<< HEAD
         </section>
 
+=======
+        </div>
+>>>>>>> 9fda70acdd93eb068b7e40c99a050cce345aa8d1
         <ImpulseFooter />
       </div>
     </>

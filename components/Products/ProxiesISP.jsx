@@ -27,7 +27,7 @@ const ProxiesISP = () => {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative max-w-[700px] mx-auto mt-0">
         <h2 className=" sm:text-[45px] text-2xl text-center sm:pb-10 sm:pt-7 py-7 text-white leading-[68px   ]">
           Buy your
           <span className="text-[#50EED7] mx-1">favorite</span>
