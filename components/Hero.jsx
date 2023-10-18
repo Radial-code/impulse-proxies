@@ -39,6 +39,7 @@ const Hero = () => {
                 />
 
                 {/* <Image
+                  className="pointer-events-none relative z-50 lg:mt-0 md:mt-[-20px] sm:max-w-[400px] md:max-w-[370px] lg:max-w-[500px] mx-auto xl:max-w-[600px] sm:mt-0 mt-12 xl:w-full   h-[200px] object-cover sm:h-[100%]"
                   src="/assets/images/png/hero-image.png"
                   alt="proxies box bottom image"
                   height={844}
