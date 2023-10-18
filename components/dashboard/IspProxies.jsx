@@ -40,7 +40,7 @@ const IspProxies = () => {
               ? "bg-[#50EED7] w-6/12 rounded-[10px] !text-[#050628] text-center mx-auto"
               : "border-transparent"
           }   py-[12px] pl-9 pr-9 text-white font-Montserrat font-bold text-[11px]
-          leading-normal whitespace-nowrap md:tracking-[1.1px]`}
+          leading-normal whitespace-nowrap md:tracking-[1.1px] mx-auto`}
         >
           DC PROXIES
         </button>
