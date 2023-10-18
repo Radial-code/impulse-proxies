@@ -55,7 +55,9 @@ const DashboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
               onClick={() => setActiveNavOverlay(false)}
               href="/dashboard-data-usage?type=residential"
               className={`text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full relative after:bg-white overflow-hidden after:start-[50%] active:after:start-0 after:bottom-0 ${
-                router.query.type === "residential" ? "text-white" : ""
+                router.query.type === "residential"
+                  ? "text-white after:transition-all after:ease-in-out after:duration-200 after:w-full after:start-[0%]"
+                  : ""
               }`}
             >
               Residential
@@ -64,7 +66,9 @@ const DashboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
               onClick={() => setActiveNavOverlay(false)}
               href="/dashboard-data-usage?type=isp-datacenter"
               className={`text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full relative after:bg-white overflow-hidden after:start-[50%] active:after:start-0 after:bottom-0 ${
-                router.query.type === "isp-datacenter" ? "text-white" : ""
+                router.query.type === "isp-datacenter"
+                  ? "text-white after:transition-all after:ease-in-out after:duration-200 after:w-full after:start-[0%]"
+                  : ""
               }`}
             >
               ISP & Datacenter
@@ -73,7 +77,9 @@ const DashboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
               onClick={() => setActiveNavOverlay(false)}
               href="/dashboard-data-usage?type=rewards"
               className={`text-[#5E5E80] active:text-white font-semibold tracking-[-0.38px] font-Montserrat text-[17px] after:transition-all after:ease-in-out after:duration-200 after:contents-[''] after:absolute after:h-[2px] after:w-0  active:after:w-full relative after:bg-white overflow-hidden after:start-[50%] active:after:start-0 after:bottom-0 flex items-center gap-2 ${
-                router.query.type === "rewards" ? "text-white" : ""
+                router.query.type === "rewards"
+                  ? "text-white after:transition-all after:ease-in-out after:duration-200 after:w-full after:start-[0%]"
+                  : ""
               }`}
             >
               <span className="mb-1">
