@@ -39,9 +39,10 @@ const ISPDashboard = () => {
         <p className="text-white font-Montserrat lg:block hidden font-bold tracking-[1.2px] mb-6 mt-10">
           ISP & DC ORDERS
         </p>
-        <div className="flex justify-between items-center md:flex-row flex-col lg:pt-0 pt-8">
-          <div className="xl:w-[73%] 2xl:w-[60%] lg:w-[60%] md:w-[58%] lg:max-h-[290px] max-h-[280px] w-full overflow-x-scroll custom_scrollbar_y xl:max-w-[965px]  md:max-w-[427px] lg:max-w-[720px]  rounded-lg">
-            <table className="rounded-xl overflow-hidden">
+        <div className="flex justify-between items-center md:flex-row flex-col lg:pt-0 pt-8 gap-5 xl:gap-12">
+          <div className="w-full lg:max-h-[290px] max-h-[280px] overflow-x-scroll custom_scrollbar_y rounded-lg">
+            {/* className="xl:w-[73%] 2xl:w-[60%] lg:w-[60%] md:w-[58%] lg:max-h-[290px] max-h-[280px] w-full overflow-x-scroll custom_scrollbar_y xl:max-w-[965px]  md:max-w-[427px] lg:max-w-[720px]  rounded-lg"> */}
+            <table className="rounded-xl overflow-hidden w-full">
               <thead className="bg-[#212148]">
                 <tr>
                   {Headings.map((heading, index) => (
@@ -91,7 +92,7 @@ const ISPDashboard = () => {
               </tbody>
             </table>
           </div>
-          <div className="xl:w-[25%] 2xl:w-[38%] lg:w-[36%] md:w-[40%] w-full md:mt-0 mt-9">
+          <div className="lg:w-[325px] 2xl:w-[430px] md:w-[40%] w-full md:mt-0 mt-9">
             <IspProxies />
           </div>
         </div>
