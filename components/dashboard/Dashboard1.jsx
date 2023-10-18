@@ -76,7 +76,7 @@ const Dashboard1 = () => {
             </div>
           </div>
         </div>
-        <div className="relative pl-16">
+        <div className="relative md:pl-16">
           <Image
             height={150}
             width={150}
@@ -92,7 +92,7 @@ const Dashboard1 = () => {
             alt="Mockup_bg_blur"
           />
           <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
-            <div className="flex justify-between lg:pt-[52px] pt-[32px] gap-5 xl:gap-12">
+            <div className="flex flex-col lg:flex-row justify-between lg:pt-[52px] pt-[32px] gap-5 xl:gap-12">
               <div className="w-full">
                 <div className="flex flex-wrap justify-center md:justify-between pb-2">
                   <DataUsagesOne />
