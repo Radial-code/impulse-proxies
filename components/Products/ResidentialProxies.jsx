@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import ProductsRangbar from "./ProductsRangbar";
 
 const ResidentialProxies = () => {
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
@@ -145,17 +146,7 @@ const ResidentialProxies = () => {
             </p>
           </div>
 
-          <div className="range sm:mt-3 ">
-            <input type="range" />
-          </div>
-          <div className="sm:pt-3 pt-2 flex justify-between items-center">
-            <p className="text-sm font-Montserrat font-medium text-white mb-0">
-              500 Proxies
-            </p>
-            <button className="bg-[#252550] text-white rounded-xl sm:w-[164px] w-[120px] text-start px-[18px] font-Montserrat font-medium text-[13px] py-[10px]">
-              500
-            </button>
-          </div>
+         <ProductsRangbar/>
           <div className="sm:pt-[26px] pt-5 flex justify-between items-end">
             <div>
               <p className="text-white text-[15px] font-Montserrat font-semibold leading-normal mb-0">
