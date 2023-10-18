@@ -30,7 +30,7 @@ const YourOrderOne = () => {
           <div className="flex flex-col">
             <div className="flex flex-row lg:flex-col justify-between">
               <div className="flex md:flex-row flex-col lg:flex-col">
-                <p className="text-white font-Montserrat text-[11px] leading-normal font-bold tracking-[1.1px] mb-0 whitespace-nowrap">
+                <p className="text-white font-Montserrat text-[11px] leading-normal font-bold tracking-[1.1px] mb-0 whitespace-nowrap mr-3">
                   YOUR ORDER
                 </p>
                 <p className="lg:ps-0 md:ps-4 font-Montserrat text-[#505082] lg:pt-1 pt-0 leading-normal text-sm text-bold tracking-[1.2px]">
