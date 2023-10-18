@@ -145,7 +145,7 @@ const DcProxies = () => {
             </p>
           </div>
 
-          <div class="range sm:mt-3 ">
+          <div className="range sm:mt-3 ">
             <input type="range" className="outline-none" />
           </div>
           <div className="sm:pt-3 pt-2 flex justify-between items-center">
