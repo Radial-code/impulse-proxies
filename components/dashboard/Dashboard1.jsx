@@ -92,8 +92,8 @@ const Dashboard1 = () => {
             alt="Mockup_bg_blur"
           />
           <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
-            <div className="flex flex-wrap lg:pt-[52px] pt-[32px]">
-              <div className="lg:w-[58%] w-full">
+            <div className="flex justify-between lg:pt-[52px] pt-[32px] gap-5 xl:gap-12">
+              <div className="w-full">
                 <div className="flex flex-wrap justify-center md:justify-between pb-2">
                   <DataUsagesOne />
                   <ResidentialBoxOne />
@@ -245,7 +245,7 @@ const Dashboard1 = () => {
                   </div>
                 </div>
               </div>
-              <div className="lg:w-[42%] w-full xl:ps-10 lg:ps-5 lg:pt-0 sm:pt-10 pt-5">
+              <div className="w-full lg:w-[702px] 2xl:w-[642px] lg:pt-0 sm:pt-10 pt-5">
                 <YourOrderOne />
                 <div className="rounded-lg overflow-hidden lg:mt-12 mt-8 lg:hidden sm:block hidden">
                   <div className="bg-[#212148] ps-8 py-4">
