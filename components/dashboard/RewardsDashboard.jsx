@@ -36,11 +36,11 @@ const RewardsDashboard = () => {
             </div>
           </div>
         </div>
-        <div className="lg:pt-14 sm:pb-12 pb-[66px] sm:pt-9 pt-6">
-          <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 xl:px-6 mx-auto">
+        <div className="lg:pt-14 lg:pb-36 sm:pb-12 pb-[66px] sm:pt-9 pt-6">
+          <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
             <RangeBar />
             <div className="flex flex-wrap mt-9 lg:mt-12">
-              {!RewardData.length > 0 ? (
+              {RewardData.length > 0 ? (
                 <>
                   <div className="w-full lg:w-6/12 px-3">
                     <div className="bg-[#212148] flex items-center justify-between h-14 rounded-t-[16px] px-4 lg:px-9 relative">
@@ -151,13 +151,9 @@ const RewardsDashboard = () => {
                                 src="/assets/images/svg/redeem_free_gb.svg"
                                 alt="redeem free"
                               />
-
                               <p className="ps-2 font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
                                 {item.text}
                               </p>
-                              <button className=" hidden sm:inline-block  ms-3 text-[#040426] w-[90px] h-[23px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center leading-normal tracking-[-0.26px] font-Montserrat font-bold text-[13px] rounded-[6px] mt-6 sm:mt-0">
-                                Redeem
-                              </button>
                             </div>
                           );
                         })}
@@ -170,7 +166,7 @@ const RewardsDashboard = () => {
                         REFER A FRIEND
                       </p>
                     </div>
-                    <div className="rang_bar xl:px-6 px-4  sm:pt-6 pt-[26px] sm:pb-10 pb-5 rounded-b-[16px]">
+                    <div className="rang_bar sm:px-6 px-4  sm:pt-6 pt-[26px] sm:pb-10 pb-5 rounded-b-[16px]">
                       <div className="bg-[#292956] h-[46px] rounded-[10px] flex justify-between items-center px-[18px]">
                         <div className=" flex">
                           <p className=" text-[#7777AD] font-Montserrat leading-normal tracking-[-0.28px] text-md font-semibold">
@@ -197,14 +193,14 @@ const RewardsDashboard = () => {
                         proxies, you will get paid!
                       </p>
                       <div className="sm:mt-8 mt-6 lg:mt-7 sm:flex justify-between items-center">
-                        <div className="flex sm:flex-row flex-col items-center">
-                          <p className=" font-Montserrat font-bold text-white text-xs xl:text-md leading-normal tracking-[1.4px]">
+                        <div className="flex sm:flex-row flex-col">
+                          <p className=" font-Montserrat font-bold text-white text-md leading-normal tracking-[1.4px]">
                             USED IN ORDER
-                            <span className="font-Montserrat font-medium text-xs xl:text-lg text-[#9D9DBB] ms-3">
+                            <span className="font-Montserrat font-medium text-lg text-[#9D9DBB] ms-3">
                               4
                             </span>
                           </p>
-                          <p className="sm:ps-9 font-Montserrat font-bold text-white text-xs xl:text-md leading-normal tracking-[1.4px]  mt-4 sm:mt-0">
+                          <p className="sm:ps-9 font-Montserrat font-bold text-white text-md leading-normal tracking-[1.4px] sm:mt-3 mt-4 md:mt-0">
                             MONEY MADE
                             <span className="font-Montserrat font-medium text-lg text-[#9D9DBB] ms-3">
                               $10.94

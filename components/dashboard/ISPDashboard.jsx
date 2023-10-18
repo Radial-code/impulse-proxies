@@ -16,7 +16,7 @@ const copyText = () => {
       });
   } else {
     // For older browsers, fallback to the execCommand method
-    const textArea = document.createElement("textareA");
+    const textArea = document.createElement("textarea");
     textArea.value = textToCopy;
     document.body.appendChild(textArea);
     textArea.select();
@@ -27,7 +27,7 @@ const copyText = () => {
 };
 const ISPDashboard = () => {
   return (
-    <div className="relative overflow-hidden ">
+    <div className="relative overflow-hidden">
       <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
         <div className="hero_wave">
           <div className="hero_wave_height">
@@ -116,7 +116,7 @@ const ISPDashboard = () => {
                 Download .txt
               </button>
               <button
-                id="textToCopy"
+                onClick={copyText}
                 className="px-[14px] py-[11px] font-Montserrat bg-white font-bold tracking-[-0.28px] hover:bg-[#4FDCC7] text-[#040426] rounded-md ease-out md:text-[14px] text-[12px]  duration-150 transition-all"
               >
                 Copy to Clipboard
@@ -125,7 +125,10 @@ const ISPDashboard = () => {
           </div>
           <div className="flex flex-wrap pt-5 flex-col items-center lg:h-[305px] custom_scrollbar_y_2 lg:overflow-scroll">
             <div className="flex justify-center">
-              <div className="your_order font-Montserrat xl:text-[15px] text-[12px] font-medium leading-normal  text-[#9D9DBB]">
+              <div
+                id="textToCopy"
+                className="your_order font-Montserrat xl:text-[15px] text-[12px] font-medium leading-normal  text-[#9D9DBB]"
+              >
                 83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
                 83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
                 83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347

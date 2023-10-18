@@ -40,7 +40,7 @@ const DashboardNav = () => {
               <div className="flex-shrink-0 flex items-center justify-between">
                 <Link
                   href="/"
-                  className="text-white text-xl font-semibold flex items-center relative z-[100]"
+                  className="text-white text-xl font-semibold flex items-center relative z-[1]"
                 >
                   <Image
                     height={62}
@@ -148,24 +148,18 @@ const DashboardNav = () => {
               </div>
             </div>
             <div className="flex items-center lg:hidden ">
-              <div className="relative z-[200]">
-                {isToggleIconVisible && (
-                  <button
-                    onClick={() => setActiveNavOverlay(true)}
-                    type="button"
-                    className=" w-5 md:w-[46px] inline-flex items-center justify-center rounded-md "
-                  >
-                    <HeaderCrossIcons />
-                  </button>
-                )}
-                {!isToggleIconVisible && (
-                  <button
-                    className=" w-4 h-3 md:w-[22px] md:h-[33px] sm:me-14 sm:translate-x-[157%]"
-                    onClick={() => setActiveNavOverlay(false)}
-                  >
-                    <ToggleIcon />
-                  </button>
-                )}
+              <div className="relative z-[200] w-7 h-7">
+                <button
+                  onClick={() => setActiveNavOverlay(!activeNavOverlay)}
+                  type="button"
+                  className={` inline-flex items-center justify-center rounded-md ${
+                    isToggleIconVisible ? "w-[30px]" : "w-[46px]"
+                  } `}
+                  aria-label="toggle-button"
+                >
+                  {" "}
+                  {isToggleIconVisible ? <HeaderCrossIcons /> : <ToggleIcon />}
+                </button>
               </div>
               <div className="bg-[#202046] h-[65px] w-[65px] rounded-[10px] flex items-center justify-center ms-4">
                 <div className="rounded-full bg-white h-[37px] w-[37px]"></div>
