@@ -25,7 +25,7 @@ const copyText = () => {
 const YourOrderOne = () => {
   return (
     <>
-      <div className="bg-[#1E1E43] yourbox_border relative pb-[28px] sm:ps-6 xl:pr-[38px]  px-4 pt-6  rounded-lg lg:h-full">
+      <div className="bg-[#1E1E43] yourbox_border relative pb-[28px] sm:ps-6  px-4 pt-6  rounded-lg lg:h-full">
         <div className="flex sm:items-center items-start justify-between">
           <div className="flex flex-col">
             <div className="flex flex-row lg:flex-col justify-between">
@@ -58,7 +58,7 @@ const YourOrderOne = () => {
           <div className="flex justify-start">
             <div
               id="textToCopy"
-              className="your_order font-Montserrat xl:text-[15px] max-w-[250px] text-[12px] font-medium leading-normal mt-6 text-[#9D9DBB]"
+              className="your_order font-Montserrat xl:text-[16px] max-w-[250px] text-[12px] font-medium leading-normal mt-6 text-[#9D9DBB]"
             >
               83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
               83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
@@ -87,9 +87,7 @@ const YourOrderOne = () => {
               83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
               83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
               83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              
             </div>
           </div>
           <div className="sm:flex  justify-end ">

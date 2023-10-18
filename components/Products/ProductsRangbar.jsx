@@ -32,7 +32,7 @@ const handleMaxRangeChange = (e) => {
     // Apply the dynamic background color to the range input
     const rangeInput = document.querySelector(".range-input-2");
     if (rangeInput) {
-      rangeInput.style.background = `linear-gradient(to right, #4FDCC7 0%, #4FDCC7 ${percentage}%, #206E63 ${percentage}%, #206E63 100%)`;
+      rangeInput.style.background = `linear-gradient(to right, #4FDCC7 0%, #4FDCC7 ${percentage}%, #3c3c6b ${percentage}%, #206E63 100%)`;
     }
   };
 const progressStyle = {
