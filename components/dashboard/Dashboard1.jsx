@@ -86,7 +86,7 @@ const Dashboard1 = () => {
         <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
           <div className="flex flex-wrap lg:pt-[52px] pt-[32px]">
             <div className="lg:w-[58%] w-full">
-              <div className="flex flex-wrap justify-center md:justify-between pb-2 gap-16">
+              <div className="flex flex-wrap justify-center md:justify-between pb-2">
                 <DataUsagesOne />
                 <ResidentialBoxOne />
               </div>
