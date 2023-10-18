@@ -67,12 +67,7 @@ const Proxies = () => {
               </div>
             </div>
           </div>
-<<<<<<< HEAD
-        </section>
-
-=======
         </div>
->>>>>>> 9fda70acdd93eb068b7e40c99a050cce345aa8d1
         <ImpulseFooter />
       </div>
     </>
