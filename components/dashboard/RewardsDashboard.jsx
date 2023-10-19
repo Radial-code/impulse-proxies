@@ -40,7 +40,7 @@ const RewardsDashboard = () => {
           <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
             <RangeBar />
             <div className="flex flex-wrap mt-9 lg:mt-12">
-              {RewardData.length > 0 ? (
+              {!RewardData.length > 0 ? (
                 <>
                   <div className="w-full lg:w-6/12 px-3">
                     <div className="bg-[#212148] flex items-center justify-between h-14 rounded-t-[16px] px-4 lg:px-9 relative">
@@ -119,7 +119,7 @@ const RewardsDashboard = () => {
                 </>
               ) : (
                 <>
-                  <div className="w-full lg:w-6/12 px-3">
+                  <div className="w-full lg:w-6/12 sm:px-3">
                     <div className="bg-[#212148] flex items-center justify-between rounded-t-[16px] px-4 lg:px-9 relative">
                       <p className=" text-sm font-Montserrat leading-normal tracking-[1.2px] font-bold lg:py-[22px] py-5 sm:px-6 text-white">
                         EARNED REWARDS
@@ -136,31 +136,38 @@ const RewardsDashboard = () => {
                           <div className="bg-white stroke-2 h-[15px] w-[15px] rounded-full absolute left-[-5px] top-[123px]"></div>
                         </div>
                       </div>
-                      <div className="pt-[54px] ms-[-10px]">
+                      <div className="pt-[54px] ms-[-10px] ">
                         {RewardData.map((item, i) => {
                           return (
                             <div
-                              className={`flex items-center ${
+                              className={`flex items-center gap-2 sm:gap-4 pe-4 ${
                                 i === 0 ? "" : "pt-6"
                               }`}
                               key={i}
                             >
-                              <Image
-                                height={22}
-                                width={22}
-                                src="/assets/images/svg/redeem_free_gb.svg"
-                                alt="redeem free"
-                              />
-                              <p className="ps-2 font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
-                                {item.text}
-                              </p>
+                              <div className="flex flex-wrap items-center w-full gap-2">
+                                <Image
+                                  height={22}
+                                  width={22}
+                                  src="/assets/images/svg/redeem_free_gb.svg"
+                                  alt="redeem free"
+                                />
+                                <p className="font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
+                                  {item.text}
+                                </p>
+                              </div>
+                              <div>
+                                <button className="text-[#040426] w-[65px] sm:w-[90px] h-[23px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center leading-normal tracking-[-0.26px] font-Montserrat font-bold text-xs sm:text-[11px] rounded-[6px]">
+                                  Redeem
+                                </button>
+                              </div>
                             </div>
                           );
                         })}
                       </div>
                     </div>
                   </div>
-                  <div className="w-full lg:w-6/12 px-3 min-h-[244px] mt-9 lg:mt-0">
+                  <div className="w-full lg:w-6/12 sm:px-3 min-h-[244px] mt-9 lg:mt-0">
                     <div className="flex items-center bg-[#212148] rounded-t-[16px] lg:py-[22px] py-5 px-6">
                       <p className=" leading-normal tracking-[1.2px] text-sm font-Montserrat font-bold text-white ">
                         REFER A FRIEND
