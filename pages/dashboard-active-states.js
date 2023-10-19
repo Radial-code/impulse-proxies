@@ -1,7 +1,7 @@
 import React from "react";
 import { DashboardFooter } from "@/components/dashboard/DashboardFooter";
 import DashboardNav from "@/components/dashboard/DashboardNav";
-import ISPDashboardOtherState from "@/components/ISPDashboardOtherState";
+import ISPDashboardOtherState from "@/components/dashboard/ISPDashboardOtherState";
 
 const dashboardactivestates = () => {
   return (
