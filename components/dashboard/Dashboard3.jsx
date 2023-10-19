@@ -1,7 +1,5 @@
 import React from "react";
-import DashboardNav from "./DashboardNav";
 import IspProxies from "./IspProxies";
-import { DashboardFooter } from "./DashboardFooter";
 
 const Dashboard3 = () => {
   return (
