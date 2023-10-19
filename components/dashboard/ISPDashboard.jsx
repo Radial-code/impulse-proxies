@@ -40,9 +40,9 @@ const ISPDashboard = () => {
           ISP & DC ORDERS
         </p>
         <div className="flex justify-between items-center md:flex-row flex-col lg:pt-0 pt-8 gap-5 xl:gap-12">
-          <div className="w-full lg:max-h-[290px] max-h-[280px] overflow-x-scroll custom_scrollbar_y rounded-lg">
+          <div className="w-full lg:max-h-[290px] max-h-[280px] overflow-x-scroll custom_scrollbar_y rounded-2xl">
             {/* className="xl:w-[73%] 2xl:w-[60%] lg:w-[60%] md:w-[58%] lg:max-h-[290px] max-h-[280px] w-full overflow-x-scroll custom_scrollbar_y xl:max-w-[965px]  md:max-w-[427px] lg:max-w-[720px]  rounded-lg"> */}
-            <table className="rounded-xl overflow-hidden w-full">
+            <table className="rounded-2xl overflow-hidden w-full">
               <thead className="bg-[#212148]">
                 <tr>
                   {Headings.map((heading, index) => (
