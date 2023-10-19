@@ -31,7 +31,7 @@ const RangeBar = () => {
 
   return (
     <>
-      <div className="px-3">
+      <div className="sm:px-3">
         <div className="bg-[#212148] flex items-center  rounded-t-[16px]">
           <p className="text-sm font-Montserrat font-bold text-white leading-normal tracking-[1.2px] sm:ps-6 ps-4 lg:py-6 py-[22px] ">
             YOUR REWARDS TRACKER
@@ -56,7 +56,6 @@ const RangeBar = () => {
                   onInput={handleInputChange}
                 />
               </span>
-            
             </div>
           </div>
           <div className="flex justify-between">
