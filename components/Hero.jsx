@@ -32,11 +32,7 @@ const Hero = () => {
 
               <div className=" min-h-[460px] md:min-h-[250px] lg:min-h-[399px]  xl:min-h-[499px] md:w-[44%] w-11/12 xl:w-6/12 lg:w-6/12 mx-auto sm:mt-7 md:mt-0 flex lg:flex-row flex-col justify-center md:justify-end relative after:contents-[''] after:h-[500px] after:w-[450px] after:absolute bgHeroImg after:opacity-30 after:rounded-full after:blur-[137px] after:pointer-events-none after:top-[-50%]">
                 <div className="box_showdow absolute max-w-[456px] w-full h-[542px] blur-[140px] rounded-[36px] opacity-30 top-10 right-7 z-[-1] hidden lg:inline-block"></div>
-                {/* <Lottie
-                  animationData={animationData}
-                  loop={true}
-                  className="pointer-events-none relative z-50 2xl:h-[500px] lg:mt-0 md:mt-[-20px] sm:max-w-[400px] md:max-w-[370px] lg:max-w-[500px] mx-auto xl:h-[500px] xl:max-w-[600px] sm:mt-0 mt-12 xl:w-full"
-                /> */}
+               
                 <Image
                   className="pointer-events-none relative z-50 lg:mt-0 md:mt-[-20px] sm:max-w-[400px] md:max-w-[370px] lg:max-w-[500px] mx-auto xl:max-w-[600px] sm:mt-0 mt-12 w-full object-cover h-[100%]"
                   src="/assets/images/svg/hero-img.svg"
