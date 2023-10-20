@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-import Ring from "./Ring";
 import { AccordianData } from "./common/Helper";
-import Torus from "./common/Torus";
 
 const ImpulseFAQ = () => {
   const [openAccordion, setOpenAccordion] = useState(null);
@@ -22,7 +20,6 @@ const ImpulseFAQ = () => {
       <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>
       <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute bottom-0 lg:bottom-[0px] lg:left-[22%]"></div>
       <div className="torus-footer absolute pointer-events-none bottom-[-33px] start-0 md:bottom-[-80px] md:start-[-70px] lg:bottom-[-10px] xl:w-[223px] xl:h-[223px]  lg:w-[123px] lg:h-[123px] lg:start-[-10%] sm:w-[93px] md:w-[173px] md:h-[173px] w-[73px]  sm:h-[93px] h-[100px]">
-        {/* <Torus /> */}
         <Image
           height={250}
           width={250}
@@ -30,7 +27,6 @@ const ImpulseFAQ = () => {
         />
       </div>
       <div className="torus-footer pointer-events-none absolute lg:top-[-6%] sm:top-[-2%] top-[-3%] end-[-7px] lg:end-[-6%] sm:end-[2%] lg:h-[207px] lg:w-[207px] sm:w-[120px] w-[100px]  sm:h-[175px] h-[100px]">
-        {/* <Ring /> */}
         <Image
           height={250}
           width={250}

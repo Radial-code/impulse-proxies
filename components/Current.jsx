@@ -1,6 +1,5 @@
 
 import React, { useState, useRef } from "react";
-import { findDOMNode } from "react-dom";
 
 import { CurrentData } from "./common/Helper";
 import Link from "next/link";

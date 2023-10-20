@@ -1,7 +1,5 @@
 import React from "react";
 import Header from "./Header";
-import Lottie from "lottie-react";
-// import animationData from "../public/assets/images/lottie/data (2).json";
 import Image from "next/image";
 const Hero = () => {
   return (

@@ -5,25 +5,19 @@ import { RewardData } from "../common/Helper";
 const RewardsDashboard = () => {
   const copyText = () => {
     const textToCopy = document.getElementById("textToCopy").innerText;
-    // Try to use the modern clipboard API
     if (navigator.clipboard) {
       navigator.clipboard
         .writeText(textToCopy)
-        // .then(() => {
-        //   alert("Text copied to clipboard!");
-        // })
         .catch((error) => {
           console.error("Failed to copy text: ", error);
         });
     } else {
-      // For older browsers, fallback to the execCommand method
       const textArea = document.createElement("textarea");
       textArea.value = textToCopy;
       document.body.appendChild(textArea);
       textArea.select();
       document.execCommand("copy");
       document.body.removeChild(textArea);
-      // alert("Text copied to clipboard!");
     }
   };
   return (

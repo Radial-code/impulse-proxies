@@ -1,7 +1,6 @@
 import React from "react";
 const copyText = () => {
   const textToCopy = document.getElementById("textToCopy").innerText;
-  // Try to use the modern clipboard API
   if (navigator.clipboard) {
     navigator.clipboard
       .writeText(textToCopy)
@@ -12,7 +11,6 @@ const copyText = () => {
         console.error("Failed to copy text: ", error);
       });
   } else {
-    // For older browsers, fallback to the execCommand method
     const textArea = document.createElement("textarea");
     textArea.value = textToCopy;
     document.body.appendChild(textArea);

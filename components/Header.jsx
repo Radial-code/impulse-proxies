@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import MobileNav from "./MobileNav";
 import Link from "next/link";
 import { HeaderCrossIcons, ToggleIcon } from "./common/Icons";
-// import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Image from "next/image";
 import DropDown from "./DropDown";
 const Header = () => {

@@ -16,10 +16,8 @@ const DashboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
         document.body.classList.remove("overflow-y-hidden");
       }
     }
-    // Attach the event listener and run it once to check the initial screen size
     mediaQuery.addListener(handleScreenSizeChange);
     handleScreenSizeChange(mediaQuery);
-    // Cleanup the event listener when the component unmounts
     return () => {
       mediaQuery.removeListener(handleScreenSizeChange);
     };

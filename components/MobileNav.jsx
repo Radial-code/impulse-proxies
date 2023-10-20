@@ -16,10 +16,8 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
         document.body.classList.remove("overflow-y-hidden");
       }
     }
-    // Attach the event listener and run it once to check the initial screen size
     mediaQuery.addListener(handleScreenSizeChange);
     handleScreenSizeChange(mediaQuery);
-    // Cleanup the event listener when the component unmounts
     return () => {
       mediaQuery.removeListener(handleScreenSizeChange);
     };
@@ -37,11 +35,8 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
       >
         <div className="flex flex-col gap-9 xl:gap-5 justify-center items-center w-full">
           <div className="relative group inline-block text-left w-full">
-            {/* Dropdown button */}
-
             <DropDown />
           </div>
-          {/* </Link> */}
           <Link
             aria-label="AboutUs"
             onClick={() => setActiveNavOverlay(false)}

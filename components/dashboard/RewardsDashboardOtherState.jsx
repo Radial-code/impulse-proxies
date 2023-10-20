@@ -16,7 +16,6 @@ const RewardsDashboardOtherState = () => {
       textArea.select();
       document.execCommand("copy");
       document.body.removeChild(textArea);
-      // alert("Text copied to clipboard!");
     }
   };
   return (

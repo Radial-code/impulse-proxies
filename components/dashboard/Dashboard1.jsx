@@ -47,20 +47,12 @@ const Dashboard1 = () => {
     setSelectedProvider(provider);
     setIsProviderDropdownOpen(false);
   };
-  // range bar
-  // const [value, setValue] = useState(500);
-  // const handleChange = (e) => {
-  //   setValue(e.target.value);
-  // };
-
   const [value, setValue] = useState(500);
 
   const handleChange = (e) => {
     const newValue = e.target.value;
     setValue(newValue);
-    // Calculate the percentage value
     const percentage = (newValue / 1000) * 100;
-    // Apply the dynamic background color to the range input
     const rangeInput = document.querySelector(".range-input");
     if (rangeInput) {
       rangeInput.style.background = `linear-gradient(to right, #4FDCC7 0%, #4FDCC7 ${percentage}%, #3c3c6b ${percentage}%, #3c3c6b 100%)`;
