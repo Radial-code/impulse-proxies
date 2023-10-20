@@ -15,7 +15,7 @@ export default function Home() {
       <PageMataTag />
       <div className="overflow-hidden">
         <BackToTopButton />
-        <Preloader />
+        {/* <Preloader /> */}
         <Hero />
         <Choose />
         <OurProxies />
