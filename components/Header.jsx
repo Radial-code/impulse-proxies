@@ -31,15 +31,15 @@ const Header = () => {
             <div className="flex-1 flex items-center justify-between">
               <div className="flex-shrink-0 flex items-center justify-between relative z-[200]">
                 <Link
-                  href="/"
+                  href="#"
                   className="text-white text-xl font-semibold flex items-center "
-                  aria-label="scroll to home page"
+                  aria-label="logo"
                 >
                   <Image
                     height={66}
                     width={53}
                     src="/assets/images/svg/FooterLogo.svg"
-                    alt="herologo"
+                    alt="logo"
                     className="xl:w-[53px] xl:h-[66px] md:w-[45px] md:h-[55px] w-[30px] h-[37px]"
                   />
                   <div className="ms-3">
@@ -58,21 +58,21 @@ const Header = () => {
                     <DropDown />
                   </div>
                   <Link
-                    aria-label="AboutUs"
+                    aria-label="About Us"
                     href="#AboutUs"
                     className="text-white font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
                     About Us
                   </Link>
                   <Link
-                    aria-label="Faqs"
+                    aria-label=" FAQ’s"
                     href="#Faqs"
                     className="text-white font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
                     FAQ’s
                   </Link>
                   <Link
-                    aria-label="proxies"
+                    aria-label=" Purchase"
                     href="#proxies"
                     className="text-white font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
@@ -103,7 +103,6 @@ const Header = () => {
                 {" "}
                 {isToggleIconVisible ? <HeaderCrossIcons /> : <ToggleIcon />}
               </button>
-           
             </div>
           </div>
         </div>

@@ -17,7 +17,7 @@ const ImpulseFooter = () => {
                   height={67}
                   width={67}
                   src="/assets/images/svg/FooterLogo.svg"
-                  alt="aboutimage"
+                  alt="logo"
                   className="sm:w-[67px] sm:h-[67px] w-[47px] h-[47px]"
                 />
                 <div className=" ms-3">
@@ -50,7 +50,7 @@ const ImpulseFooter = () => {
                         </li>
                         <li>
                           <Link
-                            aria-label="ISPproxies"
+                            aria-label={footer.ariaLabel}
                             href={footer.link1}
                             className=" text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px] hover:text-white transition-all ease-in-out duration-200"
                           >
@@ -59,7 +59,7 @@ const ImpulseFooter = () => {
                         </li>
                         <li>
                           <Link
-                            aria-label="ResidentialProxies"
+                            aria-label={footer.ariaLabel}
                             href={footer.link2}
                             className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px]"
                           >
@@ -68,7 +68,7 @@ const ImpulseFooter = () => {
                         </li>
                         <li>
                           <Link
-                            aria-label="DatacenterProxies"
+                            aria-label={footer.ariaLabel}
                             href={footer.link3}
                             className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px]"
                           >
@@ -77,7 +77,7 @@ const ImpulseFooter = () => {
                         </li>
                         <li>
                           <Link
-                            aria-label="Home"
+                            aria-label={footer.ariaLabel}
                             href="#"
                             className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px]"
                           >

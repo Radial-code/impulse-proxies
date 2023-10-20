@@ -10,6 +10,7 @@ export const FooterImpluse = [
     link2: "#Residential-Proxies",
     link3: "#Datacenter-Proxies",
     link4: "#",
+    ariaLabel: "all products",
   },
   {
     id: 2,
@@ -18,10 +19,11 @@ export const FooterImpluse = [
     option2: "FAQ",
     option3: "About Us",
     option4: "Pricing",
-    link1: "#",
+    link1: "",
     link2: "#Faqs",
     link3: "#AboutUs",
     link4: "#Pricing",
+    ariaLabel: "pages",
   },
   {
     id: 3,
@@ -34,7 +36,8 @@ export const FooterImpluse = [
     link1: "legal",
     link2: "#Privacy-Policy",
     link3: "#Refund-Policy",
-    link4: "#",
+    link4: "",
+    ariaLabel: "legal",
   },
 ];
 export const AboutBox = [
