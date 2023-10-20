@@ -140,12 +140,48 @@
   left: 0;
   overflow: hidden;
 }
-.grad_bg{
+
+.grad_bg {
+  background-image: conic-gradient(
+    #1e1e42,
+    #1e1e42 20%,
+    #557cff 50%,
+    #32d7ff 75%,
+    #97fcff 100%
+  );
+  z-index: -1;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+  position: absolute;
+  top: -364%;
+  bottom: -364%;
+  left: -200%;
+  right: -200%;
+
+  -webkit-animation: gradient-bg 4s linear infinite;
+
+  animation: gradient-bg 4s linear infinite;
+}
+
+@-webkit-keyframes gradient-bg {
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0px) rotate(360deg);
+    transform: translate3d(0px, 0px, 0px) rotate(360deg);
+  }
+}
+
+@keyframes gradient-bg {
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0px) rotate(360deg);
+    transform: translate3d(0px, 0px, 0px) rotate(360deg);
+  }
+}
+/* .grad_bg{
   background-image: url("/assets/images/svg/hero-bg-lines.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 @media (max-width: 519.98px) {
   .rockat_img_2 {
     max-width: 900px !important;
