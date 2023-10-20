@@ -43,13 +43,13 @@ export const FooterImpluse = [
 export const AboutBox = [
   {
     id: 1,
-    aboutImg: "/assets/images/svg/about1.svg",
+    aboutImg: "/assets/images/png/about1.png",
     impulse: "Impulse",
     border: "linerBorder",
   },
   {
     id: 2,
-    aboutImg: "/assets/images/svg/ZfnwLnb1.svg",
+    aboutImg: "/assets/images/svg/about2.svg",
     impulse: "Nuno",
     border: "linerBorder",
   },
