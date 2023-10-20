@@ -19,7 +19,6 @@ const DropDown = () => {
     setIsOpen(false);
   };
   const handleOptionClick = (value) => {
-    // If the dropdown is open, select the option and close it
     setActiveTab(value);
     if (isOpen) {
       setSelectedOption();
