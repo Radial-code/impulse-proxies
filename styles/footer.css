@@ -9,10 +9,10 @@
 .lh_normal {
   line-height: normal;
 }
-.arrowAnimation {
+/* .arrowAnimation {
   -webkit-animation: arrowAnimat 2s infinite ease-in-out;
   animation: arrowAnimat 2s infinite ease-in-out;
-}
+} */
 .spin {
   -webkit-animation: spin 3s infinite linear;
   animation: spin 3s infinite linear;
@@ -175,10 +175,10 @@
   -moz-user-select: none;
   user-select: none;
 }
-.spin_about_img {
+/* .spin_about_img {
   -webkit-animation: spinimg 8s linear infinite;
   animation: spinimg 8s linear infinite;
-}
+} */
 @-webkit-keyframes spinimg {
   0% {
     -webkit-transform: rotate(0deg);
@@ -199,10 +199,10 @@
     transform: rotate(360deg);
   }
 }
-.spin_about_img_2 {
+/* .spin_about_img_2 {
   -webkit-animation: spinimg_2 8s linear infinite;
   animation: spinimg_2 8s linear infinite;
-}
+} */
 @-webkit-keyframes spinimg_2 {
   0% {
     -webkit-transform: rotate(360deg);

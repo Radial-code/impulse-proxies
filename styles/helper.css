@@ -141,7 +141,7 @@
   overflow: hidden;
 }
 
-.grad_bg {
+/* .grad_bg {
   background-image: conic-gradient(
     #1e1e42,
     #1e1e42 20%,
@@ -175,13 +175,13 @@
     -webkit-transform: translate3d(0px, 0px, 0px) rotate(360deg);
     transform: translate3d(0px, 0px, 0px) rotate(360deg);
   }
-}
-/* .grad_bg{
+} */
+.grad_bg{
   background-image: url("/assets/images/svg/hero-bg-lines.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
 @media (max-width: 519.98px) {
   .rockat_img_2 {
     max-width: 900px !important;
