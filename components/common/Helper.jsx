@@ -1,4 +1,4 @@
-export const FooterImpluse = [
+export const footerImpluse = [
   {
     id: 1,
     heading: "All Products",
@@ -37,7 +37,7 @@ export const FooterImpluse = [
     link4: "#",
   },
 ];
-export const AboutBox = [
+export const aboutBox = [
   {
     id: 1,
     aboutImg: "/assets/images/svg/about1.svg",
@@ -51,7 +51,7 @@ export const AboutBox = [
     border: "linerBorder",
   },
 ];
-export const AccordianData = [
+export const accordianData = [
   {
     id: 1,
     heading: "Lorem ipsum dolor sit amet, consectetur adipiscing sed",

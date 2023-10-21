@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FooterImpluse } from "./common/Helper";
+import { footerImpluse } from "./common/Helper";
 import { FooterDiscord, ImpulseTweeter } from "./common/Icons";
 import Image from "next/image";
 const ImpulseFooter = () => {
@@ -36,43 +36,43 @@ const ImpulseFooter = () => {
             </div>
             <div className="md:w-8/12 w-full lg:pt-0 pt-4">
               <div className="flex flex-wrap">
-                {FooterImpluse.map((footer) => {
+                {footerImpluse.map((obj, i) => {
                   return (
                     <div
                       className=" w-full lg:w-3/12 sm:w-4/12 flex justify-between md:justify-center"
-                      key={footer.id}
+                      key={i}
                     >
                       <ul>
-                        <li className={`sm:pt-0 ${footer.padding}`}>
+                        <li className={`sm:pt-0 ${obj.padding}`}>
                           <p className=" inline-block mb-2 text-white font-Montserrat lg:text-xl text-[15px] font-semibold lh_normal">
-                            {footer.heading}
+                            {obj.heading}
                           </p>
                         </li>
                         <li>
                           <Link
                             aria-label="ISPproxies"
-                            href={footer.link1}
+                            href={obj.link1}
                             className=" text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px] hover:text-white transition-all ease-in-out duration-200"
                           >
-                            {footer.option1}
+                            {obj.option1}
                           </Link>
                         </li>
                         <li>
                           <Link
                             aria-label="ResidentialProxies"
-                            href={footer.link2}
+                            href={obj.link2}
                             className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px]"
                           >
-                            {footer.option2}
+                            {obj.option2}
                           </Link>
                         </li>
                         <li>
                           <Link
                             aria-label="DatacenterProxies"
-                            href={footer.link3}
+                            href={obj.link3}
                             className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px]"
                           >
-                            {footer.option3}
+                            {obj.option3}
                           </Link>
                         </li>
                         <li>
@@ -81,7 +81,7 @@ const ImpulseFooter = () => {
                             href="#"
                             className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px]"
                           >
-                            {footer.option4}
+                            {obj.option4}
                           </Link>
                         </li>
                       </ul>

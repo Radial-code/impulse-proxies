@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import Ring from "./Ring";
-import { AccordianData } from "./common/Helper";
+import { accordianData } from "./common/Helper";
 import Torus from "./common/Torus";
 
 const ImpulseFAQ = () => {
@@ -16,7 +16,7 @@ const ImpulseFAQ = () => {
   };
   return (
     <>
-      {/* <div
+      <div
         id="Faqs"
         className="bg-[url('/assets/images/svg/FAQsbg.svg')] bg-no-repeat lg:bg-[100% 100%] bg-cover bg-center md:pt-24 lg:pt-28 sm:pt-20 pt-12 md:pb-[92px] lg:pb-48 sm:pb-22 pb-16 overflow-hidden relative"
       >
@@ -47,9 +47,9 @@ const ImpulseFAQ = () => {
           <p className="text-center lg:text-6xl text-[28px] mx-auto text-white sm:max-w-full max-w-[245px] font-Montserrat font-bold leading-[121%] tracking-[-0.74px] sm:mb-12 mb-7">
             Frequently Asked Questions
           </p>
-          {AccordianData.map((data, index) => (
+          {accordianData.map((data, index) => (
             <div
-              key={data.id}
+              key={index}
               className="mt-5 border-[2px] transition-opacity ease-in duration-300 border-cyan-green bg-[#50EED733] rounded-2xl px-4 py-3 overflow-hidden w-full max-w-[655px] lg:max-w-[849px] mx-auto"
               open={openAccordion === index}
             >
@@ -89,7 +89,7 @@ const ImpulseFAQ = () => {
             </div>
           ))}
         </div>
-      </div> */}
+      </div>
     </>
   );
 };
