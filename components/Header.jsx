@@ -27,12 +27,12 @@ const Header = () => {
       />
       <nav className="bg-[#040426] xl:py-[38px] lg:py-4 border-b-[1px] border-[#222F4A] flex-grow-0">
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
-          <div className="flex-1 flex items-center justify-between lg:items-center xl:mr-3">
-            <div className="flex-1 flex items-center justify-between">
+          <div className="flex-1 flex items-center justify-between lg:items-center lg:p-0 py-4 xl:mr-3">
+            <div className="flex-1 flex items-center lg:justify-between justify-center">
               <div className="flex-shrink-0 flex items-center justify-between relative z-[200]">
                 <Link
                   href="/"
-                  className="text-white text-xl font-semibold flex items-center "
+                  className="text-white text-xl lg:ms-0 ms-12 font-semibold flex items-center "
                   aria-label="scroll to home page"
                 >
                   <Image
