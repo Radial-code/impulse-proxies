@@ -14,6 +14,7 @@ const ImpulseFooter = () => {
             <div className="md:w-4/12 sm:w-6/12 w-full">
               <div className="flex items-center lg:mb-4 mb-3">
                 <Image
+                  loading="lazy"
                   height={67}
                   width={67}
                   src="/assets/images/svg/FooterLogo.svg"

@@ -36,6 +36,7 @@ const Header = () => {
                   aria-label="scroll to home page"
                 >
                   <Image
+                    loading="lazy"
                     height={66}
                     width={53}
                     src="/assets/images/svg/FooterLogo.svg"
@@ -103,7 +104,6 @@ const Header = () => {
                 {" "}
                 {isToggleIconVisible ? <HeaderCrossIcons /> : <ToggleIcon />}
               </button>
-           
             </div>
           </div>
         </div>

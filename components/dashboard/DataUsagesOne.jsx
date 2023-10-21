@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 const DataUsagesOne = () => {
   return (
@@ -14,6 +14,7 @@ const DataUsagesOne = () => {
                 src="./assets/images/svg/dataSmall.svg"
                 className="me-3"
                 alt="image"
+                loading="lazy"
               />
               DATA USAGE
             </p>
@@ -26,6 +27,7 @@ const DataUsagesOne = () => {
               height={185}
               width={185}
               alt="image"
+              loading="lazy"
               src="./assets/images/svg/dataCircle.svg"
             />
             <div className="flex items-center justify-center flex-col absolute">
@@ -41,6 +43,6 @@ const DataUsagesOne = () => {
       </div>
     </>
   );
-}
+};
 
 export default DataUsagesOne;

@@ -78,11 +78,13 @@ const Current = () => {
                 width={54}
                 src="/assets/images/svg/N_icon_current.svg"
                 alt="N icon"
+                loading="lazy"
                 className="lg:w-[73px] lg:h-[54px] md:w-[65px] md:h-[46px] w-[44px] h-[31px] !cursor-pointer"
               />
             </Link>
             <Link aria-label="MangoIcon" href="#" target="_blank">
               <Image
+                loading="lazy"
                 height={66}
                 width={66}
                 src="/assets/images/svg/mango_icon_current.svg"

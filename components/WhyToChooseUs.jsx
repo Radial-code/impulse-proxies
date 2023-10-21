@@ -11,6 +11,7 @@ function WhyToChooseUs() {
           width={145}
           src="/assets/images/webp/AbstractTrangle-02.webp"
           alt="Abstract"
+          loading="lazy"
         />
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 sm:py-0 py-2">
           <h2 className="font-Montserrat sm:text-6xl text-[35px] text-white font-bold leading-[121%] text-center tracking-[-0.64px]">
@@ -33,6 +34,7 @@ function WhyToChooseUs() {
                         width={32}
                         src={obj.whyToImg}
                         alt="aboutimage"
+                        loading="lazy"
                       />
                     </div>
                     <p className=" text-white md:text-md text-[12px] font-medium font-Montserrat opacity-70 sm:max-w-[244px] leading-[25px] ">

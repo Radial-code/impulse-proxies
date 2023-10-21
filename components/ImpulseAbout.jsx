@@ -17,6 +17,7 @@ const ImpulseAbout = () => {
             alt="aboutTop"
             width={144}
             height={72}
+            loading="lazy"
             className="pointer-events-none spin_about_img absolute left-0 lg:left-28 lg:top-[-10%] md:top-[-8%] top-[-5%]  text-3xl lg:w-[144px] md:w-[109px] lg:h-[122px] md:h-[92px] w-[65px] h-[55px] aboutTop"
           />
           <Image
@@ -24,6 +25,7 @@ const ImpulseAbout = () => {
             alt="aboutTop"
             width={99}
             height={50}
+            loading="lazy"
             className="pointer-events-none spin_about_img_2 absolute left-0 lg:left-28 lg:top-[-10%] md:top-[-8%] top-[-5%] text-3xl lg:w-[144px] md:w-[109px] lg:h-[122px] md:h-[92px] w-[65px] h-[55px] aboutTop"
           />
         </div>
@@ -49,7 +51,7 @@ const ImpulseAbout = () => {
                           width={81}
                           src={obj.aboutImg}
                           alt="aboutimg"
-                          priority="1"
+                          loading="lazy"
                           className=" sm:h-[81px] sm:w-[81px] w-[42px] h-[42px]"
                         />
                         <div>
@@ -70,6 +72,7 @@ const ImpulseAbout = () => {
                           height={27}
                           width={27}
                           alt="img"
+                          loading="lazy"
                           src="/assets/images/svg/AboutLogo.svg"
                         />
                         <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[6px]">
@@ -83,6 +86,7 @@ const ImpulseAbout = () => {
                           height={27}
                           width={27}
                           alt="img"
+                          loading="lazy"
                           src="/assets/images/svg/AboutLogo.svg"
                         />
                         <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-[14px] ps-[6px]">

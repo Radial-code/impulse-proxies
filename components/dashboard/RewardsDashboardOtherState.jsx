@@ -80,6 +80,7 @@ const RewardsDashboardOtherState = () => {
                           src="/assets/images/svg/content_copy.svg"
                           alt="aboutimage"
                           className="cursor-pointer"
+                          loading="lazy"
                         />
                       </div>
                       <p className=" font-Montserrat text-[13px] md:text-lg font-medium text-[#9D9DBB] leading-normal md:max-w-[588px] max-w-[460px] mt-4 lg:mt-5">
@@ -144,6 +145,7 @@ const RewardsDashboardOtherState = () => {
                                   width={22}
                                   src="/assets/images/svg/redeem_free_gb.svg"
                                   alt="redeem free"
+                                  loading="lazy"
                                 />
                                 <p className="font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
                                   {item.text}
@@ -186,6 +188,7 @@ const RewardsDashboardOtherState = () => {
                           src="/assets/images/svg/content_copy.svg"
                           alt="about image"
                           className="cursor-pointer"
+                          loading="lazy"
                         />
                       </div>
                       <p className=" font-Montserrat sm:text-[13px] text-[12px] md:text-lg font-medium leading-normal text-[#9D9DBB] md:max-w-[608px] max-w-[460px] sm:mt-5 mt-4">

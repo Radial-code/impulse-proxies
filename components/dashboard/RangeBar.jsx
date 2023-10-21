@@ -72,6 +72,7 @@ const RangeBar = () => {
                 className=" text-center ms-1"
                 src="/assets/images/svg/redeem.svg"
                 alt="aboutimage"
+                loading="lazy"
               />
             </div>
             <div className=" text-center">
@@ -84,6 +85,7 @@ const RangeBar = () => {
                 className="text-center inline-block"
                 src="/assets/images/svg/redeem.svg"
                 alt="aboutimage"
+                loading="lazy"
               />
             </div>
           </div>

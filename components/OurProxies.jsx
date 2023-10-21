@@ -14,6 +14,7 @@ const OurProxies = () => {
           className="absolute bottom-[-50px] md:bottom-[-120px] lg:bottom-[-170px] xl:bottom-[-250px] 2xl:bottom-[-270px] w-full rocket_img rockat_img_2 pointer-events-none"
           src="/assets/images/svg/Racketimage.svg"
           alt="Group_bg"
+          loading="lazy"
         />
         <div className="proxies_box h-10 opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>
         <div className="box_showdow rounded-[40px] opacity-20 blur-[150px] absolute w-full max-w-[1190px] h-[200px] bottom-0 pointer-events-none"></div>

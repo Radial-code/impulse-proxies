@@ -298,6 +298,7 @@ const ISPDashboard = () => {
         className=" absolute right-0 bottom-0 z-[-2] hidden md:inline"
         alt="DashboardLine"
         src="/assets/images/svg/DashboardLine.svg"
+        loading="lazy"
       />
     </div>
   );
