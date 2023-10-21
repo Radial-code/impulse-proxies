@@ -1,4 +1,4 @@
-export const FooterImpluse = [
+export const footerImpluse = [
   {
     id: 1,
     heading: "All Products",
@@ -37,7 +37,7 @@ export const FooterImpluse = [
     link4: "#",
   },
 ];
-export const AboutBox = [
+export const aboutBox = [
   {
     id: 1,
     aboutImg: "/assets/images/svg/about1.svg",
@@ -51,7 +51,7 @@ export const AboutBox = [
     border: "linerBorder",
   },
 ];
-export const AccordianData = [
+export const accordianData = [
   {
     id: 1,
     heading: "Lorem ipsum dolor sit amet, consectetur adipiscing sed",
@@ -73,32 +73,29 @@ export const AccordianData = [
     para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur",
   },
 ];
-export const CardData = [
+export const cardData = [
   {
-    id: 1,
     heading: "Global Reach",
     para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
     whyToImg: "/assets/images/svg/Globe.svg",
   },
   {
-    id: 2,
     heading: "Affordable Rates",
     para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
     whyToImg: "/assets/images/svg/AffordableRates.svg",
   },
   {
-    id: 3,
     heading: "Reliability redefined",
     para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
     whyToImg: "/assets/images/svg/clock.svg",
   },
 ];
-export const CurrentData = [
+export const currentData = [
   { id: 1, number: "", current: "Current Active IPs" },
   { id: 2, number: "+", current: "Loyal Impulse Users" },
   { id: 3, number: "GB", current: "Current Proxy Usage" },
 ];
-export const OurData = [
+export const ourData = [
   {
     id: 1,
     heading: " Proxies",
@@ -120,7 +117,7 @@ export const OurData = [
 ];
 
 //REWARD DATA
-export const RewardData = [
+export const rewardData = [
   {
     text: "You won 1 GB free!",
   },
@@ -132,7 +129,7 @@ export const RewardData = [
   },
 ];
 
-export const Headings = [
+export const headings = [
   "DOWNLOAD LIST",
   "ORDER ID",
   "PROXY TYPE",
@@ -141,7 +138,7 @@ export const Headings = [
   "EXPIRY DATE",
   "RENEW LIST",
 ];
-export const IspOrdersData = [
+export const ispOrdersData = [
   ["1232312123", "Datacenter", "Proxy1", "500", "05/06/2024", "12", "54"],
   ["1232312123", "Datacenter", "Proxy1", "500", "05/06/2024", "12", "54"],
   ["1232312123", "Datacenter", "Proxy1", "500", "05/06/2024", "12", "54"],

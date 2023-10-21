@@ -1,7 +1,7 @@
 import React from "react";
 import IspProxies from "./IspProxies";
 import Image from "next/image";
-import { Headings, IspOrdersData } from "../common/Helper";
+import { headings, ispOrdersData } from "../common/Helper";
 const copyText = () => {
   const textToCopy = document.getElementById("textToCopy").innerText;
   // Try to use the modern clipboard API
@@ -39,14 +39,14 @@ const ISPDashboardOtherState = () => {
         <p className="text-white font-Montserrat lg:block hidden font-bold tracking-[1.2px] mb-6 mt-10">
           ISP & DC ORDERS
         </p>
-        {!IspOrdersData.length > 0 ? (
+        {!ispOrdersData.length > 0 ? (
           <>
             <div className="flex justify-between items-center md:flex-row flex-col lg:pt-0 pt-8 gap-5 xl:gap-12">
               <div className="w-full lg:max-h-[290px] max-h-[280px] overflow-x-scroll custom_scrollbar_y rounded-2xl">
                 <table className="rounded-2xl overflow-hidden w-full">
                   <thead className="bg-[#212148]">
                     <tr>
-                      {Headings.map((heading, index) => (
+                      {headings.map((heading, index) => (
                         <th
                           key={index}
                           className="xl:p-5 p-4 text-[#717198] mb-0 font-Montserrat text-sm font-bold tracking-[1.1px] whitespace-nowrap"
@@ -56,9 +56,9 @@ const ISPDashboardOtherState = () => {
                       ))}
                     </tr>
                   </thead>
-                  {console.log("data===>", IspOrdersData.length)}
+                  {console.log("data===>", ispOrdersData.length)}
                   <tbody className="bg-[#151536]">
-                    {IspOrdersData.map((rowData, rowIndex) => (
+                    {ispOrdersData.map((rowData, rowIndex) => (
                       <tr
                         key={rowIndex}
                         className="text-white font-Montserrat text-bold text-sm tracking-[-0.24px]"

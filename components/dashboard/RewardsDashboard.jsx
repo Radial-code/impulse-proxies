@@ -1,6 +1,6 @@
 import Image from "next/image";
 import RangeBar from "./RangeBar";
-import { RewardData } from "../common/Helper";
+import { rewardData } from "../common/Helper";
 
 const RewardsDashboard = () => {
   const copyText = () => {
@@ -40,7 +40,7 @@ const RewardsDashboard = () => {
           <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
             <RangeBar />
             <div className="flex flex-wrap mt-9 lg:mt-12">
-              {RewardData.length > 0 ? (
+              {rewardData.length > 0 ? (
                 <>
                   <div className="w-full lg:w-6/12 px-3">
                     <div className="bg-[#212148] flex items-center justify-between h-14 rounded-t-[16px] px-4 lg:px-9 relative">
@@ -137,7 +137,7 @@ const RewardsDashboard = () => {
                         </div>
                       </div>
                       <div className="pt-[54px] ms-[-10px] ">
-                        {RewardData.map((item, i) => {
+                        {rewardData.map((item, i) => {
                           return (
                             <div
                               className={`flex items-center gap-2 sm:gap-4 pe-4 ${
