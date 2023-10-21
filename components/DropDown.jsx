@@ -45,7 +45,7 @@ const DropDown = () => {
     <div className="relative">
       <button
         onClick={toggleDropdown}
-        className="text-white font-semibold flex items-center leading-[150%] font-Montserrat sm:text-[3vw] text-[4vw] mx-auto relative hover:opacity-70 transition-all ease-in-out duration-200"
+        className="text-white font-semibold flex items-center leading-[150%] font-Montserrat md:text-[3vw] text-[4vw] lg:text-2xl mx-auto relative hover:opacity-70 transition-all ease-in-out duration-200"
       >
         {selectedOption || "Products"}
         <svg
