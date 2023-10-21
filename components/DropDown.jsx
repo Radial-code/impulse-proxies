@@ -45,7 +45,7 @@ const DropDown = () => {
     <div className="relative">
       <button
         onClick={toggleDropdown}
-        className="text-white font-semibold flex items-center leading-[150%] font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
+        className="text-white font-semibold flex items-center leading-[150%] font-Montserrat sm:text-[3vw] text-[4vw] mx-auto relative hover:opacity-70 transition-all ease-in-out duration-200"
       >
         {selectedOption || "Products"}
         <svg
@@ -68,7 +68,7 @@ const DropDown = () => {
       {isOpen && (
         <ul
           ref={dropdownRef}
-          className="absolute z-20 w-60 mt-2 py-2 bg-[#040426] rounded-lg shadow-lg border-white border"
+          className="absolute left-[37%] left_30 z-20 w-60 mt-2 py-2 bg-[#040426] rounded-lg shadow-lg border-white border"
         >
           {options.map((option, i) => (
             <Link href="/product" key={i}>

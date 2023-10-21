@@ -182,12 +182,20 @@
   background-repeat: no-repeat;
   background-size: cover;
 } */
+@media (max-width:768px) {
+  .left_30{
+    left: 30% !important;
+  }
+}
 @media (max-width: 519.98px) {
   .rockat_img_2 {
     max-width: 900px !important;
     width: 900px !important;
     left: -430px;
     bottom: -150px !important;
+  }
+  .left_30{
+    left: 20% !important;
   }
 }
 @media (max-width: 419.98px) {
