@@ -6,7 +6,7 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <>
-      <Header />
+      {/* <Header />
       <div className=" relative">
         <div className=" hero-section grad_b flex flex-col justify-center lg:py-8 xl:py-0 pt-[30px] sm:pb-[80px] pb-14">
           <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 h-full flex items-center">
@@ -37,15 +37,6 @@ const Hero = () => {
                   loop={true}
                   className="pointer-events-none relative z-50 2xl:h-[500px] lg:mt-0 md:mt-[-20px] sm:max-w-[400px] md:max-w-[370px] lg:max-w-[500px] mx-auto xl:h-[500px] xl:max-w-[600px] sm:mt-0 mt-12 xl:w-full"
                 />
-
-                {/* <Image
-                  className="pointer-events-none relative z-50 lg:mt-0 md:mt-[-20px] sm:max-w-[400px] md:max-w-[370px] lg:max-w-[500px] mx-auto xl:max-w-[600px] sm:mt-0 mt-12 xl:w-full   h-[200px] object-cover sm:h-[100%]"
-                  src="/assets/images/png/hero-image.png"
-                  alt="proxies box bottom image"
-                  height={844}
-                  width={990}
-                /> */}
-
                 <div className="md:hidden sm:flex sm:mb-0 items-center justify-center text-center">
                   <button className=" hover:bg-transparent transition-all max-w-[300px] w-full sm:max-w-[197px] min-h-[55px] border-[2px] border-cyan-green bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl leading-[120%] text-white mt-10">
                     Purchase
@@ -65,7 +56,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
