@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import { OurData } from "./common/Helper";
+import { ourData } from "./common/Helper";
 const OurProxies = () => {
   return (
     <>
-      {/* <div
+      <div
         id="proxies"
         className="pt-[52px] lg:pt-[87px] 2xl:pt-28 pb-28 md:pb-[120px] lg:pb-[155px] 2xl:pb-48 bg-[#040426] relative"
       >
@@ -26,19 +26,19 @@ const OurProxies = () => {
           </p>
 
           <div className="flex justify-center flex-wrap  gap-6 lg:flex-nowrap lg:mt-12 md:mt-6 mt-9 relative z-20 min-h-[415px] md:min-h-[308px] lg:min-h-[160px] xl:min-h-[142px]">
-            {OurData.map((about) => {
+            {ourData.map((obj, i) => {
               return (
                 <div
-                  key={about.id}
-                  className={`md:w-6/12  lg:w-4/12 min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out border-[2px] border-[#505062] rounded-[20px] py-5 px-6 md:py-7 ${about.border}`}
+                  key={i}
+                  className={`md:w-6/12  lg:w-4/12 min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out border-[2px] border-[#505062] rounded-[20px] py-5 px-6 md:py-7 ${obj.border}`}
                 >
                   <div className="  ">
                     <h3 className="font-bold  font-Montserrat text-2xl  text-white">
-                      <span className="text-cyan-green">{about.heading_2}</span>
-                      {about.heading}
+                      <span className="text-cyan-green">{obj.heading_2}</span>
+                      {obj.heading}
                     </h3>
                     <p className=" font-medium text-md font-Montserrat text-white opacity-70 max-w-[316px]  mt-2">
-                      {about.para}
+                      {obj.para}
                     </p>
                   </div>
                 </div>
@@ -51,7 +51,7 @@ const OurProxies = () => {
             </button>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };
