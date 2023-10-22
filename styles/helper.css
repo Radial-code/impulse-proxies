@@ -182,8 +182,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 } */
-@media (max-width:768px) {
-  .left_30{
+@media (max-width: 768px) {
+  .left_30 {
     left: 30% !important;
   }
 }
@@ -194,7 +194,7 @@
     left: -430px;
     bottom: -150px !important;
   }
-  .left_30{
+  .left_30 {
     left: 20% !important;
   }
 }

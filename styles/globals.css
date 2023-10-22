@@ -4,6 +4,13 @@
 @tailwind utilities;
 @import url(./footer.css);
 @import url(./helper.css);
+
+@layer base {
+  .hero-heading {
+    @apply lg:tracking-[-1.16px] sm:tracking-[-0.84px] tracking-[-0.64px];
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
