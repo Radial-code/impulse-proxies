@@ -53,12 +53,12 @@
      font-bold leading-[121%] tracking-[-0.74px] sm:mb-12 mb-7 ;
   }
   .faq-right-img{
-    @apply lg:top-[-15%] sm:top-[-10%] top-[-2%] end-[-10px] lg:end-0 sm:end-[-1%] lg:h-[207px] lg:w-[207px]
-     sm:w-[120px] w-[73px]  sm:h-[175px] h-[60px] ;
+    @apply lg:top-[-15%] sm:top-[-10%] top-[-2%] end-[-10px] lg:end-[-10%] sm:end-[-1%] lg:h-[256px] lg:w-[256px]
+     sm:w-[120px] w-[5px] rounded-[10000px] object-contain sm:h-[175px] h-[50px] ;
   }
   .faq-bottom-img{
-    @apply bottom-[-10px] xl:w-[203px]  xl:h-[223px]  lg:w-[123px] lg:h-[123px] start-0 sm:w-[93px] md:w-[103px]
-     md:h-[103px] w-[73px]  sm:h-[93px] h-[60px] ;
+    @apply bottom-[0px] xl:w-[203px]  xl:h-[223px]  lg:w-[123px] lg:h-[123px] start-[-2%] sm:w-[93px] md:w-[103px]
+     md:h-[103px] w-[5px] rounded-[10000px] object-contain  sm:h-[93px] h-[50px] ;
   }
   .faq-ring{
     @apply lg:top-[-3%] sm:top-[-2%] top-[-3%] end-[-7px] lg:end-0 sm:end-[2%] lg:h-[207px] lg:w-[207px] sm:w-[120px]
