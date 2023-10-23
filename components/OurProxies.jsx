@@ -25,7 +25,7 @@ const OurProxies = () => {
         <Image
           width={21}
           height={33}
-          className="proxies-rocketfire-img rocket_img"
+          className="proxies-rocketfire-img rocket_img fireAnimation"
           src="/assets/images/svg/rocketfire.svg"
           alt="Group_bg"
         />

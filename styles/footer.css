@@ -13,6 +13,7 @@
   -webkit-animation: arrowAnimat 2s infinite ease-in-out;
   animation: arrowAnimat 2s infinite ease-in-out;
 }
+
 .spin {
   -webkit-animation: spin 3s infinite linear;
   animation: spin 3s infinite linear;
@@ -25,6 +26,23 @@
   50% {
     -webkit-transform: translate(10px, -5px);
     transform: translate(10px, -5px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+.fireAnimation {
+  animation: fireAnimat 1s infinite ease-in-out;
+}
+@keyframes fireAnimat {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(5px, -5px);
+    transform: translate(5px, -5px);
   }
   100% {
     -webkit-transform: translate(0, 0);
