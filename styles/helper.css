@@ -176,12 +176,7 @@
     transform: translate3d(0px, 0px, 0px) rotate(360deg);
   }
 }
-/* .grad_bg{
-  background-image: url("/assets/images/svg/hero-bg-lines.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+
 @media (max-width: 768px) {
   .left_30 {
     left: 30% !important;

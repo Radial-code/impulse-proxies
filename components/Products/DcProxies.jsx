@@ -171,7 +171,7 @@ const DcProxies = () => {
         </div>
         <div className="absolute hidden md:block start-[-70px] top-[91px]">
           <Image
-            src="/assets/images/png/proxies_box_top_img.png"
+            src="/assets/images/webp/proxies_box_top_img.webp"
             alt="proxies box top image"
             height={123}
             width={145}
@@ -179,7 +179,7 @@ const DcProxies = () => {
         </div>
         <div className="absolute hidden md:block end-[-40px] bottom-[-40px]">
           <Image
-            src="/assets/images/png/proxies_box_bottom_img.png"
+            src="/assets/images/webp/proxies_box_bottom_img.webp"
             alt="proxies box bottom image"
             height={114}
             width={74}

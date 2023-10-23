@@ -115,12 +115,12 @@
      sm:max-w-[380px]  text-center lg:text-start ;
   }
   .proxies-map-key-div{
-    @apply md:w-6/12 lg:w-4/12 min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px]
+    @apply md:w-6/12 lg:w-[30%] min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px]
      hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out border-[2px] border-[#505062]
       rounded-[20px] py-5 px-6 md:py-7 ;
   }
   .proxies-map-div{
-    @apply flex justify-center  gap-6 lg:flex-nowrap lg:mt-12 md:mt-6 mt-9 relative z-20 min-h-[415px]
+    @apply flex justify-center gap-6 lg:flex-nowrap lg:mt-12 md:mt-6 mt-9 relative z-20 min-h-[415px]
      md:min-h-[308px] lg:min-h-[160px] xl:min-h-[142px] ;
   }
   .whychooseus-abstract-img{

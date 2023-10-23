@@ -40,7 +40,7 @@ const Header = () => {
                     width={53}
                     src="/assets/images/webp/FooterLogo.webp"
                     alt="herologo"
-                    className="xl:w-[53px] xl:h-[66px] md:w-[45px] md:h-[55px] w-[30px] h-[37px]"
+                    className="xl:w-[53px] xl:h-[66px] object-contain md:w-[45px] md:h-[55px] w-[30px] h-[37px]"
                   />
                   <div className="ms-3">
                     <p className="mb-0 lg:text-[18px] sm:text-[15px] text-[10px] text-white font-bold lh_normal font-Montserrat lg:tracking-[3.3px] tracking-[2.178px]">

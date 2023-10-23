@@ -65,16 +65,18 @@ const ImpulseAbout = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="hidden sm:flex items-center justify-end md:mt-2">
-                        <Image
-                          height={27}
-                          width={27}
-                          alt="img"
-                          src="/assets/images/webp/AboutLogo.webp"
-                        />
-                        <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[6px]">
-                          IMPULSE
-                        </p>
+                      <div className="hidden sm:flex items-start justify-end md:mt-2">
+                        <div className="flex items-center pe-6">
+                          <Image
+                            height={27}
+                            width={27}
+                            alt="img"
+                            src="/assets/images/webp/AboutLogo.webp"
+                          />
+                          <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[6px]">
+                            IMPULSE
+                          </p>
+                        </div>
                       </div>
                     </div>
                     <div className=" flex gap-4 items-center justify-between sm:justify-end mt-2">
