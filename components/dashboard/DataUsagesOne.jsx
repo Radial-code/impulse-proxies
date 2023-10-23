@@ -11,7 +11,7 @@ const DataUsagesOne = () => {
               <Image
                 width={18}
                 height={18}
-                src="/assets/images/png/dataSmall.png"
+                src="/assets/images/webp/dataSmall.webp"
                 className="me-3"
                 alt="image"
               />
@@ -26,7 +26,7 @@ const DataUsagesOne = () => {
               height={185}
               width={185}
               alt="image"
-              src="/assets/images/png/dataCircle.png"
+              src="/assets/images/webp/dataCircle.webp"
             />
             <div className="flex items-center justify-center flex-col absolute">
               <p className="text-white font-Montserrat font-bold tracking-[1.75px] text-[35px] mb-0">

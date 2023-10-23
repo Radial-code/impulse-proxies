@@ -297,7 +297,7 @@ const ISPDashboardOtherState = () => {
         width={300}
         className=" absolute right-0 bottom-0 z-[-2] hidden md:inline"
         alt="DashboardLine"
-        src="/assets/images/png/DashboardLine.png"
+        src="/assets/images/webp/DashboardLine.webp"
       />
     </div>
   );

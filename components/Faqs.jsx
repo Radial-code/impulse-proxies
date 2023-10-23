@@ -32,7 +32,7 @@ const ImpulseFAQ = () => {
           height={223}
           width={223}
           className="pointer-events-none absolute faq-bottom-img"
-          src="/assets/images/png/FaqBottom.png"
+          src="/assets/images/webp/FaqBottom.webp"
           alt="FaqBottomimage"
           priority="1"
         />
@@ -40,7 +40,7 @@ const ImpulseFAQ = () => {
           height={207}
           width={207}
           className="pointer-events-none absolute faq-right-img"
-          src="/assets/images/png/FaqRight.png"
+          src="/assets/images/webp/FaqRight.webp"
           alt="faqimage"
         />
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 sm:pt-0 pt-3 sm:pb-0 pb-3  min-h-[490px] lg:min-h-[412px]">
@@ -56,7 +56,7 @@ const ImpulseFAQ = () => {
                 <span>
                   {openAccordion === index ? (
                     <Image
-                      src="/assets/images/png/minus.png"
+                      src="/assets/images/webp/minus.webp"
                       alt="minus"
                       width={30}
                       height={26}
@@ -64,7 +64,7 @@ const ImpulseFAQ = () => {
                     />
                   ) : (
                     <Image
-                      src="/assets/images/png/AccordianAdd.png"
+                      src="/assets/images/webp/AccordianAdd.webp"
                       alt="add"
                       width={30}
                       height={26}

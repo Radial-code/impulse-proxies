@@ -84,7 +84,7 @@ const RewardsDashboard = () => {
                           onClick={copyText}
                           height={21}
                           width={21}
-                          src="/assets/images/png/content_copy.png"
+                          src="/assets/images/webp/content_copy.webp"
                           alt="aboutimage"
                           className="cursor-pointer"
                         />
@@ -149,7 +149,7 @@ const RewardsDashboard = () => {
                                 <Image
                                   height={22}
                                   width={22}
-                                  src="/assets/images/png/redeem_free_gb.png"
+                                  src="/assets/images/webp/redeem.webp"
                                   alt="redeem free"
                                 />
                                 <p className="font-Montserrat font-medium text-[14px] text-[#9D9DBB] leading-normal mb-0">
@@ -190,7 +190,7 @@ const RewardsDashboard = () => {
                           onClick={copyText}
                           height={21}
                           width={21}
-                          src="/assets/images/png/content_copy.png"
+                          src="/assets/images/webp/content_copy.webp"
                           alt="about image"
                           className="cursor-pointer"
                         />

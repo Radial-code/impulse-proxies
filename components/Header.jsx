@@ -38,7 +38,7 @@ const Header = () => {
                   <Image
                     height={66}
                     width={53}
-                    src="/assets/images/png/FooterLogo.png"
+                    src="/assets/images/webp/FooterLogo.webp"
                     alt="herologo"
                     className="xl:w-[53px] xl:h-[66px] md:w-[45px] md:h-[55px] w-[30px] h-[37px]"
                   />

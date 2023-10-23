@@ -124,7 +124,7 @@ const Dashboard1 = () => {
                             {selectedPeriod}
                           </p>
                           <Image
-                            src="/assets/images/png/Polygon.png"
+                            src="/assets/images/webp/Polygon.webp"
                             alt="down arrow icon"
                             height={13}
                             width={13}
@@ -169,7 +169,7 @@ const Dashboard1 = () => {
                             {selectedProvider}
                           </p>
                           <Image
-                            src="/assets/images/png/Polygon.png"
+                            src="/assets/images/webp/Polygon.webp"
                             alt="down arrow icon"
                             height={13}
                             width={13}
@@ -273,7 +273,7 @@ const Dashboard1 = () => {
                             {selectedPeriod}
                           </p>
                           <Image
-                            src="/assets/images/png/Polygon.png"
+                            src="/assets/images/webp/Polygon.webp"
                             alt="down arrow icon"
                             height={13}
                             width={13}
@@ -318,7 +318,7 @@ const Dashboard1 = () => {
                             {selectedProvider}
                           </p>
                           <Image
-                            src="/assets/images/png/Polygon.png"
+                            src="/assets/images/webp/Polygon.webp"
                             alt="down arrow icon"
                             height={13}
                             width={13}

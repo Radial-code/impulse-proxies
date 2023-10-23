@@ -72,7 +72,7 @@ const ResidentialProxies = () => {
                     {selectedPeriod}
                   </p>
                   <Image
-                    src="/assets/images/png/down-arrow.png"
+                    src="/assets/images/webp/down-arrow.webp"
                     alt="down arrow icon"
                     height={13}
                     width={13}
@@ -116,7 +116,7 @@ const ResidentialProxies = () => {
                   {selectedProvider}
                 </p>
                 <Image
-                  src="/assets/images/png/down-arrow.png"
+                  src="/assets/images/webp/down-arrow.webp"
                   alt="down arrow icon"
                   height={13}
                   width={13}

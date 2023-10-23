@@ -16,7 +16,7 @@ const ImpulseFooter = () => {
                 <Image
                   height={67}
                   width={67}
-                  src="/assets/images/png/FooterLogo.png"
+                  src="/assets/images/webp/FooterLogo.webp"
                   alt="aboutimage"
                   className="sm:w-[67px] sm:h-[67px] w-[47px] h-[47px]"
                 />

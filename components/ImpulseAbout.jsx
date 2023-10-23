@@ -70,7 +70,7 @@ const ImpulseAbout = () => {
                           height={27}
                           width={27}
                           alt="img"
-                          src="/assets/images/png/AboutLogo.png"
+                          src="/assets/images/webp/AboutLogo.webp"
                         />
                         <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[6px]">
                           IMPULSE
@@ -83,7 +83,7 @@ const ImpulseAbout = () => {
                           height={27}
                           width={27}
                           alt="img"
-                          src="/assets/images/png/AboutLogo.png"
+                          src="/assets/images/webp/AboutLogo.webp"
                         />
                         <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-[14px] ps-[6px]">
                           IMPULSE

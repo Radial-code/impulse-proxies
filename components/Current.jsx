@@ -76,7 +76,7 @@ const Current = () => {
               <Image
                 height={73}
                 width={54}
-                src="/assets/images/png/N_icon_current.png"
+                src="/assets/images/webp/N_icon_current.webp"
                 alt="N icon"
                 className="lg:w-[73px] lg:h-[54px] md:w-[65px] md:h-[46px] w-[44px] h-[31px] !cursor-pointer"
               />
@@ -85,7 +85,7 @@ const Current = () => {
               <Image
                 height={66}
                 width={66}
-                src="/assets/images/png/mango_icon_current.png"
+                src="/assets/images/webp/mango_icon_current.webp"
                 alt="mango icon"
                 className="lg:w-[60px] lg:h-[62px] md:w-[53px] md:h-[52px] w-[36px] h-[37px] !cursor-pointer"
               />
