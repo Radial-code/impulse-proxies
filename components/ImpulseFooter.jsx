@@ -16,7 +16,7 @@ const ImpulseFooter = () => {
                 <Image
                   height={67}
                   width={67}
-                  src="/assets/images/svg/FooterLogo.svg"
+                  src="/assets/images/png/FooterLogo.png"
                   alt="aboutimage"
                   className="sm:w-[67px] sm:h-[67px] w-[47px] h-[47px]"
                 />
@@ -52,7 +52,7 @@ const ImpulseFooter = () => {
                           <Link
                             aria-label="ISPproxies"
                             href={obj.link1}
-                            className=" text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px] hover:text-white transition-all ease-in-out duration-200"
+                            className="impulse-footer-li lh_normal"
                           >
                             {obj.option1}
                           </Link>
@@ -61,7 +61,7 @@ const ImpulseFooter = () => {
                           <Link
                             aria-label="ResidentialProxies"
                             href={obj.link2}
-                            className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px]"
+                            className="impulse-footer-li lh_normal inline-block"
                           >
                             {obj.option2}
                           </Link>
@@ -70,7 +70,7 @@ const ImpulseFooter = () => {
                           <Link
                             aria-label="DatacenterProxies"
                             href={obj.link3}
-                            className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px]"
+                            className="impulse-footer-li lh_normal inline-block"
                           >
                             {obj.option3}
                           </Link>
@@ -79,7 +79,7 @@ const ImpulseFooter = () => {
                           <Link
                             aria-label="Home"
                             href="#"
-                            className="hover:text-white transition-all ease-in-out duration-200 inline-block text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium lh_normal pt-[9px]"
+                            className="impulse-footer-li lh_normal inline-block "
                           >
                             {obj.option4}
                           </Link>

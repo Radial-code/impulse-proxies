@@ -11,7 +11,7 @@ const Hero = () => {
           <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 h-full flex items-center">
             <div className="flex items-center justify-between h-full flex-wrap w-full lg:flex-nowrap lg:pt-[70px] lg:pb-[90px]">
               <div className=" min-h-[210px] md:min-h-[300px] md: lg:min-h-[384px] md:w-[56%] xl:w-7/12 lg:w-6/12 w-full">
-                <h1 className="hero-heading        lg:text-8xl sm:text-[42px] text-[32px]  text-white lg:leading-[60px] xl:leading-[68px] sm:leading-[54px] leading-[42px] font-bold sm:max-w-[360px] max-w-[290px] lg:max-w-[500px]  sm:w-full">
+                <h1 className="hero-heading lg:text-8xl sm:text-[42px] text-[32px] text-white font-bold ">
                   Elevate your <span className="text-cyan-green">success </span>
                   with our Proxies
                 </h1>
@@ -19,28 +19,29 @@ const Hero = () => {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt
                 </p>
-                <div className="md:flex hidden sm:mb-0 mb-5 items-center mt-12 ">
-                  <button className="hover:bg-transparent transition-all lg:max-w-[201px] min-w-[200px] w-full md:min-h-[55px] min-h-[50px] leading-[120%] border-[2px] border-cyan-green bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl text-white">
-                    Purchase
-                  </button>
-                  <button className="lg:ms-5 ms-4 leading-[120%] hover:bg-[#163D51] transition-all lg:max-w-[226px] min-w-[200px] w-full md:min-h-[55px] min-h-[50px] border-[2px] border-white bg-[#050829] hover:border-cyan-green rounded-[100px] font-Montserrat font-semibold text-2xl text-white">
+                <div className="md:flex hidden sm:mb-0 mb-5 items-center mt-12 text-white">
+                  <button className="hero-purchase-button ">Purchase</button>
+                  <button className="hero-explore-products-button ">
                     Explore Products
                   </button>
                 </div>
               </div>
 
-              <div className=" min-h-[460px] md:min-h-[250px] lg:min-h-[399px]  xl:min-h-[499px] md:w-[44%] w-11/12 xl:w-6/12 lg:w-6/12 mx-auto sm:mt-7 md:mt-0 flex lg:flex-row flex-col justify-center md:justify-end relative after:contents-[''] after:h-[500px] after:w-[450px] after:absolute bgHeroImg after:opacity-30 after:rounded-full after:blur-[137px] after:pointer-events-none after:top-[-50%]">
+              <div
+                className="hero-button-lottie-main after:contents-[''] after:h-[500px] after:w-[450px]
+                   after:absolute after:opacity-30 after:rounded-full after:blur-[137px] after:pointer-events-none after:top-[-50%] bgHeroImg"
+              >
                 <div className="box_showdow absolute max-w-[456px] w-full h-[542px] blur-[140px] rounded-[36px] opacity-30 top-10 right-7 z-[-1] hidden lg:inline-block"></div>
                 <Lottie
                   animationData={animationData}
                   loop={true}
-                  className="pointer-events-none relative z-50 2xl:h-[500px] lg:mt-0 md:mt-[-20px] sm:max-w-[400px] md:max-w-[370px] lg:max-w-[500px] mx-auto xl:h-[500px] xl:max-w-[600px] sm:mt-0 mt-12 xl:w-full"
+                  className="hero-lottie"
                 />
-                <div className="md:hidden sm:flex sm:mb-0 items-center justify-center text-center">
-                  <button className=" hover:bg-transparent transition-all max-w-[300px] w-full sm:max-w-[197px] min-h-[55px] border-[2px] border-cyan-green bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl leading-[120%] text-white mt-10">
+                <div className="md:hidden sm:flex sm:mb-0 items-center justify-center text-white text-center">
+                  <button className="hero-purchase-button transition-all max-w-[300px] sm:max-w-[197px] min-h-[55px] mt-10">
                     Purchase
                   </button>
-                  <button className="sm:ms-4 hover:bg-[#163D51] transition-all max-w-[300px] w-full sm:max-w-[197px] min-h-[55px] border-[2px] border-white bg-[#050829] hover:border-cyan-green rounded-[100px] font-Montserrat font-semibold sm:text-2xl text-[15px] text-white mt-4 sm:mt-10">
+                  <button className="hero-explore-products-button sm:ms-4 max-w-[300px] sm:max-w-[197px] min-h-[55px] sm:text-2xl text-[15px] mt-4 sm:mt-10">
                     Explore Products
                   </button>
                 </div>

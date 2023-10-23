@@ -40,13 +40,13 @@ export const footerImpluse = [
 export const aboutBox = [
   {
     id: 1,
-    aboutImg: "/assets/images/svg/about1.svg",
+    aboutImg: "/assets/images/png/about1.png",
     impulse: "Impulse",
     border: "linerBorder",
   },
   {
     id: 2,
-    aboutImg: "/assets/images/svg/ZfnwLnb1.svg",
+    aboutImg: "/assets/images/png/about2.png",
     impulse: "Nuno",
     border: "linerBorder",
   },
@@ -77,17 +77,17 @@ export const cardData = [
   {
     heading: "Global Reach",
     para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-    whyToImg: "/assets/images/svg/Globe.svg",
+    whyToImg: "/assets/images/png/Globe.png",
   },
   {
     heading: "Affordable Rates",
     para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-    whyToImg: "/assets/images/svg/AffordableRates.svg",
+    whyToImg: "/assets/images/png/AffordableRates.png",
   },
   {
     heading: "Reliability redefined",
     para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-    whyToImg: "/assets/images/svg/clock.svg",
+    whyToImg: "/assets/images/png/clock.png",
   },
 ];
 export const currentData = [

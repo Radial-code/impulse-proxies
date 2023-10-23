@@ -45,7 +45,7 @@ const DashboardNav = () => {
                   <Image
                     height={62}
                     width={65}
-                    src="/assets/images/svg/FooterLogo.svg"
+                    src="/assets/images/png/FooterLogo.png"
                     alt="aboutimage"
                     className="lg:w-[67px] lg:h-[67px] md:w-[45px] md:h-[55px] w-[30px] h-[37px]"
                   />

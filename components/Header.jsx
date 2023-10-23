@@ -38,7 +38,7 @@ const Header = () => {
                   <Image
                     height={66}
                     width={53}
-                    src="/assets/images/svg/FooterLogo.svg"
+                    src="/assets/images/png/FooterLogo.png"
                     alt="herologo"
                     className="xl:w-[53px] xl:h-[66px] md:w-[45px] md:h-[55px] w-[30px] h-[37px]"
                   />
@@ -53,28 +53,28 @@ const Header = () => {
                 </Link>
               </div>
               <div className="hidden lg:block">
-                <div className="flex lg:gap-9 items-center">
-                  <div className="relative   inline-block text-left">
+                <div className="flex lg:gap-9 text-white items-center">
+                  <div className="relative inline-block text-left">
                     <DropDown />
                   </div>
                   <Link
                     aria-label="AboutUs"
                     href="#AboutUs"
-                    className="text-white font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
+                    className="font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
                     About Us
                   </Link>
                   <Link
                     aria-label="Faqs"
                     href="#Faqs"
-                    className="text-white font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
+                    className="font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
                     FAQ’s
                   </Link>
                   <Link
                     aria-label="proxies"
                     href="#proxies"
-                    className="text-white font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
+                    className="font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
                     Purchase
                   </Link>
@@ -103,7 +103,6 @@ const Header = () => {
                 {" "}
                 {isToggleIconVisible ? <HeaderCrossIcons /> : <ToggleIcon />}
               </button>
-           
             </div>
           </div>
         </div>

@@ -20,7 +20,7 @@ const Current = () => {
 
   return (
     <>
-      <div className="bg_current z-10 relative after:contents-[''] after:absolute after:w-full border-[1px] border-[#1F374F] lg:pb-6 lg:pt-14 sm:pt-8 pt-2 pb-[34px] ms-[-10px] me-[-10px] border-b-0">
+      <div className="bg_current current-main after:absolute after:w-full after:contents-['']">
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
           <div className="flex flex-wrap justify-around">
             {currentData.map((data, i) => {
@@ -76,7 +76,7 @@ const Current = () => {
               <Image
                 height={73}
                 width={54}
-                src="/assets/images/svg/N_icon_current.svg"
+                src="/assets/images/png/N_icon_current.png"
                 alt="N icon"
                 className="lg:w-[73px] lg:h-[54px] md:w-[65px] md:h-[46px] w-[44px] h-[31px] !cursor-pointer"
               />
@@ -85,7 +85,7 @@ const Current = () => {
               <Image
                 height={66}
                 width={66}
-                src="/assets/images/svg/mango_icon_current.svg"
+                src="/assets/images/png/mango_icon_current.png"
                 alt="mango icon"
                 className="lg:w-[60px] lg:h-[62px] md:w-[53px] md:h-[52px] w-[36px] h-[37px] !cursor-pointer"
               />
