@@ -22,6 +22,13 @@ const OurProxies = () => {
           src="/assets/images/svg/rocket.svg"
           alt="Group_bg"
         />
+        <Image
+          width={21}
+          height={33}
+          className="proxies-rocketfire-img rocket_img"
+          src="/assets/images/svg/rocketfire.svg"
+          alt="Group_bg"
+        />
 
         <div className="proxies_box h-10 opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>
         <div className="box_showdow rounded-[40px] opacity-20 blur-[150px] absolute w-full max-w-[1190px] h-[200px] bottom-0 pointer-events-none"></div>

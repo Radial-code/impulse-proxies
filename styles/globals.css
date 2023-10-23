@@ -111,6 +111,10 @@
     @apply absolute xl:bottom-[110px] lg:bottom-[140px] md:bottom-[80px] sm:bottom-[100px] bottom-[40px] xl:right-[80px] 
     lg:right-[62px] md:right-[32px] sm:right-[0px] right-[-32px] lg:w-[99px] lg:h-[123px] sm:w-[90px] sm:h-[90px] h-[60px];
   }
+   .proxies-rocketfire-img{
+    @apply absolute xl:bottom-[115px] lg:bottom-[140px] md:bottom-[70px] sm:bottom-[90px] bottom-[30px] xl:right-[130px] 
+    lg:right-[112px] md:right-[112px] sm:right-[80px] right-[60px] lg:w-[99px] w-[21px] h-[30px];
+  }
  
   .proxies-heading{
     @apply font-Montserrat text-[28px] lg:text-6xl font-bold leading-[30px]  mb-4 text-center lg:text-start ;
