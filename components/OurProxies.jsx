@@ -6,15 +6,23 @@ const OurProxies = () => {
     <>
       <div
         id="proxies"
-        className="pt-[52px] lg:pt-[87px] 2xl:pt-28 pb-28 md:pb-[120px] lg:pb-[155px] 2xl:pb-48 bg-[#040426] relative"
+        className="pt-[52px] lg:pt-[87px] 2xl:pt-28 pb-[130px] md:pb-[170px] lg:pb-[155px] 2xl:pb-48 bg-[#040426] relative"
       >
         <Image
           width={144}
           height={220}
-          className="proxies-racket-img rocket_img"
+          className="proxies-graph-img rocket_img"
           src="/assets/images/svg/Racketimage.svg"
           alt="Group_bg"
         />
+        <Image
+          width={144}
+          height={220}
+          className="proxies-rocket-img rocket_img"
+          src="/assets/images/svg/rocket.svg"
+          alt="Group_bg"
+        />
+
         <div className="proxies_box h-10 opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>
         <div className="box_showdow rounded-[40px] opacity-20 blur-[150px] absolute w-full max-w-[1190px] h-[200px] bottom-0 pointer-events-none"></div>
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 text-white">
@@ -22,7 +30,8 @@ const OurProxies = () => {
             Our <span className="text-cyan-green ">Proxies</span>
           </h2>
           <p className="proxies-para">
-            Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
+            Unveil a world of unparalleled proxy options, perfectly crafted for
+            every requirement.
           </p>
 
           <div className="proxies-map-div flex-wrap">

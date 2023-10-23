@@ -9,8 +9,15 @@ function WhyToChooseUs() {
           className="whychooseus-abstract-img arrowAnimation"
           height={126}
           width={145}
-          src="/assets/images/webp/AbstractTrangle-02.webp"
+          src="/assets/images/png/triangle.png"
           alt="Abstract"
+        />
+        <Image
+          src="/assets/images/webp/Abstract01.webp"
+          alt="aboutTop"
+          width={99}
+          height={50}
+          className="spin_about_img_2 whychooseus-abstract-img2"
         />
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 sm:py-0 py-2">
           <h2 className="whychooseus-heading">

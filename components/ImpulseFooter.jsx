@@ -30,8 +30,9 @@ const ImpulseFooter = () => {
                 </div>
               </div>
               <p className=" text-[#9898A3] text-md font-bold font-Montserrat opacity-70 lg:max-w-[338px] lg:leading-[192%]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor. Lorem ipsum dolor
+                All product and company names are trademarks™ or registered
+                trademarks® of their respective holders. Their usage does not
+                imply any affiliation with or endorsement by their holders
               </p>
             </div>
             <div className="md:w-8/12 w-full lg:pt-0 pt-4">

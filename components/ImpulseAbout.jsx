@@ -32,7 +32,8 @@ const ImpulseAbout = () => {
             About <span className="text-cyan-green">Us</span>
           </h2>
           <p className="aboutus-para">
-            Lorem ipsum dolor sit amet, consectetur adipiscing eiusmod
+            Meet the team behind the vision of Impulse, shaping the proxies of
+            tomorrow.
           </p>
           <div className="about-box-map-div">
             {aboutBox.map((obj, i) => {
@@ -41,68 +42,45 @@ const ImpulseAbout = () => {
                   key={i}
                   className={`lg:w-6/12 hover:translate-y-[-4%] duration-200 ease-in-out sm:w-10/12 w-full rounded-[20px] p-[2px] inline-block lg:mt-0 relative max-w-[560px] 2xl:max-w-[648px] ${obj.border}`}
                 >
-                  <div className="block rounded-[20px] w-full bg-[#080D2D] sm:ps-8 ps-4 pb-7 sm:pt-6 pt-4 sm:pe-6 pe-4">
-                    <div className="flex  w-full">
-                      <div className="flex items-start justify-between w-full">
+                  <div className="block rounded-[20px] w-full bg-[#080D2D] sm:ps-8  ps-4 pb-7 sm:pt-6 pt-4 sm:pe-6 pe-4">
+                    <div className="flex w-full">
+                      <div className="flex items-start w-full">
                         <Image
                           height={81}
                           width={81}
                           src={obj.aboutImg}
                           alt="aboutimg"
                           priority="1"
-                          className=" sm:h-[81px] sm:w-[81px] w-[42px] h-[42px]"
+                          className="md:h-[81px]  md:w-[81px] w-[42px] h-[42px]"
                         />
-                        <div>
-                          <h3 className="mb-0 text-white font-Montserrat leading-[204%] tracking-[-0.44px] md:text-3xl text-[17px] font-bold">
-                            About
-                            <span className="text-cyan-green ms-1">
-                              {obj.impulse}
-                            </span>
-                          </h3>
+                        <div className="sm:ps-5 ps-3 w-full">
+                          <div className="flex justify-between items-center w-full">
+                            <h3 className="mb-0 text-white font-Montserrat leading-[204%] tracking-[-0.44px] md:text-3xl text-[17px] font-bold">
+                              About
+                              <span className="text-cyan-green ms-1">
+                                {obj.impulse}
+                              </span>
+                            </h3>
+                            <div className="flex items-center w-full justify-end">
+                              <Image
+                                height={27}
+                                width={27}
+                                alt="img"
+                                src="/assets/images/webp/AboutLogo.webp"
+                              />
+                              <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[6px]">
+                                IMPULSE
+                              </p>
+                            </div>
+                          </div>
                           <p className="sm:mb-7 text-[#9898A3] font-Montserrat font-medium leading-[178%] text-md max-w-[278px]">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor
-                          </p>
-                        </div>
-                      </div>
-                      <div className="hidden sm:flex items-start justify-end md:mt-2">
-                        <div className="flex items-center pe-6">
-                          <Image
-                            height={27}
-                            width={27}
-                            alt="img"
-                            src="/assets/images/webp/AboutLogo.webp"
-                          />
-                          <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-lg ps-[6px]">
-                            IMPULSE
+                            {obj.para}
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className=" flex gap-4 items-center justify-between sm:justify-end mt-2">
-                      <div className=" flex sm:hidden items-center justify-end">
-                        <Image
-                          height={27}
-                          width={27}
-                          alt="img"
-                          src="/assets/images/webp/AboutLogo.webp"
-                        />
-                        <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal text-[14px] ps-[6px]">
-                          IMPULSE
-                        </p>
-                      </div>
+                    <div className=" flex gap-4 items-center justify-end sm:justify-end mt-2">
                       <div className=" flex sm:gap-4 text-white gap-2">
-                        <Link
-                          aria-label="discord"
-                          href="https://discord.com/"
-                          target="_blank"
-                          className=" flex items-center justify-end gap-2 "
-                        >
-                          <DiscordIcon />
-                          <span className=" font-Montserrat text-[14px] sm:text-lg font-bold ">
-                            Discord
-                          </span>
-                        </Link>
                         <Link
                           aria-label="twitter"
                           target="_blank"

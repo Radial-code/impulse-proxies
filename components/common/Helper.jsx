@@ -43,50 +43,52 @@ export const aboutBox = [
     aboutImg: "/assets/images/webp/about1.webp",
     impulse: "Impulse",
     border: "linerBorder",
+    para: "A lover of esports and seasoned expert in the reselling industry. His passion and commitment make our project succeed.",
   },
   {
     id: 2,
     aboutImg: "/assets/images/webp/about2.webp",
     impulse: "Nuno",
     border: "linerBorder",
+    para: "Combining his esports roots with a passion for trading. His keen eye for details ensure a seamless experience for our users.",
   },
 ];
 export const accordianData = [
   {
     id: 1,
-    heading: "Lorem ipsum dolor sit amet, consectetur adipiscing sed",
-    para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur",
+    heading: "What makes you different from other providers?",
+    para: " Our relentless pursuit of perfection ensures you receive the highest quality solutions available in the market.",
   },
   {
     id: 2,
-    heading: "Lorem ipsum dolor sit amet, consectetur adipiscing sed",
-    para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur",
+    heading: "What products do you offer?",
+    para: " We provide Residential, Datacenter and ISP proxies tailored for all needs with unmatched quality. More details in our documentation.",
   },
   {
     id: 3,
-    heading: "Lorem ipsum dolor sit amet, consectetur adipiscing sed",
-    para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur",
+    heading: "How long do my proxies last?",
+    para: " We offer daily, weekly, or monthly proxies. Monthly proxies have a 28-day duration. Additionally, our residential products come with a no-expiration guarantee.",
   },
   {
     id: 4,
-    heading: "Lorem ipsum dolor sit amet, consectetur adipiscing sed",
-    para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur",
+    heading: "What payment methods are supported?",
+    para: " We accept credit card payments via Stripe. More payment methods coming soon.",
   },
 ];
 export const cardData = [
   {
     heading: "Global Reach",
-    para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    para: " Access proxies from multiple regions, ensuring connectivity and worldwide coverage.",
     whyToImg: "/assets/images/webp/Globe.webp",
   },
   {
     heading: "Affordable Rates",
-    para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    para: " Navigate the web with pocket-friendly rates, ensuring value for your money.",
     whyToImg: "/assets/images/webp/AffordableRates.webp",
   },
   {
     heading: "Reliability redefined",
-    para: " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    para: " With our proxies, unmatched reliability isn't just a statement - it's a promise.",
     whyToImg: "/assets/images/webp/clock.webp",
   },
 ];
@@ -100,19 +102,19 @@ export const ourData = [
     id: 1,
     heading: " Proxies",
     heading_2: "ISP",
-    para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    para: "Choose from top-tier internet service providers and discover unmatched quality & speed tailored for you.",
   },
   {
     id: 2,
     heading: " Proxies",
     heading_2: "Datacenter",
-    para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    para: "Seeking cost-effective solutions for specific sites? Our datacenter proxies offer unmatched efficiency and value.",
   },
   {
     id: 3,
     heading: " Proxies",
     heading_2: "Residential",
-    para: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+    para: "Benefit from fast, auto-rotating IPs and consistent load balancing, ensuring a seamless experience.",
   },
 ];
 

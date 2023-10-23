@@ -22,10 +22,10 @@ const ImpulseFAQ = () => {
       >
         <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>
         <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute bottom-0 lg:bottom-[0px] lg:left-[22%]"></div>
-        <div className="torus-footer absolute pointer-events-none faq-torus">
+        <div className="absolute pointer-events-none faq-torus">
           <Torus />
         </div>
-        <div className="torus-footer pointer-events-none absolute faq-ring">
+        <div className="pointer-events-none absolute faq-ring">
           <Ring />
         </div>
         <Image
@@ -75,10 +75,10 @@ const ImpulseFAQ = () => {
               </div>
               <div
                 className={`transition-all duration-300 ease-linear pt-0 pb-0 ${
-                  openAccordion === index ? "sm:h-[80px] h-[110px]" : "h-[0px]"
+                  openAccordion === index ? "sm:h-[60px] h-[110px]" : "h-[0px]"
                 }`}
               >
-                <p className="opacity-70 font-medium font-Montserrat leading-[178%] text-md max-w-[550px] pb-0 pt-2">
+                <p className="opacity-70 font-medium font-Montserrat leading-[178%] text-md pb-0 pt-2">
                   {data.para}
                 </p>
               </div>
