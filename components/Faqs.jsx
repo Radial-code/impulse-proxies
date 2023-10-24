@@ -22,11 +22,28 @@ const ImpulseFAQ = () => {
       >
         <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>
         <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute bottom-0 lg:bottom-[0px] lg:left-[22%]"></div>
-        <div className="absolute pointer-events-none faq-torus">
+        <div className="absolute pointer-events-none faq-torus hidden sm:block">
           <Torus />
         </div>
-        <div className="pointer-events-none absolute faq-ring">
+        <div className="absolute pointer-events-none faq-torus sm:hidden">
+          <Image
+            width={237}
+            height={257}
+            src="/assets/images/svg/ring-image-faq-section-2.svg"
+            alt="ring-image-02"
+          />
+        </div>
+
+        <div className="pointer-events-none absolute faq-ring hidden sm:block">
           <Ring />
+        </div>
+        <div className="pointer-events-none absolute faq-ring sm:hidden">
+          <Image
+            width={237}
+            height={257}
+            src="/assets/images/svg/ring-image-faq-section.svg"
+            alt="ring-image-01"
+          />
         </div>
         <Image
           height={223}
