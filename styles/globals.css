@@ -19,7 +19,7 @@
       font-Montserrat font-semibold text-2xl;
   }
   .hero-explore-products-button {
-    @apply lg:ms-5 ms-4 leading-[120%] hover:bg-[#163D51]
+    @apply md:ms-5 leading-[120%] hover:bg-[#163D51]
      transition-all lg:max-w-[226px] xl:max-w-[271px] min-w-[200px] w-full
       md:min-h-[55px] min-h-[50px] border-[2px] border-white 
       bg-[#050829] hover:border-cyan-green rounded-[100px]
