@@ -38,12 +38,13 @@ const Hero = () => {
                   loop={true}
                   className="hero-lottie md:block hidden"
                 />
+
                 <Image
                   height={223}
                   width={223}
-                  className="w-full md:hidden block"
-                  src="/assets/images/svg/hero-image-mobile.svg"
-                  alt="FaqBottomimage"
+                  className="scale-[1.3] w-[100vw] sm:w-full md:hidden block"
+                  src="/assets/images/svg/hero-image-mobile-version.svg"
+                  alt="hero-image"
                   priority="1"
                 />
                 <div className="md:hidden sm:flex sm:mb-0 items-center justify-center text-white text-center">
