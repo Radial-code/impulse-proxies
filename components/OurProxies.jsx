@@ -11,7 +11,7 @@ const OurProxies = () => {
         <Image
           width={144}
           height={220}
-          className="proxies-graph-img rocket_img"
+          className="proxies-graph-img rocket_img rocket_graph_image01"
           src="/assets/images/svg/Racketimage.svg"
           alt="Group_bg"
           loading="lazy"
@@ -19,14 +19,14 @@ const OurProxies = () => {
         <Image
           width={144}
           height={220}
-          className="proxies-rocket-img rocket_img rocketAnimation"
+          className="proxies-rocket-img rocket_img rocketAnimation rocket_image_01"
           src="/assets/images/svg/rocket.svg"
           alt="Group_bg"
         />
         <Image
           width={21}
           height={33}
-          className="proxies-rocketfire-img rocket_img fireAnimation"
+          className="proxies-rocketfire-img rocket_img fireAnimation rocket_image_fire_01"
           src="/assets/images/svg/rocketfire.svg"
           alt="Group_bg"
         />

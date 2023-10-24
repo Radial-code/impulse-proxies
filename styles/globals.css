@@ -102,7 +102,8 @@
     @apply w-full max-w-[193px] min-h-[55px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl
      sm:mt-12 mt-8 hover:bg-transparent transition-all duration-300 leading-[120%];
   }
-  /* ==== */
+  /* ========================== */
+
   .proxies-graph-img {
     @apply absolute bottom-[-50px] md:bottom-[-120px] lg:bottom-[-170px] xl:bottom-[-240px] 2xl:bottom-[-270px] w-full 
     rockat_img_2 pointer-events-none;
@@ -115,7 +116,24 @@
       margin-bottom: 0px !important;
     }
   }
-  /* ==== */
+  @media (min-width: 1280px) and (max-width: 1340px) {
+    .rocket_graph_image01 {
+      @apply min-w-[1490px] left-[-110px] bottom-[-250px];
+    }
+    .rocket_image_01 {
+      @apply !bottom-[145px] !right-[-10px];
+    }
+    .rocket_image_fire_01 {
+      @apply !bottom-[155px] !right-[30px];
+    }
+  }
+  @media (min-width: 1024px) and (max-width: 1170px) {
+    .rocket_graph_image01 {
+      @apply min-w-[1200px] left-[-90px] bottom-[-200px];
+    }
+  }
+
+  /* ======================= */
   .proxies-rocket-img {
     @apply absolute xl:bottom-[110px] lg:bottom-[140px] md:bottom-[80px] sm:bottom-[100px] bottom-[40px] xl:right-[80px] 
     lg:right-[62px] md:right-[32px] sm:right-[0px] right-[-32px] lg:w-[99px] lg:h-[123px] sm:w-[90px] sm:h-[90px] h-[60px];
