@@ -14,6 +14,7 @@ const OurProxies = () => {
           className="proxies-graph-img rocket_img"
           src="/assets/images/svg/Racketimage.svg"
           alt="Group_bg"
+          loading="lazy"
         />
         <Image
           width={144}

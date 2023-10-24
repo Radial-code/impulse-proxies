@@ -11,7 +11,7 @@ import Choose from "@/components/Choose";
 export default function Home() {
   return (
     <>
-      <Preloader />
+      {/* <Preloader /> */}
       <PageMataTag />
       <div className="overflow-hidden">
         <BackToTopButton />

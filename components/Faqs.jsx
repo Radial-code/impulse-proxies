@@ -34,7 +34,6 @@ const ImpulseFAQ = () => {
           className="pointer-events-none absolute faq-bottom-img"
           src="/assets/images/png/faq_right.png"
           alt="FaqBottomimage"
-          priority="1"
         />
         <Image
           height={223}
@@ -61,6 +60,7 @@ const ImpulseFAQ = () => {
                       width={30}
                       height={26}
                       className="cursor-pointer"
+                      loading="lazy"
                     />
                   ) : (
                     <Image
@@ -69,6 +69,7 @@ const ImpulseFAQ = () => {
                       width={30}
                       height={26}
                       className="cursor-pointer"
+                      loading="lazy"
                     />
                   )}
                 </span>

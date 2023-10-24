@@ -36,6 +36,7 @@ const Header = () => {
                   aria-label="scroll to home page"
                 >
                   <Image
+                    loading="lazy"
                     height={66}
                     width={53}
                     src="/assets/images/webp/FooterLogo.webp"

@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 const DataUsagesOne = () => {
   return (
@@ -14,6 +14,7 @@ const DataUsagesOne = () => {
                 src="/assets/images/webp/dataSmall.webp"
                 className="me-3"
                 alt="image"
+                loading="lazy"
               />
               DATA USAGE
             </p>
@@ -41,6 +42,6 @@ const DataUsagesOne = () => {
       </div>
     </>
   );
-}
+};
 
 export default DataUsagesOne;

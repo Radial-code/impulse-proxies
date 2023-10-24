@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { aboutBox } from "./common/Helper";
 import Image from "next/image";
-import { DiscordIcon, TwitterIcon } from "./Icon";
+import { TwitterIcon } from "./Icon";
 const ImpulseAbout = () => {
   return (
     <>

@@ -83,6 +83,7 @@ const Dashboard1 = () => {
             className=" absolute end-0 bottom-[80px] z-[-1]"
             src="/assets/images/webp/Mockup_bg_blur.webp"
             alt="Mockup_bg_blur"
+            loading="lazy"
           />
           <Image
             height={200}
@@ -90,6 +91,7 @@ const Dashboard1 = () => {
             className=" absolute start-0 top-0  z-[-1]"
             src="/assets/images/webp/Mockup_top_blur.webp"
             alt="Mockup_bg_blur"
+            loading="lazy"
           />
           <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
             <div className="flex flex-col lg:flex-row justify-between lg:pt-[52px] pt-[32px] gap-5 xl:gap-12">
@@ -128,6 +130,7 @@ const Dashboard1 = () => {
                             alt="down arrow icon"
                             height={13}
                             width={13}
+                            loading="lazy"
                           />
                         </div>
                         {isPeriodDropdownOpen && (
@@ -173,6 +176,7 @@ const Dashboard1 = () => {
                             alt="down arrow icon"
                             height={13}
                             width={13}
+                            loading="lazy"
                           />
                         </div>
                         {isProviderDropdownOpen && (
@@ -277,6 +281,7 @@ const Dashboard1 = () => {
                             alt="down arrow icon"
                             height={13}
                             width={13}
+                            loading="lazy"
                           />
                         </div>
                         {isPeriodDropdownOpen && (
@@ -322,6 +327,7 @@ const Dashboard1 = () => {
                             alt="down arrow icon"
                             height={13}
                             width={13}
+                            loading="lazy"
                           />
                         </div>
                         {isProviderDropdownOpen && (

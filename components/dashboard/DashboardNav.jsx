@@ -44,6 +44,7 @@ const DashboardNav = () => {
                 >
                   <Image
                     height={62}
+                    loading="lazy"
                     width={65}
                     src="/assets/images/webp/FooterLogo.webp"
                     alt="aboutimage"

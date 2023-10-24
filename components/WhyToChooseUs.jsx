@@ -11,6 +11,7 @@ function WhyToChooseUs() {
           width={145}
           src="/assets/images/png/triangle.png"
           alt="Abstract"
+          loading="lazy"
         />
         <Image
           src="/assets/images/webp/Abstract01.webp"
@@ -40,6 +41,7 @@ function WhyToChooseUs() {
                         width={32}
                         src={obj.whyToImg}
                         alt="aboutimage"
+                        loading="lazy"
                       />
                     </div>
                     <p className=" md:text-md text-[12px] font-medium font-Montserrat opacity-70 sm:max-w-[244px] leading-[25px] ">
