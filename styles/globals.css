@@ -102,7 +102,7 @@
   }
   .proxies-try-now-button{
     @apply w-full max-w-[193px] min-h-[55px] border-[2px] border-[#50EED7] bg-[#163D51] rounded-[100px] font-Montserrat font-semibold text-2xl
-     mt-12 hover:bg-transparent transition-all duration-300 leading-[120%] ;
+     sm:mt-12 mt-8 hover:bg-transparent transition-all duration-300 leading-[120%] ;
   }
   .proxies-graph-img{
     @apply absolute bottom-[-50px] md:bottom-[-120px] lg:bottom-[-170px] xl:bottom-[-250px] 2xl:bottom-[-270px] w-full 

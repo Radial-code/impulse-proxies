@@ -6,7 +6,7 @@ const OurProxies = () => {
     <>
       <div
         id="proxies"
-        className="pt-[52px] lg:pt-[87px] 2xl:pt-28 pb-[130px] md:pb-[170px] lg:pb-[155px] 2xl:pb-48 bg-[#040426] relative"
+        className="pt-[52px] lg:pt-[87px] 2xl:pt-28 pb-[130px] md:pb-[170px] lg:pb-[155px] xl:pb-[108px] 2xl:pb-48 bg-[#040426] relative"
       >
         <Image
           width={144}
