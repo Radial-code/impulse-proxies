@@ -126,6 +126,9 @@
     .rocket_image_fire_01 {
       @apply !bottom-[155px] !right-[30px];
     }
+    .aboutus-about-top-img {
+      @apply left-10;
+    }
   }
   @media (min-width: 1024px) and (max-width: 1170px) {
     .rocket_graph_image01 {
