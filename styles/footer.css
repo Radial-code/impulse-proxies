@@ -9,10 +9,6 @@
 .lh_normal {
   line-height: normal;
 }
-.arrowAnimation {
-  -webkit-animation: arrowAnimat 2s infinite ease-in-out;
-  animation: arrowAnimat 2s infinite ease-in-out;
-}
 
 .spin {
   -webkit-animation: spin 3s infinite linear;
@@ -32,12 +28,7 @@
     transform: translate(0, 0);
   }
 }
-.fireAnimation {
-  animation: fireAnimat 0.05s infinite ease-in-out;
-}
-.rocketAnimation {
-  animation: rocketAnimat 0.5s infinite ease;
-}
+
 @keyframes rocketAnimat {
   0% {
     transform: rotate(0);
@@ -207,10 +198,7 @@
   -moz-user-select: none;
   user-select: none;
 }
-.spin_about_img {
-  -webkit-animation: spinimg 8s linear infinite;
-  animation: spinimg 8s linear infinite;
-}
+
 @-webkit-keyframes spinimg {
   0% {
     -webkit-transform: rotate(0deg);
@@ -230,10 +218,6 @@
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
-.spin_about_img_2 {
-  -webkit-animation: spinimg_2 8s linear infinite;
-  animation: spinimg_2 8s linear infinite;
 }
 @-webkit-keyframes spinimg_2 {
   0% {
@@ -333,7 +317,6 @@ input[type="number"]::-webkit-outer-spin-button {
     text-shadow: none;
   }
 }
-
 .svg_fill:hover .hover_color_change path {
   fill: #fff !important;
   transition: all 200ms ease-in-out !important;
@@ -343,4 +326,24 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .rewards-active path {
   fill: white !important;
+}
+@media (min-width: 576px) {
+  .spin_about_img_2 {
+    -webkit-animation: spinimg_2 8s linear infinite;
+    animation: spinimg_2 8s linear infinite;
+  }
+  .arrowAnimation {
+    -webkit-animation: arrowAnimat 2s infinite ease-in-out;
+    animation: arrowAnimat 2s infinite ease-in-out;
+  }
+  .rocketAnimation {
+    animation: rocketAnimat 0.5s infinite ease;
+  }
+  .fireAnimation {
+    animation: fireAnimat 0.05s infinite ease-in-out;
+  }
+  .spin_about_img {
+  -webkit-animation: spinimg 8s linear infinite;
+  animation: spinimg 8s linear infinite;
+}
 }

@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Lottie from "lottie-react";
 import animationData from "../public/assets/images/lottie/data (2).json";
+import Image from "next/image";
 const Hero = () => {
   return (
     <>
@@ -35,7 +36,15 @@ const Hero = () => {
                 <Lottie
                   animationData={animationData}
                   loop={true}
-                  className="hero-lottie"
+                  className="hero-lottie md:block hidden"
+                />
+                <Image
+                  height={223}
+                  width={223}
+                  className="w-full md:hidden block"
+                  src="/assets/images/svg/hero-image-mobile.svg"
+                  alt="FaqBottomimage"
+                  priority="1"
                 />
                 <div className="md:hidden sm:flex sm:mb-0 items-center justify-center text-white text-center">
                   <button className="hero-purchase-button transition-all max-w-[300px] sm:max-w-[197px] min-h-[55px] mt-10">

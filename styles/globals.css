@@ -142,7 +142,7 @@
      lg:h-[142px] md:w-[90px] w-[75px] h-[75px] pointer-events-none ;
   }
   .whychooseus-heading{
-    @apply font-Montserrat sm:text-6xl text-[35px] text-white font-bold leading-[121%] text-center tracking-[-0.64px]
+    @apply font-Montserrat md:text-[32px] text-[28px] text-white font-bold leading-[121%] text-center tracking-[-0.64px]
   }
   .whychooseus-map-heading-para-div{
     @apply text-white 2xl:max-w-[393px] lg:max-w-[380px] sm:min-h-[197px] min-h-[152px] sm:max-w-[330px] max-w-[328px]
