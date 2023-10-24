@@ -134,6 +134,15 @@
     .rocket_graph_image01 {
       @apply min-w-[1200px] left-[-90px] bottom-[-200px];
     }
+    .rocket_image_01 {
+      @apply !bottom-[92px] !right-[-15px];
+    }
+    .rocket_image_fire_01 {
+      @apply !bottom-[104px] !right-[20px];
+    }
+    .aboutus-about-top-img {
+      @apply left-5;
+    }
   }
 
   /* ======================= */
