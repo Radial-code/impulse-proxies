@@ -119,13 +119,15 @@
     @apply font-Montserrat text-[28px] lg:text-6xl font-bold leading-[30px]  mb-4 text-center lg:text-start;
   }
   .proxies-para {
-    @apply font-semibold text-[13px] md:text-xl leading-6 text-[#9898A3] max-w-[230px] mx-auto lg:mx-0
-     sm:max-w-[380px]  text-center lg:text-start;
+    @apply font-semibold text-[13px] md:text-2xl leading-[157%] text-dark-gray max-w-[230px] mx-auto lg:mx-0
+     sm:max-w-[410px]  text-center lg:text-start;
   }
   .proxies-map-key-div {
-    @apply md:w-6/12 lg:w-[30%] min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px]
+    @apply md:w-6/12  min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px]
      hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out border-[2px] border-[#505062]
-      rounded-[20px] py-5 px-6 md:py-7;
+      rounded-[20px] py-5 px-6 md:pb-7 md:pt-6;
+
+    /* md:w-6/12  lg:w-4/12 min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out border-[2px] border-[#505062] rounded-[20px] py-5 px-6 md:py-7 undefined */
   }
   .proxies-map-div {
     @apply flex lg:justify-between justify-center gap-6 lg:flex-nowrap lg:mt-12 md:mt-6 mt-9 relative z-20 min-h-[415px]

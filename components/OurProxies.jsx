@@ -42,16 +42,16 @@ const OurProxies = () => {
             every requirement.
           </p>
 
-          <div className="proxies-map-div flex-wrap">
+          <div className="proxies-map-div flex-wrap lg:flex-nowrap gap-6">
             {ourData.map((obj, i) => {
               return (
-                <div key={i} className={`proxies-map-key-div ${obj.border}`}>
+                <div key={i} className={`proxies-map-key-div`}>
                   <div>
-                    <h3 className="font-bold font-Montserrat text-2xl">
+                    <h3 className="font-bold font-Montserrat text-2xl leading-[140%] pb-1">
                       <span className="text-cyan-green">{obj.heading_2}</span>
                       {obj.heading}
                     </h3>
-                    <p className=" font-medium text-md font-Montserrat opacity-70 mt-2">
+                    <p className=" font-medium text-md font-Montserrat opacity-70 mt-2 leading-[178%]">
                       {obj.para}
                     </p>
                   </div>
