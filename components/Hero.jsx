@@ -11,7 +11,7 @@ const Hero = () => {
         <div className="hero-section grad_b flex flex-col justify-center lg:py-8 xl:py-0 pt-[30px] sm:pb-[80px] pb-14">
           <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 h-full flex items-center">
             <div className="flex items-cent er justify-between h-full flex-wrap w-full lg:flex-nowrap lg:pt-[85px] lg:pb-[90px]">
-              <div className=" min-h-[210px] md:min-h-[300px] md: lg:min-h-[384px] md:w-[56%] xl:w-7/12 lg:w-6/12 w-full">
+              <div className=" min-h-[210px] md:min-h-[300px] md: lg:min-h-[384px] md:w-[56%] xl:w-7/12 lg:w-6/12 w-full z-10">
                 <h1 className="hero-heading lg:text-8xl sm:text-[42px] text-[32px] text-white font-bold ">
                   Elevate your <span className="text-cyan-green">success </span>
                   with our Proxies
@@ -42,12 +42,12 @@ const Hero = () => {
                 <Image
                   height={223}
                   width={223}
-                  className="scale-[1.3] w-[100vw] sm:w-full md:hidden block"
+                  className="-mt-7 sm:mt-0 scale-[1.3] w-[100vw] sm:w-full md:hidden block"
                   src="/assets/images/svg/hero-image-mobile-version.svg"
                   alt="hero-image"
                   priority="1"
                 />
-                <div className="md:hidden sm:flex sm:mb-0 items-center justify-center text-white text-center">
+                <div className="md:hidden sm:flex sm:mb-0 items-center justify-center text-white text-center z-10">
                   <button className="hero-purchase-button transition-all max-w-[300px] sm:max-w-[197px] min-h-[55px] mt-10">
                     Purchase
                   </button>
