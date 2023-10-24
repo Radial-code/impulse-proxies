@@ -121,10 +121,10 @@
       @apply min-w-[1490px] left-[-110px] bottom-[-250px];
     }
     .rocket_image_01 {
-      @apply !bottom-[145px] !right-[-10px];
+      @apply !bottom-[125px] !right-[-10px];
     }
     .rocket_image_fire_01 {
-      @apply !bottom-[155px] !right-[30px];
+      @apply !bottom-[135px] !right-[30px];
     }
     .aboutus-about-top-img {
       @apply left-10;
