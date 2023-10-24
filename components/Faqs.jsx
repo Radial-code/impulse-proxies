@@ -37,8 +37,8 @@ const ImpulseFAQ = () => {
           priority="1"
         />
         <Image
-          height={207}
-          width={207}
+          height={223}
+          width={223}
           className="pointer-events-none absolute faq-right-img"
           src="/assets/images/png/faq_right.png"
           alt="faqimage"

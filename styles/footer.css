@@ -33,20 +33,34 @@
   }
 }
 .fireAnimation {
-  animation: fireAnimat 1s infinite ease-in-out;
+  animation: fireAnimat 0.05s infinite ease-in-out;
 }
-@keyframes fireAnimat {
+.rocketAnimation {
+  animation: rocketAnimat 0.5s infinite ease;
+}
+@keyframes rocketAnimat {
   0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(5deg);
   }
   50% {
-    -webkit-transform: translate(5px, -5px);
-    transform: translate(5px, -5px);
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(-5deg);
   }
   100% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
+    transform: rotate(0);
+  }
+}
+@keyframes fireAnimat {
+  from {
+    transform: scale(0.7);
+  }
+  to {
+    transform: scale(1.2);
   }
 }
 @keyframes arrowAnimat {

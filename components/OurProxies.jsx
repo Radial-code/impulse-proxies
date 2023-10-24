@@ -18,7 +18,7 @@ const OurProxies = () => {
         <Image
           width={144}
           height={220}
-          className="proxies-rocket-img rocket_img"
+          className="proxies-rocket-img rocket_img rocketAnimation"
           src="/assets/images/svg/rocket.svg"
           alt="Group_bg"
         />
@@ -46,11 +46,11 @@ const OurProxies = () => {
               return (
                 <div key={i} className={`proxies-map-key-div ${obj.border}`}>
                   <div>
-                    <h3 className="font-bold  font-Montserrat text-2xl">
+                    <h3 className="font-bold font-Montserrat text-2xl">
                       <span className="text-cyan-green">{obj.heading_2}</span>
                       {obj.heading}
                     </h3>
-                    <p className=" font-medium text-md font-Montserrat opacity-70 max-w-[316px]  mt-2">
+                    <p className=" font-medium text-md font-Montserrat opacity-70 mt-2">
                       {obj.para}
                     </p>
                   </div>
