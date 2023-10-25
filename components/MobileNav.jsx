@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import DropDown from "./DropDown";
@@ -35,7 +35,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
       >
         <div className="flex flex-col text-white gap-9 xl:gap-5 justify-center items-center w-full">
           <div className="relative group inline-block text-left w-full">
-            <DropDown />
+            <DropDown setActiveNavOverlay={setActiveNavOverlay} />
           </div>
           <Link
             aria-label="AboutUs"
