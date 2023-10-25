@@ -51,7 +51,7 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
             onClick={() => setActiveNavOverlay(false)}
             className="mobile-nav-li "
           >
-            FAQ’s
+            FAQ
           </Link>
           <Link
             aria-label="proxies"

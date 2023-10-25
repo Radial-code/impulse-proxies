@@ -175,7 +175,7 @@
     @apply font-semibold text-lg md:text-2xl leading-[157%] text-dark-gray max-w-[95%] mx-auto lg:mx-0 sm:max-w-[410px] text-center lg:text-start;
   }
   .proxies-map-key-div {
-    @apply md:w-6/12  min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px] hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out border-[2px] border-[#505062]
+    @apply md:w-6/12  min-h-[121px] md:min-h-[142px] md:max-w-[353px] lg:max-w-[424px] sm:hover:border-cyan-green hover:shadow-2xl duration-300 ease-in-out border-[2px] border-[#505062]
       rounded-[20px] py-5 px-6 xl:pb-7 md:py-6;
   }
   .proxies-map-div {

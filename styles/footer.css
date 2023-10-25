@@ -343,7 +343,21 @@ input[type="number"]::-webkit-outer-spin-button {
     animation: fireAnimat 0.05s infinite ease-in-out;
   }
   .spin_about_img {
-  -webkit-animation: spinimg 8s linear infinite;
-  animation: spinimg 8s linear infinite;
+    -webkit-animation: spinimg 8s linear infinite;
+    animation: spinimg 8s linear infinite;
+  }
 }
+@media (max-width: 639.98px) {
+  .linerBorder::before,
+  .linerBorder::after {
+    -webkit-animation: unset;
+    background: linear-gradient(
+      230deg,
+      #50eed7 -60%,
+      #080d2d 70%,
+      #080d2d 60%,
+      #50eed7 100%
+    );
+    inset: 0;
+  }
 }

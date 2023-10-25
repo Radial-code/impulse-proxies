@@ -70,7 +70,7 @@ const Header = () => {
                     href="#Faqs"
                     className="font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
-                    FAQ’s
+                    FAQ
                   </Link>
                   <Link
                     aria-label="proxies"
