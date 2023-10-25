@@ -32,7 +32,7 @@
   }
   .hero-button-lottie-main {
     @apply min-h-[460px] md:min-h-[250px] lg:min-h-[399px] xl:min-h-[499px] md:w-[44%]
-     w-11/12 xl:w-6/12 lg:w-6/12 mx-auto sm:mt-7 md:mt-0 flex lg:flex-row flex-col
+     w-11/12 xl:w-9/12 lg:w-6/12 mx-auto sm:mt-7 md:mt-0 flex lg:flex-row flex-col
       justify-center  relative;
   }
   .current-main {
@@ -142,6 +142,11 @@
     }
     .aboutus-about-top-img {
       @apply left-5;
+    }
+  }
+  @media (min-width: 376px) and (max-width: 499.98px) {
+    .proxies-graph-img {
+      @apply bottom-[-65px];
     }
   }
   @media (min-width: 320px) and (max-width: 499.98px) {
