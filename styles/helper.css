@@ -12,6 +12,7 @@
   );
 }
 .box_showdow {
+  background: -o-linear-gradient(top, #50eed7 0%, #7becf3 100%);
   background: -webkit-gradient(
     linear,
     left top,
@@ -19,11 +20,15 @@
     from(#50eed7),
     to(#7becf3)
   );
-  background: -o-linear-gradient(top, #50eed7 0%, #7becf3 100%);
   background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
 }
 .bg_current {
   border: 1px solid #4fdcc7;
+  background: -o-linear-gradient(
+    101deg,
+    #141436 -2.09%,
+    #1e1f3e 120.28%
+  ) !important;
   background: linear-gradient(
     349deg,
     #141436 -2.09%,
@@ -39,7 +44,6 @@
   background: -o-linear-gradient(337.31deg, #151536 35.26%, #393969 182.89%);
   background: linear-gradient(112.69deg, #151536 35.26%, #393969 182.89%);
 }
-
 @-webkit-keyframes top-btn {
   50% {
     -webkit-transform: translateY(-10px);
@@ -50,7 +54,6 @@
     transform: translateY(0px);
   }
 }
-
 @keyframes top-btn {
   50% {
     -webkit-transform: translateY(-10px);
@@ -61,7 +64,6 @@
     transform: translateY(0px);
   }
 }
-
 @media (max-width: 1023.95px) {
   .line::before {
     content: "";
@@ -120,12 +122,10 @@
     left: 220px !important;
   }
 }
-
-/* animation image css */
+/* ANIMATION IMAGE CSS */
 .hero_wave_height {
   height: 100vh;
 }
-
 .hero_wave {
   -webkit-mask-size: 100% 100%;
   -webkit-mask-clip: border-box;
@@ -140,7 +140,6 @@
   left: 0;
   overflow: hidden;
 }
-
 .grad_bg {
   background-image: conic-gradient(
     #1e1e42,
@@ -157,26 +156,21 @@
   bottom: -364%;
   left: -200%;
   right: -200%;
-
   -webkit-animation: gradient-bg 4s linear infinite;
-
   animation: gradient-bg 4s linear infinite;
 }
-
 @-webkit-keyframes gradient-bg {
   100% {
     -webkit-transform: translate3d(0px, 0px, 0px) rotate(360deg);
     transform: translate3d(0px, 0px, 0px) rotate(360deg);
   }
 }
-
 @keyframes gradient-bg {
   100% {
     -webkit-transform: translate3d(0px, 0px, 0px) rotate(360deg);
     transform: translate3d(0px, 0px, 0px) rotate(360deg);
   }
 }
-
 @media (max-width: 768px) {
   .left_30 {
     left: 30% !important;
@@ -206,5 +200,6 @@
 }
 .GENERATE_PROXIES_box {
   border-radius: 16px;
+  background: -o-linear-gradient(337deg, #151536 35.26%, #393969 182.89%);
   background: linear-gradient(113deg, #151536 35.26%, #393969 182.89%);
 }

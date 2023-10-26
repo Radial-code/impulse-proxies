@@ -9,7 +9,6 @@
 .lh_normal {
   line-height: normal;
 }
-
 .spin {
   -webkit-animation: spin 3s infinite linear;
   animation: spin 3s infinite linear;
@@ -28,29 +27,67 @@
     transform: translate(0, 0);
   }
 }
-
-@keyframes rocketAnimat {
+@-webkit-keyframes rocketAnimat {
   0% {
+    -webkit-transform: rotate(0);
     transform: rotate(0);
   }
   25% {
+    -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
   }
   50% {
+    -webkit-transform: rotate(0);
     transform: rotate(0);
   }
   75% {
+    -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
   }
   100% {
+    -webkit-transform: rotate(0);
     transform: rotate(0);
+  }
+}
+@keyframes rocketAnimat {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  25% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  50% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+}
+@-webkit-keyframes fireAnimat {
+  from {
+    -webkit-transform: scale(0.7);
+    transform: scale(0.7);
+  }
+  to {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 @keyframes fireAnimat {
   from {
+    -webkit-transform: scale(0.7);
     transform: scale(0.7);
   }
   to {
+    -webkit-transform: scale(1.2);
     transform: scale(1.2);
   }
 }
@@ -74,6 +111,13 @@
   position: absolute;
   inset: -1px;
   z-index: -1;
+  background: -o-linear-gradient(
+    var(--angle),
+    #50eed7 0%,
+    #080d2d 30%,
+    #080d2d 60%,
+    #50eed7 100%
+  );
   background: -webkit-gradient(
     linear,
     left top,
@@ -83,13 +127,6 @@
     color-stop(30%, #080d2d),
     color-stop(60%, #080d2d),
     to(#50eed7)
-  );
-  background: -o-linear-gradient(
-    var(--angle),
-    #50eed7 0%,
-    #080d2d 30%,
-    #080d2d 60%,
-    #50eed7 100%
   );
   background: linear-gradient(
     var(--angle),
@@ -119,6 +156,7 @@
   }
 }
 .bgHeroImg::after {
+  background: -o-linear-gradient(top, #50eed7 0%, #7becf3 100%);
   background: -webkit-gradient(
     linear,
     left top,
@@ -126,10 +164,10 @@
     from(#50eed7),
     to(#7becf3)
   );
-  background: -o-linear-gradient(top, #50eed7 0%, #7becf3 100%);
   background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
 }
 .chooseBox {
+  background: -o-linear-gradient(top, #50eed7 0%, #7becf3 100%);
   background: -webkit-gradient(
     linear,
     left top,
@@ -137,7 +175,6 @@
     from(#50eed7),
     to(#7becf3)
   );
-  background: -o-linear-gradient(top, #50eed7 0%, #7becf3 100%);
   background: linear-gradient(180deg, #50eed7 0%, #7becf3 100%);
 }
 /* dashboard */
@@ -191,14 +228,12 @@
   background-color: #fff !important;
   border-radius: 10px;
 }
-
 .select_none {
   -webkit-user-select: none;
   -ms-user-select: none;
   -moz-user-select: none;
   user-select: none;
 }
-
 @-webkit-keyframes spinimg {
   0% {
     -webkit-transform: rotate(0deg);
@@ -308,7 +343,7 @@ input[type="number"]::-webkit-outer-spin-button {
   opacity: 0;
   pointer-events: none;
 }
-/* footer text color  */
+/* FOOTER TEXT COLOR  */
 @supports ((text-stroke: 2px black) or (-webkit-text-stroke: 2px black)) {
   .text-outline {
     color: transparent;
@@ -319,9 +354,13 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 .svg_fill:hover .hover_color_change path {
   fill: #fff !important;
+  -webkit-transition: all 200ms ease-in-out !important;
+  -o-transition: all 200ms ease-in-out !important;
   transition: all 200ms ease-in-out !important;
 }
 .rewards-active path .svg_fill .hover_color_change path {
+  -webkit-transition: all 200ms ease-in-out !important;
+  -o-transition: all 200ms ease-in-out !important;
   transition: all 200ms ease-in-out !important;
 }
 .rewards-active path {
@@ -337,9 +376,11 @@ input[type="number"]::-webkit-outer-spin-button {
     animation: arrowAnimat 2s infinite ease-in-out;
   }
   .rocketAnimation {
+    -webkit-animation: rocketAnimat 0.5s infinite ease;
     animation: rocketAnimat 0.5s infinite ease;
   }
   .fireAnimation {
+    -webkit-animation: fireAnimat 0.05s infinite ease-in-out;
     animation: fireAnimat 0.05s infinite ease-in-out;
   }
   .spin_about_img {
@@ -351,6 +392,13 @@ input[type="number"]::-webkit-outer-spin-button {
   .linerBorder::before,
   .linerBorder::after {
     -webkit-animation: unset;
+    background: -o-linear-gradient(
+      220deg,
+      #50eed7 -60%,
+      #080d2d 70%,
+      #080d2d 60%,
+      #50eed7 100%
+    );
     background: linear-gradient(
       230deg,
       #50eed7 -60%,

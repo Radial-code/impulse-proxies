@@ -5,6 +5,7 @@
 @import url(./footer.css);
 @import url(./helper.css);
 
+/* TAILWIND CSS CLASSES */
 @layer base {
   .hero-heading {
     @apply lg:tracking-[-1.16px] sm:tracking-[-0.84px]
@@ -199,13 +200,11 @@
       lg:pb-[38px] px-6 pt-6 pb-[30px] rounded-[30px] border-[2px] border-cyan-green bg-[#204056];
   }
 }
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -231,7 +230,6 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: #040426;
   font-family: interfacesFont;
-
   /* SCROLL SMOOTH CSS */
   -webkit-overflow-scrolling: touch;
   -webkit-transform: translate3d(0, 0, 0);
@@ -261,10 +259,14 @@ body {
 }
 /* COLUMNS */
 .your_order {
+  -webkit-columns: 300px 3;
+  -moz-columns: 300px 3;
   columns: 300px 3;
 }
 @media (min-width: 1600px) {
   .your_order {
+    -webkit-columns: 356px 4;
+    -moz-columns: 356px 4;
     columns: 356px 4;
   }
 }
@@ -301,12 +303,26 @@ body {
     bottom: -317px !important;
   }
 }
-
-/* styles.css */
 .range-input {
   -webkit-appearance: none;
   width: 100%;
   height: 9px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#4fdcc7),
+    color-stop(50%, #4fdcc7),
+    color-stop(50%, #3c3c6b),
+    to(#3c3c6b)
+  );
+  background: -o-linear-gradient(
+    left,
+    #4fdcc7 0%,
+    #4fdcc7 50%,
+    #3c3c6b 50%,
+    #3c3c6b 100%
+  );
   background: linear-gradient(
     to right,
     #4fdcc7 0%,
@@ -317,7 +333,6 @@ body {
   outline: none;
   border-radius: 11px;
 }
-
 .range-input::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 18px;
@@ -327,11 +342,26 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
-/* styles.css */
 .range-input-2 {
   -webkit-appearance: none;
   width: 100%;
   height: 9px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#4fdcc7),
+    color-stop(50%, #4fdcc7),
+    color-stop(50%, #206f63),
+    to(#206f63)
+  );
+  background: -o-linear-gradient(
+    left,
+    #4fdcc7 0%,
+    #4fdcc7 50%,
+    #206f63 50%,
+    #206f63 100%
+  );
   background: linear-gradient(
     to right,
     #4fdcc7 0%,
@@ -342,7 +372,6 @@ body {
   outline: none;
   border-radius: 11px;
 }
-
 .range-input-2::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 18px;
