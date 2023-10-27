@@ -230,10 +230,6 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: #040426;
   font-family: interfacesFont;
-  /* SCROLL SMOOTH CSS */
-  -webkit-overflow-scrolling: touch;
-  -webkit-transform: translate3d(0, 0, 0);
-  -webkit-backface-visibility: hidden;
 }
 .accordion {
   -webkit-transition: all 0.3s ease-in-out;

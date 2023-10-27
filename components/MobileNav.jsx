@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import DropDown from "./DropDown";
 const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   useEffect(() => {
