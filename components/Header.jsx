@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import MobileNav from "./MobileNav";
 import Link from "next/link";
 import { HeaderCrossIcons, ToggleIcon } from "./common/Icons";
-// import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Image from "next/image";
 import DropDown from "./DropDown";
+import { useRouter } from "next/router";
+
 const Header = () => {
   const [activeNavOverlay, setActiveNavOverlay] = useState(false);
   const [isToggleIconVisible, setIsToggleIconVisible] = useState(true);
@@ -17,6 +18,9 @@ const Header = () => {
       setIsToggleIconVisible(true);
     }
   }, [activeNavOverlay]);
+  // ROUTER CODE HERE
+  const router = useRouter();
+  const shouldDisplayDropdown = router.pathname === "/product";
 
   return (
     <>
@@ -56,7 +60,11 @@ const Header = () => {
               <div className="hidden lg:block">
                 <div className="flex lg:gap-9 text-white items-center">
                   <div className="relative inline-block text-left">
-                    <DropDown setActiveNavOverlay={setActiveNavOverlay} />
+                    {shouldDisplayDropdown ? (
+                      ""
+                    ) : (
+                      <DropDown setActiveNavOverlay={setActiveNavOverlay} />
+                    )}
                   </div>
                   <Link
                     aria-label="AboutUs"
@@ -101,7 +109,6 @@ const Header = () => {
                 } `}
                 aria-label="toggle-button"
               >
-                {" "}
                 {isToggleIconVisible ? <HeaderCrossIcons /> : <ToggleIcon />}
               </button>
             </div>

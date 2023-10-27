@@ -4,7 +4,6 @@ import { useRouter } from "next/router";
 import {
   DashboardTweeter,
   HeaderCrossIcons,
-  RewardGift,
   ToggleIcon,
   WhiteDiscord,
 } from "../common/Icons";
@@ -91,7 +90,6 @@ const DashboardNav = () => {
                     }`}
                   >
                     <span className="mb-1">
-                      {/* <RewardGift /> */}
                       <svg
                         className={`hover_color_change ${
                           router.query.type === "rewards"
