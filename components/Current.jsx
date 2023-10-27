@@ -74,7 +74,7 @@ const Current = () => {
               <Image
                 height={73}
                 width={54}
-                src="/assets/images/svg/n-partner-icon.svg"
+                src="/assets/images/svg/n-icon.svg"
                 alt="N icon"
                 loading="lazy"
                 className="lg:w-[73px] lg:h-[54px] md:w-[65px] md:h-[46px] w-[44px] h-[31px] !cursor-pointer object-cover"
@@ -85,9 +85,9 @@ const Current = () => {
                 loading="lazy"
                 height={66}
                 width={66}
-                src="/assets/images/png/mango-icon-colored.png"
+                src="/assets/images/svg/mango-icon-colored-img.svg"
                 alt="mango icon"
-                className="lg:w-[80px] lg:h-[72px] md:w-[70px] md:h-[62px] w-[50px] h-[42px] !cursor-pointer object-cover"
+                className="lg:w-[80px] lg:h-[72px] md:w-[70px] md:h-[62px] w-[50px] h-[42px] !cursor-pointer object-cover pt-2"
               />
             </Link>
           </div>
