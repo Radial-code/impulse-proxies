@@ -56,7 +56,7 @@ const Header = () => {
               <div className="hidden lg:block">
                 <div className="flex lg:gap-9 text-white items-center">
                   <div className="relative inline-block text-left">
-                    <DropDown />
+                    <DropDown setActiveNavOverlay={setActiveNavOverlay} />
                   </div>
                   <Link
                     aria-label="AboutUs"
