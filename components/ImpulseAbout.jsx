@@ -11,7 +11,7 @@ const ImpulseAbout = () => {
         className="bg-[#141436] select_none lg:pt-[120px] 2xl:pt-[135px]  md:pt-[52px] pt-[35px] z-10 relative"
       >
         <div className="bg_top_bottom sm:hidden block h-[30px] opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>
-        <div className=" w-16 p-0">
+        <div className="w-16 p-0">
           <Image
             src="/assets/images/webp/glass.webp"
             alt="aboutTop"
