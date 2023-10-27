@@ -69,7 +69,7 @@ const Current = () => {
           <p className="opacity-40 tracking-[1.5px] font-bold lh_normal text-xs text-center text-white">
             TRUSTED BY OUR PARTNERS
           </p>
-          <div className="flex items-center justify-center sm:mt-6 mt-[10px] gap-3 lg:gap-8">
+          <div className="flex items-center justify-center sm:mt-6 mt-[10px] gap-2 lg:gap-3">
             <Link aria-label="NIcon" href="#" target="_blank">
               <Image
                 height={73}
