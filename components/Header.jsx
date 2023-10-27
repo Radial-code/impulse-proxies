@@ -77,7 +77,7 @@ const Header = () => {
                     href="#proxies"
                     className="font-semibold leading-normal font-Montserrat text-2xl hover:opacity-70 transition-all ease-in-out duration-200"
                   >
-                    Purchase
+                    Our Proxies
                   </Link>
                 </div>
               </div>
