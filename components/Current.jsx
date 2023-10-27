@@ -9,9 +9,7 @@ import CountUp from "react-countup";
 
 const Current = () => {
   const [viewCount, setViewCount] = useState(false);
-
   const visibilitySensorRefs = currentData.map(() => useRef());
-
   function onVisibilityChange(index, isVisible) {
     if (isVisible) {
       setViewCount(true);
@@ -71,15 +69,15 @@ const Current = () => {
           <p className="opacity-40 tracking-[1.5px] font-bold lh_normal text-xs text-center text-white">
             TRUSTED BY OUR PARTNERS
           </p>
-          <div className="flex items-center justify-center sm:mt-6 mt-[10px] gap-8">
+          <div className="flex items-center justify-center sm:mt-6 mt-[10px] gap-3 lg:gap-8">
             <Link aria-label="NIcon" href="#" target="_blank">
               <Image
                 height={73}
                 width={54}
-                src="/assets/images/webp/N_icon_current.webp"
+                src="/assets/images/svg/n-partner-icon.svg"
                 alt="N icon"
                 loading="lazy"
-                className="lg:w-[73px] lg:h-[54px] md:w-[65px] md:h-[46px] w-[44px] h-[31px] !cursor-pointer"
+                className="lg:w-[73px] lg:h-[54px] md:w-[65px] md:h-[46px] w-[44px] h-[31px] !cursor-pointer object-cover"
               />
             </Link>
             <Link aria-label="MangoIcon" href="#" target="_blank">
@@ -87,9 +85,10 @@ const Current = () => {
                 loading="lazy"
                 height={66}
                 width={66}
-                src="/assets/images/webp/mango_icon_current.webp"
+                // src="/assets/images/webp/mango_icon_current.webp"
+                src="/assets/images/png/mango-icon-colored.png"
                 alt="mango icon"
-                className="lg:w-[60px] lg:h-[62px] md:w-[53px] md:h-[52px] w-[36px] h-[37px] !cursor-pointer"
+                className="lg:w-[80px] lg:h-[72px] md:w-[70px] md:h-[62px] w-[50px] h-[42px] !cursor-pointer object-cover"
               />
             </Link>
           </div>
