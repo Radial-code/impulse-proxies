@@ -40,9 +40,9 @@ const ImpulseAbout = () => {
               return (
                 <div
                   key={i}
-                  className={`lg:w-6/12 hover:translate-y-[-4%] duration-200 ease-in-out sm:w-10/12 w-full rounded-[20px] p-[2px] inline-block lg:mt-0 relative max-w-[560px] 2xl:max-w-[648px] ${obj.border}`}
+                  className={`lg:w-6/12 hover:translate-y-[-4%] duration-200 ease-in-out sm:w-10/12 w-full rounded-[20px] p-[2px] inline-block lg:mt-0 relative ${obj.border}`}
                 >
-                  <div className="block rounded-[20px] w-full bg-[#080D2D] sm:ps-8  ps-4 pb-7 sm:pt-6 pt-4 sm:pe-6 pe-4">
+                  <div className="block rounded-[20px] w-full bg-[#080D2D] p-4 sm:p-6">
                     <div className="flex w-full">
                       <div className="flex items-start w-full">
                         <Image
@@ -73,13 +73,13 @@ const ImpulseAbout = () => {
                               </p>
                             </div>
                           </div>
-                          <p className="sm:mb-7 text-[#9898A3] font-Montserrat font-medium leading-[178%] text-md max-w-[278px]">
+                          <p className="mb-3 sm:mb-6 text-[#9898A3] font-Montserrat font-medium leading-[178%] text-md max-w-[278px] xl:max-w-[308px]">
                             {obj.para}
                           </p>
                         </div>
                       </div>
                     </div>
-                    <div className=" flex gap-4 items-center justify-end sm:justify-end mt-2">
+                    <div className="flex gap-4 items-center justify-end sm:justify-end">
                       <div className=" flex sm:gap-4 text-white gap-2">
                         <Link
                           aria-label="twitter"
@@ -88,7 +88,6 @@ const ImpulseAbout = () => {
                           className=" flex items-center justify-end gap-2 "
                         >
                           <TwitterIcon />
-
                           <span className=" font-Montserrat text-[14px] sm:text-lg font-bold">
                             Twitter
                           </span>
