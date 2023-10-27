@@ -54,19 +54,18 @@
      font-bold leading-[121%] tracking-[-0.74px] sm:mb-12 mb-7;
   }
   .faq-right-img {
-    @apply lg:top-[-15%] sm:top-[-10%] top-[-2%] end-[-10px] lg:end-[-10%] sm:end-[-1%] lg:h-[222px] lg:w-[223px]
-     sm:w-[120px] w-[80px] rounded-[10000px] object-contain sm:h-[175px] h-[80px];
+    @apply lg:top-[-15%] sm:top-[-10%] top-[-2%] end-[-10px] lg:end-[-6%] sm:end-[-1%] lg:h-[222px] lg:w-[223px] sm:w-[120px] w-[80px] rounded-[10000px] object-contain sm:h-[175px] h-[80px];
   }
   .faq-bottom-img {
     @apply bottom-[0px] start-[-4%] lg:h-[222px] lg:w-[223px]
      sm:w-[120px] w-[80px] rounded-[10000px] object-contain sm:h-[175px] h-[80px];
   }
   .faq-ring {
-    @apply lg:top-[-9%] sm:top-[-8%] top-[-6%] end-[-7px] lg:end-[-5%] sm:end-[-5%] lg:h-[222px] lg:w-[223px] sm:w-[120px] sm:h-[175px] w-[80px] h-[80px];
+    @apply lg:top-[-9%] sm:top-[-8%] top-[-6%] end-[-7px] lg:end-[-3%] sm:end-[-5%] lg:h-[222px] lg:w-[223px] sm:w-[120px] sm:h-[175px] w-[80px] h-[80px];
   }
   .faq-torus {
     @apply bottom-[50px] sm:bottom-[-33px] start-[-1%] sm:start-[-9%] md:bottom-[-17px] md:start-[-70px] xl:bottom-[-10px] lg:bottom-[-20px]
-     xl:start-[-9%] lg:start-[-8%] lg:h-[222px] lg:w-[223px] sm:w-[120px] sm:w-[100px] sm:h-[175px] w-[40px] h-[40px];
+     xl:start-[-6%] lg:start-[-8%] lg:h-[222px] lg:w-[223px] sm:w-[120px] sm:w-[100px] sm:h-[175px] w-[40px] h-[40px];
   }
   .faq-main-div {
     @apply md:pt-24 lg:pt-28 sm:pt-20 pt-12 md:pb-[92px] lg:pb-48 pb-16 overflow-hidden relative;
