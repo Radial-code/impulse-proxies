@@ -9,6 +9,7 @@ import {
 } from "../common/Icons";
 import Image from "next/image";
 import DashboardMobileNav from "./DashboardMobileNav";
+import DashboardDropDown from "./DashboardDropDown";
 const DashboardNav = () => {
   const [activeNavOverlay, setActiveNavOverlay] = useState(false);
   const [isToggleIconVisible, setIsToggleIconVisible] = useState(true);
@@ -143,13 +144,14 @@ const DashboardNav = () => {
                 ) : (
                   ""
                 )}
-                <div className="bg-[#1D1D42] py-4 pe-5 ps-9 rounded-[10px] flex items-center justify-between ms-6">
+                {/* <div className="bg-[#1D1D42] py-4 pe-5 ps-9 rounded-[10px] flex items-center justify-between ms-6">
                   <p className="text-md text-[#626296] font-Montserrat font-semibold lh_normal tracking-[-0.28px] mb-0">
                     Welcome Back
                     <span className="text-white block">Jack#1983</span>
                   </p>
                   <div className="rounded-full bg-white h-[37px] w-[37px] ms-7"></div>
-                </div>
+                </div> */}
+                <DashboardDropDown />
               </div>
             </div>
             <div className="flex items-center lg:hidden ">

@@ -2,6 +2,7 @@ import React, { Fragment, useEffect, useState } from "react";
 import Link from "next/link";
 import { DashboardTweeter, WhiteDiscord } from "../common/Icons";
 import { useRouter } from "next/router";
+import DashboardDropDown from "./DashboardDropDown";
 const DashboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 1023.98px)");
@@ -41,7 +42,10 @@ const DashboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
       >
         <div className="2xl:w-full w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
           <div className="flex flex-col gap-6 xl:gap-5 lg:items-start items-center w-full">
-            <div
+            <div className="mt-8 -ms-6">
+              <DashboardDropDown />
+            </div>
+            {/* <div
               className="bg-[#1D1D42] max-w-[327px] w-full py-4 sm:mt-16 mt-8 px-4 rounded-[10px] flex items-center justify-between"
               onClick={() => setActiveNavOverlay(false)}
             >
@@ -50,7 +54,7 @@ const DashboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
                 <span className="text-white block">Jack#1983</span>
               </p>
               <div className="rounded-full bg-white h-[37px] w-[37px] ms-7"></div>
-            </div>
+            </div> */}
             <Link
               onClick={() => setActiveNavOverlay(false)}
               href="/dashboard-data-usage?type=residential"
