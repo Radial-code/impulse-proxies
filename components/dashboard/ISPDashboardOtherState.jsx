@@ -106,7 +106,11 @@ const ISPDashboardOtherState = () => {
                 </div>
               </div>
               <div className="flex flex-wrap pt-5 flex-col items-center lg:h-[305px] custom_scrollbar_y_2 lg:overflow-scroll xl:overflow-hidden">
-                <div className="flex justify-center">
+                <div
+                  className="flex justify-center
+                max-h-[640px] overflow-y-auto custom_scrollbar_y
+                "
+                >
                   <div
                     id="textToCopy"
                     className="your_order font-Montserrat xl:text-[15px] text-[12px] font-medium leading-normal text-[#9D9DBB] xl:leading-[160%] 2xl:leading-[170%]"

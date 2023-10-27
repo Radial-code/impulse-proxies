@@ -55,7 +55,8 @@ const YourOrderOne = () => {
           </div>
         </div>
         <div>
-          <div className="flex justify-start mt-6 dashboard_heigh max-h-[640px] overflow-y-auto custom_scrollbar_y">
+          {/* dashboard_height */}
+          <div className="flex justify-start mt-6 max-h-[640px] overflow-y-auto custom_scrollbar_y">
             <div
               id="textToCopy"
               className="your_order font-Montserrat xl:text-[16px] max-w-[250px] text-[12px] font-medium leading-normal text-[#9D9DBB]"
