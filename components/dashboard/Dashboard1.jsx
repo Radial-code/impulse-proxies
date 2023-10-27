@@ -249,7 +249,7 @@ const Dashboard1 = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full lg:w-[702px] 2xl:w-[642px] lg:pt-0 sm:pt-10 pt-5">
+              <div className="w-full lg:w-[702px] 2xl:w-[642px] max-h-[848px] lg:pt-0 sm:pt-10 pt-5">
                 <YourOrderOne />
                 <div className="rounded-lg overflow-hidden lg:mt-12 mt-8 lg:hidden sm:block hidden">
                   <div className="bg-[#212148] ps-8 py-4">

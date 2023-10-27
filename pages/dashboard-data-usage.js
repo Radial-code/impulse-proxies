@@ -10,9 +10,11 @@ const DashboardDataUsage = () => {
   const router = useRouter();
   return (
     <>
-      <div className="h-screen overflow-hidden relative">
+      {/* h-screen overflow-hidden */}
+      <div className="relative">
         <DashboardNav />
-        <div className="dashboard_height overflow-y-auto custom_scrollbar_y md:pb-20">
+        {/* dashboard_height overflow-y-auto custom_scrollbar_y */}
+        <div className="md:pb-20">
           {router.query.type === "residential" ? (
             <Dashboard1 />
           ) : router.query.type === "isp-datacenter" ? (
