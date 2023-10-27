@@ -85,7 +85,6 @@ const Current = () => {
                 loading="lazy"
                 height={66}
                 width={66}
-                // src="/assets/images/webp/mango_icon_current.webp"
                 src="/assets/images/png/mango-icon-colored.png"
                 alt="mango icon"
                 className="lg:w-[80px] lg:h-[72px] md:w-[70px] md:h-[62px] w-[50px] h-[42px] !cursor-pointer object-cover"
