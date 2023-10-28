@@ -158,6 +158,9 @@
     }
   }
   /* ========================================== MEDIA QUERY ========================================== */
+  .sign_out_button {
+    @apply text-md text-white font-Montserrat font-semibold tracking-[-0.28px] mb-0 transition-all duration-200 ease-in-out;
+  }
 
   .proxies-rocket-img {
     @apply absolute xl:bottom-[110px] lg:bottom-[140px] md:bottom-[80px] sm:bottom-[100px] bottom-[40px] xl:right-[80px] 
@@ -167,7 +170,6 @@
     @apply absolute xl:bottom-[125px] lg:bottom-[153px] md:bottom-[79px] sm:bottom-[100px] bottom-[34px] xl:right-[116px] 
     lg:right-[101px] md:right-[101px] sm:right-[67px] right-[53px] lg:w-[99px] w-[21px] h-[30px];
   }
-
   .proxies-heading {
     @apply font-Montserrat text-[28px] lg:text-6xl font-bold leading-[30px]  mb-4 text-center lg:text-start;
   }
