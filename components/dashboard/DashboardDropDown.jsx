@@ -28,7 +28,7 @@ const DashboardDropDown = () => {
             <div className="absolute start-0 top-[70px] z-10 bg-[#252550] border-white border-2 w-full max-w-[226px] ms-6 rounded-[10px] px-2">
               <div className="h-[68px] flex items-center justify-center">
                 <button
-                  className="w-full bg-[#1D1D42] hover:bg-cyan-green py-4 pe-5 ps-9 rounded-[10px] flex items-center justify-between lh_normal sign_out_button"
+                  className="w-full bg-[#1D1D42] hover:bg-cyan-green py-4 px-5 rounded-[10px] lh_normal sign_out_button text-center"
                   onClick={() => handlePeriodSelect("Sign out")}
                 >
                   {selectedPeriod}
