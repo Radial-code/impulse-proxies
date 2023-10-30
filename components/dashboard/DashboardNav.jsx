@@ -46,11 +46,11 @@ const DashboardNav = () => {
                     height={62}
                     loading="lazy"
                     width={65}
-                    src="/assets/images/webp/FooterLogo.webp"
+                    src="/assets/images/svg/logo.svg"
                     alt="aboutimage"
                     className="lg:w-[67px] lg:h-[67px] md:w-[45px] md:h-[55px] w-[30px] h-[37px]"
                   />
-                  <div className="ms-3">
+                  <div className="ms-4">
                     <p className="mb-0 lg:text-[17px] sm:text-[15px] text-[10px] text-white font-bold lh_normal font-Montserrat tracking-[3.3px]">
                       IMPULSE
                     </p>

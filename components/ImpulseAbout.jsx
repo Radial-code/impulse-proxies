@@ -66,9 +66,9 @@ const ImpulseAbout = () => {
                                 height={27}
                                 width={27}
                                 alt="img"
-                                src="/assets/images/webp/AboutLogo.webp"
+                                src="/assets/images/svg/logo.svg"
                               />
-                              <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal sm:text-lg text-[13px] ps-[6px]">
+                              <p className="mb-0 text-white font-Montserrat font-bold tracking-[2.2px] lh_normal sm:text-lg text-[13px] ms-2">
                                 IMPULSE
                               </p>
                             </div>

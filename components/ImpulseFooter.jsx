@@ -17,11 +17,11 @@ const ImpulseFooter = () => {
                   loading="lazy"
                   height={67}
                   width={67}
-                  src="/assets/images/webp/FooterLogo.webp"
+                  src="/assets/images/svg/logo.svg"
                   alt="aboutimage"
                   className="sm:w-[67px] sm:h-[67px] w-[47px] h-[47px]"
                 />
-                <div className=" ms-3">
+                <div className="ms-4">
                   <p className="mb-0 sm:text-3xl text-[16px] text-white font-bold lh_normal font-Montserrat tracking-[3.3px]">
                     IMPULSE
                   </p>
