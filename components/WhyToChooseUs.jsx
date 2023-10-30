@@ -44,7 +44,7 @@ function WhyToChooseUs() {
                         loading="lazy"
                       />
                     </div>
-                    <p className=" md:text-md text-[12px] font-medium font-Montserrat opacity-70 sm:max-w-[244px] leading-[25px] ">
+                    <p className=" md:text-md text-[12px] font-medium font-Montserrat sm:max-w-[244px] leading-[25px] ">
                       {obj.para}
                     </p>
                   </div>

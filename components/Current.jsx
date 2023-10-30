@@ -58,7 +58,7 @@ const Current = () => {
                     </VisibilitySensor>
                     {data.number}
                   </p>
-                  <p className="text-center text-[#9898A3] pt-[6px] lg:text-2xl text-[17px] font-semibold leading-[150%] text-opacity-80 ">
+                  <p className="text-center text-[#9898A3] pt-[6px] lg:text-2xl text-[17px] font-semibold leading-[150%]">
                     {data.current}
                   </p>
                 </div>
@@ -66,7 +66,7 @@ const Current = () => {
             })}
           </div>
           <hr className="bg-[#2D3752] w-full h-[1px] border-0 sm:mt-6 mt-8 sm:mb-6 mb-[9px] " />
-          <p className="opacity-40 tracking-[1.5px] font-bold lh_normal text-xs text-center text-white">
+          <p className="tracking-[1.5px] font-bold lh_normal text-xs text-center text-white">
             TRUSTED BY OUR PARTNERS
           </p>
           <div className="flex items-center justify-center sm:mt-6 mt-[10px] gap-2 lg:gap-3">
