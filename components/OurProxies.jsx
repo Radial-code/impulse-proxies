@@ -51,7 +51,8 @@ const OurProxies = () => {
                       <span className="text-cyan-green">{obj.heading_2}</span>
                       {obj.heading}
                     </h3>
-                    <p className=" font-medium text-md font-Montserrat opacity-70 mt-2 leading-[178%] 2xl:pe-1">
+                    {/* opacity-70 */}
+                    <p className=" font-medium text-md font-Montserrat mt-2 leading-[178%] 2xl:pe-1">
                       {obj.para}
                     </p>
                   </div>
