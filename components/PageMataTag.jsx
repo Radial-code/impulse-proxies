@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Head from "next/head";
 const PageMataTag = () => {
   return (
@@ -15,7 +15,10 @@ const PageMataTag = () => {
         />
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
+        <meta
+          property="og:url"
+          content="https://impulse-proxies-01.vercel.app/"
+        />
         <meta
           property="og:title"
           content="Elevate your success with our Proxies"
@@ -33,7 +36,10 @@ const PageMataTag = () => {
           property="twitter:card"
           content="Elevate your success with our Proxies"
         />
-        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta
+          property="twitter:url"
+          content="https://impulse-proxies-01.vercel.app/"
+        />
         <meta
           property="twitter:title"
           content="Elevate your success with our Proxies"
@@ -49,6 +55,6 @@ const PageMataTag = () => {
       </Head>
     </>
   );
-}
+};
 
-export default PageMataTag
+export default PageMataTag;
