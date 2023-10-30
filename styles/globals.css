@@ -115,6 +115,12 @@
     .custom-margin-3xl {
       margin-bottom: 0px !important;
     }
+    .rocket_image_01 {
+      @apply !bottom-[200px] !right-[110px];
+    }
+    .proxies-rocketfire-img {
+      @apply !bottom-[210px] !right-[145px];
+    }
   }
   @media (min-width: 1280px) and (max-width: 1340px) {
     .rocket_graph_image01 {
