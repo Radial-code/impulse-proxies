@@ -47,7 +47,7 @@ const DashboardNav = () => {
                     loading="lazy"
                     width={65}
                     src="/assets/images/svg/logo.svg"
-                    alt="aboutimage"
+                    alt="logoImg"
                     className="lg:w-[67px] lg:h-[67px] md:w-[45px] md:h-[55px] w-[30px] h-[37px]"
                   />
                   <div className="ms-4">
