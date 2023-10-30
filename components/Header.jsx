@@ -43,8 +43,8 @@ const Header = () => {
                     loading="lazy"
                     height={66}
                     width={53}
-                    src="/assets/images/webp/FooterLogo.webp"
-                    alt="herologo"
+                    src="/assets/images/svg/logo.svg"
+                    alt="logoImg"
                     className="xl:w-[53px] xl:h-[66px] object-contain md:w-[45px] md:h-[55px] w-[30px] h-[37px]"
                   />
                   <div className="ms-3">

@@ -17,11 +17,11 @@ const ImpulseFooter = () => {
                   loading="lazy"
                   height={67}
                   width={67}
-                  src="/assets/images/webp/FooterLogo.webp"
-                  alt="aboutimage"
+                  src="/assets/images/svg/logo.svg"
                   className="sm:w-[67px] sm:h-[67px] w-[47px] h-[47px]"
+                  alt="logoImg"
                 />
-                <div className=" ms-3">
+                <div className="ms-4">
                   <p className="mb-0 sm:text-3xl text-[16px] text-white font-bold lh_normal font-Montserrat tracking-[3.3px]">
                     IMPULSE
                   </p>
@@ -30,7 +30,6 @@ const ImpulseFooter = () => {
                   </p>
                 </div>
               </div>
-              {/* opacity-70 */}
               <p className=" text-[#9898A3] text-md font-bold font-Montserrat lg:max-w-[338px] lg:leading-[192%]">
                 All product and company names are trademarks™ or registered
                 trademarks® of their respective holders. Their usage does not

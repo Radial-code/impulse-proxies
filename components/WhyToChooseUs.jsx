@@ -44,7 +44,6 @@ function WhyToChooseUs() {
                         loading="lazy"
                       />
                     </div>
-                    {/* opacity-70 */}
                     <p className=" md:text-md text-[12px] font-medium font-Montserrat sm:max-w-[244px] leading-[25px] ">
                       {obj.para}
                     </p>
