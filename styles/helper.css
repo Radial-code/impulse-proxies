@@ -145,6 +145,20 @@
     bottom: -273px;
   }
 }
+@media (max-width: 1601px) {
+  .proxies_rocket {
+    width: 250px;
+    right: -56px;
+    bottom: -306px;
+  }
+}
+@media (max-width: 1535px) {
+  .proxies_rocket {
+    width: 250px;
+    right: -103px;
+    bottom: -209px;
+  }
+}
 @media (max-width: 1530px) {
   .proxies_rocket {
     width: 250px;
