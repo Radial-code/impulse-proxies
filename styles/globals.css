@@ -138,8 +138,11 @@
   }
   @media (min-width: 1024px) and (max-width: 1170px) {
     .rocket_graph_image01 {
-      @apply min-w-[1200px] left-[-90px] bottom-[-200px];
+      @apply min-w-[100%] left-[0px] bottom-[-200px];
     }
+    /* .rocket_graph_image01 {
+      @apply min-w-[1200px] left-[-90px] bottom-[-200px];
+    } */
     .rocket_image_01 {
       @apply !bottom-[92px] !right-[-15px];
     }

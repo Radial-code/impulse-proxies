@@ -15,8 +15,8 @@
   position: absolute;
   width: 250px;
   transform: rotate(45deg);
-  right: 40px;
-  bottom: -109px;
+  right: -201px;
+  bottom: -219px;
 }
 .box_showdow {
   background: -o-linear-gradient(top, #50eed7 0%, #7becf3 100%);
@@ -124,63 +124,158 @@
     z-index: 0;
   }
 }
-@media (min-width: 1620px) {
-  .aboutTop {
-    left: 220px !important;
-  }
+@media (max-width: 1841px) {
   .proxies_rocket {
     width: 250px;
-
-    right: 82px;
-    bottom: -2px;
+    right: -163px;
+    bottom: -230px;
+  }
+}
+@media (max-width: 1741px) {
+  .proxies_rocket {
+    width: 250px;
+    right: -103px;
+    bottom: -273px;
+  }
+}
+@media (max-width: 1641px) {
+  .proxies_rocket {
+    width: 250px;
+    right: -103px;
+    bottom: -273px;
+  }
+}
+@media (max-width: 1530px) {
+  .proxies_rocket {
+    width: 250px;
+    right: -91px;
+    bottom: -206px;
   }
 }
 @media (max-width: 1441px) {
   .proxies_rocket {
     width: 250px;
-
-    right: 62px;
-    bottom: -82px;
+    right: -40px;
+    bottom: -244px;
   }
 }
-@media (max-width: 1370px) {
+@media (max-width: 1341px) {
   .proxies_rocket {
     width: 250px;
-
-    right: 33px;
-    bottom: -82px;
+    right: -60px;
+    bottom: -230px;
   }
 }
 @media (max-width: 1281px) {
   .proxies_rocket {
     width: 250px;
-
-    right: -33px;
-    bottom: -82px;
+    right: -58px;
+    bottom: -233px;
+  }
+}
+@media (max-width: 1169px) {
+  .proxies_rocket {
+    width: 200px;
+    right: -27px;
+    bottom: -228px;
+  }
+}
+@media (max-width: 1100px) {
+  .proxies_rocket {
+    width: 200px;
+    right: 17px;
+    bottom: -258px;
   }
 }
 @media (max-width: 1025px) {
   .proxies_rocket {
-    width: 250px;
-
-    right: -37px;
-    bottom: -109px;
+    width: 200px;
+    right: -85px;
+    bottom: -204px;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 1024.5px) {
   .proxies_rocket {
-    width: 180px;
-
-    right: 10px;
-    bottom: -75px;
+    width: 200px;
+    right: 28px;
+    bottom: -264px;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 1023px) {
   .proxies_rocket {
-    width: 140px;
-
-    right: -10px;
-    bottom: -95px;
+    width: 200px;
+    right: -85px;
+    bottom: -204px;
+  }
+}
+@media (max-width: 950px) {
+  .proxies_rocket {
+    width: 170px;
+    right: -34px;
+    bottom: -204px;
+  }
+}
+@media (max-width: 860px) {
+  .proxies_rocket {
+    width: 170px;
+    right: 0px;
+    bottom: -229px;
+  }
+}
+@media (max-width: 769px) {
+  .proxies_rocket {
+    width: 170px;
+    right: -34px;
+    bottom: -141px;
+  }
+}
+@media (max-width: 768.5px) {
+  .proxies_rocket {
+    width: 170px;
+    right: 15px;
+    bottom: -244px;
+  }
+}
+@media (max-width: 767px) {
+  .proxies_rocket {
+    width: 170px;
+    right: -34px;
+    bottom: -141px;
+  }
+}
+@media (max-width: 690px) {
+  .proxies_rocket {
+    width: 170px;
+    right: -9px;
+    bottom: -165px;
+  }
+}
+@media (max-width: 590px) {
+  .proxies_rocket {
+    width: 170px;
+    right: 0px;
+    bottom: -195px;
+  }
+}
+@media (max-width: 500px) {
+  .proxies_rocket {
+    width: 170px;
+    right: 0px;
+    bottom: -235px;
+  }
+}
+@media (max-width: 460px) {
+  .proxies_rocket {
+    width: 170px;
+    right: -12px;
+    bottom: -250px;
+  }
+}
+@media (max-width: 435px) {
+  .proxies_rocket {
+    width: 170px;
+    right: -12px;
+    bottom: -261px;
   }
 }
 /* ANIMATION IMAGE CSS */

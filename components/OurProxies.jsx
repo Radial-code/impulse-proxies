@@ -18,17 +18,10 @@ const OurProxies = () => {
           alt="Group_bg"
           loading="lazy"
         />
-    
-          <Lottie
-            animationData={animationData}
-            loop={true}
-            className="proxies_rocket"
-          />
-    
 
         <div className="proxies_box h-10 opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>
         <div className="box_showdow rounded-[40px] opacity-20 blur-[150px] absolute w-full max-w-[1190px] h-[200px] bottom-0 pointer-events-none"></div>
-        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 text-white xl:mb-12 custom-margin-3xl">
+        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 text-white xl:mb-12 custom-margin-3xl relative">
           <h2 className="proxies-heading">
             Our <span className="text-cyan-green ">Proxies</span>
           </h2>
@@ -37,6 +30,11 @@ const OurProxies = () => {
             every requirement.
           </p>
 
+          <Lottie
+            animationData={animationData}
+            loop={true}
+            className="proxies_rocket"
+          />
           <div className="proxies-map-div flex-wrap lg:flex-nowrap gap-6">
             {ourData.map((obj, i) => {
               return (
