@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import Lottie from "lottie-react";
+import animationData from "../public/assets/images/lottie/rocket_json.json";
 import { ourData } from "./common/Helper";
 const OurProxies = () => {
   return (
@@ -16,20 +18,13 @@ const OurProxies = () => {
           alt="Group_bg"
           loading="lazy"
         />
-        <Image
-          width={144}
-          height={220}
-          className="proxies-rocket-img rocket_img rocketAnimation rocket_image_01"
-          src="/assets/images/svg/rocket.svg"
-          alt="Group_bg"
-        />
-        <Image
-          width={21}
-          height={33}
-          className="proxies-rocketfire-img rocket_img fireAnimation rocket_image_fire_01"
-          src="/assets/images/svg/rocketfire.svg"
-          alt="Group_bg"
-        />
+    
+          <Lottie
+            animationData={animationData}
+            loop={true}
+            className="proxies_rocket"
+          />
+    
 
         <div className="proxies_box h-10 opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>
         <div className="box_showdow rounded-[40px] opacity-20 blur-[150px] absolute w-full max-w-[1190px] h-[200px] bottom-0 pointer-events-none"></div>
@@ -59,6 +54,7 @@ const OurProxies = () => {
               );
             })}
           </div>
+
           <div className=" flex justify-center lg:justify-center relative">
             <button className="proxies-try-now-button">Try Now</button>
           </div>
