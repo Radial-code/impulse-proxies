@@ -3,6 +3,7 @@ import Header from "./Header";
 import Lottie from "lottie-react";
 import animationData from "../public/assets/images/lottie/data (2).json";
 import Image from "next/image";
+import Link from "next/link";
 const Hero = () => {
   return (
     <>
@@ -21,7 +22,14 @@ const Hero = () => {
                   market excellence truly means.
                 </p>
                 <div className="md:flex hidden sm:mb-0 mb-5 items-center mt-12 text-white">
-                  <button className="hero-purchase-button ">Purchase</button>
+                  <Link
+                    aria-label="product"
+                    href="/product"
+                    className="hero-purchase-button flex items-center justify-center"
+                  >
+                    Purchase
+                  </Link>
+                  {/* <button className="hero-purchase-button ">Purchase</button> */}
                   <button className="hero-explore-products-button ">
                     Explore Products
                   </button>
@@ -48,10 +56,17 @@ const Hero = () => {
                   priority="1"
                 />
                 <div className="md:hidden sm:flex sm:mb-0 items-center justify-center text-white text-center z-10">
-                  <button className="hero-purchase-button transition-all max-w-[300px] sm:max-w-[197px] min-h-[55px] mt-10">
+                  <Link
+                    aria-label="product"
+                    href="/product"
+                    className="hero-purchase-button transition-all max-w-[300px] md:max-w-[197px] min-h-[55px] mt-10 mx-auto flex items-center justify-center"
+                  >
                     Purchase
-                  </button>
-                  <button className="hero-explore-products-button sm:ms-4 max-w-[300px] sm:max-w-[197px] min-h-[55px] sm:text-2xl text-[15px] mt-4 sm:mt-10">
+                  </Link>
+                  {/* <button className="hero-purchase-button transition-all max-w-[300px] sm:max-w-[197px] min-h-[55px] mt-10">
+                    Purchase
+                  </button> */}
+                  <button className="hero-explore-products-button sm:ms-4 max-w-[300px] md:max-w-[197px] min-h-[55px] sm:text-2xl text-[15px] mt-4 sm:mt-10">
                     Explore Products
                   </button>
                 </div>

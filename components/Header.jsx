@@ -3,8 +3,8 @@ import MobileNav from "./MobileNav";
 import Link from "next/link";
 import { HeaderCrossIcons, ToggleIcon } from "./common/Icons";
 import Image from "next/image";
-import DropDown from "./DropDown";
-import { useRouter } from "next/router";
+// import DropDown from "./DropDown";
+// import { useRouter } from "next/router";
 
 const Header = () => {
   const [activeNavOverlay, setActiveNavOverlay] = useState(false);
@@ -19,8 +19,8 @@ const Header = () => {
     }
   }, [activeNavOverlay]);
   // ROUTER CODE HERE
-  const router = useRouter();
-  const shouldDisplayDropdown = router.pathname === "/product";
+  // const router = useRouter();
+  // const shouldDisplayDropdown = router.pathname === "/product";
 
   return (
     <>
@@ -59,13 +59,13 @@ const Header = () => {
               </div>
               <div className="hidden lg:block">
                 <div className="flex lg:gap-9 text-white items-center">
-                  <div className="relative inline-block text-left">
+                  {/* <div className="relative inline-block text-left">
                     {shouldDisplayDropdown ? (
                       ""
                     ) : (
                       <DropDown setActiveNavOverlay={setActiveNavOverlay} />
                     )}
-                  </div>
+                  </div> */}
                   <Link
                     aria-label="AboutUs"
                     href="#AboutUs"
