@@ -35,12 +35,12 @@ const ImpulseAbout = () => {
             Meet the team behind the vision of Impulse, shaping the proxies of
             tomorrow.
           </p>
-          <div className="about-box-map-div">
+          <div className="about-box-map-div justify-center md:gap-8 xl:gap-14">
             {aboutBox.map((obj, i) => {
               return (
                 <div
                   key={i}
-                  className={`lg:w-6/12 hover:translate-y-[-4%] duration-200 ease-in-out sm:w-10/12 w-full rounded-[20px] p-[2px] inline-block lg:mt-0 relative ${obj.border}`}
+                  className={`lg:w-6/12 lg:max-w-[528px] sm:w-10/12 w-full hover:translate-y-[-4%] duration-200 ease-in-out rounded-[20px] p-[2px] inline-block lg:mt-0 relative ${obj.border}`}
                 >
                   <div className="block rounded-[20px] w-full bg-[#080D2D] p-4 sm:p-6">
                     <div className="flex w-full">
@@ -51,7 +51,7 @@ const ImpulseAbout = () => {
                           src={obj.aboutImg}
                           alt="aboutimg"
                           priority="1"
-                          className="md:h-[81px]  md:w-[81px] w-[42px] h-[42px]"
+                          className="md:h-[81px] md:w-[81px] w-[42px] h-[42px]"
                         />
                         <div className="sm:ps-5 ps-3 w-full">
                           <div className="flex justify-between items-center w-full">
@@ -80,7 +80,7 @@ const ImpulseAbout = () => {
                       </div>
                     </div>
                     <div className="flex gap-4 items-center justify-end sm:justify-end">
-                      <div className=" flex sm:gap-4 text-white gap-2">
+                      <div className="flex sm:gap-4 text-white gap-2">
                         <Link
                           aria-label="twitter"
                           target="_blank"
