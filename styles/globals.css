@@ -110,13 +110,13 @@
   /* ========================================== MEDIA QUERY ========================================== */
   @media (min-width: 2500px) {
     .proxies_rocket {
-      @apply right-[-490px] bottom-[-170px] w-[300px];
+      @apply !right-[-490px] !bottom-[-170px] !w-[300px];
     }
     .proxies-graph-img {
-      @apply !bottom-[-350px] left-[230px] w-[90%];
+      @apply !bottom-[-350px] !left-[230px] !w-[90%];
     }
     .aboutus-about-top-img {
-      @apply w-[114px] left-[2rem];
+      @apply !w-[114px] !left-[2rem];
     }
   }
   @media (min-width: 1900px) {
