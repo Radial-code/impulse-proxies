@@ -91,3 +91,18 @@ const DropDown = ({ activeNavOverlay, setActiveNavOverlay }) => {
   );
 };
 export default DropDown;
+// import { useRouter } from "next/router";
+
+// ROUTER CODE HERE
+// const router = useRouter();
+// const shouldDisplayDropdown = router.pathname === "/product";
+
+{
+  /* <div className="relative group inline-block text-left w-full">
+{shouldDisplayDropdown ? (
+  ""
+  ) : (
+  <DropDown setActiveNavOverlay={setActiveNavOverlay} />
+  )}
+</div> */
+}

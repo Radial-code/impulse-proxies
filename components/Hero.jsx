@@ -29,7 +29,6 @@ const Hero = () => {
                   >
                     Purchase
                   </Link>
-                  {/* <button className="hero-purchase-button ">Purchase</button> */}
                   <button className="hero-explore-products-button ">
                     Explore Products
                   </button>
@@ -63,9 +62,6 @@ const Hero = () => {
                   >
                     Purchase
                   </Link>
-                  {/* <button className="hero-purchase-button transition-all max-w-[300px] sm:max-w-[197px] min-h-[55px] mt-10">
-                    Purchase
-                  </button> */}
                   <button className="hero-explore-products-button sm:ms-4 max-w-[300px] md:max-w-[197px] min-h-[55px] sm:text-2xl text-[15px] mt-4 sm:mt-10">
                     Explore Products
                   </button>

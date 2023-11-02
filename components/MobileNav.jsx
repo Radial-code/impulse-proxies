@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-// import DropDown from "./DropDown";
-// import { useRouter } from "next/router";
 
 const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   useEffect(() => {
@@ -27,9 +25,6 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   const handleOpen = (value) => {
     setOpen(open === value ? 0 : value);
   };
-  // ROUTER CODE HERE
-  // const router = useRouter();
-  // const shouldDisplayDropdown = router.pathname === "/product";
 
   return (
     <>
@@ -39,13 +34,6 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
         }`}
       >
         <div className="flex flex-col text-white gap-9 xl:gap-5 justify-center items-center w-full">
-          {/* <div className="relative group inline-block text-left w-full">
-            {shouldDisplayDropdown ? (
-              ""
-            ) : (
-              <DropDown setActiveNavOverlay={setActiveNavOverlay} />
-            )}
-          </div> */}
           <Link
             aria-label="AboutUs"
             onClick={() => setActiveNavOverlay(false)}
