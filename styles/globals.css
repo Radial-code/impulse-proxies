@@ -108,6 +108,17 @@
   }
 
   /* ========================================== MEDIA QUERY ========================================== */
+  @media (min-width: 2500px) {
+    .proxies_rocket {
+      @apply right-[-490px] bottom-[-170px] w-[300px];
+    }
+    .proxies-graph-img {
+      @apply !bottom-[-350px] left-[230px] w-[90%];
+    }
+    .aboutus-about-top-img {
+      @apply w-[114px] left-[2rem];
+    }
+  }
   @media (min-width: 1900px) {
     .proxies-graph-img {
       @apply bottom-[-326px];
@@ -171,7 +182,6 @@
     @apply text-md text-white font-Montserrat font-semibold tracking-[-0.28px] mb-0 transition-all duration-200 ease-in-out;
   }
 
- 
   .proxies-rocketfire-img {
     @apply absolute xl:bottom-[130px] lg:bottom-[153px] md:bottom-[79px] sm:bottom-[100px] bottom-[34px] xl:right-[120px] 
     lg:right-[101px] md:right-[101px] sm:right-[67px] right-[53px] lg:w-[99px] w-[21px] h-[30px];
