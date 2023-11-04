@@ -72,7 +72,7 @@
   }
   .aboutus-about-top-img {
     @apply absolute left-[5%] lg:left-28 lg:top-[-10%] md:top-[-6%] top-[-4%]  text-3xl lg:w-[144px] md:w-[109px]
-     lg:h-[122px] md:h-[92px] w-[65px] h-[55px] pointer-events-none;
+     lg:h-[122px] md:h-[92px] sm:w-[65px] sm:h-[55px] w-[55px] h-[45px] pointer-events-none;
   }
   .aboutus-para {
     @apply text-dark-gray leading-[157%] font-normal md:font-semibold lg:text-2xl text-[15px] text-center lg:max-w-[383px]
@@ -121,7 +121,7 @@
   }
   @media (min-width: 1900px) {
     .proxies-graph-img {
-      @apply bottom-[-326px];
+      @apply bottom-[-316px];
     }
     .custom-margin-3xl {
       margin-bottom: 0px !important;
@@ -135,7 +135,7 @@
   }
   @media (min-width: 1280px) and (max-width: 1340px) {
     .rocket_graph_image01 {
-      @apply min-w-[1490px] left-[-110px] bottom-[-250px];
+      @apply min-w-[1430px] left-[-110px] bottom-[-240px];
     }
     .rocket_image_01 {
       @apply !bottom-[125px] !right-[-10px];
@@ -149,7 +149,7 @@
   }
   @media (min-width: 1024px) and (max-width: 1170px) {
     .rocket_graph_image01 {
-      @apply min-w-[100%] left-[0px] bottom-[-200px];
+      @apply min-w-[100%] left-[30px] bottom-[-170px];
     }
     /* .rocket_graph_image01 {
       @apply min-w-[1200px] left-[-90px] bottom-[-200px];
