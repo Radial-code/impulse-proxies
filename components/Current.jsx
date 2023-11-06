@@ -1,6 +1,4 @@
 import React, { useState, useRef } from "react";
-import { findDOMNode } from "react-dom";
-
 import { currentData } from "./common/Helper";
 import Link from "next/link";
 import Image from "next/image";
