@@ -15,7 +15,7 @@ const ProxiesISP = () => {
   };
 
   const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
-  const [selectedProvider, setSelectedProvider] = useState("Monthly");
+  const [selectedProvider, setSelectedProvider] = useState("Daily");
   // const togglePeriodDropdown = () => {
   //   setIsPeriodDropdownOpen(!isPeriodDropdownOpen);
   // };
@@ -137,18 +137,24 @@ const ProxiesISP = () => {
                 />
               </div>
               {isProviderDropdownOpen && (
-                <div className="absolute bg-[#252550] border-white start-0 border-2 w-full mt-2 z-10 rounded-[10px]">
+                <div className="absolute bg-[#252550] border-white start-0 border-2 w-full mt-2 z-10 rounded-[10px] p-1">
                   <p
-                    className="text-[14xp] font-Montserrat font-semibold text-white mb-0 mx-auto py-1 w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer"
+                    className="text-[14xp] font-Montserrat font-semibold text-white mb-1 mx-auto py-1 w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer transition-all duration-200 ease-in-out"
+                    onClick={() => handleProviderSelect("Daily")}
+                  >
+                    Daily
+                  </p>
+                  <p
+                    className="text-[14px] font-Montserrat font-semibold text-white mb-1 py-1 mx-auto w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer transition-all duration-200 ease-in-out"
+                    onClick={() => handleProviderSelect("Weekly")}
+                  >
+                    Weekly
+                  </p>
+                  <p
+                    className="text-[14px] font-Montserrat font-semibold text-white mb-0 py-1 mx-auto w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer transition-all duration-200 ease-in-out"
                     onClick={() => handleProviderSelect("Monthly")}
                   >
                     Monthly
-                  </p>
-                  <p
-                    className="text-[14px] font-Montserrat font-semibold text-white mb-0 py-1 mx-auto w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer"
-                    onClick={() => handleProviderSelect("Annually")}
-                  >
-                    Annually
                   </p>
                 </div>
               )}
