@@ -234,7 +234,7 @@ const ProxiesISP = () => {
             </button>
           </div>
         </div>
-        <div className="absolute hidden md:block start-[-70px] top-[91px]">
+        <div className="absolute hidden md:block start-[-80px] top-[60px]">
           <Image
             src="/assets/images/webp/proxies_box_top_img.webp"
             alt="proxies box top image"
