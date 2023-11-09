@@ -21,7 +21,7 @@ const ImpulseFAQ = () => {
         className="bg-[url('/assets/images/svg/FAQsbg.svg')] bg-no-repeat lg:bg-[100% 100%] bg-cover bg-center sm:pb-22 faq-main-div"
       >
         {/* <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%] "></div> */}
-        <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute bottom-0 lg:bottom-[0px] lg:left-[22%]"></div>
+        {/* <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute bottom-0 lg:bottom-[0px] lg:left-[22%]"></div> */}
         <div className="absolute pointer-events-none faq-torus hidden sm:block">
           <Torus />
         </div>
@@ -110,13 +110,13 @@ const ImpulseFAQ = () => {
             </div>
           ))}
 
-          {/* <Image
+          <Image
             height={500}
             width={500}
-            className="pointer-events-none w-full h-[45px]   absolute faq_strips_image faq-strip_bottom_img"
+            className="pointer-events-none w-full h-[45px]   absolute faq_strips_image faq-strips_bottom_image"
             src="/assets/images/svg/strips-image.svg"
             alt="strips-image"
-          /> */}
+          />
         </div>
       </div>
     </>
