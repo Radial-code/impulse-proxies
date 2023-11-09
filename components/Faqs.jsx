@@ -20,7 +20,7 @@ const ImpulseFAQ = () => {
         id="Faqs"
         className="bg-[url('/assets/images/svg/FAQsbg.svg')] bg-no-repeat lg:bg-[100% 100%] bg-cover bg-center sm:pb-22 faq-main-div"
       >
-        <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>
+        {/* <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%] "></div> */}
         <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute bottom-0 lg:bottom-[0px] lg:left-[22%]"></div>
         <div className="absolute pointer-events-none faq-torus hidden sm:block">
           <Torus />
@@ -33,7 +33,6 @@ const ImpulseFAQ = () => {
             alt="ring-image-02"
           />
         </div>
-
         <div className="pointer-events-none absolute faq-ring hidden sm:block">
           <Ring />
         </div>
@@ -59,7 +58,15 @@ const ImpulseFAQ = () => {
           src="/assets/images/png/faq_right.png"
           alt="faqimage"
         />
-        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 sm:pt-0 pt-3 sm:pb-0 pb-3  min-h-[490px] lg:min-h-[412px]">
+        <div className="relative container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 sm:pt-0 pt-3 sm:pb-0 pb-3 min-h-[490px] lg:min-h-[412px]">
+          <Image
+            height={500}
+            width={500}
+            className="pointer-events-none w-full h-[45px]   absolute  faq_strips_image"
+            src="/assets/images/svg/strips-image.svg"
+            alt="strips-image"
+          />
+
           <p className="faq-main-heading">Frequently Asked Questions</p>
           {accordianData.map((data, index) => (
             <div
@@ -102,6 +109,14 @@ const ImpulseFAQ = () => {
               </div>
             </div>
           ))}
+
+          {/* <Image
+            height={500}
+            width={500}
+            className="pointer-events-none w-full h-[45px]   absolute faq_strips_image faq-strip_bottom_img"
+            src="/assets/images/svg/strips-image.svg"
+            alt="strips-image"
+          /> */}
         </div>
       </div>
     </>

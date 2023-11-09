@@ -128,6 +128,9 @@
     .faq-torus {
       @apply bottom-[-80px] start-[-4%];
     }
+    .faq_strips_image {
+      @apply !-top-24 !left-[80px] !scale-[1.8];
+    }
   }
   @media (min-width: 1900px) {
     .proxies-graph-img {
@@ -225,6 +228,9 @@
     @apply text-white 2xl:max-w-[393px] lg:max-w-[380px] sm:min-h-[197px] min-h-[152px] sm:max-w-[330px] max-w-[328px]
      sm:hover:translate-y-[-10px] transition-all duration-200 ease-in-out mx-auto h-full lg:ps-[46px] lg:pe-[36px] lg:pt-[18px]
       lg:pb-[38px] px-6 pt-6 pb-[30px] rounded-[30px] border-[2px] border-cyan-green bg-[#204056];
+  }
+  .faq_strips_image {
+    @apply top-[-3.5rem] left-[4rem] sm:-top-24 xl:-top-28 sm:left-24 scale-[2.8] sm:scale-[2] lg:scale-150;
   }
 }
 :root {
