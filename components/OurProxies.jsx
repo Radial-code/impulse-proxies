@@ -1,7 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import Lottie from "lottie-react";
-import animationData from "../public/assets/images/lottie/rocket_json.json";
+// import Image from "next/image";
+// import animationData from "../public/assets/images/lottie/rocket_json.json";
 import graphLottie from "../public/assets/images/lottie/graphLottie.json";
 import { ourData } from "./common/Helper";
 const OurProxies = () => {

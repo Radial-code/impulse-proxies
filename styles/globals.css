@@ -65,7 +65,7 @@
   }
   .faq-torus {
     @apply bottom-[50px] sm:bottom-[-33px] start-[-1%] sm:start-[-9%] md:bottom-[-17px] md:start-[-70px] xl:bottom-[-10px] lg:bottom-[-20px]
-     xl:start-[-6%] lg:start-[-8%] lg:h-[222px] lg:w-[223px] sm:w-[120px] sm:w-[100px] sm:h-[175px] w-[40px] h-[40px];
+     xl:start-[-6%] lg:start-[-8%] lg:h-[222px] lg:w-[223px] sm:w-[100px] sm:h-[175px] w-[40px] h-[40px];
   }
   .faq-main-div {
     @apply md:pt-24 lg:pt-28 sm:pt-20 pt-12 md:pb-[92px] lg:pb-48 pb-16 overflow-hidden relative;
@@ -116,7 +116,17 @@
       @apply !bottom-[-350px] !left-[230px] !w-[90%];
     }
     .aboutus-about-top-img {
-      @apply !w-[114px] !left-[2rem];
+      @apply !w-[114px] !left-[32rem];
+    }
+    .faq-ring,
+    .faq-torus {
+      @apply w-[322px] h-[322px];
+    }
+    .faq-right-img {
+      @apply w-[262px] h-[322px];
+    }
+    .faq-torus {
+      @apply bottom-[-80px] start-[-4%];
     }
   }
   @media (min-width: 1900px) {
