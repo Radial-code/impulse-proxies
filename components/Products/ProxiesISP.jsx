@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import ProductsRangbar from "./ProductsRangbar";
+import ProviderDropdown from "../common/ProviderDropdown";
 
 const ProxiesISP = () => {
-  const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
-  const [selectedPeriod, setSelectedPeriod] = useState("Germany");
+  // const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
+  // const [selectedPeriod, setSelectedPeriod] = useState("Germany");
   const toggleProviderDropdown = () => {
     setIsProviderDropdownOpen(!isProviderDropdownOpen);
   };
@@ -15,29 +16,18 @@ const ProxiesISP = () => {
 
   const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
   const [selectedProvider, setSelectedProvider] = useState("Monthly");
-
-  const togglePeriodDropdown = () => {
-    setIsPeriodDropdownOpen(!isPeriodDropdownOpen);
-  };
-  const handlePeriodSelect = (period) => {
-    setSelectedPeriod(period);
-    setIsPeriodDropdownOpen(false);
-  };
+  // const togglePeriodDropdown = () => {
+  //   setIsPeriodDropdownOpen(!isPeriodDropdownOpen);
+  // };
+  // const handlePeriodSelect = (period) => {
+  //   setSelectedPeriod(period);
+  //   setIsPeriodDropdownOpen(false);
+  // };
 
   const [activeTab, setActiveTab] = useState("ISP");
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
-
-  // const [isPeriodDropdownOpen2, setIsPeriodDropdownOpen2] = useState(false);
-  // const [selectedPeriod2, setSelectedPeriod2] = useState("United Kingdom");
-  // const togglePeriodDropdown2 = () => {
-  //   setIsPeriodDropdownOpen2(!isPeriodDropdownOpen2);
-  // };
-  // const handlePeriodSelect2 = (period) => {
-  //   setSelectedPeriod2(period);
-  //   setIsPeriodDropdownOpen2(false);
-  // };
 
   return (
     <>
@@ -56,8 +46,10 @@ const ProxiesISP = () => {
             internet services providers available on the market.”
           </p>
 
+          <ProviderDropdown />
+
           {/* 1. */}
-          <div className="flex justify-between sm:flex-row flex-col items-center gap-5 pt-6">
+          {/* <div className="flex justify-between sm:flex-row flex-col items-center gap-5 pt-6">
             <div className="sm:w-3/6 w-full">
               <p className="text-[10px] font-Montserrat font-semibold text-white mb-0">
                 PROVIDER
@@ -112,56 +104,6 @@ const ProxiesISP = () => {
                       onClick={() => handlePeriodSelect("Netherlands")}
                     >
                       Netherlands
-                    </p>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-          {/* 2. */}
-          {/* <div className="flex justify-between sm:flex-row flex-col items-center gap-5 pt-6">
-            <div className="sm:w-3/6 w-full">
-              <p className="text-[10px] font-Montserrat font-semibold text-white mb-0">
-                PROVIDER
-              </p>
-              <div className="w-full border-2 cursor-pointer border-white rounded-[10000px] sm:mt-[10px] mt-2 px-5 py-2">
-                <p className="text-[14px] font-Montserrat font-semibold text-white">
-                  Virgin Media
-                </p>
-              </div>
-            </div>
-            <div className="sm:w-3/6 w-full relative">
-              <p className="text-white text-[10px] font-Montserrat font-semibold leading-normal mb-0">
-                REGION
-              </p>
-              <div
-                className={`w-full border-2 cursor-pointer border-white rounded-[10000px] sm:mt-[10px] mt-2 px-5 py-2 ${
-                  isPeriodDropdownOpen2 ? "bg-[#133147]" : ""
-                }`}
-                onClick={togglePeriodDropdown2}
-              >
-                <div className="flex justify-between items-center">
-                  <p
-                    className={`text-[14px] font-Montserrat font-semibold text-white mb-0 ${
-                      isPeriodDropdownOpen2 ? "text-[#50EED7]" : ""
-                    }`}
-                  >
-                    {selectedPeriod2}
-                  </p>
-                  <Image
-                    src="/assets/images/webp/down-arrow.webp"
-                    alt="down arrow icon"
-                    height={13}
-                    width={13}
-                  />
-                </div>
-                {isPeriodDropdownOpen2 && (
-                  <div className="absolute start-0 z-10 bg-[#252550] border-white border-2 mt-2 w-full rounded-[10px] p-1">
-                    <p
-                      className="text-[14px] font-Montserrat font-semibold text-white mx-auto mb-0 w-full border border-transparent hover:border-white rounded-[10px] text-center py-1 px-4 cursor-pointer transition-all duration-200 ease-in-out"
-                      onClick={() => handlePeriodSelect2("United Kingdom")}
-                    >
-                      United Kingdom
                     </p>
                   </div>
                 )}
