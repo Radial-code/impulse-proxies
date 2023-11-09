@@ -30,7 +30,8 @@ const ResidentialProxies = () => {
     <>
       <div className="relative max-w-[700px] mx-auto">
         <h2 className="font-interfacesBold sm:text-[45px] text-2xl text-center sm:pb-10 sm:pt-7 py-7 text-white">
-          Buy your<span className="text-[#50EED7] mx-1 mt-0">Residential</span>
+          Buy your
+          <span className="text-[#50EED7] mx-1 sm:mx-2 mt-0">favorite</span>
           proxies
         </h2>
         <div className="bg_color_rgb border-2 border-[#50EED7] rounded-[20px] sm:pt-7 py-7 sm:pb-[50px] sm:pr-11 sm:pl-16 pl-5 pr-5">
@@ -39,8 +40,9 @@ const ResidentialProxies = () => {
           </p>
           <p className="mx-auto bg-white h-[1px] w-[190px]"></p>
           <p className="pt-3 max-w-[435px] text-center mx-auto sm:leading-[30px] sm:text-[17px] text-sm  text-[#B6B6B6] font-interfacesSemibold">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt
+            “Always one step ahead - featuring advanced auto-rotating IP
+            technology and dedicated load balancing ensuring continuous
+            performance.”
           </p>
           <div className="flex justify-between sm:flex-row flex-col items-center gap-5 pt-6">
             <div className="sm:w-3/6 w-full">
@@ -146,7 +148,7 @@ const ResidentialProxies = () => {
             </p>
           </div>
 
-         <ProductsRangbar/>
+          <ProductsRangbar />
           <div className="sm:pt-[26px] pt-5 flex justify-between items-end">
             <div>
               <p className="text-white text-[15px] font-Montserrat font-semibold leading-normal mb-0">
