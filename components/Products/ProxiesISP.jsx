@@ -139,19 +139,19 @@ const ProxiesISP = () => {
               {isProviderDropdownOpen && (
                 <div className="absolute bg-[#252550] border-white start-0 border-2 w-full mt-2 z-10 rounded-[10px] p-1">
                   <p
-                    className="text-[14xp] font-Montserrat font-semibold text-white mb-1 mx-auto py-1 w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer transition-all duration-200 ease-in-out"
+                    className="custom-dropdown-option-001 mb-1"
                     onClick={() => handleProviderSelect("Daily")}
                   >
                     Daily
                   </p>
                   <p
-                    className="text-[14px] font-Montserrat font-semibold text-white mb-1 py-1 mx-auto w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer transition-all duration-200 ease-in-out"
+                    className="custom-dropdown-option-001 mb-1"
                     onClick={() => handleProviderSelect("Weekly")}
                   >
                     Weekly
                   </p>
                   <p
-                    className="text-[14px] font-Montserrat font-semibold text-white mb-0 py-1 mx-auto w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer transition-all duration-200 ease-in-out"
+                    className="custom-dropdown-option-001 mb-0"
                     onClick={() => handleProviderSelect("Monthly")}
                   >
                     Monthly

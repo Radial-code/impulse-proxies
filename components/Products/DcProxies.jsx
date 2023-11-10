@@ -3,7 +3,7 @@ import Image from "next/image";
 import ProductsRangbar from "./ProductsRangbar";
 const DcProxies = () => {
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
-  const [selectedPeriod, setSelectedPeriod] = useState("USA");
+  const [selectedPeriod, setSelectedPeriod] = useState("Germany");
   const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
   const [selectedProvider, setSelectedProvider] = useState("Monthly");
   const togglePeriodDropdown = () => {
@@ -49,7 +49,7 @@ const DcProxies = () => {
             budget-friendly and your savvy solution for niche sites.”
           </p>
           <div className="flex justify-between sm:flex-row flex-col items-center gap-5 pt-6">
-            <div className="sm:w-3/6 w-full">
+            {/* <div className="sm:w-3/6 w-full">
               <p className="text-[10px] font-Montserrat font-semibold text-white mb-0">
                 PROVIDER
               </p>
@@ -58,8 +58,9 @@ const DcProxies = () => {
                   Telecom
                 </p>
               </div>
-            </div>
-            <div className="sm:w-3/6 w-full relative">
+            </div> */}
+            {/* sm:w-3/6 */}
+            <div className="w-full relative">
               <p className="text-white text-[10px] font-Montserrat font-semibold leading-normal mb-0">
                 REGION
               </p>
@@ -85,18 +86,30 @@ const DcProxies = () => {
                   />
                 </div>
                 {isPeriodDropdownOpen && (
-                  <div className="absolute start-0 z-10 bg-[#252550] border-white border-2 mt-2 w-full rounded-[10px] ">
+                  <div className="absolute start-0 z-10 bg-[#252550] border-white border-2 mt-2 w-full rounded-[10px] p-1">
                     <p
-                      className="text-[14px] font-Montserrat font-semibold text-white mx-auto mb-0 w-full border border-transparent hover:border-white rounded-[10px] text-center py-1 px-4 cursor-pointer"
-                      onClick={() => handlePeriodSelect("USA")}
+                      className="custom-dropdown-option-001 mb-1"
+                      onClick={() => handlePeriodSelect("Germany")}
                     >
-                      USA
+                      Germany
                     </p>
                     <p
-                      className="text-[14px] font-Montserrat font-semibold text-white mb-0 w-full border border-transparent hover:border-white rounded-[10px] text-center mx-auto py-1 px-4 cursor-pointer"
-                      onClick={() => handlePeriodSelect("Russia")}
+                      className="custom-dropdown-option-001 mb-1"
+                      onClick={() => handlePeriodSelect("Italy")}
                     >
-                      Russia
+                      Italy
+                    </p>
+                    <p
+                      className="custom-dropdown-option-001 mb-1"
+                      onClick={() => handlePeriodSelect("Spain")}
+                    >
+                      Spain
+                    </p>
+                    <p
+                      className="custom-dropdown-option-001 mb-0"
+                      onClick={() => handlePeriodSelect("United Kingdom")}
+                    >
+                      United Kingdom
                     </p>
                   </div>
                 )}
@@ -129,15 +142,15 @@ const DcProxies = () => {
                 />
               </div>
               {isProviderDropdownOpen && (
-                <div className="absolute bg-[#252550] border-white start-0 border-2 w-full mt-2 z-10 rounded-[10px]">
+                <div className="absolute bg-[#252550] border-white start-0 border-2 w-full mt-2 z-10 rounded-[10px] p-1">
                   <p
-                    className="text-[14px] font-Montserrat font-semibold text-white mb-0 mx-auto py-1 w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer"
+                    className="custom-dropdown-option-001 mb-1"
                     onClick={() => handleProviderSelect("Monthly")}
                   >
                     Monthly
                   </p>
                   <p
-                    className="text-[14px] font-Montserrat font-semibold text-white mb-0 py-1 mx-auto w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer"
+                    className="custom-dropdown-option-001 mb-0"
                     onClick={() => handleProviderSelect("Annually")}
                   >
                     Annually
