@@ -69,8 +69,8 @@ const Dashboard1 = () => {
   };
   return (
     <>
-      <div className=" relative">
-        <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
+      <div className="relative">
+        <div className="w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
           <div className="hero_wave">
             <div className="hero_wave_height">
               <div className="grad_bg"></div>
@@ -101,8 +101,8 @@ const Dashboard1 = () => {
                   <DataUsagesOne />
                   <ResidentialBoxOne />
                 </div>
-                <div className="rounded-2xl overflow-hidden mt-12 lg:block hidden GENERATE_PROXIES_box pb-[52px]">
-                  <div className="bg-[#212148] ps-8 py-5">
+                <div className="rounded-2xl overflow-hidden mt-12 lg:block hidden GENERATE_PROXIES_box pb-[52px]    ">
+                  <div className="  ps-8 py-5">
                     <p className="mb-0 text-white text-md font-Montserrat leading-normal font-bold tracking-[1.4px]">
                       GENERATE PROXIES
                     </p>
@@ -162,14 +162,14 @@ const Dashboard1 = () => {
                     </p>
                     <div className="w-full relative">
                       <div
-                        className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3 ${
+                        className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3 leading-normal ${
                           isProviderDropdownOpen ? "bg-[#212148]" : ""
                         }`}
                         onClick={toggleProviderDropdown}
                       >
                         <div className="flex justify-between items-center">
                           <p
-                            className={` text-white font-Montserrat font-normal text-[14]  mb-0 ${
+                            className={`text-white font-Montserrat font-normal text-[14px] mb-0 ${
                               isProviderDropdownOpen ? "text-[#fff]" : ""
                             }`}
                           >
@@ -253,15 +253,17 @@ const Dashboard1 = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full lg:w-[702px] 2xl:w-[642px] max-h-[848px] lg:pt-0 sm:pt-10 pt-5">
+
+              {/* max-h-[848px] */}
+              <div className="w-full lg:w-[702px] 2xl:w-[642px] lg:pt-0 sm:pt-10 pt-5">
                 <YourOrderOne />
-                <div className="rounded-lg overflow-hidden lg:mt-12 mt-8 lg:hidden sm:block hidden">
+                <div className="rounded-lg overflow-hidden lg:mt-12 mt-8 lg:hidden sm:block hidden  GENERATE_PROXIES_box">
                   <div className="bg-[#212148] ps-8 py-4">
                     <p className="mb-0 text-white text-md font-Montserrat font-bold tracking-[1.4px]">
                       GENERATE PROXIES
                     </p>
                   </div>
-                  <div className="bg-[#17173A] pt-5 ps-8 pe-12">
+                  {/* <div className="bg-[#17173A] pt-5 ps-8 pe-12">
                     <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
                       Region
                     </p>
@@ -306,14 +308,16 @@ const Dashboard1 = () => {
                         )}
                       </div>
                     </div>
-                  </div>
-                  <div className="bg-[#17173A] lg:pt-5 pt-4 pb-6 ps-8 pe-12">
+                  </div> */}
+                  <CommonDashboardDropdown />
+                  {/* bg-[#17173A] */}
+                  <div className=" lg:pt-5 pt-4 pb-6 ps-8 pe-12">
                     <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
                       Proxy Type
                     </p>
                     <div className="max-w-[782px] relative">
                       <div
-                        className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3 ${
+                        className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3 leading-normal ${
                           isProviderDropdownOpen ? "bg-[#212148]" : ""
                         }`}
                         onClick={toggleProviderDropdown}
@@ -355,7 +359,7 @@ const Dashboard1 = () => {
                       </div>
                     </div>
 
-                    <div className=" mt-5">
+                    <div className="mt-5">
                       <p className="text-white text-lg mb-4 font-semibold leading-normal font-Montserrat">
                         Amount
                       </p>

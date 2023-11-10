@@ -32,14 +32,15 @@ const CommonDashboardDropdown = () => {
 
   return (
     <>
-      <div className="bg-[#17173A] py-5 ps-8 pe-12">
+      {/* bg-[#17173A] */}
+      <div className="py-5 ps-8 pe-12">
         {/* I REGION MENU */}
         <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
           Region
         </p>
-        <div className="max-w-[782px] relative">
+        <div className="w-full relative">
           <div
-            className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px]  px-5 py-3 ${
+            className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3 ${
               isRegionDropdownOpen ? "bg-[#212148]" : ""
             }`}
             onClick={() =>
@@ -48,7 +49,7 @@ const CommonDashboardDropdown = () => {
           >
             <div className="flex justify-between items-center">
               <p
-                className={`font-Montserrat text-white text-[14px] font-medium mb-0 ${
+                className={`font-Montserrat text-white text-[14px] font-medium mb-0 leading-normal ${
                   isRegionDropdownOpen ? "text-[#fff]" : ""
                 }`}
               >
@@ -97,7 +98,7 @@ const CommonDashboardDropdown = () => {
         <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
           Load Balancer
         </p>
-        <div className="max-w-[782px] relative">
+        <div className="w-full relative">
           <div
             className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3 ${
               isLoadBalancerDropdownOpen ? "bg-[#212148]" : ""
@@ -111,7 +112,7 @@ const CommonDashboardDropdown = () => {
           >
             <div className="flex justify-between items-center">
               <p
-                className={`font-Montserrat text-white text-[14px] font-medium mb-0 ${
+                className={`font-Montserrat text-white text-[14px] font-medium mb-0 leading-normal ${
                   isLoadBalancerDropdownOpen ? "text-[#fff]" : ""
                 }`}
               >
@@ -172,9 +173,9 @@ const CommonDashboardDropdown = () => {
         <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
           Continent
         </p>
-        <div className="max-w-[782px] relative">
+        <div className="w-full relative">
           <div
-            className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px]  px-5 py-3 ${
+            className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3 ${
               isContinentDropdownOpen ? "bg-[#212148]" : ""
             }`}
             onClick={() =>
@@ -186,7 +187,7 @@ const CommonDashboardDropdown = () => {
           >
             <div className="flex justify-between items-center">
               <p
-                className={`font-Montserrat text-white text-[14px] font-medium mb-0 ${
+                className={`font-Montserrat text-white text-[14px] font-medium mb-0 leading-normal ${
                   isContinentDropdownOpen ? "text-[#fff]" : ""
                 }`}
               >
@@ -283,7 +284,7 @@ const CommonDashboardDropdown = () => {
         <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
           Rotation Frequency
         </p>
-        <div className="max-w-[782px] relative">
+        <div className="w-full relative">
           <div
             className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3 ${
               isRotationDropdownOpen ? "bg-[#212148]" : ""
@@ -294,7 +295,7 @@ const CommonDashboardDropdown = () => {
           >
             <div className="flex justify-between items-center">
               <p
-                className={`font-Montserrat text-white text-[14px] font-medium mb-0 ${
+                className={`font-Montserrat text-white text-[14px] font-medium mb-0 leading-normal ${
                   isRotationDropdownOpen ? "text-[#fff]" : ""
                 }`}
               >
