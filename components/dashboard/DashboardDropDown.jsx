@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { SignOutIcon } from "../Icon";
+import Image from "next/image";
 
 const DashboardDropDown = () => {
-  const [selectedPeriod, setSelectedPeriod] = useState("Sign out");
+  const [selectedPeriod, setSelectedPeriod] = useState("Sign Out");
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
 
   const togglePeriodDropdown = () => {
@@ -9,9 +11,9 @@ const DashboardDropDown = () => {
   };
 
   const handlePeriodSelect = (period) => {
-    if (period === "Sign out") {
+    if (period === "Sign Out") {
       // Simulate a sign-out action here, replace with your actual sign-out logic
-      alert("Simulating sign-out action");
+      alert("Simulating Sign Out action");
     } else {
       setSelectedPeriod(period);
     }
@@ -31,15 +33,25 @@ const DashboardDropDown = () => {
         </p>
         <div className="rounded-full bg-white h-[37px] w-[37px] ms-7"></div>
         {isPeriodDropdownOpen && (
-          <div className="absolute start-0 top-[70px] z-10 bg-[#252550] border-white border-2 w-full max-w-[226px] ms-6 rounded-[10px] px-2">
-            <div className="h-[68px] flex items-center justify-center">
-              <button
-                className="w-full bg-[#1D1D42] hover:bg-cyan-green py-4 px-5 rounded-[10px] lh_normal sign_out_button text-center"
-                onClick={() => handlePeriodSelect("Sign out")}
-              >
-                {selectedPeriod}
-              </button>
-            </div>
+          //  px-2 border-white border-2
+          <div className="absolute start-0 top-[70px] z-10 bg-[#252550] w-full max-w-[226px] ms-6 rounded-[10px]">
+            {/* <div className="h-[68px] flex items-center justify-center"> */}
+            {/* hover:bg-cyan-green  */}
+            <button
+              className="group transition-all duration-300 ease-in-out w-full bg-[#1D1D42] lh_normal sign_out_button text-center flex items-center gap-1"
+              onClick={() => handlePeriodSelect("Sign Out")}
+            >
+              <Image
+                className="group-hover:translate-x-[2px] w-5 h-5 transition-all duration-300 ease-in-out"
+                loading="lazy"
+                height={19.5}
+                width={19.5}
+                src="/assets/images/svg/logout.svg"
+                alt="logout"
+              />
+              {selectedPeriod}
+            </button>
+            {/* </div> */}
           </div>
         )}
       </div>
