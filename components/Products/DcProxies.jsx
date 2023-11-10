@@ -49,17 +49,6 @@ const DcProxies = () => {
             budget-friendly and your savvy solution for niche sites.”
           </p>
           <div className="flex justify-between sm:flex-row flex-col items-center gap-5 pt-6">
-            {/* <div className="sm:w-3/6 w-full">
-              <p className="text-[10px] font-Montserrat font-semibold text-white mb-0">
-                PROVIDER
-              </p>
-              <div className="w-full border-2 cursor-pointer border-white rounded-[10000px] sm:mt-[10px] mt-2 px-5 py-2">
-                <p className="text-[14px] font-Montserrat font-semibold text-white">
-                  Telecom
-                </p>
-              </div>
-            </div> */}
-            {/* sm:w-3/6 */}
             <div className="w-full relative">
               <p className="text-white text-[10px] font-Montserrat font-semibold leading-normal mb-0">
                 REGION
