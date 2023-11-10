@@ -31,16 +31,11 @@ const Dashboard1 = () => {
   };
   // dropdown
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
-  // const [selectedPeriod, setSelectedPeriod] = useState("United States");
   const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
   const [selectedProvider, setSelectedProvider] = useState("Residential");
   const togglePeriodDropdown = () => {
     setIsPeriodDropdownOpen(!isPeriodDropdownOpen);
   };
-  // const handlePeriodSelect = (period) => {
-  //   setSelectedPeriod(period);
-  //   setIsPeriodDropdownOpen(false);
-  // };
   const toggleProviderDropdown = () => {
     setIsProviderDropdownOpen(!isProviderDropdownOpen);
   };
