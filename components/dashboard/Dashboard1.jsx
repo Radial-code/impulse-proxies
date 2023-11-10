@@ -3,6 +3,7 @@ import Image from "next/image";
 import DataUsagesOne from "./DataUsagesOne";
 import ResidentialBoxOne from "./ResidentialBoxOne";
 import YourOrderOne from "./YourOrderOne";
+import CommonDashboardDropdown from "./CommonDashboardDropdown";
 
 const Dashboard1 = () => {
   const [minRange, setMinRange] = useState(25);
@@ -106,7 +107,7 @@ const Dashboard1 = () => {
                       GENERATE PROXIES
                     </p>
                   </div>
-                  <div className="pt-5 ps-8 pe-12">
+                  {/* <div className="pt-5 ps-8 pe-12">
                     <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
                       Region
                     </p>
@@ -151,7 +152,10 @@ const Dashboard1 = () => {
                         )}
                       </div>
                     </div>
-                  </div>
+                  </div> */}
+
+                  <CommonDashboardDropdown />
+
                   <div className=" pt-5 pb-6  ps-8 pe-12">
                     <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
                       Proxy Type
