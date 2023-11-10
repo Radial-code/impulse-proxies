@@ -238,6 +238,9 @@
   .faq-strips_bottom_image {
     @apply hidden sm:block !-bottom-12 !top-[unset];
   }
+  .amount-range-value-box {
+    @apply bg-[#252550] text-white rounded-xl sm:w-[164px] w-[120px] text-start px-[18px] font-Montserrat font-medium text-[13px] py-[10px] placeholder:text-white focus-visible:outline-none;
+  }
 }
 :root {
   --foreground-rgb: 0, 0, 0;
