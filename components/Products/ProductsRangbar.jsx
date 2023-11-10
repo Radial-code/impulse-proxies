@@ -65,12 +65,6 @@ const ProductsRangbar = () => {
             type="number"
             placeholder={value}
           />
-          {/* <button className="bg-[#252550] text-white rounded-xl sm:w-[164px] w-[120px] text-start px-[18px] font-Montserrat font-medium text-[13px] py-[10px]">
-            {value}
-          </button> */}
-          {/* <button className="bg-[#252550] text-white rounded-xl sm:w-[164px] w-[120px] text-start px-[18px] font-Montserrat font-medium text-[13px] py-[10px]">
-            {value}
-          </button> */}
         </div>
       </div>
     </>
