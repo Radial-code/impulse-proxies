@@ -31,16 +31,16 @@ const Dashboard1 = () => {
   };
   // dropdown
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
-  const [selectedPeriod, setSelectedPeriod] = useState("United States");
+  // const [selectedPeriod, setSelectedPeriod] = useState("United States");
   const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
   const [selectedProvider, setSelectedProvider] = useState("Residential");
   const togglePeriodDropdown = () => {
     setIsPeriodDropdownOpen(!isPeriodDropdownOpen);
   };
-  const handlePeriodSelect = (period) => {
-    setSelectedPeriod(period);
-    setIsPeriodDropdownOpen(false);
-  };
+  // const handlePeriodSelect = (period) => {
+  //   setSelectedPeriod(period);
+  //   setIsPeriodDropdownOpen(false);
+  // };
   const toggleProviderDropdown = () => {
     setIsProviderDropdownOpen(!isProviderDropdownOpen);
   };
@@ -107,55 +107,7 @@ const Dashboard1 = () => {
                       GENERATE PROXIES
                     </p>
                   </div>
-                  {/* <div className="pt-5 ps-8 pe-12">
-                    <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
-                      Region
-                    </p>
-                    <div className="w-full relative">
-                      <div
-                        className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px]  px-5 py-3 ${
-                          isPeriodDropdownOpen ? "bg-[#212148]" : ""
-                        }`}
-                        onClick={togglePeriodDropdown}
-                      >
-                        <div className="flex justify-between items-center">
-                          <p
-                            className={` text-white font-Montserrat font-normal text-[14] mb-0 ${
-                              isPeriodDropdownOpen ? "text-[#fff]" : ""
-                            }`}
-                          >
-                            {selectedPeriod}
-                          </p>
-                          <Image
-                            src="/assets/images/webp/Polygon.webp"
-                            alt="down arrow icon"
-                            height={13}
-                            width={13}
-                            loading="lazy"
-                          />
-                        </div>
-                        {isPeriodDropdownOpen && (
-                          <div className="absolute start-0 z-10 bg-[#252550] border-white border-2 mt-4 w-full rounded-[10px] py-4">
-                            <p
-                              className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-0 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
-                              onClick={() => handlePeriodSelect("USA")}
-                            >
-                              USA
-                            </p>
-                            <p
-                              className="text-[16px] font-Montserrat font-semibold text-white mb-0 w-full border border-transparent duration-300 ease-in-out text-start mx-auto py-1 px-4  mt-2 hover:bg-[#4FDCC7] cursor-pointer"
-                              onClick={() => handlePeriodSelect("Russia")}
-                            >
-                              Russia
-                            </p>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  </div> */}
-
                   <CommonDashboardDropdown />
-
                   <div className=" pt-5 pb-6  ps-8 pe-12">
                     <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
                       Proxy Type
@@ -254,7 +206,6 @@ const Dashboard1 = () => {
                 </div>
               </div>
 
-              {/* max-h-[848px] */}
               <div className="w-full lg:w-[702px] 2xl:w-[642px] lg:pt-0 sm:pt-10 pt-5">
                 <YourOrderOne />
                 <div className="rounded-lg overflow-hidden lg:mt-12 mt-8 lg:hidden sm:block hidden  GENERATE_PROXIES_box">
@@ -263,55 +214,8 @@ const Dashboard1 = () => {
                       GENERATE PROXIES
                     </p>
                   </div>
-                  {/* <div className="bg-[#17173A] pt-5 ps-8 pe-12">
-                    <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
-                      Region
-                    </p>
-                    <div className="max-w-[782px] relative">
-                      <div
-                        className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px]  px-5 py-3 ${
-                          isPeriodDropdownOpen ? "bg-[#212148]" : ""
-                        }`}
-                        onClick={togglePeriodDropdown}
-                      >
-                        <div className="flex justify-between items-center">
-                          <p
-                            className={`font-Montserrat text-white text-[14px] font-medium mb-0 ${
-                              isPeriodDropdownOpen ? "text-[#fff]" : ""
-                            }`}
-                          >
-                            {selectedPeriod}
-                          </p>
-                          <Image
-                            src="/assets/images/webp/Polygon.webp"
-                            alt="down arrow icon"
-                            height={13}
-                            width={13}
-                            loading="lazy"
-                          />
-                        </div>
-                        {isPeriodDropdownOpen && (
-                          <div className="absolute start-0 z-10 bg-[#252550] border-white border-2 mt-4 w-full rounded-[10px] ">
-                            <p
-                              className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-0 w-full border border-transparent  rounded-[10px] text-start py-1 px-4 cursor-pointer"
-                              onClick={() => handlePeriodSelect("USA")}
-                            >
-                              USA
-                            </p>
-                            <p
-                              className="text-[16px] font-Montserrat font-semibold text-white mb-0 w-full border border-transparent rounded-[10px] text-start mx-auto py-1 px-4 cursor-pointer"
-                              onClick={() => handlePeriodSelect("Russia")}
-                            >
-                              Russia
-                            </p>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  </div> */}
                   <CommonDashboardDropdown />
-                  {/* bg-[#17173A] */}
-                  <div className=" lg:pt-5 pt-4 pb-6 ps-8 pe-12">
+                  <div className="lg:pt-5 pt-4 pb-6 ps-8 pe-12">
                     <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
                       Proxy Type
                     </p>
