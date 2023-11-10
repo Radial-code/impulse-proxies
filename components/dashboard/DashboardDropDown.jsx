@@ -33,10 +33,7 @@ const DashboardDropDown = () => {
         </p>
         <div className="rounded-full bg-white h-[37px] w-[37px] ms-7"></div>
         {isPeriodDropdownOpen && (
-          //  px-2 border-white border-2
           <div className="absolute start-0 top-[70px] z-10 bg-[#252550] w-full max-w-[226px] ms-6 rounded-[10px]">
-            {/* <div className="h-[68px] flex items-center justify-center"> */}
-            {/* hover:bg-cyan-green  */}
             <button
               className="group transition-all duration-300 ease-in-out w-full bg-[#1D1D42] lh_normal sign_out_button text-center flex items-center gap-1"
               onClick={() => handlePeriodSelect("Sign Out")}
@@ -51,7 +48,6 @@ const DashboardDropDown = () => {
               />
               {selectedPeriod}
             </button>
-            {/* </div> */}
           </div>
         )}
       </div>
