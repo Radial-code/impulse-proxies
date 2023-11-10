@@ -48,7 +48,7 @@ const DcProxies = () => {
             “Specialized site targeting meets cost efficiency. Extremely
             budget-friendly and your savvy solution for niche sites.”
           </p>
-          <div className="flex justify-between sm:flex-row flex-col items-center gap-5 pt-6">
+          <div className="flex justify-between sm:flex-row flex-col items-center gap-5 pt-6 relative z-20">
             <div className="w-full relative">
               <p className="text-white text-[10px] font-Montserrat font-semibold leading-normal mb-0">
                 REGION
