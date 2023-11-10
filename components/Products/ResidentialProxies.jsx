@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import ProductsRangbar from "./ProductsRangbar";
+import ProductResidentialRangeBar from "./ProductResidentialRangeBar";
 
 const ResidentialProxies = () => {
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
@@ -44,7 +44,7 @@ const ResidentialProxies = () => {
             technology and dedicated load balancing ensuring continuous
             performance.”
           </p>
-          <div className="flex justify-between sm:flex-row flex-col items-center gap-5 pt-6">
+          {/* <div className="flex justify-between sm:flex-row flex-col items-center gap-5 pt-6">
             <div className="sm:w-3/6 w-full">
               <p className="text-[10px] font-Montserrat font-semibold text-white mb-0">
                 PROVIDER
@@ -146,9 +146,10 @@ const ResidentialProxies = () => {
             <p className="text-white text-base font-Montserrat font-semibold leading-normal mb-0">
               Amount
             </p>
-          </div>
+          </div> */}
 
-          <ProductsRangbar />
+          <ProductResidentialRangeBar />
+
           <div className="sm:pt-[26px] pt-5 flex justify-between items-end">
             <div>
               <p className="text-white text-[15px] font-Montserrat font-semibold leading-normal mb-0">
