@@ -4,31 +4,33 @@ import DataUsagesOne from "./DataUsagesOne";
 import ResidentialBoxOne from "./ResidentialBoxOne";
 import YourOrderOne from "./YourOrderOne";
 import CommonDashboardDropdown from "./CommonDashboardDropdown";
+// import ProductsRangbar from "../Products/ProductsRangbar";
+import DashboardRangeBar from "../Products/DashboardRangeBar";
 
 const Dashboard1 = () => {
-  const [minRange, setMinRange] = useState(25);
-  const [maxRange, setMaxRange] = useState(100);
-  const gap = 10;
-  const handleInputChange = (e) => {
-    const targetClassName = e.target.className;
-    if (maxRange - minRange < gap) {
-      if (targetClassName === "range-min") {
-        setMinRange(maxRange - gap);
-      } else {
-        setMaxRange(minRange + gap);
-      }
-    }
-  };
-  const handleMinRangeChange = (e) => {
-    setMinRange(parseInt(e.target.value));
-  };
-  const handleMaxRangeChange = (e) => {
-    setMaxRange(parseInt(e.target.value));
-  };
-  const progressStyle = {
-    left: `${(minRange / 100) * 100}%`,
-    right: `${100 - (maxRange / 100) * 100}%`,
-  };
+  // const [minRange, setMinRange] = useState(25);
+  // const [maxRange, setMaxRange] = useState(100);
+  // const gap = 10;
+  // const handleInputChange = (e) => {
+  //   const targetClassName = e.target.className;
+  //   if (maxRange - minRange < gap) {
+  //     if (targetClassName === "range-min") {
+  //       setMinRange(maxRange - gap);
+  //     } else {
+  //       setMaxRange(minRange + gap);
+  //     }
+  //   }
+  // };
+  // const handleMinRangeChange = (e) => {
+  //   setMinRange(parseInt(e.target.value));
+  // };
+  // const handleMaxRangeChange = (e) => {
+  //   setMaxRange(parseInt(e.target.value));
+  // };
+  // const progressStyle = {
+  //   left: `${(minRange / 100) * 100}%`,
+  //   right: `${100 - (maxRange / 100) * 100}%`,
+  // };
   // dropdown
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
   const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
@@ -49,19 +51,19 @@ const Dashboard1 = () => {
   //   setValue(e.target.value);
   // };
 
-  const [value, setValue] = useState(500);
+  // const [value, setValue] = useState(500);
 
-  const handleChange = (e) => {
-    const newValue = e.target.value;
-    setValue(newValue);
-    // Calculate the percentage value
-    const percentage = (newValue / 1000) * 100;
-    // Apply the dynamic background color to the range input
-    const rangeInput = document.querySelector(".range-input");
-    if (rangeInput) {
-      rangeInput.style.background = `linear-gradient(to right, #4FDCC7 0%, #4FDCC7 ${percentage}%, #3c3c6b ${percentage}%, #3c3c6b 100%)`;
-    }
-  };
+  // const handleChange = (e) => {
+  //   const newValue = e.target.value;
+  //   setValue(newValue);
+  //   // Calculate the percentage value
+  //   const percentage = (newValue / 1000) * 100;
+  //   // Apply the dynamic background color to the range input
+  //   const rangeInput = document.querySelector(".range-input");
+  //   if (rangeInput) {
+  //     rangeInput.style.background = `linear-gradient(to right, #4FDCC7 0%, #4FDCC7 ${percentage}%, #3c3c6b ${percentage}%, #3c3c6b 100%)`;
+  //   }
+  // };
   return (
     <>
       <div className="relative">
@@ -89,6 +91,7 @@ const Dashboard1 = () => {
             alt="Mockup_bg_blur"
             loading="lazy"
           />
+
           <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
             <div className="flex flex-col lg:flex-row justify-between lg:pt-[52px] pt-[32px] gap-5 xl:gap-12">
               <div className="w-full">
@@ -96,6 +99,7 @@ const Dashboard1 = () => {
                   <DataUsagesOne />
                   <ResidentialBoxOne />
                 </div>
+
                 <div className="rounded-2xl overflow-hidden mt-12 lg:block hidden GENERATE_PROXIES_box pb-[52px]    ">
                   <div className="  ps-8 py-5">
                     <p className="mb-0 text-white text-md font-Montserrat leading-normal font-bold tracking-[1.4px]">
@@ -103,7 +107,7 @@ const Dashboard1 = () => {
                     </p>
                   </div>
                   <CommonDashboardDropdown />
-                  <div className=" pt-5 pb-6  ps-8 pe-12">
+                  <div className="pt-5 pb-6 ps-8 pe-12">
                     <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
                       Proxy Type
                     </p>
@@ -155,8 +159,11 @@ const Dashboard1 = () => {
                       <p className="text-white text-lg mb-4 font-semibold leading-normal font-Montserrat">
                         Amount
                       </p>
+
+                      {/* <ProductsRangbar /> */}
+
                       <div className="flex items-start mt-3 justify-between">
-                        <div className="flex justify-between items-start w-full">
+                        {/* <div className="flex justify-between items-start w-full">
                           <div className="mb-0 w-full">
                             <div>
                               <div
@@ -186,7 +193,12 @@ const Dashboard1 = () => {
                           <p className="text-white w-[164px] ms-8 rounded-md font-Montserrat font-medium text-[13px] leading-normal border-[1px_solid_rgba(255, 255, 255, 0.05)] bg-[#252550] py-[9px] ps-6">
                             {value}
                           </p>
+                        </div> */}
+
+                        <div className="w-full">
+                          <DashboardRangeBar identifier="first" />
                         </div>
+
                         <div className="flex flex-col ms-5">
                           <button className="border mb-4 border-cyan-green hover:bg-[#50EED7]  hover:border-transparent hover:text-[#040426] rounded-md cursor-pointer text-cyan-green transition-all duration-300 font-Montserrat text-md font-semibold lh_normal h-[38px] px-6 whitespace-nowrap">
                             Max Qty.
@@ -210,10 +222,12 @@ const Dashboard1 = () => {
                     </p>
                   </div>
                   <CommonDashboardDropdown />
+
                   <div className="lg:pt-5 pt-4 pb-6 ps-8 pe-12">
                     <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
                       Proxy Type
                     </p>
+
                     <div className="max-w-[782px] relative">
                       <div
                         className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3 leading-normal ${
@@ -263,7 +277,7 @@ const Dashboard1 = () => {
                         Amount
                       </p>
                       <div className="flex items-start mt-3 justify-between">
-                        <div className="flex justify-between items-start w-full">
+                        {/* <div className="flex justify-between items-start w-full">
                           <div className="mb-0 w-full">
                             <div>
                               <div
@@ -293,7 +307,12 @@ const Dashboard1 = () => {
                           <p className=" text-white w-[164px] ms-8 rounded-md font-Montserrat font-medium text-[13px] leading-normal border-[1px_solid_rgba(255, 255, 255, 0.05)] bg-[#252550] py-[9px] ps-6">
                             {value}
                           </p>
+                        </div> */}
+
+                        <div className="w-full">
+                          <DashboardRangeBar identifier="second" />
                         </div>
+
                         <div className="flex flex-col ms-5">
                           <button className="border mb-4 border-cyan-green hover:bg-[#50EED7]  hover:border-transparent hover:text-[#040426] rounded-md cursor-pointer text-cyan-green transition-all duration-300 font-Montserrat text-md font-semibold lh_normal h-[38px] px-6 whitespace-nowrap">
                             Max Qty.

@@ -344,6 +344,9 @@ body {
     bottom: -317px !important;
   }
 }
+
+.range-input-first,
+.range-input-second,
 .range-input {
   -webkit-appearance: none;
   width: 100%;
@@ -374,6 +377,8 @@ body {
   outline: none;
   border-radius: 11px;
 }
+.range-input-first::-webkit-slider-thumb,
+.range-input-second::-webkit-slider-thumb,
 .range-input::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 18px;
