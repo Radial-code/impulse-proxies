@@ -249,7 +249,12 @@
   .custom-dropdown-option-001 {
     @apply text-[14px] font-Montserrat font-semibold text-white py-1 mx-auto w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer transition-all duration-200 ease-in-out;
   }
+  .other_proxies_btn_01 {
+    @apply text-[#040426] w-[180px] h-[45px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold leading-normal tracking-[-0.32px] text-[16px] rounded-[10px];
+  }
 }
+
+/* ==== CSS ==== */
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -456,4 +461,12 @@ body {
     width: 60px !important;
     height: 60px !important;
   }
+}
+
+.earned_rewards_box {
+  background: linear-gradient(
+    113deg,
+    #151536 35.26%,
+    #393969 182.89%
+  ) !important;
 }

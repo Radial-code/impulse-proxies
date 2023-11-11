@@ -51,16 +51,26 @@ const RewardsDashboard = () => {
                         Redeem All
                       </button>
                     </div>
-                    <div className="bg-[url('/assets/images/webp/Earned_Rewards.webp')] bg-no-repeat bg-cover bg-[0px] h-[233px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]">
+                    {/* bg-[url('/assets/images/webp/Earned_Rewards.webp')] bg-no-repeat bg-cover */}
+                    <div className="relative bg-[0px] h-[233px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]  earned_rewards_box">
                       <h3 className="font-Montserrat font-bold text-xl leading-normal tracking-[1.7px] text-white">
                         NO REWARDS WON
                       </h3>
                       <p className="font-Montserrat text-lg leading-normal sm:max-w-full max-w-[179px] text-center text-[#9D9DBB] sm:pt-4 py-3 sm:pb-6">
                         To make an order, click the button below
                       </p>
-                      <button className=" text-[#040426] w-[180px] h-[45px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold leading-normal tracking-[-0.32px] text-[16px] rounded-[10px]">
+                      <button className="other_proxies_btn_01">
                         Order Proxies
                       </button>
+
+                      {/*  */}
+                      <Image
+                        width={196}
+                        height={167}
+                        src="/assets/images/svg/earned-rewards-bg-blur-image.svg"
+                        alt="earned-rewards-bg-blur-image"
+                        className="absolute top-0 left-0 mt-8 ms-6"
+                      />
                     </div>
                   </div>
                   <div className="w-full lg:w-6/12 px-3 min-h-[244px] mt-9 lg:mt-0">
