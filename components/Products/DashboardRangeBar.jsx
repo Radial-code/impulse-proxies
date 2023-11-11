@@ -61,7 +61,7 @@ const DashboardRangeBar = ({ identifier }) => {
       <div className="progress" style={progressStyle}></div>
       <div className="range">
         <div className="flex items-start justify-between">
-          <div className="flex justify-between items-start w-full">
+          <div className="flex justify-between items-start w-full lg:flex-col xl:flex-row">
             <div className="mb-0 w-full">
               {/* <div> */}
               <div
@@ -86,7 +86,7 @@ const DashboardRangeBar = ({ identifier }) => {
             </div>
 
             <input
-              className="amount-range-value-box ms-8"
+              className="amount-range-value-box ms-8 lg:ms-0 xl:ms-8 lg:w-full xl:max-w-[124px] lg:mt-3 xl:mt-0"
               type="number"
               value={value}
               onChange={handleNumberChange}
