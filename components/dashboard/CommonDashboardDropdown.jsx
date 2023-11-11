@@ -32,7 +32,6 @@ const CommonDashboardDropdown = () => {
 
   return (
     <>
-      {/* bg-[#17173A] */}
       <div className="py-5 ps-8 pe-12">
         {/* I REGION MENU */}
         <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
@@ -169,7 +168,7 @@ const CommonDashboardDropdown = () => {
           </div>
         </div>
 
-        {/* II CONTINENT MENU */}
+        {/* III CONTINENT MENU */}
         <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
           Continent
         </p>
