@@ -42,7 +42,7 @@ const ISPDashboard = () => {
         {ispOrdersData.length > 0 ? (
           <>
             <div className="flex justify-between items-center md:flex-row flex-col lg:pt-0 pt-8 gap-5 xl:gap-12">
-              <div className="w-full custom_scrollbar_y overflow-y-hidden overflow-scroll ISP_table_heading_scrollbar rounded-2xl">
+              <div className="w-full lg:max-h-[290px] max-h-[280px] custom_scrollbar_y overflow-y-hidden overflow-scroll ISP_table_heading_scrollbar rounded-2xl">
                 <div className="bg-[#212148] w-full custom_scrollbar_y overflow-y-hidden overflow-scroll ISP_table_heading_scrollbar">
                   <table className="rounded-2xl overflow-hidden w-full">
                     <tr>
