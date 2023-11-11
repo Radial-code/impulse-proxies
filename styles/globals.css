@@ -427,3 +427,28 @@ body {
   border-radius: 50%;
   cursor: pointer;
 }
+
+/* DASHBOARD - YOUR ORDER CARD CSS */
+.custom_border_001 {
+  position: relative;
+  background: linear-gradient(113deg, #151536 35.26%, #393969 182.89%);
+}
+.custom_border_001::before {
+  width: 100px;
+  height: 100px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #2ea694a8;
+  border-left: 2px solid #2ea694a8;
+  border-bottom-left-radius: 16px;
+  z-index: 1;
+}
+
+@media (max-width: 639.98px) {
+  .custom_border_001::before {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
