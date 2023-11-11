@@ -25,7 +25,7 @@ const copyText = () => {
 const YourOrderOne = () => {
   return (
     <>
-      <div className="bg-[#1E1E43] yourbox_border relative pb-[28px] sm:ps-6 px-4 pt-6 rounded-2xl lg:h-full custom_scrollbar_y    relative custom_border_001">
+      <div className="bg-[#1E1E43] yourbox_border relative pb-[28px] sm:ps-6 px-4 pt-6 rounded-2xl lg:h-full custom_scrollbar_y    relative custom_your_order_box_style">
         <div className="flex sm:items-center items-start justify-between">
           <div className="flex flex-col">
             <div className="flex flex-row lg:flex-col justify-between">
