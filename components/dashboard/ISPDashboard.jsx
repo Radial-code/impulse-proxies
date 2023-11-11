@@ -28,7 +28,7 @@ const copyText = () => {
 const ISPDashboard = () => {
   return (
     <div className="relative overflow-hidden">
-      <div className=" w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
+      <div className="w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
         <div className="hero_wave">
           <div className="hero_wave_height">
             <div className="grad_bg"></div>
@@ -42,9 +42,9 @@ const ISPDashboard = () => {
         {ispOrdersData.length > 0 ? (
           <>
             <div className="flex justify-between items-center md:flex-row flex-col lg:pt-0 pt-8 gap-5 xl:gap-12">
-              <div className="w-full lg:max-h-[290px] max-h-[280px] overflow-x-scroll custom_scrollbar_y rounded-2xl">
-                <table className="rounded-2xl overflow-hidden w-full">
-                  <thead className="bg-[#212148]">
+              <div className="w-full custom_scrollbar_y overflow-y-hidden overflow-scroll ISP_table_heading_scrollbar rounded-2xl">
+                <div className="bg-[#212148] w-full custom_scrollbar_y overflow-y-hidden overflow-scroll ISP_table_heading_scrollbar">
+                  <table className="rounded-2xl overflow-hidden w-full">
                     <tr>
                       {headings.map((heading, index) => (
                         <th
@@ -55,24 +55,35 @@ const ISPDashboard = () => {
                         </th>
                       ))}
                     </tr>
-                  </thead>
-                  {console.log("data===>", ispOrdersData.length)}
-                  <tbody className="bg-[#151536]">
-                    {ispOrdersData.map((rowData, rowIndex) => (
-                      <tr
-                        key={rowIndex}
-                        className="text-white font-Montserrat text-bold text-sm tracking-[-0.24px]"
-                      >
-                        {rowData.map((cellData, cellIndex) => (
-                          <td className="xl:p-5 p-4" key={cellIndex}>
-                            {cellData}
-                          </td>
+                  </table>
+                </div>
+
+                <div className="pe-1 lg:pe-3 pb-1 lg:pb-3 bg-[#151536]">
+                  <div className="w-full lg:max-h-[290px] max-h-[280px] overflow-x-scroll custom_scrollbar_y rounded-2xl rounded-t-[0] custom_scrollbar_y_ISP_table">
+                    <table className="rounded-2xl rounded-t-[0] overflow-hidden w-full">
+                      {console.log("data===>", ispOrdersData.length)}
+                      <tbody className="bg-[#151536]">
+                        {ispOrdersData.map((rowData, rowIndex) => (
+                          <tr
+                            key={rowIndex}
+                            className="text-white font-Montserrat text-bold text-sm tracking-[-0.24px]"
+                          >
+                            {rowData.map((cellData, cellIndex) => (
+                              <td
+                                className="xl:p-5 p-4 font-bold"
+                                key={cellIndex}
+                              >
+                                {cellData}
+                              </td>
+                            ))}
+                          </tr>
                         ))}
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
+
               <div className="lg:w-[325px] 2xl:w-[430px] md:w-[40%] w-full md:mt-0 mt-9">
                 <IspProxies />
               </div>
