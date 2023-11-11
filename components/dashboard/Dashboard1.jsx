@@ -4,34 +4,10 @@ import DataUsagesOne from "./DataUsagesOne";
 import ResidentialBoxOne from "./ResidentialBoxOne";
 import YourOrderOne from "./YourOrderOne";
 import CommonDashboardDropdown from "./CommonDashboardDropdown";
-// import ProductsRangbar from "../Products/ProductsRangbar";
 import DashboardRangeBar from "../Products/DashboardRangeBar";
 
 const Dashboard1 = () => {
-  // const [minRange, setMinRange] = useState(25);
-  // const [maxRange, setMaxRange] = useState(100);
-  // const gap = 10;
-  // const handleInputChange = (e) => {
-  //   const targetClassName = e.target.className;
-  //   if (maxRange - minRange < gap) {
-  //     if (targetClassName === "range-min") {
-  //       setMinRange(maxRange - gap);
-  //     } else {
-  //       setMaxRange(minRange + gap);
-  //     }
-  //   }
-  // };
-  // const handleMinRangeChange = (e) => {
-  //   setMinRange(parseInt(e.target.value));
-  // };
-  // const handleMaxRangeChange = (e) => {
-  //   setMaxRange(parseInt(e.target.value));
-  // };
-  // const progressStyle = {
-  //   left: `${(minRange / 100) * 100}%`,
-  //   right: `${100 - (maxRange / 100) * 100}%`,
-  // };
-  // dropdown
+  // DROPDOWN
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
   const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
   const [selectedProvider, setSelectedProvider] = useState("Residential");
@@ -45,25 +21,6 @@ const Dashboard1 = () => {
     setSelectedProvider(provider);
     setIsProviderDropdownOpen(false);
   };
-  // range bar
-  // const [value, setValue] = useState(500);
-  // const handleChange = (e) => {
-  //   setValue(e.target.value);
-  // };
-
-  // const [value, setValue] = useState(500);
-
-  // const handleChange = (e) => {
-  //   const newValue = e.target.value;
-  //   setValue(newValue);
-  //   // Calculate the percentage value
-  //   const percentage = (newValue / 1000) * 100;
-  //   // Apply the dynamic background color to the range input
-  //   const rangeInput = document.querySelector(".range-input");
-  //   if (rangeInput) {
-  //     rangeInput.style.background = `linear-gradient(to right, #4FDCC7 0%, #4FDCC7 ${percentage}%, #3c3c6b ${percentage}%, #3c3c6b 100%)`;
-  //   }
-  // };
   return (
     <>
       <div className="relative">
@@ -155,46 +112,12 @@ const Dashboard1 = () => {
                       </div>
                     </div>
 
-                    <div className=" mt-7">
+                    <div className="mt-7">
                       <p className="text-white text-lg mb-4 font-semibold leading-normal font-Montserrat">
                         Amount
                       </p>
 
-                      {/* <ProductsRangbar /> */}
-
                       <div className="flex items-start mt-3 justify-between">
-                        {/* <div className="flex justify-between items-start w-full">
-                          <div className="mb-0 w-full">
-                            <div>
-                              <div
-                                className="fle x relative justify-center items-center hidden h-[20px] w-full mx-auto rounded"
-                                style={{
-                                  width: ` ${
-                                    value > 500
-                                      ? `calc(${value}% - 4px)`
-                                      : `calc(${value}% + 3px)`
-                                  }`,
-                                  display: ` ${value < 2 ? `none` : ``}`,
-                                }}
-                              ></div>
-                              <input
-                                type="range"
-                                min="0"
-                                max="1000"
-                                value={value}
-                                onChange={handleChange}
-                                className="custom-range w-full range-input"
-                              />
-                            </div>
-                            <p className=" text-white font-Montserrat leading-normal text-sm pt-5 font-medium">
-                              {value} Proxies
-                            </p>
-                          </div>
-                          <p className="text-white w-[164px] ms-8 rounded-md font-Montserrat font-medium text-[13px] leading-normal border-[1px_solid_rgba(255, 255, 255, 0.05)] bg-[#252550] py-[9px] ps-6">
-                            {value}
-                          </p>
-                        </div> */}
-
                         <div className="w-full">
                           <DashboardRangeBar identifier="first" />
                         </div>
@@ -227,7 +150,6 @@ const Dashboard1 = () => {
                     <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
                       Proxy Type
                     </p>
-
                     <div className="max-w-[782px] relative">
                       <div
                         className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3 leading-normal ${
@@ -277,42 +199,9 @@ const Dashboard1 = () => {
                         Amount
                       </p>
                       <div className="flex items-start mt-3 justify-between">
-                        {/* <div className="flex justify-between items-start w-full">
-                          <div className="mb-0 w-full">
-                            <div>
-                              <div
-                                className="fle x relative justify-center items-center hidden h-[20px] w-full mx-auto rounded"
-                                style={{
-                                  width: ` ${
-                                    value > 500
-                                      ? `calc(${value}% - 4px)`
-                                      : `calc(${value}% + 3px)`
-                                  }`,
-                                  display: ` ${value < 2 ? `none` : ``}`,
-                                }}
-                              ></div>
-                              <input
-                                type="range"
-                                min="0"
-                                max="1000"
-                                value={value}
-                                onChange={handleChange}
-                                className="custom-range w-full range-input"
-                              />
-                            </div>
-                            <p className=" text-white font-Montserrat leading-normal text-sm pt-5 font-medium">
-                              {value} Proxies
-                            </p>
-                          </div>
-                          <p className=" text-white w-[164px] ms-8 rounded-md font-Montserrat font-medium text-[13px] leading-normal border-[1px_solid_rgba(255, 255, 255, 0.05)] bg-[#252550] py-[9px] ps-6">
-                            {value}
-                          </p>
-                        </div> */}
-
                         <div className="w-full">
                           <DashboardRangeBar identifier="second" />
                         </div>
-
                         <div className="flex flex-col ms-5">
                           <button className="border mb-4 border-cyan-green hover:bg-[#50EED7]  hover:border-transparent hover:text-[#040426] rounded-md cursor-pointer text-cyan-green transition-all duration-300 font-Montserrat text-md font-semibold lh_normal h-[38px] px-6 whitespace-nowrap">
                             Max Qty.

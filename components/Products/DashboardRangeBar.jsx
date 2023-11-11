@@ -8,16 +8,6 @@ const DashboardRangeBar = ({ identifier }) => {
     setValue(newValue);
     updateRangeStyle(newValue);
   };
-
-  //   const updateRangeStyle = (newValue) => {
-  //     const percentage = (newValue / 50000) * 100; // Update the max value to 50000
-  //     // const rangeInput = document.querySelector(".range-input");
-  //     const rangeInput = document.querySelector(`.range-input`);
-  //     if (rangeInput) {
-  //       rangeInput.style.background = `linear-gradient(to right, #4FDCC7 0%, #4FDCC7 ${percentage}%, #3c3c6b ${percentage}%, #3c3c6b 100%)`;
-  //     }
-  //   };
-
   const updateRangeStyle = (newValue) => {
     const percentage = (newValue / 50000) * 100;
     const rangeInput = document.querySelector(`.range-input-${identifier}`);
@@ -94,12 +84,9 @@ const DashboardRangeBar = ({ identifier }) => {
             />
           </div>
         </div>
-        {/* <div className="sm:pt-3 pt-2 flex justify-between items-center"> */}
         <p className="text-sm font-Montserrat font-medium text-white mb-0 mt-2 sm:mt-3">
           {value} Proxies
         </p>
-
-        {/* </div> */}
       </div>
     </>
   );
