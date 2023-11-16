@@ -279,6 +279,114 @@ const CommonDashboardDropdown = () => {
           </div>
         </div>
 
+        {/* IV COUNTRY MENU */}
+        <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
+          Country
+        </p>
+        <div className="w-full relative">
+          <div
+            className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3 ${
+              isCountryDropdownOpen ? "bg-[#212148]" : ""
+            }`}
+            onClick={() =>
+              toggleDropdown(isCountryDropdownOpen, setIsCountryDropdownOpen)
+            }
+          >
+            <div className="flex justify-between items-center">
+              <p
+                className={`font-Montserrat text-white text-[14px] font-medium mb-0 leading-normal ${
+                  isCountryDropdownOpen ? "text-[#fff]" : ""
+                }`}
+              >
+                {selectedCountry}
+              </p>
+              <Image
+                src="/assets/images/webp/Polygon.webp"
+                alt="down arrow icon"
+                height={13}
+                width={13}
+                loading="lazy"
+              />
+            </div>
+            {isCountryDropdownOpen && (
+              <div className="absolute start-0 z-10 bg-[#252550] border-white border-2 mt-4 w-full rounded-[10px] py-4">
+                <p
+                  className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-1 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
+                  onClick={() =>
+                    handleSelect(
+                      "America",
+                      setIsCountryDropdownOpen,
+                      setSelectedCountry
+                    )
+                  }
+                >
+                  America
+                </p>
+                <p
+                  className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-1 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
+                  onClick={() =>
+                    handleSelect(
+                      "China",
+                      setIsCountryDropdownOpen,
+                      setSelectedCountry
+                    )
+                  }
+                >
+                  China
+                </p>
+                <p
+                  className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-1 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
+                  onClick={() =>
+                    handleSelect(
+                      "England",
+                      setIsCountryDropdownOpen,
+                      setSelectedCountry
+                    )
+                  }
+                >
+                  England
+                </p>
+                <p
+                  className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-1 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
+                  onClick={() =>
+                    handleSelect(
+                      "France",
+                      setIsCountryDropdownOpen,
+                      setSelectedCountry
+                    )
+                  }
+                >
+                  France
+                </p>
+                <p
+                  className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-1 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
+                  onClick={() =>
+                    handleSelect(
+                      "New Zealand",
+                      setIsCountryDropdownOpen,
+                      setSelectedCountry
+                    )
+                  }
+                >
+                  New Zealand
+                </p>
+                <p
+                  className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-1 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
+                  onClick={() =>
+                    handleSelect(
+                      "India",
+                      setIsCountryDropdownOpen,
+                      setSelectedCountry
+                    )
+                  }
+                >
+                  India
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+
         {/* V ROTATION MENU */}
         <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
           Rotation Frequency
