@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
+import SelectCountries from "../common/SelectCountries";
 
 const CommonDashboardDropdown = () => {
   // I
@@ -292,7 +293,7 @@ const CommonDashboardDropdown = () => {
             )}
           </div>
         </div>
-
+        <SelectCountries />
         {/* IV COUNTRY MENU */}
         <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
           Country
