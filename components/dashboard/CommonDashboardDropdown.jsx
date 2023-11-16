@@ -107,7 +107,6 @@ const CommonDashboardDropdown = () => {
             )}
           </div>
         </div>
-
         {/* II LOAD BALANCER MENU */}
         <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
           Load Balancer
@@ -182,9 +181,8 @@ const CommonDashboardDropdown = () => {
             )}
           </div>
         </div>
-
         {/* III CONTINENT MENU */}
-        <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
+        {/* <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
           Continent
         </p>
         <div className="w-full relative">
@@ -292,10 +290,9 @@ const CommonDashboardDropdown = () => {
               </div>
             )}
           </div>
-        </div>
-        <SelectCountries />
+        </div> */}
         {/* IV COUNTRY MENU */}
-        <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
+        {/* <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
           Country
         </p>
         <div className="w-full relative">
@@ -400,7 +397,15 @@ const CommonDashboardDropdown = () => {
               </div>
             )}
           </div>
-        </div>
+        </div> */}
+
+        {/* ========== */}
+        <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
+          Continent
+          {/* & Countries */}
+        </p>
+        <SelectCountries />
+        {/* ========== */}
 
         {/* V ROTATION MENU */}
         <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
