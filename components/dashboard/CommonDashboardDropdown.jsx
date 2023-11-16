@@ -21,15 +21,29 @@ const CommonDashboardDropdown = () => {
   const [selectedRotation, setSelectedRotation] =
     useState("Rotation Frequency");
 
-  const toggleDropdown = (dropdownState, setDropdownState) => {
-    setDropdownState(!dropdownState);
-  };
+  // const toggleDropdown = (dropdownState, setDropdownState) => {
+  //   setDropdownState(!dropdownState);
+  // };
 
   const handleSelect = (item, setDropdownState, setSelectedItem) => {
     setSelectedItem(item);
     setDropdownState(false);
   };
 
+  const closeAllDropdowns = () => {
+    setIsRegionDropdownOpen(false);
+    setIsLoadBalancerDropdownOpen(false);
+    setIsContinentDropdownOpen(false);
+    setIsCountryDropdownOpen(false);
+    setIsRotationDropdownOpen(false);
+  };
+
+  const toggleDropdown = (dropdownState, setDropdownState) => {
+    if (!dropdownState) {
+      closeAllDropdowns(); // Close all dropdowns before opening the clicked one
+    }
+    setDropdownState(!dropdownState);
+  };
   return (
     <>
       <div className="py-5 ps-8 pe-12">
