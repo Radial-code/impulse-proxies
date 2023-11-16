@@ -1,4 +1,5 @@
 import React from "react";
+import { useGlobalInfoProvider } from "../common/Provider";
 const copyText = () => {
   const textToCopy = document.getElementById("textToCopy").innerText;
   // Try to use the modern clipboard API
@@ -23,6 +24,7 @@ const copyText = () => {
   }
 };
 const YourOrderOne = () => {
+  const { amountValue } = useGlobalInfoProvider();
   return (
     <>
       <div className="bg-[#1E1E43] yourbox_border relative pb-[28px] sm:ps-6 px-4 pt-6 rounded-2xl lg:h-full custom_scrollbar_y     max-h-[800px] lg:max-h-[1166px] relative custom_your_order_box_style">
@@ -78,9 +80,8 @@ const YourOrderOne = () => {
             </div>
           </div>
           <div className="flex justify-end items-end lg:mb-8 h-full mt-auto">
-            {/* {value} */}
             <p className="text-[#505082] font-Montserrat text-sm text-end leading-normal tracking-[1.2px] font-bold pt-6">
-              500 PROXIES
+              {amountValue} PROXIES
             </p>
           </div>
         </div>

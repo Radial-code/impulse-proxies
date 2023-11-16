@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import DataUsagesOne from "./DataUsagesOne";
 import ResidentialBoxOne from "./ResidentialBoxOne";
@@ -11,6 +11,7 @@ const Dashboard1 = () => {
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
   const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
   const [selectedProvider, setSelectedProvider] = useState("Residential");
+  const [rangeValue, setRangeValue] = useState(1);
   const togglePeriodDropdown = () => {
     setIsPeriodDropdownOpen(!isPeriodDropdownOpen);
   };
@@ -21,6 +22,12 @@ const Dashboard1 = () => {
     setSelectedProvider(provider);
     setIsProviderDropdownOpen(false);
   };
+  useEffect(() => {
+    const value = localStorage.getItem("lastname");
+    console.log(value, "value");
+    setRangeValue(value);
+  }, []);
+  console.log(rangeValue, "rangeValue");
   return (
     <>
       <div className="relative">
