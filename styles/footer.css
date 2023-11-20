@@ -425,3 +425,13 @@ input[type="number"]::-webkit-outer-spin-button {
     inset: 0;
   }
 }
+@media (min-width: 1280px) and (max-width: 1290px) {
+  .genrateSpace {
+    padding-top: 34px !important;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1095px) {
+  .genrateSpace {
+    padding-top: 26px !important;
+  }
+}

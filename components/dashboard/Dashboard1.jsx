@@ -59,13 +59,13 @@ const Dashboard1 = () => {
           <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
             <div className="flex flex-col lg:flex-row justify-between lg:pt-[52px] pt-[32px] gap-5 xl:gap-12">
               <div className="w-full">
-                <div className="flex flex-wrap justify-center md:justify-between pb-2">
+                <div className="flex flex-wrap justify-center md:justify-between pb-2 max-h-[295px]">
                   <DataUsagesOne />
                   <ResidentialBoxOne />
                 </div>
 
                 <div className="rounded-2xl overflow-hidden mt-12 lg:block hidden GENERATE_PROXIES_box pb-[52px] w-full">
-                  <div className="  ps-8 py-5">
+                  <div className="ps-8 py-[22px] genrateSpace">
                     <p className="mb-0 text-white text-md font-Montserrat leading-normal font-bold tracking-[1.4px]">
                       GENERATE PROXIES
                     </p>
