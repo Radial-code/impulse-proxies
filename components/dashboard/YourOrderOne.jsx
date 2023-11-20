@@ -1,4 +1,5 @@
 import React from "react";
+import { useGlobalInfoProvider } from "../common/Provider";
 const copyText = () => {
   const textToCopy = document.getElementById("textToCopy").innerText;
   // Try to use the modern clipboard API
@@ -23,9 +24,10 @@ const copyText = () => {
   }
 };
 const YourOrderOne = () => {
+  const { amountValue } = useGlobalInfoProvider();
   return (
     <>
-      <div className="bg-[#1E1E43] yourbox_border relative pb-[28px] sm:ps-6 px-4 pt-6 rounded-2xl lg:h-full custom_scrollbar_y">
+      <div className="bg-[#1E1E43] yourbox_border relative pb-[28px] sm:ps-6 px-4 pt-6 rounded-2xl lg:h-full custom_scrollbar_y     max-h-[800px] lg:max-h-[1166px] relative custom_your_order_box_style">
         <div className="flex sm:items-center items-start justify-between">
           <div className="flex flex-col">
             <div className="flex flex-row lg:flex-col justify-between">
@@ -54,45 +56,32 @@ const YourOrderOne = () => {
             </button>
           </div>
         </div>
-        <div>
-          {/* dashboard_height */}
-          <div className="flex justify-start mt-6 max-h-[640px] overflow-y-auto custom_scrollbar_y">
+
+        <div className="flex flex-col justify-between h-full">
+          <div className="flex justify-start mt-6 max-h-[620px] sm:max-h-[640px] overflow-y-auto custom_scrollbar_y">
             <div
               id="textToCopy"
               className="your_order font-Montserrat xl:text-[16px] max-w-[250px] text-[12px] font-medium leading-normal text-[#9D9DBB]"
             >
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+              {Array.from({ length: 100 }, (_, index) => (
+                <span
+                  key={index}
+                  style={{
+                    display: "inline-block",
+                    overflow: "hidden",
+                    whiteSpace: "nowrap",
+                    textOverflow: "ellipsis",
+                    maxWidth: "100%",
+                  }}
+                >
+                  83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                </span>
+              ))}
             </div>
           </div>
-          <div className="sm:flex  justify-end ">
+          <div className="flex justify-end items-end lg:mb-8 h-full mt-auto">
             <p className="text-[#505082] font-Montserrat text-sm text-end leading-normal tracking-[1.2px] font-bold pt-6">
-              500 PROXIES
+              {amountValue} PROXIES
             </p>
           </div>
         </div>

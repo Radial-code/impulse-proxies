@@ -134,6 +134,11 @@
     .faq-main-div {
       @apply !bg-[length:100%_100%];
     }
+
+    .custom_your_order_box_style,
+    .custom_scrollbar_y {
+      overflow: hidden !important;
+    }
   }
   @media (min-width: 1900px) {
     .proxies-graph-img {
@@ -244,7 +249,12 @@
   .custom-dropdown-option-001 {
     @apply text-[14px] font-Montserrat font-semibold text-white py-1 mx-auto w-full border border-transparent hover:border-white rounded-[10px] text-center px-4 cursor-pointer transition-all duration-200 ease-in-out;
   }
+  .other_proxies_btn_01 {
+    @apply text-[#040426] w-[180px] h-[45px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold leading-normal tracking-[-0.32px] text-[16px] rounded-[10px];
+  }
 }
+
+/* ==== CSS ==== */
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -344,6 +354,9 @@ body {
     bottom: -317px !important;
   }
 }
+
+.range-input-first,
+.range-input-second,
 .range-input {
   -webkit-appearance: none;
   width: 100%;
@@ -374,6 +387,8 @@ body {
   outline: none;
   border-radius: 11px;
 }
+.range-input-first::-webkit-slider-thumb,
+.range-input-second::-webkit-slider-thumb,
 .range-input::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 18px;
@@ -421,4 +436,37 @@ body {
   border: 1px solid #fff;
   border-radius: 50%;
   cursor: pointer;
+}
+
+/* DASHBOARD - YOUR ORDER CARD CSS */
+.custom_your_order_box_style {
+  position: relative;
+  background: linear-gradient(113deg, #151536 35.26%, #393969 182.89%);
+}
+.custom_your_order_box_style::before {
+  width: 100px;
+  height: 100px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #2ea694a8;
+  border-left: 2px solid #2ea694a8;
+  border-bottom-left-radius: 16px;
+  z-index: 1;
+}
+
+@media (max-width: 639.98px) {
+  .custom_your_order_box_style::before {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
+
+.earned_rewards_box {
+  background: linear-gradient(
+    113deg,
+    #151536 35.26%,
+    #393969 182.89%
+  ) !important;
 }
