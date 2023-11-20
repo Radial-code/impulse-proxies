@@ -64,7 +64,7 @@ const Dashboard1 = () => {
                   <ResidentialBoxOne />
                 </div>
 
-                <div className="rounded-2xl overflow-hidden mt-12 lg:block hidden GENERATE_PROXIES_box pb-[52px]    ">
+                <div className="rounded-2xl overflow-hidden mt-12 lg:block hidden GENERATE_PROXIES_box pb-[52px] w-full">
                   <div className="  ps-8 py-5">
                     <p className="mb-0 text-white text-md font-Montserrat leading-normal font-bold tracking-[1.4px]">
                       GENERATE PROXIES
