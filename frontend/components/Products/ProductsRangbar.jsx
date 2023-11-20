@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
-const ProductResidentialRangeBar = () => {
-  const [value, setValue] = useState(1);
+const ProductsRangbar = ({onValueChange}) => {
+  const [value, setValue] = useState(10);
 
   const handleChange = (e) => {
     const newValue = e.target.value;
@@ -10,7 +10,7 @@ const ProductResidentialRangeBar = () => {
   };
 
   const updateRangeStyle = (newValue) => {
-    const percentage = (newValue / 50) * 100; // Update the max value to 50
+    const percentage = (newValue / 512) * 100;
     const rangeInput = document.querySelector(".range-input-2");
 
     if (rangeInput) {
@@ -21,12 +21,11 @@ const ProductResidentialRangeBar = () => {
   useEffect(() => {
     // Set initial styling when the component mounts
     updateRangeStyle(value);
+    onValueChange(value);
   }, [value]);
 
   const handleNumberChange = (e) => {
-    let newValue = parseInt(e.target.value, 10);
-    // Ensure newValue is within the range [1, 50]
-    newValue = Math.min(Math.max(1, newValue), 50);
+    const newValue = parseInt(e.target.value, 10);
     setValue(newValue);
     updateRangeStyle(newValue);
 
@@ -44,7 +43,7 @@ const ProductResidentialRangeBar = () => {
   };
 
   const progressStyle = {
-    width: `${(value / 50) * 100}%`, // Update the max value to 50
+    width: `${(value / 512) * 100}%`,
   };
 
   return (
@@ -58,15 +57,15 @@ const ProductResidentialRangeBar = () => {
                 <div
                   className="flex relative justify-center items-center hidden h-[20px] w-full mx-auto rounded"
                   style={{
-                    width: `calc(${(Math.min(value, 50) / 50) * 100}% - 4px)`, // Update the max value to 50
+                    width: `calc(${(Math.min(value, 512) / 512) * 100}% - 4px)`,
                     display: `${value < 2 ? `none` : ``}`,
                   }}
                 ></div>
 
                 <input
                   type="range"
-                  min="1" // Update the min value to 1
-                  max="50" // Update the max value to 50
+                  min="10"
+                  max="512"
                   value={value}
                   onChange={handleRangeChange}
                   className="custom-range w-full range-input-2"
@@ -77,7 +76,7 @@ const ProductResidentialRangeBar = () => {
         </div>
         <div className="sm:pt-3 pt-2 flex justify-between items-center">
           <p className="text-sm font-Montserrat font-medium text-white mb-0">
-            {value} GB
+            {value} Proxies
           </p>
           <input
             className="amount-range-value-box"
@@ -92,4 +91,4 @@ const ProductResidentialRangeBar = () => {
   );
 };
 
-export default ProductResidentialRangeBar;
+export default ProductsRangbar;

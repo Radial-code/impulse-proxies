@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import IspProxies from "./IspProxies";
 import Image from "next/image";
 import { headings, ispOrdersData } from "../common/Helper";
+import { orderService } from "../common/services";
+import { CircularProgress } from "@mui/material";
 const copyText = () => {
   const textToCopy = document.getElementById("textToCopy").innerText;
   // Try to use the modern clipboard API
@@ -26,6 +28,27 @@ const copyText = () => {
   }
 };
 const ISPDashboard = () => {
+
+  const [loader, setLoader] = useState(true);
+  const [orders, setOrders] = useState([]);
+
+  useEffect(() => {
+    orderService
+      .getOrderList()
+      .then((response) => {
+        setLoader(false);
+        if (response.data.status == 200) {
+          setOrders((prev) => response.data.data);
+        } else {
+          console.log(response.data.message);
+        }
+      })
+      .catch((e) => {
+        setLoader(false);
+        console.log(e);
+      });
+  }, []);
+
   return (
     <div className="relative overflow-hidden">
       <div className="w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
@@ -43,47 +66,52 @@ const ISPDashboard = () => {
           <>
             <div className="flex justify-between items-center md:flex-row flex-col lg:pt-0 pt-8 gap-5 xl:gap-12">
               <div className="w-full lg:max-h-[290px] max-h-[280px] custom_scrollbar_y overflow-y-hidden overflow-scroll ISP_table_heading_scrollbar rounded-2xl">
-                <div className="bg-[#212148] w-full custom_scrollbar_y overflow-y-hidden overflow-scroll ISP_table_heading_scrollbar">
-                  <table className="rounded-2xl overflow-hidden w-full">
-                    <tr>
-                      {headings.map((heading, index) => (
-                        <th
-                          key={index}
-                          className="xl:p-5 p-4 text-[#717198] mb-0 font-Montserrat text-sm font-bold tracking-[1.1px] whitespace-nowrap"
-                        >
-                          {heading}
-                        </th>
-                      ))}
-                    </tr>
+                <div className="bg-[#212148] w-full custom_scrollbar_y overflow-y ISP_table_heading_scrollbar">
+                  <table className="rounded-2xl overflow-scroll table-auto w-full">
+                    <thead className="table w-full table-fixed">
+                      <tr>
+                        {headings.map((heading, index) => (
+                          <th
+                            key={index}
+                            className="xl:p-5 p-4 text-[#717198] mb-0 font-Montserrat text-sm font-bold tracking-[1.1px] whitespace-nowrap"
+                          >
+                            {heading}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+
+                    {loader ? (
+                    <div className="flex justify-center mb-4">
+                      <CircularProgress size={24} />
+                    </div>
+                  ) : orders.length ? (
+                    <tbody className="bg-[#151536] block overflow-auto max-h-[280px] custom_scrollbar_y">
+                    {orders.map((rowData, rowIndex) => (
+                      <tr
+                        key={rowIndex}
+                        className="text-white font-Montserrat text-bold text-sm tracking-[-0.24px] table w-full table-fixed"
+                      >
+                        <td className="xl:p-5 p-4 font-bold text-center">1232312123</td>
+                        <td className="xl:p-5 p-4 font-bold text-center">{rowData._id}</td>
+                        <td className="xl:p-5 p-4 font-bold text-center">Proxy1</td>
+                        <td className="xl:p-5 p-4 font-bold text-center">500</td>
+                        <td className="xl:p-5 p-4 font-bold text-center">{rowData.planData.amount}</td>
+                        <td className="xl:p-5 p-4 font-bold text-center">12</td>
+                        <td className="xl:p-5 p-4 font-bold text-center">54</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                    ) : 
+                    <div className="flex justify-center mb-4 text-[#717198] font-Montserrat">
+                      No orders!
+                    </div>
+                    }
+                   
                   </table>
                 </div>
 
-                <div className="pe-1 lg:pe-3 pb-1 lg:pb-3 bg-[#151536]">
-                  <div className="w-full lg:max-h-[290px] max-h-[280px] overflow-x-scroll custom_scrollbar_y rounded-2xl rounded-t-[0] custom_scrollbar_y_ISP_table">
-                    <table className="rounded-2xl rounded-t-[0] overflow-hidden w-full">
-                      {console.log("data===>", ispOrdersData.length)}
-                      <tbody className="bg-[#151536]">
-                        {ispOrdersData.map((rowData, rowIndex) => (
-                          <tr
-                            key={rowIndex}
-                            className="text-white font-Montserrat text-bold text-sm tracking-[-0.24px]"
-                          >
-                            {rowData.map((cellData, cellIndex) => (
-                              <td
-                                className="xl:p-5 p-4 font-bold"
-                                key={cellIndex}
-                              >
-                                {cellData}
-                              </td>
-                            ))}
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
               </div>
-
               <div className="lg:w-[325px] 2xl:w-[430px] md:w-[40%] w-full md:mt-0 mt-9">
                 <IspProxies />
               </div>

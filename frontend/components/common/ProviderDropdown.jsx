@@ -125,7 +125,7 @@
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 
-const ProviderDropdown = () => {
+const ProviderDropdown = ({onProviderChange, onRegionChange}) => {
   const providersData = [
     {
       provider: "Telecom",
@@ -170,6 +170,15 @@ const ProviderDropdown = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [providerDropdownRef, regionDropdownRef]);
+
+
+  useEffect(() => {
+    onProviderChange(selectedProvider);
+  }, [selectedProvider]);
+
+  useEffect(() => {
+    onRegionChange(selectedRegion);
+  }, [selectedRegion]);
 
   const toggleProviderDropdown = () => {
     setOpenProviderDropdown((prev) => !prev);
