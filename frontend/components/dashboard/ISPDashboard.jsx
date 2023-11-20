@@ -70,14 +70,12 @@ const ISPDashboard = () => {
                   <table className="rounded-2xl overflow-scroll table-auto w-full">
                     <thead className="table w-full table-fixed">
                       <tr>
-                        {headings.map((heading, index) => (
-                          <th
-                            key={index}
-                            className="xl:p-5 p-4 text-[#717198] mb-0 font-Montserrat text-sm font-bold tracking-[1.1px] whitespace-nowrap"
-                          >
-                            {heading}
-                          </th>
-                        ))}
+                         <th className="xl:p-5 p-4 text-[#717198] mb-0 font-Montserrat text-sm font-bold tracking-[1.1px] whitespace-nowrap">Order Id</th>
+                         <th className="xl:p-5 p-4 text-[#717198] mb-0 font-Montserrat text-sm font-bold tracking-[1.1px] whitespace-nowrap">Plan</th>
+                         <th className="xl:p-5 p-4 text-[#717198] mb-0 font-Montserrat text-sm font-bold tracking-[1.1px] whitespace-nowrap">Provider</th>
+                         <th className="xl:p-5 p-4 text-[#717198] mb-0 font-Montserrat text-sm font-bold tracking-[1.1px] whitespace-nowrap">Region</th>
+                         <th className="xl:p-5 p-4 text-[#717198] mb-0 font-Montserrat text-sm font-bold tracking-[1.1px] whitespace-nowrap">Period</th>
+                         <th className="xl:p-5 p-4 text-[#717198] mb-0 font-Montserrat text-sm font-bold tracking-[1.1px] whitespace-nowrap">Proxies</th>
                       </tr>
                     </thead>
 
@@ -92,13 +90,12 @@ const ISPDashboard = () => {
                         key={rowIndex}
                         className="text-white font-Montserrat text-bold text-sm tracking-[-0.24px] table w-full table-fixed"
                       >
-                        <td className="xl:p-5 p-4 font-bold text-center">1232312123</td>
                         <td className="xl:p-5 p-4 font-bold text-center">{rowData._id}</td>
-                        <td className="xl:p-5 p-4 font-bold text-center">Proxy1</td>
-                        <td className="xl:p-5 p-4 font-bold text-center">500</td>
-                        <td className="xl:p-5 p-4 font-bold text-center">{rowData.planData.amount}</td>
-                        <td className="xl:p-5 p-4 font-bold text-center">12</td>
-                        <td className="xl:p-5 p-4 font-bold text-center">54</td>
+                        <td className="xl:p-5 p-4 font-bold text-center">{rowData.plan}</td>
+                        <td className="xl:p-5 p-4 font-bold text-center">{rowData.planData.provider || "-"}</td>
+                        <td className="xl:p-5 p-4 font-bold text-center">{rowData.planData.region || "-"}</td>
+                        <td className="xl:p-5 p-4 font-bold text-center">{rowData.planData.period || "-"}</td>
+                        <td className="xl:p-5 p-4 font-bold text-center">{rowData.planData.amount || "-"}</td>
                       </tr>
                     ))}
                   </tbody>
