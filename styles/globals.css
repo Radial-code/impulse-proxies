@@ -255,7 +255,7 @@
 }
 
 /* ==== CSS ==== */
-body{
+body {
   scroll-behavior: smooth !important;
 }
 :root {
@@ -350,6 +350,16 @@ body {
   }
   .animation {
     top: -130px !important;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1095px) {
+  .max_height_box {
+    max-height: 1050px !important;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1290px) {
+  .max_height_box {
+    max-height: 1035px !important;
   }
 }
 @media (min-width: 1920px) {

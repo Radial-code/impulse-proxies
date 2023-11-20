@@ -27,7 +27,7 @@ const YourOrderOne = () => {
   const { amountValue } = useGlobalInfoProvider();
   return (
     <>
-      <div className="bg-[#1E1E43] yourbox_border relative pb-[28px] sm:ps-6 px-4 pt-6 rounded-2xl lg:h-full custom_scrollbar_y max-h-[800px] xl:max-h-[1020px] lg:max-h-[1035px] custom_your_order_box_style">
+      <div className="bg-[#1E1E43] yourbox_border relative pb-[28px] sm:ps-6 px-4 pt-6 rounded-2xl lg:h-full custom_scrollbar_y max-h-[768px] max_height_box xl:max-h-[1020px] lg:max-h-[1035px] custom_your_order_box_style">
         <div className="flex sm:items-center items-start justify-between">
           <div className="flex flex-col">
             <div className="flex flex-row lg:flex-col justify-between">
@@ -58,10 +58,10 @@ const YourOrderOne = () => {
         </div>
 
         <div className="flex flex-col justify-between h-full">
-          <div className="flex justify-start mt-6 max-h-[100px] lg:max-h-[960px] sm:max-h-[640px] overflow-y-auto custom_scrollbar_y">
+          <div className="flex justify-start mt-6 max-h-[150px] lg:max-h-[960px] sm:max-h-[613px] overflow-y-auto custom_scrollbar_y">
             <div
               id="textToCopy"
-              className="your_order font-Montserrat xl:text-[16px] max-w-[250px] text-[12px] font-medium leading-normal text-[#9D9DBB]"
+              className="your_order font-Montserrat xl:text-[16px] max-w-[100px] text-[12px] font-medium leading-normal text-[#9D9DBB]"
             >
               {Array.from({ length: 100 }, (_, index) => (
                 <span
