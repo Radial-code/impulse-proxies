@@ -40,7 +40,7 @@ const ResidentialProxies = ({stripePromise}) => {
   const checkout = () => {
     const payload = {
       plan: "Residential",
-      priceId: "price_1OAthpSIHU7KBEQmc4gOCSQJ",
+      priceId: "price_1ODRjpID86MwDmPQFqAKzArJ",
       planData: {
         amount
       }

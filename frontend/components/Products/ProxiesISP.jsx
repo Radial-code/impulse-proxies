@@ -38,7 +38,7 @@ const ProxiesISP = ({stripePromise}) => {
   const checkout = () => {
     const payload = {
       plan: "ISP",
-      priceId: "price_1OBHvwSIHU7KBEQmjSyPhTI7",
+      priceId: "price_1NssrcID86MwDmPQLMI3j6CF",
       planData: {
         provider,
         region,
