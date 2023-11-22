@@ -4,6 +4,7 @@ import Image from "next/image";
 import { headings, ispOrdersData } from "../common/Helper";
 import { orderService } from "../common/services";
 import { CircularProgress } from "@mui/material";
+import Link from "next/link";
 const copyText = () => {
   const textToCopy = document.getElementById("textToCopy").innerText;
   // Try to use the modern clipboard API
@@ -80,8 +81,8 @@ const ISPDashboard = () => {
                     </thead>
 
                     {loader ? (
-                    <div className="flex justify-center mb-4">
-                      <CircularProgress size={24} />
+                    <div className="flex justify-center items-center py-12 md:min-h-[222px] min-h-[185px]">
+                      <CircularProgress size={24}/> 
                     </div>
                   ) : orders.length ? (
                     <tbody className="bg-[#151536] block overflow-auto max-h-[280px] custom_scrollbar_y">
@@ -100,8 +101,20 @@ const ISPDashboard = () => {
                     ))}
                   </tbody>
                     ) : 
-                    <div className="flex justify-center mb-4 text-[#717198] font-Montserrat">
-                      No orders!
+                    <div className="flex justify-center items-center py-12 md:min-h-[280px] min-h-[243px] lg:min-h-full">
+                      <div className="w-[413px]">
+                        <p className="text-center sm:text-[17px] text-[15px] font-Montserrat text-white font-bold leading-normal md:tracking-[1.7px] mb-0">
+                          NO CURRENT ORDERS
+                        </p>
+                        <p className="lg:pt-[10px] pt-1 text-[15px] text-center text-[#9D9DBB] font-Montserrat font-medium leading-normal mb-0">
+                          To make an order, click the button below
+                        </p>
+                        <div className="flex justify-center">
+                        <Link href="/product" className="lg:mt-6 mt-4 bg-white rounded-[10px] text-[#040426] py-3 px-9 font-Montserrat font-bold sm:text-base text-[14px] leading-normal md:tracking-[-0.32px] hover:bg-[#4FDCC7] hover:text-white transition-all">
+                            Order Proxies
+                          </Link>
+                        </div>
+                      </div>
                     </div>
                     }
                    
