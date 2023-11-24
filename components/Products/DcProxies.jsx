@@ -1,28 +1,31 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import ProductsRangbar from "./ProductsRangbar";
-const DcProxies = () => {
+import PaymentDialog from "../common/paymentDialog";
+const DcProxies = ({stripePromise}) => {
+  const [isRegionDropdownOpen, setIsRegionDropdownOpen] = useState(false);
+  const [selectedRegion, setSelectedRegion] = useState("Germany");
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
-  const [selectedPeriod, setSelectedPeriod] = useState("Germany");
-  const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
-  const [selectedProvider, setSelectedProvider] = useState("Monthly");
+  const [selectedPeriod, setSelectedPeriod] = useState("Monthly");
+  const [amount, setAmount] = useState(0);
+  const [open, setOpen] = useState(false);
+  const [subscriptionPayload, setSubscriptionPayload] = useState({});
+ 
+  const handleOpen = () => setOpen(!open);
+  
+  const toggleRegionDropdown = () => {
+    setIsRegionDropdownOpen(!isRegionDropdownOpen);
+  };
+  const handleRegionSelect = (period) => {
+    setSelectedRegion(period);
+    setIsRegionDropdownOpen(false);
+  };
   const togglePeriodDropdown = () => {
     setIsPeriodDropdownOpen(!isPeriodDropdownOpen);
   };
-  const handlePeriodSelect = (period) => {
-    setSelectedPeriod(period);
+  const handlePeriodSelect = (provider) => {
+    setSelectedPeriod(provider);
     setIsPeriodDropdownOpen(false);
-  };
-  const toggleProviderDropdown = () => {
-    setIsProviderDropdownOpen(!isProviderDropdownOpen);
-  };
-  const handleProviderSelect = (provider) => {
-    setSelectedProvider(provider);
-    setIsProviderDropdownOpen(false);
-  };
-  const [activeTab, setActiveTab] = useState("ISP");
-  const handleTabClick = (tab) => {
-    setActiveTab(tab);
   };
 
   const handleMinRangeChange = (e) => {
@@ -31,6 +34,24 @@ const DcProxies = () => {
   const handleMaxRangeChange = (e) => {
     setMaxRange(parseInt(e.target.value));
   };
+
+  const onAmountChange = (data) => {
+    setAmount(data);
+  }
+
+  const checkout = () => {
+    const payload = {
+      plan: "DC",
+      priceId: "price_1OBHwASIHU7KBEQmL97ljvkv",
+      planData: {
+        region: selectedRegion,
+        period: selectedPeriod,
+        amount
+      }
+    }
+    setSubscriptionPayload(payload);
+    handleOpen();
+  }
 
   return (
     <>
@@ -55,17 +76,17 @@ const DcProxies = () => {
               </p>
               <div
                 className={`w-full border-2 cursor-pointer border-white rounded-[10000px] sm:mt-[10px] mt-2 px-5 py-2 ${
-                  isPeriodDropdownOpen ? "bg-[#133147]" : ""
+                  isRegionDropdownOpen ? "bg-[#133147]" : ""
                 }`}
-                onClick={togglePeriodDropdown}
+                onClick={toggleRegionDropdown}
               >
                 <div className="flex justify-between items-center">
                   <p
                     className={`text-[14px] font-Montserrat font-semibold text-white mb-0 ${
-                      isPeriodDropdownOpen ? "text-[#50EED7]" : ""
+                      isRegionDropdownOpen ? "text-[#50EED7]" : ""
                     }`}
                   >
-                    {selectedPeriod}
+                    {selectedRegion}
                   </p>
                   <Image
                     src="/assets/images/webp/down-arrow.webp"
@@ -74,29 +95,29 @@ const DcProxies = () => {
                     width={13}
                   />
                 </div>
-                {isPeriodDropdownOpen && (
+                {isRegionDropdownOpen && (
                   <div className="absolute start-0 z-10 bg-[#252550] border-white border-2 mt-2 w-full rounded-[10px] p-1">
                     <p
                       className="custom-dropdown-option-001 mb-1"
-                      onClick={() => handlePeriodSelect("Germany")}
+                      onClick={() => handleRegionSelect("Germany")}
                     >
                       Germany
                     </p>
                     <p
                       className="custom-dropdown-option-001 mb-1"
-                      onClick={() => handlePeriodSelect("Italy")}
+                      onClick={() => handleRegionSelect("Italy")}
                     >
                       Italy
                     </p>
                     <p
                       className="custom-dropdown-option-001 mb-1"
-                      onClick={() => handlePeriodSelect("Spain")}
+                      onClick={() => handleRegionSelect("Spain")}
                     >
                       Spain
                     </p>
                     <p
                       className="custom-dropdown-option-001 mb-0"
-                      onClick={() => handlePeriodSelect("United Kingdom")}
+                      onClick={() => handleRegionSelect("United Kingdom")}
                     >
                       United Kingdom
                     </p>
@@ -111,17 +132,17 @@ const DcProxies = () => {
             </p>
             <div
               className={`w-full border-2 cursor-pointer border-white rounded-[10000px] sm:mt-[10px] mt-2 px-5 py-2 ${
-                isProviderDropdownOpen ? "bg-[#133147]" : ""
+                isPeriodDropdownOpen ? "bg-[#133147]" : ""
               }`}
-              onClick={toggleProviderDropdown}
+              onClick={togglePeriodDropdown}
             >
               <div className="flex justify-between items-center">
                 <p
                   className={`text-[14px] font-Montserrat font-semibold text-white mb-0 ${
-                    isProviderDropdownOpen ? "text-[#50EED7]" : ""
+                    isPeriodDropdownOpen ? "text-[#50EED7]" : ""
                   }`}
                 >
-                  {selectedProvider}
+                  {selectedPeriod}
                 </p>
                 <Image
                   src="/assets/images/webp/down-arrow.webp"
@@ -130,17 +151,17 @@ const DcProxies = () => {
                   width={13}
                 />
               </div>
-              {isProviderDropdownOpen && (
+              {isPeriodDropdownOpen && (
                 <div className="absolute bg-[#252550] border-white start-0 border-2 w-full mt-2 z-10 rounded-[10px] p-1">
                   <p
                     className="custom-dropdown-option-001 mb-1"
-                    onClick={() => handleProviderSelect("Monthly")}
+                    onClick={() => handlePeriodSelect("Monthly")}
                   >
                     Monthly
                   </p>
                   <p
                     className="custom-dropdown-option-001 mb-0"
-                    onClick={() => handleProviderSelect("Annually")}
+                    onClick={() => handlePeriodSelect("Annually")}
                   >
                     Annually
                   </p>
@@ -154,7 +175,7 @@ const DcProxies = () => {
             </p>
           </div>
 
-          <ProductsRangbar />
+          <ProductsRangbar onValueChange={onAmountChange}/>
 
           <div className="sm:pt-[26px] pt-5 flex justify-between items-end">
             <div>
@@ -166,7 +187,7 @@ const DcProxies = () => {
                 <span className="text-[13px] font-normal">/month</span>
               </p>
             </div>
-            <button className="bg-white rounded-[10000px] hover:bg-[#4FDCC7] hover:text-white transition-all duration-500 text-[#040426] font-Montserrat font-semibold text-[15px] sm:px-[43px] px-5 py-[10px]">
+            <button className="bg-white rounded-[10000px] hover:bg-[#4FDCC7] hover:text-white transition-all duration-500 text-[#040426] font-Montserrat font-semibold text-[15px] sm:px-[43px] px-5 py-[10px]" onClick={checkout}>
               Checkout
             </button>
           </div>
@@ -188,6 +209,7 @@ const DcProxies = () => {
           />
         </div>
       </div>
+      <PaymentDialog open={open} handleOpen={handleOpen} stripePromise={stripePromise} payload={subscriptionPayload}/>
     </>
   );
 };

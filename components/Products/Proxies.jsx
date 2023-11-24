@@ -5,15 +5,19 @@ import ImpulseFooter from "../ImpulseFooter";
 import Header from "../Header";
 import ProxiesISP from "./ProxiesISP";
 import { useGlobalInfoProvider } from "../common/Provider";
+import { loadStripe } from "@stripe/stripe-js";
+
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
+
 const Proxies = () => {
   const { activeTab, setActiveTab } = useGlobalInfoProvider();
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
   const tabContent = {
-    ISP: <ProxiesISP />,
-    DC: <DcProxies />,
-    Residential: <ResidentialProxies />,
+    ISP: <ProxiesISP stripePromise={stripePromise} />,
+    DC: <DcProxies stripePromise={stripePromise} />,
+    Residential: <ResidentialProxies stripePromise={stripePromise}/>,
   };
   console.log(activeTab);
   return (
