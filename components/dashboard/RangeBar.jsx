@@ -33,15 +33,14 @@ const RangeBar = () => {
     <>
       <div className="sm:px-3">
         <div className="bg-[#212148] flex items-center  rounded-t-[16px]">
-          <p className="text-sm font-Montserrat font-bold text-white leading-normal tracking-[1.2px] sm:ps-6 ps-4 lg:py-6 py-[22px] ">
+          <p className="text-sm font-Montserrat font-bold text-white leading-normal tracking-[1.2px] sm:ps-6 ps-4 py-5 lg:py-[22px] ">
             YOUR REWARDS TRACKER
           </p>
         </div>
-        <div className="rang_bar rounded-b-[16px] px-4 md:px-6 sm:pt-7 pt-6 sm:pb-8 pb-4 mt-[-2px]">
+        <div className="rang_bar relative rounded-b-[16px] px-4 md:px-6 sm:pt-5 lg:pt-6 pt-5 lg:pb-[73px] pb-8 mt-[-2px]">
           <p className="lg:-mb-4 text-sm font-Montserrat font-bold text-white md:max-w-[330px] leading-normal tracking-[1.2px] text-center lg:text-end">
             3 GB TO GO!
           </p>
-
           <div className="flex relative justify-center items-center lg:h-[60px] sm:h-[30px] h-[40px] mx-auto rounded">
             <div className="range-slider">
               <div className="progress" style={progressStyle}></div>
@@ -89,7 +88,7 @@ const RangeBar = () => {
               />
             </div>
           </div>
-          <div className="lg:mt-5 sm:mt-4 mt-[30px]">
+          <div className="sm:mt-4 mt-[30px]">
             <p className="text-sm font-Montserrat font-bold leading-normal tracking-[1.2px] text-white">
               HOW IT WORKS
             </p>

@@ -49,7 +49,7 @@ const ISPDashboard = () => {
                       {headings.map((heading, index) => (
                         <th
                           key={index}
-                          className="xl:p-5 p-4 text-[#717198] mb-0 font-Montserrat text-sm font-bold tracking-[1.1px] whitespace-nowrap"
+                          className="xl:p-5 p-4 text-start text-[#717198] mb-0 font-Montserrat text-sm font-bold tracking-[1.1px] whitespace-nowrap"
                         >
                           {heading}
                         </th>
