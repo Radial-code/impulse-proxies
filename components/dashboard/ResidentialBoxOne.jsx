@@ -13,6 +13,7 @@ const ResidentialBoxOne = () => {
         </div>
        <ProxiesTabs/>
       </div>
+      
     </>
   );
 };
