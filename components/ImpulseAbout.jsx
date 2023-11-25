@@ -10,7 +10,7 @@ const ImpulseAbout = () => {
         id="AboutUs"
         className="bg-[#141436] select_none lg:pt-[120px] 2xl:pt-[135px]  md:pt-[52px] pt-[35px] z-10 relative"
       >
-         <div className="proxies_box h-6 lg:h-10 opacity-10 w-full max-w-[1000px] sm:hidden mx-auto absolute top-[1px] lg:top-[15px] left-1/2 -translate-x-1/2"></div>
+        <div className="proxies_box h-6 lg:h-10 opacity-10 w-full max-w-[1000px] sm:hidden mx-auto absolute top-[1px] lg:top-[15px] left-1/2 -translate-x-1/2"></div>
         <div className="bg_top_bottom sm:hidden block h-[30px] opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%]"></div>
         <div className="w-16 p-0">
           <Image
@@ -74,7 +74,7 @@ const ImpulseAbout = () => {
                               </p>
                             </div>
                           </div>
-                          <p className="mb-3 sm:mb-6 text-[#9898A3] font-Montserrat font-medium leading-[178%] text-md max-w-[278px] xl:max-w-[308px]">
+                          <p className="my-3 sm:my-6 text-[#9898A3] font-Montserrat font-medium leading-[178%] text-md max-w-[278px] xl:max-w-[308px]">
                             {obj.para}
                           </p>
                         </div>

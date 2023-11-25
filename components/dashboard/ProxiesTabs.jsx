@@ -9,7 +9,7 @@ const ProxiesTabs = () => {
 
   return (
     <>
-      <div className="w-full bg-[#4FDCC7] rounded-lg p-[14px]">
+      <div className="w-full bg-[#4FDCC7] rounded-[16px] p-[14px]">
         <div
           className={`${
             activeTab === 1 ? "bg-white " : ""
@@ -86,7 +86,7 @@ const ProxiesTabs = () => {
               height="14"
               viewBox="0 0 14 14"
               fill="none"
-              className="ms-2 group-hover:translate-x-2 transition-all ease-in-out duration-150"
+              className="ms-4 group-hover:translate-x-2 transition-all ease-in-out duration-150"
             >
               <mask
                 id="mask0_856_772"

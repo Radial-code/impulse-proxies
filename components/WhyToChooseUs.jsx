@@ -4,7 +4,8 @@ import Image from "next/image";
 function WhyToChooseUs() {
   return (
     <>
-      <div className="lg:pt-[69px] lg:pb-[77px] md:pt-8 md:pb-[53px] py-12 bg-[#141436] relative mt-8 lg:mt-12">
+      <div className="pt-[69px] lg:pb-[77px] md:pb-[53px] pb-12 bg-[#141436] relative">
+      <div class="proxies_box h-10 opacity-10 w-full max-w-[1200px] mx-auto absolute top-0 left-1/2 -translate-x-1/2"></div>
         <Image
           className="whychooseus-abstract-img arrowAnimation"
           height={126}

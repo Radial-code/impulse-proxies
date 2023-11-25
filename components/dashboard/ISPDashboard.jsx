@@ -35,7 +35,7 @@ const ISPDashboard = () => {
           </div>
         </div>
       </div>
-      <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto mb-16">
+      <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
         <p className="text-white font-Montserrat lg:block hidden font-bold tracking-[1.2px] mb-6 mt-10">
           ISP & DC ORDERS
         </p>
@@ -49,7 +49,7 @@ const ISPDashboard = () => {
                       {headings.map((heading, index) => (
                         <th
                           key={index}
-                          className="xl:p-5 p-4 text-[#717198] mb-0 font-Montserrat text-sm font-bold tracking-[1.1px] whitespace-nowrap"
+                          className="xl:p-5 p-4 text-[#717198] mb-0 text-left font-Montserrat text-sm font-bold tracking-[1.1px] whitespace-nowrap"
                         >
                           {heading}
                         </th>
@@ -88,7 +88,7 @@ const ISPDashboard = () => {
                 <IspProxies />
               </div>
             </div>
-            <div className="bg-[#191941] overflow-hidden flex flex-col your_order relative rounded-lg lg:p-8 p-6 lg:mt-12 mt-8 mb-[84px]">
+            <div className="bg-[#191941] overflow-hidden flex flex-col your_order relative rounded-lg lg:p-8 p-6 lg:mt-12 mt-8">
               <div className="flex md:items-center justify-between">
                 <div className="flex md:flex-row flex-col">
                   <p className="text-white font-Montserrat sm:text-md text-[12px] font-bold tracking-[1.4px]">

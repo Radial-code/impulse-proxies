@@ -248,7 +248,7 @@ const SelectCountries = () => {
     <div>
       <div className="relative">
         <select
-          className="w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3  focus-visible:outline-none appearance-none"
+          className="w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3  focus-visible:outline-none appearance-none text-white"
           name=""
           id=""
           onChange={handleRegionChange}
@@ -284,7 +284,7 @@ const SelectCountries = () => {
           </h2>
 
           <div className="relative">
-            <select className="w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3  focus-visible:outline-none appearance-none">
+            <select className="w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3  focus-visible:outline-none appearance-none text-white">
               {arry
                 .find((obj) => obj.title === selectedRegion)
                 .country.map((country, index) => (

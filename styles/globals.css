@@ -41,7 +41,7 @@
      lg:pb-6 lg:pt-14 sm:pt-8 pt-2 pb-[34px] ms-[-10px] me-[-10px] border-b-0;
   }
   .accordian-main {
-    @apply mt-5 border-[2px] transition-opacity ease-in duration-300 border-cyan-green
+    @apply mt-5 border-[2px] transition-opacity backdrop-blur-[21px] ease-in duration-300 border-cyan-green
      text-white bg-[#50EED733] rounded-2xl
      px-4 py-3 overflow-hidden w-full max-w-[655px] lg:max-w-[849px] mx-auto;
   }
@@ -75,7 +75,7 @@
      lg:h-[122px] md:h-[92px] sm:w-[65px] sm:h-[55px] w-[55px] h-[45px] pointer-events-none;
   }
   .aboutus-para {
-    @apply text-dark-gray leading-[157%] font-normal md:font-semibold lg:text-2xl text-[15px] text-center lg:max-w-[383px]
+    @apply text-dark-gray leading-[157%] font-normal md:font-semibold lg:text-2xl text-[15px] text-center lg:max-w-[383px] min-[1920.1px]:max-w-[unset]
      sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 md:text-center lg:text-start lg:mx-0;
   }
   .about-box-map-div {
@@ -354,8 +354,8 @@ body {
     bottom: -317px !important;
   }
 }
-@media (max-width:640px) {
-  .faq-main-div{
+@media (max-width: 640px) {
+  .faq-main-div {
     background-position: center 100px;
   }
 }
@@ -473,4 +473,9 @@ body {
     #151536 35.26%,
     #393969 182.89%
   ) !important;
+}
+.bg_faq_blur{
+  /* background: linear-gradient(180deg, #50EED7 0%, #7BECF3 100%); */
+  background: radial-gradient(41.85% 211.48% at 47.38% 79.56%, #50EED7 0%, rgba(80, 238, 215, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
 }

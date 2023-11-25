@@ -20,6 +20,7 @@ const ImpulseFAQ = () => {
         id="Faqs"
         className="bg-[url('/assets/images/svg/FAQsbg-sm.svg')] sm:bg-[url('/assets/images/svg/FAQsbg.svg')] bg-no-repeat lg:bg-[100% 100%] bg-auto sm:bg-cover sm:bg-center sm:pb-22 faq-main-div"
       >
+        <div className='absolute left-1/2 -translate-x-1/2 bg_faq_blur rounded-[40px] backdrop-blur-[151px] opacity-20 w-full sm:w-[80%] max-w-[1190px] top-[-365px] h-[600px]'></div>
         {/* <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%] "></div> */}
         {/* <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute bottom-0 lg:bottom-[0px] lg:left-[22%]"></div> */}
         <div className="absolute pointer-events-none faq-torus hidden sm:block">
@@ -103,7 +104,7 @@ const ImpulseFAQ = () => {
                   openAccordion === index ? "sm:h-[65px] h-[100px]" : "h-[0px]"
                 }`}
               >
-                <p className="font-medium font-Montserrat leading-[178%] text-white opacity-70 sm:opacity-100 sm:text-dark-gray text-sm sm:text-[16px] pb-0 pt-2">
+                <p className="font-normal font-Montserrat leading-[155%] sm:leading-[150%] text-white opacity-70 sm:text-dark-gray text-sm sm:text-[16px] pb-0 pt-2">
                   {data.para}
                 </p>
               </div>
