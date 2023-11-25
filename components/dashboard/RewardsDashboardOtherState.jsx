@@ -36,7 +36,7 @@ const RewardsDashboardOtherState = () => {
               {!rewardData.length > 0 ? (
                 <>
                   <div className="w-full lg:w-6/12 px-3">
-                    <div className="bg-[#212148] flex items-center justify-between py-[22px] rounded-t-[16px] px-4 lg:px-9 relative">
+                    <div className="bg-[#212148] z-[9] flex items-center justify-between py-[22px] rounded-t-[16px] px-4 lg:px-9 relative">
                       <p className=" text-sm font-Montserrat tracking-[1.2px] leading-normal font-bold text-white">
                         EARNED REWARDS
                       </p>
