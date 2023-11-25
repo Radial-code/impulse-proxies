@@ -24,7 +24,7 @@ const DashboardDropDown = () => {
   return (
     <div className="relative">
       <div
-        className="bg-[#1D1D42] py-4 pe-5 ps-9 rounded-[10px] flex items-center justify-between cursor-pointer ms-6"
+        className="bg-[#1D1D42] py-4 pe-5 ps-9 rounded-[10px] flex items-center justify-between cursor-pointer lg:ms-6"
         onClick={togglePeriodDropdown}
       >
         <p className="text-md text-[#626296] font-Montserrat font-semibold lh_normal tracking-[-0.28px] mb-0">
@@ -33,7 +33,7 @@ const DashboardDropDown = () => {
         </p>
         <div className="rounded-full bg-white h-[37px] w-[37px] ms-7"></div>
         {isPeriodDropdownOpen && (
-          <div className="absolute start-0 top-[70px] z-10 bg-[#252550] w-full max-w-[226px] ms-6 rounded-[10px]">
+          <div className="absolute start-0 top-[70px] z-10 bg-[#252550] w-full max-w-[226px] lg:ms-6 rounded-[10px]">
             <button
               className="group transition-all duration-300 ease-in-out w-full bg-[#1D1D42] lh_normal sign_out_button text-center flex items-center gap-1"
               onClick={() => handlePeriodSelect("Sign Out")}

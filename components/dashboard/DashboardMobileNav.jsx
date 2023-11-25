@@ -36,13 +36,13 @@ const DashboardMobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   return (
     <>
       <div
-        className={`fixed items-start lg:hidden bg-[#040426] lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-24 transition-all duration-200 ease-in z-[100] w-[280px] ${
+        className={`fixed items-start lg:hidden bg-[#040426] lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-24 transition-all duration-300 ease-in z-[100] w-full ${
           activeNavOverlay ? "left-0" : "-left-full"
         }`}
       >
         <div className="2xl:w-full w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
-          <div className="flex flex-col gap-6 xl:gap-5 lg:items-start items-center w-full">
-            <div className="mt-8 -ms-6">
+          <div className="flex flex-col gap-8 xl:gap-5 lg:items-start items-center w-full">
+            <div className="mt-8 lg:-ms-6 max-w-[327px] w-full">
               <DashboardDropDown />
             </div>
             {/* <div

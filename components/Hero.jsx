@@ -10,7 +10,7 @@ const Hero = () => {
       <Header />
       <div className=" relative">
         <div className="hero-section grad_b flex flex-col justify-center lg:py-8 xl:py-0 pt-[30px] sm:pb-[80px] pb-14">
-          <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 h-full flex items-center">
+          <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-6 h-full flex items-center">
             <div className="flex items-cent er justify-between h-full flex-wrap w-full lg:flex-nowrap lg:pt-[85px] lg:pb-[90px]">
               <div className=" min-h-[210px] md:min-h-[300px] md: lg:min-h-[384px] md:w-[56%] xl:w-7/12 lg:w-6/12 w-full z-10">
                 <h1 className="hero-heading lg:text-8xl sm:text-[42px] text-[32px] text-white font-bold ">
@@ -36,8 +36,8 @@ const Hero = () => {
               </div>
 
               <div
-                className="hero-button-lottie-main after:contents-[''] after:h-[500px] after:w-[450px]
-                   after:absolute after:opacity-30 after:rounded-full after:blur-[137px] after:pointer-events-none after:top-[-50%] bgHeroImg"
+                className="hero-button-lottie-main sm:after:contents-[''] sm:after:h-[500px] sm:after:w-[450px]
+                sm:after:absolute sm:after:opacity-30 sm:after:rounded-full sm:after:blur-[137px] sm:after:pointer-events-none sm:after:top-[-50%] bgHeroImg"
               >
                 <div className="box_showdow absolute max-w-[456px] w-full h-[542px] blur-[140px] rounded-[36px] opacity-30 top-10 right-7 z-[-1] hidden lg:inline-block"></div>
                 <Lottie
@@ -49,7 +49,7 @@ const Hero = () => {
                 <Image
                   height={223}
                   width={223}
-                  className="-mt-7 sm:mt-0 scale-[1.3] w-[100vw] sm:w-full md:hidden block"
+                  className="-mt-7 sm:mt-0 scale-[1.47] sm:scale-[1.3] w-[100vw] sm:w-full md:hidden block"
                   src="/assets/images/svg/hero-image-mobile-version.svg"
                   alt="hero-image"
                   priority="1"
@@ -58,11 +58,11 @@ const Hero = () => {
                   <Link
                     aria-label="product"
                     href="/product"
-                    className="hero-purchase-button transition-all max-w-[300px] md:max-w-[197px] min-h-[55px] mt-10 mx-auto flex items-center justify-center"
+                    className="hero-purchase-button transition-all max-w-[327px] sm:max-w-[300px] md:max-w-[197px] min-h-[55px] mt-6 sm:mt-10 mx-auto flex items-center justify-center"
                   >
                     Purchase
                   </Link>
-                  <button className="hero-explore-products-button sm:ms-4 max-w-[300px] md:max-w-[197px] min-h-[55px] sm:text-2xl text-[15px] mt-4 sm:mt-10">
+                  <button className="hero-explore-products-button sm:ms-4 max-w-[327px] sm:max-w-[300px] md:max-w-[197px] min-h-[55px] text-2xl mt-4 sm:mt-10">
                     Explore Products
                   </button>
                 </div>

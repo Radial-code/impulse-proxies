@@ -18,7 +18,7 @@ const ImpulseFAQ = () => {
     <>
       <div
         id="Faqs"
-        className="bg-[url('/assets/images/svg/FAQsbg.svg')] bg-no-repeat lg:bg-[100% 100%] bg-cover bg-center sm:pb-22 faq-main-div"
+        className="bg-[url('/assets/images/svg/FAQsbg-sm.svg')] sm:bg-[url('/assets/images/svg/FAQsbg.svg')] bg-no-repeat lg:bg-[100% 100%] bg-auto sm:bg-cover sm:bg-center sm:pb-22 faq-main-div"
       >
         {/* <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute top-0 lg:top-[0px] lg:left-[22%] "></div> */}
         {/* <div className="bg_top_bottom h-[40px] opacity-10 w-full max-w-[1000px] mx-auto absolute bottom-0 lg:bottom-[0px] lg:left-[22%]"></div> */}
@@ -58,7 +58,7 @@ const ImpulseFAQ = () => {
           src="/assets/images/png/faq_right.png"
           alt="faqimage"
         />
-        <div className="relative container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 sm:pt-0 pt-3 sm:pb-0 pb-3 min-h-[490px] lg:min-h-[412px]">
+        <div className="relative container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-6 sm:pt-0 pt-3 sm:pb-0 pb-3 min-h-[490px] lg:min-h-[412px]">
           <Image
             height={500}
             width={500}
@@ -100,10 +100,10 @@ const ImpulseFAQ = () => {
               </div>
               <div
                 className={`transition-all duration-300 ease-linear pt-0 pb-0 ${
-                  openAccordion === index ? "sm:h-[60px] h-[110px]" : "h-[0px]"
+                  openAccordion === index ? "sm:h-[65px] h-[100px]" : "h-[0px]"
                 }`}
               >
-                <p className="font-medium font-Montserrat leading-[178%] text-md pb-0 pt-2">
+                <p className="font-medium font-Montserrat leading-[178%] text-white opacity-70 sm:opacity-100 sm:text-dark-gray text-sm sm:text-[16px] pb-0 pt-2">
                   {data.para}
                 </p>
               </div>

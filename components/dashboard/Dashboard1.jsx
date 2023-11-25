@@ -38,7 +38,7 @@ const Dashboard1 = () => {
             </div>
           </div>
         </div>
-        <div className="relative md:pl-16">
+        <div className="relative">
           <Image
             height={150}
             width={150}

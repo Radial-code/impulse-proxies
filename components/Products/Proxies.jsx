@@ -20,7 +20,7 @@ const Proxies = () => {
     <>
       <div className=" relative">
         <Header />
-        <div className="bg-[#040426] relative pb-36">
+        <div className="bg-[#040426] relative pb-[52px] sm:pb-36 overflow-hidden">
           <div className="custom_container mx-auto px-4 relative z-10">
             <div className="sm:pt-16 pt-10">
               <div className="max-w-[600px] overflow-x-auto mx-auto bg-[#0C1C37] rounded-2xl border-2 border-[#2E8587] border-solid flex justify-between items-center ">

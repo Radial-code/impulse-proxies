@@ -24,14 +24,14 @@ const Header = () => {
         add
         setActiveNavOverlay={setActiveNavOverlay}
       />
-      <nav className="bg-[#040426] xl:py-[38px] lg:py-4 border-b-[1px] border-[#222F4A] flex-grow-0">
-        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4">
+      <nav className="bg-[#040426] relative z-[100] xl:py-[38px] lg:py-4 border-b-[1px] border-[#222F4A] flex-grow-0">
+        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-6">
           <div className="flex-1 flex items-center justify-between lg:items-center lg:p-0 py-4 xl:mr-3">
             <div className="flex-1 flex items-center lg:justify-between justify-center">
               <div className="flex-shrink-0 flex items-center justify-between relative z-[200]">
                 <Link
                   href="/"
-                  className="text-white text-xl lg:ms-0 ms-12 font-semibold flex items-center "
+                  className="text-white text-xl lg:ms-0 ms-[81px] font-semibold flex items-center "
                   aria-label="scroll to home page"
                 >
                   <Image
@@ -92,9 +92,7 @@ const Header = () => {
               <button
                 onClick={() => setActiveNavOverlay(!activeNavOverlay)}
                 type="button"
-                className={` inline-flex items-center justify-center rounded-md ${
-                  !isToggleIconVisible ? "w-[30px]" : "w-[46px]"
-                } `}
+                className="inline-flex items-center justify-center rounded-md w-[33px]"
                 aria-label="toggle-button"
               >
                 {isToggleIconVisible ? <HeaderCrossIcons /> : <ToggleIcon />}
