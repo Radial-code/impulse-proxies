@@ -12,6 +12,17 @@ const Dashboard1 = () => {
   const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
   const [selectedProvider, setSelectedProvider] = useState("Residential");
   const [rangeValue, setRangeValue] = useState(1);
+
+  const [proxyData, setProxyData] = useState({
+    region : "USA",
+    loadBalancer : "United States",
+    rotationFrequency : "5 minutes",
+    continent : "Africa",
+    country : "Algeria",
+    proxyType : "Residential",
+    proxies : 1,
+  });
+    
   const togglePeriodDropdown = () => {
     setIsPeriodDropdownOpen(!isPeriodDropdownOpen);
   };
@@ -28,6 +39,14 @@ const Dashboard1 = () => {
     setRangeValue(value);
   }, []);
   console.log(rangeValue, "rangeValue");
+
+  const onProxyDataChange = (key, value) => {
+    setProxyData((prevData) => ({
+      ...prevData,
+      [key]: value || ""
+    }))
+  }
+
   return (
     <>
       <div className="relative">
@@ -70,7 +89,7 @@ const Dashboard1 = () => {
                       GENERATE PROXIES
                     </p>
                   </div>
-                  <CommonDashboardDropdown />
+                  <CommonDashboardDropdown proxyData={proxyData} onProxyDataChange={onProxyDataChange}/>
                   <div className="pt-5 pb-6 ps-8 pe-12">
                     <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
                       Proxy Type
@@ -144,7 +163,7 @@ const Dashboard1 = () => {
               </div>
 
               <div className="w-full lg:w-[702px] 2xl:w-[642px] lg:pt-0 sm:pt-10 pt-5">
-                <YourOrderOne />
+                <YourOrderOne type={"proxyList"} />
                 <div className="rounded-lg overflow-hidden lg:mt-12 mt-8 lg:hidden sm:block hidden  GENERATE_PROXIES_box">
                   <div className="bg-[#212148] ps-8 py-4">
                     <p className="mb-0 text-white text-md font-Montserrat font-bold tracking-[1.4px]">

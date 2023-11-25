@@ -2,10 +2,7 @@ import React, { useEffect, useState } from "react";
 import Dialog from "@mui/material/Dialog";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
-import {
-  EmbeddedCheckoutProvider,
-  EmbeddedCheckout,
-} from "@stripe/react-stripe-js";
+import { EmbeddedCheckoutProvider,EmbeddedCheckout} from "@stripe/react-stripe-js";
 import { subscriptionService } from "./services";
 import { CircularProgress } from "@mui/material";
 
@@ -20,6 +17,7 @@ function PaymentDialog({ open, handleOpen, payload, stripePromise }) {
         .createCheckoutSession(payload)
         .then((response) => {
           if (response.data.status == 200) {
+            console.log(response.data.status);
             setClientSecret((prev) => response.data.clientSecret);
           } else {
             setClientSecret("");

@@ -1,11 +1,11 @@
 import { privateApi, publicApi } from "../apiService";
-const PATH = '/order';
+const PATH = '/channel';
 
 // Get order list
-const getOrderList = () => {
+const getChannelData = () => {
     return new Promise((resolve, reject) => {
         try {
-            privateApi.get(`${PATH}/list`).then((data) => {
+            privateApi.get(`${PATH}/checkData`).then((data) => {
                 resolve(data)
             }).catch((e) => {
                 reject(e);
@@ -16,7 +16,6 @@ const getOrderList = () => {
     })
 }
 
-
-export const orderService = {
-    getOrderList,
+export const channelService = {
+    getChannelData,
 }

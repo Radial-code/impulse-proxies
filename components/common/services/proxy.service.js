@@ -1,8 +1,8 @@
 import { privateApi, publicApi } from "../apiService";
-const PATH = '/order';
+const PATH = '/proxy';
 
-// Get order list
-const getOrderList = () => {
+// Get Proxy list
+const getProxyList = () => {
     return new Promise((resolve, reject) => {
         try {
             privateApi.get(`${PATH}/list`).then((data) => {
@@ -16,7 +16,6 @@ const getOrderList = () => {
     })
 }
 
-
-export const orderService = {
-    getOrderList,
+export const proxyService = {
+    getProxyList,
 }

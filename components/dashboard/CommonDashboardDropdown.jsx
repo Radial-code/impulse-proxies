@@ -2,7 +2,8 @@ import Image from "next/image";
 import React, { useState } from "react";
 import SelectCountries from "../common/SelectCountries";
 
-const CommonDashboardDropdown = () => {
+const CommonDashboardDropdown = ({proxyData, onProxyDataChange}) => {
+
   // I
   const [isRegionDropdownOpen, setIsRegionDropdownOpen] = useState(false);
   const [selectedRegion, setSelectedRegion] = useState("United States");
@@ -45,6 +46,17 @@ const CommonDashboardDropdown = () => {
     }
     setDropdownState(!dropdownState);
   };
+
+  const onContinentChange = (data) => {
+    onProxyDataChange('continent', data)
+    console.log(data, "continent")
+  }
+
+  const onCountryChange = (data) => {
+    onProxyDataChange('country', data)
+    console.log(data, "country")
+  }
+  
   return (
     <>
       <div className="py-5 ps-8 pe-12">
@@ -67,7 +79,7 @@ const CommonDashboardDropdown = () => {
                   isRegionDropdownOpen ? "text-[#fff]" : ""
                 }`}
               >
-                {selectedRegion}
+                {proxyData?.region}
               </p>
               <Image
                 src="/assets/images/webp/Polygon.webp"
@@ -129,7 +141,7 @@ const CommonDashboardDropdown = () => {
                   isLoadBalancerDropdownOpen ? "text-[#fff]" : ""
                 }`}
               >
-                {selectedLoadBalancer}
+               {proxyData?.loadBalancer}
               </p>
               <Image
                 src="/assets/images/webp/Polygon.webp"
@@ -404,7 +416,7 @@ const CommonDashboardDropdown = () => {
           Continent
           {/* & Countries */}
         </p>
-        <SelectCountries />
+        <SelectCountries selectedContinent={proxyData?.continent} onContinentChange={onContinentChange} selectedCountry={proxyData?.country} onCountryChange={onCountryChange} />
         {/* ========== */}
 
         {/* V ROTATION MENU */}
@@ -426,7 +438,7 @@ const CommonDashboardDropdown = () => {
                   isRotationDropdownOpen ? "text-[#fff]" : ""
                 }`}
               >
-                {selectedRotation}
+                  {proxyData?.rotationFrequency}
               </p>
               <Image
                 src="/assets/images/webp/Polygon.webp"

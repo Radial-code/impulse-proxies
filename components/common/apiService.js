@@ -1,4 +1,5 @@
 import axios from "axios";
+import { getSession } from "next-auth/react";
 
 // Private tockanized API call
 const privateApi = axios.create({
@@ -6,10 +7,10 @@ const privateApi = axios.create({
 })
 
 privateApi.interceptors.request.use(
-    (config) => {
-        const data = JSON.parse(localStorage.getItem('impulseUser')); // Assuming you store the token in localStorage
-        if(data && data.token) {
-            config.headers.Authorization = `Bearer ${data.token}`
+    async (config) => {
+        const session = await getSession();
+        if(session && session?.user?.token) {
+            config.headers.Authorization = `Bearer ${session?.user?.token}`
         }
         return config
     },
