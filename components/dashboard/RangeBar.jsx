@@ -37,8 +37,8 @@ const RangeBar = () => {
             YOUR REWARDS TRACKER
           </p>
         </div>
-        <div className="rang_bar rounded-b-[16px] px-4 md:px-6 sm:pt-7 pt-6 sm:pb-8 pb-4 mt-[-2px]">
-          <p className="lg:-mb-4 text-sm font-Montserrat font-bold text-white md:max-w-[330px] leading-normal tracking-[1.2px] text-center lg:text-end">
+        <div className="rang_bar rounded-b-[16px] px-4 md:px-6 sm:pt-7 pt-6 lg:pb-[73px] sm:pb-[33px] pb-5 mt-[-2px]">
+          <p className="lg:-mb-4 text-sm font-Montserrat font-bold text-white leading-normal tracking-[1.2px] text-centerbg-[#212148] px-4 lg:px-9 relative text-center">
             3 GB TO GO!
           </p>
 

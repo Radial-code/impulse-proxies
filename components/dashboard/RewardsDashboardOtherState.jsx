@@ -36,8 +36,8 @@ const RewardsDashboardOtherState = () => {
               {!rewardData.length > 0 ? (
                 <>
                   <div className="w-full lg:w-6/12 px-3">
-                    <div className="bg-[#212148] flex items-center justify-between h-14 rounded-t-[16px] px-4 lg:px-9 relative">
-                      <p className=" text-sm font-Montserrat trackiing-[1.2px] leading-normal font-bold text-white">
+                    <div className="bg-[#212148] flex items-center justify-between py-[22px] rounded-t-[16px] px-4 lg:px-9 relative">
+                      <p className=" text-sm font-Montserrat tracking-[1.2px] leading-normal font-bold text-white">
                         EARNED REWARDS
                       </p>
                       <button className="text-[#040426] w-[119px] h-[31px] leading-normal tracking-[-0.28px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold text-[14px] rounded-[10px]">
@@ -60,7 +60,7 @@ const RewardsDashboardOtherState = () => {
                     <p className="bg-[#212148] rounded-t-[16px] h-14 leading-normal tracking-[1.2px] px-9 text-sm font-Montserrat font-bold text-white flex items-center">
                       REFER A FRIEND
                     </p>
-                    <div className="rang_bar px-4 lg:px-9 lg:pt-[10px] pt-6 sm:pb-[47px] pb-4 rounded-b-[16px]">
+                    <div className="rang_bar px-4 lg:px-9 lg:pt-[23px] pt-6 sm:pb-[47px] pb-4 rounded-b-[16px]">
                       <div className="bg-[#292956] h-[46px] rounded-[10px] flex justify-between items-center px-[18px]">
                         <div className=" flex">
                           <p className=" text-[#7777AD] font-Montserrat tracking-[-0.28px] leading-normal text-md font-semibold">
