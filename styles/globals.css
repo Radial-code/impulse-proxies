@@ -354,11 +354,11 @@ body {
     bottom: -317px !important;
   }
 }
-@media (max-width: 640px) {
+
   .faq-main-div {
-    background-position: center 100px;
+    background-size: 100% 100%;
   }
-}
+
 .range-input-first,
 .range-input-second,
 .range-input {
@@ -474,8 +474,21 @@ body {
     #393969 182.89%
   ) !important;
 }
-.bg_faq_blur{
+.bg_faq_blur {
   /* background: linear-gradient(180deg, #50EED7 0%, #7BECF3 100%); */
-  background: radial-gradient(41.85% 211.48% at 47.38% 79.56%, #50EED7 0%, rgba(80, 238, 215, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-
+  background: radial-gradient(
+      41.85% 211.48% at 47.38% 79.56%,
+      #50eed7 0%,
+      rgba(80, 238, 215, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+.gradient_border::after {
+  background: radial-gradient(
+      75.71% 138.68% at 71.81% 24.29%,
+      rgba(46, 166, 148, 0.5) 0%,
+      rgba(34, 237, 207, 0) 100%
+    );
+    z-index: -1;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }

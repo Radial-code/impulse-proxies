@@ -88,73 +88,75 @@ const ISPDashboard = () => {
                 <IspProxies />
               </div>
             </div>
-            <div className="bg-[#191941] overflow-hidden flex flex-col your_order relative rounded-lg lg:p-8 p-6 lg:mt-12 mt-8">
-              <div className="flex md:items-center justify-between">
-                <div className="flex md:flex-row flex-col">
-                  <p className="text-white font-Montserrat sm:text-md text-[12px] font-bold tracking-[1.4px]">
-                    YOUR ORDER
-                  </p>
-                  <p className="text-[#505082] font-Montserrat text-md font-bold md:mt-0 mt-4 tracking-[1.4px] md:ms-4">
-                    #48848191
-                  </p>
-                  <p className="text-[#505082] font-Montserrat sm:text-md text-[12px] font-bold md:mt-0 mt-4 md:hidden block tracking-[1.4px]">
-                    500 PROXIES
-                  </p>
+            <div className="after:absolute after:inset-0 after:rounded-lg gradient_border relative p-[1px] lg:mt-12 mt-8">
+              <div className="bg-[#191941] overflow-hidden flex flex-col your_order relative rounded-lg lg:p-8 p-6">
+                <div className="flex md:items-center justify-between">
+                  <div className="flex md:flex-row flex-col">
+                    <p className="text-white font-Montserrat sm:text-md text-[12px] font-bold tracking-[1.4px]">
+                      YOUR ORDER
+                    </p>
+                    <p className="text-[#505082] font-Montserrat text-md font-bold md:mt-0 mt-4 tracking-[1.4px] md:ms-4">
+                      #48848191
+                    </p>
+                    <p className="text-[#505082] font-Montserrat sm:text-md text-[12px] font-bold md:mt-0 mt-4 md:hidden block tracking-[1.4px]">
+                      500 PROXIES
+                    </p>
+                  </div>
+                  <div className="flex sm:items-center md:flex-row flex-col-reverse pb-4">
+                    <p className="text-[#505082] font-Montserrat text-md font-bold tracking-[1.4px] ms-4 md:block hidden">
+                      500 PROXIES
+                    </p>
+                    <button className="md:px-[15px] px-[22px] py-[11px] bg-[#292956] rounded-md text-[#7777AD] font-Montserrat font-semibold sm:text-md text-[12px] tracking-[-0.28px] sm:mx-6 md:mt-0 mt-4 hover:bg-[#4FDCC7] hover:text-[#040426] ease-out duration-150 transition-all">
+                      Download .txt
+                    </button>
+                    <button
+                      onClick={copyText}
+                      className="px-[14px] py-[11px] font-Montserrat bg-white font-bold tracking-[-0.28px] hover:bg-[#4FDCC7] text-[#040426] rounded-md ease-out md:text-[14px] text-[12px]  duration-150 transition-all"
+                    >
+                      Copy to Clipboard
+                    </button>
+                  </div>
                 </div>
-                <div className="flex sm:items-center md:flex-row flex-col-reverse pb-4">
-                  <p className="text-[#505082] font-Montserrat text-md font-bold tracking-[1.4px] ms-4 md:block hidden">
-                    500 PROXIES
-                  </p>
-                  <button className="md:px-[15px] px-[22px] py-[11px] bg-[#292956] rounded-md text-[#7777AD] font-Montserrat font-semibold sm:text-md text-[12px] tracking-[-0.28px] sm:mx-6 md:mt-0 mt-4 hover:bg-[#4FDCC7] hover:text-[#040426] ease-out duration-150 transition-all">
-                    Download .txt
-                  </button>
-                  <button
-                    onClick={copyText}
-                    className="px-[14px] py-[11px] font-Montserrat bg-white font-bold tracking-[-0.28px] hover:bg-[#4FDCC7] text-[#040426] rounded-md ease-out md:text-[14px] text-[12px]  duration-150 transition-all"
-                  >
-                    Copy to Clipboard
-                  </button>
-                </div>
-              </div>
-              <div className="flex flex-wrap pt-5 flex-col items-center lg:h-[305px] custom_scrollbar_y_2 lg:overflow-scroll xl:overflow-hidden">
-                <div
-                  className="flex justify-center 
-                max-h-[230px] overflow-y-auto custom_scrollbar_y"
-                >
+                <div className="flex flex-wrap pt-5 flex-col items-center lg:h-[305px] custom_scrollbar_y_2 lg:overflow-scroll xl:overflow-hidden">
                   <div
-                    id="textToCopy"
-                    className="your_order font-Montserrat xl:text-[15px] text-[12px] font-medium leading-normal text-[#9D9DBB] xl:leading-[160%] 2xl:leading-[170%]"
+                    className="flex justify-center
+                  max-h-[230px] overflow-y-auto custom_scrollbar_y"
                   >
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-                    83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                    <div
+                      id="textToCopy"
+                      className="your_order font-Montserrat xl:text-[15px] text-[12px] font-medium leading-normal text-[#9D9DBB] xl:leading-[160%] 2xl:leading-[170%]"
+                    >
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                      83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
+                    </div>
                   </div>
                 </div>
               </div>
