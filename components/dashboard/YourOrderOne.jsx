@@ -31,19 +31,22 @@ const YourOrderOne = (props) => {
 
   useEffect(() => {
     if(props.type == "proxyList"){
-      proxyService.getProxyList().then((response)=>{
-        if (response.data.status == 200) {
+      if(props.loader == false){
+        setLoader(true);
+        proxyService.getProxyList().then((response)=>{
+          if (response.data.status == 200) {
+            setLoader(false);
+            setProxyList((prev) => response.data.data);
+          }else{
+            console.log(response.data.message);
+          }
+        }).catch((e)=>{
           setLoader(false);
-          setProxyList((prev) => response.data.data);
-        }else{
-          console.log(response.data.message);
-        }
-      }).catch((e)=>{
-        setLoader(false);
-        console.log(e.message)
-      })
+          console.log(e.message)
+        })
+      }
     }
-  }, []);
+  }, [props.loader]);
 
   return (
     <>

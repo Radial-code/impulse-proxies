@@ -1,8 +1,6 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import StripePayment from "../common/StripePayment";
-import { loadStripe } from "@stripe/stripe-js";
-const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
 
 const ProxiesTabs = () => {
 
@@ -88,7 +86,7 @@ const ProxiesTabs = () => {
               activeTab === 3 ? "text-black" : ""
             }`}
           >
-            € {10 * 5}
+            € {15 * 5}
           </p>
         </div>
         <div className="w-full flex justify-end mt-6">
@@ -133,7 +131,7 @@ const ProxiesTabs = () => {
         </div>
       </div>
 
-      <StripePayment open={open} handleOpen={handleOpen} payload={topupPayload} stripePromise={stripePromise}/>
+      <StripePayment open={open} handleOpen={handleOpen} payload={topupPayload}/>
     </>
   );
 };

@@ -8,17 +8,23 @@ import {
 } from "@stripe/react-stripe-js";
 import { paymentService } from "./services";
 import { CircularProgress } from "@mui/material";
+import getStripePromise from './getStripePromise';
 
-function StripePayment({ open, handleOpen, payload, stripePromise }) {
+function StripePayment({ open, handleOpen, payload }) {
   const [loader, setLoader] = useState(true);
   const [clientSecret, setClientSecret] = useState("");
-
+  const [stripePromise, setStripePromise] = useState("");
   useEffect(() => {
     if (open) {
+      
+      getStripePromise().then((data)=>{
+        setStripePromise(data);
+      });
+      
       setLoader(true);
       paymentService.getSessionForTopUp(payload).then((response) => {
         if (response.data.status == 200) {
-          // setClientSecret((prev) => response.data.clientSecret);
+          setClientSecret((prev) => response.data.clientSecret);
         } else {
           setClientSecret("");
           console.log(response.data.message);
@@ -44,7 +50,7 @@ function StripePayment({ open, handleOpen, payload, stripePromise }) {
             onClick={handleOpen}
             aria-label="close"
           >
-            <CloseIcon />
+            <CloseIcon /> 
           </IconButton>
         </div>
         {loader ? (

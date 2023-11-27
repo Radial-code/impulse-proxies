@@ -1,24 +1,38 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { channelService } from "../common/services";
-// import RadialBar from "../RadialBar";
+import RadialBar from "../RadialBar";
 
 const DataUsagesOne = () => {
-  const [channelData, setChannelData] = useState([]);
+  const [channelData, setChannelData] = useState({});
   const [loader, setLoader] = useState(true);
+  const [channel, setChannel] = useState(false);
+
   useEffect(() => {
+    getData();
+    // call APi at every 2 min
+    setInterval(()=>{
+      getData();
+    },2*60*1000)
+
+
+  }, []);
+
+  const getData = () =>{
     channelService.getChannelData().then((response)=>{
       if (response.data.status == 200) {
         setLoader(false);
+        setChannel(true)
         setChannelData((prev) => response.data.data);
       }else{
         console.log(response.data.message);
       }
     }).catch((e)=>{
       setLoader(false);
+      setChannel(false)
       console.log(e.message)
     })
-  }, []);
+  }
 
   return (
     <>
@@ -41,9 +55,9 @@ const DataUsagesOne = () => {
             </p>
           </div>
           <div className="flex items-center justify-center relative">
-            {/* <RadialBar remainingData ={channelData.remainingData}  percentageLabel ={channelData.percentageLabel}  /> */}
+            { channel && ( <RadialBar channelData={channelData} />)}
           </div>
-          <div className="flex items-center justify-center mt-4 relative">
+          {/* <div className="flex items-center justify-center mt-4 relative">
             <Image
               height={185}
               width={185}
@@ -58,7 +72,7 @@ const DataUsagesOne = () => {
                 GB LEFT
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

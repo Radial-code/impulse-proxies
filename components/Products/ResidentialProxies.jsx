@@ -3,7 +3,7 @@ import Image from "next/image";
 import ProductResidentialRangeBar from "./ProductResidentialRangeBar";
 import PaymentDialog from "../common/paymentDialog";
 
-const ResidentialProxies = ({stripePromise}) => {
+const ResidentialProxies = () => {
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
   const [selectedPeriod, setSelectedPeriod] = useState("USA");
   const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
@@ -40,7 +40,7 @@ const ResidentialProxies = ({stripePromise}) => {
   const checkout = () => {
     const payload = {
       plan: "Residential plan",
-      priceId: "price_1OFb9BSIHU7KBEQmeYSy2uFc",
+      priceId: process.env.NEXT_PUBLIC_STRIPE_RESIDENTIAL_PLAN,
       planData : {
         "period": "Monthly",
         "gb": amount
@@ -206,7 +206,7 @@ const ResidentialProxies = ({stripePromise}) => {
           />
         </div>
       </div>
-      <PaymentDialog open={open} handleOpen={handleOpen} stripePromise={stripePromise} payload={subscriptionPayload}/>
+      <PaymentDialog open={open} handleOpen={handleOpen}  payload={subscriptionPayload}/>
     </>
   );
 };
