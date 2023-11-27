@@ -3,8 +3,12 @@ import MobileNav from "./MobileNav";
 import Link from "next/link";
 import { HeaderCrossIcons, ToggleIcon } from "./common/Icons";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useSession } from 'next-auth/react'
 
 const Header = () => {
+  const { data: session } = useSession()
+  const router = useRouter();
   const [activeNavOverlay, setActiveNavOverlay] = useState(false);
   const [isToggleIconVisible, setIsToggleIconVisible] = useState(true);
   useEffect(() => {
@@ -16,6 +20,15 @@ const Header = () => {
       setIsToggleIconVisible(true);
     }
   }, [activeNavOverlay]);
+
+  const onDashboard = async () => {
+    if (session) {
+      router.push("/dashboard-data-usage?type=residential");
+    } else {
+      //Discord authentication url
+      router.push(process.env.NEXT_PUBLIC_DISCORD_AUTH_URL);
+    }
+  }
 
   return (
     <>
@@ -78,13 +91,13 @@ const Header = () => {
                 </div>
               </div>
               <div className="hidden lg:flex items-center">
-                <Link
+                <button
                   aria-label="dashboard"
-                  href="/dashboard-data-usage?type=residential"
+                  onClick={onDashboard}
                   className="text-white font-Montserrat w-[197px] text-2xl font-semibold border-cyan-green border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px]"
                 >
                   Dashboard
-                </Link>
+                </button>
               </div>
             </div>
             <div className="flex items-center lg:hidden relative z-[200] sm:me-0 ">
@@ -92,9 +105,8 @@ const Header = () => {
               <button
                 onClick={() => setActiveNavOverlay(!activeNavOverlay)}
                 type="button"
-                className={` inline-flex items-center justify-center rounded-md ${
-                  !isToggleIconVisible ? "w-[30px]" : "w-[46px]"
-                } `}
+                className={` inline-flex items-center justify-center rounded-md ${!isToggleIconVisible ? "w-[30px]" : "w-[46px]"
+                  } `}
                 aria-label="toggle-button"
               >
                 {isToggleIconVisible ? <HeaderCrossIcons /> : <ToggleIcon />}

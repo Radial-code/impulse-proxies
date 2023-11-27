@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { useGlobalInfoProvider } from "../common/Provider";
 
-const DashboardRangeBar = ({ identifier }) => {
+const DashboardRangeBar = ({ identifier, onProxyDataChange}) => {
   const { amountValue, setAmountValue } = useGlobalInfoProvider();
-  console.log(amountValue, "amountValue");
+  // console.log(amountValue, "amountValue");
   const handleChange = (e) => {
     const newValue = e.target.value;
     setAmountValue(newValue);
     updateRangeStyle(newValue);
   };
   const updateRangeStyle = (newValue) => {
-    const percentage = (newValue / 50000) * 100;
+    const percentage = (newValue / 50) * 100;
     const rangeInput = document.querySelector(`.range-input-${identifier}`);
 
     if (rangeInput) {
@@ -27,8 +27,8 @@ const DashboardRangeBar = ({ identifier }) => {
   const handleNumberChange = (e) => {
     let newValue = parseInt(e.target.value, 10);
     console.log(newValue, e.target.value, "newValuenewValuenewValue");
-    // Ensure newValue is within the range [1, 50000]
-    newValue = Math.min(Math.max(1, newValue), 50000);
+    // Ensure newValue is within the range [1, 50]
+    newValue = Math.min(Math.max(1, newValue), 50);
     setAmountValue(newValue);
     updateRangeStyle(newValue);
 
@@ -41,13 +41,13 @@ const DashboardRangeBar = ({ identifier }) => {
 
   const handleRangeChange = (e) => {
     const newValue = parseInt(e.target.value, 10);
-    console.log(newValue, e.target.value, "newValuenewValuenewValue");
     setAmountValue(newValue);
     updateRangeStyle(newValue);
+    onProxyDataChange('proxies', newValue)
   };
 
   const progressStyle = {
-    width: `${(amountValue / 50000) * 100}%`, // Update the max value to 50000
+    width: `${(amountValue / 50) * 100}%`, // Update the max value to 50
   };
 
   return (
@@ -62,15 +62,15 @@ const DashboardRangeBar = ({ identifier }) => {
                 className="relative justify-center items-center hidden h-[20px] w-full mx-auto rounded"
                 style={{
                   width: `calc(${
-                    (Math.min(amountValue, 50000) / 50000) * 100
-                  }% - 4px)`, // Update the max value to 50000
+                    (Math.min(amountValue, 50) / 50) * 100
+                  }% - 4px)`, // Update the max value to 50
                   display: `${amountValue < 2 ? `none` : ``}`,
                 }}
               ></div>
               <input
                 type="range"
                 min="1" // Update the min value to 1
-                max="50000" // Update the max value to 50000
+                max="50" // Update the max value to 50
                 value={amountValue}
                 onChange={handleRangeChange}
                 // className="custom-range w-full range-input"

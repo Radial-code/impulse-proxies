@@ -4,7 +4,7 @@ import ProductsRangbar from "./ProductsRangbar";
 import ProviderDropdown from "../common/ProviderDropdown";
 import PaymentDialog from "../common/paymentDialog";
 
-const ProxiesISP = ({stripePromise}) => {
+const ProxiesISP = () => {
   const toggleProviderDropdown = () => {
     setIsProviderDropdownOpen(!isProviderDropdownOpen);
   };
@@ -38,7 +38,7 @@ const ProxiesISP = ({stripePromise}) => {
   const checkout = () => {
     const payload = {
       plan: "ISP",
-      priceId: "price_1NssrcID86MwDmPQLMI3j6CF",
+      priceId: process.env.NEXT_PUBLIC_STRIPE_ISP_PLAN,
       planData: {
         provider,
         region,
@@ -49,6 +49,7 @@ const ProxiesISP = ({stripePromise}) => {
     setSubscriptionPayload(payload);
     handleOpen();
   }
+
 
   return (
     <>
@@ -157,7 +158,7 @@ const ProxiesISP = ({stripePromise}) => {
           />
         </div>
       </div>
-      <PaymentDialog open={open} handleOpen={handleOpen} stripePromise={stripePromise} payload={subscriptionPayload}/>
+      <PaymentDialog open={open} handleOpen={handleOpen}  payload={subscriptionPayload}/>
     </>
   );
 };

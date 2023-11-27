@@ -470,3 +470,9 @@ body {
     #393969 182.89%
   ) !important;
 }
+
+.apexcharts-datalabels-group > apexcharts-datalabel-label {
+  font-size: 30px !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  color: #FFF !important;
+}

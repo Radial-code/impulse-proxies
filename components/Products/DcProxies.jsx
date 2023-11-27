@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import ProductsRangbar from "./ProductsRangbar";
 import PaymentDialog from "../common/paymentDialog";
-const DcProxies = ({stripePromise}) => {
+const DcProxies = () => {
   const [isRegionDropdownOpen, setIsRegionDropdownOpen] = useState(false);
   const [selectedRegion, setSelectedRegion] = useState("Germany");
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
@@ -42,7 +42,7 @@ const DcProxies = ({stripePromise}) => {
   const checkout = () => {
     const payload = {
       plan: "DC",
-      priceId: "price_1OBHwASIHU7KBEQmL97ljvkv",
+      priceId: process.env.NEXT_PUBLIC_STRIPE_DC_PLAN,
       planData: {
         region: selectedRegion,
         period: selectedPeriod,
@@ -52,6 +52,7 @@ const DcProxies = ({stripePromise}) => {
     setSubscriptionPayload(payload);
     handleOpen();
   }
+
 
   return (
     <>
@@ -209,7 +210,7 @@ const DcProxies = ({stripePromise}) => {
           />
         </div>
       </div>
-      <PaymentDialog open={open} handleOpen={handleOpen} stripePromise={stripePromise} payload={subscriptionPayload}/>
+      <PaymentDialog open={open} handleOpen={handleOpen}  payload={subscriptionPayload}/>
     </>
   );
 };

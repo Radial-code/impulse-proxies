@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { signOut, useSession } from 'next-auth/react'
 import {
   DashboardTweeter,
   HeaderCrossIcons,
@@ -13,6 +14,7 @@ import DashboardDropDown from "./DashboardDropDown";
 const DashboardNav = () => {
   const [activeNavOverlay, setActiveNavOverlay] = useState(false);
   const [isToggleIconVisible, setIsToggleIconVisible] = useState(true);
+  const { data: session } = useSession()
   useEffect(() => {
     if (activeNavOverlay) {
       document.body.classList.add("overflow-y-hidden");
@@ -162,7 +164,16 @@ const DashboardNav = () => {
                 </button>
               </div>
               <div className="bg-[#202046] h-[65px] w-[65px] rounded-[10px] flex items-center justify-center ms-4">
-                <div className="rounded-full bg-white h-[37px] w-[37px]"></div>
+                {session?.user?.data?.avatar ?
+                <Image
+                  className="rounded-full "
+                  loading="lazy"
+                  height={37}
+                  width={37}
+                  src={session?.user?.data?.avatar}
+                  alt="avatar"
+                />
+                : <div className="rounded-full bg-white h-[37px] w-[37px] ms-7"></div>}
               </div>
             </div>
           </div>

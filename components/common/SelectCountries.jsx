@@ -1,6 +1,11 @@
 import Image from "next/image";
-import { useEffect, useState } from "react";
-const SelectCountries = () => {
+
+const SelectCountries = ({
+  selectedContinent = "Africa",
+  onContinentChange,
+  selectedCountry = "Algeria",
+  onCountryChange,
+}) => {
   const arry = [
     {
       title: "Africa",
@@ -235,14 +240,6 @@ const SelectCountries = () => {
       ],
     },
   ];
-  const [selectedRegion, setSelectedRegion] = useState("Africa");
-  const handleRegionChange = (event) => {
-    setSelectedRegion(event.target.value);
-  };
-
-  const handleCountryChange = (event) => {
-    setSelectedCountry(event.target.value);
-  };
 
   return (
     <div>
@@ -251,7 +248,8 @@ const SelectCountries = () => {
           className="w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3  focus-visible:outline-none appearance-none"
           name=""
           id=""
-          onChange={handleRegionChange}
+          value={selectedContinent}
+          onChange={(event) => onContinentChange(event.target.value)}
         >
           {/* <option value="">Select Region</option> */}
           {arry.map((obj, index) => (
@@ -276,17 +274,21 @@ const SelectCountries = () => {
       </div>
 
       {/* SELECTED REGION COUNTRIES */}
-      {selectedRegion && (
+      {selectedContinent && (
         <div>
           <h2 className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
-            {/* {selectedRegion} */}
+            {/* {selectedContinent} */}
             Countries
           </h2>
 
           <div className="relative">
-            <select className="w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3  focus-visible:outline-none appearance-none">
+            <select
+              className="w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3  focus-visible:outline-none appearance-none"
+              value={selectedCountry}
+              onChange={(event) => onCountryChange(event.target.value)}
+            >
               {arry
-                .find((obj) => obj.title === selectedRegion)
+                .find((obj) => obj.title === selectedContinent)
                 .country.map((country, index) => (
                   <option
                     className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-1 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"

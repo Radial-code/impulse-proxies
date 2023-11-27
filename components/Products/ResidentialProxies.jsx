@@ -3,7 +3,7 @@ import Image from "next/image";
 import ProductResidentialRangeBar from "./ProductResidentialRangeBar";
 import PaymentDialog from "../common/paymentDialog";
 
-const ResidentialProxies = ({stripePromise}) => {
+const ResidentialProxies = () => {
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
   const [selectedPeriod, setSelectedPeriod] = useState("USA");
   const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
@@ -39,11 +39,12 @@ const ResidentialProxies = ({stripePromise}) => {
 
   const checkout = () => {
     const payload = {
-      plan: "Residential",
-      priceId: "price_1ODRjpID86MwDmPQFqAKzArJ",
-      planData: {
-        amount
-      }
+      plan: "Residential plan",
+      priceId: process.env.NEXT_PUBLIC_STRIPE_RESIDENTIAL_PLAN,
+      planData : {
+        "period": "Monthly",
+        "gb": amount
+     }
     }
     setSubscriptionPayload(payload);
     handleOpen();
@@ -179,7 +180,7 @@ const ResidentialProxies = ({stripePromise}) => {
                 Total Due
               </p>
               <p className="sm:pt-3 pt-2 text-white font-Montserrat font-medium text-[22px]">
-                $13.92
+              € {amount * 5}
                 <span className="text-[13px] font-normal">/month</span>
               </p>
             </div>
@@ -205,7 +206,7 @@ const ResidentialProxies = ({stripePromise}) => {
           />
         </div>
       </div>
-      <PaymentDialog open={open} handleOpen={handleOpen} stripePromise={stripePromise} payload={subscriptionPayload}/>
+      <PaymentDialog open={open} handleOpen={handleOpen}  payload={subscriptionPayload}/>
     </>
   );
 };

@@ -1,11 +1,27 @@
 import Link from "next/link";
 import React, { useState } from "react";
+import StripePayment from "../common/StripePayment";
 
 const ProxiesTabs = () => {
+
+  let [topupPayload, setTopupPayload] = useState({});
   const [activeTab, setActiveTab] = useState(1);
-  const handleTabClick = (tabNumber) => {
+  const [gb, setGB] = useState(5);
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(!open);
+  const handleTabClick = (tabNumber,gb) => {
     setActiveTab(tabNumber);
+    setGB(gb)
   };
+
+  const checkout = () => {
+    const topupPayload = {
+      "gb": gb 
+     } 
+
+     setTopupPayload(topupPayload);
+     handleOpen();
+  }
 
   return (
     <>
@@ -14,7 +30,7 @@ const ProxiesTabs = () => {
           className={`${
             activeTab === 1 ? "bg-white " : ""
           } rounded-lg w-full cursor-pointer ps-6 py-2 flex bg-[#7BF3E1] mb-3 items-center transition-all ease-in-out duration-150`}
-          onClick={() => handleTabClick(1)}
+          onClick={() => handleTabClick(1,1)}
         >
           <p
             className={` font-Montserrat transition-all ease-in-out duration-150 text-2xl leading-normal font-bold text-[#268375] mb-0 group-hover:text-black active:group-hover:text-black ${
@@ -28,49 +44,49 @@ const ProxiesTabs = () => {
               activeTab === 1 ? "text-black" : ""
             }`}
           >
-            $9.99
+            € {1 * 5}
           </p>
         </div>
         <div
           className={`${
             activeTab === 2 ? "bg-white " : ""
           } rounded-lg w-full cursor-pointer bg-[#7BF3E1] my-3 ps-6 py-2 flex items-center transition-all ease-in-out duration-150`}
-          onClick={() => handleTabClick(2)}
+          onClick={() => handleTabClick(2,10)}
         >
           <p
             className={` font-Montserrat transition-all ease-in-out duration-150 text-2xl leading-normal font-bold text-[#268375] mb-0 group-hover:text-black active:group-hover:text-black ${
               activeTab === 2 ? "text-black" : ""
             }`}
           >
-            1 GB
+            10 GB
           </p>
           <p
             className={`text-[#35A091] transition-all ease-in-out duration-150 font-Montserrat leading-normal text-sm font-semibold ms-3 mb-0 group-hover:text-[#7F7F86] ${
               activeTab === 2 ? "text-black" : ""
             }`}
           >
-            $9.99
+            € {10 * 5}
           </p>
         </div>
         <div
           className={`${
             activeTab === 3 ? "bg-white" : ""
           } rounded-lg w-full cursor-pointer ps-6 py-2 bg-[#7BF3E1] mt-3 flex items-center transition-all ease-in-out duration-150`}
-          onClick={() => handleTabClick(3)}
+          onClick={() => handleTabClick(3,15)}
         >
           <p
             className={` font-Montserrat transition-all ease-in-out duration-150 text-2xl leading-normal font-bold text-[#268375] mb-0 group-hover:text-black active:group-hover:text-black ${
               activeTab === 3 ? "text-black" : ""
             }`}
           >
-            1 GB
+            15 GB
           </p>
           <p
             className={`text-[#35A091] transition-all ease-in-out duration-150 font-Montserrat leading-normal text-sm font-semibold ms-3 mb-0 group-hover:text-[#7F7F86] ${
               activeTab === 3 ? "text-black" : ""
             }`}
           >
-            $9.99
+            € {15 * 5}
           </p>
         </div>
         <div className="w-full flex justify-end mt-6">
@@ -78,24 +94,23 @@ const ProxiesTabs = () => {
             href="#"
             aria-label="CONTINUE"
             className="text-[#050628] text-end group text-sm font-bold leading-normal tracking-[1.1px] font-Montserrat flex items-center mn-0"
+            onClick={checkout}
           >
-            CONTINUE
+            CONTINUE 
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="14"
               height="14"
               viewBox="0 0 14 14"
               fill="none"
-              className="ms-2 group-hover:translate-x-2 transition-all ease-in-out duration-150"
-            >
+              className="ms-2 group-hover:translate-x-2 transition-all ease-in-out duration-150" >
               <mask
                 id="mask0_856_772"
                 maskUnits="userSpaceOnUse"
                 x="0"
                 y="0"
                 width="14"
-                height="14"
-              >
+                height="14">
                 <rect
                   x="14"
                   y="14"
@@ -115,6 +130,8 @@ const ProxiesTabs = () => {
           </Link>
         </div>
       </div>
+
+      <StripePayment open={open} handleOpen={handleOpen} payload={topupPayload}/>
     </>
   );
 };
