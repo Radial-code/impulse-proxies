@@ -13,7 +13,7 @@ const ImpulseFooter = () => {
           <div className="flex justify-between flex-wrap sm:pb-7 md:pb-6 lg:pb-11 pb-2">
             <div className="md:w-4/12 sm:w-6/12 w-full">
               <Link href="/">
-                <div className="flex items-center lg:mb-4 mb-3">
+                <div className="flex justify-center sm:justify-start items-center lg:mb-4 mb-3">
                   <Image
                     loading="lazy"
                     height={67}

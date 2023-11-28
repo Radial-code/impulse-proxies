@@ -35,7 +35,7 @@ const RewardsDashboardOtherState = () => {
             <div className="flex flex-wrap mt-9 lg:mt-12">
               {!rewardData.length > 0 ? (
                 <>
-                  <div className="w-full lg:w-6/12 px-3">
+                  <div className="w-full lg:w-6/12 sm:px-3">
                     <div className="bg-[#212148] z-[9] flex items-center justify-between py-[13px] rounded-t-[16px] px-4 lg:px-9 relative">
                       <p className=" text-sm font-Montserrat tracking-[1.2px] leading-normal font-bold text-white">
                         EARNED REWARDS
@@ -56,7 +56,7 @@ const RewardsDashboardOtherState = () => {
                       </button>
                     </div>
                   </div>
-                  <div className="w-full lg:w-6/12 px-3 min-h-[244px] mt-9 lg:mt-0">
+                  <div className="w-full lg:w-6/12 sm:px-3 min-h-[244px] mt-9 lg:mt-0">
                     <p className="bg-[#212148] rounded-t-[16px] h-14 leading-normal tracking-[1.2px] px-9 text-sm font-Montserrat font-bold text-white flex items-center">
                       REFER A FRIEND
                     </p>

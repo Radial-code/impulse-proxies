@@ -27,7 +27,7 @@ const copyText = () => {
 };
 const ISPDashboard = () => {
   return (
-    <div className="relative overflow-hidden">
+     <div className="relative overflow-hidden">
       <div className="w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
         <div className="hero_wave">
           <div className="hero_wave_height">
@@ -316,6 +316,7 @@ const ISPDashboard = () => {
         src="/assets/images/webp/DashboardLine.webp"
       />
     </div>
+
   );
 };
 

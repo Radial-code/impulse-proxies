@@ -77,7 +77,7 @@ const ISPDashboardOtherState = () => {
                 <IspProxies />
               </div>
             </div>
-            <div className="after:absolute after:inset-0 after:rounded-lg gradient_border relative p-[1px] lg:mt-12 mt-8 mb-[84px]"></div>
+            <div className="after:absolute after:inset-0 after:rounded-lg gradient_border relative p-[1px] lg:mt-12 mt-8 mb-[64px]"></div>
             <div className="bg-[#191941] overflow-hidden flex flex-col your_order relative rounded-lg lg:p-8 p-6">
               <div className="flex md:items-center justify-between">
                 <div className="flex md:flex-row flex-col">
