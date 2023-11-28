@@ -47,68 +47,10 @@ const CommonDashboardDropdown = () => {
   };
   return (
     <>
-      <div className="py-5 ps-8 pe-12">
+      <div className="ps-8 pe-12">
         {/* I REGION MENU */}
-        <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
-          Region
-        </p>
-        <div className="w-full relative">
-          <div
-            className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3 ${
-              isRegionDropdownOpen ? "bg-[#212148]" : ""
-            }`}
-            onClick={() =>
-              toggleDropdown(isRegionDropdownOpen, setIsRegionDropdownOpen)
-            }
-          >
-            <div className="flex justify-between items-center">
-              <p
-                className={`font-Montserrat text-white text-[14px] font-medium mb-0 leading-normal ${
-                  isRegionDropdownOpen ? "text-[#fff]" : ""
-                }`}
-              >
-                {selectedRegion}
-              </p>
-              <Image
-                src="/assets/images/webp/Polygon.webp"
-                alt="down arrow icon"
-                height={13}
-                width={13}
-                loading="lazy"
-              />
-            </div>
-            {isRegionDropdownOpen && (
-              <div className="absolute start-0 z-10 bg-[#252550] border-white border-2 mt-4 w-full rounded-[10px] py-4">
-                <p
-                  className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-1 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
-                  onClick={() =>
-                    handleSelect(
-                      "USA",
-                      setIsRegionDropdownOpen,
-                      setSelectedRegion
-                    )
-                  }
-                >
-                  USA
-                </p>
-                <p
-                  className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-0 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
-                  onClick={() =>
-                    handleSelect(
-                      "Russia",
-                      setIsRegionDropdownOpen,
-                      setSelectedRegion
-                    )
-                  }
-                >
-                  Russia
-                </p>
-              </div>
-            )}
-          </div>
-        </div>
         {/* II LOAD BALANCER MENU */}
-        <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
+        <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-3">
           Load Balancer
         </p>
         <div className="w-full relative">

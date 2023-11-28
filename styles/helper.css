@@ -204,3 +204,8 @@
   background: -o-linear-gradient(337deg, #151536 35.26%, #393969 182.89%);
   background: linear-gradient(113deg, #151536 35.26%, #393969 182.89%);
 }
+@media (min-width:1024px) and (max-width:1236px) {
+  .custom_height{
+    height: 270px !important;
+  }
+}

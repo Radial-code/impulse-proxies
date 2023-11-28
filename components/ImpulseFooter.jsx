@@ -12,25 +12,28 @@ const ImpulseFooter = () => {
         <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-6 lg:pt-[51px] sm:pt-[26px] pt-6">
           <div className="flex justify-between flex-wrap sm:pb-7 md:pb-6 lg:pb-11 pb-2">
             <div className="md:w-4/12 sm:w-6/12 w-full">
-              <div className="flex items-center justify-center sm:justify-start lg:mb-4 mb-3">
-                <Image
-                  loading="lazy"
-                  height={67}
-                  width={67}
-                  src="/assets/images/svg/logo.svg"
-                  className="sm:w-[67px] sm:h-[67px] w-[47px] h-[47px]"
-                  alt="logoImg"
-                />
-                <div className="ms-4 text-left">
-                  <p className="mb-0 sm:text-3xl text-[16px] text-white font-bold lh_normal font-Montserrat tracking-[3.3px]">
-                    IMPULSE
-                  </p>
-                  <p className="sm:text-xl text-[12px] text-[#22EDCF] font-Montserrat font-medium lh_normal mb-0 tracking-[2.55px]">
-                    PROXIES
-                  </p>
+              <Link href="/">
+                <div className="flex items-center lg:mb-4 mb-3">
+                  <Image
+                    loading="lazy"
+                    height={67}
+                    width={67}
+                    src="/assets/images/svg/logo.svg"
+                    className="sm:w-[67px] sm:h-[67px] w-[47px] h-[47px]"
+                    alt="logoImg"
+                  />
+
+                  <div className="ms-4">
+                    <p className="mb-0 sm:text-3xl text-[16px] text-white font-bold lh_normal font-Montserrat tracking-[3.3px]">
+                      IMPULSE
+                    </p>
+                    <p className="sm:text-xl text-[12px] text-[#22EDCF] font-Montserrat font-medium lh_normal mb-0 tracking-[2.55px]">
+                      PROXIES
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <p className=" text-[#9898A3] text-md font-bold opacity-70 font-Montserrat lg:max-w-[338px] lg:leading-[192%]">
+              </Link>
+              <p className=" text-[#9898A3] text-md font-bold font-Montserrat lg:max-w-[338px] lg:leading-[192%]">
                 All product and company names are trademarks™ or registered
                 trademarks® of their respective holders. Their usage does not
                 imply any affiliation with or endorsement by their holders

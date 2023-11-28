@@ -12,7 +12,7 @@ const DashboardDataUsage = () => {
     <>
       <div className="relative">
         <DashboardNav />
-        <div className="md:pb-[64px] 2xl:pb-[99px]">
+        <div className="">
           {router.query.type === "residential" ? (
             <Dashboard1 />
           ) : router.query.type === "isp-datacenter" ? (

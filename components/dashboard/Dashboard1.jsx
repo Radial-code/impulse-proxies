@@ -59,66 +59,19 @@ const Dashboard1 = () => {
           <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
             <div className="flex flex-col lg:flex-row justify-between lg:pt-[52px] pt-[32px] gap-5 xl:gap-12">
               <div className="w-full">
-                <div className="flex flex-wrap justify-center md:justify-between pb-2">
+                <div className="flex flex-wrap justify-center md:justify-between pb-2 max-h-[295px]">
                   <DataUsagesOne />
                   <ResidentialBoxOne />
                 </div>
 
-                <div className="rounded-2xl overflow-hidden mt-12 lg:block hidden GENERATE_PROXIES_box pb-[52px]    ">
-                  <div className="  ps-8 py-5">
+                <div className="rounded-2xl overflow-hidden mt-12 lg:block hidden GENERATE_PROXIES_box pb-[52px] w-full">
+                  <div className="ps-8 py-[22px] genrateSpace">
                     <p className="mb-0 text-white text-md font-Montserrat leading-normal font-bold tracking-[1.4px]">
                       GENERATE PROXIES
                     </p>
                   </div>
                   <CommonDashboardDropdown />
-                  <div className="pt-5 pb-6 ps-8 pe-12">
-                    <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
-                      Proxy Type
-                    </p>
-                    <div className="w-full relative">
-                      <div
-                        className={`w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3 leading-normal ${
-                          isProviderDropdownOpen ? "bg-[#212148]" : ""
-                        }`}
-                        onClick={toggleProviderDropdown}
-                      >
-                        <div className="flex justify-between items-center">
-                          <p
-                            className={`text-white font-Montserrat font-normal text-[14px] mb-0 ${
-                              isProviderDropdownOpen ? "text-[#fff]" : ""
-                            }`}
-                          >
-                            {selectedProvider}
-                          </p>
-                          <Image
-                            src="/assets/images/webp/Polygon.webp"
-                            alt="down arrow icon"
-                            height={13}
-                            width={13}
-                            loading="lazy"
-                          />
-                        </div>
-                        {isProviderDropdownOpen && (
-                          <div className="absolute start-0 z-10 bg-[#252550] border-white border-2 mt-4 w-full rounded-[10px] py-4">
-                            <p
-                              className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-0 w-full border border-transparent text-start py-1 px-4 cursor-pointer hover:bg-[#4FDCC7] duration-300 ease-in-out"
-                              onClick={() =>
-                                handleProviderSelect("Residential")
-                              }
-                            >
-                              Residential
-                            </p>
-                            <p
-                              className="text-[16px] font-Montserrat font-semibold text-white mb-0 w-full border border-transparent text-start mx-auto py-1 px-4 mt-3 cursor-pointer hover:bg-[#4FDCC7] duration-300 ease-in-out"
-                              onClick={() => handleProviderSelect("Datacenter")}
-                            >
-                              Datacenter
-                            </p>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-
+                  <div className="ps-8 pe-12">
                     <div className="mt-7">
                       <p className="text-white text-lg mb-4 font-semibold leading-normal font-Montserrat">
                         Amount

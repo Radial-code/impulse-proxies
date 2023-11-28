@@ -255,6 +255,9 @@
 }
 
 /* ==== CSS ==== */
+body {
+  scroll-behavior: smooth !important;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -314,6 +317,7 @@ body {
   -moz-columns: 300px 3;
   columns: 300px 3;
 }
+
 @media (min-width: 1600px) {
   .your_order {
     -webkit-columns: 356px 4;
@@ -347,6 +351,16 @@ body {
   }
   .animation {
     top: -130px !important;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1095px) {
+  .max_height_box {
+    max-height: 1050px !important;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1290px) {
+  .max_height_box {
+    max-height: 1035px !important;
   }
 }
 @media (min-width: 1920px) {
@@ -448,8 +462,8 @@ body {
   background: linear-gradient(113deg, #151536 35.26%, #393969 182.89%);
 }
 .custom_your_order_box_style::before {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   content: "";
   position: absolute;
   bottom: 0;
@@ -462,8 +476,8 @@ body {
 
 @media (max-width: 639.98px) {
   .custom_your_order_box_style::before {
-    width: 60px !important;
-    height: 60px !important;
+    width: 80px !important;
+    height: 80px !important;
   }
 }
 
