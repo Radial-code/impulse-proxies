@@ -96,6 +96,7 @@ const DataUsagesOne = () => {
           </div> */}
         </div>
       </div>
+      </div>
     </>
   );
 };
