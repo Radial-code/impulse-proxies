@@ -62,8 +62,15 @@ const DataUsagesOne = () => {
                 alt="image"
                 src="/assets/images/webp/dataCircle.webp"
               />
+              <div className="flex items-center justify-center flex-col absolute">
+                <p className="text-white font-Montserrat font-bold tracking-[1.75px] text-[35px] mb-0">
+                  3.8
+                </p>
+                <p className=" whitespace-nowrap text-[#8282AB] font-Montserrat font-semibold leading-normal tracking-[1.3px] text-md">
+                  GB LEFT
+                </p>
+              </div>
               DATA USAGE
-          
             <p className="text-sm font-Montserrat font-semibold leading-normal tracking-[1.3px] text-[#D4D4F1]">
                {channelData.totalLimit || 0 } GB <span className="text-[#8282AB]">PLAN</span>
             </p>

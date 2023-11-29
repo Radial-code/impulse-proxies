@@ -283,14 +283,20 @@ const SelectCountries = ({
 
           <div className="relative">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <select className="w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3  focus-visible:outline-none appearance-none text-white">
 =======
+=======
+>>>>>>> 713b651e8f7512a150e37e76adf76c51b6ac5982
             <select
               className="w-full bg-[#212148] cursor-pointer font-Montserrat font-medium rounded-[11px] px-5 py-3  focus-visible:outline-none appearance-none"
               value={selectedCountry}
               onChange={(event) => onCountryChange(event.target.value)}
             >
+<<<<<<< HEAD
 >>>>>>> 79c36a4b9794a2538ee008dd11fc966b9f33eea4
+=======
+>>>>>>> 713b651e8f7512a150e37e76adf76c51b6ac5982
               {arry
                 .find((obj) => obj.title === selectedContinent)
                 .country.map((country, index) => (
