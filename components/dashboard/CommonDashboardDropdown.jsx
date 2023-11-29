@@ -2,15 +2,14 @@ import Image from "next/image";
 import React, { useState } from "react";
 import SelectCountries from "../common/SelectCountries";
 
-const CommonDashboardDropdown = () => {
+const CommonDashboardDropdown = ({proxyData, onProxyDataChange}) => {
+
   // I
   const [isRegionDropdownOpen, setIsRegionDropdownOpen] = useState(false);
   const [selectedRegion, setSelectedRegion] = useState("United States");
   // II
-  const [isLoadBalancerDropdownOpen, setIsLoadBalancerDropdownOpen] =
-    useState(false);
-  const [selectedLoadBalancer, setSelectedLoadBalancer] =
-    useState("Load Balancer");
+  const [isLoadBalancerDropdownOpen, setIsLoadBalancerDropdownOpen] = useState(false);
+  const [selectedLoadBalancer, setSelectedLoadBalancer] = useState("Load Balancer");
   // III
   const [isContinentDropdownOpen, setIsContinentDropdownOpen] = useState(false);
   const [selectedContinent, setSelectedContinent] = useState("Continent");
@@ -19,8 +18,7 @@ const CommonDashboardDropdown = () => {
   const [selectedCountry, setSelectedCountry] = useState("Country");
   // V
   const [isRotationDropdownOpen, setIsRotationDropdownOpen] = useState(false);
-  const [selectedRotation, setSelectedRotation] =
-    useState("Rotation Frequency");
+  const [selectedRotation, setSelectedRotation] = useState("Rotation Frequency");
 
   // const toggleDropdown = (dropdownState, setDropdownState) => {
   //   setDropdownState(!dropdownState);
@@ -45,6 +43,17 @@ const CommonDashboardDropdown = () => {
     }
     setDropdownState(!dropdownState);
   };
+
+  const onContinentChange = (data) => {
+    onProxyDataChange('continent', data)
+    console.log(data, "continent")
+  }
+
+  const onCountryChange = (data) => {
+    onProxyDataChange('country', data)
+    console.log(data, "country")
+  }
+  
   return (
     <>
       <div className="ps-8 pe-12">
@@ -71,7 +80,7 @@ const CommonDashboardDropdown = () => {
                   isLoadBalancerDropdownOpen ? "text-[#fff]" : ""
                 }`}
               >
-                {selectedLoadBalancer}
+               {proxyData?.loadBalancer}
               </p>
               <Image
                 src="/assets/images/webp/Polygon.webp"
@@ -86,11 +95,12 @@ const CommonDashboardDropdown = () => {
                 <p
                   className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-1 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
                   onClick={() =>
-                    handleSelect(
-                      "Asia",
-                      setIsLoadBalancerDropdownOpen,
-                      setSelectedLoadBalancer
-                    )
+                    // handleSelect(
+                    //   "Asia",
+                    //   setIsLoadBalancerDropdownOpen,
+                    //   setSelectedLoadBalancer
+                    // )
+                    onProxyDataChange('loadBalancer', "Asia")
                   }
                 >
                   Asia
@@ -98,11 +108,12 @@ const CommonDashboardDropdown = () => {
                 <p
                   className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-1 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
                   onClick={() =>
-                    handleSelect(
-                      "Europe",
-                      setIsLoadBalancerDropdownOpen,
-                      setSelectedLoadBalancer
-                    )
+                    // handleSelect(
+                    //   "Europe",
+                    //   setIsLoadBalancerDropdownOpen,
+                    //   setSelectedLoadBalancer
+                    // )
+                    onProxyDataChange('loadBalancer', "Europe")
                   }
                 >
                   Europe
@@ -110,11 +121,12 @@ const CommonDashboardDropdown = () => {
                 <p
                   className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-0 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
                   onClick={() =>
-                    handleSelect(
-                      "United States",
-                      setIsLoadBalancerDropdownOpen,
-                      setSelectedLoadBalancer
-                    )
+                    // handleSelect(
+                    //   "United States",
+                    //   setIsLoadBalancerDropdownOpen,
+                    //   setSelectedLoadBalancer
+                    // )
+                    onProxyDataChange('loadBalancer', "United States")
                   }
                 >
                   United States
@@ -346,7 +358,7 @@ const CommonDashboardDropdown = () => {
           Continent
           {/* & Countries */}
         </p>
-        <SelectCountries />
+        <SelectCountries selectedContinent={proxyData?.continent} onContinentChange={onContinentChange} selectedCountry={proxyData?.country} onCountryChange={onCountryChange} />
         {/* ========== */}
 
         {/* V ROTATION MENU */}
@@ -368,7 +380,7 @@ const CommonDashboardDropdown = () => {
                   isRotationDropdownOpen ? "text-[#fff]" : ""
                 }`}
               >
-                {selectedRotation}
+                  {proxyData?.rotationFrequency}
               </p>
               <Image
                 src="/assets/images/webp/Polygon.webp"
@@ -383,11 +395,12 @@ const CommonDashboardDropdown = () => {
                 <p
                   className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-1 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
                   onClick={() =>
-                    handleSelect(
-                      "5 minutes",
-                      setIsRotationDropdownOpen,
-                      setSelectedRotation
-                    )
+                    // handleSelect(
+                    //   "5 minutes",
+                    //   setIsRotationDropdownOpen,
+                    //   setSelectedRotation
+                    // )
+                    onProxyDataChange('rotationFrequency', "5 minutes")
                   }
                 >
                   5 minutes
@@ -395,11 +408,12 @@ const CommonDashboardDropdown = () => {
                 <p
                   className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-1 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
                   onClick={() =>
-                    handleSelect(
-                      "15 minutes",
-                      setIsRotationDropdownOpen,
-                      setSelectedRotation
-                    )
+                    // handleSelect(
+                    //   "15 minutes",
+                    //   setIsRotationDropdownOpen,
+                    //   setSelectedRotation
+                    // )
+                    onProxyDataChange('rotationFrequency', "15 minutes")
                   }
                 >
                   15 minutes
@@ -407,11 +421,12 @@ const CommonDashboardDropdown = () => {
                 <p
                   className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-1 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
                   onClick={() =>
-                    handleSelect(
-                      "30 minutes",
-                      setIsRotationDropdownOpen,
-                      setSelectedRotation
-                    )
+                    // handleSelect(
+                    //   "30 minutes",
+                    //   setIsRotationDropdownOpen,
+                    //   setSelectedRotation
+                    // )
+                    onProxyDataChange('rotationFrequency', "30 minutes")
                   }
                 >
                   30 minutes
@@ -419,11 +434,12 @@ const CommonDashboardDropdown = () => {
                 <p
                   className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-1 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
                   onClick={() =>
-                    handleSelect(
-                      "60 minutes",
-                      setIsRotationDropdownOpen,
-                      setSelectedRotation
-                    )
+                    // handleSelect(
+                    //   "60 minutes",
+                    //   setIsRotationDropdownOpen,
+                    //   setSelectedRotation
+                    // )
+                    onProxyDataChange('rotationFrequency', "60 minutes")
                   }
                 >
                   60 minutes
@@ -431,11 +447,12 @@ const CommonDashboardDropdown = () => {
                 <p
                   className="text-[16px] font-Montserrat font-semibold text-white mx-auto mb-0 w-full border border-transparent  duration-300 ease-in-out text-start py-1 px-4 hover:bg-[#4FDCC7]  cursor-pointer"
                   onClick={() =>
-                    handleSelect(
-                      "90 minutes",
-                      setIsRotationDropdownOpen,
-                      setSelectedRotation
-                    )
+                    // handleSelect(
+                    //   "90 minutes",
+                    //   setIsRotationDropdownOpen,
+                    //   setSelectedRotation
+                    // )
+                    onProxyDataChange('rotationFrequency', "90 minutes")
                   }
                 >
                   90 minutes

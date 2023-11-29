@@ -5,14 +5,18 @@ import ImpulseFooter from "../ImpulseFooter";
 import Header from "../Header";
 import ProxiesISP from "./ProxiesISP";
 import { useGlobalInfoProvider } from "../common/Provider";
+
+
+
 const Proxies = () => {
+ 
   const { activeTab, setActiveTab } = useGlobalInfoProvider();
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
   const tabContent = {
-    ISP: <ProxiesISP />,
-    DC: <DcProxies />,
+    ISP: <ProxiesISP  />,
+    DC: <DcProxies  />,
     Residential: <ResidentialProxies />,
   };
   console.log(activeTab);

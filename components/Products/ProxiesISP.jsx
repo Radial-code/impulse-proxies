@@ -2,22 +2,54 @@ import React, { useState } from "react";
 import Image from "next/image";
 import ProductsRangbar from "./ProductsRangbar";
 import ProviderDropdown from "../common/ProviderDropdown";
+import PaymentDialog from "../common/paymentDialog";
 
 const ProxiesISP = () => {
   const toggleProviderDropdown = () => {
     setIsProviderDropdownOpen(!isProviderDropdownOpen);
   };
-  const handleProviderSelect = (provider) => {
-    setSelectedProvider(provider);
+  const handlePeriodSelect = (provider) => {
+    setSelectedPeriod(provider);
     setIsProviderDropdownOpen(false);
   };
 
   const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
-  const [selectedProvider, setSelectedProvider] = useState("Daily");
-  const [activeTab, setActiveTab] = useState("ISP");
-  const handleTabClick = (tab) => {
-    setActiveTab(tab);
-  };
+  const [selectedPeriod, setSelectedPeriod] = useState("Daily");
+  const [provider, setProvider] = useState("");
+  const [region, setRegion] = useState("");
+  const [amount, setAmount] = useState(0);
+  const [open, setOpen] = useState(false);
+  const [subscriptionPayload, setSubscriptionPayload] = useState({});
+ 
+  const handleOpen = () => setOpen(!open);
+
+  const onProviderChange = (data) => {
+    setProvider(data);
+  }
+
+  const onRegionChange = (data) => {
+    setRegion(data);
+  }
+
+  const onAmountChange = (data) => {
+    setAmount(data);
+  }
+
+  const checkout = () => {
+    const payload = {
+      plan: "ISP",
+      priceId: process.env.NEXT_PUBLIC_STRIPE_ISP_PLAN,
+      planData: {
+        provider,
+        region,
+        period: selectedPeriod,
+        amount
+      }
+    }
+    setSubscriptionPayload(payload);
+    handleOpen();
+  }
+
 
   return (
     <>
@@ -36,7 +68,7 @@ const ProxiesISP = () => {
             internet services providers available on the market.”
           </p>
 
-          <ProviderDropdown />
+          <ProviderDropdown onProviderChange={onProviderChange} onRegionChange={onRegionChange} />
 
           <div className="pt-5 relative">
             <p className="text-white text-[10px] font-Montserrat font-semibold leading-normal mb-0">
@@ -54,7 +86,7 @@ const ProxiesISP = () => {
                     isProviderDropdownOpen ? "text-[#50EED7]" : ""
                   }`}
                 >
-                  {selectedProvider}
+                  {selectedPeriod}
                 </p>
                 <Image
                   src="/assets/images/webp/down-arrow.webp"
@@ -67,19 +99,19 @@ const ProxiesISP = () => {
                 <div className="absolute bg-[#252550] border-white start-0 border-2 w-full mt-2 z-10 rounded-[10px] p-1">
                   <p
                     className="custom-dropdown-option-001 mb-1"
-                    onClick={() => handleProviderSelect("Daily")}
+                    onClick={() => handlePeriodSelect("Daily")}
                   >
                     Daily
                   </p>
                   <p
                     className="custom-dropdown-option-001 mb-1"
-                    onClick={() => handleProviderSelect("Weekly")}
+                    onClick={() => handlePeriodSelect("Weekly")}
                   >
                     Weekly
                   </p>
                   <p
                     className="custom-dropdown-option-001 mb-0"
-                    onClick={() => handleProviderSelect("Monthly")}
+                    onClick={() => handlePeriodSelect("Monthly")}
                   >
                     Monthly
                   </p>
@@ -93,8 +125,8 @@ const ProxiesISP = () => {
             </p>
           </div>
 
-          <ProductsRangbar />
-          <div className="sm:pt-[26px] pt-5 flex flex-col sm:flex-row justify-between gap-8 sm:gap-auto sm:items-end">
+          <ProductsRangbar onValueChange={onAmountChange} />
+          <div className="sm:pt-[26px] pt-5 flex justify-between items-end">
             <div>
               <p className="text-white text-[15px] font-Montserrat font-semibold leading-normal mb-0">
                 Total Due
@@ -104,7 +136,7 @@ const ProxiesISP = () => {
                 <span className="text-[13px] font-normal">/month</span>
               </p>
             </div>
-            <button className="bg-white hover:bg-[#4FDCC7] hover:text-white transition-all duration-500 rounded-[10000px] text-[#040426] font-Montserrat font-semibold text-[15px] sm:px-[43px] px-5 py-[10px]">
+            <button className="bg-white hover:bg-[#4FDCC7] hover:text-white transition-all duration-500 rounded-[10000px] text-[#040426] font-Montserrat font-semibold text-[15px] sm:px-[43px] px-5 py-[10px]" onClick={checkout}>
               Checkout
             </button>
           </div>
@@ -126,6 +158,7 @@ const ProxiesISP = () => {
           />
         </div>
       </div>
+      <PaymentDialog open={open} handleOpen={handleOpen}  payload={subscriptionPayload}/>
     </>
   );
 };

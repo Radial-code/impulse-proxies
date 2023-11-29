@@ -1,5 +1,6 @@
-import React from "react";
-import { useGlobalInfoProvider } from "../common/Provider";
+import React, { useEffect, useState } from "react";
+import { proxyService } from "../common/services";
+import { CircularProgress,Typography} from "@mui/material";
 const copyText = () => {
   const textToCopy = document.getElementById("textToCopy").innerText;
   // Try to use the modern clipboard API
@@ -23,8 +24,30 @@ const copyText = () => {
     alert("Text copied to clipboard!");
   }
 };
-const YourOrderOne = () => {
-  const { amountValue } = useGlobalInfoProvider();
+
+const YourOrderOne = (props) => {
+  const [proxyList, setProxyList] = useState([]);
+  const [loader, setLoader] = useState(true);
+
+  useEffect(() => {
+    if(props.type == "proxyList"){
+      if(props.loader == false){
+        setLoader(true);
+        proxyService.getProxyList().then((response)=>{
+          if (response.data.status == 200) {
+            setLoader(false);
+            setProxyList((prev) => response.data.data);
+          }else{
+            console.log(response.data.message);
+          }
+        }).catch((e)=>{
+          setLoader(false);
+          console.log(e.message)
+        })
+      }
+    }
+  }, [props.loader]);
+
   return (
     <>
    

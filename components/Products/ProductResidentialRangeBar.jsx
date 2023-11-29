@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const ProductResidentialRangeBar = () => {
+const ProductResidentialRangeBar = ({onValueChange}) => {
   const [value, setValue] = useState(1);
 
   const handleChange = (e) => {
@@ -21,6 +21,7 @@ const ProductResidentialRangeBar = () => {
   useEffect(() => {
     // Set initial styling when the component mounts
     updateRangeStyle(value);
+    onValueChange(value)
   }, [value]);
 
   const handleNumberChange = (e) => {

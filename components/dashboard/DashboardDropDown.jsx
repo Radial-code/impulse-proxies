@@ -1,8 +1,11 @@
 import { useState } from "react";
 import { SignOutIcon } from "../Icon";
 import Image from "next/image";
+import { signOut, useSession } from 'next-auth/react'
 
 const DashboardDropDown = () => {
+  const { data: session } = useSession()
+
   const [selectedPeriod, setSelectedPeriod] = useState("Sign Out");
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
 
@@ -12,8 +15,7 @@ const DashboardDropDown = () => {
 
   const handlePeriodSelect = (period) => {
     if (period === "Sign Out") {
-      // Simulate a sign-out action here, replace with your actual sign-out logic
-      alert("Simulating Sign Out action");
+      signOut();
     } else {
       setSelectedPeriod(period);
     }
@@ -29,9 +31,18 @@ const DashboardDropDown = () => {
       >
         <p className="text-md text-[#626296] font-Montserrat font-semibold lh_normal tracking-[-0.28px] mb-0">
           Welcome Back
-          <span className="text-white block">Jack#1983</span>
+          <span className="text-white block">{session?.user?.data?.username}#{session?.user?.data?.discriminator}</span>
         </p>
-        <div className="rounded-full bg-white h-[37px] w-[37px] ms-7"></div>
+        {session?.user?.data?.avatar ?
+          <Image
+            className="rounded-full ms-7"
+            loading="lazy"
+            height={37}
+            width={37}
+            src={session?.user?.data?.avatar}
+            alt="avatar"
+          />
+          : <div className="rounded-full bg-white h-[37px] w-[37px] ms-7"></div>}
         {isPeriodDropdownOpen && (
           <div className="absolute start-0 top-[70px] z-10 bg-[#252550] w-full max-w-[226px] lg:ms-6 rounded-[10px]">
             <button

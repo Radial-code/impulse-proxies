@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import ProductResidentialRangeBar from "./ProductResidentialRangeBar";
+import PaymentDialog from "../common/paymentDialog";
 
 const ResidentialProxies = () => {
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
   const [selectedPeriod, setSelectedPeriod] = useState("USA");
   const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
   const [selectedProvider, setSelectedProvider] = useState("Monthly");
+  const [amount, setAmount] = useState(0);
+  const [open, setOpen] = useState(false);
+  const [subscriptionPayload, setSubscriptionPayload] = useState({});
+ 
+  const handleOpen = () => setOpen(!open);
+
   const togglePeriodDropdown = () => {
     setIsPeriodDropdownOpen(!isPeriodDropdownOpen);
   };
@@ -25,6 +32,23 @@ const ResidentialProxies = () => {
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
+
+  const onAmountChange = (data) => {
+    setAmount(data);
+  }
+
+  const checkout = () => {
+    const payload = {
+      plan: "Residential plan",
+      priceId: process.env.NEXT_PUBLIC_STRIPE_RESIDENTIAL_PLAN,
+      planData : {
+        "period": "Monthly",
+        "gb": amount
+     }
+    }
+    setSubscriptionPayload(payload);
+    handleOpen();
+  }
 
   return (
     <>
@@ -148,7 +172,7 @@ const ResidentialProxies = () => {
             </p>
           </div> */}
 
-          <ProductResidentialRangeBar />
+          <ProductResidentialRangeBar onValueChange={onAmountChange} />
 
           <div className="sm:pt-[26px] pt-5 flex flex-col sm:flex-row justify-between gap-8 sm:gap-auto sm:items-end">
             <div>
@@ -156,11 +180,11 @@ const ResidentialProxies = () => {
                 Total Due
               </p>
               <p className="sm:pt-3 pt-2 text-white font-Montserrat font-medium text-[22px]">
-                $13.92
+              € {amount * 5}
                 <span className="text-[13px] font-normal">/month</span>
               </p>
             </div>
-            <button className="bg-white rounded-[10000px] hover:bg-[#4FDCC7] hover:text-white transition-all duration-500 text-[#040426] font-Montserrat font-semibold text-[15px] sm:px-[43px] px-5 py-[10px]">
+            <button className="bg-white rounded-[10000px] hover:bg-[#4FDCC7] hover:text-white transition-all duration-500 text-[#040426] font-Montserrat font-semibold text-[15px] sm:px-[43px] px-5 py-[10px]" onClick={checkout}>
               Checkout
             </button>
           </div>
@@ -182,6 +206,7 @@ const ResidentialProxies = () => {
           />
         </div>
       </div>
+      <PaymentDialog open={open} handleOpen={handleOpen}  payload={subscriptionPayload}/>
     </>
   );
 };

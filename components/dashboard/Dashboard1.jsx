@@ -5,29 +5,74 @@ import ResidentialBoxOne from "./ResidentialBoxOne";
 import YourOrderOne from "./YourOrderOne";
 import CommonDashboardDropdown from "./CommonDashboardDropdown";
 import DashboardRangeBar from "../Products/DashboardRangeBar";
+import { proxyService } from "../common/services";
+import { CircularProgress } from "@mui/material";
 
 const Dashboard1 = () => {
+  const [loader, setLoader] = useState(false);
   // DROPDOWN
   const [isPeriodDropdownOpen, setIsPeriodDropdownOpen] = useState(false);
   const [isProviderDropdownOpen, setIsProviderDropdownOpen] = useState(false);
   const [selectedProvider, setSelectedProvider] = useState("Residential");
   const [rangeValue, setRangeValue] = useState(1);
+
+  const [proxyData, setProxyData] = useState({
+    region : "USA",
+    loadBalancer : "United States",
+    rotationFrequency : "5 minutes",
+    continent : "Africa",
+    country : "Algeria",
+    proxyType : "Residential",
+    proxies : 1,
+  });
+    
   const togglePeriodDropdown = () => {
     setIsPeriodDropdownOpen(!isPeriodDropdownOpen);
   };
+
   const toggleProviderDropdown = () => {
     setIsProviderDropdownOpen(!isProviderDropdownOpen);
   };
+
   const handleProviderSelect = (provider) => {
     setSelectedProvider(provider);
     setIsProviderDropdownOpen(false);
   };
+
   useEffect(() => {
     const value = localStorage.getItem("lastname");
-    console.log(value, "value");
     setRangeValue(value);
+    // console.log(value);
+    // onProxyDataChange("proxies",value);
   }, []);
-  console.log(rangeValue, "rangeValue");
+  // console.log(rangeValue, "rangeValue");
+
+  const onProxyDataChange = (key, value) => {
+    setProxyData((prevData) => ({
+      ...prevData,
+      [key]: value || ""
+    }))
+  }
+
+  const handleCreateProxyForm = ()=>{
+    setLoader(true)
+    setTimeout(() => {
+      setLoader(false)
+    }, 2000)
+
+    proxyService.createProxy(proxyData).then((response)=>{ 
+        setLoader(false)
+        if(response.data.status == 200){
+
+        }else{
+          
+        }
+    }).catch((e)=>{
+      setLoader(false)
+      console.log(e);
+    })
+  }
+
   return (
     <>
       <div className="relative overflow-hidden">
@@ -81,13 +126,25 @@ const Dashboard1 = () => {
                         <DashboardRangeBar identifier="first" />
                       </div>
 
-                      <div className="flex flex-col ms-5">
-                        <button className="border mb-4 border-cyan-green hover:bg-[#50EED7]  hover:border-transparent hover:text-[#040426] rounded-md cursor-pointer text-cyan-green transition-all duration-300 font-Montserrat text-md font-semibold lh_normal h-[38px] px-6 whitespace-nowrap">
-                          Max Qty.
-                        </button>
-                        <button className=" font-Montserrat text-[#040426] hover:bg-[#50EED7] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal h-[38px] transition-all duration-300 px-8 whitespace-nowrap">
-                          Generate
-                        </button>
+                    <div className="mt-7">
+                      <p className="text-white text-lg mb-4 font-semibold leading-normal font-Montserrat">
+                        Amount
+                      </p>
+
+                      <div className="flex items-start mt-3 justify-between">
+                        <div className="w-full">
+                          <DashboardRangeBar identifier="first" onProxyDataChange={onProxyDataChange}/>
+                        </div>
+
+                        <div className="flex flex-col ms-5">
+                          <button className="border mb-4 border-cyan-green hover:bg-[#50EED7]  hover:border-transparent hover:text-[#040426] rounded-md cursor-pointer text-cyan-green transition-all duration-300 font-Montserrat text-md font-semibold lh_normal h-[38px] px-6 whitespace-nowrap">
+                            Max Qty.
+                          </button>
+                          <button className=" font-Montserrat text-[#040426] hover:bg-[#50EED7] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal h-[38px] transition-all duration-300 px-8 whitespace-nowrap"
+                            onClick={()=>{handleCreateProxyForm()}} >
+                            Generate {loader && <CircularProgress size={12} sx={{marginLeft: 1}}/>}
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -95,15 +152,15 @@ const Dashboard1 = () => {
               </div>
             </div>
 
-            <div className="w-full lg:w-[702px] 2xl:w-[642px] lg:pt-0 sm:pt-10 pt-5">
-              <YourOrderOne />
-              <div className="rounded-lg overflow-hidden lg:mt-12 mt-8 lg:hidden sm:block hidden  GENERATE_PROXIES_box">
-                <div className="bg-[#212148] ps-8 py-4">
-                  <p className="mb-0 text-white text-md font-Montserrat font-bold tracking-[1.4px]">
-                    GENERATE PROXIES
-                  </p>
-                </div>
-                <CommonDashboardDropdown />
+              <div className="w-full lg:w-[702px] 2xl:w-[642px] lg:pt-0 sm:pt-10 pt-5">
+                <YourOrderOne type={"proxyList"}  loader = { loader } />
+                <div className="rounded-lg overflow-hidden lg:mt-12 mt-8 lg:hidden sm:block hidden  GENERATE_PROXIES_box">
+                  <div className="bg-[#212148] ps-8 py-4">
+                    <p className="mb-0 text-white text-md font-Montserrat font-bold tracking-[1.4px]">
+                      GENERATE PROXIES
+                    </p>
+                  </div>
+                  <CommonDashboardDropdown />
 
                 <div className="lg:pt-5 pt-4 pb-6 ps-8 pe-12">
                   <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
@@ -151,21 +208,24 @@ const Dashboard1 = () => {
                     </div>
                   </div>
 
-                  <div className="mt-5">
-                    <p className="text-white text-lg mb-4 font-semibold leading-normal font-Montserrat">
-                      Amount
-                    </p>
-                    <div className="flex items-start mt-3 justify-between">
-                      <div className="w-full">
-                        <DashboardRangeBar identifier="second" />
-                      </div>
-                      <div className="flex flex-col ms-5">
-                        <button className="border mb-4 border-cyan-green hover:bg-[#50EED7]  hover:border-transparent hover:text-[#040426] rounded-md cursor-pointer text-cyan-green transition-all duration-300 font-Montserrat text-md font-semibold lh_normal h-[38px] px-6 whitespace-nowrap">
-                          Max Qty.
-                        </button>
-                        <button className=" font-Montserrat text-[#040426] hover:bg-[#50EED7] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal h-[38px] transition-all duration-300 px-8 whitespace-nowrap">
-                          Generate
-                        </button>
+                    <div className="mt-5">
+                      <p className="text-white text-lg mb-4 font-semibold leading-normal font-Montserrat">
+                        Amount
+                      </p>
+                      <div className="flex items-start mt-3 justify-between">
+                        <div className="w-full">
+                          <DashboardRangeBar identifier="second" onProxyDataChange={onProxyDataChange}/>
+                        </div>
+                        <div className="flex flex-col ms-5">
+                          <button className="border mb-4 border-cyan-green hover:bg-[#50EED7]  hover:border-transparent hover:text-[#040426] rounded-md cursor-pointer text-cyan-green transition-all duration-300 font-Montserrat text-md font-semibold lh_normal h-[38px] px-6 whitespace-nowrap">
+                            Max Qty.
+                          </button>
+                          <button className=" font-Montserrat text-[#040426] hover:bg-[#50EED7] text-lg font-bold tracking-[-0.3px] bg-white rounded-lg lh_normal h-[38px] transition-all duration-300 px-8 whitespace-nowrap"
+                           onClick={handleCreateProxyForm} >
+                            Generate 
+                              <CircularProgress size={24} />
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>

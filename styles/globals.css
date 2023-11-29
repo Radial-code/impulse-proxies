@@ -506,3 +506,8 @@ body {
     z-index: -1;
     /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }
+.apexcharts-datalabels-group > apexcharts-datalabel-label {
+  font-size: 30px !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  color: #FFF !important;
+}

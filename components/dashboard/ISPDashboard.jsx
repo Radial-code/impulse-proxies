@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import IspProxies from "./IspProxies";
 import Image from "next/image";
 import { headings, ispOrdersData } from "../common/Helper";
+import { orderService } from "../common/services";
+import { CircularProgress } from "@mui/material";
+import Link from "next/link";
 const copyText = () => {
   const textToCopy = document.getElementById("textToCopy").innerText;
   // Try to use the modern clipboard API
@@ -26,6 +29,27 @@ const copyText = () => {
   }
 };
 const ISPDashboard = () => {
+
+  const [loader, setLoader] = useState(true);
+  const [orders, setOrders] = useState([]);
+
+  useEffect(() => {
+    orderService
+      .getOrderList()
+      .then((response) => {
+        setLoader(false);
+        if (response.data.status == 200) {
+          setOrders((prev) => response.data.data);
+        } else {
+          console.log(response.data.message);
+        }
+      })
+      .catch((e) => {
+        setLoader(false);
+        console.log(e);
+      });
+  }, []);
+
   return (
      <div className="relative overflow-hidden">
       <div className="w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
@@ -58,32 +82,7 @@ const ISPDashboard = () => {
                   </table>
                 </div>
 
-                <div className="pe-1 lg:pe-3 pb-1 lg:pb-3 bg-[#151536]">
-                  <div className="w-full lg:max-h-[290px] max-h-[280px] overflow-x-scroll custom_scrollbar_y rounded-2xl rounded-t-[0] custom_scrollbar_y_ISP_table">
-                    <table className="rounded-2xl rounded-t-[0] overflow-hidden w-full">
-                      {console.log("data===>", ispOrdersData.length)}
-                      <tbody className="bg-[#151536]">
-                        {ispOrdersData.map((rowData, rowIndex) => (
-                          <tr
-                            key={rowIndex}
-                            className="text-white font-Montserrat text-bold text-sm tracking-[-0.24px]"
-                          >
-                            {rowData.map((cellData, cellIndex) => (
-                              <td
-                                className="xl:p-5 p-4 font-bold"
-                                key={cellIndex}
-                              >
-                                {cellData}
-                              </td>
-                            ))}
-                          </tr>
-                        ))}
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
               </div>
-
               <div className="lg:w-[325px] 2xl:w-[430px] md:w-[40%] w-full md:mt-0 mt-9">
                 <IspProxies />
               </div>
