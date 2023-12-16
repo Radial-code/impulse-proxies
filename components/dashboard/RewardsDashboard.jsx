@@ -36,24 +36,23 @@ const RewardsDashboard = () => {
             </div>
           </div>
         </div>
-        <div className="lg:pt-14 lg:pb-36 sm:pb-12 pb-[66px] sm:pt-9 pt-6">
+        <div className="lg:pt-[61px] lg:pb-36 sm:pb-12 pb-[66px] sm:pt-9 pt-6">
           <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
             <RangeBar />
-            <div className="flex flex-wrap mt-9 lg:mt-12">
+            <div className="flex flex-wrap mt-9 lg:mt-14">
               {rewardData.length > 0 ? (
                 <>
                   <div className="w-full lg:w-6/12 px-3">
-                    <div className="bg-[#212148] flex items-center justify-between h-14 rounded-t-[16px] px-4 lg:px-9 relative">
-                      <p className=" text-sm font-Montserrat trackiing-[1.2px] leading-normal font-bold text-white">
+                    <div className="bg-[#212148] z-10 flex items-center justify-between h-14 rounded-t-[16px] px-4 lg:px-9 relative">
+                      <p className=" text-sm font-Montserrat tracking-[1.2px] leading-normal font-bold text-white">
                         EARNED REWARDS
                       </p>
                       <button className="text-[#040426] w-[119px] h-[31px] leading-normal tracking-[-0.28px] hover:text-white hover:bg-[#040426] duration-300 ease-in-out bg-white flex justify-center items-center font-Montserrat font-bold text-[14px] rounded-[10px]">
                         Redeem All
                       </button>
                     </div>
-                    {/* bg-[url('/assets/images/webp/Earned_Rewards.webp')] bg-no-repeat bg-cover */}
-                    <div className="relative bg-[0px] h-[233px]  flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]  earned_rewards_box">
-                      <h3 className="font-Montserrat font-bold text-xl leading-normal tracking-[1.7px] text-white">
+                    <div className="relative bg-[0px] h-[253px] custom_height flex flex-col justify-center items-center mt-[-13px] rounded-b-[16px]  earned_rewards_box">
+                      <h3 className="font-Montserrat font-bold sm:text-xl text-[15px] leading-normal tracking-[1.7px] text-white">
                         NO REWARDS WON
                       </h3>
                       <p className="font-Montserrat text-lg leading-normal sm:max-w-full max-w-[179px] text-center text-[#9D9DBB] sm:pt-4 py-3 sm:pb-6">
@@ -77,7 +76,7 @@ const RewardsDashboard = () => {
                     <p className="bg-[#212148] rounded-t-[16px] h-14 leading-normal tracking-[1.2px] px-9 text-sm font-Montserrat font-bold text-white flex items-center">
                       REFER A FRIEND
                     </p>
-                    <div className="rang_bar px-4 lg:px-9 lg:pt-[10px] pt-6 sm:pb-[47px] pb-4 rounded-b-[16px]">
+                    <div className="rang_bar px-4 lg:px-9 lg:pt-[10px] pt-6 lg:pb-[62px] pb-12 rounded-b-[16px]">
                       <div className="bg-[#292956] h-[46px] rounded-[10px] flex justify-between items-center px-[18px]">
                         <div className=" flex">
                           <p className=" text-[#7777AD] font-Montserrat tracking-[-0.28px] leading-normal text-md font-semibold">
@@ -104,7 +103,7 @@ const RewardsDashboard = () => {
                         Share this code, and when someone signs up and purchases
                         proxies, you will get paid!
                       </p>
-                      <div className=" mt-6 lg:mt-7 sm:flex justify-between items-center">
+                      <div className=" mt-6 lg:mt-8 sm:flex justify-between items-center">
                         <div className="flex sm:flex-row flex-col">
                           <p className=" font-Montserrat font-bold text-white text-md tracking-[1.4px] leading-normal">
                             USED IN ORDER

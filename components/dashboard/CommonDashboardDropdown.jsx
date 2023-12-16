@@ -56,7 +56,7 @@ const CommonDashboardDropdown = ({proxyData, onProxyDataChange}) => {
   
   return (
     <>
-      <div className="py-5 ps-8 pe-12">
+      <div className="ps-8 pe-12">
         {/* I REGION MENU */}
         <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat">
           Region
@@ -123,7 +123,7 @@ const CommonDashboardDropdown = ({proxyData, onProxyDataChange}) => {
           </div>
         </div>
         {/* II LOAD BALANCER MENU */}
-        <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-5">
+        <p className="text-white text-lg mb-[14px] font-semibold leading-normal font-Montserrat mt-3">
           Load Balancer
         </p>
         <div className="w-full relative">
