@@ -32,16 +32,16 @@ function loginSuccess() {
 
             if (res.error) {
                 setResponseData("error");
-                setTimeout(() => {
+                 setTimeout(() => {
                     router.push("/");
-                }, 1000);
+                 }, 1000);
                 return;
             }
 
             setResponseData("success");
-            setTimeout(() => {
+             setTimeout(() => {
                 router.replace("/dashboard-data-usage?type=residential");
-            }, 1000);
+             }, 1000);
         } catch (error) {
             console.log(error);
         }
