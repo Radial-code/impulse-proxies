@@ -6,7 +6,7 @@ const ProxiesTabs = () => {
 
   let [topupPayload, setTopupPayload] = useState({});
   const [activeTab, setActiveTab] = useState(1);
-  const [gb, setGB] = useState(5);
+  const [gb, setGB] = useState(1);
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(!open);
   const handleTabClick = (tabNumber,gb) => {
