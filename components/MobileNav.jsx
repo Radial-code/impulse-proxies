@@ -1,7 +1,21 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import { useSession } from 'next-auth/react'
+import { useRouter } from "next/navigation";
 
 const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
+  const { data: session } = useSession()
+  const router = useRouter();
+  
+  const onDashboard = () => {
+    if (session) {
+      router.push("/dashboard-data-usage?type=residential");
+    } else {
+      //Discord authentication url
+      router.push(process.env.NEXT_PUBLIC_DISCORD_AUTH_URL);
+    }
+  }
+
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 1023.98px)");
     function handleScreenSizeChange(event) {
@@ -58,13 +72,11 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
           >
             Our Proxies
           </Link>
-          <Link
-            aria-label="dashboard"
-            href="/dashboard-data-usage?type=residential"
-            className="mobile-nav-dashboard-button"
-          >
-            Dashboard
-          </Link>
+
+            <button aria-label="dashboard" onClick={onDashboard} className="mobile-nav-dashboard-button">
+              Dashboard
+            </button>
+
         </div>
       </div>
       <div

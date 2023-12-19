@@ -8,8 +8,10 @@ import {
   Typography,
 } from "@mui/material";
 import { subscriptionService } from "@/components/common/services";
+import { useSession } from 'next-auth/react';
 
 function VerifyPayment() {
+  const { data: session } = useSession()
   const [verifyLoader, setVerifyLoader] = useState(true);
   const [paymentStatus, setPaymentStatus] = useState("");
   const router= useRouter();
@@ -20,20 +22,32 @@ function VerifyPayment() {
     const sessionId = urlParams.get("session_id");
 
     subscriptionService.checkPayment(sessionId).then((response) => {
-        setVerifyLoader(false);
         if (response.data.status == 200) {
           setPaymentStatus((prev) => response.data.sessionStatus);
-          setTimeout(() => {
+          let sessionStorageKeyExists = sessionStorage.getItem('orderData');
+           sessionStorageKeyExists =  JSON.parse(sessionStorageKeyExists);
+          if(sessionStorageKeyExists){
+            let sessionStorageOrderData = sessionStorage.getItem('orderData'); 
+            let orderDataArray = JSON.parse(sessionStorageOrderData) || [];
+            orderDataArray.push({ stripeSessionId: response.data.sessionId });
+            sessionStorage.setItem('orderData', JSON.stringify(orderDataArray));
+          }else{
+            sessionStorage.setItem('orderData', JSON.stringify([{ stripeSessionId :  response.data.sessionId }]));
+          }
+          
+          if (session) {
             router.push("/dashboard-data-usage?type=residential");
-          }, 2000);
+          } else {
+            //Discord authentication url
+            router.push(process.env.NEXT_PUBLIC_DISCORD_AUTH_URL);
+          }
         } else {
-          console.log(response.data.message);
           router.push("/");
         }
       }).catch((e) => {
         setVerifyLoader(false);
         router.push("/");
-        console.log(e);
+        console.log(e.message);
       });
   }, []);
 

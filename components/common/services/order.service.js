@@ -16,7 +16,22 @@ const getOrderList = () => {
     })
 }
 
+const syncingData = (orderData) => {
+    return new Promise((resolve, reject) => {
+        try {
+            privateApi.post(`${PATH}/createOrder`,orderData).then((data) => {
+                resolve(data)
+            }).catch((e) => {
+                reject(e);
+            }); 
+        } catch (e) {
+            reject(e);
+        }
+    });
+}
+
 
 export const orderService = {
     getOrderList,
+    syncingData
 }

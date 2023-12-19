@@ -5,7 +5,7 @@ const DynamicChart = dynamic(() => import('react-apexcharts'), { ssr: false });
 export default class RadialBar extends Component {
   render() {
     this.state = {
-      series: [50],
+      series: [`${this.props.channelData.percentageLabel}`],
       options: {
         width: '5%',
         chart: {
