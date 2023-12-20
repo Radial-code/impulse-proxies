@@ -51,10 +51,8 @@ const YourOrderOne = (props) => {
 
   return (
     <>
-
-      <div className="h-full">
-        <div className="bg-[#1E1E43] yourbox_border relative pb-[28px] sm:ps-6 px-4 pt-6 rounded-2xl custom_scrollbar_y max-h-[768px] max_height_box xl:max-h-[1020px] lg:max-h-[1035px] custom_your_order_box_style">
-          <div className="flex sm:items-center justify-between items-start">
+      <div className="bg-[#1E1E43] yourbox_border relative pb-[28px] sm:ps-6 px-4 pt-6 rounded-2xl lg:h-full custom_scrollbar_y max-h-[800px] lg:max-h-[1166px] custom_your_order_box_style">          
+      <div className="flex sm:items-center justify-between items-start">
             <div className="flex flex-col">
               <div className="flex flex-row lg:flex-col justify-between">
                 <div className="flex md:flex-row flex-col lg:flex-col">
@@ -141,132 +139,6 @@ const YourOrderOne = (props) => {
             </button>
           </div> */}
         </div>
-        <div>
-        
-        
-      
-
-
-          {/* {loader ? (
-          <div className="flex justify-center mt-4">
-            <CircularProgress size={24} />
-          </div>
-        ) : proxyList.length ? (
-          <div className="flex flex-col justify-between h-full">
-            <div className="flex justify-start mt-6 max-h-[620px] sm:max-h-[640px] overflow-y-auto h-screen custom_scrollbar_y">
-              <div
-                id="textToCopy"
-                className="your_order font-Montserrat xl:text-[16px] text-[12px] font-medium leading-normal text-[#9D9DBB]"
-              >
-                {proxyList.map((item, index) => {
-                  return (
-                    <>
-                      <Typography variant="body2" key={index} >
-                        {item.proxyValue}
-                      </Typography>
-                    </>
-                  );
-                })}
-              </div>
-            </div>
-            <div className="flex justify-end items-end lg:mb-8 h-full mt-auto">
-              <p className="text-[#505082] font-Montserrat text-sm text-end leading-normal tracking-[1.2px] font-bold pt-6">
-                {proxyList.length} PROXIES
-              </p>
-            </div>
-          </div>
-        ) : (
-          <div className="flex justify-center mt-4">
-            <Typography variant="body2" color="white">
-              No proxies!
-            </Typography>
-          </div>
-        )} */}
-
-            {/* {
-              loader ? 
-              <>  
-                <div className="flex justify-center items-center py-12 md:min-h-[222px] min-h-[185px] w-full">
-                  <CircularProgress size={24}/> 
-                </div>
-              </> : 
-              <>
-                    {
-                      proxyList.length ? 
-                      (
-                        <div className="flex justify-start max-h-[640px] overflow-y-auto custom_scrollbar_y">
-                        <div className="flex flex-col justify-between h-full">
-                          <div className="flex justify-start mt-6 max-h-[620px] sm:max-h-[640px] overflow-y-auto h-screen custom_scrollbar_y">
-                            <div
-                              id="textToCopy"
-                              className="your_order font-Montserrat xl:text-[16px] text-[12px] font-medium leading-normal text-[#9D9DBB]"
-                            >
-                              {proxyList.map((item, index) => {
-                                return (
-                                  <>
-                                    <Typography variant="body2">
-                                      {item.proxyValue}
-                                    </Typography>
-                                  </>
-                                );
-                              })}
-                            </div>
-                          </div>
-                         
-                          <div className="sm:flex  justify-end ">
-                            <p className="text-[#505082] font-Montserrat text-sm text-end leading-normal tracking-[1.2px] font-bold pt-6">
-                            {proxyList.length} PROXIES
-                            </p>
-                          </div>
-                        </div>
-                        </div>
-                      )
-                      : 
-                      <>
-                      <div className="mt-4 flex justify-center">
-                        <Typography variant="body2" color="white">
-                            No proxy!
-                        </Typography>
-                      </div>
-                      </>
-                    }
-              </>
-            } */}
-
-        
-             {/*<div id="textToCopy"className="your_order font-Montserrat xl:text-[16px] max-w-[250px] text-[12px] font-medium leading-normal text-[#9D9DBB]">
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347
-              83.242.248.2314:3817:jfksldnfd:ppoowifnjasn347 
-            </div>*/}
-        
-          
-        </div>
-      </div>
     </>
   );
 };

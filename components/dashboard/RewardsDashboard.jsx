@@ -28,21 +28,21 @@ const RewardsDashboard = () => {
   };
   return (
     <>
-      <div className="relative">
-        <div className="w-full absolute bottom-0 top-[300px] md:top-[100px] lg:top-[-39px] z-[-2] animation">
+      <div className=" relative overflow-hidden">
+        <div className="w-full absolute top-[35%] -translate-y-1/2 z-[-2]">
           <div className="hero_wave">
             <div className="hero_wave_height">
               <div className="grad_bg"></div>
             </div>
           </div>
         </div>
-        <div className="lg:pt-[61px] lg:pb-36 sm:pb-12 pb-[66px] sm:pt-9 pt-6">
+        <div className="lg:pt-[61px] sm:pt-9 pt-6">
           <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
             <RangeBar />
             <div className="flex flex-wrap mt-9 lg:mt-14">
               {rewardData.length > 0 ? (
                 <>
-                  <div className="w-full lg:w-6/12 px-3">
+                  <div className="w-full lg:w-6/12 sm:px-3">
                     <div className="bg-[#212148] z-10 flex items-center justify-between h-14 rounded-t-[16px] px-4 lg:px-9 relative">
                       <p className=" text-sm font-Montserrat tracking-[1.2px] leading-normal font-bold text-white">
                         EARNED REWARDS
@@ -72,7 +72,7 @@ const RewardsDashboard = () => {
                       />
                     </div>
                   </div>
-                  <div className="w-full lg:w-6/12 px-3 min-h-[244px] mt-9 lg:mt-0">
+                  <div className="w-full lg:w-6/12 sm:px-3 min-h-[244px] mt-9 lg:mt-0">
                     <p className="bg-[#212148] rounded-t-[16px] h-14 leading-normal tracking-[1.2px] px-9 text-sm font-Montserrat font-bold text-white flex items-center">
                       REFER A FRIEND
                     </p>

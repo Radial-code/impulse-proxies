@@ -178,7 +178,7 @@ const DcProxies = () => {
 
           <ProductsRangbar onValueChange={onAmountChange}/>
 
-          <div className="sm:pt-[26px] pt-5 flex justify-between items-end">
+          <div className="sm:pt-[26px] pt-5 flex flex-col sm:flex-row justify-between gap-8 sm:gap-auto sm:items-end">
             <div>
               <p className="text-white text-[15px] font-Montserrat font-semibold leading-normal mb-0">
                 Total Due
@@ -193,7 +193,7 @@ const DcProxies = () => {
             </button>
           </div>
         </div>
-        <div className="absolute hidden md:block start-[-80px] top-[60px]">
+        <div className="absolute block w-[58px] h-[49px] sm:w-[98px] sm:h-[83px] md:h-auto md:w-auto start-[-20px] sm:start-[-34px] top-[60px] sm:top-[96px] md:start-[-80px] md:top-[60px]">
           <Image
             src="/assets/images/webp/proxies_box_top_img.webp"
             alt="proxies box top image"
@@ -201,7 +201,7 @@ const DcProxies = () => {
             width={145}
           />
         </div>
-        <div className="absolute hidden md:block end-[-40px] bottom-[-40px]">
+        <div className="absolute w-[44px] h-[69px] sm:h-[113px] end-[-10px] sm:w-[73px] sm:end-[-24px] md:w-auto md:h-auto md:end-[-40px] bottom-[-40px]">
           <Image
             src="/assets/images/webp/proxies_box_bottom_img.webp"
             alt="proxies box bottom image"

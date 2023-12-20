@@ -8,12 +8,12 @@ const ImpulseFooter = () => {
   const year = today.getFullYear();
   return (
     <>
-      <div className=" bg-[#141436] sm:pb-5 pb-[31px] lg:pb-[52px]">
-        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-4 lg:pt-[51px] sm:pt-[26px] pt-6">
+      <div className=" bg-[#141436] sm:pb-5 pb-[31px] lg:pb-[52px] text-center sm:text-left">
+        <div className="container xl:max-w-[1220px] 2xl:max-w-[1320px] mx-auto xl:px-3 px-6 lg:pt-[51px] sm:pt-[26px] pt-6">
           <div className="flex justify-between flex-wrap sm:pb-7 md:pb-6 lg:pb-11 pb-2">
             <div className="md:w-4/12 sm:w-6/12 w-full">
               <Link href="/">
-                <div className="flex items-center lg:mb-4 mb-3">
+                <div className="flex justify-center sm:justify-start items-center lg:mb-4 mb-3">
                   <Image
                     loading="lazy"
                     height={67}
@@ -39,21 +39,21 @@ const ImpulseFooter = () => {
                 imply any affiliation with or endorsement by their holders
               </p>
             </div>
-            <div className="md:w-8/12 w-full lg:pt-0 pt-4">
-              <div className="flex flex-wrap">
+            <div className="md:w-8/12 w-full md:pt-0 pt-[26px]">
+              <div className="flex flex-wrap gap-[47px] sm:gap-[unset]">
                 {footerImpluse.map((obj, i) => {
                   return (
                     <div
-                      className=" w-full lg:w-3/12 sm:w-4/12 flex justify-between md:justify-center"
+                      className=" w-full lg:w-3/12 sm:w-4/12 flex justify-center sm:justify-between md:justify-center"
                       key={i}
                     >
                       <ul>
-                        <li className={`sm:pt-0 ${obj.padding}`}>
-                          <p className=" inline-block mb-2 text-white font-Montserrat lg:text-xl text-[15px] font-semibold lh_normal">
+                        <li className="sm:pt-0 lh_normal">
+                          <p className=" inline-block text-white font-Montserrat lg:text-xl text-[15px] font-semibold lh_normal">
                             {obj.heading}
                           </p>
                         </li>
-                        <li>
+                        <li className="lh_normal">
                           <Link
                             aria-label="ISPproxies"
                             href={obj.link1}
@@ -62,7 +62,7 @@ const ImpulseFooter = () => {
                             {obj.option1}
                           </Link>
                         </li>
-                        <li>
+                        <li className="lh_normal">
                           <Link
                             aria-label="ResidentialProxies"
                             href={obj.link2}
@@ -71,7 +71,7 @@ const ImpulseFooter = () => {
                             {obj.option2}
                           </Link>
                         </li>
-                        <li>
+                        <li className="lh_normal">
                           <Link
                             aria-label="DatacenterProxies"
                             href={obj.link3}
@@ -80,7 +80,7 @@ const ImpulseFooter = () => {
                             {obj.option3}
                           </Link>
                         </li>
-                        <li>
+                        <li className={`lh_normal ${obj.visiblity}`}>
                           <Link
                             aria-label="Home"
                             href="#"
@@ -96,7 +96,7 @@ const ImpulseFooter = () => {
               </div>
             </div>
           </div>
-          <div className=" flex items-center sm:flex-row flex-col justify-between">
+          <div className="pt-6 sm:pt-0 flex items-center sm:flex-row flex-col justify-between">
             <p className="text-[#8888B1] font-Montserrat text-center text-sm font-semibold lh_normal">
               © Landsgesell & Graca Costa Solutions GbR {year}, All Rights
               Reserved

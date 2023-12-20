@@ -43,11 +43,11 @@ const MobileNav = ({ activeNavOverlay, setActiveNavOverlay }) => {
   return (
     <>
       <div
-        className={`mobile-nav-overlay ${
+        className={`mobile-nav-overlay md:pt-[7.5rem] ${
           activeNavOverlay ? "left-0" : "-left-full"
         }`}
       >
-        <div className="flex flex-col text-white gap-9 xl:gap-5 justify-center items-center w-full">
+        <div className="flex flex-col text-white gap-9 xl:gap-5 items-center w-full">
           <Link
             aria-label="AboutUs"
             onClick={() => setActiveNavOverlay(false)}

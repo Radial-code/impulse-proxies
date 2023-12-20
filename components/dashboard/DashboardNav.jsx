@@ -38,11 +38,24 @@ const DashboardNav = () => {
       <nav className="dark-blue xl:py-6 lg:py-5 py-3 flex-grow-0">
         <div className="2xl:w-full 2xl:px-24 xl:px-12 lg:px-8 px-6 mx-auto">
           <div className="flex-1 flex items-center justify-between  lg:items-center">
-            <div className="flex-1 flex items-center lg:justify-between lg:ms-0 ms-12 justify-center">
-              <div className="flex-shrink-0 flex items-center justify-between">
+            <div className="relative z-[200] w-7 h-7 lg:hidden">
+              <button
+                onClick={() => setActiveNavOverlay(!activeNavOverlay)}
+                type="button"
+                className={` inline-flex items-center justify-center rounded-md ${
+                  isToggleIconVisible ? "w-[30px]" : "w-[46px]"
+                } `}
+                aria-label="toggle-button"
+              >
+                {" "}
+                {isToggleIconVisible ? <HeaderCrossIcons /> : <ToggleIcon />}
+              </button>
+            </div>
+            <div className="flex-1 flex items-center lg:justify-between justify-center">
+              <div className="flex-shrink-0 lg:ms-0 ms-[37px] flex items-center justify-between">
                 <Link
                   href="/"
-                  className="text-white text-xl font-semibold flex items-center relative z-[1]"
+                  className="text-white text-xl relative z-[100] font-semibold flex items-center"
                 >
                   <Image
                     height={62}
@@ -149,8 +162,8 @@ const DashboardNav = () => {
                 <DashboardDropDown />
               </div>
             </div>
-            <div className="flex items-center lg:hidden ">
-              <div className="relative z-[200] w-7 h-7">
+              <div className="flex items-center lg:hidden">
+              <div className="bg-[#202046] h-[65px] w-[65px] rounded-[10px] flex items-center justify-center lg:ms-4">
                 <button
                   onClick={() => setActiveNavOverlay(!activeNavOverlay)}
                   type="button"

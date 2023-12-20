@@ -41,13 +41,13 @@
      lg:pb-6 lg:pt-14 sm:pt-8 pt-2 pb-[34px] ms-[-10px] me-[-10px] border-b-0;
   }
   .accordian-main {
-    @apply mt-5 border-[2px] transition-opacity ease-in duration-300 border-cyan-green
+    @apply mt-5 border-[2px] transition-opacity backdrop-blur-[21px] ease-in duration-300 border-cyan-green
      text-white bg-[#50EED733] rounded-2xl
      px-4 py-3 overflow-hidden w-full max-w-[655px] lg:max-w-[849px] mx-auto;
   }
   .accordian-heading {
     @apply w-full flex justify-between items-center cursor-pointer focus:outline-none font-Montserrat
-     md:text-2xl sm:text-[17px] text-[15px] font-bold leading-[130%] mb-0 text-start;
+     md:text-2xl sm:text-[17px] text-[16px] font-bold leading-[130%] mb-0 text-start;
   }
   .faq-main-heading {
     @apply text-center lg:text-6xl text-[28px] mx-auto text-white sm:max-w-full max-w-[245px] font-Montserrat
@@ -75,7 +75,7 @@
      lg:h-[122px] md:h-[92px] sm:w-[65px] sm:h-[55px] w-[55px] h-[45px] pointer-events-none;
   }
   .aboutus-para {
-    @apply text-dark-gray leading-[157%] font-normal md:font-semibold lg:text-2xl text-[15px] text-center lg:max-w-[383px]
+    @apply text-dark-gray leading-[157%] font-normal md:font-semibold lg:text-2xl text-[15px] text-center lg:max-w-[383px] min-[1920.1px]:max-w-[unset]
      sm:pt-2 pt-4 tracking-[-0.74px] sm:pb-0 md:text-center lg:text-start lg:mx-0;
   }
   .about-box-map-div {
@@ -83,7 +83,7 @@
      lg:mt-9 lg:justify-between  min-h-[432px] lg:min-h-[214px];
   }
   .impulse-footer-li {
-    @apply text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium pt-[9px] hover:text-white
+    @apply text-[#8888B1] font-Montserrat lg:text-xl text-[15px] font-medium pt-3 inline-block sm:pt-[9px] hover:text-white
      transition-all ease-in-out duration-200;
   }
   .mobile-nav-li {
@@ -95,7 +95,7 @@
      border-[2px] rounded-full bg-[#163A4F] py-4 px-16 flex items-center justify-center hover:bg-transparent transition-all h-[55px];
   }
   .mobile-nav-overlay {
-    @apply fixed px-4 items-center justify-center lg:hidden bg-[#040426] lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-24 transition-all
+    @apply fixed px-4 items-center lg:hidden bg-[#040426] lg:z-[-1] top-0 h-full flex flex-col pb-4 pt-[101px] transition-all
      duration-200 ease-in z-[100] w-full sm:max-w-[100%];
   }
   .proxies-try-now-button {
@@ -218,7 +218,7 @@
       rounded-[20px] py-5 px-6 xl:pb-7 md:py-6;
   }
   .proxies-map-div {
-    @apply flex lg:justify-between justify-center gap-6 lg:flex-nowrap lg:mt-12 md:mt-6 mt-9 relative z-20 min-h-[415px]
+    @apply flex lg:justify-between justify-center gap-6 lg:flex-nowrap lg:mt-12 md:mt-8 mt-[38px] relative z-20 min-h-[415px]
      md:min-h-[308px] lg:min-h-[160px] xl:min-h-[142px];
   }
   .whychooseus-abstract-img {
@@ -233,9 +233,9 @@
     @apply font-Montserrat md:text-[32px] text-[28px] text-white font-bold leading-[121%] text-center tracking-[-0.64px];
   }
   .whychooseus-map-heading-para-div {
-    @apply text-white 2xl:max-w-[393px] lg:max-w-[380px] sm:min-h-[197px] min-h-[152px] sm:max-w-[330px] max-w-[328px]
+    @apply text-white 2xl:max-w-[393px] lg:max-w-[380px] sm:min-h-[197px] min-h-[152px] sm:max-w-[330px] max-w-[400px]
      sm:hover:translate-y-[-10px] transition-all duration-200 ease-in-out mx-auto h-full lg:ps-[46px] lg:pe-[36px] lg:pt-[18px]
-      lg:pb-[38px] px-6 pt-6 pb-[30px] rounded-[30px] border-[2px] border-cyan-green bg-[#204056];
+      lg:pb-[38px] px-6 pt-6 pb-[30px] rounded-[30px] border-[1px] sm:border-[2px] border-cyan-green bg-[#204056];
   }
   .faq_strips_image {
     @apply top-[-3.5rem] left-[4rem] sm:-top-24 xl:-top-28 sm:left-24 scale-[3.3] sm:scale-[2] lg:scale-150;
@@ -369,6 +369,10 @@ body {
   }
 }
 
+  .faq-main-div {
+    background-size: 100% 100%;
+  }
+
 .range-input-first,
 .range-input-second,
 .range-input {
@@ -489,4 +493,22 @@ body {
   font-size: 30px !important;
   font-family: Helvetica, Arial, sans-serif !important;
   color: #FFF !important;
+}
+.bg_faq_blur {
+  /* background: linear-gradient(180deg, #50EED7 0%, #7BECF3 100%); */
+  background: radial-gradient(
+      41.85% 211.48% at 47.38% 79.56%,
+      #50eed7 0%,
+      rgba(80, 238, 215, 0) 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+.gradient_border::after {
+  background: radial-gradient(
+      75.71% 138.68% at 71.81% 24.29%,
+      rgba(46, 166, 148, 0.5) 0%,
+      rgba(34, 237, 207, 0) 100%
+    );
+    z-index: -1;
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 }

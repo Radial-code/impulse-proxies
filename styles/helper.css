@@ -71,7 +71,6 @@
     transform: translateY(0px);
   }
 }
-@media (max-width: 1023.95px) {
   .line::before {
     content: "";
     position: absolute;
@@ -82,7 +81,6 @@
     border-radius: 10000px;
     background: #50eed7;
   }
-}
 @media (max-width: 640px) {
   .bg_current::after {
     content: "";

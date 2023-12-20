@@ -37,7 +37,9 @@ const DataUsagesOne = () => {
   return (
     <>
       <div className=" sm:w-6/12 w-full h-full sm:pr-5">
-        <div className="w-full h-full flex flex-col bgData max-h-[295px] databox_border relative py-8 xl:px-11 px-[20px] rounded-xl ">
+       
+      <div className="after:absolute after:inset-0 after:rounded-xl gradient_border relative p-[1px]"> 
+       <div className="w-full h-full flex flex-col bgData max-h-[295px] databox_border relative py-8 xl:px-11 px-[20px] rounded-xl ">
           <div className="flex items-center justify-between">
             <p className="font-Montserrat mb-0 text-white font-bold text-md tracking-[1.4px] flex items-center">
               <Image
@@ -54,27 +56,12 @@ const DataUsagesOne = () => {
                {channelData.totalLimit || 0 } GB <span className="text-[#8282AB]">PLAN</span>
             </p>
           </div>
-          <div className="flex items-center justify-center relative">
+        </div>
+        <div className="flex items-center justify-center relative">
             { channel && ( <RadialBar channelData={channelData} />)}
-          </div>
-          {/* <div className="flex items-center justify-center mt-4 relative">
-            <Image
-              height={185}
-              width={185}
-              alt="image"
-              src="/assets/images/webp/dataCircle.webp"
-            />
-            <div className="flex items-center justify-center flex-col absolute">
-              <p className="text-white font-Montserrat font-bold tracking-[1.75px] text-[35px] mb-0">
-              {channelData.remainingData || 0 } 
-              </p>
-              <p className=" whitespace-nowrap text-[#8282AB] font-Montserrat font-semibold leading-normal tracking-[1.3px] text-md">
-                GB LEFT
-              </p>
-            </div>
-          </div> */}
         </div>
       </div>
+    </div>
     </>
   );
 };

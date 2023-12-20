@@ -38,7 +38,7 @@ const RangeBar = () => {
           </p>
         </div>
         <div className="rang_bar relative rounded-b-[16px] px-4 md:px-6 sm:pt-5 lg:pt-6 pt-5 lg:pb-[73px] pb-8 mt-[-2px]">
-          <p className="lg:-mb-4 text-sm font-Montserrat font-bold text-white md:max-w-[330px] leading-normal tracking-[1.2px] text-center lg:text-end">
+          <p className="lg:-mb-4 text-sm font-Montserrat font-bold text-white leading-normal tracking-[1.2px] text-center">
             3 GB TO GO!
           </p>
           <div className="flex relative justify-center items-center lg:h-[60px] sm:h-[30px] h-[40px] mx-auto rounded">

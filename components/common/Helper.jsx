@@ -10,6 +10,7 @@ export const footerImpluse = [
     link2: "#Residential-Proxies",
     link3: "#Datacenter-Proxies",
     link4: "#",
+    visiblity:"hidden"
   },
   {
     id: 2,
@@ -35,6 +36,7 @@ export const footerImpluse = [
     link2: "#Privacy-Policy",
     link3: "#Refund-Policy",
     link4: "#",
+    visiblity:"hidden"
   },
 ];
 export const aboutBox = [
@@ -77,16 +79,19 @@ export const accordianData = [
 ];
 export const cardData = [
   {
+    align:"items-center",
     heading: "Global Reach",
     para: " Access proxies from multiple regions, ensuring connectivity and worldwide coverage.",
     whyToImg: "/assets/images/webp/Globe.webp",
   },
   {
+    align:"items-end",
     heading: "Affordable Rates",
     para: " Navigate the web with pocket-friendly rates, ensuring value for your money.",
     whyToImg: "/assets/images/webp/AffordableRates.webp",
   },
   {
+    align:"items-center",
     heading: "Reliability redefined",
     para: " With our proxies, unmatched reliability isn't just a statement - it's a promise.",
     whyToImg: "/assets/images/webp/clock.webp",

@@ -25,7 +25,7 @@ const ProxiesTabs = () => {
 
   return (
     <>
-      <div className="w-full bg-[#4FDCC7] rounded-lg p-[14px]">
+      <div className="w-full bg-[#4FDCC7] rounded-[16px] p-[14px]">
         <div
           className={`${
             activeTab === 1 ? "bg-white " : ""
